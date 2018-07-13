@@ -31,7 +31,7 @@ The response received from InitializeFrom request consists of values of mapped a
 
 > NOTE
 > To determine whether two entities can be mapped, use this query:  
-GET [Organization URI]/api/data/v9.0/entitymaps?$select=sourceentityname,targetentityname&$orderby=sourceentityname
+> GET [Organization URI]/api/data/v9.0/entitymaps?$select=sourceentityname,targetentityname&$orderby=sourceentityname
 
 Other attribute values can also be set and/or modified for the new record by adding them in the JSON request body, as shown in the example below.
 
