@@ -1,7 +1,7 @@
 ### YamlMime:ODataIndex
 uid: Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
 name: Web API Metadata EntityType Reference
-title: "Common Data Service and 365 Customer Engagement Web API Metadata EntityType Reference | MicrosoftDocs"
+title: "Microsoft Dataverse and 365 Customer Engagement Web API Metadata EntityType Reference | MicrosoftDocs"
 metadata:   
   ms.date: "05/03/2020"
   ms.service: "crm-online"

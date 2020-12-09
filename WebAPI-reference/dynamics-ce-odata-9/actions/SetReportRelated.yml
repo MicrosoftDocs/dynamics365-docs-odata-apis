@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.SetReportRelated
 name: "SetReportRelated"
 type: action
 metadata: 
-  title: "Common Data Service and Dynamics 365 Customer Engagement SetReportRelated Action Reference | MicrosoftDocs"
+  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SetReportRelated Action Reference | MicrosoftDocs"
   ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
@@ -50,7 +50,7 @@ entities:
     description: "Data summary in an easy-to-read layout."
 # This action has no remarks.
 href_see_also:
-- text: "Use the Common Data Service Web API"
+- text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

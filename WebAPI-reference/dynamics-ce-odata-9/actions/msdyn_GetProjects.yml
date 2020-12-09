@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.msdyn_GetProjects
 name: "msdyn_GetProjects"
 type: action
 metadata: 
-  title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_GetProjects Action Reference | MicrosoftDocs"
+  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_GetProjects Action Reference | MicrosoftDocs"
   ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
@@ -27,7 +27,7 @@ return_type:
 # This action has no identified unbound entities.
 # This action has no remarks.
 href_see_also:
-- text: "Use the Common Data Service Web API"
+- text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
