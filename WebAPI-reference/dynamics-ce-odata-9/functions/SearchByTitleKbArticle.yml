@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.SearchByTitleKbArticle
 name: "SearchByTitleKbArticle"
 type: function
 metadata: 
-  title: "Common Data Service and Dynamics 365 Customer Engagement SearchByTitleKbArticle Function Reference | MicrosoftDocs"
+  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SearchByTitleKbArticle Function Reference | MicrosoftDocs"
   ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
@@ -50,7 +50,7 @@ return_type:
 # This function no specific entities for this function identified.
 # This function has no remarks.
 href_see_also:
-- text: "Use the Common Data Service Web API"
+- text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

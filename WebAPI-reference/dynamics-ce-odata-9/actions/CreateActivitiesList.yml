@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.CreateActivitiesList
 name: "CreateActivitiesList"
 type: action
 metadata: 
-  title: "Common Data Service and Dynamics 365 Customer Engagement CreateActivitiesList Action Reference | MicrosoftDocs"
+  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CreateActivitiesList Action Reference | MicrosoftDocs"
   ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
@@ -83,7 +83,7 @@ entities:
     description: "Group of existing or potential customers created for a marketing campaign or other sales purposes."
 # This action has no remarks.
 href_see_also:
-- text: "Use the Common Data Service Web API"
+- text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

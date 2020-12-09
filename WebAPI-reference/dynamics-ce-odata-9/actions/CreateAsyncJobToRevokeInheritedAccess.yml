@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.CreateAsyncJobToRevokeInheritedAccess
 name: "CreateAsyncJobToRevokeInheritedAccess"
 type: action
 metadata: 
-  title: "Common Data Service and Dynamics 365 Customer Engagement CreateAsyncJobToRevokeInheritedAccess Action Reference | MicrosoftDocs"
+  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CreateAsyncJobToRevokeInheritedAccess Action Reference | MicrosoftDocs"
   ms.date: "08/17/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
@@ -31,7 +31,7 @@ hasreturnvalue: false
 remarks: "When an entity relationship that is using Reparent or Share is changed from Cascade All to Cascade None, a cleanup job can be run to remove access that was granted through cascading inheritance. This cleanup will not impact any user that was directly granted access to an entity."
 # This action has no remarks.
 href_see_also:
-- text: "Use the Common Data Service Web API"
+- text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
