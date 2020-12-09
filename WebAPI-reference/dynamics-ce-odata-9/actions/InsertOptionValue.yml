@@ -4,7 +4,7 @@ name: "InsertOptionValue"
 type: action
 metadata: 
   title: "Common Data Service and Dynamics 365 Customer Engagement InsertOptionValue Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
+  ms.date: "12/08/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
   ms.assetid: 62aa8236-cf75-445e-80c3-2035d693d420
@@ -24,27 +24,27 @@ parameters:
     type: Edm.String
     nullable: true
     unicode: false
-    description: "Reserved for future use."
+    description: "Name of the global option set when the option set is global."
   - name: AttributeLogicalName
     type: Edm.String
     nullable: true
     unicode: false
-    description: "The logical name of the status attribute.  "
+    description: "The logical name of the picklist attribute for a local option set.  "
   - name: EntityLogicalName
     type: Edm.String
     nullable: true
     unicode: false
-    description: "Logical name of the entity. "
+    description: "Logical name of the entity for a local option set. "
   - name: Value
     type: Edm.Int32
     nullable: true
     unicode: true
-    description: "Value for the new status."
+    description: "Value for the new option."
   - name: Label
     type: Microsoft.Dynamics.CRM.Label
     nullable: true
     unicode: true
-    description: "Label for the new status. "
+    description: "Label for the new option. "
   - name: Description
     type: Microsoft.Dynamics.CRM.Label
     nullable: true
@@ -54,7 +54,7 @@ parameters:
     type: Edm.Int32
     nullable: false
     unicode: true
-    description: ""
+    description: "Reserved for future use."
   - name: SolutionUniqueName
     type: Edm.String
     nullable: true
