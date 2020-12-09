@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
 name: "msdyn_scheduleboardsetting"
 type: entitytype
 metadata: 
-  title: "Common Data Service and Dynamics 365 Customer Engagement msdyn_scheduleboardsetting EntityType Reference | MicrosoftDocs"
+  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_scheduleboardsetting EntityType Reference | MicrosoftDocs"
   ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
@@ -543,7 +543,7 @@ solutions:
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
 # This entity has no remarks.
 href_see_also:
-- text: "Use the Common Data Service Web API"
+- text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

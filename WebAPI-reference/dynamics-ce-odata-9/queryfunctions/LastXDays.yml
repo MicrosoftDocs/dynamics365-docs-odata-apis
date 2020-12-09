@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.LastXDays
 name: "LastXDays"
 type: queryfunction
 metadata: 
-  title: "Common Data Service and Dynamics 365 Customer Engagement LastXDays Query Function Reference | MicrosoftDocs"
+  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement LastXDays Query Function Reference | MicrosoftDocs"
   ms.date: "05/03/2020"
   ms.service: "crm-online"
   ms.topic: "reference"
@@ -30,7 +30,7 @@ parameters:
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.LastXDays(PropertyName=@p1,PropertyValue=@p2)&@p1='name'&@p2=42"
 # This query function has no remarks.
 href_see_also:
-- text: "Use the Common Data Service Web API"
+- text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
