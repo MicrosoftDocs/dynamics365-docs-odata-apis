@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_GetDataForContractPerformanceResponse
 name: "msdyn_GetDataForContractPerformanceResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_GetDataForContractPerformanceResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse msdyn_GetDataForContractPerformanceResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 00cd4bd8-6451-432a-89ae-b5da122c1d76
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API msdyn_GetDataForContractPerformanceResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API msdyn_GetDataForContractPerformanceResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "For internal use only." 
@@ -30,10 +30,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.msdyn_GetDataForContractPerformance
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

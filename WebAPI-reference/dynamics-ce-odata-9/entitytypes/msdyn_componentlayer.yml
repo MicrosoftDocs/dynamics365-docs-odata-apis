@@ -1,0 +1,119 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_componentlayer
+name: "msdyn_componentlayer"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 161e79a3-24e9-4342-b0e0-3325bb293960
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_componentlayer entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_componentlayers"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Component Layer
+  primary_key: msdyn_componentlayerid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: msdyn_changes
+      type: Edm.String
+      display_name: "Changes"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_children
+      type: Edm.String
+      display_name: "Children"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_componentid
+      type: Edm.String
+      display_name: "Component Id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_componentjson
+      type: Edm.String
+      display_name: "Component Json"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_componentlayerid
+      type: Edm.Guid
+      display_name: "Component Layer"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the component."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_order
+      type: Edm.Int32
+      display_name: "Order"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_overwritetime
+      type: Edm.DateTimeOffset
+      display_name: "Overwrite Time"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_publishername
+      type: Edm.String
+      display_name: "Publisher Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_solutioncomponentname
+      type: Edm.String
+      display_name: "Solution Component Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_solutionname
+      type: Edm.String
+      display_name: "Solution Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+# This entity has no lookup properties
+# This entity has no single-valued navigation properties
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the msdyn_componentlayer entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.ComponentHistoryAPIs
+    description: ""
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

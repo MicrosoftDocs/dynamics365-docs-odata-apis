@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ThisWeek
 name: "ThisWeek"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ThisWeek Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse ThisWeek Query Function Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: aa81b72b-467e-4ec2-8e1e-ace178e313ac
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the ThisWeek Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse ThisWeek Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function that evaluates whether the value is within the current week.  "
 parameters:
@@ -23,10 +23,10 @@ parameters:
     unicode: false
     description: "The property to evaluate "
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.ThisWeek(PropertyName=@p1)&@p1='name'"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

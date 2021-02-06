@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ValidateUnpublished
 name: "ValidateUnpublished"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ValidateUnpublished Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: da0a83b2-97cd-4a65-a351-fa05ded81e88
-  author: "KumarVivek"
+  ms.assetid: b164bb7a-05ce-4ccf-923b-d4689e4897ec
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the ValidateUnpublished Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse ValidateUnpublished Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -42,10 +42,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.serviceappointment
     displayName: Service Activity
     description: "Activity offered by the organization to satisfy its customer's needs. Each service activity includes date, time, duration, and required resources."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

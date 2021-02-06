@@ -1,15 +1,15 @@
 ### YamlMime:ODataIndex
 uid: Microsoft.Dynamics.CRM.EnumTypeIndex
 name: Web API EnumType Reference
-title: "Microsoft Dataverse and 365 Customer Engagement Web API EnumType Reference | MicrosoftDocs"
+title: "Dataverse Web API EnumType Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ed96bb52-43bc-4b4c-a7e2-f47969238bf5
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
+  manager: "annbe"
 description: "An EnumType represents an enumeration type in an OData v4 entity model. "
 in_this_section:
 - type: Microsoft.Dynamics.CRM.AccessRights
@@ -73,7 +73,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.OrganizationState
   description: "Describes the state of the organization. "
 - type: Microsoft.Dynamics.CRM.OrganizationType
-  description: "Contains the possible values for the type of organization or environment. "
+  description: "Not Found"
 - type: Microsoft.Dynamics.CRM.OwnershipTypes
   description: "Specifies the type of ownership for an entity. "
 - type: Microsoft.Dynamics.CRM.PrivilegeDepth
@@ -82,6 +82,8 @@ in_this_section:
   description: "Describes the type of operation for the privilege "
 - type: Microsoft.Dynamics.CRM.PropagationOwnershipOptions
   description: "Contains the possible values for propagation ownership options. "
+- type: Microsoft.Dynamics.CRM.ProvisionLanguageForUserStatusType
+  description: "Not Found"
 - type: Microsoft.Dynamics.CRM.RecentlyViewedRecordType
   description: "Not Found"
 - type: Microsoft.Dynamics.CRM.RelationshipType
@@ -94,8 +96,14 @@ in_this_section:
   description: "Contains the possible values for the search direction in an appointment request. "
 - type: Microsoft.Dynamics.CRM.SecurityTypes
   description: "Describes the security type for the relationship. "
-- type: Microsoft.Dynamics.CRM.SolutionValidationResultType
+- type: Microsoft.Dynamics.CRM.SolutionOperationStatus
   description: "Not Found"
+- type: Microsoft.Dynamics.CRM.SolutionOperationType
+  description: "Not Found"
+- type: Microsoft.Dynamics.CRM.SolutionValidationResultType
+  description: "The type of result returned from validating a solution."
+- type: Microsoft.Dynamics.CRM.StageSolutionStatus
+  description: "The status of the solution staging request."
 - type: Microsoft.Dynamics.CRM.StringFormat
   description: "Describes the formatting of a string attribute for the StringAttributeMetadata.Format property. (Deprecated)"
 - type: Microsoft.Dynamics.CRM.SubCode

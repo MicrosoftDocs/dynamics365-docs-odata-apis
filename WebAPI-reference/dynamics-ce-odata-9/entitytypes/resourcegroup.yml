@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.resourcegroup
 name: "resourcegroup"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement resourcegroup EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bd8463c5-17ab-47f9-9f38-b910e856382b
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the resourcegroup entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse resourcegroup entitytype."
 description: "Resource group or team whose members can be scheduled for a service."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/resourcegroups"
@@ -166,10 +166,12 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_Service
     description: "Dynamics 365 workload for service."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
+    description: "Dynamics 365 workload for service."
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

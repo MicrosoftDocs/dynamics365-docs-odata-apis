@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveUserPrivileges
 name: "RetrieveUserPrivileges"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveUserPrivileges Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveUserPrivileges Function Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d97f0f32-e4c2-4076-a4ef-45613e4df293
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveUserPrivileges Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse RetrieveUserPrivileges Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the privileges a system user (user) has through his or her roles in the specified business unit.  "
 iscomposable: false
@@ -28,10 +28,10 @@ return_type:
   iscollection: false
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

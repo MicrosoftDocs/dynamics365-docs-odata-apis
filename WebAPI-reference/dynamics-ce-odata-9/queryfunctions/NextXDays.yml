@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.NextXDays
 name: "NextXDays"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement NextXDays Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse NextXDays Query Function Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 080beb61-027e-48f3-bf8a-6decd41e080f
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the NextXDays Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse NextXDays Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function to evaluate whether the value is in the next X days. "
 parameters:
@@ -28,10 +28,10 @@ parameters:
     unicode: true
     description: "The value to compare. "
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.NextXDays(PropertyName=@p1,PropertyValue=@p2)&@p1='name'&@p2=42"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

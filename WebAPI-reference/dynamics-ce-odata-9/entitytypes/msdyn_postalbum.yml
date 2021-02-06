@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_postalbum
 name: "msdyn_postalbum"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_postalbum EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9fb18d6d-357f-49c6-b8c7-ca79d9c8b1f9
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_postalbum entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_postalbum entitytype."
 description: "Contains user profile images that are stored as attachments and displayed in posts."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_postalbums"
@@ -205,6 +205,15 @@ collection_valued_navigation_properties:
   - name: msdyn_postalbum_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_msdyn_postalbum_letter
+  - name: msdyn_postalbum_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_postalbum_li_inmail
+  - name: msdyn_postalbum_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_postalbum_li_message
+  - name: msdyn_postalbum_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_postalbum_li_pointdrivepresentationviewed
   - name: msdyn_postalbum_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_postalbum
@@ -214,6 +223,15 @@ collection_valued_navigation_properties:
   - name: msdyn_postalbum_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_msdyn_postalbum_msdyn_bookingalert
+  - name: msdyn_postalbum_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_postalbum_msfp_alert
+  - name: msdyn_postalbum_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_postalbum_msfp_surveyinvite
+  - name: msdyn_postalbum_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_postalbum_msfp_surveyresponse
   - name: msdyn_postalbum_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_postalbum_phonecall
@@ -259,10 +277,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.ActivityFeedsCore
     description: "This solution enables Activity Feeds including Walls for your Microsoft Dynamics 365 organization."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.template
 name: "template"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement template EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b9687de4-dec1-42a4-8a5a-ff5c756528d5
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the template entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse template entitytype."
 description: "Template for an email message that contains the standard attributes of an email message."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/templates"
@@ -61,6 +61,30 @@ properties:
       description: "Description of the email template."
       iscomputed: false
       isreadonly: false
+    - name: entityimage
+      type: Edm.Binary
+      display_name: "Default Image"
+      description: "Shows the default image for the record."
+      iscomputed: false
+      isreadonly: false
+    - name: entityimage_timestamp
+      type: Edm.Int64
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+    - name: entityimage_url
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+    - name: entityimageid
+      type: Edm.Guid
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: generationtypecode
       type: Edm.Int32
       display_name: "Generation Type Code"
@@ -172,6 +196,12 @@ properties:
       description: "Shows the reply rate for this template. This is based on number of replies received on followed emails that use this template."
       iscomputed: false
       isreadonly: true
+    - name: safehtml
+      type: Edm.String
+      display_name: "Safe HTML of email template"
+      description: "Safe html of email template."
+      iscomputed: false
+      isreadonly: false
     - name: solutionid
       type: Edm.Guid
       display_name: "Solution"
@@ -188,6 +218,12 @@ properties:
       type: Edm.String
       display_name: "Subject XML"
       description: "XML data for the subject of the email template."
+      iscomputed: false
+      isreadonly: false
+    - name: subjectsafehtml
+      type: Edm.String
+      display_name: "Safe HTML of email template subject"
+      description: "Safe html of email template subject."
       iscomputed: false
       isreadonly: false
     - name: templateid
@@ -343,6 +379,8 @@ solutions:
     description: "Dynamics 365 workload for activities."
   - type: Microsoft.Dynamics.CRM.msdynce_ActivitiesPatch
     description: "Patch for Dynamics 365 workload for activities."
+  - type: Microsoft.Dynamics.CRM.msdynce_EnableUCIByDefault
+    description: "Dynamics 365 workload for enablement of entities within the Unified Client Interface."
   - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
     description: "Dynamics 365 workload for lead management."
   - type: Microsoft.Dynamics.CRM.msdynce_Marketing
@@ -353,10 +391,10 @@ solutions:
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

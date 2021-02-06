@@ -1,0 +1,321 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_contractlinedetailperformance
+name: "msdyn_contractlinedetailperformance"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 1ecd1167-002c-459d-b90b-83f8d9ae0979
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_contractlinedetailperformance entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_contractlinedetailperformances"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Contract Line Detail Performance
+  primary_key: msdyn_contractlinedetailperformanceid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: exchangerate
+      type: Edm.Decimal
+      display_name: "Exchange Rate"
+      description: "Exchange rate for the currency associated with the entity with respect to the base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_billedamount
+      type: Edm.Decimal
+      display_name: "Billed Amount"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_billedamount_base
+      type: Edm.Decimal
+      display_name: "Billed Amount (Base)"
+      description: "Value of the Billed Amount in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_billedquantity
+      type: Edm.Decimal
+      display_name: "Billed Quantity"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_category
+      type: Edm.String
+      display_name: "Category"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_contractid
+      type: Edm.Guid
+      display_name: "ContractId"
+      description: "Unique identifier of the Contract."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_contractlinedetailperformanceid
+      type: Edm.Guid
+      display_name: "Contract Line Detail Performance"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_contractlineid
+      type: Edm.Guid
+      display_name: "ContractLineId"
+      description: "Unique identifier of the ContractLine."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_costincurred
+      type: Edm.Decimal
+      display_name: "Cost Incurred"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_costincurred_base
+      type: Edm.Decimal
+      display_name: "Cost Incurred (Base)"
+      description: "Value of the Cost Incurred in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_loggedhours
+      type: Edm.Decimal
+      display_name: "Logged Hours"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_loggedquantity
+      type: Edm.Decimal
+      display_name: "Logged Quantity"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_role
+      type: Edm.String
+      display_name: "Role"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_transactionclass
+      type: Edm.String
+      display_name: "Transaction Class"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Contract Line Detail Performance"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Contract Line Detail Performance"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_contractperformanceid_value
+    single_valued_navigation_property:
+    - msdyn_ContractPerformanceId
+    description: "Unique identifier for Contract Performance associated with Contract Line Detail Performance."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+  - name: _transactioncurrencyid_value
+    single_valued_navigation_property:
+    - transactioncurrencyid
+    description: "Unique identifier of the currency associated with the entity."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_contractlinedetailperformance_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_contractlinedetailperformance_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_contractlinedetailperformance_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_contractlinedetailperformance_modifiedonbehalfby
+  - name: msdyn_ContractPerformanceId
+    type: Microsoft.Dynamics.CRM.msdyn_contractperformance
+    partner: msdyn_contractperformance_msdyn_contractlinedetailperformance_ContractPerformanceId
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_contractlinedetailperformance
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_contractlinedetailperformance
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_contractlinedetailperformance
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_contractlinedetailperformance
+  - name: transactioncurrencyid
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: TransactionCurrency_msdyn_contractlinedetailperformance
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_contractlinedetailperformance_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_contractlinedetailperformance
+  - name: msdyn_contractlinedetailperformance_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_contractlinedetailperformance
+  - name: msdyn_contractlinedetailperformance_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_contractlinedetailperformance
+  - name: msdyn_contractlinedetailperformance_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_contractlinedetailperformance
+  - name: msdyn_contractlinedetailperformance_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_contractlinedetailperformance
+  - name: msdyn_contractlinedetailperformance_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_contractlinedetailperformance
+  - name: msdyn_contractlinedetailperformance_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_contractlinedetailperformance
+  - name: msdyn_contractlinedetailperformance_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_contractlinedetailperformance
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_contractlinedetailperformance entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_contractlinedetailperformance entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
+# This entity has no remarks.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

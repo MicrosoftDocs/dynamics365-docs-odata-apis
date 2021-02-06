@@ -1,0 +1,59 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_BookRequirementGroup
+name: "msdyn_BookRequirementGroup"
+type: action
+metadata: 
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 55bf3375-fbb3-42c0-ad5e-2c8881a0eb6c
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_BookRequirementGroup Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+bound_entities:
+  description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."
+  bound_entity_items:
+  - entity_type: Microsoft.Dynamics.CRM.msdyn_requirementgroup
+    binding_type: entity
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: Start
+    type: Edm.DateTimeOffset
+    nullable: false
+    unicode: true
+    description: ""
+  - name: Duration
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: ""
+  - name: BookingResources
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+return_type:
+  description: "The msdyn_BookRequirementGroup action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_BookRequirementGroupResponse
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

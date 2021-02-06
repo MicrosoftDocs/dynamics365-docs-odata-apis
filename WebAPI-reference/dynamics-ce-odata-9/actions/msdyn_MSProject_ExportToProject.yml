@@ -1,0 +1,56 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_MSProject_ExportToProject
+name: "msdyn_MSProject_ExportToProject"
+type: action
+metadata: 
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 2e9d6bdb-d01f-4158-b5a4-3d8c3d51ed21
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_MSProject_ExportToProject Action."
+namespace: Microsoft.Dynamics.CRM
+description: "For internal use only."
+owningsolution: Microsoft.Dynamics.CRM.ProjectService
+bound_entities:
+  description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."
+  bound_entity_items:
+  - entity_type: Microsoft.Dynamics.CRM.msdyn_project
+    binding_type: entity
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: SequenceNumber
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+  - name: ProjectClientJSON
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "For internal use only."
+  - name: IntegrationJobReference
+    type: Microsoft.Dynamics.CRM.msdyn_integrationjob
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+# This action has no return value.
+hasreturnvalue: false
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

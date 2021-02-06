@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrievePrincipalAttributePrivilegesResponse
 name: "RetrievePrincipalAttributePrivilegesResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrievePrincipalAttributePrivilegesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse RetrievePrincipalAttributePrivilegesResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b15a6426-348f-4029-97cb-f1840487f44c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API RetrievePrincipalAttributePrivilegesResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API RetrievePrincipalAttributePrivilegesResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains the response from the RetrievePrincipalAttributePrivileges function." 
@@ -32,10 +32,10 @@ usedby:
     used_as: ReturnType
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAttributePrivileges
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

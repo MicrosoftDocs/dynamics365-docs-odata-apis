@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.FilterExpression
 name: "FilterExpression"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement FilterExpression ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse FilterExpression ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: df44b2e1-d78b-446a-be13-c5da5a1ba051
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API FilterExpression ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API FilterExpression ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Specifies complex condition and logical filter expressions used for filtering the results of the query." 
@@ -58,10 +58,10 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.LinkEntity
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

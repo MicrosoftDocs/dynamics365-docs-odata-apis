@@ -3,24 +3,26 @@ uid: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreement
 name: "Service Level Agreement (SLA)"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Service Level Agreement (SLA) Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Service Level Agreement (SLA) Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: e2dc11ea-1703-4ab5-902f-c63e16b5cbdd
-  author: "KumarVivek"
+  ms.assetid: 0bd9c721-143d-4eb0-a053-fe3c84b7ff0b
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Service Level Agreement (SLA) Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Service Level Agreement (SLA) Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for service level agreements."
  unique_name: msdynce_ServiceLevelAgreement
- version: "9.0.19122.1004"
- customization_prefix: none
+ version: "9.0.20122.1012"
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:
+   - type: Microsoft.Dynamics.CRM.organization
+     description: "Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation."
    - type: Microsoft.Dynamics.CRM.sla
      description: "Contains information about the tracked service-level KPIs for cases that belong to different customers."
    - type: Microsoft.Dynamics.CRM.slaitem
@@ -28,10 +30,10 @@ entities:
    - type: Microsoft.Dynamics.CRM.slakpiinstance
      description: "Service level agreement (SLA) key performance indicator (KPI) instance that is tracked for an individual case"
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

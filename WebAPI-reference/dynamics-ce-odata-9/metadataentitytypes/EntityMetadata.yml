@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.EntityMetadata
 name: "EntityMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement EntityMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8595cb4f-a592-4dfa-b66f-af5970c35148
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the EntityMetadata metadata entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse EntityMetadata metadata entitytype."
 header: 
   description: "Contains the metadata for an entity."
   entity_set_path:  "[organization URI]/api/data/v9.0/EntityDefinitions"
@@ -78,6 +78,9 @@ properties:
   - name: CollectionSchemaName
     type: Edm.String
     description: "The collection schema name of the entity."
+  - name: CreatedOn
+    type: Edm.DateTimeOffset
+    description: ""
   - name: DataProviderId
     type: Edm.Guid
     description: ""
@@ -124,6 +127,9 @@ properties:
     type: Edm.Boolean
     inherited_from: Microsoft.Dynamics.CRM.MetadataBase
     description: "Indicates whether the item of metadata has changed."
+  - name: HasEmailAddresses
+    type: Edm.Boolean
+    description: ""
   - name: HasFeedback
     type: Edm.Boolean
     description: "Whether the entity will have a special relationship to the Feedback entity."
@@ -249,7 +255,7 @@ properties:
     description: "Whether the entity DisplayName and DisplayCollectionName can be changed by editing the entity in the application."
   - name: IsSLAEnabled
     type: Edm.Boolean
-    description: "Whether the entity is enabled for service level agreements (SLAs)."
+    description: ""
   - name: IsSolutionAware
     type: Edm.Boolean
     description: ""
@@ -280,6 +286,9 @@ properties:
     description: "A unique identifier for the metadata item."
   - name: MobileOfflineFilters
     type: Edm.String
+    description: ""
+  - name: ModifiedOn
+    type: Edm.DateTimeOffset
     description: ""
   - name: ObjectTypeCode
     type: Edm.Int32
@@ -316,7 +325,7 @@ properties:
     description: ""
   - name: SyncToExternalSearchIndex
     type: Edm.Boolean
-    description: "Whether this entity is searchable in relevance search."
+    description: ""
   - name: UsesBusinessDataLabelTable
     type: Edm.Boolean
     description: ""
@@ -337,10 +346,10 @@ collection_valued_navigation_properties:
 # No functions or actions are bound to this entity.
 # This entity has no derived entities.
 # This entity is not used by other entities or operations.
-# This metadata entity has no remarks.
+# There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

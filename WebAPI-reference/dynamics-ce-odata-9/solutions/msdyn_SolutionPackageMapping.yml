@@ -1,0 +1,41 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_SolutionPackageMapping
+name: "msdyn_SolutionPackageMapping"
+type: solution
+metadata: 
+  title: "Dataverse msdyn_SolutionPackageMapping Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 394254dd-3c26-4556-8fba-911b8ad5ed58
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_SolutionPackageMapping Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+# This solution has no description.
+ unique_name: msdyn_SolutionPackageMapping
+ version: "9.0.0.0"
+ customization_prefix: 
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.package
+     description: ""
+   - type: Microsoft.Dynamics.CRM.solution
+     description: "A solution which contains CRM customizations."
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

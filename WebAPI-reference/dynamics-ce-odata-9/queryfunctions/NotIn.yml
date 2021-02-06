@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.NotIn
 name: "NotIn"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement NotIn Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse NotIn Query Function Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e9a1a0d5-a975-45b3-8129-d6d739070553
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the NotIn Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse NotIn Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function to evaluate whether the value is not matched to a value in a subquery or a list.  "
 parameters:
@@ -28,10 +28,10 @@ parameters:
     unicode: false
     description: "The values to compare."
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.NotIn(PropertyName=@p1,PropertyValues=@p2)&@p1='name'&@p2=['value','value']"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

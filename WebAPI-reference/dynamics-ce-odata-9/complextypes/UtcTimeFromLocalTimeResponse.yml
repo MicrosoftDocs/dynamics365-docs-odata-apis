@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.UtcTimeFromLocalTimeResponse
 name: "UtcTimeFromLocalTimeResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement UtcTimeFromLocalTimeResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse UtcTimeFromLocalTimeResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 6b810bb1-91ba-49a8-b2f8-187bfa0e94a7
-  author: "KumarVivek"
+  ms.assetid: 8255c846-f5de-4bdf-9f80-e4f11552a7f0
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API UtcTimeFromLocalTimeResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API UtcTimeFromLocalTimeResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -30,10 +30,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.UtcTimeFromLocalTime
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

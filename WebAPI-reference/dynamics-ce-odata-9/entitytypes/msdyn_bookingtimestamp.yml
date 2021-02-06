@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
 name: "msdyn_bookingtimestamp"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_bookingtimestamp EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1a285f94-b0cb-4897-9bb1-c59553f23598
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_bookingtimestamp entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_bookingtimestamp entitytype."
 description: "Tracks status changes of bookings and timestamps the change of the status"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_bookingtimestamps"
@@ -174,6 +174,10 @@ lookup_properties:
     single_valued_navigation_property:
     - msdyn_booking
     description: "Unique identifier for Resource Booking associated with Booking Timestamp."
+  - name: _msdyn_bookingstatus_value
+    single_valued_navigation_property:
+    - msdyn_BookingStatus
+    description: "Booking Status of the booking"
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -208,6 +212,9 @@ single_valued_navigation_properties:
   - name: msdyn_booking
     type: Microsoft.Dynamics.CRM.bookableresourcebooking
     partner: msdyn_bookableresourcebooking_msdyn_bookingtimestamp_Booking
+  - name: msdyn_BookingStatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: msdyn_bookingstatus_msdyn_bookingtimestamp_BookingStatus
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_msdyn_bookingtimestamp
@@ -259,6 +266,15 @@ collection_valued_navigation_properties:
   - name: msdyn_bookingtimestamp_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_msdyn_bookingtimestamp_letter
+  - name: msdyn_bookingtimestamp_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_bookingtimestamp_li_inmail
+  - name: msdyn_bookingtimestamp_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_bookingtimestamp_li_message
+  - name: msdyn_bookingtimestamp_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_bookingtimestamp_li_pointdrivepresentationviewed
   - name: msdyn_bookingtimestamp_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_bookingtimestamp
@@ -268,6 +284,15 @@ collection_valued_navigation_properties:
   - name: msdyn_bookingtimestamp_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_msdyn_bookingtimestamp_msdyn_bookingalert
+  - name: msdyn_bookingtimestamp_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_bookingtimestamp_msfp_alert
+  - name: msdyn_bookingtimestamp_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_bookingtimestamp_msfp_surveyinvite
+  - name: msdyn_bookingtimestamp_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_bookingtimestamp_msfp_surveyresponse
   - name: msdyn_bookingtimestamp_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_bookingtimestamp_phonecall
@@ -316,10 +341,12 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

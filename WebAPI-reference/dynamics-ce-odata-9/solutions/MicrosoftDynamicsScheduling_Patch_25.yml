@@ -1,0 +1,133 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
+name: "Universal Resource Scheduling"
+type: solution
+metadata: 
+  title: "Dataverse Universal Resource Scheduling Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 09a1a365-59df-421f-a005-ed2059bab2c6
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Universal Resource Scheduling Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+ unique_name: MicrosoftDynamicsScheduling_Patch_25
+ version: "3.12.25.5"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.bookableresource
+     description: "Resource that has capacity which can be allocated to work."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebooking
+     description: "Represents the line details of a resource booking."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+     description: "Shows the reservation table where the summary of resource bookings are persisted."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecategory
+     description: "Resource category master used to categorize people and equipment."
+   - type: Microsoft.Dynamics.CRM.bookableresourcegroup
+     description: "Associates resources with resource groups that they are a member of."
+   - type: Microsoft.Dynamics.CRM.bookingstatus
+     description: "Allows creation of multiple sub statuses mapped to a booking status option."
+   - type: Microsoft.Dynamics.CRM.characteristic
+     description: "Skills, education and certifications of resources."
+   - type: Microsoft.Dynamics.CRM.contact
+     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+   - type: Microsoft.Dynamics.CRM.msdyn_bookableresourceassociation
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+     description: "Alerts that notify schedule board users of booking issues or information."
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
+     description: "The status of a booking alert."
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingchange
+     description: "An internal entity used to track changes that affect the schedule board."
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingrule
+     description: "Specify custom rules to be validated by the system before saving a booking record."
+   - type: Microsoft.Dynamics.CRM.msdyn_bookingsetupmetadata
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_businessclosure
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_clientextension
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_configuration
+     description: "This entity is used to store queries and templates."
+   - type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+     description: "Division of the company or organization that has a specific cost price list associated to it."
+   - type: Microsoft.Dynamics.CRM.msdyn_priority
+     description: "Priorities to be used on bookings. In addition, a color could be specified for each priority type and the color selected will be shown visually on the schedule board."
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
+     description: "Requirement Characteristic"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementdependency
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementgroup
+     description: "Service which has resource requirement offering periods"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
+     description: "Requirement of Organization Unit"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementrelationship
+     description: "Relationship of requirements in the group"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
+     description: "Requirement Resource Category"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
+     description: "Requirement Resource Preference"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementstatus
+     description: "Requirement Status"
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+     description: "Entity used to track the high-level information about resource requirements."
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcerequirementdetail
+     description: "Entity used to track the detailed information about resource requirements."
+   - type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
+     description: "Allows to specify for which territory a resource could provide services for"
+   - type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
+     description: "To store settings of SB by user & tabs"
+   - type: Microsoft.Dynamics.CRM.msdyn_schedulingfeatureflag
+     description: "Update records in this entity to enable a new feature."
+   - type: Microsoft.Dynamics.CRM.msdyn_schedulingparameter
+     description: "Scheduling Parameters"
+   - type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
+     description: "Stores user-specific settings for the schedule board."
+   - type: Microsoft.Dynamics.CRM.msdyn_timegroup
+     description: "Specify time groups consisting of multiple time windows to be used for scheduling, for example."
+   - type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
+     description: "Specify individual time windows under a time group."
+   - type: Microsoft.Dynamics.CRM.msdyn_workhourtemplate
+     description: "Template where resource working hours can be saved and reused."
+   - type: Microsoft.Dynamics.CRM.ratingmodel
+     description: "Represents a model to evaluate skills or other related entities."
+   - type: Microsoft.Dynamics.CRM.ratingvalue
+     description: "A unique value associated with a rating model that allows providing a user friendly rating value."
+   - type: Microsoft.Dynamics.CRM.systemuser
+     description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckGeolocationEnabled
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CreateRequirementGroupBookings
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GeocodeAddress
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_GetRequirementDependencySet
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveDistanceMatrix
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_SearchResourceAvailabilityForRequirementGroup
+     description: ""
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

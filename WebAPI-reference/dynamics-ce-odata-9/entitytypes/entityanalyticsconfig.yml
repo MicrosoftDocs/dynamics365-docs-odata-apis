@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.entityanalyticsconfig
 name: "entityanalyticsconfig"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement entityanalyticsconfig EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 8a511d50-a437-48b9-a445-1bc6ae1c250e
-  author: "KumarVivek"
+  ms.assetid: 07a0bc48-ccf9-4ead-9a55-5b4b3b02ff8c
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the entityanalyticsconfig entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse entityanalyticsconfig entitytype."
 description: "This entity contains information about which entities are enabled for Azure Data Lake Services integration"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/entityanalyticsconfigs"
@@ -59,6 +59,17 @@ properties:
       type: Edm.Boolean
       display_name: "Is Enabled For ADLS"
       description: "Azure Data Lake Storage is enabled for the selected entity"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: isenabledfortimeseries
+      type: Edm.Boolean
+      display_name: "Is Enabled For Time Series"
+      description: "Time series is enabled for the selected entity"
       iscomputed: false
       isreadonly: false
       options:
@@ -146,10 +157,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.AdvancedAnalyticsInfra
     description: ""
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

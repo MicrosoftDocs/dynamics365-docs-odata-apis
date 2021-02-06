@@ -1,0 +1,261 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+name: "Project Service Automation"
+type: solution
+metadata: 
+  title: "Dataverse Project Service Automation Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 3997a820-28c7-4e34-bc5d-22b02030e407
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Project Service Automation Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
+ unique_name: msdyn_ProjectService_Patch_1
+ version: "3.10.44.59"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.bookableresource
+     description: "Resource that has capacity which can be allocated to work."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebooking
+     description: "Represents the line details of a resource booking."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+     description: "Shows the reservation table where the summary of resource bookings are persisted."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecategory
+     description: "Resource category master used to categorize people and equipment."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+     description: "Association entity to model the categorization of resources."
+   - type: Microsoft.Dynamics.CRM.bookingstatus
+     description: "Allows creation of multiple sub statuses mapped to a booking status option."
+   - type: Microsoft.Dynamics.CRM.characteristic
+     description: "Skills, education and certifications of resources."
+   - type: Microsoft.Dynamics.CRM.invoice
+     description: "Order that has been billed."
+   - type: Microsoft.Dynamics.CRM.invoicedetail
+     description: "Line item in an invoice containing detailed billing information for a product."
+   - type: Microsoft.Dynamics.CRM.lead
+     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
+   - type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
+     description: "Sales price list for this customer to capture special pricing agreements for products, roles and categories."
+   - type: Microsoft.Dynamics.CRM.msdyn_actual
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_approval
+     description: "Container for approvals."
+   - type: Microsoft.Dynamics.CRM.msdyn_batchjob
+     description: "Placeholder for workflows used for machine learning scenarios."
+   - type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+     description: "Base entity for process Project Stages"
+   - type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+     description: "Base entity for process Invoice Process"
+   - type: Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember
+     description: "Characteristic requirement for team member"
+   - type: Microsoft.Dynamics.CRM.msdyn_contactpricelist
+     description: "Specific sales price list for this customer to capture special pricing agreements for products, roles, and categories."
+   - type: Microsoft.Dynamics.CRM.msdyn_contractlinedetailperformance
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule
+     description: "List of dates that shows when invoicing for this customer should be run. This list is used by the invoice creation job."
+   - type: Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue
+     description: "List of billing milestones and invoice amounts for this project contract line."
+   - type: Microsoft.Dynamics.CRM.msdyn_contractperformance
+     description: "Data related to contract and contractline performance"
+   - type: Microsoft.Dynamics.CRM.msdyn_dataexport
+     description: "Data export entity for the actual entity."
+   - type: Microsoft.Dynamics.CRM.msdyn_delegation
+     description: "Delegation of time, expense entities among users"
+   - type: Microsoft.Dynamics.CRM.msdyn_dimension
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_dimensionfieldname
+     description: "Provides ability to override the field name for pricing dimension if the entity doesn't follow the same naming convention for the pricing dimension field as the price entity."
+   - type: Microsoft.Dynamics.CRM.msdyn_estimate
+     description: "Labor, cost, and revenue estimates for a project."
+   - type: Microsoft.Dynamics.CRM.msdyn_estimateline
+     description: "Estimates on a per day timescale."
+   - type: Microsoft.Dynamics.CRM.msdyn_expense
+     description: "Main container that holds expense information."
+   - type: Microsoft.Dynamics.CRM.msdyn_expensecategory
+     description: "Main container that holds expense category information."
+   - type: Microsoft.Dynamics.CRM.msdyn_expensereceipt
+     description: "Table that contains expense receipt information."
+   - type: Microsoft.Dynamics.CRM.msdyn_fact
+     description: "Aggregated fact entity for actual transactions."
+   - type: Microsoft.Dynamics.CRM.msdyn_fieldcomputation
+     description: "Product properties whose values are to be considered as factors for quantity computation on a transaction line."
+   - type: Microsoft.Dynamics.CRM.msdyn_findworkevent
+     description: "Entity used for counting the number of times resources apply for open positions and other behavioral attributes of resources."
+   - type: Microsoft.Dynamics.CRM.msdyn_integrationjob
+     description: "Staging table for integration data"
+   - type: Microsoft.Dynamics.CRM.msdyn_integrationjobdetail
+     description: "Staging table for integration data lines"
+   - type: Microsoft.Dynamics.CRM.msdyn_invoicefrequency
+     description: "Setup entity for invoice schedules."
+   - type: Microsoft.Dynamics.CRM.msdyn_invoicefrequencydetail
+     description: "List of days expressed as dates or day of week for a specific invoice schedule template."
+   - type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
+     description: "Transactions that are associated to an invoice line."
+   - type: Microsoft.Dynamics.CRM.msdyn_journal
+     description: "Unposted business transactions, for example, time and expense."
+   - type: Microsoft.Dynamics.CRM.msdyn_journalline
+     description: "Unposted business transaction line details."
+   - type: Microsoft.Dynamics.CRM.msdyn_mlresultcache
+     description: "Cache for scored work items per resource that are returned from Azure Machine Learning."
+   - type: Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory
+     description: "List of roles that will be considered as costs when understanding the profit of an opportunity line (Deprecated in v3.0)"
+   - type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
+     description: "Sales estimate detail of an opportunity line (Deprecated in v3.0)"
+   - type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactioncategory
+     description: "List of transaction categories that will be considered as costs when computing the profit of an opportunity line (Deprecated in v3.0)"
+   - type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransactionclassificatio
+     description: "List of transaction classification heads, which are four broad cost categories of time, expense, material, and fee, that will be considered as costs when computing the profit of an opportunity line (Deprecated in v3.0)"
+   - type: Microsoft.Dynamics.CRM.msdyn_opportunitypricelist
+     description: "Sales price list that will used by the opportunity to set default sales prices on all project-based components such as time and expense."
+   - type: Microsoft.Dynamics.CRM.msdyn_orderlineresourcecategory
+     description: "List of roles that will be considered as costs when computing the profit of a project contract line."
+   - type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+     description: "Sales estimate detail of an project contract line."
+   - type: Microsoft.Dynamics.CRM.msdyn_orderlinetransactioncategory
+     description: "List of transaction categories that will be considered as costs when computing the profit of a project contract line."
+   - type: Microsoft.Dynamics.CRM.msdyn_orderlinetransactionclassification
+     description: "List of transaction classification heads, which are four broad cost categories of time, expense, material, and fee, that will be considered as costs when computing the profit of a project contract line."
+   - type: Microsoft.Dynamics.CRM.msdyn_orderpricelist
+     description: "Sales price list used on the contract to set default sales prices on all project-based components such as time and expense."
+   - type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+     description: "Division of the company or organization that has a specific cost price list associated to it."
+   - type: Microsoft.Dynamics.CRM.msdyn_processnotes
+     description: "Stores messages or notes relevant to an operation or process executed by an entity."
+   - type: Microsoft.Dynamics.CRM.msdyn_project
+     description: "Delivery entity in an engagement."
+   - type: Microsoft.Dynamics.CRM.msdyn_projectapproval
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_projectparameter
+     description: "List of settings that determine the behavior of the project-based service solution."
+   - type: Microsoft.Dynamics.CRM.msdyn_projectparameterpricelist
+     description: "Set of default cost and sales price lists that the company uses when there are no specific pricing agreements for cost and sales."
+   - type: Microsoft.Dynamics.CRM.msdyn_projectpricelist
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_projecttask
+     description: "Tasks related to project."
+   - type: Microsoft.Dynamics.CRM.msdyn_projecttaskdependency
+     description: "Dependency data between tasks."
+   - type: Microsoft.Dynamics.CRM.msdyn_projecttaskstatususer
+     description: "User status for project tasks (Deprecated in v3.0)."
+   - type: Microsoft.Dynamics.CRM.msdyn_projectteam
+     description: "Entity used to model relationship between resources and project teams."
+   - type: Microsoft.Dynamics.CRM.msdyn_projectteammembersignup
+     description: "Entity used to capture all resources that have applied for open position on projects."
+   - type: Microsoft.Dynamics.CRM.msdyn_projecttransactioncategory
+     description: "(Deprecated in v3.0)"
+   - type: Microsoft.Dynamics.CRM.msdyn_quotelineanalyticsbreakdown
+     description: "Reporting entity that is used to show quoted sales and estimated cost amounts by various dimensions."
+   - type: Microsoft.Dynamics.CRM.msdyn_quotelineinvoiceschedule
+     description: "List of dates on which invoicing for this customer should be run. This list is used by an invoice creation job."
+   - type: Microsoft.Dynamics.CRM.msdyn_quotelineresourcecategory
+     description: "List of roles that will be considered as costs when understanding the profit of a quote line."
+   - type: Microsoft.Dynamics.CRM.msdyn_quotelinescheduleofvalue
+     description: "List of billing milestones and invoice amounts for this quote line."
+   - type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
+     description: "Sales estimate detail of a quote line."
+   - type: Microsoft.Dynamics.CRM.msdyn_quotelinetransactioncategory
+     description: "List of transaction categories that will be considered as costs when computing the profit of a quote line."
+   - type: Microsoft.Dynamics.CRM.msdyn_quotelinetransactionclassification
+     description: "List of transaction classification heads, the four broad cost classifications of time, expense, material, and fee, that will be considered as costs when computing the profit of a quote line."
+   - type: Microsoft.Dynamics.CRM.msdyn_quotepricelist
+     description: "Sales price list that will used by the quote to default sales prices on all project-based components such as time and expense."
+   - type: Microsoft.Dynamics.CRM.msdyn_resourceassignment
+     description: "Entity used to keep track of resource assignment header information  on tasks."
+   - type: Microsoft.Dynamics.CRM.msdyn_resourceassignmentdetail
+     description: "Entity used to keep track of resource assignment details on tasks. "
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcecategorymarkuppricelevel
+     description: "List of markups for prices by role on a price list."
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
+     description: "List of prices by role on a price list."
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcerequest
+     description: "Entity that wraps the resource requirement to capture the type of resources, skills, and location required."
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+     description: "Entity used to track the high-level information about resource requirements."
+   - type: Microsoft.Dynamics.CRM.msdyn_rolecompetencyrequirement
+     description: "Entity used  to associate skills in a role."
+   - type: Microsoft.Dynamics.CRM.msdyn_roleutilization
+     description: "Gathers data about utilization per role to display in a chart"
+   - type: Microsoft.Dynamics.CRM.msdyn_timeentry
+     description: "Entity used  for time entry."
+   - type: Microsoft.Dynamics.CRM.msdyn_timeoffcalendar
+     description: "Relationship table for time off calendar entries."
+   - type: Microsoft.Dynamics.CRM.msdyn_transactioncategory
+     description: "Business transaction categories to classify costs and revenue."
+   - type: Microsoft.Dynamics.CRM.msdyn_transactioncategoryclassification
+     description: "Entity used to associate a category broadly as time, expense or material."
+   - type: Microsoft.Dynamics.CRM.msdyn_transactioncategoryhierarchyelement
+     description: "Hierarchical relationship of the transaction category with a root node."
+   - type: Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel
+     description: "List of prices by category on a price list."
+   - type: Microsoft.Dynamics.CRM.msdyn_transactionconnection
+     description: "System entity used to establish connections between the cost, unbilled revenue, and billed revenue components of a transaction as they happen."
+   - type: Microsoft.Dynamics.CRM.msdyn_transactionorigin
+     description: "System entity used to record the source of a project cost or sales actual."
+   - type: Microsoft.Dynamics.CRM.msdyn_transactiontype
+     description: "Broad classification, such as time or expense, and the context such cost, unbilled revenue, or billed revenue of a project actual."
+   - type: Microsoft.Dynamics.CRM.msdyn_userworkhistory
+     description: "Entity used to look up resources based on demonstrated skills."
+   - type: Microsoft.Dynamics.CRM.msdyn_workhourtemplate
+     description: "Template where resource working hours can be saved and reused."
+   - type: Microsoft.Dynamics.CRM.opportunity
+     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
+   - type: Microsoft.Dynamics.CRM.opportunityproduct
+     description: "Association between an opportunity and a product."
+   - type: Microsoft.Dynamics.CRM.pricelevel
+     description: "Entity that defines pricing levels."
+   - type: Microsoft.Dynamics.CRM.product
+     description: "Information about products and their pricing information."
+   - type: Microsoft.Dynamics.CRM.productpricelevel
+     description: "Information about how to price a product in the specified price level, including pricing method, rounding option, and discount type based on a specified product unit."
+   - type: Microsoft.Dynamics.CRM.quote
+     description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
+   - type: Microsoft.Dynamics.CRM.quotedetail
+     description: "Product line item in a quote. The details include such information as product ID, description, quantity, and cost."
+   - type: Microsoft.Dynamics.CRM.ratingmodel
+     description: "Represents a model to evaluate skills or other related entities."
+   - type: Microsoft.Dynamics.CRM.ratingvalue
+     description: "A unique value associated with a rating model that allows providing a user friendly rating value."
+   - type: Microsoft.Dynamics.CRM.salesorder
+     description: "Quote that has been accepted."
+   - type: Microsoft.Dynamics.CRM.salesorderdetail
+     description: "Line item in a sales order."
+   - type: Microsoft.Dynamics.CRM.systemuser
+     description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_ReadEstimateLines
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_RefreshProjectActuals
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_UpdateOrderLineResourceCategory
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_UpdateOrderLineTransactionCategory
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_UpdateQuoteLineResourceCategory
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_UpdateQuoteLineTransactionCategory
+     description: ""
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

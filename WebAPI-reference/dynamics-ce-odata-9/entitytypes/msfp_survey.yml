@@ -1,0 +1,368 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msfp_survey
+name: "msfp_survey"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 7522c6f8-bcd6-4bb7-9dee-1a7dd2f8ae45
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msfp_survey entitytype."
+description: "Set of questions to collect feedback."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msfp_surveies"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Customer Voice survey
+  primary_key: msfp_surveyid
+  primary_name_attribute: msfp_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msfp_acceptanonymousresponses
+      type: Edm.Boolean
+      display_name: "Accept anonymous responses"
+      description: "Specifies if responses can be accepted from anonymous respondents."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msfp_anonymousurl
+      type: Edm.String
+      display_name: "Anonymous URL"
+      description: "Link to the anonymous survey response."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_description
+      type: Edm.String
+      display_name: "Description"
+      description: "Description of the survey."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_embedcode
+      type: Edm.String
+      display_name: "Embed code for the survey"
+      description: "Embed code for the survey"
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_friendlyname
+      type: Edm.String
+      display_name: "Friendly name"
+      description: "Friendly name of the survey."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_otherproperties
+      type: Edm.String
+      display_name: "Other properties"
+      description: "Other survey properties in JSON format."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_permanentid
+      type: Edm.String
+      display_name: "Permanent ID"
+      description: "Permanent ID is auto-generated for a new survey. For a copied survey, the ID is carried over from the original survey."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_publishedon
+      type: Edm.DateTimeOffset
+      display_name: "Published on"
+      description: "Date and time on which the survey was published."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_sourcesurveyidentifier
+      type: Edm.String
+      display_name: "Source survey identifier"
+      description: "Unique identifier for the survey in the source application."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_sourcesurveymodifieddate
+      type: Edm.DateTimeOffset
+      display_name: "Source survey modified date"
+      description: "Date when a survey is modified in source."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_sourcesurveyversion
+      type: Edm.String
+      display_name: "Source survey version"
+      description: "Version number of the survey."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_surveyid
+      type: Edm.Guid
+      display_name: "Survey"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_surveysource
+      type: Edm.String
+      display_name: "Survey source"
+      description: "Source through which the survey was created."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_surveyurl
+      type: Edm.String
+      display_name: "Survey URL"
+      description: "Link to the survey in Customer Voice."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_variables
+      type: Edm.String
+      display_name: "Variables"
+      description: "Stores survey variables and their default values in JSON format."
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Survey"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Survey"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 100000000
+          label: "Draft"
+        - value: 100000003
+          label: "Published"
+        - value: 2
+          label: "Inactive"
+        - value: 100000002
+          label: "Deleted"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_inspection_value
+    single_valued_navigation_property:
+    - msdyn_Inspection
+    description: "Unique identifier for Inspection associated with Survey."
+  - name: _msfp_project_value
+    single_valued_navigation_property:
+    - msfp_project
+    description: "Project associated with the survey."
+  - name: _msfp_publishedby_value
+    single_valued_navigation_property:
+    - msfp_publishedby
+    description: "User who published the survey."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_survey_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_survey_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_survey_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_survey_modifiedonbehalfby
+  - name: msdyn_Inspection
+    type: Microsoft.Dynamics.CRM.msdyn_inspection
+    partner: msdyn_msdyn_inspection_msfp_survey_Inspection
+  - name: msfp_project
+    type: Microsoft.Dynamics.CRM.msfp_project
+    partner: msfp_msfp_project_msfp_survey_project
+  - name: msfp_publishedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: msfp_systemuser_msfp_survey_publishedby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msfp_survey
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msfp_survey
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msfp_survey
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msfp_survey
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msfp_msfp_survey_msfp_alert_survey
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: msfp_survey
+  - name: msfp_msfp_survey_msfp_emailtemplate_surveyid
+    type: Microsoft.Dynamics.CRM.msfp_emailtemplate
+    partner: msfp_survey
+  - name: msfp_msfp_survey_msfp_fileresponse_survey
+    type: Microsoft.Dynamics.CRM.msfp_fileresponse
+    partner: msfp_survey
+  - name: msfp_msfp_survey_msfp_question_Survey
+    type: Microsoft.Dynamics.CRM.msfp_question
+    partner: msfp_Survey
+  - name: msfp_msfp_survey_msfp_surveyinvite_surveyid
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: msfp_surveyid_msfp_surveyinvite
+  - name: msfp_msfp_survey_msfp_surveyreminder_survey
+    type: Microsoft.Dynamics.CRM.msfp_surveyreminder
+    partner: msfp_survey
+  - name: msfp_msfp_survey_msfp_surveyresponse_surveyid
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: msfp_surveyid_msfp_surveyresponse
+  - name: msfp_survey_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msfp_survey
+  - name: msfp_survey_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msfp_survey
+  - name: msfp_survey_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msfp_survey
+  - name: msfp_survey_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msfp_survey
+  - name: msfp_survey_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msfp_survey
+  - name: msfp_survey_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msfp_survey
+  - name: msfp_survey_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msfp_survey
+  - name: msfp_survey_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msfp_survey
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msfp_survey entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msfp_survey entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.MicrosoftFormsPro
+    description: "Create and send surveys to your customers or employees and collect their valuable feedback about your products or services."
+  - type: Microsoft.Dynamics.CRM.msdyn_Inspections
+    description: "Enable Inspections in Dynamics 365."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

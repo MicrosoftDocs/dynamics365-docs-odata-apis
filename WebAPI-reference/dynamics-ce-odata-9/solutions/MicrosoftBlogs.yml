@@ -1,0 +1,35 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.MicrosoftBlogs
+name: "Dynamics 365 Portals - Blogs"
+type: solution
+metadata: 
+  title: "Dataverse Dynamics 365 Portals - Blogs Solution Reference | MicrosoftDocs"
+  ms.date: "01/20/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: f7d360de-7db5-478b-8fd5-f1f505792716
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Dynamics 365 Portals - Blogs Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Blogs extend portals with blogging features, suitable for multi-author corporate blogs."
+ unique_name: MicrosoftBlogs
+ version: "9.0.12.10"
+ customization_prefix: adx
+# This solution includes no entities.
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

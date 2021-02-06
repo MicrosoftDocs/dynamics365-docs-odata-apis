@@ -3,27 +3,41 @@ uid: Microsoft.Dynamics.CRM.SolutionUpgradeInfrastructure
 name: "Solution Upgrade Infrastructure"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Solution Upgrade Infrastructure Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Solution Upgrade Infrastructure Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 0598839b-9719-4486-9bb7-be4c5f58a609
-  author: "KumarVivek"
+  ms.assetid: 25fc2a55-cae5-4752-9a6c-64db2d8a5a17
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Solution Upgrade Infrastructure Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Solution Upgrade Infrastructure Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Contains upgrade logs for some solutions"
  unique_name: SolutionUpgradeInfrastructure
  version: "2.6.0.0"
  customization_prefix: msdyn
-# This solution includes no entities.
-# This solution includes no actions.
-# This solution has no remarks.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_databaseversion
+     description: "Stores the latest database version for a solution, for internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_upgraderun
+     description: "Contains logging information about a run of a Package Deployer package that upgrades a solution"
+   - type: Microsoft.Dynamics.CRM.msdyn_upgradestep
+     description: "One step during an upgrade, such as a single method or stored procedure."
+   - type: Microsoft.Dynamics.CRM.msdyn_upgradeversion
+     description: "Information about upgrading from one release to the next release"
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_UpgradeTelemetry
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

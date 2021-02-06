@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RemoveListMembersList
 name: "RemoveListMembersList"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RemoveListMembersList Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 9b43eecc-f837-4e5b-bebb-e287c066e281
-  author: "KumarVivek"
+  ms.assetid: afda05fe-6664-4798-8e28-ee8dc3d03f27
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RemoveListMembersList Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse RemoveListMembersList Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -38,10 +38,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.list
     displayName: Marketing List
     description: "Group of existing or potential customers created for a marketing campaign or other sales purposes."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RelationshipType
 name: "RelationshipType"
 type: enumtype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RelationshipType EnumType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse RelationshipType EnumType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ba7b559a-8642-4ced-8709-0cf1ae3b72f0
-  author: "KumarVivek"
+  author: "kumarVivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API RelationshipType ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API RelationshipType ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "Specifies the type of entity relationship. " 
 members:
@@ -34,10 +34,10 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.DependentRelationship
     used_as: Property
-# This enum type has no remarks.
+# There are no remarks for this enum type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -1,0 +1,310 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_problematicassetfeedback
+name: "msdyn_problematicassetfeedback"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 7b32cc43-16d8-4c9a-8f8f-81f092dbcc9c
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_problematicassetfeedback entitytype."
+description: "Problematic asset feedback"
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_problematicassetfeedbacks"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Problematic Asset Feedback
+  primary_key: msdyn_problematicassetfeedbackid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_additionalfeedback
+      type: Edm.String
+      display_name: "Additional Feedback"
+      description: "Text value of comments for other feedback"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_assetid
+      type: Edm.String
+      display_name: "Asset Id"
+      description: "Unique identifier for customer asset"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the problematic asset feedback."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_numberofdays
+      type: Edm.Int32
+      display_name: "Number Of Days"
+      description: "Optionset value of future days from current"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "0"
+        - value: 192350001
+          label: "15"
+        - value: 192350002
+          label: "30"
+        - value: 192350003
+          label: "60"
+        - value: 192350004
+          label: "90"
+    - name: msdyn_otherfeedback
+      type: Edm.Int32
+      display_name: "Other Feedback"
+      description: "Flag value indicating if user like or dislike the asset suggestion for other reasons"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 700610000
+          label: "Like"
+        - value: 700610001
+          label: "Dislike"
+    - name: msdyn_problematicassetfeedback
+      type: Edm.Int32
+      display_name: "Problematic Asset Feedback"
+      description: "Flag value indicating user like/dislike the asset to be predicted as problematic asset"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 700610000
+          label: "Like"
+        - value: 700610001
+          label: "Dislike"
+    - name: msdyn_problematicassetfeedbackid
+      type: Edm.Guid
+      display_name: "Problematic Asset Feedback"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_problematicassetid
+      type: Edm.String
+      display_name: "Problematic Asset Id"
+      description: "Unique identifier for problematic asset"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_suggestion
+      type: Edm.Int32
+      display_name: "Suggestion"
+      description: "Optionset value of suggestion for customer asset"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 700610000
+          label: "Repair"
+        - value: 700610001
+          label: "Replace"
+        - value: 700610002
+          label: "None"
+    - name: msdyn_suggestionfeedback
+      type: Edm.Int32
+      display_name: "Suggestion Feedback"
+      description: "Flag value indicating if user like/dislike the suggestion for problematic asset"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 700610000
+          label: "Like"
+        - value: 700610001
+          label: "Dislike"
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Problematic Asset Feedback"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Problematic Asset Feedback"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_problematicassetfeedback_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_problematicassetfeedback_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_problematicassetfeedback_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_problematicassetfeedback_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_problematicassetfeedback
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_problematicassetfeedback
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_problematicassetfeedback
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_problematicassetfeedback
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_problematicassetfeedback_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_problematicassetfeedback
+  - name: msdyn_problematicassetfeedback_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_problematicassetfeedback
+  - name: msdyn_problematicassetfeedback_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_problematicassetfeedback
+  - name: msdyn_problematicassetfeedback_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_problematicassetfeedback
+  - name: msdyn_problematicassetfeedback_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_problematicassetfeedback
+  - name: msdyn_problematicassetfeedback_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_problematicassetfeedback
+  - name: msdyn_problematicassetfeedback_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_problematicassetfeedback
+  - name: msdyn_problematicassetfeedback_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_problematicassetfeedback
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_problematicassetfeedback entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_problematicassetfeedback entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+# This entity has no remarks.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

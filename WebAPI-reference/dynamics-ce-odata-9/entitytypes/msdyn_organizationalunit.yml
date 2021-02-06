@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_organizationalunit
 name: "msdyn_organizationalunit"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_organizationalunit EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f9a6c2cd-0f33-418a-84a2-88be90b038bf
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_organizationalunit entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_organizationalunit entitytype."
 description: "Division of the company or organization that has a specific cost price list associated to it."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_organizationalunits"
@@ -188,6 +188,9 @@ collection_valued_navigation_properties:
   - name: msdyn_msdyn_organizationalunit_msdyn_projectteam_organizationalunit
     type: Microsoft.Dynamics.CRM.msdyn_projectteam
     partner: msdyn_organizationalunit
+  - name: msdyn_msdyn_organizationalunit_msdyn_resourcecategorymarkuppricelevel_organizationalunit
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorymarkuppricelevel
+    partner: msdyn_organizationalunit
   - name: msdyn_organizationalunit_actual
     type: Microsoft.Dynamics.CRM.msdyn_actual
     partner: msdyn_ResourceOrganizationalUnitId
@@ -221,6 +224,9 @@ collection_valued_navigation_properties:
   - name: msdyn_organizationalunit_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_organizationalunit
+  - name: msdyn_organizationalunit_msdyn_projecttask_OrganizationalUnitPricingDimension
+    type: Microsoft.Dynamics.CRM.msdyn_projecttask
+    partner: msdyn_OrganizationalUnitPricingDimension
   - name: msdyn_organizationalunit_opportunity
     type: Microsoft.Dynamics.CRM.opportunity
     partner: msdyn_ContractOrganizationalUnitId
@@ -282,12 +288,20 @@ solutions:
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_24
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

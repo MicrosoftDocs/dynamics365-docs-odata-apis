@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.BulkDetectDuplicates
 name: "BulkDetectDuplicates"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement BulkDetectDuplicates Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 73e65b5f-f964-4b50-a759-b11ce05111b8
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the BulkDetectDuplicates Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse BulkDetectDuplicates Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Submits an asynchronous system job that detects and logs multiple duplicate records."
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -66,10 +66,10 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.BulkDetectDuplicatesResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

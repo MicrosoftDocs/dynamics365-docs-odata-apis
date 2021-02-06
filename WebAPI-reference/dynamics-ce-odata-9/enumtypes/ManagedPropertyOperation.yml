@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ManagedPropertyOperation
 name: "ManagedPropertyOperation"
 type: enumtype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ManagedPropertyOperation EnumType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse ManagedPropertyOperation EnumType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 756b0e55-880e-404e-9f5c-fe55e865d43e
-  author: "KumarVivek"
+  author: "kumarVivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API ManagedPropertyOperation ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API ManagedPropertyOperation ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "For internal use only." 
 members:
@@ -43,10 +43,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.ManagedPropertyMetadata
     used_as: Property
-# This enum type has no remarks.
+# There are no remarks for this enum type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

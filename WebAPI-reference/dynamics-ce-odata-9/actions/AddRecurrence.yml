@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AddRecurrence
 name: "AddRecurrence"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AddRecurrence Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 46b8f960-b8d1-4ede-8904-495737d9631f
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the AddRecurrence Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse AddRecurrence Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Adds recurrence information to an existing appointment. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -39,10 +39,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.recurringappointmentmaster
     displayName: Recurring Appointment
     description: "The Master appointment of a recurring appointment series."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

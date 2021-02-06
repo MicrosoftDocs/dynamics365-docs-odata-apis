@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
 name: "msdyn_purchaseorderproduct"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_purchaseorderproduct EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ce53322d-6d14-4f89-a1c1-e0cbbea689a6
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_purchaseorderproduct entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_purchaseorderproduct entitytype."
 description: "Record products to be ordered on purchase order"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_purchaseorderproducts"
@@ -210,7 +210,7 @@ lookup_properties:
   - name: _createdonbehalfby_value
     single_valued_navigation_property:
     - createdonbehalfby
-    description: "Shows who created the record on behalf of another user."
+    description: "Unique identifier of the delegate user who created the record."
   - name: _modifiedby_value
     single_valued_navigation_property:
     - modifiedby
@@ -218,7 +218,7 @@ lookup_properties:
   - name: _modifiedonbehalfby_value
     single_valued_navigation_property:
     - modifiedonbehalfby
-    description: "Shows who last updated the record on behalf of another user."
+    description: "Unique identifier of the delegate user who modified the record."
   - name: _msdyn_associatetobooking_value
     single_valued_navigation_property:
     - msdyn_associatetobooking
@@ -350,6 +350,15 @@ collection_valued_navigation_properties:
   - name: msdyn_purchaseorderproduct_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_msdyn_purchaseorderproduct_letter
+  - name: msdyn_purchaseorderproduct_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_purchaseorderproduct_li_inmail
+  - name: msdyn_purchaseorderproduct_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_purchaseorderproduct_li_message
+  - name: msdyn_purchaseorderproduct_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_purchaseorderproduct_li_pointdrivepresentationviewed
   - name: msdyn_purchaseorderproduct_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_purchaseorderproduct
@@ -359,6 +368,15 @@ collection_valued_navigation_properties:
   - name: msdyn_purchaseorderproduct_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_msdyn_purchaseorderproduct_msdyn_bookingalert
+  - name: msdyn_purchaseorderproduct_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_purchaseorderproduct_msfp_alert
+  - name: msdyn_purchaseorderproduct_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_purchaseorderproduct_msfp_surveyinvite
+  - name: msdyn_purchaseorderproduct_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_purchaseorderproduct_msfp_surveyresponse
   - name: msdyn_purchaseorderproduct_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_purchaseorderproduct_phonecall
@@ -407,10 +425,14 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.FieldServiceCommon
+    description: "This solution contains components that are prerequisites for both the Field Service solution, as well as for Supply Chain solutions for Finance and Operations integration."
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

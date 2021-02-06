@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.goalrollupquery
 name: "goalrollupquery"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement goalrollupquery EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 42684f6f-a130-4985-a00b-9b7875ce196c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the goalrollupquery entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse goalrollupquery entitytype."
 description: "Query that is used to filter the results of the goal rollup."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/goalrollupqueries"
@@ -218,6 +218,9 @@ collection_valued_navigation_properties:
   - name: GoalRollupQuery_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_goalrollupquery_syncerror
+  - name: msdyn_goalrollupquery_msdyn_forecastdefinition_rollupquery
+    type: Microsoft.Dynamics.CRM.msdyn_forecastdefinition
+    partner: msdyn_rollupquery
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the goalrollupquery entity type."
@@ -243,10 +246,10 @@ solutions:
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

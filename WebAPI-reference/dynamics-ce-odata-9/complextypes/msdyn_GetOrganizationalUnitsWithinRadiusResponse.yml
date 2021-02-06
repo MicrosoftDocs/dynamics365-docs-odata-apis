@@ -1,0 +1,58 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_GetOrganizationalUnitsWithinRadiusResponse
+name: "msdyn_GetOrganizationalUnitsWithinRadiusResponse"
+type: complextype
+metadata: 
+  title: "Dataverse msdyn_GetOrganizationalUnitsWithinRadiusResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 24f69ef6-912d-46ec-b1c3-22ec0728539e
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API msdyn_GetOrganizationalUnitsWithinRadiusResponse ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "" 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: DistanceUnit
+    type: Edm.Int32
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+  - name: ExceptionMessage
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
+navigation_properties:
+  description: "The navigation properties of a complex type contain references to an entity type or a collection of entity types."
+  property_items:
+  - name: OrganizationalUnitsWithinRadius
+    type: mscrm.crmbaseentity
+    nullable: false
+    description: ""
+    iscollection: true
+usedby:
+  description: "The following use the msdyn_GetOrganizationalUnitsWithinRadiusResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.msdyn_GetOrganizationalUnitsWithinRadius
+    used_as: ReturnType
+# There are no remarks for this complex type.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

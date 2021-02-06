@@ -3,17 +3,17 @@ uid: Microsoft.Dynamics.CRM.ImportSolution
 name: "ImportSolution"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ImportSolution Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fcae8173-c927-45a0-9787-e52f0751028c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the ImportSolution Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse ImportSolution Action."
 namespace: Microsoft.Dynamics.CRM
-description: "Imports a solution.  "
+description: "Imports a solution."
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
@@ -54,34 +54,44 @@ parameters:
     type: Edm.Boolean
     nullable: true
     unicode: true
-    description: ""
+    description: "Indicates whether to import the solution as a holding solution staged for upgrade."
   - name: SkipQueueRibbonJob
     type: Edm.Boolean
     nullable: true
     unicode: true
-    description: ""
+    description: "For internal use only."
   - name: LayerDesiredOrder
     type: Microsoft.Dynamics.CRM.LayerDesiredOrder
     nullable: true
     unicode: true
-    description: ""
+    description: "For internal use only."
   - name: AsyncRibbonProcessing
     type: Edm.Boolean
     nullable: true
     unicode: true
-    description: ""
+    description: "For internal use only."
   - name: ComponentParameters
     type: Microsoft.Dynamics.CRM.crmbaseentity
     nullable: false
     unicode: true
-    description: ""
+    description: "List of entities to overwrite values from the solution. Currently used for environment variable values and connection references."
+  - name: IsTemplateMode
+    type: Edm.Boolean
+    nullable: true
+    unicode: true
+    description: "For internal use only."
+  - name: TemplateSuffix
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: "For internal use only."
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.subscriptionmanuallytrackedobject
 name: "subscriptionmanuallytrackedobject"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement subscriptionmanuallytrackedobject EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4ba6c822-29ae-42e5-bb56-cdb973099be6
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the subscriptionmanuallytrackedobject entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse subscriptionmanuallytrackedobject entitytype."
 description: "For internal use only."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/subscriptionmanuallytrackedobjects"
@@ -71,10 +71,10 @@ properties:
 # This entity has no derived entities.
 # This entity has no operations
 # This entity is not included in any solutions.
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

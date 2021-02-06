@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
 name: "msdyn_inventoryjournal"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_inventoryjournal EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6b07acac-b8a9-4c34-9c96-fda8ebae14c1
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_inventoryjournal entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_inventoryjournal entitytype."
 description: "Inventory change tracking"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_inventoryjournals"
@@ -332,6 +332,15 @@ collection_valued_navigation_properties:
   - name: msdyn_inventoryjournal_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_msdyn_inventoryjournal_letter
+  - name: msdyn_inventoryjournal_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_inventoryjournal_li_inmail
+  - name: msdyn_inventoryjournal_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_inventoryjournal_li_message
+  - name: msdyn_inventoryjournal_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_inventoryjournal_li_pointdrivepresentationviewed
   - name: msdyn_inventoryjournal_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_inventoryjournal
@@ -341,6 +350,15 @@ collection_valued_navigation_properties:
   - name: msdyn_inventoryjournal_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_msdyn_inventoryjournal_msdyn_bookingalert
+  - name: msdyn_inventoryjournal_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_inventoryjournal_msfp_alert
+  - name: msdyn_inventoryjournal_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_inventoryjournal_msfp_surveyinvite
+  - name: msdyn_inventoryjournal_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_inventoryjournal_msfp_surveyresponse
   - name: msdyn_inventoryjournal_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_inventoryjournal_phonecall
@@ -389,10 +407,12 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

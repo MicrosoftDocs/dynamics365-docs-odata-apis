@@ -1,0 +1,49 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.MetadataExtension
+name: "Metadata Extension"
+type: solution
+metadata: 
+  title: "Dataverse Metadata Extension Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 46615594-00f1-4588-acca-c891ed670dcb
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Metadata Extension Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+# This solution has no description.
+ unique_name: MetadataExtension
+ version: "1.0.0.13"
+ customization_prefix: 
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.attribute
+     description: ""
+   - type: Microsoft.Dynamics.CRM.entity
+     description: ""
+   - type: Microsoft.Dynamics.CRM.entityrelationship
+     description: ""
+   - type: Microsoft.Dynamics.CRM.optionset
+     description: ""
+   - type: Microsoft.Dynamics.CRM.relationship
+     description: ""
+   - type: Microsoft.Dynamics.CRM.relationshipattribute
+     description: "Stores relationship attributes mapping for Multi-predicate relationship"
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

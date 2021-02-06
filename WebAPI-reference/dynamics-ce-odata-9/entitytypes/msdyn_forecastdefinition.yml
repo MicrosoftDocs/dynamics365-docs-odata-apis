@@ -1,0 +1,394 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_forecastdefinition
+name: "msdyn_forecastdefinition"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: b3ff78cc-12a6-4231-96a9-38ec56ead33c
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_forecastdefinition entitytype."
+description: "Defines the parameters used for forecasting."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_forecastdefinitions"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Forecast definition
+  primary_key: msdyn_forecastdefinitionid
+  primary_name_attribute: msdyn_forecastdefinitionname
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_fiscalmonth
+      type: Edm.Int32
+      display_name: "Fiscal month"
+      description: "Select the fiscal month for the forecast definition."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "January"
+        - value: 1
+          label: "February"
+        - value: 2
+          label: "March"
+        - value: 3
+          label: "April"
+        - value: 4
+          label: "May"
+        - value: 5
+          label: "June"
+        - value: 6
+          label: "July"
+        - value: 7
+          label: "August"
+        - value: 8
+          label: "September"
+        - value: 9
+          label: "October"
+        - value: 10
+          label: "November"
+        - value: 11
+          label: "December"
+    - name: msdyn_fiscalquarter
+      type: Edm.Int32
+      display_name: "Fiscal quarter"
+      description: "Select the fiscal quarter for the forecast definition."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Q1"
+        - value: 1
+          label: "Q2"
+        - value: 2
+          label: "Q3"
+        - value: 3
+          label: "Q4"
+    - name: msdyn_fiscalyear
+      type: Edm.Int32
+      display_name: "Fiscal year"
+      description: "Select the fiscal year for the forecast definition."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 22
+          label: "FY2040"
+        - value: 21
+          label: "FY2039"
+        - value: 20
+          label: "FY2038"
+        - value: 19
+          label: "FY2037"
+        - value: 18
+          label: "FY2036"
+        - value: 17
+          label: "FY2035"
+        - value: 16
+          label: "FY2034"
+        - value: 15
+          label: "FY2033"
+        - value: 14
+          label: "FY2032"
+        - value: 13
+          label: "FY2031"
+        - value: 12
+          label: "FY2030"
+        - value: 11
+          label: "FY2029"
+        - value: 10
+          label: "FY2028"
+        - value: 9
+          label: "FY2027"
+        - value: 8
+          label: "FY2026"
+        - value: 7
+          label: "FY2025"
+        - value: 6
+          label: "FY2024"
+        - value: 5
+          label: "FY2023"
+        - value: 4
+          label: "FY2022"
+        - value: 3
+          label: "FY2021"
+        - value: 2
+          label: "FY2020"
+        - value: 1
+          label: "FY2019"
+        - value: 0
+          label: "FY2018"
+    - name: msdyn_forecastdefinitionid
+      type: Edm.Guid
+      display_name: "Forecast definition"
+      description: "Unique identifier for the forecast definition."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_forecastdefinitionname
+      type: Edm.String
+      display_name: "Forecast name"
+      description: "Name of the forecast definition."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_forecastperiodtype
+      type: Edm.Int32
+      display_name: "Forecast period"
+      description: "Select the type of period for which the forecast must be generated."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Monthly"
+        - value: 1
+          label: "Quarterly"
+        - value: 2
+          label: "Custom"
+    - name: msdyn_numberofrecurrences
+      type: Edm.Int32
+      display_name: "Number of recurrences"
+      description: "Indicate the number of recurrences that the forecast will be generated."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_quotasource
+      type: Edm.Int32
+      display_name: "Quota source"
+      description: "Select whether the quota for the forecast must to be taken from a goal or entered manually."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Goal-based"
+        - value: 192350001
+          label: "Manual"
+    - name: msdyn_validfrom
+      type: Edm.Date
+      display_name: "Valid from"
+      description: "Shows the date from which the forecast is applicable. The date and time are displayed in the time zone selected in Dynamics 365 Customer Engagement apps options."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_validto
+      type: Edm.Date
+      display_name: "Valid to"
+      description: "Shows the date till which the forecast is applicable. The date and time are displayed in the time zone selected in Dynamics 365 Customer Engagement apps options."
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Forecast Definition"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Draft"
+        - value: 1
+          label: "Published"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status reason"
+      description: "Reason for the status of the Forecast Definition"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Draft"
+        - value: 2
+          label: "In progress"
+        - value: 3
+          label: "Success"
+        - value: 4
+          label: "Failed"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_metricid_value
+    single_valued_navigation_property:
+    - msdyn_metricid
+    description: "Select metric to attach with forecast"
+  - name: _msdyn_rollupquery_value
+    single_valued_navigation_property:
+    - msdyn_rollupquery
+    description: "Select the query that will be used to calculate data for the rollup field."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_forecastdefinition_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_forecastdefinition_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_forecastdefinition_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_forecastdefinition_modifiedonbehalfby
+  - name: msdyn_metricid
+    type: Microsoft.Dynamics.CRM.metric
+    partner: msdyn_metric_msdyn_forecastdefinition_metricid
+  - name: msdyn_rollupquery
+    type: Microsoft.Dynamics.CRM.goalrollupquery
+    partner: msdyn_goalrollupquery_msdyn_forecastdefinition_rollupquery
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_forecastdefinition
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_forecastdefinition
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_forecastdefinition
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_forecastdefinition
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_forecastdefinition_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_forecastdefinition
+  - name: msdyn_forecastdefinition_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_forecastdefinition
+  - name: msdyn_forecastdefinition_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_forecastdefinition
+  - name: msdyn_forecastdefinition_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_forecastdefinition
+  - name: msdyn_forecastdefinition_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_forecastdefinition
+  - name: msdyn_forecastdefinition_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_forecastdefinition
+  - name: msdyn_forecastdefinition_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_forecastdefinition
+  - name: msdyn_forecastdefinition_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_forecastdefinition
+  - name: msdyn_msdyn_forecastdefinition_msdyn_forecastinstance
+    type: Microsoft.Dynamics.CRM.msdyn_forecastinstance
+    partner: msdyn_forecastdefinitionid
+  - name: msdyn_msdyn_forecastdefinition_msdyn_forecastrecurrence
+    type: Microsoft.Dynamics.CRM.msdyn_forecastrecurrence
+    partner: msdyn_ForecastDefinitionId
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_forecastdefinition entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_forecastdefinition entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_Forecasting
+    description: "An extension that helps sales managers and sales people to predict risks in the revenue spotting pipeline."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

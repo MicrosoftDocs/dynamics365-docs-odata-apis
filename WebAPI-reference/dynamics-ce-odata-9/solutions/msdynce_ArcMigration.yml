@@ -1,0 +1,41 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_ArcMigration
+name: "Automatic Record Creation Migration Plugin for Dynamics 365 Customer Service application"
+type: solution
+metadata: 
+  title: "Dataverse Automatic Record Creation Migration Plugin for Dynamics 365 Customer Service application Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 7249f7a7-c39f-45a1-a8af-d3e713fba5aa
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Automatic Record Creation Migration Plugin for Dynamics 365 Customer Service application Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+# This solution has no description.
+ unique_name: msdynce_ArcMigration
+ version: "9.1.20122.1015"
+ customization_prefix: msdyn
+# This solution includes no entities.
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_MigrateArc
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_MigrateArcProactiveRun
+     description: ""
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

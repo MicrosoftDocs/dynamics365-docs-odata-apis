@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.environmentvariabledefinition
 name: "environmentvariabledefinition"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement environmentvariabledefinition EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: c642b9a6-f695-461c-aff0-c6325430cfb8
-  author: "KumarVivek"
+  ms.assetid: b369907e-767d-4ef4-901c-fbc1ce792f95
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the environmentvariabledefinition entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse environmentvariabledefinition entitytype."
 description: "Contains information about the settable variable: its type, default value, and etc."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/environmentvariabledefinitions"
@@ -28,6 +28,12 @@ namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
   property_items:
+    - name: apiid
+      type: Edm.String
+      display_name: "API Id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: componentstate
       type: Edm.Int32
       display_name: "Component State"
@@ -143,6 +149,12 @@ properties:
       description: "For internal use only."
       iscomputed: false
       isreadonly: true
+    - name: parameterkey
+      type: Edm.String
+      display_name: "Parameter Key"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: schemaname
       type: Edm.String
       display_name: "Schema Name"
@@ -199,7 +211,7 @@ properties:
         - value: 100000003
           label: "JSON"
         - value: 100000004
-          label: "Connection reference"
+          label: "Data Source"
     - name: utcconversiontimezonecode
       type: Edm.Int32
       display_name: "UTC Conversion Time Zone Code"
@@ -221,6 +233,8 @@ properties:
 lookup_properties:
   description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
   property_items:
+  - name: _connectionreferenceid_value
+    description: "Unique identifier for Connection Reference associated with Environment Variable Definition."
   - name: _createdby_value
     single_valued_navigation_property:
     - createdby
@@ -253,6 +267,10 @@ lookup_properties:
     single_valued_navigation_property:
     - owninguser
     description: "Unique identifier for the user that owns the record."
+  - name: _parentdefinitionid_value
+    single_valued_navigation_property:
+    - ParentDefinitionId
+    description: "Unique identifier for Environment Variable Definition associated with Environment Variable Definition."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
   property_items:
@@ -280,9 +298,15 @@ single_valued_navigation_properties:
   - name: owninguser
     type: Microsoft.Dynamics.CRM.systemuser
     partner: user_environmentvariabledefinition
+  - name: ParentDefinitionId
+    type: Microsoft.Dynamics.CRM.environmentvariabledefinition
+    partner: envdefinition_envdefinition
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: envdefinition_envdefinition
+    type: Microsoft.Dynamics.CRM.environmentvariabledefinition
+    partner: ParentDefinitionId
   - name: environmentvariabledefinition_AsyncOperations
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: regardingobjectid_environmentvariabledefinition
@@ -320,6 +344,14 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveAllCompositeDataSources
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveCompositeDataSource
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveEnvironmentVariables
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveEnvironmentVariableValue
+    binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -331,10 +363,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.EnvironmentVariables
     description: ""
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

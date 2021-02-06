@@ -1,15 +1,15 @@
 ### YamlMime:ODataIndex
 uid: Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
 name: Web API Metadata EntityType Reference
-title: "Microsoft Dataverse and 365 Customer Engagement Web API Metadata EntityType Reference | MicrosoftDocs"
+title: "Dataverse Web API Metadata EntityType Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b83784fd-5b59-46ba-82c6-4254e45dba02
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
+  manager: "annbe"
 description: "Metadata entity types represent the types used in the Microsoft Dynamics CRM metadata model. See [Use the Web API with CRM metadata](https://msdn.microsoft.com/library/mt607833.aspx) for information about how to use these entity types. "
 in_this_section:
 - type: Microsoft.Dynamics.CRM.AttributeMetadata
@@ -37,9 +37,9 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.EnumAttributeMetadata
   description: "An abstract class that contains the data for an attribute that provides options."
 - type: Microsoft.Dynamics.CRM.FileAttributeMetadata
-  description: "Contains the metadata for a File attribute."
+  description: "An abstract class that contains the metadata for an attribute type File."
 - type: Microsoft.Dynamics.CRM.ImageAttributeMetadata
-  description: "Contains the metadata for an Image attribute."
+  description: "Contains the metadata for a Image attribute"
 - type: Microsoft.Dynamics.CRM.IntegerAttributeMetadata
   description: "Contains the metadata for a Integer attribute."
 - type: Microsoft.Dynamics.CRM.LookupAttributeMetadata

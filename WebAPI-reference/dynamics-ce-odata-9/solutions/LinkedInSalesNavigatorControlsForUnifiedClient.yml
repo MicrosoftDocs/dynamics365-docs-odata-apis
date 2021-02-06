@@ -1,0 +1,55 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.LinkedInSalesNavigatorControlsForUnifiedClient
+name: "Sales Navigator for Dynamics 365 Unified Interface"
+type: solution
+metadata: 
+  title: "Dataverse Sales Navigator for Dynamics 365 Unified Interface Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: b15a99e0-a593-4717-b99b-e04626b0c044
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Sales Navigator for Dynamics 365 Unified Interface Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Target, understand and engage customers on LinkedIn Sales Navigator from within Dynamics 365"
+ unique_name: LinkedInSalesNavigatorControlsForUnifiedClient
+ version: "3.0.1.0900"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.actioncard
+     description: "Action card entity to show action cards."
+   - type: Microsoft.Dynamics.CRM.contact
+     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+   - type: Microsoft.Dynamics.CRM.lead
+     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
+   - type: Microsoft.Dynamics.CRM.opportunity
+     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
+   - type: Microsoft.Dynamics.CRM.sales_linkedin_configuration
+     description: "Optional configuration for LinkedIn Sales Navigator integration with Dynamics 365"
+   - type: Microsoft.Dynamics.CRM.sales_linkedin_profileassociations
+     description: "For Internal Use Only."
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_FetchLISNProfileAssociations
+     description: ""
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

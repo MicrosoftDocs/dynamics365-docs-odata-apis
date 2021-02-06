@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.Contains
 name: "Contains"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Contains Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Contains Query Function Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e8f45d32-bcc2-4ebc-8af4-791a82806705
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Contains Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Contains Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function that evaluates whether the string contains the specified string.  "
 parameters:
@@ -28,10 +28,10 @@ parameters:
     unicode: false
     description: "The value of the string. "
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.Contains(PropertyName=@p1,PropertyValue=@p2)&@p1='name'&@p2='value'"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

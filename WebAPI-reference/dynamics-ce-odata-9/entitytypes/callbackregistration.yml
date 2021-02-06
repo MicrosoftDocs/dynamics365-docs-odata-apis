@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.callbackregistration
 name: "callbackregistration"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement callbackregistration EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: b8408d14-d2c8-4d19-941d-90cabc2e3847
-  author: "KumarVivek"
+  ms.assetid: be73a724-9337-450b-a821-bbf66c6d05a6
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the callbackregistration entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse callbackregistration entitytype."
 description: "Callback Registration that stores configuration."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/callbackregistrations"
@@ -125,6 +125,12 @@ properties:
           label: "ParentChildBusinessUnit"
         - value: 4
           label: "Organization"
+    - name: sdkmessagename
+      type: Edm.String
+      display_name: "SDK Message Name"
+      description: "Name of the SDK message the subscriber is interested in"
+      iscomputed: false
+      isreadonly: false
     - name: url
       type: Edm.String
       display_name: "Url Address"
@@ -142,6 +148,8 @@ properties:
           label: "V1"
         - value: 2
           label: "V2"
+        - value: 3
+          label: "V3"
 lookup_properties:
   description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
   property_items:
@@ -197,11 +205,17 @@ single_valued_navigation_properties:
 # This entity has no collection-valued navigation properties
 # This entity has no derived entities.
 # This entity has no operations
-# This entity is not included in any solutions.
-# This entity has no remarks.
+solutions:
+  description: "The following solutions include the callbackregistration entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.ApiMessagesExtension
+    description: "This solution contains CDS API message extensions."
+  - type: Microsoft.Dynamics.CRM.System
+    description: "Internal CRM System Solution"
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

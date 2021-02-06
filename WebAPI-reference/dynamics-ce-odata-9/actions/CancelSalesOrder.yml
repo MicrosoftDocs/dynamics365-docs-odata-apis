@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CancelSalesOrder
 name: "CancelSalesOrder"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CancelSalesOrder Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4f122b13-c10e-4cd1-818b-e6bd90a2a4e0
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the CancelSalesOrder Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse CancelSalesOrder Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Cancels a sales order. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -41,10 +41,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.salesorder
     displayName: Order
     description: "Quote that has been accepted."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex
