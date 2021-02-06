@@ -343,7 +343,7 @@ properties:
     - name: caltype
       type: Edm.Int32
       display_name: "License Type"
-      description: "License type of user. This is used only in the on-premises version of the product. Online licenses are managed through Microsoft 365 Office Portal"
+      description: "License type of user."
       iscomputed: false
       isreadonly: false
       options:
