@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Web API Reference| MicrosoftDocs"
+description: Microsoft Dataverse and Dynamics 365 Customer Engagement Web API Reference
 ms.date: 04/27/2020
 ms.service: "crm-online"
 ms.topic: "reference"
