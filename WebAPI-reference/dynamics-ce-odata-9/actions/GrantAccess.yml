@@ -294,7 +294,7 @@ entities:
     displayName: Data Analytics Admin Settings
     description: "[Deprecated]"
   - type: Microsoft.Dynamics.CRM.msdyn_analyticsforcs
-    displayName: [Deprecated] Dynamics Customer Service Analytics
+    displayName: Dynamics Customer Service Analytics
     description: "[Deprecated] Controls access to Analytics Reporting Sitemap in Dynamics Customer Service App"
   - type: Microsoft.Dynamics.CRM.msdyn_appconfiguration
     displayName: App profile
