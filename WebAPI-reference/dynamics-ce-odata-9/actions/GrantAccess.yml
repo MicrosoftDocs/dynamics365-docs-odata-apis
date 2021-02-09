@@ -291,7 +291,7 @@ entities:
     displayName: Analysis Result Detail
     description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_analyticsadminsettings
-    displayName: [Deprecated] Data Analytics Admin Settings
+    displayName: Data Analytics Admin Settings
     description: "[Deprecated]"
   - type: Microsoft.Dynamics.CRM.msdyn_analyticsforcs
     displayName: [Deprecated] Dynamics Customer Service Analytics
