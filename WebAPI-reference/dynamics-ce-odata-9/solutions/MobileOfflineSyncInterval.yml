@@ -17,7 +17,7 @@ header:
  description: "Introduces a sync interval attribute which controls how frequent data is synced offline."
  unique_name: MobileOfflineSyncInterval
  version: "1.0.0.0"
- customization_prefix: 
+ customization_prefix: sample
 entities:
   description: "The following entities are included in this solution."
   entity_items:
