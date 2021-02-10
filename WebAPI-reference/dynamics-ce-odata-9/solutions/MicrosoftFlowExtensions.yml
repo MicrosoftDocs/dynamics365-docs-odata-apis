@@ -17,7 +17,7 @@ header:
 # This solution has no description.
  unique_name: MicrosoftFlowExtensions
  version: "1.0.0.3"
- customization_prefix: 
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
