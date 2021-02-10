@@ -1,0 +1,409 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_problematicasset
+name: "msdyn_problematicasset"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 3f5e545b-6465-49d4-b6db-b3e3b6482b77
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_problematicasset entitytype."
+description: "Asset Suggestions"
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_problematicassets"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Asset Suggestion
+  primary_key: msdyn_problematicassetid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: exchangerate
+      type: Edm.Decimal
+      display_name: "Exchange Rate"
+      description: "Exchange rate for the currency associated with the entity with respect to the base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_assetid
+      type: Edm.String
+      display_name: "Asset Id"
+      description: "Unique identifier of customer asset"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_breakfixcost
+      type: Edm.Decimal
+      display_name: "Breakfix Cost"
+      description: "Value of breakfix cost for customer asset"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_breakfixcost_base
+      type: Edm.Decimal
+      display_name: "Breakfix Cost (Base)"
+      description: "Value of the Breakfix Cost in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_breakfixsale
+      type: Edm.Decimal
+      display_name: "Breakfix Sale"
+      description: "Value of breakfix sale of customer asset"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_breakfixsale_base
+      type: Edm.Decimal
+      display_name: "Breakfix Sale (Base)"
+      description: "Value of the Breakfix Sale in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_breakfixworkordercount
+      type: Edm.Int32
+      display_name: "Expected Break/fix Work Order Count"
+      description: "Expected break/fix work order count for customer asset"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_confidence
+      type: Edm.Double
+      display_name: "Confidence"
+      description: "Probablity of predicting customer asset to be problematic in current date"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_highertotalcost
+      type: Edm.Int32
+      display_name: "Higher Total Cost?"
+      description: "Flag value indicating if customer asset has higher total cost than similar assets or not"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "No"
+        - value: 1
+          label: "Yes"
+    - name: msdyn_higherworkordercount
+      type: Edm.Int32
+      display_name: "Higher Work Order Count?"
+      description: "Flag value indicating if customer asset work order count is higher than similar assets or not"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "No"
+        - value: 1
+          label: "Yes"
+    - name: msdyn_maintenancecost
+      type: Edm.Decimal
+      display_name: "Maintenance Cost"
+      description: "Value of maintenance cost of customer asset"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_maintenancecost_base
+      type: Edm.Decimal
+      display_name: "Maintenance Cost (Base)"
+      description: "Value of the Maintenance Cost in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_maintenancesale
+      type: Edm.Decimal
+      display_name: "Maintenance Sale"
+      description: "Value of maintenance sale of customer asset"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_maintenancesale_base
+      type: Edm.Decimal
+      display_name: "Maintenance Sale (Base)"
+      description: "Value of the Maintenance Sale in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_maintenanceworkordercount
+      type: Edm.Int32
+      display_name: "Expected Maintenance Work Order Count"
+      description: "Expected maintenance work order count from model output"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_numberofdays
+      type: Edm.Int32
+      display_name: "Number Of Days"
+      description: "The option set value indicating how many days the record is preficted from current"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "0"
+        - value: 192350001
+          label: "15"
+        - value: 192350002
+          label: "30"
+        - value: 192350003
+          label: "60"
+        - value: 192350004
+          label: "90"
+    - name: msdyn_problematicassetid
+      type: Edm.Guid
+      display_name: "Problematic Asset"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_replacementcost
+      type: Edm.Decimal
+      display_name: "Replacement Cost"
+      description: "Value of replacement cost of customer asset"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_replacementcost_base
+      type: Edm.Decimal
+      display_name: "Replacement Cost (Base)"
+      description: "Value of the Replacement Cost in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_replacementsale
+      type: Edm.Decimal
+      display_name: "Replacement Sale"
+      description: "Value of replacement sale of customer asset"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_replacementsale_base
+      type: Edm.Decimal
+      display_name: "Replacement Sale (Base)"
+      description: "Value of the Replacement Sale in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_runid
+      type: Edm.String
+      display_name: "Run Id"
+      description: "Unique identifier of model run id"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_score
+      type: Edm.Double
+      display_name: "Score"
+      description: "Probability of customer asset to be problematic asset"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_suggestion
+      type: Edm.Int32
+      display_name: "Suggestion"
+      description: "Optionset value of suggestions for customer asset"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350002
+          label: "None"
+        - value: 192350000
+          label: "Repair"
+        - value: 192350001
+          label: "Replace"
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Problematic Asset"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Problematic Asset"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_asset_value
+    single_valued_navigation_property:
+    - msdyn_asset
+    description: "Lookup field for customer asset"
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+  - name: _transactioncurrencyid_value
+    single_valued_navigation_property:
+    - transactioncurrencyid
+    description: "Unique identifier of the currency associated with the entity."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_problematicasset_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_problematicasset_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_problematicasset_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_problematicasset_modifiedonbehalfby
+  - name: msdyn_asset
+    type: Microsoft.Dynamics.CRM.msdyn_customerasset
+    partner: msdyn_msdyn_customerasset_msdyn_problematicasset_asset
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_problematicasset
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_problematicasset
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_problematicasset
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_problematicasset
+  - name: transactioncurrencyid
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: TransactionCurrency_msdyn_problematicasset
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_problematicasset_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_problematicasset
+  - name: msdyn_problematicasset_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_problematicasset
+  - name: msdyn_problematicasset_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_problematicasset
+  - name: msdyn_problematicasset_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_problematicasset
+  - name: msdyn_problematicasset_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_problematicasset
+  - name: msdyn_problematicasset_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_problematicasset
+  - name: msdyn_problematicasset_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_problematicasset
+  - name: msdyn_problematicasset_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_problematicasset
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_problematicasset entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_problematicasset entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+# This entity has no remarks.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

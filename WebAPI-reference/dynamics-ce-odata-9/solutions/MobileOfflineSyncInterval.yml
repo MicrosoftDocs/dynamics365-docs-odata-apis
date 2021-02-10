@@ -1,0 +1,39 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.MobileOfflineSyncInterval
+name: "MobileOfflineSyncInterval"
+type: solution
+metadata: 
+  title: "Dataverse MobileOfflineSyncInterval Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 34c40f52-bae1-4b2f-a993-fa588bcaccb1
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse MobileOfflineSyncInterval Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Introduces a sync interval attribute which controls how frequent data is synced offline."
+ unique_name: MobileOfflineSyncInterval
+ version: "1.0.0.0"
+ customization_prefix: sample
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.mobileofflineprofileitem
+     description: "Information on entity availability to mobile devices in offline mode for a mobile offline profile item."
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

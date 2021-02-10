@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AssociatedMenuConfiguration
 name: "AssociatedMenuConfiguration"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AssociatedMenuConfiguration ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse AssociatedMenuConfiguration ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f177bddc-93eb-4473-b5ef-61af5041568f
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API AssociatedMenuConfiguration ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API AssociatedMenuConfiguration ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Defines how the associated records are displayed for an entity relationship." 
@@ -94,10 +94,10 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.ComplexOneToManyRelationshipMetadata
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

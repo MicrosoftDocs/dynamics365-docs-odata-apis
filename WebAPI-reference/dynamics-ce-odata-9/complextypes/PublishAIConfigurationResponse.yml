@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.PublishAIConfigurationResponse
 name: "PublishAIConfigurationResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement PublishAIConfigurationResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse PublishAIConfigurationResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 979760e9-579a-41b9-9bd1-614ba52b1208
-  author: "KumarVivek"
+  ms.assetid: afa53ac2-6349-404e-b8a2-14afa45913d1
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API PublishAIConfigurationResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API PublishAIConfigurationResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -30,10 +30,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.PublishAIConfiguration
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

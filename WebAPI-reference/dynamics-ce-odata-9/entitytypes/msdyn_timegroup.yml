@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_timegroup
 name: "msdyn_timegroup"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_timegroup EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bc2db991-a674-4322-9352-8da77559979d
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_timegroup entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_timegroup entitytype."
 description: "Specify time groups consisting of multiple time windows to be used for scheduling, for example."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_timegroups"
@@ -279,6 +279,15 @@ collection_valued_navigation_properties:
   - name: msdyn_timegroup_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_msdyn_timegroup_letter
+  - name: msdyn_timegroup_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_timegroup_li_inmail
+  - name: msdyn_timegroup_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_timegroup_li_message
+  - name: msdyn_timegroup_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_timegroup_li_pointdrivepresentationviewed
   - name: msdyn_timegroup_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_timegroup
@@ -288,6 +297,15 @@ collection_valued_navigation_properties:
   - name: msdyn_timegroup_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_msdyn_timegroup_msdyn_bookingalert
+  - name: msdyn_timegroup_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_timegroup_msfp_alert
+  - name: msdyn_timegroup_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_timegroup_msfp_surveyinvite
+  - name: msdyn_timegroup_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_timegroup_msfp_surveyresponse
   - name: msdyn_timegroup_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_timegroup_phonecall
@@ -339,10 +357,16 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_24
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

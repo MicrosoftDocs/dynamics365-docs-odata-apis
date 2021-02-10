@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.LookupMetadata
 name: "LookupMetadata"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement LookupMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse LookupMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 543b45f9-7db2-4f34-a1a6-08ac302a3dc9
-  author: "KumarVivek"
+  ms.assetid: 546f4c92-985f-4513-80c6-2b4f42f10d9b
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API LookupMetadata ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API LookupMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -36,10 +36,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.LookupEntityResponse
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

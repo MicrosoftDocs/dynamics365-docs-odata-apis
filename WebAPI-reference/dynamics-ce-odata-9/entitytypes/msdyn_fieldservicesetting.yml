@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
 name: "msdyn_fieldservicesetting"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_fieldservicesetting EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 89a665f2-cff4-4a1b-8a25-169d36811ba9
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_fieldservicesetting entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_fieldservicesetting entitytype."
 description: "Settings controlling functionality related to Field Service"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_fieldservicesettings"
@@ -67,6 +67,24 @@ properties:
     - name: msdyn_agreementstartingnumber
       type: Edm.Int32
       display_name: "Agreement Starting Number"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_analyticsingestdatainxdays
+      type: Edm.Int32
+      display_name: "Analytics Ingestion in X Days"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_analyticspostponeingestionuntil
+      type: Edm.DateTimeOffset
+      display_name: "Scheduled Analytics Date"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_analyticsspreadoutpostponeingestionuntil
+      type: Edm.DateTimeOffset
+      display_name: "Spread Out Scheduled Analytics Date"
       description: ""
       iscomputed: false
       isreadonly: false
@@ -228,6 +246,19 @@ properties:
       description: ""
       iscomputed: false
       isreadonly: false
+    - name: msdyn_defaultcrewstrategy
+      type: Edm.Int32
+      display_name: "Default Crew Strategy"
+      description: "Default Crew Strategy"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Cascade and Accept Cascade Completely"
+        - value: 192350001
+          label: "Crew Leader Management"
+        - value: 192350002
+          label: "Crew Member Self-Management"
     - name: msdyn_defaultradiusunit
       type: Edm.Boolean
       display_name: "Default Radius Unit (Deprecated)"
@@ -264,6 +295,17 @@ properties:
           label: "Closed - Posted"
         - value: 690970005
           label: "Closed - Canceled"
+    - name: msdyn_disablecustomerassetvalidation
+      type: Edm.Boolean
+      display_name: "Disable Customer Asset Validation"
+      description: "This field turns off validation on customer asset for service account"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: msdyn_disableremoteassistbookingstatuschanges
       type: Edm.Boolean
       display_name: "Disable Booking Status Changes on Remote Assist"
@@ -286,6 +328,17 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
+    - name: msdyn_enableincidenttyperecommendation
+      type: Edm.Boolean
+      display_name: "Enable Incident Type Suggestion"
+      description: "Enable Incident Type Suggestion. When enabled, the system will generate suggestions to improve Incident Types based on completed Work Orders."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: msdyn_enablelegacyscheduleassistant
       type: Edm.Boolean
       display_name: "Enable Legacy Schedule Assistant (Deprecated)"
@@ -297,10 +350,32 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
+    - name: msdyn_enablemainformdialogforsubgrids
+      type: Edm.Boolean
+      display_name: "Work Order Subgrid Records Open as Popups"
+      description: "When enabled, specific Work Order subgrid records open in a pop-up within the context of the parent (WO Service Task, WO Product, WO Service, WO Incident, Booking, and Time Entry)."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: msdyn_enablesuggestedduration
       type: Edm.Boolean
       display_name: "Enables the suggested duration functionality"
       description: "Enable Suggested Duration for Incident Type. System will calculate Suggested Duration daily or on demand based on historical bookings"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_enhancedbackgroundprocessing
+      type: Edm.Boolean
+      display_name: "Use Enhanced Background Processing"
+      description: "When this option is enabled, all asynchronous Field Service background processes will be processed through Flow or asynchronous plugins instead of the historic Field Service workflows. See documentation for more details."
       iscomputed: false
       isreadonly: false
       options:
@@ -365,6 +440,42 @@ properties:
           label: "Last 12 Months"
         - value: 100000003
           label: "All"
+    - name: msdyn_inspectionanalyticsenabled
+      type: Edm.Boolean
+      display_name: "Analytics Enabled"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_inspectionanalyticsenabledon
+      type: Edm.DateTimeOffset
+      display_name: "Analytics Enabled On"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_inspectionanalyticsfrequency
+      type: Edm.Int32
+      display_name: "Analytics Frequency"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 100000000
+          label: "Daily"
+        - value: 100000001
+          label: "Immediately"
+        - value: 100000002
+          label: "Custom"
+    - name: msdyn_inspectionanalyticsrecommendedtime
+      type: Edm.DateTimeOffset
+      display_name: "Analytics Ingestion Time"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_inventoryadjustmentprefix
       type: Edm.String
       display_name: "Inventory Adjustment Prefix (Deprecated)"
@@ -387,6 +498,12 @@ properties:
       type: Edm.Int32
       display_name: "Inventory Transfer Starting Number"
       description: "Shows the number to be used as the starting number for inventory transfers."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_lastrunofincidenttyperecommendation
+      type: Edm.DateTimeOffset
+      display_name: "Last Run Of Incident Type Suggestion"
+      description: "Shows when the last run of incident type suggestion happens."
       iscomputed: false
       isreadonly: false
     - name: msdyn_name
@@ -447,6 +564,12 @@ properties:
       description: ""
       iscomputed: false
       isreadonly: false
+    - name: msdyn_returntopxrecommendations
+      type: Edm.Int32
+      display_name: "Return Top X Suggestions"
+      description: "Return Top X suggstion result from last run."
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_rmaprefix
       type: Edm.String
       display_name: "RMA Prefix (Deprecated)"
@@ -471,6 +594,15 @@ properties:
       description: "Shows the number to be used as the starting number for the automatically generated RTV number."
       iscomputed: false
       isreadonly: false
+    - name: msdyn_runfrequencyofincidenttyperecommendation
+      type: Edm.Int32
+      display_name: "Run Frequency Of Incident Type Suggestion"
+      description: "Specify the run frequency of incident type suggestion."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Once a Week"
     - name: msdyn_saautofilterserviceterritory
       type: Edm.Boolean
       display_name: "Auto Filter Service Territory (Deprecated)"
@@ -554,6 +686,50 @@ properties:
       description: "Api key for map"
       iscomputed: false
       isreadonly: false
+    - name: msdyn_suggestreparentingcustomerassets
+      type: Edm.Boolean
+      display_name: "Suggest Reparenting Customer Assets"
+      description: "On enabling provides a dialog on change on customer asset/service account of workorder to make the account of customer asset same as service account of work order"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_timecostactualssource
+      type: Edm.Int32
+      display_name: "Time Cost Actuals Source"
+      description: "The Field Service solution automatically generates Actuals records. Actuals with a Transaction Type of \"Cost\" and a Transaction Class of \"Time\" can be generated when the Work Order is set to Closed-Posted from the related Booking's Booking Journals (Booking Journals on Post of Work Order) or when a Work Order related Time Entry is marked as Approved (Work Order Time Entry Approval)."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192354000
+          label: "Booking Journals on Post of Work Order"
+        - value: 192354001
+          label: "Work Order Time Entry Approval"
+    - name: msdyn_timeentrygenerationstrategy
+      type: Edm.Int32
+      display_name: "Time Entry Generation Strategy"
+      description: "Field Service organizations that do not intend to use Time Entry or that wish to generate them via a custom or manual process should set to 'Manual.' Otherwise, setting to \"Auto-Generate from Booking Timestamps\" will ensure that Time Entries are automatically created when a Booking is complete for each span of time between Booking Timestamps."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192355200
+          label: "Manual"
+        - value: 192355201
+          label: "Auto-Generate from Booking Timestamps"
+    - name: msdyn_timestampfrequency
+      type: Edm.Int32
+      display_name: "Timestamp Frequency"
+      description: "The Timestamp Frequency setting controls the generation of Booking Timestamps as Bookings progress through Booking Statuses. Timestamps can either generate every time a Booking Status is changed (Per Booking Status) or when changing the Booking Status results in a new underlying Field Service Status (Per Field Service Status)."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Per Booking Status Change"
+        - value: 192350001
+          label: "Per Field Service Status Change"
     - name: msdyn_traveltimerescheduling
       type: Edm.Boolean
       display_name: "Travel Time Rescheduling (Deprecated)"
@@ -708,7 +884,7 @@ lookup_properties:
   - name: _msdyn_travelchargeitemid_value
     single_valued_navigation_property:
     - msdyn_travelchargeitemid
-    description: "Product/Service to be used by the system for Travel Charges on Work Orders"
+    description: "Product to be used by the system for Travel Charges on Work Orders"
   - name: _msdyn_travelpaytype_value
     single_valued_navigation_property:
     - msdyn_travelpaytype
@@ -814,6 +990,15 @@ collection_valued_navigation_properties:
   - name: msdyn_fieldservicesetting_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_msdyn_fieldservicesetting_letter
+  - name: msdyn_fieldservicesetting_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_fieldservicesetting_li_inmail
+  - name: msdyn_fieldservicesetting_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_fieldservicesetting_li_message
+  - name: msdyn_fieldservicesetting_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_fieldservicesetting_li_pointdrivepresentationviewed
   - name: msdyn_fieldservicesetting_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_fieldservicesetting
@@ -823,6 +1008,15 @@ collection_valued_navigation_properties:
   - name: msdyn_fieldservicesetting_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_msdyn_fieldservicesetting_msdyn_bookingalert
+  - name: msdyn_fieldservicesetting_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_fieldservicesetting_msfp_alert
+  - name: msdyn_fieldservicesetting_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_fieldservicesetting_msfp_surveyinvite
+  - name: msdyn_fieldservicesetting_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_fieldservicesetting_msfp_surveyresponse
   - name: msdyn_fieldservicesetting_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_fieldservicesetting_phonecall
@@ -868,10 +1062,12 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

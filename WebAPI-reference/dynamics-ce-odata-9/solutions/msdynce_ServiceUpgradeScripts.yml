@@ -3,27 +3,31 @@ uid: Microsoft.Dynamics.CRM.msdynce_ServiceUpgradeScripts
 name: "Service Upgrade Scripts"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Service Upgrade Scripts Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Service Upgrade Scripts Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 3951e2d7-ad4d-4b3a-bf4e-d5274dd2a95f
-  author: "KumarVivek"
+  ms.assetid: ee44fd2c-60e1-4b90-8c9d-c133cb48bdcc
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Service Upgrade Scripts Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Service Upgrade Scripts Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Contains components used during the upgrade process for Service"
  unique_name: msdynce_ServiceUpgradeScripts
- version: "9.0.20031.1004"
+ version: "9.0.20122.1023"
  customization_prefix: msdyn
 # This solution includes no entities.
-# This solution includes no actions.
-# This solution has no remarks.
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_InvokeServiceStoredProc
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

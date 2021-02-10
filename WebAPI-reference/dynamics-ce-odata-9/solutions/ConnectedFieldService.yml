@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.ConnectedFieldService
 name: "Connected Field Service for Microsoft Dynamics 365"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Connected Field Service for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Connected Field Service for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 75694ab5-37c9-4120-89d2-a2bf3bec8755
-  author: "KumarVivek"
+  ms.assetid: 712a57db-eff2-4b55-92e7-cfce2849be8b
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Connected Field Service for Microsoft Dynamics 365 Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Connected Field Service for Microsoft Dynamics 365 Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
  unique_name: ConnectedFieldService
- version: "1.7.7.107"
+ version: "1.8.8.11"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -26,18 +26,24 @@ entities:
    - type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
      description: "Base entity for process CFS - IoT Alert Process Flow"
    - type: Microsoft.Dynamics.CRM.msdyn_customerasset
-     description: "Specify customer asset."
+     description: "Specify Customer Asset."
    - type: Microsoft.Dynamics.CRM.msdyn_iotalert
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
      description: "Represents an outgoing message to a device connected to an IoT provider."
+   - type: Microsoft.Dynamics.CRM.msdyn_iotsettings
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_workorder
      description: "Work orders store all information about the job performed for an account. Stores incident details, resource, expenses, tasks, communications, billing and more"
-# This solution includes no actions.
-# This solution has no remarks.
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_GetWorkOrderAggregation
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

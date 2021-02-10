@@ -1,0 +1,65 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.SyncOfflineDataResponse
+name: "SyncOfflineDataResponse"
+type: complextype
+metadata: 
+  title: "Dataverse SyncOfflineDataResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 56e4e001-bdc1-4d55-abb7-bd0304dff2e1
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API SyncOfflineDataResponse ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "" 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: Updates
+    type: Microsoft.Dynamics.CRM.SubscriptionUpdatedEntityData
+    nullable: false
+    unicode: true
+    description: ""
+    iscollection: true
+  - name: Deletes
+    type: Microsoft.Dynamics.CRM.SubscriptionDeletedEntityData
+    nullable: false
+    unicode: true
+    description: ""
+    iscollection: true
+  - name: CompletedEntities
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+    iscollection: true
+  - name: SyncToken
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
+  - name: IsFinalPage
+    type: Edm.Boolean
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+# This complex type doesn't have any navigation properties.
+
+# There are no remarks for this complex type.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

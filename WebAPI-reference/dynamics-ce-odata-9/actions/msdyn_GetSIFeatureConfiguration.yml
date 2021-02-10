@@ -1,0 +1,46 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_GetSIFeatureConfiguration
+name: "msdyn_GetSIFeatureConfiguration"
+type: action
+metadata: 
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 0c9cedbf-b4c6-42e7-9d2a-56a11f17fbf6
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_GetSIFeatureConfiguration Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.SICommon
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: SIParameters
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+return_type:
+  description: "The msdyn_GetSIFeatureConfiguration action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_GetSIFeatureConfigurationResponse
+# This action has no identified unbound entities.
+# This action has no remarks.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

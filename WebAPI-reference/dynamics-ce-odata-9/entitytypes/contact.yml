@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.contact
 name: "contact"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement contact EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 27308cb4-1fb8-4f13-bfc9-d7f22ab25ae4
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the contact entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse contact entitytype."
 description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/contacts"
@@ -1371,8 +1371,8 @@ lookup_properties:
     description: "Unique identifier of the parent contact."
   - name: _parentcustomerid_value
     single_valued_navigation_property:
-    - parentcustomerid_contact
     - parentcustomerid_account
+    - parentcustomerid_contact
     description: "Select the parent account or parent contact for the contact to provide a quick link to additional details, such as financial information, activities, and opportunities."
   - name: _preferredequipmentid_value
     single_valued_navigation_property:
@@ -1388,7 +1388,7 @@ lookup_properties:
     description: "Choose the regular or preferred customer service representative for reference when scheduling service activities for the contact."
   - name: _slaid_value
     single_valued_navigation_property:
-    - sla_contact_sla
+    - slaid_sla
     description: "Choose the service level agreement (SLA) that you want to apply to the Contact record."
   - name: _slainvokedid_value
     single_valued_navigation_property:
@@ -1449,7 +1449,7 @@ single_valued_navigation_properties:
   - name: preferredsystemuserid
     type: Microsoft.Dynamics.CRM.systemuser
     partner: system_user_contacts
-  - name: sla_contact_sla
+  - name: slaid_sla
     type: Microsoft.Dynamics.CRM.sla
     partner: manualsla_contact
   - name: slainvokedid_contact_sla
@@ -1548,6 +1548,15 @@ collection_valued_navigation_properties:
   - name: Contact_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_contact_letter
+  - name: contact_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_contact_li_inmail
+  - name: contact_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_contact_li_message
+  - name: contact_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_contact_li_pointdrivepresentationviewed
   - name: Contact_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_contact
@@ -1560,6 +1569,15 @@ collection_valued_navigation_properties:
   - name: contact_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_contact_msdyn_bookingalert
+  - name: contact_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_contact_msfp_alert
+  - name: contact_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_contact_msfp_surveyinvite
+  - name: contact_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_contact_msfp_surveyresponse
   - name: Contact_Phonecalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_contact_phonecall
@@ -1641,6 +1659,9 @@ collection_valued_navigation_properties:
   - name: lk_contact_feedback_createdonbehalfby
     type: Microsoft.Dynamics.CRM.feedback
     partner: CreatedOnBehalfByContact
+  - name: ms_contact_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_ContactId
   - name: msdyn_contact_msdyn_actual_ContactCustomer
     type: Microsoft.Dynamics.CRM.msdyn_actual
     partner: msdyn_ContactCustomer
@@ -1701,6 +1722,9 @@ collection_valued_navigation_properties:
   - name: msdyn_contact_msdyn_workorder_ReportedByContact
     type: Microsoft.Dynamics.CRM.msdyn_workorder
     partner: msdyn_reportedbycontact
+  - name: msdyn_playbookinstance_contact
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: regarding_contact
   - name: opportunity_customer_contacts
     type: Microsoft.Dynamics.CRM.opportunity
     partner: customerid_contact
@@ -1758,10 +1782,24 @@ solutions:
     description: ""
   - type: Microsoft.Dynamics.CRM.AppforOutlookPatch
     description: "Microsoft Dynamics 365 App for Outlook is an Office add-in that you can quickly add to your users’ mailbox so they can track communication and review Dynamics 365 applications’ information in Outlook."
+  - type: Microsoft.Dynamics.CRM.CompanyNewsTimeline
+    description: "You can now view news related to an Account, Lead, Contact or Opportunity in the CRM app on your mobile device. The Company news timeline solution for mobile enables sales and service users to view the latest and most important news in the mobile client from Bing news. The news articles are organized by time (Today, This Week, Last Week) and contain the headline, date/time, and source of the news article.  Important events are detected and categorized (including Management Changes, Earnings Releases, New Offerings, Cost Cutting, Growth, Legal Issues, Acquisitions and Partnerships)."
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+  - type: Microsoft.Dynamics.CRM.Icebreakers
+    description: "Icebreakers Solution"
+  - type: Microsoft.Dynamics.CRM.LinkedInSalesNavigatorControlsForUnifiedClient
+    description: "Target, understand and engage customers on LinkedIn Sales Navigator from within Dynamics 365"
   - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_24
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.msdyn_LinkedInExtensions
     description: "LinkedIn Extension for Dynamics365"
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
@@ -1800,14 +1838,16 @@ solutions:
     description: "Intelligently extracts talking points with your contact, from your exchange mailbox"
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
+  - type: Microsoft.Dynamics.CRM.Relationshipassistant
+    description: "Relationship assistant Feature Description."
   - type: Microsoft.Dynamics.CRM.SICommon
     description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_Scheduling
 name: "Scheduling"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Scheduling Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Scheduling Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: c91dd991-d28f-4233-b457-25cdd7f411aa
-  author: "KumarVivek"
+  ms.assetid: 07aa073b-593c-4029-a196-cedc535c1ad4
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Scheduling Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Scheduling Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for scheduling."
  unique_name: msdynce_Scheduling
  version: "9.0.0.0"
- customization_prefix: none
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -44,10 +44,10 @@ entities:
    - type: Microsoft.Dynamics.CRM.ratingvalue
      description: "A unique value associated with a rating model that allows providing a user friendly rating value."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

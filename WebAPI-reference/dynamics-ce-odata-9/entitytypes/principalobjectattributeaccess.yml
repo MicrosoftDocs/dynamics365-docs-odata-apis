@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.principalobjectattributeaccess
 name: "principalobjectattributeaccess"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement principalobjectattributeaccess EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2d9c9b60-1989-4c54-a5cf-85163f11e593
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the principalobjectattributeaccess entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse principalobjectattributeaccess entitytype."
 description: "Defines CRM security principals (users and teams) access rights to secured field for an entity instance."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/principalobjectattributeaccessset"
@@ -73,204 +73,48 @@ lookup_properties:
   property_items:
   - name: _objectid_value
     single_valued_navigation_property:
-    - objectid_customeraddress
-    - objectid_knowledgearticleviews
-    - objectid_mailmergetemplate
-    - objectid_feedback
+    - objectid_contact
+    - objectid_account
+    - objectid_knowledgearticle
+    - objectid_knowledgebaserecord
     - objectid_reportcategory
     - objectid_sharepointdocumentlocation
-    - objectid_socialprofile
-    - objectid_queueitem
-    - objectid_kbarticle
-    - objectid_sharepointsite
-    - objectid_knowledgebaserecord
-    - objectid_goal
-    - objectid_queue
     - objectid_connection
-    - objectid_systemuser
-    - objectid_contact
     - objectid_position
-    - objectid_account
-    - objectid_businessunit
-    - objectid_knowledgearticle
+    - objectid_feedback
+    - objectid_mailmergetemplate
+    - objectid_sharepointsite
+    - objectid_socialprofile
+    - objectid_kbarticle
+    - objectid_knowledgearticleviews
     - objectid_team
-    - objectid_solutioncomponentattributeconfiguration
-    - objectid_solutioncomponentconfiguration
-    - objectid_stagesolutionupload
-    - objectid_serviceplan
-    - objectid_msdyn_knowledgearticleimage
-    - objectid_msdyn_knowledgearticletemplate
-    - objectid_attributeimageconfig
-    - objectid_entityimageconfig
-    - objectid_entityanalyticsconfig
-    - objectid_msdyn_dataflow
-    - objectid_connector
-    - objectid_msdyn_aiconfiguration
-    - objectid_msdyn_aimodel
-    - objectid_msdyn_aitemplate
-    - objectid_msdyn_aibdataset
-    - objectid_msdyn_aibdatasetfile
-    - objectid_msdyn_aibdatasetrecord
-    - objectid_msdyn_aibdatasetscontainer
-    - objectid_msdyn_aibfile
-    - objectid_msdyn_aibfileattacheddata
-    - objectid_msdyn_aifptrainingdocument
-    - objectid_msdyn_aiodimage
-    - objectid_msdyn_aiodlabel
-    - objectid_msdyn_aiodtrainingboundingbox
-    - objectid_msdyn_aiodtrainingimage
-    - objectid_environmentvariabledefinition
-    - objectid_environmentvariablevalue
-    - objectid_processstageparameter
-    - objectid_flowsession
-    - objectid_workflowbinary
-    - objectid_connectionreference
-    - objectid_msdyn_analysiscomponent
-    - objectid_msdyn_analysisjob
-    - objectid_msdyn_analysisresult
-    - objectid_msdyn_analysisresultdetail
-    - objectid_msdyn_solutionhealthrule
-    - objectid_msdyn_solutionhealthruleargument
-    - objectid_msdyn_solutionhealthruleset
-    - objectid_accountleads
-    - objectid_contactleads
-    - objectid_leadaddress
-    - objectid_lead
-    - objectid_dynamicproperty
-    - objectid_dynamicpropertyassociation
-    - objectid_dynamicpropertyinstance
-    - objectid_dynamicpropertyoptionsetitem
-    - objectid_pricelevel
-    - objectid_productassociation
-    - objectid_productpricelevel
-    - objectid_productsubstitute
-    - objectid_uom
-    - objectid_uomschedule
-    - objectid_bookableresource
-    - objectid_bookableresourcebooking
-    - objectid_bookableresourcebookingheader
-    - objectid_bookableresourcecategory
-    - objectid_bookableresourcecategoryassn
-    - objectid_bookableresourcecharacteristic
-    - objectid_bookableresourcegroup
-    - objectid_bookingstatus
-    - objectid_characteristic
-    - objectid_ratingmodel
-    - objectid_ratingvalue
-    - objectid_bulkoperationlog
-    - objectid_campaign
-    - objectid_campaignactivityitem
-    - objectid_campaignitem
-    - objectid_list
-    - objectid_listmember
-    - objectid_msdyn_databaseversion
-    - objectid_msdyn_upgraderun
-    - objectid_msdyn_upgradestep
-    - objectid_msdyn_upgradeversion
-    - objectid_constraintbasedgroup
-    - objectid_contract
-    - objectid_contractdetail
-    - objectid_contracttemplate
-    - objectid_entitlement
-    - objectid_entitlementchannel
-    - objectid_entitlementcontacts
-    - objectid_entitlementproducts
-    - objectid_entitlementtemplate
-    - objectid_entitlementtemplatechannel
-    - objectid_entitlementtemplateproducts
-    - objectid_equipment
-    - objectid_incident
-    - objectid_incidentknowledgebaserecord
-    - objectid_knowledgearticleincident
-    - objectid_phonetocaseprocess
-    - objectid_resource
-    - objectid_resourcegroup
-    - objectid_resourcespec
-    - objectid_service
-    - objectid_servicecontractcontacts
-    - objectid_site
-    - objectid_product
-    - objectid_entitlemententityallocationtypemapping
-    - objectid_msdyn_callablecontext
-    - objectid_msdyn_playbookactivity
-    - objectid_msdyn_playbookactivityattribute
-    - objectid_msdyn_playbookcategory
-    - objectid_msdyn_playbookinstance
-    - objectid_msdyn_playbooktemplate
-    - objectid_competitoraddress
-    - objectid_competitorproduct
-    - objectid_competitorsalesliterature
-    - objectid_contactinvoices
-    - objectid_contactorders
-    - objectid_contactquotes
-    - objectid_discount
-    - objectid_discounttype
-    - objectid_invoice
-    - objectid_invoicedetail
-    - objectid_leadcompetitors
-    - objectid_leadproduct
-    - objectid_leadtoopportunitysalesprocess
-    - objectid_opportunity
-    - objectid_opportunitycompetitors
-    - objectid_opportunityproduct
-    - objectid_opportunitysalesprocess
-    - objectid_productsalesliterature
-    - objectid_quote
-    - objectid_quotedetail
-    - objectid_salesliterature
-    - objectid_salesliteratureitem
-    - objectid_salesorder
-    - objectid_salesorderdetail
-    - objectid_competitor
-    - objectid_territory
-    - objectid_adminsettingsentity
-    - objectid_msdyn_forecastconfiguration
-    - objectid_msdyn_forecastdefinition
-    - objectid_msdyn_forecastinstance
-    - objectid_msdyn_forecastrecurrence
-    - objectid_msdyn_relationshipinsightsunifiedconfig
-    - objectid_msdyn_siconfig
-    - objectid_msdyn_sikeyvalueconfig
-    - objectid_msdyn_actioncardregarding
-    - objectid_msdyn_actioncardrolesetting
-    - objectid_msdyn_entityrankingrule
-    - objectid_msdyn_flowcardtype
-    - objectid_msdyn_salesinsightssettings
-    - objectid_msdyn_autocapturerule
-    - objectid_msdyn_autocapturesettings
-    - objectid_msdyn_untrackedappointment
-    - objectid_msdyn_notesanalysisconfig
-    - objectid_msdyn_icebreakersconfig
+    - objectid_businessunit
+    - objectid_queue
+    - objectid_customeraddress
+    - objectid_systemuser
+    - objectid_queueitem
+    - objectid_goal
+    - objectid_msdyn_iotdevicecommanddefinition
+    - objectid_msdyn_iotdevicedatahistory
+    - objectid_msdyn_iotdeviceproperty
+    - objectid_msdyn_iotpropertydefinition
+    - objectid_msdyn_iotsettings
     - objectid_msdyn_postalbum
     - objectid_msdyn_postconfig
     - objectid_msdyn_postruleconfig
     - objectid_msdyn_wallsavedquery
     - objectid_msdyn_wallsavedqueryusersettings
-    - objectid_msfp_emailtemplate
-    - objectid_msfp_question
-    - objectid_msfp_questionresponse
-    - objectid_msfp_survey
-    - objectid_msfp_unsubscribedrecipient
-    - objectid_msdyn_collabgraphresource
-    - objectid_msdyn_msteamssetting
-    - objectid_msdyn_msteamssettingsv2
-    - objectid_msdyn_teamscollaboration
-    - objectid_msdyn_3dmodel
     - objectid_msdyn_actual
-    - objectid_msdyn_bookableresourceassociation
     - objectid_msdyn_bookingalertstatus
     - objectid_msdyn_bookingchange
     - objectid_msdyn_bookingrule
     - objectid_msdyn_bookingsetupmetadata
-    - objectid_msdyn_businessclosure
     - objectid_msdyn_clientextension
     - objectid_msdyn_configuration
     - objectid_msdyn_organizationalunit
     - objectid_msdyn_priority
     - objectid_msdyn_requirementcharacteristic
-    - objectid_msdyn_requirementgroup
     - objectid_msdyn_requirementorganizationunit
-    - objectid_msdyn_requirementrelationship
     - objectid_msdyn_requirementresourcecategory
     - objectid_msdyn_requirementresourcepreference
     - objectid_msdyn_requirementstatus
@@ -284,6 +128,77 @@ lookup_properties:
     - objectid_msdyn_timegroupdetail
     - objectid_msdyn_transactionorigin
     - objectid_msdyn_workhourtemplate
+    - objectid_msdyn_accountpricelist
+    - objectid_msdyn_batchjob
+    - objectid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+    - objectid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+    - objectid_msdyn_characteristicreqforteammember
+    - objectid_msdyn_contactpricelist
+    - objectid_msdyn_contractlineinvoiceschedule
+    - objectid_msdyn_contractlinescheduleofvalue
+    - objectid_msdyn_dataexport
+    - objectid_msdyn_delegation
+    - objectid_msdyn_estimate
+    - objectid_msdyn_estimateline
+    - objectid_msdyn_expense
+    - objectid_msdyn_expensecategory
+    - objectid_msdyn_expensereceipt
+    - objectid_msdyn_fact
+    - objectid_msdyn_fieldcomputation
+    - objectid_msdyn_findworkevent
+    - objectid_msdyn_integrationjob
+    - objectid_msdyn_integrationjobdetail
+    - objectid_msdyn_invoicefrequency
+    - objectid_msdyn_invoicefrequencydetail
+    - objectid_msdyn_invoicelinetransaction
+    - objectid_msdyn_journal
+    - objectid_msdyn_journalline
+    - objectid_msdyn_mlresultcache
+    - objectid_msdyn_opportunitylineresourcecategory
+    - objectid_msdyn_opportunitylinetransaction
+    - objectid_msdyn_opportunitylinetransactioncategory
+    - objectid_msdyn_opportunitylinetransactionclassificatio
+    - objectid_msdyn_opportunitypricelist
+    - objectid_msdyn_orderlineresourcecategory
+    - objectid_msdyn_orderlinetransaction
+    - objectid_msdyn_orderlinetransactioncategory
+    - objectid_msdyn_orderlinetransactionclassification
+    - objectid_msdyn_orderpricelist
+    - objectid_msdyn_processnotes
+    - objectid_msdyn_project
+    - objectid_msdyn_projectapproval
+    - objectid_msdyn_projectparameter
+    - objectid_msdyn_projectparameterpricelist
+    - objectid_msdyn_projectpricelist
+    - objectid_msdyn_projecttask
+    - objectid_msdyn_projecttaskdependency
+    - objectid_msdyn_projecttaskstatususer
+    - objectid_msdyn_projectteam
+    - objectid_msdyn_projectteammembersignup
+    - objectid_msdyn_projecttransactioncategory
+    - objectid_msdyn_quotelineanalyticsbreakdown
+    - objectid_msdyn_quotelineinvoiceschedule
+    - objectid_msdyn_quotelineresourcecategory
+    - objectid_msdyn_quotelinescheduleofvalue
+    - objectid_msdyn_quotelinetransaction
+    - objectid_msdyn_quotelinetransactioncategory
+    - objectid_msdyn_quotelinetransactionclassification
+    - objectid_msdyn_quotepricelist
+    - objectid_msdyn_resourceassignment
+    - objectid_msdyn_resourceassignmentdetail
+    - objectid_msdyn_resourcecategorypricelevel
+    - objectid_msdyn_resourcerequest
+    - objectid_msdyn_rolecompetencyrequirement
+    - objectid_msdyn_roleutilization
+    - objectid_msdyn_timeentry
+    - objectid_msdyn_timeoffcalendar
+    - objectid_msdyn_transactioncategory
+    - objectid_msdyn_transactioncategoryclassification
+    - objectid_msdyn_transactioncategoryhierarchyelement
+    - objectid_msdyn_transactioncategorypricelevel
+    - objectid_msdyn_transactionconnection
+    - objectid_msdyn_transactiontype
+    - objectid_msdyn_userworkhistory
     - objectid_msdyn_agreement
     - objectid_msdyn_agreementbookingdate
     - objectid_msdyn_agreementbookingincident
@@ -302,19 +217,14 @@ lookup_properties:
     - objectid_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
     - objectid_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
     - objectid_msdyn_customerasset
-    - objectid_msdyn_customerassetcategory
-    - objectid_msdyn_entitlementapplication
     - objectid_msdyn_fieldservicepricelistitem
     - objectid_msdyn_fieldservicesetting
-    - objectid_msdyn_fieldserviceslaconfiguration
     - objectid_msdyn_fieldservicesystemjob
     - objectid_msdyn_incidenttype
     - objectid_msdyn_incidenttypecharacteristic
     - objectid_msdyn_incidenttypeproduct
     - objectid_msdyn_incidenttypeservice
     - objectid_msdyn_incidenttypeservicetask
-    - objectid_msdyn_incidenttypessetup
-    - objectid_msdyn_incidenttype_requirementgroup
     - objectid_msdyn_inventoryadjustment
     - objectid_msdyn_inventoryadjustmentproduct
     - objectid_msdyn_inventoryjournal
@@ -368,97 +278,311 @@ lookup_properties:
     - objectid_msdyn_workorderservicetask
     - objectid_msdyn_workordersubstatus
     - objectid_msdyn_workordertype
+    - objectid_msdyn_analysiscomponent
+    - objectid_msdyn_analysisjob
+    - objectid_msdyn_analysisresult
+    - objectid_msdyn_analysisresultdetail
+    - objectid_msdyn_solutionhealthrule
+    - objectid_msdyn_solutionhealthruleargument
+    - objectid_msdyn_solutionhealthruleset
+    - objectid_msdyn_forecastdefinition
+    - objectid_msdyn_forecastinstance
+    - objectid_msdyn_forecastrecurrence
+    - objectid_msdyn_aiconfiguration
+    - objectid_msdyn_aimodel
+    - objectid_msdyn_aitemplate
+    - objectid_msdyn_aifptrainingdocument
+    - objectid_msdyn_aiodimage
+    - objectid_msdyn_aiodlabel
+    - objectid_msdyn_aiodtrainingboundingbox
+    - objectid_msdyn_aiodtrainingimage
+    - objectid_msdyn_sikeyvalueconfig
+    - objectid_msdyn_notesanalysisconfig
+    - objectid_msdyn_icebreakersconfig
+    - objectid_msdyn_teamscollaboration
+    - objectid_msdyn_callablecontext
+    - objectid_msdyn_playbookactivity
+    - objectid_msdyn_playbookactivityattribute
+    - objectid_msdyn_playbookcategory
+    - objectid_msdyn_playbookinstance
+    - objectid_msdyn_playbooktemplate
+    - objectid_sales_linkedin_configuration
+    - objectid_msdyn_actioncardregarding
+    - objectid_msdyn_actioncardrolesetting
+    - objectid_msdyn_entityrankingrule
+    - objectid_msdyn_flowcardtype
+    - objectid_msdyn_salesinsightssettings
+    - objectid_connector
+    - objectid_mbs_pluginprofile
+    - objectid_msfp_emailtemplate
+    - objectid_msfp_question
+    - objectid_msfp_questionresponse
+    - objectid_msfp_survey
+    - objectid_msfp_unsubscribedrecipient
+    - objectid_msdyn_connector
+    - objectid_msdyn_relationshipinsightsunifiedconfig
+    - objectid_msdyn_siconfig
+    - objectid_msdyn_untrackedappointment
     - objectid_msdyn_iotalert
     - objectid_msdyn_iotdevice
     - objectid_msdyn_iotdevicecategory
     - objectid_msdyn_iotdevicecommand
-    - objectid_msdyn_iotdevicecommanddefinition
-    - objectid_msdyn_iotdevicedatahistory
-    - objectid_msdyn_iotdeviceproperty
     - objectid_msdyn_iotdeviceregistrationhistory
-    - objectid_msdyn_iotpropertydefinition
+    - objectid_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    - objectid_msdyn_orginsightsuserdashboarddefinition
+    - objectid_ms_newsitem
+    - objectid_ms_satori
+    - objectid_msdyn_databaseversion
+    - objectid_msdyn_upgraderun
+    - objectid_msdyn_upgradestep
+    - objectid_msdyn_upgradeversion
+    - objectid_entitlemententityallocationtypemapping
+    - objectid_dynamicproperty
+    - objectid_dynamicpropertyassociation
+    - objectid_dynamicpropertyinstance
+    - objectid_dynamicpropertyoptionsetitem
+    - objectid_pricelevel
+    - objectid_productassociation
+    - objectid_productpricelevel
+    - objectid_productsubstitute
+    - objectid_uom
+    - objectid_uomschedule
+    - objectid_product
+    - objectid_constraintbasedgroup
+    - objectid_contract
+    - objectid_contractdetail
+    - objectid_contracttemplate
+    - objectid_entitlement
+    - objectid_entitlementchannel
+    - objectid_entitlementcontacts
+    - objectid_entitlementproducts
+    - objectid_entitlementtemplate
+    - objectid_entitlementtemplatechannel
+    - objectid_entitlementtemplateproducts
+    - objectid_equipment
+    - objectid_incident
+    - objectid_incidentknowledgebaserecord
+    - objectid_knowledgearticleincident
+    - objectid_phonetocaseprocess
+    - objectid_resource
+    - objectid_resourcegroup
+    - objectid_resourcespec
+    - objectid_service
+    - objectid_servicecontractcontacts
+    - objectid_site
+    - objectid_bulkoperationlog
+    - objectid_campaign
+    - objectid_campaignactivityitem
+    - objectid_campaignitem
+    - objectid_list
+    - objectid_listmember
+    - objectid_adminsettingsentity
+    - objectid_bookableresource
+    - objectid_bookableresourcebooking
+    - objectid_bookableresourcebookingheader
+    - objectid_bookableresourcecategory
+    - objectid_bookableresourcecategoryassn
+    - objectid_bookableresourcecharacteristic
+    - objectid_bookableresourcegroup
+    - objectid_bookingstatus
+    - objectid_characteristic
+    - objectid_ratingmodel
+    - objectid_ratingvalue
+    - objectid_accountleads
+    - objectid_contactleads
+    - objectid_leadaddress
+    - objectid_lead
+    - objectid_competitoraddress
+    - objectid_competitorproduct
+    - objectid_competitorsalesliterature
+    - objectid_contactinvoices
+    - objectid_contactorders
+    - objectid_contactquotes
+    - objectid_discount
+    - objectid_discounttype
+    - objectid_leadcompetitors
+    - objectid_leadproduct
+    - objectid_leadtoopportunitysalesprocess
+    - objectid_opportunitycompetitors
+    - objectid_opportunitysalesprocess
+    - objectid_productsalesliterature
+    - objectid_salesliteratureitem
+    - objectid_msdyn_collabgraphresource
+    - objectid_msdyn_msteamssetting
+    - objectid_entityanalyticsconfig
+    - objectid_sales_linkedin_profileassociations
+    - objectid_msdyn_msteamssettingsv2
+    - objectid_msdyn_knowledgearticleimage
+    - objectid_msdyn_knowledgearticletemplate
+    - objectid_environmentvariabledefinition
+    - objectid_environmentvariablevalue
+    - objectid_flowsession
+    - objectid_workflowbinary
+    - objectid_msdyn_forecastconfiguration
+    - objectid_apisettings
+    - objectid_serviceplan
+    - objectid_solutioncomponentattributeconfiguration
+    - objectid_invoice
+    - objectid_invoicedetail
+    - objectid_opportunity
+    - objectid_opportunityproduct
+    - objectid_quote
+    - objectid_quotedetail
+    - objectid_salesliterature
+    - objectid_salesorder
+    - objectid_salesorderdetail
+    - objectid_competitor
+    - objectid_territory
+    - objectid_attributeimageconfig
+    - objectid_entityimageconfig
+    - objectid_msdyn_autocapturerule
+    - objectid_msdyn_autocapturesettings
+    - objectid_msdyn_aibdataset
+    - objectid_msdyn_aibdatasetfile
+    - objectid_msdyn_aibdatasetscontainer
+    - objectid_msdyn_aibfile
+    - objectid_msdyn_aibfileattacheddata
+    - objectid_solutioncomponentconfiguration
+    - objectid_stagesolutionupload
+    - objectid_processstageparameter
+    - objectid_msdyn_aibdatasetrecord
+    - objectid_msdyn_analyticsadminsettings
+    - objectid_msdyn_dataanalyticsreport
+    - objectid_msdyn_analyticsforcs
+    - objectid_msdyn_serviceconfiguration
+    - objectid_msdyn_slakpi
+    - objectid_msdyn_dataflow
+    - objectid_datalakeworkspace
+    - objectid_datalakeworkspacepermission
+    - objectid_applicationuser
+    - objectid_msfp_localizedemailtemplate
+    - objectid_msfp_project
+    - objectid_msfp_satisfactionmetric
+    - objectid_solutioncomponentrelationshipconfiguration
+    - objectid_relationshipattribute
+    - objectid_listoperation
+    - objectid_connectionreference
+    - objectid_exportsolutionupload
+    - objectid_msdyn_richtextfile
+    - objectid_msdyn_bookableresourceassociation
+    - objectid_msdyn_businessclosure
+    - objectid_msdyn_requirementgroup
+    - objectid_msdyn_requirementrelationship
+    - objectid_msdyn_requirementdependency
+    - objectid_msdyn_schedulingfeatureflag
+    - objectid_msdyn_timeentrysetting
+    - objectid_msdyn_dimension
+    - objectid_msdyn_dimensionfieldname
+    - objectid_msdyn_resourcecategorymarkuppricelevel
+    - objectid_msdyn_3dmodel
+    - objectid_msdyn_customerassetcategory
+    - objectid_msdyn_entitlementapplication
+    - objectid_msdyn_fieldserviceslaconfiguration
+    - objectid_msdyn_incidenttypessetup
+    - objectid_msdyn_incidenttype_requirementgroup
+    - objectid_msdyn_incidenttyperecommendationresult
+    - objectid_msdyn_incidenttyperecommendationrunhistory
+    - objectid_msdyn_iotdevicevisualizationconfiguration
+    - objectid_msdyn_iotfieldmapping
     - objectid_msdyn_iotprovider
     - objectid_msdyn_iotproviderinstance
-    - objectid_msdyn_iotsettings
-    - objectid_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
     - objectid_msdyn_entityconfiguration
     - objectid_msdyn_geofence
     - objectid_msdyn_geofenceevent
     - objectid_msdyn_geofencingsettings
-    - objectid_msdyn_accountpricelist
-    - objectid_msdyn_batchjob
-    - objectid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
-    - objectid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
-    - objectid_msdyn_characteristicreqforteammember
-    - objectid_msdyn_contactpricelist
-    - objectid_msdyn_contractlineinvoiceschedule
-    - objectid_msdyn_contractlinescheduleofvalue
-    - objectid_msdyn_dataexport
-    - objectid_msdyn_delegation
-    - objectid_msdyn_dimension
-    - objectid_msdyn_dimensionfieldname
-    - objectid_msdyn_estimate
-    - objectid_msdyn_estimateline
-    - objectid_msdyn_expense
-    - objectid_msdyn_expensecategory
-    - objectid_msdyn_expensereceipt
-    - objectid_msdyn_fact
-    - objectid_msdyn_fieldcomputation
-    - objectid_msdyn_findworkevent
-    - objectid_msdyn_integrationjob
-    - objectid_msdyn_integrationjobdetail
-    - objectid_msdyn_invoicefrequency
-    - objectid_msdyn_invoicefrequencydetail
-    - objectid_msdyn_invoicelinetransaction
-    - objectid_msdyn_journal
-    - objectid_msdyn_journalline
-    - objectid_msdyn_mlresultcache
-    - objectid_msdyn_opportunitylineresourcecategory
-    - objectid_msdyn_opportunitylinetransaction
-    - objectid_msdyn_opportunitylinetransactioncategory
-    - objectid_msdyn_opportunitylinetransactionclassificatio
-    - objectid_msdyn_opportunitypricelist
-    - objectid_msdyn_orderlineresourcecategory
-    - objectid_msdyn_orderlinetransaction
-    - objectid_msdyn_orderlinetransactioncategory
-    - objectid_msdyn_orderlinetransactionclassification
-    - objectid_msdyn_orderpricelist
-    - objectid_msdyn_processnotes
-    - objectid_msdyn_project
-    - objectid_msdyn_projectapproval
-    - objectid_msdyn_projectparameter
-    - objectid_msdyn_projectparameterpricelist
-    - objectid_msdyn_projectpricelist
-    - objectid_msdyn_projecttask
-    - objectid_msdyn_projecttaskdependency
-    - objectid_msdyn_projecttaskstatususer
-    - objectid_msdyn_projectteam
-    - objectid_msdyn_projectteammembersignup
-    - objectid_msdyn_projecttransactioncategory
-    - objectid_msdyn_quotelineanalyticsbreakdown
-    - objectid_msdyn_quotelineinvoiceschedule
-    - objectid_msdyn_quotelineresourcecategory
-    - objectid_msdyn_quotelinescheduleofvalue
-    - objectid_msdyn_quotelinetransaction
-    - objectid_msdyn_quotelinetransactioncategory
-    - objectid_msdyn_quotelinetransactionclassification
-    - objectid_msdyn_quotepricelist
-    - objectid_msdyn_resourceassignment
-    - objectid_msdyn_resourceassignmentdetail
-    - objectid_msdyn_resourcecategorymarkuppricelevel
-    - objectid_msdyn_resourcecategorypricelevel
-    - objectid_msdyn_resourcerequest
-    - objectid_msdyn_rolecompetencyrequirement
-    - objectid_msdyn_roleutilization
-    - objectid_msdyn_timeentry
-    - objectid_msdyn_timeoffcalendar
-    - objectid_msdyn_transactioncategory
-    - objectid_msdyn_transactioncategoryclassification
-    - objectid_msdyn_transactioncategoryhierarchyelement
-    - objectid_msdyn_transactioncategorypricelevel
-    - objectid_msdyn_transactionconnection
-    - objectid_msdyn_transactiontype
-    - objectid_msdyn_userworkhistory
+    - objectid_cascadegrantrevokeaccessrecordstracker
+    - objectid_cascadegrantrevokeaccessversiontracker
+    - objectid_msdyn_iottocaseprocess
+    - objectid_msdyn_knowledgeinteractioninsight
+    - objectid_msdyn_knowledgesearchinsight
+    - objectid_msdynce_botcontent
+    - objectid_conversationtranscript
+    - objectid_bot
+    - objectid_botcomponent
+    - objectid_package
+    - objectid_msfp_alertrule
+    - objectid_datalakefolder
+    - objectid_datalakefolderpermission
+    - objectid_provisionlanguageforuser
+    - objectid_catalog
+    - objectid_catalogassignment
+    - objectid_customapi
+    - objectid_customapirequestparameter
+    - objectid_customapiresponseproperty
+    - objectid_activitymonitor
+    - objectid_msdyn_migrationtracker
+    - objectid_msdyn_assetcategorytemplateassociation
+    - objectid_msdyn_assettemplateassociation
+    - objectid_msdyn_customerassetattachment
+    - objectid_msdyn_functionallocation
+    - objectid_msdyn_property
+    - objectid_msdyn_propertyassetassociation
+    - objectid_msdyn_propertylog
+    - objectid_msdyn_propertytemplateassociation
+    - objectid_msdyn_templateforproperties
+    - objectid_msdyn_appconfiguration
+    - objectid_msdyn_applicationextension
+    - objectid_msdyn_applicationtabtemplate
+    - objectid_msdyn_notificationfield
+    - objectid_msdyn_notificationtemplate
+    - objectid_msdyn_sessiontemplate
+    - objectid_msdyn_templateparameter
+    - objectid_msdyn_channelprovider
+    - objectid_msdyn_paneconfiguration
+    - objectid_msdyn_panetabconfiguration
+    - objectid_msdyn_panetoolconfiguration
+    - objectid_msdyn_productivityagentscript
+    - objectid_msdyn_productivityagentscriptstep
+    - objectid_msdyn_productivityactioninputparameter
+    - objectid_msdyn_productivityactionoutputparameter
+    - objectid_msdyn_productivitymacroactiontemplate
+    - objectid_msdyn_productivitymacrosolutionconfiguration
+    - objectid_msdyn_productivitymacroconnector
+    - objectid_msdyn_macrosession
+    - objectid_msdyn_productivityparameterdefinition
+    - objectid_msdyn_adaptivecardconfiguration
+    - objectid_msdyn_smartassistconfig
+    - objectid_msdyn_caseenrichment
+    - objectid_msdyn_casesuggestionrequestpayload
+    - objectid_msdyn_kbenrichment
+    - objectid_msdyn_suggestioninteraction
+    - objectid_msdyn_suggestionrequestpayload
+    - objectid_msdyn_suggestionsmodelsummary
+    - objectid_msdyn_suggestionssetting
+    - objectid_msdyn_datainsightsandanalyticsfeature
+    - objectid_msdyn_casetopic
+    - objectid_msdyn_casetopicsetting
+    - objectid_msdyn_casetopicsummary
+    - objectid_msdyn_casetopic_incident
+    - objectid_msdyn_dataanalyticsreport_csrmanager
+    - objectid_msdyn_dataanalyticsreport_ksinsights
+    - objectid_msdyn_federatedarticle
+    - objectid_msdyn_federatedarticleincident
+    - objectid_msdyn_kmfederatedsearchconfig
+    - objectid_msdyn_inspection
+    - objectid_msdyn_inspectionattachment
+    - objectid_msdyn_inspectiondefinition
+    - objectid_msdyn_inspectionresponse
+    - objectid_msdyn_problematicasset
+    - objectid_msdyn_problematicassetfeedback
+    - objectid_msdyn_geolocationsettings
+    - objectid_msdyn_geolocationtracking
+    - objectid_msdyn_assetsuggestionssetting
+    - objectid_msdyn_dataanalyticsreport_fs
+    - objectid_msdyn_dataanalyticsreport_fspredictrs
+    - objectid_msdyn_dataanalyticsreport_fspredictwhd
+    - objectid_msdyn_predictworkhourdurationsetting
+    - objectid_msdyn_contractlinedetailperformance
+    - objectid_msdyn_contractperformance
+    - objectid_msdyn_helppage
+    - objectid_teammobileofflineprofilemembership
+    - objectid_usermobileofflineprofilemembership
+    - objectid_msfp_fileresponse
+    - objectid_msfp_surveyreminder
+    - objectid_revokeinheritedaccessrecordstracker
+    - objectid_systemuserauthorizationchangetracker
+    - objectid_organizationdatasyncsubscription
+    - objectid_organizationdatasyncsubscriptionentity
     description: "Unique identifier of the entity instance with shared secured field"
   - name: _organizationid_value
     single_valued_navigation_property:
@@ -481,6 +605,9 @@ single_valued_navigation_properties:
   - name: objectid_adminsettingsentity
     type: Microsoft.Dynamics.CRM.adminsettingsentity
     partner: adminsettingsentity_PrincipalObjectAttributeAccesses
+  - name: objectid_apisettings
+    type: Microsoft.Dynamics.CRM.apisettings
+    partner: apisettings_PrincipalObjectAttributeAccesses
   - name: objectid_appointment
     type: Microsoft.Dynamics.CRM.appointment
     partner: appointment_principalobjectattributeaccess
@@ -553,9 +680,6 @@ single_valued_navigation_properties:
   - name: objectid_connection
     type: Microsoft.Dynamics.CRM.connection
     partner: connection_principalobjectattributeaccess
-  - name: objectid_connectionreference
-    type: Microsoft.Dynamics.CRM.connectionreference
-    partner: connectionreference_PrincipalObjectAttributeAccesses
   - name: objectid_connector
     type: Microsoft.Dynamics.CRM.connector
     partner: connector_PrincipalObjectAttributeAccesses
@@ -619,6 +743,9 @@ single_valued_navigation_properties:
   - name: objectid_entitlementcontacts
     type: Microsoft.Dynamics.CRM.entitlementcontacts
     partner: entitlementcontacts_PrincipalObjectAttributeAccesses
+  - name: objectid_entitlemententityallocationtypemapping
+    type: Microsoft.Dynamics.CRM.entitlemententityallocationtypemapping
+    partner: entitlemententityallocationtypemapping_PrincipalObjectAttributeAccesses
   - name: objectid_entitlementproducts
     type: Microsoft.Dynamics.CRM.entitlementproducts
     partner: entitlementproducts_PrincipalObjectAttributeAccesses
@@ -646,6 +773,9 @@ single_valued_navigation_properties:
   - name: objectid_equipment
     type: Microsoft.Dynamics.CRM.equipment
     partner: equipment_principalobjectattributeaccess
+  - name: objectid_exportsolutionupload
+    type: Microsoft.Dynamics.CRM.exportsolutionupload
+    partner: exportsolutionupload_PrincipalObjectAttributeAccesses
   - name: objectid_fax
     type: Microsoft.Dynamics.CRM.fax
     partner: fax_principalobjectattributeaccess
@@ -706,21 +836,54 @@ single_valued_navigation_properties:
   - name: objectid_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: letter_principalobjectattributeaccess
+  - name: objectid_li_inmail
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: li_inmail_PrincipalObjectAttributeAccesses
+  - name: objectid_li_message
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: li_message_PrincipalObjectAttributeAccesses
+  - name: objectid_li_pointdrivepresentationviewed
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: li_pointdrivepresentationviewed_PrincipalObjectAttributeAccesses
   - name: objectid_list
     type: Microsoft.Dynamics.CRM.list
     partner: list_principalobjectattributeaccess
   - name: objectid_listmember
     type: Microsoft.Dynamics.CRM.listmember
     partner: listmember_PrincipalObjectAttributeAccesses
+  - name: objectid_listoperation
+    type: Microsoft.Dynamics.CRM.listoperation
+    partner: listoperation_PrincipalObjectAttributeAccesses
   - name: objectid_mailmergetemplate
     type: Microsoft.Dynamics.CRM.mailmergetemplate
     partner: mailmergetemplate_principalobjectattributeaccess
+  - name: objectid_mbs_pluginprofile
+    type: Microsoft.Dynamics.CRM.mbs_pluginprofile
+    partner: mbs_pluginprofile_PrincipalObjectAttributeAccesses
+  - name: objectid_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_PrincipalObjectAttributeAccesses
+  - name: objectid_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_3dmodel
+    type: Microsoft.Dynamics.CRM.msdyn_3dmodel
+    partner: msdyn_3dmodel_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_accountpricelist
     type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
     partner: msdyn_accountpricelist_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_actioncardregarding
+    type: Microsoft.Dynamics.CRM.msdyn_actioncardregarding
+    partner: msdyn_actioncardregarding_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_actioncardrolesetting
+    type: Microsoft.Dynamics.CRM.msdyn_actioncardrolesetting
+    partner: msdyn_actioncardrolesetting_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_actual
     type: Microsoft.Dynamics.CRM.msdyn_actual
     partner: msdyn_actual_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_adaptivecardconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_adaptivecardconfiguration
+    partner: msdyn_adaptivecardconfiguration_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_agreement
     type: Microsoft.Dynamics.CRM.msdyn_agreement
     partner: msdyn_agreement_PrincipalObjectAttributeAccesses
@@ -808,12 +971,45 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_analysisresultdetail
     type: Microsoft.Dynamics.CRM.msdyn_analysisresultdetail
     partner: msdyn_analysisresultdetail_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_analyticsadminsettings
+    type: Microsoft.Dynamics.CRM.msdyn_analyticsadminsettings
+    partner: msdyn_analyticsadminsettings_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_analyticsforcs
+    type: Microsoft.Dynamics.CRM.msdyn_analyticsforcs
+    partner: msdyn_analyticsforcs_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_appconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_appconfiguration
+    partner: msdyn_appconfiguration_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_applicationextension
+    type: Microsoft.Dynamics.CRM.msdyn_applicationextension
+    partner: msdyn_applicationextension_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_applicationtabtemplate
+    type: Microsoft.Dynamics.CRM.msdyn_applicationtabtemplate
+    partner: msdyn_applicationtabtemplate_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: msdyn_approval_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_assetcategorytemplateassociation
+    type: Microsoft.Dynamics.CRM.msdyn_assetcategorytemplateassociation
+    partner: msdyn_assetcategorytemplateassociation_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_assetsuggestionssetting
+    type: Microsoft.Dynamics.CRM.msdyn_assetsuggestionssetting
+    partner: msdyn_assetsuggestionssetting_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_assettemplateassociation
+    type: Microsoft.Dynamics.CRM.msdyn_assettemplateassociation
+    partner: msdyn_assettemplateassociation_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_autocapturerule
+    type: Microsoft.Dynamics.CRM.msdyn_autocapturerule
+    partner: msdyn_autocapturerule_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_autocapturesettings
+    type: Microsoft.Dynamics.CRM.msdyn_autocapturesettings
+    partner: msdyn_autocapturesettings_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_batchjob
     type: Microsoft.Dynamics.CRM.msdyn_batchjob
     partner: msdyn_batchjob_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_bookableresourceassociation
+    type: Microsoft.Dynamics.CRM.msdyn_bookableresourceassociation
+    partner: msdyn_bookableresourceassociation_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_bookingalert
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: msdyn_bookingalert_PrincipalObjectAttributeAccesses
@@ -856,33 +1052,120 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
     type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
     partner: msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_businessclosure
+    type: Microsoft.Dynamics.CRM.msdyn_businessclosure
+    partner: msdyn_businessclosure_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_callablecontext
+    type: Microsoft.Dynamics.CRM.msdyn_callablecontext
+    partner: msdyn_callablecontext_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_caseenrichment
+    type: Microsoft.Dynamics.CRM.msdyn_caseenrichment
+    partner: msdyn_caseenrichment_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_casesuggestionrequestpayload
+    type: Microsoft.Dynamics.CRM.msdyn_casesuggestionrequestpayload
+    partner: msdyn_casesuggestionrequestpayload_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_casetopic
+    type: Microsoft.Dynamics.CRM.msdyn_casetopic
+    partner: msdyn_casetopic_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_casetopic_incident
+    type: Microsoft.Dynamics.CRM.msdyn_casetopic_incident
+    partner: msdyn_casetopic_incident_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_casetopicsetting
+    type: Microsoft.Dynamics.CRM.msdyn_casetopicsetting
+    partner: msdyn_casetopicsetting_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_casetopicsummary
+    type: Microsoft.Dynamics.CRM.msdyn_casetopicsummary
+    partner: msdyn_casetopicsummary_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_channelprovider
+    type: Microsoft.Dynamics.CRM.msdyn_channelprovider
+    partner: msdyn_channelprovider_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_characteristicreqforteammember
     type: Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember
     partner: msdyn_characteristicreqforteammember_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_clientextension
     type: Microsoft.Dynamics.CRM.msdyn_clientextension
     partner: msdyn_clientextension_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_collabgraphresource
+    type: Microsoft.Dynamics.CRM.msdyn_collabgraphresource
+    partner: msdyn_collabgraphresource_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_configuration
     type: Microsoft.Dynamics.CRM.msdyn_configuration
     partner: msdyn_configuration_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_connector
+    type: Microsoft.Dynamics.CRM.msdyn_connector
+    partner: msdyn_connector_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_contactpricelist
     type: Microsoft.Dynamics.CRM.msdyn_contactpricelist
     partner: msdyn_contactpricelist_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_contractlinedetailperformance
+    type: Microsoft.Dynamics.CRM.msdyn_contractlinedetailperformance
+    partner: msdyn_contractlinedetailperformance_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_contractlineinvoiceschedule
     type: Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule
     partner: msdyn_contractlineinvoiceschedule_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_contractlinescheduleofvalue
     type: Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue
     partner: msdyn_contractlinescheduleofvalue_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_contractperformance
+    type: Microsoft.Dynamics.CRM.msdyn_contractperformance
+    partner: msdyn_contractperformance_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_customerasset
     type: Microsoft.Dynamics.CRM.msdyn_customerasset
     partner: msdyn_customerasset_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_customerassetattachment
+    type: Microsoft.Dynamics.CRM.msdyn_customerassetattachment
+    partner: msdyn_customerassetattachment_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_customerassetcategory
+    type: Microsoft.Dynamics.CRM.msdyn_customerassetcategory
+    partner: msdyn_customerassetcategory_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_dataanalyticsreport
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport
+    partner: msdyn_dataanalyticsreport_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_dataanalyticsreport_csrmanager
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_csrmanager
+    partner: msdyn_dataanalyticsreport_csrmanager_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_dataanalyticsreport_fs
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fs
+    partner: msdyn_dataanalyticsreport_fs_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_dataanalyticsreport_fspredictrs
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictrs
+    partner: msdyn_dataanalyticsreport_fspredictrs_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_dataanalyticsreport_fspredictwhd
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictwhd
+    partner: msdyn_dataanalyticsreport_fspredictwhd_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_dataanalyticsreport_ksinsights
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_ksinsights
+    partner: msdyn_dataanalyticsreport_ksinsights_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_databaseversion
+    type: Microsoft.Dynamics.CRM.msdyn_databaseversion
+    partner: msdyn_databaseversion_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_dataexport
     type: Microsoft.Dynamics.CRM.msdyn_dataexport
     partner: msdyn_dataexport_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_dataflow
+    type: Microsoft.Dynamics.CRM.msdyn_dataflow
+    partner: msdyn_dataflow_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_datainsightsandanalyticsfeature
+    type: Microsoft.Dynamics.CRM.msdyn_datainsightsandanalyticsfeature
+    partner: msdyn_datainsightsandanalyticsfeature_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_delegation
     type: Microsoft.Dynamics.CRM.msdyn_delegation
     partner: msdyn_delegation_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_dimension
+    type: Microsoft.Dynamics.CRM.msdyn_dimension
+    partner: msdyn_dimension_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_dimensionfieldname
+    type: Microsoft.Dynamics.CRM.msdyn_dimensionfieldname
+    partner: msdyn_dimensionfieldname_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_entitlementapplication
+    type: Microsoft.Dynamics.CRM.msdyn_entitlementapplication
+    partner: msdyn_entitlementapplication_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_entityconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_entityconfiguration
+    partner: msdyn_entityconfiguration_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_entityrankingrule
+    type: Microsoft.Dynamics.CRM.msdyn_entityrankingrule
+    partner: msdyn_entityrankingrule_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_estimate
     type: Microsoft.Dynamics.CRM.msdyn_estimate
     partner: msdyn_estimate_PrincipalObjectAttributeAccesses
@@ -901,6 +1184,12 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_fact
     type: Microsoft.Dynamics.CRM.msdyn_fact
     partner: msdyn_fact_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_federatedarticle
+    type: Microsoft.Dynamics.CRM.msdyn_federatedarticle
+    partner: msdyn_federatedarticle_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_federatedarticleincident
+    type: Microsoft.Dynamics.CRM.msdyn_federatedarticleincident
+    partner: msdyn_federatedarticleincident_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_fieldcomputation
     type: Microsoft.Dynamics.CRM.msdyn_fieldcomputation
     partner: msdyn_fieldcomputation_PrincipalObjectAttributeAccesses
@@ -919,21 +1208,84 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_findworkevent
     type: Microsoft.Dynamics.CRM.msdyn_findworkevent
     partner: msdyn_findworkevent_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_flowcardtype
+    type: Microsoft.Dynamics.CRM.msdyn_flowcardtype
+    partner: msdyn_flowcardtype_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_forecastconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_forecastconfiguration
+    partner: msdyn_forecastconfiguration_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_forecastdefinition
+    type: Microsoft.Dynamics.CRM.msdyn_forecastdefinition
+    partner: msdyn_forecastdefinition_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_forecastinstance
+    type: Microsoft.Dynamics.CRM.msdyn_forecastinstance
+    partner: msdyn_forecastinstance_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_forecastrecurrence
+    type: Microsoft.Dynamics.CRM.msdyn_forecastrecurrence
+    partner: msdyn_forecastrecurrence_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_functionallocation
+    type: Microsoft.Dynamics.CRM.msdyn_functionallocation
+    partner: msdyn_functionallocation_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_geofence
+    type: Microsoft.Dynamics.CRM.msdyn_geofence
+    partner: msdyn_geofence_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_geofenceevent
+    type: Microsoft.Dynamics.CRM.msdyn_geofenceevent
+    partner: msdyn_geofenceevent_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_geofencingsettings
+    type: Microsoft.Dynamics.CRM.msdyn_geofencingsettings
+    partner: msdyn_geofencingsettings_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_geolocationsettings
+    type: Microsoft.Dynamics.CRM.msdyn_geolocationsettings
+    partner: msdyn_geolocationsettings_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_geolocationtracking
+    type: Microsoft.Dynamics.CRM.msdyn_geolocationtracking
+    partner: msdyn_geolocationtracking_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_helppage
+    type: Microsoft.Dynamics.CRM.msdyn_helppage
+    partner: msdyn_helppage_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_icebreakersconfig
+    type: Microsoft.Dynamics.CRM.msdyn_icebreakersconfig
+    partner: msdyn_icebreakersconfig_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_incidenttype
     type: Microsoft.Dynamics.CRM.msdyn_incidenttype
     partner: msdyn_incidenttype_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_incidenttype_requirementgroup
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttype_requirementgroup
+    partner: msdyn_incidenttype_requirementgroup_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_incidenttypecharacteristic
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
     partner: msdyn_incidenttypecharacteristic_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_incidenttypeproduct
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
     partner: msdyn_incidenttypeproduct_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_incidenttyperecommendationresult
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationresult
+    partner: msdyn_incidenttyperecommendationresult_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_incidenttyperecommendationrunhistory
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationrunhistory
+    partner: msdyn_incidenttyperecommendationrunhistory_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_incidenttypeservice
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
     partner: msdyn_incidenttypeservice_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_incidenttypeservicetask
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservicetask
     partner: msdyn_incidenttypeservicetask_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_incidenttypessetup
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypessetup
+    partner: msdyn_incidenttypessetup_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_inspection
+    type: Microsoft.Dynamics.CRM.msdyn_inspection
+    partner: msdyn_inspection_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_inspectionattachment
+    type: Microsoft.Dynamics.CRM.msdyn_inspectionattachment
+    partner: msdyn_inspectionattachment_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_inspectiondefinition
+    type: Microsoft.Dynamics.CRM.msdyn_inspectiondefinition
+    partner: msdyn_inspectiondefinition_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_inspectionresponse
+    type: Microsoft.Dynamics.CRM.msdyn_inspectionresponse
+    partner: msdyn_inspectionresponse_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_integrationjob
     type: Microsoft.Dynamics.CRM.msdyn_integrationjob
     partner: msdyn_integrationjob_PrincipalObjectAttributeAccesses
@@ -973,18 +1325,87 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_iotdevicecommand
     type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
     partner: msdyn_iotdevicecommand_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotdevicecommanddefinition
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommanddefinition
+    partner: msdyn_iotdevicecommanddefinition_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotdevicedatahistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicedatahistory
+    partner: msdyn_iotdevicedatahistory_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotdeviceproperty
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceproperty
+    partner: msdyn_iotdeviceproperty_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_iotdeviceregistrationhistory
     type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
     partner: msdyn_iotdeviceregistrationhistory_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotdevicevisualizationconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicevisualizationconfiguration
+    partner: msdyn_iotdevicevisualizationconfiguration_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotfieldmapping
+    type: Microsoft.Dynamics.CRM.msdyn_iotfieldmapping
+    partner: msdyn_iotfieldmapping_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotpropertydefinition
+    type: Microsoft.Dynamics.CRM.msdyn_iotpropertydefinition
+    partner: msdyn_iotpropertydefinition_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotprovider
+    type: Microsoft.Dynamics.CRM.msdyn_iotprovider
+    partner: msdyn_iotprovider_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotproviderinstance
+    type: Microsoft.Dynamics.CRM.msdyn_iotproviderinstance
+    partner: msdyn_iotproviderinstance_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iotsettings
+    type: Microsoft.Dynamics.CRM.msdyn_iotsettings
+    partner: msdyn_iotsettings_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_iottocaseprocess
+    type: Microsoft.Dynamics.CRM.msdyn_iottocaseprocess
+    partner: msdyn_iottocaseprocess_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal
     partner: msdyn_journal_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_journalline
     type: Microsoft.Dynamics.CRM.msdyn_journalline
     partner: msdyn_journalline_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_kbenrichment
+    type: Microsoft.Dynamics.CRM.msdyn_kbenrichment
+    partner: msdyn_kbenrichment_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_kmfederatedsearchconfig
+    type: Microsoft.Dynamics.CRM.msdyn_kmfederatedsearchconfig
+    partner: msdyn_kmfederatedsearchconfig_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_knowledgearticleimage
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticleimage
+    partner: msdyn_knowledgearticleimage_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_knowledgearticletemplate
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate
+    partner: msdyn_knowledgearticletemplate_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_knowledgeinteractioninsight
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgeinteractioninsight
+    partner: msdyn_knowledgeinteractioninsight_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_knowledgesearchinsight
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgesearchinsight
+    partner: msdyn_knowledgesearchinsight_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_macrosession
+    type: Microsoft.Dynamics.CRM.msdyn_macrosession
+    partner: msdyn_macrosession_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_migrationtracker
+    type: Microsoft.Dynamics.CRM.msdyn_migrationtracker
+    partner: msdyn_migrationtracker_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_mlresultcache
     type: Microsoft.Dynamics.CRM.msdyn_mlresultcache
     partner: msdyn_mlresultcache_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_msteamssetting
+    type: Microsoft.Dynamics.CRM.msdyn_msteamssetting
+    partner: msdyn_msteamssetting_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_msteamssettingsv2
+    type: Microsoft.Dynamics.CRM.msdyn_msteamssettingsv2
+    partner: msdyn_msteamssettingsv2_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_notesanalysisconfig
+    type: Microsoft.Dynamics.CRM.msdyn_notesanalysisconfig
+    partner: msdyn_notesanalysisconfig_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_notificationfield
+    type: Microsoft.Dynamics.CRM.msdyn_notificationfield
+    partner: msdyn_notificationfield_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_notificationtemplate
+    type: Microsoft.Dynamics.CRM.msdyn_notificationtemplate
+    partner: msdyn_notificationtemplate_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_opportunitylineresourcecategory
     type: Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory
     partner: msdyn_opportunitylineresourcecategory_PrincipalObjectAttributeAccesses
@@ -1030,6 +1451,18 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_organizationalunit
     type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
     partner: msdyn_organizationalunit_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_orginsightsuserdashboarddefinition
+    type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
+    partner: msdyn_orginsightsuserdashboarddefinition_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_paneconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_paneconfiguration
+    partner: msdyn_paneconfiguration_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_panetabconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_panetabconfiguration
+    partner: msdyn_panetabconfiguration_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_panetoolconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_panetoolconfiguration
+    partner: msdyn_panetoolconfiguration_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_payment
     type: Microsoft.Dynamics.CRM.msdyn_payment
     partner: msdyn_payment_PrincipalObjectAttributeAccesses
@@ -1042,6 +1475,21 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_paymentterm
     type: Microsoft.Dynamics.CRM.msdyn_paymentterm
     partner: msdyn_paymentterm_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_playbookactivity
+    type: Microsoft.Dynamics.CRM.msdyn_playbookactivity
+    partner: msdyn_playbookactivity_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_playbookactivityattribute
+    type: Microsoft.Dynamics.CRM.msdyn_playbookactivityattribute
+    partner: msdyn_playbookactivityattribute_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_playbookcategory
+    type: Microsoft.Dynamics.CRM.msdyn_playbookcategory
+    partner: msdyn_playbookcategory_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_playbookinstance
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_playbooktemplate
+    type: Microsoft.Dynamics.CRM.msdyn_playbooktemplate
+    partner: msdyn_playbooktemplate_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_postalbum
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: msdyn_postalbum_PrincipalObjectAttributeAccesses
@@ -1054,15 +1502,48 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_postruleconfig
     type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
     partner: msdyn_postruleconfig_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_predictworkhourdurationsetting
+    type: Microsoft.Dynamics.CRM.msdyn_predictworkhourdurationsetting
+    partner: msdyn_predictworkhourdurationsetting_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_priority
     type: Microsoft.Dynamics.CRM.msdyn_priority
     partner: msdyn_priority_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_problematicasset
+    type: Microsoft.Dynamics.CRM.msdyn_problematicasset
+    partner: msdyn_problematicasset_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_problematicassetfeedback
+    type: Microsoft.Dynamics.CRM.msdyn_problematicassetfeedback
+    partner: msdyn_problematicassetfeedback_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_processnotes
     type: Microsoft.Dynamics.CRM.msdyn_processnotes
     partner: msdyn_processnotes_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_productinventory
     type: Microsoft.Dynamics.CRM.msdyn_productinventory
     partner: msdyn_productinventory_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_productivityactioninputparameter
+    type: Microsoft.Dynamics.CRM.msdyn_productivityactioninputparameter
+    partner: msdyn_productivityactioninputparameter_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_productivityactionoutputparameter
+    type: Microsoft.Dynamics.CRM.msdyn_productivityactionoutputparameter
+    partner: msdyn_productivityactionoutputparameter_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_productivityagentscript
+    type: Microsoft.Dynamics.CRM.msdyn_productivityagentscript
+    partner: msdyn_productivityagentscript_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_productivityagentscriptstep
+    type: Microsoft.Dynamics.CRM.msdyn_productivityagentscriptstep
+    partner: msdyn_productivityagentscriptstep_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_productivitymacroactiontemplate
+    type: Microsoft.Dynamics.CRM.msdyn_productivitymacroactiontemplate
+    partner: msdyn_productivitymacroactiontemplate_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_productivitymacroconnector
+    type: Microsoft.Dynamics.CRM.msdyn_productivitymacroconnector
+    partner: msdyn_productivitymacroconnector_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_productivitymacrosolutionconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_productivitymacrosolutionconfiguration
+    partner: msdyn_productivitymacrosolutionconfiguration_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_productivityparameterdefinition
+    type: Microsoft.Dynamics.CRM.msdyn_productivityparameterdefinition
+    partner: msdyn_productivityparameterdefinition_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_project
     type: Microsoft.Dynamics.CRM.msdyn_project
     partner: msdyn_project_PrincipalObjectAttributeAccesses
@@ -1096,6 +1577,18 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_projecttransactioncategory
     type: Microsoft.Dynamics.CRM.msdyn_projecttransactioncategory
     partner: msdyn_projecttransactioncategory_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_property
+    type: Microsoft.Dynamics.CRM.msdyn_property
+    partner: msdyn_property_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_propertyassetassociation
+    type: Microsoft.Dynamics.CRM.msdyn_propertyassetassociation
+    partner: msdyn_propertyassetassociation_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_propertylog
+    type: Microsoft.Dynamics.CRM.msdyn_propertylog
+    partner: msdyn_propertylog_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_propertytemplateassociation
+    type: Microsoft.Dynamics.CRM.msdyn_propertytemplateassociation
+    partner: msdyn_propertytemplateassociation_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_purchaseorder
     type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
     partner: msdyn_purchaseorder_PrincipalObjectAttributeAccesses
@@ -1159,12 +1652,24 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_quotepricelist
     type: Microsoft.Dynamics.CRM.msdyn_quotepricelist
     partner: msdyn_quotepricelist_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_relationshipinsightsunifiedconfig
+    type: Microsoft.Dynamics.CRM.msdyn_relationshipinsightsunifiedconfig
+    partner: msdyn_relationshipinsightsunifiedconfig_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_requirementcharacteristic
     type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
     partner: msdyn_requirementcharacteristic_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_requirementdependency
+    type: Microsoft.Dynamics.CRM.msdyn_requirementdependency
+    partner: msdyn_requirementdependency_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_requirementgroup
+    type: Microsoft.Dynamics.CRM.msdyn_requirementgroup
+    partner: msdyn_requirementgroup_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_requirementorganizationunit
     type: Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
     partner: msdyn_requirementorganizationunit_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_requirementrelationship
+    type: Microsoft.Dynamics.CRM.msdyn_requirementrelationship
+    partner: msdyn_requirementrelationship_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_requirementresourcecategory
     type: Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
     partner: msdyn_requirementresourcecategory_PrincipalObjectAttributeAccesses
@@ -1180,6 +1685,9 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_resourceassignmentdetail
     type: Microsoft.Dynamics.CRM.msdyn_resourceassignmentdetail
     partner: msdyn_resourceassignmentdetail_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_resourcecategorymarkuppricelevel
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorymarkuppricelevel
+    partner: msdyn_resourcecategorymarkuppricelevel_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_resourcecategorypricelevel
     type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
     partner: msdyn_resourcecategorypricelevel_PrincipalObjectAttributeAccesses
@@ -1198,6 +1706,9 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_resourceterritory
     type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
     partner: msdyn_resourceterritory_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_richtextfile
+    type: Microsoft.Dynamics.CRM.msdyn_richtextfile
+    partner: msdyn_richtextfile_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_rma
     type: Microsoft.Dynamics.CRM.msdyn_rma
     partner: msdyn_rma_PrincipalObjectAttributeAccesses
@@ -1234,12 +1745,21 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_scheduleboardsetting
     type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
     partner: msdyn_scheduleboardsetting_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_schedulingfeatureflag
+    type: Microsoft.Dynamics.CRM.msdyn_schedulingfeatureflag
+    partner: msdyn_schedulingfeatureflag_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_schedulingparameter
     type: Microsoft.Dynamics.CRM.msdyn_schedulingparameter
     partner: msdyn_schedulingparameter_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_serviceconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_serviceconfiguration
+    partner: msdyn_serviceconfiguration_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_servicetasktype
     type: Microsoft.Dynamics.CRM.msdyn_servicetasktype
     partner: msdyn_servicetasktype_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_sessiontemplate
+    type: Microsoft.Dynamics.CRM.msdyn_sessiontemplate
+    partner: msdyn_sessiontemplate_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_shipvia
     type: Microsoft.Dynamics.CRM.msdyn_shipvia
     partner: msdyn_shipvia_PrincipalObjectAttributeAccesses
@@ -1249,6 +1769,33 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_sikeyvalueconfig
     type: Microsoft.Dynamics.CRM.msdyn_sikeyvalueconfig
     partner: msdyn_sikeyvalueconfig_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_slakpi
+    type: Microsoft.Dynamics.CRM.msdyn_slakpi
+    partner: msdyn_slakpi_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_smartassistconfig
+    type: Microsoft.Dynamics.CRM.msdyn_smartassistconfig
+    partner: msdyn_smartassistconfig_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_solutionhealthrule
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthrule
+    partner: msdyn_solutionhealthrule_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_solutionhealthruleargument
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleargument
+    partner: msdyn_solutionhealthruleargument_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_solutionhealthruleset
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleset
+    partner: msdyn_solutionhealthruleset_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_suggestioninteraction
+    type: Microsoft.Dynamics.CRM.msdyn_suggestioninteraction
+    partner: msdyn_suggestioninteraction_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_suggestionrequestpayload
+    type: Microsoft.Dynamics.CRM.msdyn_suggestionrequestpayload
+    partner: msdyn_suggestionrequestpayload_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_suggestionsmodelsummary
+    type: Microsoft.Dynamics.CRM.msdyn_suggestionsmodelsummary
+    partner: msdyn_suggestionsmodelsummary_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_suggestionssetting
+    type: Microsoft.Dynamics.CRM.msdyn_suggestionssetting
+    partner: msdyn_suggestionssetting_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_systemuserschedulersetting
     type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
     partner: msdyn_systemuserschedulersetting_PrincipalObjectAttributeAccesses
@@ -1261,9 +1808,18 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_teamscollaboration
     type: Microsoft.Dynamics.CRM.msdyn_teamscollaboration
     partner: msdyn_teamscollaboration_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_templateforproperties
+    type: Microsoft.Dynamics.CRM.msdyn_templateforproperties
+    partner: msdyn_templateforproperties_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_templateparameter
+    type: Microsoft.Dynamics.CRM.msdyn_templateparameter
+    partner: msdyn_templateparameter_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_timeentry
     type: Microsoft.Dynamics.CRM.msdyn_timeentry
     partner: msdyn_timeentry_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_timeentrysetting
+    type: Microsoft.Dynamics.CRM.msdyn_timeentrysetting
+    partner: msdyn_timeentrysetting_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_timegroup
     type: Microsoft.Dynamics.CRM.msdyn_timegroup
     partner: msdyn_timegroup_PrincipalObjectAttributeAccesses
@@ -1300,6 +1856,18 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_uniquenumber
     type: Microsoft.Dynamics.CRM.msdyn_uniquenumber
     partner: msdyn_uniquenumber_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_untrackedappointment
+    type: Microsoft.Dynamics.CRM.msdyn_untrackedappointment
+    partner: msdyn_untrackedappointment_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_upgraderun
+    type: Microsoft.Dynamics.CRM.msdyn_upgraderun
+    partner: msdyn_upgraderun_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_upgradestep
+    type: Microsoft.Dynamics.CRM.msdyn_upgradestep
+    partner: msdyn_upgradestep_PrincipalObjectAttributeAccesses
+  - name: objectid_msdyn_upgradeversion
+    type: Microsoft.Dynamics.CRM.msdyn_upgradeversion
+    partner: msdyn_upgradeversion_PrincipalObjectAttributeAccesses
   - name: objectid_msdyn_userworkhistory
     type: Microsoft.Dynamics.CRM.msdyn_userworkhistory
     partner: msdyn_userworkhistory_PrincipalObjectAttributeAccesses
@@ -1345,6 +1913,51 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_workordertype
     type: Microsoft.Dynamics.CRM.msdyn_workordertype
     partner: msdyn_workordertype_PrincipalObjectAttributeAccesses
+  - name: objectid_msdynce_botcontent
+    type: Microsoft.Dynamics.CRM.msdynce_botcontent
+    partner: msdynce_botcontent_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: msfp_alert_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_alertrule
+    type: Microsoft.Dynamics.CRM.msfp_alertrule
+    partner: msfp_alertrule_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_emailtemplate
+    type: Microsoft.Dynamics.CRM.msfp_emailtemplate
+    partner: msfp_emailtemplate_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_fileresponse
+    type: Microsoft.Dynamics.CRM.msfp_fileresponse
+    partner: msfp_fileresponse_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_localizedemailtemplate
+    type: Microsoft.Dynamics.CRM.msfp_localizedemailtemplate
+    partner: msfp_localizedemailtemplate_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_project
+    type: Microsoft.Dynamics.CRM.msfp_project
+    partner: msfp_project_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_question
+    type: Microsoft.Dynamics.CRM.msfp_question
+    partner: msfp_question_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_questionresponse
+    type: Microsoft.Dynamics.CRM.msfp_questionresponse
+    partner: msfp_questionresponse_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_satisfactionmetric
+    type: Microsoft.Dynamics.CRM.msfp_satisfactionmetric
+    partner: msfp_satisfactionmetric_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_survey
+    type: Microsoft.Dynamics.CRM.msfp_survey
+    partner: msfp_survey_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: msfp_surveyinvite_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_surveyreminder
+    type: Microsoft.Dynamics.CRM.msfp_surveyreminder
+    partner: msfp_surveyreminder_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: msfp_surveyresponse_PrincipalObjectAttributeAccesses
+  - name: objectid_msfp_unsubscribedrecipient
+    type: Microsoft.Dynamics.CRM.msfp_unsubscribedrecipient
+    partner: msfp_unsubscribedrecipient_PrincipalObjectAttributeAccesses
   - name: objectid_opportunity
     type: Microsoft.Dynamics.CRM.opportunity
     partner: opportunity_principalobjectattributeaccess
@@ -1363,6 +1976,15 @@ single_valued_navigation_properties:
   - name: objectid_orderclose
     type: Microsoft.Dynamics.CRM.orderclose
     partner: orderclose_PrincipalObjectAttributeAccesses
+  - name: objectid_organizationdatasyncsubscription
+    type: Microsoft.Dynamics.CRM.organizationdatasyncsubscription
+    partner: organizationdatasyncsubscription_PrincipalObjectAttributeAccesses
+  - name: objectid_organizationdatasyncsubscriptionentity
+    type: Microsoft.Dynamics.CRM.organizationdatasyncsubscriptionentity
+    partner: organizationdatasyncsubscriptionentity_PrincipalObjectAttributeAccesses
+  - name: objectid_package
+    type: Microsoft.Dynamics.CRM.package
+    partner: package_PrincipalObjectAttributeAccesses
   - name: objectid_phonecall
     type: Microsoft.Dynamics.CRM.phonecall
     partner: phonecall_principalobjectattributeaccess
@@ -1375,6 +1997,9 @@ single_valued_navigation_properties:
   - name: objectid_pricelevel
     type: Microsoft.Dynamics.CRM.pricelevel
     partner: pricelevel_principalobjectattributeaccess
+  - name: objectid_processstageparameter
+    type: Microsoft.Dynamics.CRM.processstageparameter
+    partner: processstageparameter_PrincipalObjectAttributeAccesses
   - name: objectid_product
     type: Microsoft.Dynamics.CRM.product
     partner: product_principalobjectattributeaccess
@@ -1390,6 +2015,9 @@ single_valued_navigation_properties:
   - name: objectid_productsubstitute
     type: Microsoft.Dynamics.CRM.productsubstitute
     partner: ProductSubstitute_PrincipalObjectAttributeAccess
+  - name: objectid_provisionlanguageforuser
+    type: Microsoft.Dynamics.CRM.provisionlanguageforuser
+    partner: provisionlanguageforuser_PrincipalObjectAttributeAccesses
   - name: objectid_queue
     type: Microsoft.Dynamics.CRM.queue
     partner: queue_principalobjectattributeaccess
@@ -1414,6 +2042,9 @@ single_valued_navigation_properties:
   - name: objectid_recurringappointmentmaster
     type: Microsoft.Dynamics.CRM.recurringappointmentmaster
     partner: recurringappointmentmaster_principalobjectattributeaccess
+  - name: objectid_relationshipattribute
+    type: Microsoft.Dynamics.CRM.relationshipattribute
+    partner: relationshipattribute_PrincipalObjectAttributeAccesses
   - name: objectid_reportcategory
     type: Microsoft.Dynamics.CRM.reportcategory
     partner: reportcategory_principalobjectattributeaccess
@@ -1426,6 +2057,15 @@ single_valued_navigation_properties:
   - name: objectid_resourcespec
     type: Microsoft.Dynamics.CRM.resourcespec
     partner: resourcespec_PrincipalObjectAttributeAccesses
+  - name: objectid_revokeinheritedaccessrecordstracker
+    type: Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker
+    partner: revokeinheritedaccessrecordstracker_PrincipalObjectAttributeAccesses
+  - name: objectid_sales_linkedin_configuration
+    type: Microsoft.Dynamics.CRM.sales_linkedin_configuration
+    partner: sales_linkedin_configuration_PrincipalObjectAttributeAccesses
+  - name: objectid_sales_linkedin_profileassociations
+    type: Microsoft.Dynamics.CRM.sales_linkedin_profileassociations
+    partner: sales_linkedin_profileassociations_PrincipalObjectAttributeAccesses
   - name: objectid_salesliterature
     type: Microsoft.Dynamics.CRM.salesliterature
     partner: salesliterature_principalobjectattributeaccess
@@ -1465,15 +2105,33 @@ single_valued_navigation_properties:
   - name: objectid_socialprofile
     type: Microsoft.Dynamics.CRM.socialprofile
     partner: socialprofile_principalobjectattributeaccess
+  - name: objectid_solutioncomponentattributeconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentattributeconfiguration
+    partner: solutioncomponentattributeconfiguration_PrincipalObjectAttributeAccesses
+  - name: objectid_solutioncomponentconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentconfiguration
+    partner: solutioncomponentconfiguration_PrincipalObjectAttributeAccesses
+  - name: objectid_solutioncomponentrelationshipconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentrelationshipconfiguration
+    partner: solutioncomponentrelationshipconfiguration_PrincipalObjectAttributeAccesses
+  - name: objectid_stagesolutionupload
+    type: Microsoft.Dynamics.CRM.stagesolutionupload
+    partner: stagesolutionupload_PrincipalObjectAttributeAccesses
   - name: objectid_systemuser
     type: Microsoft.Dynamics.CRM.systemuser
     partner: systemuser_principalobjectattributeaccess
+  - name: objectid_systemuserauthorizationchangetracker
+    type: Microsoft.Dynamics.CRM.systemuserauthorizationchangetracker
+    partner: systemuserauthorizationchangetracker_PrincipalObjectAttributeAccesses
   - name: objectid_task
     type: Microsoft.Dynamics.CRM.task
     partner: task_principalobjectattributeaccess
   - name: objectid_team
     type: Microsoft.Dynamics.CRM.team
     partner: team_principalobjectattributeaccess
+  - name: objectid_teammobileofflineprofilemembership
+    type: Microsoft.Dynamics.CRM.teammobileofflineprofilemembership
+    partner: teammobileofflineprofilemembership_PrincipalObjectAttributeAccesses
   - name: objectid_territory
     type: Microsoft.Dynamics.CRM.territory
     partner: territory_principalobjectattributeaccess
@@ -1483,6 +2141,12 @@ single_valued_navigation_properties:
   - name: objectid_uomschedule
     type: Microsoft.Dynamics.CRM.uomschedule
     partner: uomschedule_PrincipalObjectAttributeAccesses
+  - name: objectid_usermobileofflineprofilemembership
+    type: Microsoft.Dynamics.CRM.usermobileofflineprofilemembership
+    partner: usermobileofflineprofilemembership_PrincipalObjectAttributeAccesses
+  - name: objectid_workflowbinary
+    type: Microsoft.Dynamics.CRM.workflowbinary
+    partner: workflowbinary_PrincipalObjectAttributeAccesses
   - name: organizationid
     type: Microsoft.Dynamics.CRM.organization
     partner: lk_principalobjectattributeaccess_organizationid
@@ -1500,10 +2164,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

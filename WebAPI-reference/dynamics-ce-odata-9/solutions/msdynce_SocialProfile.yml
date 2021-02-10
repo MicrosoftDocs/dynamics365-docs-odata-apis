@@ -3,31 +3,31 @@ uid: Microsoft.Dynamics.CRM.msdynce_SocialProfile
 name: "Social Profile"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Social Profile Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Social Profile Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: c9326c57-8b6e-4504-a2dd-54ddfec0642b
-  author: "KumarVivek"
+  ms.assetid: 28a50722-412d-406f-bc9c-e8adf8b4b4b5
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Social Profile Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Social Profile Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for social profiles."
  unique_name: msdynce_SocialProfile
- version: "9.0.1.0015"
- customization_prefix: none
+ version: "9.0.1.3"
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:
    - type: Microsoft.Dynamics.CRM.socialprofile
      description: "This entity is used to store social profile information of its associated account and contacts on different social channels."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

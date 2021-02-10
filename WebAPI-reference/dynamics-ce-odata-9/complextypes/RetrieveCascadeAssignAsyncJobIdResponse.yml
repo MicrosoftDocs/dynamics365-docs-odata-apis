@@ -1,0 +1,51 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.RetrieveCascadeAssignAsyncJobIdResponse
+name: "RetrieveCascadeAssignAsyncJobIdResponse"
+type: complextype
+metadata: 
+  title: "Dataverse RetrieveCascadeAssignAsyncJobIdResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 0308ae98-bbb9-4dc6-8afb-d107d7eeec73
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API RetrieveCascadeAssignAsyncJobIdResponse ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "" 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: AsyncJobName
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
+  - name: AsyncJobId
+    type: Edm.Guid
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+# This complex type doesn't have any navigation properties.
+usedby:
+  description: "The following use the RetrieveCascadeAssignAsyncJobIdResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.RetrieveCascadeAssignAsyncJobId
+    used_as: ReturnType
+# There are no remarks for this complex type.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -3,17 +3,17 @@ uid: Microsoft.Dynamics.CRM.SetAutoNumberSeed
 name: "SetAutoNumberSeed"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SetAutoNumberSeed Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6fa91eea-6337-4179-ae46-9c52dfbad504
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the SetAutoNumberSeed Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse SetAutoNumberSeed Action."
 namespace: Microsoft.Dynamics.CRM
-description: "Sets a different starting value after creating the auto-numbering attribute.  "
+# This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
@@ -24,24 +24,24 @@ parameters:
     type: Edm.String
     nullable: false
     unicode: false
-    description: "The logical name of the entity that contains the attribute you want to set the seed on."
+    description: ""
   - name: AttributeName
     type: Edm.String
     nullable: false
     unicode: false
-    description: "The logical name of the attribute you want to set the seed on. "
+    description: ""
   - name: Value
     type: Edm.Int64
     nullable: false
     unicode: true
-    description: "Next auto-number value for the attribute. "
+    description: ""
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

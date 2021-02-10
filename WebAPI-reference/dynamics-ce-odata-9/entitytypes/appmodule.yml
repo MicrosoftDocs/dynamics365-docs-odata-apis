@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.appmodule
 name: "appmodule"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement appmodule EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f95d3037-475c-4641-8a4a-6a5307cffa12
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the appmodule entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse appmodule entitytype."
 description: "A role-based, modular business app that provides task-based functionality for a particular area of work."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/appmodules"
@@ -207,6 +207,30 @@ properties:
       description: "Unique identifier of the associated solution."
       iscomputed: false
       isreadonly: true
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Model-driven App"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Model-driven App"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+        - value: 3
+          label: "Deleted"
     - name: uniquename
       type: Edm.String
       display_name: "Unique Name"
@@ -323,10 +347,10 @@ solutions:
     description: "License Enforcement solution"
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

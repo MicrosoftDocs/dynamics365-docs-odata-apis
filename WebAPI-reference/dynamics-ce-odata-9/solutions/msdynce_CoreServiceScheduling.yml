@@ -1,0 +1,77 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_CoreServiceScheduling
+name: "Core Service Scheduling"
+type: solution
+metadata: 
+  title: "Dataverse Core Service Scheduling Solution Reference | MicrosoftDocs"
+  ms.date: "01/20/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 16920821-126b-4f32-8fb0-9aa658a6ed1c
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Core Service Scheduling Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Dynamics 365 workload for service scheduling."
+ unique_name: msdynce_CoreServiceScheduling
+ version: "9.0.19102.1002"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.activitypointer
+     description: "Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar."
+   - type: Microsoft.Dynamics.CRM.bookableresource
+     description: "Resource that has capacity which can be allocated to work."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebooking
+     description: "Represents the line details of a resource booking."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+     description: "Shows the reservation table where the summary of resource bookings are persisted."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecategory
+     description: "Resource category master used to categorize people and equipment."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecategoryassn
+     description: "Association entity to model the categorization of resources."
+   - type: Microsoft.Dynamics.CRM.bookableresourcecharacteristic
+     description: "Associates resources with their characteristics and specifies the proficiency level of a resource for that characteristic."
+   - type: Microsoft.Dynamics.CRM.bookingstatus
+     description: "Allows creation of multiple sub statuses mapped to a booking status option."
+   - type: Microsoft.Dynamics.CRM.equipment
+     description: "Resource that can be scheduled."
+   - type: Microsoft.Dynamics.CRM.msdyn_priority
+     description: "Priorities to be used on bookings. In addition, a color could be specified for each priority type and the color selected will be shown visually on the schedule board."
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
+     description: "Requirement Characteristic"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
+     description: "Requirement Resource Preference"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementstatus
+     description: "Requirement Status"
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+     description: "Entity used to track the high-level information about resource requirements."
+   - type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
+     description: "To store settings of SB by user & tabs"
+   - type: Microsoft.Dynamics.CRM.msdyn_workhourtemplate
+     description: "Template where resource working hours can be saved and reused."
+   - type: Microsoft.Dynamics.CRM.ratingmodel
+     description: "Represents a model to evaluate skills or other related entities."
+   - type: Microsoft.Dynamics.CRM.ratingvalue
+     description: "A unique value associated with a rating model that allows providing a user friendly rating value."
+   - type: Microsoft.Dynamics.CRM.service
+     description: "Activity that represents work done to satisfy a customer's need."
+   - type: Microsoft.Dynamics.CRM.serviceappointment
+     description: "Activity offered by the organization to satisfy its customer's needs. Each service activity includes date, time, duration, and required resources."
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

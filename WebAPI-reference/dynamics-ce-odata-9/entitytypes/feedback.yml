@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.feedback
 name: "feedback"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement feedback EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c17e82ee-466a-49f4-b456-248d66077206
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the feedback entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse feedback entitytype."
 description: "Container for feedback and ratings for knowledge articles."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/feedback"
@@ -180,6 +180,11 @@ lookup_properties:
     single_valued_navigation_property:
     - ModifiedOnBehalfBy
     description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_contextobjectid_value
+    single_valued_navigation_property:
+    - msdyn_ContextObjectId_knowledgearticle
+    - msdyn_ContextObjectId_incident
+    description: "Shows the record in context of which feedback rating is being provided."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -194,9 +199,9 @@ lookup_properties:
     description: "Unique identifier of the user who owns this feedback."
   - name: _regardingobjectid_value
     single_valued_navigation_property:
+    - ContactId
     - FeedbackId
     - KnowledgeArticleId
-    - ContactId
     description: "Shows the record that the feedback is associated with."
   - name: _transactioncurrencyid_value
     single_valued_navigation_property:
@@ -235,12 +240,27 @@ single_valued_navigation_properties:
   - name: ModifiedOnBehalfBy
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_feedback_modifiedonbehalfby
+  - name: msdyn_ContextObjectId_incident
+    type: Microsoft.Dynamics.CRM.incident
+    partner: msdyn_incident_feedback_context
+  - name: msdyn_ContextObjectId_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: msdyn_knowledgearticle_feedback_context
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_feedback
   - name: owningbusinessunit
     type: Microsoft.Dynamics.CRM.businessunit
     partner: business_unit_feedback
+  - name: regardingobjectid_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: msfp_alert_Feedback
+  - name: regardingobjectid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: msfp_surveyinvite_Feedback
+  - name: regardingobjectid_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: msfp_surveyresponse_Feedback
   - name: transactioncurrencyid
     type: Microsoft.Dynamics.CRM.transactioncurrency
     partner: transactioncurrency_feedback
@@ -279,12 +299,16 @@ operations:
 solutions:
   description: "The following solutions include the feedback entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementPatch
+    description: "Dynamics 365 workload for knowledge management."
+  - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
+    description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

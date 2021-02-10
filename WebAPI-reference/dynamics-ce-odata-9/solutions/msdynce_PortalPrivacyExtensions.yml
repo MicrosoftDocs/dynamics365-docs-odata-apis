@@ -1,0 +1,39 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_PortalPrivacyExtensions
+name: "Portal Privacy Extensions"
+type: solution
+metadata: 
+  title: "Dataverse Portal Privacy Extensions Solution Reference | MicrosoftDocs"
+  ms.date: "01/20/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: d6d50c08-3705-4885-b20b-8a51f2c6f82f
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Portal Privacy Extensions Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Extends portal capabilities by providing additional fields to track privacy-related information."
+ unique_name: msdynce_PortalPrivacyExtensions
+ version: "9.0.12.10"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.contact
+     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

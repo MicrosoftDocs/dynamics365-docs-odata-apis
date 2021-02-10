@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.FormDisplayOrderCollection
 name: "FormDisplayOrderCollection"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement FormDisplayOrderCollection ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse FormDisplayOrderCollection ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 3f859c50-3799-4005-96e2-8fab1c40c59b
-  author: "KumarVivek"
+  ms.assetid: 00134918-dbfc-4fa4-8436-be640320607b
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API FormDisplayOrderCollection ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API FormDisplayOrderCollection ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -26,10 +26,10 @@ properties:
     iscollection: true
 # This complex type doesn't have any navigation properties.
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

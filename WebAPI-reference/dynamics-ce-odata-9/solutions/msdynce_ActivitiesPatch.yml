@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_ActivitiesPatch
 name: "Activities Patch"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Activities Patch Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Activities Patch Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: ea8c99fd-5b85-48e6-8eac-9ddd10f1ac5a
-  author: "KumarVivek"
+  ms.assetid: 127311eb-da18-4d3f-96fa-4cadf3ad9a67
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Activities Patch Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Activities Patch Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Patch for Dynamics 365 workload for activities."
  unique_name: msdynce_ActivitiesPatch
- version: "9.0.20034.200323002"
- customization_prefix: none
+ version: "9.0.20123.201209003"
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -25,6 +25,8 @@ entities:
      description: "MIME attachment for an activity."
    - type: Microsoft.Dynamics.CRM.activitypointer
      description: "Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar."
+   - type: Microsoft.Dynamics.CRM.annotation
+     description: "Note that is attached to one or more objects, including other notes."
    - type: Microsoft.Dynamics.CRM.appointment
      description: "Commitment representing a time interval with start/end times and duration."
    - type: Microsoft.Dynamics.CRM.email
@@ -42,10 +44,10 @@ entities:
    - type: Microsoft.Dynamics.CRM.template
      description: "Template for an email message that contains the standard attributes of an email message."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_invoicefrequencydetail
 name: "msdyn_invoicefrequencydetail"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_invoicefrequencydetail EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3deba034-e0a8-4a34-b7f4-d4cb79eb0a29
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_invoicefrequencydetail entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_invoicefrequencydetail entitytype."
 description: "List of days expressed as dates or day of week for a specific invoice schedule template."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_invoicefrequencydetails"
@@ -295,12 +295,14 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_invoicefrequencydetail entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

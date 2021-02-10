@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
 name: "Service"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Service Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Service Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: d8946f82-b6f7-4d6c-be35-a7cc99fcdada
-  author: "KumarVivek"
+  ms.assetid: 77ee1b7d-4e94-45d6-a90e-ce2d870c2f95
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Service Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Service Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for service."
  unique_name: msdynce_ServicePatch201911
- version: "9.0.20031.1004"
- customization_prefix: none
+ version: "9.0.20122.1023"
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -45,6 +45,8 @@ entities:
      description: "Defines the amount and type of support a customer should receive."
    - type: Microsoft.Dynamics.CRM.entitlementchannel
      description: "Defines the amount and type of support for a channel."
+   - type: Microsoft.Dynamics.CRM.entitlemententityallocationtypemapping
+     description: "Mapping to define which Allocation Types are available for Entity Type to be used on Entitlement"
    - type: Microsoft.Dynamics.CRM.entitlementtemplate
      description: "Contains predefined customer support terms that can be used to created entitlements for customers."
    - type: Microsoft.Dynamics.CRM.entitlementtemplatechannel
@@ -53,6 +55,8 @@ entities:
      description: "Resource that can be scheduled."
    - type: Microsoft.Dynamics.CRM.fax
      description: "Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document."
+   - type: Microsoft.Dynamics.CRM.feedback
+     description: "Container for feedback and ratings for knowledge articles."
    - type: Microsoft.Dynamics.CRM.incident
      description: "Service request case associated with a contract."
    - type: Microsoft.Dynamics.CRM.incidentresolution
@@ -71,12 +75,18 @@ entities:
      description: "The Master appointment of a recurring appointment series."
    - type: Microsoft.Dynamics.CRM.resource
      description: "User or facility/equipment that can be scheduled for a service."
+   - type: Microsoft.Dynamics.CRM.resourcegroup
+     description: "Resource group or team whose members can be scheduled for a service."
+   - type: Microsoft.Dynamics.CRM.resourcegroupdatasource
+     description: ""
    - type: Microsoft.Dynamics.CRM.resourcespec
      description: "Selection rule that allows the scheduling engine to select a number of resources from a pool of resources. The rules can be associated with a service."
    - type: Microsoft.Dynamics.CRM.service
      description: "Activity that represents work done to satisfy a customer's need."
    - type: Microsoft.Dynamics.CRM.serviceappointment
      description: "Activity offered by the organization to satisfy its customer's needs. Each service activity includes date, time, duration, and required resources."
+   - type: Microsoft.Dynamics.CRM.servicecontractcontacts
+     description: "Item in a Service contract."
    - type: Microsoft.Dynamics.CRM.site
      description: "Location or branch office where an organization does business. An organization can have multiple sites."
    - type: Microsoft.Dynamics.CRM.socialactivity
@@ -85,11 +95,29 @@ entities:
      description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
    - type: Microsoft.Dynamics.CRM.task
      description: "Generic activity representing work needed to be done."
-# This solution includes no actions.
-# This solution has no remarks.
+   - type: Microsoft.Dynamics.CRM.virtualresourcegroupresource
+     description: ""
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM._EvaluateSearchRequest
+     description: ""
+   - type: Microsoft.Dynamics.CRM._GetServiceTreeData
+     description: ""
+   - type: Microsoft.Dynamics.CRM._ResourcesAddUpdateAction
+     description: ""
+   - type: Microsoft.Dynamics.CRM._ResourcesRemoveUpdateAction
+     description: ""
+   - type: Microsoft.Dynamics.CRM._RetrieveActivitiesByResources
+     description: ""
+   - type: Microsoft.Dynamics.CRM._SaveServiceTreeData
+     description: ""
+   - type: Microsoft.Dynamics.CRM._ServiceCalendarAction
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

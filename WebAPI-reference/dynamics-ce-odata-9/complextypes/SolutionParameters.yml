@@ -3,18 +3,18 @@ uid: Microsoft.Dynamics.CRM.SolutionParameters
 name: "SolutionParameters"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SolutionParameters ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse SolutionParameters ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 28b9d18d-0e56-4dc4-af90-5d4f160ff503
-  author: "KumarVivek"
+  ms.assetid: 8ba3a992-e7ba-4f4d-98e0-ae28390da9df
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API SolutionParameters ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API SolutionParameters ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
-description: "" 
+description: "Additional parameters for the solution operation." 
 properties:
   description: "The properties of a complex type contain the structured data of the type."
   property_items:
@@ -22,14 +22,18 @@ properties:
     type: Edm.Guid
     nullable: true
     unicode: true
-    description: ""
+    description: "The identifier (ID) returned from the StageSolution operation. Use this parameter instead of providing the customization file."
     iscollection: false
 # This complex type doesn't have any navigation properties.
-
-# This complex type has no remarks.
+usedby:
+  description: "The following use the SolutionParameters ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.ImportSolutionAsync
+    used_as: Parameter
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -1,0 +1,379 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+name: "msdyn_playbookinstance"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: c62b8475-60fd-416f-b4f9-c89d629066f3
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_playbookinstance entitytype."
+description: "Actual instance of a playbook template once it is launched."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_playbookinstances"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Playbook
+  primary_key: msdyn_playbookinstanceid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Started On"
+      description: "Date and time when the playbook was started."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_activitiesassociated
+      type: Edm.Int32
+      display_name: "Total activities"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_activitiesclosed
+      type: Edm.Int32
+      display_name: "Completed activities"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_estimatedclose
+      type: Edm.DateTimeOffset
+      display_name: "Estimated close"
+      description: "Estimated close date for a playbook based on the estimated duration specified for the playbook template."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_evaluateactivityclosure
+      type: Edm.Boolean
+      display_name: "Evaluate Activity Closure"
+      description: "Internal Use Only"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "true"
+        - value: 0
+          label: "false"
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Name"
+      description: "Type the name of the playbook."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_playbookinstanceid
+      type: Edm.Guid
+      display_name: "Playbook"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_trackprogress
+      type: Edm.Boolean
+      display_name: "Track progress"
+      description: "Select whether or not to track the progress of the playbook by creating the activities under a playbook which is in turn linked to the record type the playbook applies to."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Playbook"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Completed"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Result"
+      description: "Playbook result"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "In Progress"
+        - value: 2
+          label: "Successful"
+        - value: 3
+          label: "Not Successful"
+        - value: 4
+          label: "Partially Successful"
+        - value: 5
+          label: "Not Required"
+        - value: 6
+          label: "Not Tracked"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_categoryid_value
+    single_valued_navigation_property:
+    - msdyn_categoryid
+    description: "Select the playbook category for the playbook."
+  - name: _msdyn_playbooktemplateid_value
+    single_valued_navigation_property:
+    - msdyn_playbooktemplateid
+    description: "Shows the unique ID of the playbook template associated with the playbook."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+  - name: _regarding_value
+    single_valued_navigation_property:
+    - regarding_opportunity
+    - regarding_quote
+    - regarding_salesorder
+    - regarding_invoice
+    - regarding_lead
+    - regarding_contact
+    - regarding_account
+    description: "Shows the entity the playbook is launched for."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_playbookinstance_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_playbookinstance_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_playbookinstance_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_playbookinstance_modifiedonbehalfby
+  - name: msdyn_categoryid
+    type: Microsoft.Dynamics.CRM.msdyn_playbookcategory
+    partner: msdyn_playbookcategory_msdyn_playbookinstance
+  - name: msdyn_playbooktemplateid
+    type: Microsoft.Dynamics.CRM.msdyn_playbooktemplate
+    partner: msdyn_playbooktemplate_msdyn_playbookinstance
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_playbookinstance
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_playbookinstance
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_playbookinstance
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_playbookinstance
+  - name: regarding_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: msdyn_playbookinstance_account
+  - name: regarding_contact
+    type: Microsoft.Dynamics.CRM.contact
+    partner: msdyn_playbookinstance_contact
+  - name: regarding_invoice
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: msdyn_playbookinstance_invoice
+  - name: regarding_lead
+    type: Microsoft.Dynamics.CRM.lead
+    partner: msdyn_playbookinstance_lead
+  - name: regarding_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: msdyn_playbookinstance_opportunity
+  - name: regarding_quote
+    type: Microsoft.Dynamics.CRM.quote
+    partner: msdyn_playbookinstance_quote
+  - name: regarding_salesorder
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: msdyn_playbookinstance_salesorder
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_playbookinstance_ActivityPointers
+    type: Microsoft.Dynamics.CRM.activitypointer
+    partner: regardingobjectid_msdyn_playbookinstance
+  - name: msdyn_playbookinstance_Annotations
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: objectid_msdyn_playbookinstance
+  - name: msdyn_playbookinstance_Appointments
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: regardingobjectid_msdyn_playbookinstance_appointment
+  - name: msdyn_playbookinstance_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_playbookinstance
+  - name: msdyn_playbookinstance_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_playbookinstance
+  - name: msdyn_playbookinstance_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_playbookinstance
+  - name: msdyn_playbookinstance_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_playbookinstance
+  - name: msdyn_playbookinstance_Emails
+    type: Microsoft.Dynamics.CRM.email
+    partner: regardingobjectid_msdyn_playbookinstance_email
+  - name: msdyn_playbookinstance_Faxes
+    type: Microsoft.Dynamics.CRM.fax
+    partner: regardingobjectid_msdyn_playbookinstance_fax
+  - name: msdyn_playbookinstance_Letters
+    type: Microsoft.Dynamics.CRM.letter
+    partner: regardingobjectid_msdyn_playbookinstance_letter
+  - name: msdyn_playbookinstance_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_playbookinstance_li_inmail
+  - name: msdyn_playbookinstance_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_playbookinstance_li_message
+  - name: msdyn_playbookinstance_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_playbookinstance_li_pointdrivepresentationviewed
+  - name: msdyn_playbookinstance_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_playbookinstance
+  - name: msdyn_playbookinstance_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_msdyn_playbookinstance_msdyn_approval
+  - name: msdyn_playbookinstance_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_msdyn_playbookinstance_msdyn_bookingalert
+  - name: msdyn_playbookinstance_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_playbookinstance_msfp_alert
+  - name: msdyn_playbookinstance_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_playbookinstance_msfp_surveyinvite
+  - name: msdyn_playbookinstance_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_playbookinstance_msfp_surveyresponse
+  - name: msdyn_playbookinstance_PhoneCalls
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: regardingobjectid_msdyn_playbookinstance_phonecall
+  - name: msdyn_playbookinstance_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_playbookinstance
+  - name: msdyn_playbookinstance_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_playbookinstance
+  - name: msdyn_playbookinstance_RecurringAppointmentMasters
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: regardingobjectid_msdyn_playbookinstance_recurringappointmentmaster
+  - name: msdyn_playbookinstance_ServiceAppointments
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: regardingobjectid_msdyn_playbookinstance_serviceappointment
+  - name: msdyn_playbookinstance_SocialActivities
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: regardingobjectid_msdyn_playbookinstance_socialactivity
+  - name: msdyn_playbookinstance_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_playbookinstance
+  - name: msdyn_playbookinstance_Tasks
+    type: Microsoft.Dynamics.CRM.task
+    partner: regardingobjectid_msdyn_playbookinstance_task
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_playbookinstance entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_playbookinstance entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_Playbook
+    description: "Playbook"
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

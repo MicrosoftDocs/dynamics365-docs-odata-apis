@@ -1,0 +1,70 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_solutioncomponentdatasource
+name: "msdyn_solutioncomponentdatasource"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: adb0ef14-59d5-4cc9-a3f0-993cf2f36200
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_solutioncomponentdatasource entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_solutioncomponentdatasources"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Solution Component Data Source
+  primary_key: msdyn_solutioncomponentdatasourceid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "msdyn_name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_solutioncomponentdatasourceid
+      type: Edm.Guid
+      display_name: "Solution Component Data Source"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+# This entity has no lookup properties
+# This entity has no single-valued navigation properties
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_solutioncomponentdatasource_Annotations
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: objectid_msdyn_solutioncomponentdatasource
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the msdyn_solutioncomponentdatasource entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.CRMSettingsAPIs
+    description: ""
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DeleteAuditData
 name: "DeleteAuditData"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement DeleteAuditData Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8393c15c-d43b-4128-a68b-678a3104f8bf
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the DeleteAuditData Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse DeleteAuditData Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Deletes all audit data records up until a specified end date. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -36,10 +36,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.audit
     displayName: Auditing
     description: "Track changes to records for analysis, record keeping, and compliance."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

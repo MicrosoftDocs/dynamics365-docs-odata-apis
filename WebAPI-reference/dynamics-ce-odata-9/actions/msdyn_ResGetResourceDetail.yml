@@ -1,0 +1,51 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_ResGetResourceDetail
+name: "msdyn_ResGetResourceDetail"
+type: action
+metadata: 
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 9acecb32-603e-45a5-94aa-396e6413182c
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_ResGetResourceDetail Action."
+namespace: Microsoft.Dynamics.CRM
+description: "For internal use only."
+owningsolution: Microsoft.Dynamics.CRM.ProjectService
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: resourceId
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "For internal use only."
+  - name: entityName
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "For internal use only."
+return_type:
+  description: "The msdyn_ResGetResourceDetail action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_ResGetResourceDetailResponse
+# This action has no identified unbound entities.
+# This action has no remarks.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.TrainResponse
 name: "TrainResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement TrainResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse TrainResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 38b04bd4-e47b-45c7-934a-592013be4eb8
-  author: "KumarVivek"
+  ms.assetid: 52f9c6f8-47e9-40fb-bb23-a0fb56387d87
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API TrainResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API TrainResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -30,10 +30,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.Train
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

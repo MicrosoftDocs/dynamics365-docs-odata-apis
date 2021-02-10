@@ -1,0 +1,281 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_inspectionresponse
+name: "msdyn_inspectionresponse"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 20495035-410a-4125-a141-b359e0878f70
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_inspectionresponse entitytype."
+description: "Entity used to save the responses of the Inspection."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_inspectionresponses"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Inspection Response
+  primary_key: msdyn_inspectionresponseid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_inspectionresponseid
+      type: Edm.Guid
+      display_name: "InspectionResponse"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_isprocessed
+      type: Edm.Boolean
+      display_name: "Is Processed"
+      description: "Depicts whether the record is processed."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_isvalidresponse
+      type: Edm.Boolean
+      display_name: "Is Valid Response"
+      description: "Denotes whether the survey response has validation errors"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the Inspection Response entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_responsejsoncontent
+      type: Edm.String
+      display_name: "ResponseJsonContent"
+      description: "Contains the response json"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_status
+      type: Edm.Int32
+      display_name: "Inspection Response Status"
+      description: "Status of the Inspection Response"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "InProgress"
+        - value: 192350001
+          label: "Submitted"
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the InspectionResponse"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the InspectionResponse"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_inspectiondefinition_value
+    single_valued_navigation_property:
+    - msdyn_InspectionDefinition
+    description: "Unique Identifier of the Inspection Definition associated with the Inspection Response."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_inspectionresponse_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_inspectionresponse_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_inspectionresponse_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_inspectionresponse_modifiedonbehalfby
+  - name: msdyn_InspectionDefinition
+    type: Microsoft.Dynamics.CRM.msdyn_inspectiondefinition
+    partner: msdyn_msdyn_inspectiondefinition_msdyn_inspectionresponse_InspectionDefinition
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_inspectionresponse
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_inspectionresponse
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_inspectionresponse
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_inspectionresponse
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_inspectionresponse_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_inspectionresponse
+  - name: msdyn_inspectionresponse_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_inspectionresponse
+  - name: msdyn_inspectionresponse_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_inspectionresponse
+  - name: msdyn_inspectionresponse_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_inspectionresponse
+  - name: msdyn_inspectionresponse_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_inspectionresponse
+  - name: msdyn_inspectionresponse_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_inspectionresponse
+  - name: msdyn_inspectionresponse_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_inspectionresponse
+  - name: msdyn_inspectionresponse_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_inspectionresponse
+  - name: msdyn_msdyn_inspectionresponse_msdyn_inspection
+    type: Microsoft.Dynamics.CRM.msdyn_inspectionattachment
+    partner: msdyn_inspectionresponseid
+  - name: msdyn_msdyn_inspectionresponse_msdyn_workorderservicetask_inspectionresponseid
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
+    partner: msdyn_inspectionresponseid
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_inspectionresponse entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_inspectionresponse entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_Inspections
+    description: "Enable Inspections in Dynamics 365."
+# This entity has no remarks.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

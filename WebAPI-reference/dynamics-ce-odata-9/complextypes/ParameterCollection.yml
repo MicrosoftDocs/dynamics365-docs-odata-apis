@@ -1,0 +1,63 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.ParameterCollection
+name: "ParameterCollection"
+type: complextype
+metadata: 
+  title: "Dataverse ParameterCollection ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 84c79cbf-416a-4f23-a32e-44de47611d12
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API ParameterCollection ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "" 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: Count
+    type: Edm.Int32
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+  - name: IsReadOnly
+    type: Edm.Boolean
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+  - name: Keys
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+    iscollection: true
+  - name: Values
+    type: Microsoft.Dynamics.CRM.Object
+    nullable: false
+    unicode: true
+    description: ""
+    iscollection: true
+# This complex type doesn't have any navigation properties.
+usedby:
+  description: "The following use the ParameterCollection ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.ExecuteCosmosSqlQuery
+    used_as: Parameter
+# There are no remarks for this complex type.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

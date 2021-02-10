@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_GetProjectsForQuote
 name: "msdyn_GetProjectsForQuote"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_GetProjectsForQuote Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5f7af7d5-6860-4cde-856a-1c36abee235a
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_GetProjectsForQuote Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_GetProjectsForQuote Action."
 namespace: Microsoft.Dynamics.CRM
 description: "For internal use only."
 owningsolution: Microsoft.Dynamics.CRM.ProjectService
@@ -28,10 +28,10 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.crmbaseentity
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

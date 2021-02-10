@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CancelTraining
 name: "CancelTraining"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CancelTraining Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: c94b5d0f-f31a-4271-a7cc-f0519851960a
-  author: "KumarVivek"
+  ms.assetid: e292a519-38c6-4671-95e7-88c19871032d
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the CancelTraining Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse CancelTraining Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -34,10 +34,10 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.CancelTrainingResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

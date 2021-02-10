@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AppContext
 name: "AppContext"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AppContext ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse AppContext ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: bdabd1c1-a5f6-499e-b873-625734a8722c
-  author: "KumarVivek"
+  ms.assetid: 3701f3d3-b2c1-4fb0-a273-623b2d4e5423
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API AppContext ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API AppContext ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -48,12 +48,18 @@ properties:
     unicode: true
     description: ""
     iscollection: true
+  - name: CanvasApps
+    type: Microsoft.Dynamics.CRM.CanvasAppsInfo
+    nullable: false
+    unicode: true
+    description: ""
+    iscollection: true
 # This complex type doesn't have any navigation properties.
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -1,0 +1,71 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_FulfillResourceDemand
+name: "msdyn_FulfillResourceDemand"
+type: action
+metadata: 
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 7fdcf26d-1751-42ec-ab71-14df199c7d47
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_FulfillResourceDemand Action."
+namespace: Microsoft.Dynamics.CRM
+description: "For internal use only."
+owningsolution: Microsoft.Dynamics.CRM.ProjectService
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: FulfillmentContext
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "For internal use only."
+  - name: FulfillmentType
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+  - name: ProjectReference
+    type: Microsoft.Dynamics.CRM.crmbaseentity
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+  - name: RequirementEntity
+    type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+    nullable: true
+    unicode: true
+    description: "For internal use only."
+  - name: Timeframe
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+  - name: AvailabilityViewType
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+return_type:
+  description: "The msdyn_FulfillResourceDemand action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_FulfillResourceDemandResponse
+# This action has no identified unbound entities.
+# This action has no remarks.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

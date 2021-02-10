@@ -1,0 +1,43 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_smartassist
+name: "Smart assist"
+type: solution
+metadata: 
+  title: "Dataverse Smart assist Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 837bda21-b2ff-456b-b2fd-6213ccb5ba66
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Smart assist Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "This solution enables smart assist functionality for agents. "
+ unique_name: msdyn_smartassist
+ version: "9.2.1.554"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_adaptivecardconfiguration
+     description: "Adaptive Card Configuration"
+   - type: Microsoft.Dynamics.CRM.msdyn_appconfiguration
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_smartassistconfig
+     description: "Stores Smartassist configurations"
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

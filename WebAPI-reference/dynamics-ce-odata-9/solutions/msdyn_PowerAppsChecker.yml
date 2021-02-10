@@ -1,22 +1,22 @@
 ### YamlMime:OData
 uid: Microsoft.Dynamics.CRM.msdyn_PowerAppsChecker
-name: "PowerApps Checker"
+name: "Power Apps Checker"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement PowerApps Checker Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Power Apps Checker Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: e72650cf-8d5d-4e2c-8e2d-b6e2f709b367
-  author: "KumarVivek"
+  ms.assetid: c7358a33-bfd4-40ee-9289-161b3f0b0320
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement PowerApps Checker Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Power Apps Checker Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
- description: "PowerApps Checker promotes higher-quality model-driven apps by helping app makers follow best practices when they customize and extend the PowerApps platform. PowerApps Checker performs a static analysis of your PowerApps solutions to identify performance and stability risks, and provides detailed recommendations to remove these risks from your solutions."
+ description: "Power Apps Checker promotes higher-quality model-driven apps by helping app makers follow best practices when they customize and extend the Power Apps platform. Power Apps Checker performs a static analysis of your Power Apps solutions to identify performance and stability risks, and provides detailed recommendations to remove these risks from your solutions."
  unique_name: msdyn_PowerAppsChecker
- version: "1.1.0.10"
+ version: "1.2.0.34"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -29,11 +29,51 @@ entities:
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_analysisresultdetail
      description: ""
-# This solution includes no actions.
-# This solution has no remarks.
+   - type: Microsoft.Dynamics.CRM.msdyn_solutionhealthrule
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleargument
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleset
+     description: "Represents a set that owns a number of solution health rules."
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_ActivateProcesses
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ActivateSdkMessageProcessingSteps
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForCustomizedOptionSet
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForCustomizedSitemap
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForCustomizedWebResources
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForDeletedProcess
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForDeletedSDKMessageProcessingSteps
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForDeletedWebResources
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForPendingProcesses
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckIfProcessesAreActive
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckIfProcessesOwnedByDisabledUsers
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckIfSDKMessageProcessingStepsAreActive
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CreateNewAnalysisJobForRuleSet
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RegisterSolutionHealthRule
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ResolveSolutionHealthRuleFailure
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RunSolutionCheckerRules
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

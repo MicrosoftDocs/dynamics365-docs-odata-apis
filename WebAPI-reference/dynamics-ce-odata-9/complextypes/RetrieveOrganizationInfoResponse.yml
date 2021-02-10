@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveOrganizationInfoResponse
 name: "RetrieveOrganizationInfoResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveOrganizationInfoResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse RetrieveOrganizationInfoResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: bcc728d9-a643-488a-9bbd-6365543d2436
-  author: "KumarVivek"
+  ms.assetid: 9673cb6c-dd37-416b-91ce-5e3008985901
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API RetrieveOrganizationInfoResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API RetrieveOrganizationInfoResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -30,10 +30,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.RetrieveOrganizationInfo
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

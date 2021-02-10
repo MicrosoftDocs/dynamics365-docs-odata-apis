@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ComplexEnumAttributeMetadata
 name: "ComplexEnumAttributeMetadata"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ComplexEnumAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse ComplexEnumAttributeMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 7747974e-5a33-4579-8a51-7eff48f500bc
-  author: "KumarVivek"
+  ms.assetid: 47ecc2bf-a1d4-43dd-88ef-c5b1f197693e
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API ComplexEnumAttributeMetadata ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API ComplexEnumAttributeMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 header:
   base_type: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
@@ -33,10 +33,10 @@ properties:
     iscollection: false
 # This complex type doesn't have any navigation properties.
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

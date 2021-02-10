@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DownloadBlockResponse
 name: "DownloadBlockResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement DownloadBlockResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse DownloadBlockResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: d49c5737-7de4-455e-aac0-046d0a20a1bc
-  author: "KumarVivek"
+  ms.assetid: f59bdb35-a395-4eba-b848-fd70c53e550e
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API DownloadBlockResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API DownloadBlockResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -30,10 +30,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.DownloadBlock
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

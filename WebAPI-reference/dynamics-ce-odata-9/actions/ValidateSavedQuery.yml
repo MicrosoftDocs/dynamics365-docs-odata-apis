@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ValidateSavedQuery
 name: "ValidateSavedQuery"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ValidateSavedQuery Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c7c1082c-f7c0-4c0f-b13b-02f699833b19
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the ValidateSavedQuery Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse ValidateSavedQuery Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Validates a saved query."
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -47,10 +47,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.serviceappointment
     displayName: Service Activity
     description: "Activity offered by the organization to satisfy its customer's needs. Each service activity includes date, time, duration, and required resources."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveMissingDependencies
 name: "RetrieveMissingDependencies"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveMissingDependencies Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveMissingDependencies Function Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d161c5d0-3d2d-429d-9d54-cee0fd64d9ca
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveMissingDependencies Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse RetrieveMissingDependencies Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves any required solution components that are not included in the solution. "
 iscomposable: false
@@ -37,10 +37,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.dependency
     displayName: "Dependency"
     description: "A component dependency in CRM."
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

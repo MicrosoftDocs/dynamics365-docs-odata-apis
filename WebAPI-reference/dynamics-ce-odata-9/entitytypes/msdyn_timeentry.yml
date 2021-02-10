@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_timeentry
 name: "msdyn_timeentry"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_timeentry EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fc44936c-cd2a-4488-8599-5c7c9f1f8231
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_timeentry entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_timeentry entitytype."
 description: "Entity used  for time entry."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_timeentries"
@@ -64,6 +64,12 @@ properties:
       description: "Shows the time spent."
       iscomputed: false
       isreadonly: false
+    - name: msdyn_end
+      type: Edm.DateTimeOffset
+      display_name: "End"
+      description: "The end time of the time entry."
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_entrystatus
       type: Edm.Int32
       display_name: "Entry Status"
@@ -71,6 +77,8 @@ properties:
       iscomputed: false
       isreadonly: false
       options:
+        - value: 192354320
+          label: "Cancelled"
         - value: 192350000
           label: "Draft"
         - value: 192350001
@@ -85,6 +93,12 @@ properties:
       type: Edm.String
       display_name: "External Comments"
       description: "Type the external description of the time entry."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_internalflags
+      type: Edm.String
+      display_name: "Internal Flags"
+      description: "For internal use only."
       iscomputed: false
       isreadonly: false
     - name: msdyn_relateditemid
@@ -108,6 +122,12 @@ properties:
           label: "Resource Assignment"
         - value: 192350100
           label: "Exchange Appointments"
+    - name: msdyn_start
+      type: Edm.DateTimeOffset
+      display_name: "Start"
+      description: "The start time of the time entry."
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_targetentrystatus
       type: Edm.Int32
       display_name: "Target Entry Status"
@@ -115,6 +135,8 @@ properties:
       iscomputed: false
       isreadonly: false
       options:
+        - value: 192354320
+          label: "Cancelled"
         - value: 192350000
           label: "Draft"
         - value: 192350001
@@ -138,12 +160,18 @@ properties:
       iscomputed: false
       isreadonly: false
       options:
+        - value: 192354320
+          label: "Overtime"
         - value: 192350000
           label: "Work"
         - value: 192350001
           label: "Absence"
         - value: 192350002
           label: "Vacation"
+        - value: 192355000
+          label: "On Break"
+        - value: 192355001
+          label: "Travel"
     - name: overriddencreatedon
       type: Edm.DateTimeOffset
       display_name: "Record Created On"
@@ -225,6 +253,14 @@ lookup_properties:
     single_valued_navigation_property:
     - msdyn_bookableresource
     description: "Shows the bookable resource."
+  - name: _msdyn_bookableresourcebooking_value
+    single_valued_navigation_property:
+    - msdyn_BookableResourceBooking
+    description: "Unique identifier for Resource Booking associated with Time Entry."
+  - name: _msdyn_bookingstatus_value
+    single_valued_navigation_property:
+    - msdyn_BookingStatus
+    description: "Booking Status"
   - name: _msdyn_manager_value
     single_valued_navigation_property:
     - msdyn_manager
@@ -245,10 +281,22 @@ lookup_properties:
     single_valued_navigation_property:
     - msdyn_ResourceOrganizationalUnitId
     description: "Select the organizational unit at the time the entry was registered of the resource who performed the work."
+  - name: _msdyn_timeentrysettingid_value
+    single_valued_navigation_property:
+    - msdyn_timeentrysettingId
+    description: "Unique identifier for Time Source associated with Time Entry."
+  - name: _msdyn_timeoffrequest_value
+    single_valued_navigation_property:
+    - msdyn_timeoffrequest
+    description: "Unique identifier for Time Off Request associated with Time Entry. This field is auto-populated when a Time Entry is auto-created from a Time Off Request."
   - name: _msdyn_transactioncategory_value
     single_valued_navigation_property:
     - msdyn_transactioncategory
     description: "Shows the transaction category."
+  - name: _msdyn_workorder_value
+    single_valued_navigation_property:
+    - msdyn_WorkOrder
+    description: "Unique identifier for Work Orders associated with Time Entry."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -287,6 +335,12 @@ single_valued_navigation_properties:
   - name: msdyn_bookableresource
     type: Microsoft.Dynamics.CRM.bookableresource
     partner: msdyn_bookableresource_msdyn_timeentry_bookableresource
+  - name: msdyn_BookableResourceBooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: msdyn_bookableresourcebooking_msdyn_timeentry_BookableResourceBooking
+  - name: msdyn_BookingStatus
+    type: Microsoft.Dynamics.CRM.bookingstatus
+    partner: msdyn_bookingstatus_msdyn_timeentry_BookingStatus
   - name: msdyn_manager
     type: Microsoft.Dynamics.CRM.systemuser
     partner: msdyn_systemuser_msdyn_timeentry_manager
@@ -302,9 +356,18 @@ single_valued_navigation_properties:
   - name: msdyn_ResourceOrganizationalUnitId
     type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
     partner: msdyn_organizationalunit_timeentry
+  - name: msdyn_timeentrysettingId
+    type: Microsoft.Dynamics.CRM.msdyn_timeentrysetting
+    partner: msdyn_msdyn_timeentrysetting_msdyn_timeentry
+  - name: msdyn_timeoffrequest
+    type: Microsoft.Dynamics.CRM.msdyn_timeoffrequest
+    partner: msdyn_msdyn_timeoffrequest_msdyn_timeentry
   - name: msdyn_transactioncategory
     type: Microsoft.Dynamics.CRM.msdyn_transactioncategory
     partner: msdyn_msdyn_transactioncategory_msdyn_timeentry_transactioncategory
+  - name: msdyn_WorkOrder
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_msdyn_workorder_msdyn_timeentry_WorkOrder
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_msdyn_timeentry
@@ -372,12 +435,18 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_timeentry entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
+  - type: Microsoft.Dynamics.CRM.msdyn_TESA
+    description: "Capture time entries for resources across Dynamics 365 workloads."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

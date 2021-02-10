@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_accountpricelist
 name: "msdyn_accountpricelist"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_accountpricelist EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e898f89b-13d8-4934-91cd-062066c263f9
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_accountpricelist entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_accountpricelist entitytype."
 description: "Sales price list for this customer to capture special pricing agreements for products, roles and categories."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_accountpricelists"
@@ -229,12 +229,16 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_accountpricelist entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsCRMBasicOperations
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.LicenseEnforcement
 name: "License Enforcement"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement License Enforcement Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse License Enforcement Solution Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: a2c68401-5b19-40b8-903d-da44beab675a
-  author: "KumarVivek"
+  ms.assetid: 89a6078b-59a4-4f65-aa92-0c64df1f7545
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement License Enforcement Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse License Enforcement Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "License Enforcement solution"
  unique_name: LicenseEnforcement
- version: "1.0"
- customization_prefix: none
+ version: "2.0.0.0"
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -26,10 +26,10 @@ entities:
    - type: Microsoft.Dynamics.CRM.serviceplan
      description: "Service Plan"
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

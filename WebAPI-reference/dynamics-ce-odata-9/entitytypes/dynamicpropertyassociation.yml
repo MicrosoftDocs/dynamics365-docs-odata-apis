@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.dynamicpropertyassociation
 name: "dynamicpropertyassociation"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement dynamicpropertyassociation EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: dee3b9ff-5c2b-452b-9a57-4576710b488d
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the dynamicpropertyassociation entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse dynamicpropertyassociation entitytype."
 description: "Association of a property definition with another entity in the system."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/dynamicpropertyassociations"
@@ -217,10 +217,10 @@ solutions:
     description: "Dynamics 365 workload for product management."
   - type: Microsoft.Dynamics.CRM.msdynce_ProductManagementPatch
     description: "Dynamics 365 workload for product management."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

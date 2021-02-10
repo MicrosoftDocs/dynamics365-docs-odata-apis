@@ -1,0 +1,147 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_suggestedactivity
+name: "msdyn_suggestedactivity"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: d1acb348-a931-41df-bef6-a566c37d254c
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_suggestedactivity entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_suggestedactivities"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Suggested Activity
+  primary_key: msdyn_suggestedactivityid
+  primary_name_attribute: msdyn_subject
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: msdyn_activitytype
+      type: Edm.String
+      display_name: "Activity"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_bodypreview
+      type: Edm.String
+      display_name: "BodyPreview"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_createddate
+      type: Edm.DateTimeOffset
+      display_name: "Created Date"
+      description: "Created Date"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_duration
+      type: Edm.String
+      display_name: "Duration"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_endtime
+      type: Edm.DateTimeOffset
+      display_name: "End Time"
+      description: "End Time"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_exchangeweblink
+      type: Edm.String
+      display_name: "Exchange web link"
+      description: "Exchange web link"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_importance
+      type: Edm.String
+      display_name: "Importance"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_location
+      type: Edm.String
+      display_name: "Location"
+      description: "Location"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_regardingname
+      type: Edm.String
+      display_name: "Regarding Entity"
+      description: "Regarding Name"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_sender
+      type: Edm.String
+      display_name: "Sender"
+      description: "Sender"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_sendername
+      type: Edm.String
+      display_name: "Sender's Name"
+      description: "Sender's Name"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_starttime
+      type: Edm.DateTimeOffset
+      display_name: "Start Time"
+      description: "Start Time"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_subject
+      type: Edm.String
+      display_name: "Subject"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_suggestedactivityid
+      type: Edm.Guid
+      display_name: "Suggested Activity"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_to
+      type: Edm.String
+      display_name: "To"
+      description: "To"
+      iscomputed: false
+      isreadonly: false
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _msdyn_regardingid_value
+    description: "Regarding"
+# This entity has no single-valued navigation properties
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the msdyn_suggestedactivity entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.AutoDataCapture
+    description: "Auto Data Capture Feature Description."
+# This entity has no remarks.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

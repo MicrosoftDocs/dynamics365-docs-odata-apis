@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
 name: "msdyn_quotelinetransaction"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_quotelinetransaction EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2391454a-3ff0-4524-a0ce-63b911cecc9c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_quotelinetransaction entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_quotelinetransaction entitytype."
 description: "Sales estimate detail of a quote line."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_quotelinetransactions"
@@ -255,6 +255,8 @@ properties:
           label: "Commission"
         - value: 690970001
           label: "Additional"
+        - value: 690970002
+          label: "Tax"
         - value: 192350000
           label: "Time"
         - value: 192350001
@@ -265,8 +267,6 @@ properties:
           label: "Milestone"
         - value: 192350004
           label: "Fee"
-        - value: 690970002
-          label: "Tax"
     - name: msdyn_transactiontypecode
       type: Edm.Int32
       display_name: "Transaction Type"
@@ -558,6 +558,9 @@ collection_valued_navigation_properties:
   - name: msdyn_quotelinetransaction_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_quotelinetransaction
+  - name: msdyn_quotelinetransaction_msdyn_orderlinetransaction
+    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
+    partner: msdyn_QuoteLineTransactionId
   - name: msdyn_quotelinetransaction_PrincipalObjectAttributeAccesses
     type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
     partner: objectid_msdyn_quotelinetransaction
@@ -586,12 +589,14 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_quotelinetransaction entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

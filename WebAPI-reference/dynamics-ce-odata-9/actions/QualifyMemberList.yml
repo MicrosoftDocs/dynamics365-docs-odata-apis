@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.QualifyMemberList
 name: "QualifyMemberList"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement QualifyMemberList Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 59f8dc49-77d5-4a23-ae6a-183099173a63
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the QualifyMemberList Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse QualifyMemberList Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Qualifies the specified list and either override the list members or remove them according to the specified option. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -36,10 +36,10 @@ parameters:
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.mobileofflineprofile
 name: "mobileofflineprofile"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement mobileofflineprofile EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/03/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 469d9ded-d4eb-4e3d-8da7-b40cba21f729
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the mobileofflineprofile entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse mobileofflineprofile entitytype."
 description: "Information to administer and manage the data available to mobile devices in offline mode."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/mobileofflineprofiles"
@@ -208,6 +208,12 @@ collection_valued_navigation_properties:
   - name: MobileOfflineProfile_SystemUser
     type: Microsoft.Dynamics.CRM.systemuser
     partner: mobileofflineprofileid
+  - name: mobileofflineprofile_teammobileofflineprofilemembership_MobileOfflineProfileId
+    type: Microsoft.Dynamics.CRM.teammobileofflineprofilemembership
+    partner: MobileOfflineProfileId
+  - name: mobileofflineprofile_usermobileofflineprofilemembership_MobileOfflineProfileId
+    type: Microsoft.Dynamics.CRM.usermobileofflineprofilemembership
+    partner: MobileOfflineProfileId
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the mobileofflineprofile entity type."
@@ -229,10 +235,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex
