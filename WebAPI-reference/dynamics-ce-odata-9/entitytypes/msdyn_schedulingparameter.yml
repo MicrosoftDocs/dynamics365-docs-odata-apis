@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_schedulingparameter
 name: "msdyn_schedulingparameter"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_schedulingparameter EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5d7b83ba-b0cf-4ede-b9dd-1d1009630fae
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_schedulingparameter entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_schedulingparameter entitytype."
 description: "Scheduling Parameters"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_schedulingparameters"
@@ -186,7 +186,7 @@ properties:
       isreadonly: false
     - name: msdyn_saautofilterserviceterritory
       type: Edm.Boolean
-      display_name: "Auto Filter Service Territory"
+      display_name: "Auto Filter Service Territory (Deprecated)"
       description: "Determines if the schedule assistant should automatically filter results based on the requirement territory."
       iscomputed: false
       isreadonly: false
@@ -326,9 +326,15 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_24
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

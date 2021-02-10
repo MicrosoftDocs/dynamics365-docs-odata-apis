@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
 name: "msdyn_resourcerequirement"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_resourcerequirement EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1eae7744-07f3-467f-a11e-14460c11a304
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_resourcerequirement entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_resourcerequirement entitytype."
 description: "Entity used to track the high-level information about resource requirements."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_resourcerequirements"
@@ -277,6 +277,12 @@ properties:
       description: ""
       iscomputed: false
       isreadonly: false
+    - name: msdyn_timezonefortimewindow
+      type: Edm.Int32
+      display_name: "Timezone for time window"
+      description: "The Timezone in which the Time windows are defined by the User"
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_todate
       type: Edm.DateTimeOffset
       display_name: "To Date"
@@ -465,6 +471,12 @@ single_valued_navigation_properties:
   - name: msdyn_projectid
     type: Microsoft.Dynamics.CRM.msdyn_project
     partner: msdyn_project_resourcerequirement
+  - name: msdyn_requirementgroupid
+    type: Microsoft.Dynamics.CRM.msdyn_requirementgroup
+    partner: msdyn_requirementgroup_resourcerequirement_requirementgroupid
+  - name: msdyn_requirementrelationshipid
+    type: Microsoft.Dynamics.CRM.msdyn_requirementrelationship
+    partner: msdyn_requirementrelationship_resourcerequirement_requirementrelationshipid
   - name: msdyn_roleid
     type: Microsoft.Dynamics.CRM.bookableresourcecategory
     partner: msdyn_bookableresourcecategory_resourcerequirement
@@ -558,6 +570,12 @@ collection_valued_navigation_properties:
   - name: msdyn_resourcerequirement_requirementcharacteristic_resourcerequirement
     type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
     partner: msdyn_ResourceRequirement
+  - name: msdyn_resourcerequirement_requirementdependency_dependentrequirement
+    type: Microsoft.Dynamics.CRM.msdyn_requirementdependency
+    partner: msdyn_dependentrequirement
+  - name: msdyn_resourcerequirement_requirementdependency_resourcerequirement
+    type: Microsoft.Dynamics.CRM.msdyn_requirementdependency
+    partner: msdyn_requirement
   - name: msdyn_resourcerequirement_requirementorganizationunit_ResourceRequirement
     type: Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
     partner: msdyn_ResourceRequirement
@@ -585,7 +603,11 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.msdyn_AcceptProposedBooking
     binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_BookingResourceRequirement
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_createrequestfromrequirement
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_RejectProposedBooking
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_updateremainingresourcerequirement
     binding_type: "Entity"
@@ -602,11 +624,21 @@ solutions:
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_24
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.BusinessNotification
 name: "BusinessNotification"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement BusinessNotification ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service BusinessNotification ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7e3290cc-3f69-4326-a2dc-bc7fa5781d2f
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API BusinessNotification ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API BusinessNotification ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "For internal use only" 
@@ -46,9 +46,9 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.RescheduleResponse
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.bookableresourcebooking
 name: "bookableresourcebooking"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement bookableresourcebooking EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8fe3f331-110e-4c17-832d-78034ffe2ca2
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the bookableresourcebooking entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service bookableresourcebooking entitytype."
 description: "Represents the line details of a resource booking."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/bookableresourcebookings"
@@ -101,7 +101,7 @@ properties:
     - name: msdyn_actualtravelduration
       type: Edm.Int32
       display_name: "Actual Travel Duration"
-      description: "Shows the total travel duration. If you leave this field blank the system automatically determines the travel duration by calculating the resource journal details."
+      description: "Shows the total travel duration. Calculated based on the difference between the Bookable Resource Booking's start time and actual arrival time."
       iscomputed: false
       isreadonly: false
     - name: msdyn_allowoverlapping
@@ -122,6 +122,8 @@ properties:
       iscomputed: false
       isreadonly: false
       options:
+        - value: 192350000
+          label: "Resource Scheduling Optimization"
         - value: 690970005
           label: "System - Agreement Schedule"
         - value: 690970001
@@ -143,6 +145,19 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
+    - name: msdyn_crewmembertype
+      type: Edm.Int32
+      display_name: "Crew Member Type"
+      description: "Crew Member Type"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Leader"
+        - value: 192350001
+          label: "Member"
+        - value: 192350002
+          label: "None"
     - name: msdyn_effort
       type: Edm.Decimal
       display_name: "Capacity"
@@ -294,7 +309,7 @@ properties:
       isreadonly: false
     - name: stageid
       type: Edm.Guid
-      display_name: "(Deprecated) Stage Id"
+      display_name: "Stage Id"
       description: "Contains the id of the stage where the entity is located."
       iscomputed: false
       isreadonly: false
@@ -334,7 +349,7 @@ properties:
       isreadonly: false
     - name: traversedpath
       type: Edm.String
-      display_name: "(Deprecated) Traversed Path"
+      display_name: "Traversed Path"
       description: "A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur."
       iscomputed: false
       isreadonly: false
@@ -387,6 +402,10 @@ lookup_properties:
     single_valued_navigation_property:
     - msdyn_BookingSetupMetadataId
     description: "A unique identifier for the booking setup metadata that is associated with a bookable resource booking."
+  - name: _msdyn_crew_value
+    single_valued_navigation_property:
+    - msdyn_Crew
+    description: "This field is populated by the Field Service solution to define to which crew a booking is connected."
   - name: _msdyn_projectid_value
     single_valued_navigation_property:
     - msdyn_projectid
@@ -473,12 +492,18 @@ single_valued_navigation_properties:
   - name: msdyn_BookingSetupMetadataId
     type: Microsoft.Dynamics.CRM.msdyn_bookingsetupmetadata
     partner: msdyn_msdyn_bookingsetupmetadata_bookableresour
+  - name: msdyn_Crew
+    type: Microsoft.Dynamics.CRM.bookableresource
+    partner: msdyn_bookableresource_bookableresourcebooking_Crew
   - name: msdyn_projectid
     type: Microsoft.Dynamics.CRM.msdyn_project
     partner: msdyn_msdyn_project_bookableresourcebooking_projectid
   - name: msdyn_projectteamid
     type: Microsoft.Dynamics.CRM.msdyn_projectteam
     partner: msdyn_msdyn_projectteam_bookableresourcebooking_projectteamid
+  - name: msdyn_requirementgroupid
+    type: Microsoft.Dynamics.CRM.msdyn_requirementgroup
+    partner: msdyn_requirementgroup_bookableresourcebooking_requirementgroupid
   - name: msdyn_resourcecategoryid
     type: Microsoft.Dynamics.CRM.bookableresourcecategory
     partner: msdyn_bookableresourcecategory_bookableresourcebooking_resourcecategoryid
@@ -557,6 +582,15 @@ collection_valued_navigation_properties:
   - name: bookableresourcebooking_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_bookableresourcebooking_letter
+  - name: bookableresourcebooking_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_bookableresourcebooking_li_inmail
+  - name: bookableresourcebooking_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_bookableresourcebooking_li_message
+  - name: bookableresourcebooking_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_bookableresourcebooking_li_pointdrivepresentationviewed
   - name: bookableresourcebooking_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_bookableresourcebooking
@@ -566,6 +600,15 @@ collection_valued_navigation_properties:
   - name: bookableresourcebooking_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_bookableresourcebooking_msdyn_bookingalert
+  - name: bookableresourcebooking_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_bookableresourcebooking_msfp_alert
+  - name: bookableresourcebooking_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_bookableresourcebooking_msfp_surveyinvite
+  - name: bookableresourcebooking_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_bookableresourcebooking_msfp_surveyresponse
   - name: bookableresourcebooking_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_bookableresourcebooking_opportunityclose
@@ -605,6 +648,9 @@ collection_valued_navigation_properties:
   - name: msdyn_bookableresourcebooking_msdyn_bookingtimestamp_Booking
     type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
     partner: msdyn_booking
+  - name: msdyn_bookableresourcebooking_msdyn_geofence_bookableresourcebookingid
+    type: Microsoft.Dynamics.CRM.msdyn_geofence
+    partner: msdyn_bookableresourcebookingid
   - name: msdyn_bookableresourcebooking_msdyn_purchaseorder_Booking
     type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
     partner: msdyn_booking
@@ -617,6 +663,9 @@ collection_valued_navigation_properties:
   - name: msdyn_bookableresourcebooking_msdyn_rtv_Booking
     type: Microsoft.Dynamics.CRM.msdyn_rtv
     partner: msdyn_booking
+  - name: msdyn_bookableresourcebooking_msdyn_timeentry_BookableResourceBooking
+    type: Microsoft.Dynamics.CRM.msdyn_timeentry
+    partner: msdyn_BookableResourceBooking
   - name: msdyn_bookableresourcebooking_msdyn_workorderproduct_Booking
     type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
     partner: msdyn_booking
@@ -634,6 +683,8 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_FieldServiceBookableResourceBookingAssociateAction
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -647,13 +698,23 @@ solutions:
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_24
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.msdynce_Scheduling
     description: "Dynamics 365 workload for scheduling."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ComplexDecimalAttributeMetadata
 name: "ComplexDecimalAttributeMetadata"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ComplexDecimalAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service ComplexDecimalAttributeMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 11602155-39fd-4bbf-b653-46d036c6bea1
-  author: "KumarVivek"
+  ms.assetid: 342d8270-bd83-48c4-89b8-6e5da85f5958
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API ComplexDecimalAttributeMetadata ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API ComplexDecimalAttributeMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 header:
   base_type: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
@@ -57,9 +57,9 @@ properties:
     iscollection: false
 # This complex type doesn't have any navigation properties.
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -1,0 +1,53 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.AppModuleSaveResponse
+name: "AppModuleSaveResponse"
+type: complextype
+metadata: 
+  title: "Common Data Service AppModuleSaveResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 08e0786c-66b4-41ca-8297-4ec683167ce1
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API AppModuleSaveResponse ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "" 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: AppElements
+    type: Microsoft.Dynamics.CRM.AppElementInfo
+    nullable: false
+    unicode: true
+    description: ""
+    iscollection: true
+navigation_properties:
+  description: "The navigation properties of a complex type contain references to an entity type or a collection of entity types."
+  property_items:
+  - name: AppModule
+    type: mscrm.crmbaseentity
+    nullable: false
+    description: ""
+    iscollection: false
+  - name: UnifiedApp
+    type: mscrm.crmbaseentity
+    nullable: false
+    description: ""
+    iscollection: false
+
+# There are no remarks for this complex type.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

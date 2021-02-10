@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveByResourcesService
 name: "RetrieveByResourcesService"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveByResourcesService Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveByResourcesService Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e08ea08d-3391-48e5-8f9f-626a6c71dee8
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveByResourcesService Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service RetrieveByResourcesService Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieve the collection of services that are related to the specified set of resources."
 iscomposable: true
@@ -37,9 +37,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.service
     displayName: "Service"
     description: "Activity that represents work done to satisfy a customer's need."
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

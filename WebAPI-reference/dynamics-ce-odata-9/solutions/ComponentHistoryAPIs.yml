@@ -3,26 +3,32 @@ uid: Microsoft.Dynamics.CRM.ComponentHistoryAPIs
 name: "Microsoft Dynamics 365 Component History APIs"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Microsoft Dynamics 365 Component History APIs Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Microsoft Dynamics 365 Component History APIs Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 4c7d29e6-9307-4b6e-acac-d5e3a0f8f170
-  author: "KumarVivek"
+  ms.assetid: 6f648a43-43a0-4c9c-99ad-50470ea1de06
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Microsoft Dynamics 365 Component History APIs Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Microsoft Dynamics 365 Component History APIs Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: ComponentHistoryAPIs
- version: "9.1.0.14"
+ version: "9.1.0.19"
  customization_prefix: msdyn
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_componentlayer
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_componentlayerdatasource
+     description: ""
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

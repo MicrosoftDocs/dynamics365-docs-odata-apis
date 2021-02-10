@@ -1,0 +1,53 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.GetFileSasUrl
+name: "GetFileSasUrl"
+type: function
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement GetFileSasUrl Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 370f3686-600b-43af-adbb-1736e54eed73
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service GetFileSasUrl Function."
+namespace: Microsoft.Dynamics.CRM
+description: ""
+iscomposable: false
+# This function is not bound to any entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the function."
+  parameter_items:
+  - name: Target
+    type: Microsoft.Dynamics.CRM.crmbaseentity
+    nullable: false
+    unicode: true
+    description: ""
+    iscollection: false
+  - name: FileAttributeName
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+    iscollection: false
+return_type:
+  description: "The GetFileSasUrl function returns the following value."
+  type: Microsoft.Dynamics.CRM.GetFileSasUrlResponse
+  iscollection: false
+  nullable: false
+# This function no specific entities for this function identified.
+# There are no remarks for this function.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.solution
 name: "solution"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement solution EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4dd9f73e-8d40-4f80-ade4-a65fabf7f7b8
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the solution entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service solution entitytype."
 description: "A solution which contains CRM customizations."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/solutions"
@@ -140,6 +140,12 @@ properties:
           label: "Snapshot"
         - value: 2
           label: "Internal"
+    - name: templatesuffix
+      type: Edm.String
+      display_name: "Suffix"
+      description: "The template suffix of this solution"
+      iscomputed: false
+      isreadonly: false
     - name: uniquename
       type: Edm.String
       display_name: "Name"
@@ -150,6 +156,12 @@ properties:
       type: Edm.DateTimeOffset
       display_name: "Updated On"
       description: "Date and time when the solution was updated."
+      iscomputed: false
+      isreadonly: true
+    - name: upgradeinfo
+      type: Edm.String
+      display_name: ""
+      description: "Contains component info for the solution upgrade operation"
       iscomputed: false
       isreadonly: true
     - name: version
@@ -235,6 +247,9 @@ collection_valued_navigation_properties:
   - name: FK_CanvasApp_Solution
     type: Microsoft.Dynamics.CRM.canvasapp
     partner: FK_CanvasApp_Solution
+  - name: package_solution
+    type: Microsoft.Dynamics.CRM.package
+    partner: package_solution
   - name: regardingobjectid_fileattachment_solution
     type: Microsoft.Dynamics.CRM.fileattachment
     partner: FileAttachment_Solution
@@ -274,11 +289,15 @@ operations:
 solutions:
   description: "The following solutions include the solution entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_SolutionPackageMapping
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdynce_SolutionsFrameworkMetadata
+    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

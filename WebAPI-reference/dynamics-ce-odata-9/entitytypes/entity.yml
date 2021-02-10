@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.entity
 name: "entity"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement entity EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 77fed666-9307-4314-a0ca-75fdbecfdeac
-  author: "KumarVivek"
+  ms.assetid: fffb9498-b9a2-4e18-bb26-bc03c4b65028
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the entity entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service entity entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/entities"
@@ -147,6 +147,12 @@ properties:
       description: "Unique identifier of the associated solution."
       iscomputed: false
       isreadonly: true
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "The version number of this entity."
+      iscomputed: false
+      isreadonly: true
 # This entity has no lookup properties
 # This entity has no single-valued navigation properties
 collection_valued_navigation_properties:
@@ -155,16 +161,21 @@ collection_valued_navigation_properties:
   - name: entity_entityanalyticsconfig
     type: Microsoft.Dynamics.CRM.entityanalyticsconfig
     partner: parententityid
+  - name: entity_solutioncomponentconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentconfiguration
+    partner: EntityId
 # This entity has no derived entities.
 # This entity has no operations
 solutions:
   description: "The following solutions include the entity entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.MetadataExtension
+    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

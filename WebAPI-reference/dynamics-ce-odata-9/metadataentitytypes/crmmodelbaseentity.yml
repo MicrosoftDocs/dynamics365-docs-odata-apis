@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.crmmodelbaseentity
 name: "crmmodelbaseentity"
 type: metadataentitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement crmmodelbaseentity Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service crmmodelbaseentity Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6f8fb6d8-a75d-42f0-9910-ca10f8daaf72
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the crmmodelbaseentity metadata entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service crmmodelbaseentity metadata entitytype."
 header: 
   description: "An abstract EntityType from which all metadata entity types inherit."
 namespace: Microsoft.Dynamics.CRM
@@ -25,9 +25,9 @@ derived_types:
    - type: Microsoft.Dynamics.CRM.MetadataBase
      description: "An abstract EntityType for used as base type for other Metadata EntityTypes, containing common metadata information."
 # This entity is not used by other entities or operations.
-# This metadata entity has no remarks.
+# There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

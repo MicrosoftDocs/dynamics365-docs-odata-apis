@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.contractdetail
 name: "contractdetail"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement contractdetail EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c4d6fb96-a1cc-4b3b-943c-1f5189b69385
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the contractdetail entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service contractdetail entitytype."
 description: "Line item in a contract that specifies the type of service a customer is entitled to."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/contractdetails"
@@ -392,9 +392,9 @@ solutions:
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
     description: "Dynamics 365 workload for service."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

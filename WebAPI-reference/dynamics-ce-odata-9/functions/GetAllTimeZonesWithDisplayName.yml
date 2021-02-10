@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.GetAllTimeZonesWithDisplayName
 name: "GetAllTimeZonesWithDisplayName"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement GetAllTimeZonesWithDisplayName Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement GetAllTimeZonesWithDisplayName Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 080a605d-64b4-4914-89d3-10b785925b76
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the GetAllTimeZonesWithDisplayName Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service GetAllTimeZonesWithDisplayName Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves all the time zone definitions for the specified locale and to return only the display name attribute.  "
 iscomposable: false
@@ -35,9 +35,9 @@ return_type:
   iscollection: true
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

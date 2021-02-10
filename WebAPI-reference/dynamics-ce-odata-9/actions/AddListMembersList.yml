@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AddListMembersList
 name: "AddListMembersList"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AddListMembersList Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 617c59e9-67d4-4e2e-8982-b9e9aa459b0b
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the AddListMembersList Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service AddListMembersList Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Adds members to a list. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -38,9 +38,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.list
     displayName: Marketing List
     description: "Group of existing or potential customers created for a marketing campaign or other sales purposes."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

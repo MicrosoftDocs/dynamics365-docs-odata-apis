@@ -3,26 +3,28 @@ uid: Microsoft.Dynamics.CRM.IoTConnector
 name: "IoT Connector for Microsoft Dynamics 365"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement IoT Connector for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service IoT Connector for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 67410e0d-c6e2-4e5a-a05c-8d977adf75de
-  author: "KumarVivek"
+  ms.assetid: 3085184e-f2b6-48ba-bd69-3fe02153c640
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement IoT Connector for Microsoft Dynamics 365 Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service IoT Connector for Microsoft Dynamics 365 Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Enables IoT scenarios in Dynamics 365."
  unique_name: IoTConnector
- version: "1.7.7.107"
+ version: "1.8.9.7"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
   entity_items:
    - type: Microsoft.Dynamics.CRM.connection
      description: "Relationship between two entities."
+   - type: Microsoft.Dynamics.CRM.connectionrole
+     description: "Role describing a relationship between a two records."
    - type: Microsoft.Dynamics.CRM.msdyn_iotalert
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_iotdevice
@@ -31,22 +33,80 @@ entities:
      description: "Used to categorize IoT devices."
    - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
      description: "Represents an outgoing message to a device connected to an IoT provider."
+   - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommanddefinition
+     description: "Metadata for commands that a device or a device category supports."
+   - type: Microsoft.Dynamics.CRM.msdyn_iotdevicedatahistory
+     description: "The name of the entity that holds the device data every time a device data pull occurs between Dynamics 365 and an IoT provider"
+   - type: Microsoft.Dynamics.CRM.msdyn_iotdeviceproperty
+     description: "Link entity between IoT Device Category and IoT Property Definition. This is used to model properties and tags for devices."
    - type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
      description: "Tracks registration activities on an IoT device."
+   - type: Microsoft.Dynamics.CRM.msdyn_iotdevicevisualizationconfiguration
+     description: "IoT Device Visualization Configuration"
+   - type: Microsoft.Dynamics.CRM.msdyn_iotfieldmapping
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_iotpropertydefinition
+     description: "Defines a device property or a parameter that can be used for one or more command definitions."
+   - type: Microsoft.Dynamics.CRM.msdyn_iotprovider
+     description: "The IoT Provider where a device is registered and through which all interactions with the device take place"
+   - type: Microsoft.Dynamics.CRM.msdyn_iotproviderinstance
+     description: "An instance of an IoT Provider."
+   - type: Microsoft.Dynamics.CRM.msdyn_iotsettings
+     description: ""
 actions:
   description: "The following actions are included in this solution."
   action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_GetAdditionalPropertiesMetadata
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetIoTAlertAggregation
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetIoTCommandMetadata
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetIoTVisualizationSummary
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetRelatedIoTDevicesByEntity
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_IoTCheckIfRecordExistsInEntity
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_IoTGetDeviceEvents
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_IoTGetEditablePropertiesMetadata
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_IoTGetIoTAlertCustomAttributes
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_IoTGetModelStatusInternal
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_IoTGetTagsMetadata
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_IoTNewPrimaryAlert
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_IoTPullDeviceDataActionHandler
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_IoTRegisterActionHandler
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_IoTSendTestAlert
+     description: "[Reserved for future use.]"
+   - type: Microsoft.Dynamics.CRM.msdyn_JsonGetBoolean
+     description: "For internal use only."
    - type: Microsoft.Dynamics.CRM.msdyn_JsonGetNumber
      description: "For internal use only."
    - type: Microsoft.Dynamics.CRM.msdyn_JsonGetString
      description: "For internal use only."
    - type: Microsoft.Dynamics.CRM.msdyn_ParentIoTAlerts
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_ProvisionIoTSuggestionsMLModel
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ProvisionIoTSuggestionsMLModelInternal
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_PullDataForIoTDevice
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_RegisterCustomEntity
      description: "Registers any custom entity that may or may not already have connected IoT devices. This action invokes the IoT – Register Device action."
-# This solution has no remarks.
+   - type: Microsoft.Dynamics.CRM.msdyn_RegisterIoTDevice
+     description: "Publishes the registration requests for an IoT device."
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

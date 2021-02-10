@@ -1,0 +1,50 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.RetrieveUserSetOfPrivilegesByIds
+name: "RetrieveUserSetOfPrivilegesByIds"
+type: function
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveUserSetOfPrivilegesByIds Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 805053e9-b6f0-4836-8c48-26a7833241e5
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service RetrieveUserSetOfPrivilegesByIds Function."
+namespace: Microsoft.Dynamics.CRM
+description: ""
+iscomposable: false
+bound_entities:
+  description: "Bound functions are invoked by appending the function name to the URI representing an entity or collection."
+  bound_entity_items:
+  - entity_type: Microsoft.Dynamics.CRM.systemuser
+    binding_type: entity
+parameters:
+  description: "Parameters allow for data to be passed to the function."
+  parameter_items:
+  - name: PrivilegeIds
+    type: Edm.Guid
+    nullable: false
+    unicode: true
+    description: ""
+    iscollection: true
+return_type:
+  description: "The RetrieveUserSetOfPrivilegesByIds function returns the following value."
+  type: Microsoft.Dynamics.CRM.RetrieveUserSetOfPrivilegesByIdsResponse
+  iscollection: false
+  nullable: false
+# This function no specific entities for this function identified.
+# There are no remarks for this function.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

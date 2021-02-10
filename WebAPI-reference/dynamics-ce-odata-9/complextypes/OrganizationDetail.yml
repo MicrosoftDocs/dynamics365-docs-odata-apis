@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.OrganizationDetail
 name: "OrganizationDetail"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement OrganizationDetail ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service OrganizationDetail ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a91827a4-1abb-4726-8999-9fb577a8a23d
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API OrganizationDetail ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API OrganizationDetail ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Provides detailed information on an organization. " 
@@ -40,19 +40,19 @@ properties:
     type: Edm.String
     nullable: true
     unicode: false
-    description: "The unique identifier of the organization’s environment. "
+    description: ""
     iscollection: false
   - name: Geo
     type: Edm.String
     nullable: true
     unicode: false
-    description: "A value that represents the geographic region of the tenant. "
+    description: ""
     iscollection: false
   - name: TenantId
     type: Edm.String
     nullable: true
     unicode: false
-    description: "the unique identifier of the tenant that contains the environment and organization. "
+    description: ""
     iscollection: false
   - name: UrlName
     type: Edm.String
@@ -84,9 +84,9 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.RetrieveCurrentOrganizationResponse
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

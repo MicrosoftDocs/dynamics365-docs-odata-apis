@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.entitydataprovider
 name: "entitydataprovider"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement entitydataprovider EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3b1b4bfb-e42e-42ee-b008-6ec78c02f8de
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the entitydataprovider entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service entitydataprovider entitytype."
 description: "Developers can register plug-ins on a data provider to enable data access for virtual entities in the system."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/entitydataproviders"
@@ -43,6 +43,12 @@ properties:
           label: "Deleted"
         - value: 3
           label: "Deleted Unpublished"
+    - name: createmultipleplugin
+      type: Edm.Guid
+      display_name: "Contains the createmultipleplugin id that should be run when CreateMultiple is invoked"
+      description: "Contains the createmultipleplugin id that should be run when CreateMultiple is invoked"
+      iscomputed: false
+      isreadonly: false
     - name: createplugin
       type: Edm.Guid
       display_name: "Create Plugin"
@@ -120,6 +126,12 @@ properties:
       description: "For internal use only."
       iscomputed: false
       isreadonly: true
+    - name: retrieveentitychangesplugin
+      type: Edm.Guid
+      display_name: "Contains the retrieveentitychangesplugin id that should be run when RetrieveEntityChanges is invoked"
+      description: "Contains the retrieveentitychangesplugin id that should be run when RetrieveEntityChanges is invoked"
+      iscomputed: false
+      isreadonly: false
     - name: retrievemultipleplugin
       type: Edm.Guid
       display_name: "MultipleRetrieve Plugin"
@@ -138,10 +150,28 @@ properties:
       description: "Unique identifier of the associated solution."
       iscomputed: false
       isreadonly: true
+    - name: updatemultipleplugin
+      type: Edm.Guid
+      display_name: "Contains the updatemultipleplugin id that should be run when UpdateMultiple is invoked"
+      description: "Contains the updatemultipleplugin id that should be run when UpdateMultiple is invoked"
+      iscomputed: false
+      isreadonly: false
     - name: updateplugin
       type: Edm.Guid
       display_name: "Update Plugin"
       description: "Update Plugin"
+      iscomputed: false
+      isreadonly: false
+    - name: upsertmultipleplugin
+      type: Edm.Guid
+      display_name: "Contains the upsertmultipleplugin id that should be run when UpsertMultiple is invoked"
+      description: "Contains the upsertmultipleplugin id that should be run when UpsertMultiple is invoked"
+      iscomputed: false
+      isreadonly: false
+    - name: upsertplugin
+      type: Edm.Guid
+      display_name: "Contains the upsertplugin id that should be run when Upsert is invoked"
+      description: "Contains the upsertplugin id that should be run when Upsert is invoked"
       iscomputed: false
       isreadonly: false
 # This entity has no lookup properties
@@ -152,11 +182,13 @@ properties:
 solutions:
   description: "The following solutions include the entitydataprovider entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.EntityDataProviderExtensions
+    description: "EntityDataProviderExtensions Solution"
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

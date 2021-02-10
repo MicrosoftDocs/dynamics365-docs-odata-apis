@@ -1,0 +1,40 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.SolutionOperationType
+name: "SolutionOperationType"
+type: enumtype
+metadata: 
+  title: "Common Data Service SolutionOperationType EnumType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 454767fa-543b-4310-a107-80a82c350a33
+  author: "kumarVivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API SolutionOperationType ComplexType."
+namespace: Microsoft.Dynamics.CRM
+description: "Not Found" 
+members:
+  description: "Members define the discrete options for the enumeration type."
+  member_items:
+  - description: ""
+    name: "Import"
+    value: 0
+usedby:
+  description: "The following use the SolutionOperationType EnumType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.SolutionOperationResult
+    used_as: Property
+# There are no remarks for this enum type.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

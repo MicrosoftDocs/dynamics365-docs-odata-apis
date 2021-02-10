@@ -1,0 +1,47 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_Geolocation
+name: "Geolocation application for Dynamics 365 solutions"
+type: solution
+metadata: 
+  title: "Common Data Service Geolocation application for Dynamics 365 solutions Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: c323f2c1-5e03-429f-af01-7bab5a350668
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Geolocation application for Dynamics 365 solutions Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "The Geolocation solution enables processing and storing of real time tracking information sent by a mobile background service."
+ unique_name: msdyn_Geolocation
+ version: "1.0.0.68"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_geolocationsettings
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_geolocationtracking
+     description: ""
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_GeolocationLocationTrackingData
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GeolocationLocationTrackingEnabled
+     description: ""
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

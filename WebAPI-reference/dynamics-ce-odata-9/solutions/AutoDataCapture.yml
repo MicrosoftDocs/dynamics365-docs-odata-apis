@@ -3,32 +3,86 @@ uid: Microsoft.Dynamics.CRM.AutoDataCapture
 name: "AutoDataCapture"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AutoDataCapture Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service AutoDataCapture Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: f3304004-4a83-41ec-86ce-98e8c295357f
-  author: "KumarVivek"
+  ms.assetid: 4bb43a07-dbdb-4a3f-ab3f-a01b211867ae
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement AutoDataCapture Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service AutoDataCapture Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
-# This solution has no description.
+ description: "Auto Data Capture Feature Description."
  unique_name: AutoDataCapture
- version: "9.0.2.64"
+ version: "9.0.2012.3000"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
   entity_items:
    - type: Microsoft.Dynamics.CRM.actioncard
      description: "Action card entity to show action cards."
+   - type: Microsoft.Dynamics.CRM.connection
+     description: "Relationship between two entities."
+   - type: Microsoft.Dynamics.CRM.msdyn_autocapturerule
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_autocapturesettings
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_suggestedactivity
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_suggestedactivitydatasource
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_suggestedcontact
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_suggestedcontactsdatasource
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_untrackedappointment
+     description: ""
    - type: Microsoft.Dynamics.CRM.recurringappointmentmaster
      description: "The Master appointment of a recurring appointment series."
-# This solution includes no actions.
-# This solution has no remarks.
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_AddSuggestedCards
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CreateSuggestedActivity
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CreateSuggestedContact
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_DismissSuggestedActivity
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_DismissSuggestedContact
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_EditAndSaveSuggestedContact
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetAutoCaptureUri
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetOrganizationProvisioningStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetTimeLineRecords
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetUserConsentStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_PostOperationRevokeUsrConsent
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_PostOrganizationProvisioningStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_PostRetrieveRealTimeSuggestedActivities
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_QueryExchange
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveActivities
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_TrackExchangeActivity
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_UpdateAutoCaptureSettings
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_UpdateUserConsentBasedonSecurityRoles
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

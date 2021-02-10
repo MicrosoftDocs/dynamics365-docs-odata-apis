@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.role
 name: "role"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement role EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a65242dd-45c8-4059-810a-ef978894b897
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the role entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service role entitytype."
 description: "Grouping of security privileges. Users are assigned roles that authorize their access to the Microsoft CRM system."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/roles"
@@ -75,7 +75,7 @@ properties:
       isreadonly: false
       options:
         - value: 0
-          label: "Default - Team privileges only"
+          label: "Team privileges only"
         - value: 1
           label: "Direct User (Basic) access level and Team privileges"
     - name: ismanaged
@@ -217,6 +217,9 @@ collection_valued_navigation_properties:
   - name: appmoduleroles_association
     type: Microsoft.Dynamics.CRM.appmodule
     partner: appmoduleroles_association
+  - name: msdyn_role_msdyn_actioncardrolesetting
+    type: Microsoft.Dynamics.CRM.msdyn_actioncardrolesetting
+    partner: msdyn_Roleid
   - name: Role_AsyncOperations
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: regardingobjectid_role
@@ -256,11 +259,13 @@ operations:
 solutions:
   description: "The following solutions include the role entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.AuthorizationCore
+    description: "Authorization Core solution"
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

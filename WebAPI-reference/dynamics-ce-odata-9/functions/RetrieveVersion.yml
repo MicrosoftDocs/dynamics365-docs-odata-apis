@@ -3,31 +3,31 @@ uid: Microsoft.Dynamics.CRM.RetrieveVersion
 name: "RetrieveVersion"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveVersion Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveVersion Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 132aa536-4f58-491d-ba47-79b6544c59a5
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveVersion Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service RetrieveVersion Function."
 namespace: Microsoft.Dynamics.CRM
-description: "Retrieves the version number of the Microsoft Dynamics 365 Server "
+description: "Retrieves the version number of the Microsoft Dynamics 365 Server. "
 iscomposable: false
 # This function is not bound to any entities.
 isbound: false
 # This function has no parameters.
 hasparameters: false
 return_type:
-  description: "The RetrieveVersion function returns the following value"
+  description: "The RetrieveVersion function returns the following value."
   type: Microsoft.Dynamics.CRM.RetrieveVersionResponse
   iscollection: false
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

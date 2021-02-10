@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.InOrBeforeFiscalPeriodAndYear
 name: "InOrBeforeFiscalPeriodAndYear"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement InOrBeforeFiscalPeriodAndYear Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service InOrBeforeFiscalPeriodAndYear Query Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 75edaeb1-312b-41a8-82d8-a3207211ac31
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the InOrBeforeFiscalPeriodAndYear Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service InOrBeforeFiscalPeriodAndYear Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function that evaluates whether the value is within or before the specified fiscal period and year. "
 parameters:
@@ -33,9 +33,9 @@ parameters:
     unicode: true
     description: "The value of the fiscal year. "
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.InOrBeforeFiscalPeriodAndYear(PropertyName=@p1,PropertyValue1=@p2,PropertyValue2=@p3)&@p1='name'&@p2=42&@p3=42"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

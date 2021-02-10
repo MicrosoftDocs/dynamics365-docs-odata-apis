@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue
 name: "msdyn_contractlinescheduleofvalue"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_contractlinescheduleofvalue EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7c14c70b-5503-4b46-a57f-7d09cb4b4038
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_contractlinescheduleofvalue entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_contractlinescheduleofvalue entitytype."
 description: "List of billing milestones and invoice amounts for this project contract line."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_contractlinescheduleofvalues"
@@ -174,6 +174,8 @@ properties:
           label: "Commission"
         - value: 690970001
           label: "Additional"
+        - value: 690970002
+          label: "Tax"
         - value: 192350000
           label: "Time"
         - value: 192350001
@@ -184,8 +186,6 @@ properties:
           label: "Milestone"
         - value: 192350004
           label: "Fee"
-        - value: 690970002
-          label: "Tax"
     - name: msdyn_transactiontypecode
       type: Edm.Int32
       display_name: "Transaction Type"
@@ -397,11 +397,13 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_contractlinescheduleofvalue entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

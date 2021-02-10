@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.webresource
 name: "webresource"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement webresource EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0f732d46-1be8-42e4-abb0-24ed633958ac
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the webresource entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service webresource entitytype."
 description: "Data equivalent to files used in Web development. Web resources provide client-side components that are used to provide custom user interface elements."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/webresourceset"
@@ -61,12 +61,36 @@ properties:
       description: "Bytes of the web resource, in Base64 format."
       iscomputed: false
       isreadonly: false
+    - name: contentfileref
+      type: Edm.Binary
+      display_name: ""
+      description: "Reference to the content file on Azure."
+      iscomputed: false
+      isreadonly: true
+    - name: contentfileref_name
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: contentjson
       type: Edm.String
       display_name: ""
       description: "Json representation of the content of the resource."
       iscomputed: false
       isreadonly: false
+    - name: contentjsonfileref
+      type: Edm.Binary
+      display_name: ""
+      description: "Reference to the Json content file on Azure."
+      iscomputed: false
+      isreadonly: true
+    - name: contentjsonfileref_name
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: createdon
       type: Edm.DateTimeOffset
       display_name: "Created On"
@@ -277,6 +301,9 @@ collection_valued_navigation_properties:
   - name: solution_configuration_webresource
     type: Microsoft.Dynamics.CRM.solution
     partner: configurationpageid
+  - name: webresource_FileAttachments
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: objectid_webresource
   - name: webresource_savedqueryvisualizations
     type: Microsoft.Dynamics.CRM.savedqueryvisualization
     partner: webresourceid
@@ -294,11 +321,13 @@ operations:
 solutions:
   description: "The following solutions include the webresource entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msft_UnifiedClientWebResourceFileType
+    description: "Unified Client WebResource File Type"
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

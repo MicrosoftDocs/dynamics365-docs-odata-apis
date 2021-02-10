@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveExchangeAppointments
 name: "RetrieveExchangeAppointments"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveExchangeAppointments Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveExchangeAppointments Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 747fc686-5f8e-4e69-a706-97d697637a4f
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveExchangeAppointments Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service RetrieveExchangeAppointments Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the appointments for the current user for a specific date range from the exchange web service. "
 iscomposable: false
@@ -38,9 +38,9 @@ return_type:
   iscollection: true
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

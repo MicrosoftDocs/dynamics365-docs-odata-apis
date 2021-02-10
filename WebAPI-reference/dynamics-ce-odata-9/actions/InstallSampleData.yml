@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.InstallSampleData
 name: "InstallSampleData"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement InstallSampleData Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f7a95089-9a15-4070-bfdc-eca730f8739c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the InstallSampleData Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service InstallSampleData Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Installs the sample data.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -22,9 +22,9 @@ hasparameters: false
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

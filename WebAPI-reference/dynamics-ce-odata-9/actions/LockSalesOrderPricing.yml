@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.LockSalesOrderPricing
 name: "LockSalesOrderPricing"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement LockSalesOrderPricing Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 97ae87bd-ad6f-406d-aff6-8cf5e0acda89
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the LockSalesOrderPricing Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service LockSalesOrderPricing Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Locks the total price of products and services that are specified in the sales order (order).  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -25,9 +25,9 @@ hasparameters: false
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

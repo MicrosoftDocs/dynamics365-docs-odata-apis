@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_MarketingPatch
 name: "Marketing Patch"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Marketing Patch Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Marketing Patch Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 515e0a0e-50b5-48b3-a95f-cfd3f639b69b
-  author: "KumarVivek"
+  ms.assetid: 4e155688-31e0-48bc-87d9-2aa22344d820
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Marketing Patch Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Marketing Patch Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Patch for Dynamics 365 workload for marketing and enterprise."
  unique_name: msdynce_MarketingPatch
  version: "9.0.1904.1019"
- customization_prefix: none
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -64,9 +64,9 @@ entities:
    - type: Microsoft.Dynamics.CRM.task
      description: "Generic activity representing work needed to be done."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

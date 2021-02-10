@@ -1,0 +1,49 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.MicrosoftCrmPortalDependencies
+name: "Dynamics 365 Portals - Portal Dependencies"
+type: solution
+metadata: 
+  title: "Common Data Service Dynamics 365 Portals - Portal Dependencies Solution Reference | MicrosoftDocs"
+  ms.date: "01/20/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: a55d3512-f080-4f68-95e6-751365b16a35
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Dynamics 365 Portals - Portal Dependencies Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Required portal components."
+ unique_name: MicrosoftCrmPortalDependencies
+ version: "9.0.12.10"
+ customization_prefix: msa
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.contact
+     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
+   - type: Microsoft.Dynamics.CRM.incident
+     description: "Service request case associated with a contract."
+   - type: Microsoft.Dynamics.CRM.kbarticle
+     description: "Structured content that is part of the knowledge base."
+   - type: Microsoft.Dynamics.CRM.list
+     description: "Group of existing or potential customers created for a marketing campaign or other sales purposes."
+   - type: Microsoft.Dynamics.CRM.opportunity
+     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

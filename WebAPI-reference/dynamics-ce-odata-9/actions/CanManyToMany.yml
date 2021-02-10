@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CanManyToMany
 name: "CanManyToMany"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CanManyToMany Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4c561f4e-49b4-4108-96ce-c96b3660a587
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the CanManyToMany Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service CanManyToMany Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Checks whether an entity can participate in a many-to-many relationship.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -31,9 +31,9 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.CanManyToManyResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

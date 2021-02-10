@@ -1,0 +1,41 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msft_LocalizationExtension
+name: "msft_LocalizationExtension"
+type: solution
+metadata: 
+  title: "Common Data Service msft_LocalizationExtension Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 4bd50bcd-c3de-48e7-b21a-26c5f4769025
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msft_LocalizationExtension Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+# This solution has no description.
+ unique_name: msft_LocalizationExtension
+ version: "1.0.2.0"
+ customization_prefix: default
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.asyncoperation
+     description: "Process whose execution can proceed independently or in the background."
+   - type: Microsoft.Dynamics.CRM.provisionlanguageforuser
+     description: ""
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

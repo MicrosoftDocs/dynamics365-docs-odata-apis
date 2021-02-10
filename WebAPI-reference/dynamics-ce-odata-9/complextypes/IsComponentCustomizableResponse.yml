@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.IsComponentCustomizableResponse
 name: "IsComponentCustomizableResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement IsComponentCustomizableResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service IsComponentCustomizableResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: cc32e0ef-333e-4817-8985-33b7d5e66ea9
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API IsComponentCustomizableResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API IsComponentCustomizableResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains the response from the IsComponentCustomizable function." 
@@ -30,9 +30,9 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.IsComponentCustomizable
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

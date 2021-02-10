@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata
 name: "OneToManyRelationshipMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement OneToManyRelationshipMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service OneToManyRelationshipMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2211e593-a0b6-471d-94d4-36da512903b6
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the OneToManyRelationshipMetadata metadata entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service OneToManyRelationshipMetadata metadata entitytype."
 header: 
   description: "Contains the metadata for a one-to-many entity relationship."
   base_type: Microsoft.Dynamics.CRM.RelationshipMetadataBase
@@ -29,6 +29,9 @@ properties:
   - name: CascadeConfiguration
     type: Microsoft.Dynamics.CRM.CascadeConfiguration
     description: "The cascading behaviors for the entity relationship."
+  - name: EntityKey
+    type: Edm.String
+    description: ""
   - name: HasChanged
     type: Edm.Boolean
     inherited_from: Microsoft.Dynamics.CRM.MetadataBase
@@ -78,6 +81,9 @@ properties:
   - name: ReferencingEntityNavigationPropertyName
     type: Edm.String
     description: "The single-valued navigation property used by this relationship."
+  - name: RelationshipAttributes
+    type: Microsoft.Dynamics.CRM.RelationshipAttribute
+    description: ""
   - name: RelationshipBehavior
     type: Edm.Int32
     description: ""
@@ -108,9 +114,9 @@ usedby:
     used_as: NavigationProperty
   - name: Microsoft.Dynamics.CRM.EntityMetadata
     used_as: NavigationProperty
-# This metadata entity has no remarks.
+# There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CacheItem
 name: "CacheItem"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CacheItem ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service CacheItem ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: fe4575aa-87be-4eeb-bf76-4cdb38e48225
-  author: "KumarVivek"
+  ms.assetid: 12fc1b4b-f4c6-416a-8c18-f80150f47d1f
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API CacheItem ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API CacheItem ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -32,9 +32,9 @@ properties:
     iscollection: false
 # This complex type doesn't have any navigation properties.
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

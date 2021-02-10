@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveUserLicenseInfoResponse
 name: "RetrieveUserLicenseInfoResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveUserLicenseInfoResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service RetrieveUserLicenseInfoResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: dc55ad04-1b62-4638-9d0f-d7fc0b632cb6
-  author: "KumarVivek"
+  ms.assetid: 773df0d5-cecb-443b-9132-6cdca28aa064
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API RetrieveUserLicenseInfoResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API RetrieveUserLicenseInfoResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains the response from the RetrieveUserLicenseInfo function. " 
@@ -30,9 +30,9 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.RetrieveUserLicenseInfo
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.entitlementchannel
 name: "entitlementchannel"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement entitlementchannel EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: cf7817d5-4745-4aaa-9c9b-d44b2702a51f
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the entitlementchannel entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service entitlementchannel entitytype."
 description: "Defines the amount and type of support for a channel."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/entitlementchannels"
@@ -45,6 +45,8 @@ properties:
           label: "Facebook"
         - value: 3986
           label: "Twitter"
+        - value: 700610000
+          label: "IoT"
     - name: createdon
       type: Edm.DateTimeOffset
       display_name: "Created On"
@@ -237,9 +239,9 @@ solutions:
     description: "Patch for Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
     description: "Dynamics 365 workload for service."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

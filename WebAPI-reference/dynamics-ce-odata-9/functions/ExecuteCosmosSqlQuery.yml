@@ -1,0 +1,77 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.ExecuteCosmosSqlQuery
+name: "ExecuteCosmosSqlQuery"
+type: function
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement ExecuteCosmosSqlQuery Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 21aa3d32-4bd7-45ba-9078-9068609b62ce
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service ExecuteCosmosSqlQuery Function."
+namespace: Microsoft.Dynamics.CRM
+description: ""
+iscomposable: false
+# This function is not bound to any entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the function."
+  parameter_items:
+  - name: QueryText
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+    iscollection: false
+  - name: EntityLogicalName
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+    iscollection: false
+  - name: QueryParameters
+    type: Microsoft.Dynamics.CRM.ParameterCollection
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+  - name: PageSize
+    type: Edm.Int64
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+  - name: PagingCookie
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
+  - name: PartitionId
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
+return_type:
+  description: "The ExecuteCosmosSqlQuery function returns the following value."
+  type: Microsoft.Dynamics.CRM.crmbaseentity
+  iscollection: false
+  nullable: false
+# This function no specific entities for this function identified.
+# There are no remarks for this function.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

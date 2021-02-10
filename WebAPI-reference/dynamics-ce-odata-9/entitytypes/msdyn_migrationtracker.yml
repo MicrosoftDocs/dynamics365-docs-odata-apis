@@ -1,0 +1,380 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_migrationtracker
+name: "msdyn_migrationtracker"
+type: entitytype
+metadata: 
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 6e6018e6-d7fd-4fca-a0d3-20ae7e69c3e4
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_migrationtracker entitytype."
+description: "Entity that tracks the migration process of legacy to modern SLA/ARC items"
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_migrationtrackers"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Migration tracker
+  primary_key: msdyn_migrationtrackerid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: correlationid
+      type: Edm.String
+      display_name: "CorrelationId(Deprecated)"
+      description: "Unique identifier to distinguish each batch of migration(Deprecated)"
+      iscomputed: false
+      isreadonly: false
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_correlationid
+      type: Edm.String
+      display_name: "CorrelationId"
+      description: "Unique identifier to distinguish each batch of migration"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_IsMigrationComplete
+      type: Edm.Boolean
+      display_name: "Is Migration Complete"
+      description: "Indicates if the migration was successfully completed or not"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Success"
+        - value: 0
+          label: "Failure"
+    - name: msdyn_legacyruleidname
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_legacyruleidtype
+      type: Edm.String
+      display_name: "Legacy rule type"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_legacyruleitemidname
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_legacyruleitemidtype
+      type: Edm.String
+      display_name: "Legacy rule item type"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_migrationstatus
+      type: Edm.Int32
+      display_name: "Migration status"
+      description: "The overall status of a migration process"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "In Progress"
+        - value: 1
+          label: "Migrated"
+        - value: 2
+          label: "Incomplete"
+    - name: msdyn_migrationstatusexception
+      type: Edm.String
+      display_name: "Migration status reason exception"
+      description: "The exception of a certain status"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_migrationstatusreason
+      type: Edm.String
+      display_name: "Migration status reason"
+      description: "The reason of a certain status"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_migrationtrackerid
+      type: Edm.Guid
+      display_name: "Migration tracker id"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_migrationtype
+      type: Edm.Int32
+      display_name: "Migration Type"
+      description: "Indicates whether the request is a pre-validation check or an actual migration run"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Migration"
+        - value: 1
+          label: "PreValidation"
+    - name: msdyn_modernruleidname
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_modernruleidtype
+      type: Edm.String
+      display_name: "Modern rule type"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_modernruleitemidname
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_modernruleitemidtype
+      type: Edm.String
+      display_name: "Monitored activity type"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_objecttypecode
+      type: Edm.String
+      display_name: "Object type code"
+      description: "Object type code"
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Migration tracker"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Migration tracker"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_legacyconvertruleid_value
+    description: "Id of the legacy ARC rule to be migrated"
+  - name: _msdyn_legacyconvertruleitemid_value
+    description: "Id of the legacy ARC item to be migrated"
+  - name: _msdyn_legacyslaid_value
+    single_valued_navigation_property:
+    - msdyn_LegacySLAId
+    description: "Id of the legacy SLA to be migrated"
+  - name: _msdyn_legacyslaitemid_value
+    single_valued_navigation_property:
+    - msdyn_LegacySLAItemId
+    description: "Id of the legacy SLA item to be migrated"
+  - name: _msdyn_modernconvertruleid_value
+    description: "Id of the Uci ARC rule created post migration"
+  - name: _msdyn_modernconvertruleitemid_value
+    description: "Id of the Uci ARC item created post migration"
+  - name: _msdyn_modernslaid_value
+    single_valued_navigation_property:
+    - msdyn_ModernSLAId
+    description: "Id of the Uci SLA created post migration"
+  - name: _msdyn_modernslaitemid_value
+    single_valued_navigation_property:
+    - msdyn_ModernSLAItemId
+    description: "Id of the Uci SLA item created post migration"
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_migrationtracker_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_migrationtracker_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_migrationtracker_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_migrationtracker_modifiedonbehalfby
+  - name: msdyn_LegacySLAId
+    type: Microsoft.Dynamics.CRM.sla
+    partner: msdyn_migrationtracker_LegacySLA_sla
+  - name: msdyn_LegacySLAItemId
+    type: Microsoft.Dynamics.CRM.slaitem
+    partner: msdyn_migrationtracker_LegacySLAItem_slaitem
+  - name: msdyn_ModernSLAId
+    type: Microsoft.Dynamics.CRM.sla
+    partner: msdyn_migrationtracker_ModernSLA_sla
+  - name: msdyn_ModernSLAItemId
+    type: Microsoft.Dynamics.CRM.slaitem
+    partner: msdyn_migrationtracker_ModernSLAItem_slaitem
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_migrationtracker
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_migrationtracker
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_migrationtracker
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_migrationtracker
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_migrationtracker_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_migrationtracker
+  - name: msdyn_migrationtracker_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_migrationtracker
+  - name: msdyn_migrationtracker_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_migrationtracker
+  - name: msdyn_migrationtracker_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_migrationtracker
+  - name: msdyn_migrationtracker_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_migrationtracker
+  - name: msdyn_migrationtracker_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_migrationtracker
+  - name: msdyn_migrationtracker_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_migrationtracker
+  - name: msdyn_migrationtracker_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_migrationtracker
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_migrationtracker entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_migrationtracker entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdynce_ArcSlaMigrationCommon
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreementMigration
+    description: "Migration solution for Dynamics 365 workload for service level agreements."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

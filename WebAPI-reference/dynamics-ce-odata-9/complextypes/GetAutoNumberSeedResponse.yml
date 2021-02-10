@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.GetAutoNumberSeedResponse
 name: "GetAutoNumberSeedResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement GetAutoNumberSeedResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service GetAutoNumberSeedResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: e7397006-e44c-42f3-b9d3-f3108df1e98c
-  author: "KumarVivek"
+  ms.assetid: a8c9eba9-d3c1-4beb-9585-a53dac94593a
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API GetAutoNumberSeedResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API GetAutoNumberSeedResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -30,9 +30,9 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.GetAutoNumberSeed
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

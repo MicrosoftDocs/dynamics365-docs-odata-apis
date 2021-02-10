@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.activitymimeattachment
 name: "activitymimeattachment"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement activitymimeattachment EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 909d47b2-5d0e-43b9-b71b-4aaf34c56283
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the activitymimeattachment entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service activitymimeattachment entitytype."
 description: "MIME attachment for an activity."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/activitymimeattachments"
@@ -170,8 +170,8 @@ lookup_properties:
     description: "Unique identifier of the attachment with which this activitymimeattachment is associated."
   - name: _objectid_value
     single_valued_navigation_property:
-    - objectid_template
     - objectid_activitypointer
+    - objectid_template
     description: "Unique identifier of the record with which the attachment is associated"
   - name: _ownerid_value
     description: "Unique identifier of the user or team who owns the activity_mime_attachment."
@@ -214,15 +214,19 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the activitymimeattachment entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.EmailEngagementPatch_managed
+    description: "Stay on top of your email with alerts and reminders, prioritizing prospects, or customers that are most engaged."
+  - type: Microsoft.Dynamics.CRM.msdyn_RelevanceSearch
+    description: "msdyn_RelevanceSearch solution"
   - type: Microsoft.Dynamics.CRM.msdynce_Activities
     description: "Dynamics 365 workload for activities."
   - type: Microsoft.Dynamics.CRM.msdynce_ActivitiesPatch
     description: "Patch for Dynamics 365 workload for activities."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

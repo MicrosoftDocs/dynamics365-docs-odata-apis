@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.QueryExpression
 name: "QueryExpression"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement QueryExpression ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service QueryExpression ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1fafe641-bea4-4033-869c-593539b5a497
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API QueryExpression ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API QueryExpression ComplexType."
 namespace: Microsoft.Dynamics.CRM
 header:
   base_type: Microsoft.Dynamics.CRM.QueryBase
@@ -31,6 +31,12 @@ properties:
     unicode: true
     description: "Indicates that no shared locks are issued against the data that would prohibit other transactions from modifying the data in the records returned from the query. "
     iscollection: false
+  - name: SubQueryExpression
+    type: Microsoft.Dynamics.CRM.QueryExpression
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
   - name: PageInfo
     type: Microsoft.Dynamics.CRM.PagingInfo
     nullable: true
@@ -41,7 +47,7 @@ properties:
     type: Edm.String
     nullable: true
     unicode: false
-    description: "A hint for generated SQL text which affects the query's execution. See https://www.docs.microsoft.com/powerapps/developer/common-data-service/org-service/use-queryexpression-class#use-sql-hints-in-a-query for the list of supported values."
+    description: ""
     iscollection: false
   - name: LinkEntities
     type: Microsoft.Dynamics.CRM.LinkEntity
@@ -89,9 +95,11 @@ usedby:
     used_as: Parameter
   - name: Microsoft.Dynamics.CRM.FetchXmlToQueryExpressionResponse
     used_as: Property
-# This complex type has no remarks.
+  - name: Microsoft.Dynamics.CRM.QueryExpression
+    used_as: Property
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

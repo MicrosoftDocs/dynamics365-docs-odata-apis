@@ -1,0 +1,313 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_knowledgesearchinsight
+name: "msdyn_knowledgesearchinsight"
+type: entitytype
+metadata: 
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 244f32d9-423c-4ea5-8440-0ae9700a341d
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_knowledgesearchinsight entitytype."
+description: "Knowledge Search Insight"
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_knowledgesearchinsights"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Knowledge Search Insight
+  primary_key: msdyn_knowledgesearchinsightid
+  primary_name_attribute: msdyn_searchterm
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_applicationname
+      type: Edm.String
+      display_name: "Application name"
+      description: "The name of the application where the knowledge search is performed."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_correlationid
+      type: Edm.String
+      display_name: "Correlation ID"
+      description: "Designed for federation search. Used to correlate the search that triggered different search records from different search providers."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_customcontrolid
+      type: Edm.String
+      display_name: "Custom Control ID"
+      description: "The ID of control knowledge search where the search is performed."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_entityrecordid
+      type: Edm.String
+      display_name: "Entity Record ID"
+      description: "Entity Record ID of the Entity Type"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_entitytype
+      type: Edm.String
+      display_name: "Entity type"
+      description: "Which kind of entity context the knowledge search performed"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_filters
+      type: Edm.String
+      display_name: "Filters"
+      description: "The filters selected when performing the search."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_initiatedby
+      type: Edm.String
+      display_name: "Initiated by"
+      description: "Whether the search is initiated by the system automatically or manually initiated by the user."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_knowledgesearchinsightid
+      type: Edm.Guid
+      display_name: "Knowledge Search Insight ID"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_responsetime
+      type: Edm.Int32
+      display_name: "Response time"
+      description: "The time to return search results."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_resultcount
+      type: Edm.Int32
+      display_name: "Result count"
+      description: "The total count of knowledge articles returned"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_searchproviderid
+      type: Edm.String
+      display_name: "Search Provider ID"
+      description: "Designed for federation search. The ID of the federated search provider."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_searchprovidername
+      type: Edm.String
+      display_name: "Search provider name"
+      description: "Designed for federation search. The name of the federated search provider."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_searchterm
+      type: Edm.String
+      display_name: "Search term"
+      description: "The string typed in the search field"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_searchtype
+      type: Edm.String
+      display_name: "Search type"
+      description: "The type of search run, like full text search, relevance search, etc."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_sortby
+      type: Edm.String
+      display_name: "Sort by"
+      description: "The sort selected when performing the search."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_timestamp
+      type: Edm.DateTimeOffset
+      display_name: "Time stamp"
+      description: "Date and time when the search is performed"
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Knowledge Search Insight"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Knowledge Search Insight"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_knowledgesearchinsight_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_knowledgesearchinsight_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_knowledgesearchinsight_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_knowledgesearchinsight_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_knowledgesearchinsight
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_knowledgesearchinsight
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_knowledgesearchinsight
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_knowledgesearchinsight
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_knowledgesearchinsight_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_knowledgesearchinsight
+  - name: msdyn_knowledgesearchinsight_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_knowledgesearchinsight
+  - name: msdyn_knowledgesearchinsight_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_knowledgesearchinsight
+  - name: msdyn_knowledgesearchinsight_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_knowledgesearchinsight
+  - name: msdyn_knowledgesearchinsight_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_knowledgesearchinsight
+  - name: msdyn_knowledgesearchinsight_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_knowledgesearchinsight
+  - name: msdyn_knowledgesearchinsight_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_knowledgesearchinsight
+  - name: msdyn_knowledgesearchinsight_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_knowledgesearchinsight
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_knowledgesearchinsight entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_knowledgesearchinsight entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementOnlineFeatures
+    description: "Dynamics 365 knowledge management Online Features"
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

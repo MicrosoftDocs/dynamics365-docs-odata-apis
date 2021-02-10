@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.annotation
 name: "annotation"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement annotation EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 108a7d17-f416-4d6b-9045-e23a1f6c21a5
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the annotation entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service annotation entitytype."
 description: "Note that is attached to one or more objects, including other notes."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/annotations"
@@ -52,6 +52,18 @@ properties:
       description: "Contents of the note's attachment."
       iscomputed: false
       isreadonly: false
+    - name: dummyfilename
+      type: Edm.String
+      display_name: "File Name"
+      description: "Dummy attribute associated with the note attachment"
+      iscomputed: false
+      isreadonly: true
+    - name: dummyregarding
+      type: Edm.String
+      display_name: "Regarding"
+      description: "Dummy attribute associated with the note regarding"
+      iscomputed: false
+      isreadonly: true
     - name: filename
       type: Edm.String
       display_name: "File Name"
@@ -162,51 +174,19 @@ lookup_properties:
     description: "Unique identifier of the delegate user who last modified the annotation."
   - name: _objectid_value
     single_valued_navigation_property:
-    - objectid_duplicaterule
-    - objectid_kbarticle
-    - objectid_calendar
-    - objectid_knowledgebaserecord
-    - objectid_goal
     - objectid_knowledgearticle
-    - objectid_emailserverprofile
+    - objectid_knowledgebaserecord
+    - objectid_account
+    - objectid_kbarticle
+    - objectid_sla
+    - objectid_calendar
+    - objectid_contact
+    - objectid_goal
     - objectid_workflow
     - objectid_mailbox
-    - objectid_account
-    - objectid_contact
-    - objectid_sla
-    - objectid_msdyn_solutionhistorydatasource
-    - objectid_msdyn_solutioncomponentdatasource
-    - objectid_msdyn_aimodel
-    - objectid_msdyn_aifptrainingdocument
-    - objectid_msdyn_aiodimage
-    - objectid_lead
-    - objectid_bookableresource
-    - objectid_bookableresourcebooking
-    - objectid_bookableresourcebookingheader
-    - objectid_bookableresourcecategoryassn
-    - objectid_bookableresourcecharacteristic
-    - objectid_bookableresourcegroup
-    - objectid_campaign
-    - objectid_list
-    - objectid_contract
-    - objectid_contractdetail
-    - objectid_entitlement
-    - objectid_entitlementchannel
-    - objectid_entitlementtemplate
-    - objectid_equipment
-    - objectid_incident
-    - objectid_resourcespec
-    - objectid_service
-    - objectid_product
-    - objectid_msdyn_playbookinstance
-    - objectid_msdyn_playbooktemplate
-    - objectid_invoice
-    - objectid_opportunity
-    - objectid_quote
-    - objectid_salesorder
-    - objectid_competitor
+    - objectid_duplicaterule
+    - objectid_emailserverprofile
     - objectid_msdyn_postalbum
-    - objectid_msdyn_3dmodel
     - objectid_msdyn_actual
     - objectid_msdyn_bookingalertstatus
     - objectid_msdyn_bookingrule
@@ -223,74 +203,6 @@ lookup_properties:
     - objectid_msdyn_timegroup
     - objectid_msdyn_timegroupdetail
     - objectid_msdyn_transactionorigin
-    - objectid_msdyn_agreement
-    - objectid_msdyn_agreementbookingdate
-    - objectid_msdyn_agreementbookingincident
-    - objectid_msdyn_agreementbookingproduct
-    - objectid_msdyn_agreementbookingservice
-    - objectid_msdyn_agreementbookingservicetask
-    - objectid_msdyn_agreementbookingsetup
-    - objectid_msdyn_agreementinvoicedate
-    - objectid_msdyn_agreementinvoiceproduct
-    - objectid_msdyn_agreementinvoicesetup
-    - objectid_msdyn_agreementsubstatus
-    - objectid_msdyn_bookingjournal
-    - objectid_msdyn_bookingtimestamp
-    - objectid_msdyn_customerasset
-    - objectid_msdyn_fieldservicesetting
-    - objectid_msdyn_incidenttype
-    - objectid_msdyn_incidenttypecharacteristic
-    - objectid_msdyn_incidenttypeproduct
-    - objectid_msdyn_incidenttypeservice
-    - objectid_msdyn_incidenttypessetup
-    - objectid_msdyn_inventoryadjustment
-    - objectid_msdyn_inventoryadjustmentproduct
-    - objectid_msdyn_inventoryjournal
-    - objectid_msdyn_inventorytransfer
-    - objectid_msdyn_payment
-    - objectid_msdyn_paymentdetail
-    - objectid_msdyn_paymentmethod
-    - objectid_msdyn_paymentterm
-    - objectid_msdyn_postalcode
-    - objectid_msdyn_productinventory
-    - objectid_msdyn_purchaseorder
-    - objectid_msdyn_purchaseorderbill
-    - objectid_msdyn_purchaseorderproduct
-    - objectid_msdyn_purchaseorderreceipt
-    - objectid_msdyn_purchaseorderreceiptproduct
-    - objectid_msdyn_purchaseordersubstatus
-    - objectid_msdyn_quotebookingincident
-    - objectid_msdyn_quotebookingproduct
-    - objectid_msdyn_quotebookingservice
-    - objectid_msdyn_quotebookingservicetask
-    - objectid_msdyn_resourcepaytype
-    - objectid_msdyn_rma
-    - objectid_msdyn_rmaproduct
-    - objectid_msdyn_rmareceipt
-    - objectid_msdyn_rmareceiptproduct
-    - objectid_msdyn_rmasubstatus
-    - objectid_msdyn_rtv
-    - objectid_msdyn_rtvproduct
-    - objectid_msdyn_rtvsubstatus
-    - objectid_msdyn_servicetasktype
-    - objectid_msdyn_shipvia
-    - objectid_msdyn_taxcode
-    - objectid_msdyn_taxcodedetail
-    - objectid_msdyn_timeoffrequest
-    - objectid_msdyn_warehouse
-    - objectid_msdyn_workorder
-    - objectid_msdyn_workordercharacteristic
-    - objectid_msdyn_workorderincident
-    - objectid_msdyn_workorderproduct
-    - objectid_msdyn_workorderresourcerestriction
-    - objectid_msdyn_workorderservice
-    - objectid_msdyn_workorderservicetask
-    - objectid_msdyn_workordersubstatus
-    - objectid_msdyn_iotalert
-    - objectid_msdyn_iotdevice
-    - objectid_msdyn_iotdevicecategory
-    - objectid_msdyn_iotdevicecommand
-    - objectid_msdyn_iotdeviceregistrationhistory
     - objectid_msdyn_accountpricelist
     - objectid_msdyn_characteristicreqforteammember
     - objectid_msdyn_contactpricelist
@@ -344,6 +256,109 @@ lookup_properties:
     - objectid_msdyn_transactionconnection
     - objectid_msdyn_transactiontype
     - objectid_msdyn_workhourtemplate
+    - objectid_msdyn_agreement
+    - objectid_msdyn_agreementbookingdate
+    - objectid_msdyn_agreementbookingincident
+    - objectid_msdyn_agreementbookingproduct
+    - objectid_msdyn_agreementbookingservice
+    - objectid_msdyn_agreementbookingservicetask
+    - objectid_msdyn_agreementbookingsetup
+    - objectid_msdyn_agreementinvoicedate
+    - objectid_msdyn_agreementinvoiceproduct
+    - objectid_msdyn_agreementinvoicesetup
+    - objectid_msdyn_agreementsubstatus
+    - objectid_msdyn_bookingjournal
+    - objectid_msdyn_bookingtimestamp
+    - objectid_msdyn_customerasset
+    - objectid_msdyn_fieldservicesetting
+    - objectid_msdyn_incidenttype
+    - objectid_msdyn_incidenttypecharacteristic
+    - objectid_msdyn_incidenttypeproduct
+    - objectid_msdyn_incidenttypeservice
+    - objectid_msdyn_inventoryadjustment
+    - objectid_msdyn_inventoryadjustmentproduct
+    - objectid_msdyn_inventoryjournal
+    - objectid_msdyn_inventorytransfer
+    - objectid_msdyn_payment
+    - objectid_msdyn_paymentdetail
+    - objectid_msdyn_paymentmethod
+    - objectid_msdyn_paymentterm
+    - objectid_msdyn_postalcode
+    - objectid_msdyn_productinventory
+    - objectid_msdyn_purchaseorder
+    - objectid_msdyn_purchaseorderbill
+    - objectid_msdyn_purchaseorderproduct
+    - objectid_msdyn_purchaseorderreceipt
+    - objectid_msdyn_purchaseorderreceiptproduct
+    - objectid_msdyn_purchaseordersubstatus
+    - objectid_msdyn_quotebookingincident
+    - objectid_msdyn_quotebookingproduct
+    - objectid_msdyn_quotebookingservice
+    - objectid_msdyn_quotebookingservicetask
+    - objectid_msdyn_resourcepaytype
+    - objectid_msdyn_rma
+    - objectid_msdyn_rmaproduct
+    - objectid_msdyn_rmareceipt
+    - objectid_msdyn_rmareceiptproduct
+    - objectid_msdyn_rmasubstatus
+    - objectid_msdyn_rtv
+    - objectid_msdyn_rtvproduct
+    - objectid_msdyn_rtvsubstatus
+    - objectid_msdyn_servicetasktype
+    - objectid_msdyn_shipvia
+    - objectid_msdyn_taxcode
+    - objectid_msdyn_taxcodedetail
+    - objectid_msdyn_timeoffrequest
+    - objectid_msdyn_warehouse
+    - objectid_msdyn_workorder
+    - objectid_msdyn_workordercharacteristic
+    - objectid_msdyn_workorderincident
+    - objectid_msdyn_workorderproduct
+    - objectid_msdyn_workorderresourcerestriction
+    - objectid_msdyn_workorderservice
+    - objectid_msdyn_workorderservicetask
+    - objectid_msdyn_workordersubstatus
+    - objectid_msdyn_aifptrainingdocument
+    - objectid_msdyn_aiodimage
+    - objectid_msdyn_playbookinstance
+    - objectid_msdyn_playbooktemplate
+    - objectid_msdyn_solutioncomponentdatasource
+    - objectid_msdyn_iotalert
+    - objectid_msdyn_iotdevice
+    - objectid_msdyn_iotdevicecategory
+    - objectid_msdyn_iotdevicecommand
+    - objectid_msdyn_iotdeviceregistrationhistory
+    - objectid_ms_newsitem
+    - objectid_ms_satori
+    - objectid_msdyn_solutionhistorydatasource
+    - objectid_product
+    - objectid_contract
+    - objectid_contractdetail
+    - objectid_entitlement
+    - objectid_entitlementchannel
+    - objectid_entitlementtemplate
+    - objectid_equipment
+    - objectid_incident
+    - objectid_resourcespec
+    - objectid_service
+    - objectid_campaign
+    - objectid_list
+    - objectid_bookableresource
+    - objectid_bookableresourcebooking
+    - objectid_bookableresourcebookingheader
+    - objectid_bookableresourcecategoryassn
+    - objectid_bookableresourcecharacteristic
+    - objectid_bookableresourcegroup
+    - objectid_lead
+    - objectid_msdyn_aimodel
+    - objectid_competitor
+    - objectid_invoice
+    - objectid_opportunity
+    - objectid_quote
+    - objectid_salesorder
+    - objectid_msdyn_3dmodel
+    - objectid_msdyn_incidenttypessetup
+    - objectid_msdyn_inspectionattachment
     description: "Unique identifier of the object with which the note is associated."
   - name: _ownerid_value
     single_valued_navigation_property:
@@ -478,12 +493,30 @@ single_valued_navigation_properties:
   - name: objectid_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: Letter_Annotation
+  - name: objectid_li_inmail
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: li_inmail_Annotations
+  - name: objectid_li_message
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: li_message_Annotations
+  - name: objectid_li_pointdrivepresentationviewed
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: li_pointdrivepresentationviewed_Annotations
   - name: objectid_list
     type: Microsoft.Dynamics.CRM.list
     partner: List_Annotation
   - name: objectid_mailbox
     type: Microsoft.Dynamics.CRM.mailbox
     partner: Mailbox_Annotation
+  - name: objectid_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_Annotations
+  - name: objectid_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_Annotations
+  - name: objectid_msdyn_3dmodel
+    type: Microsoft.Dynamics.CRM.msdyn_3dmodel
+    partner: msdyn_3dmodel_Annotations
   - name: objectid_msdyn_accountpricelist
     type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
     partner: msdyn_accountpricelist_Annotations
@@ -601,6 +634,12 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_incidenttypeservice
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
     partner: msdyn_incidenttypeservice_Annotations
+  - name: objectid_msdyn_incidenttypessetup
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypessetup
+    partner: msdyn_incidenttypessetup_Annotations
+  - name: objectid_msdyn_inspectionattachment
+    type: Microsoft.Dynamics.CRM.msdyn_inspectionattachment
+    partner: msdyn_inspectionattachment_Annotations
   - name: objectid_msdyn_inventoryadjustment
     type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
     partner: msdyn_inventoryadjustment_Annotations
@@ -682,6 +721,12 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_paymentterm
     type: Microsoft.Dynamics.CRM.msdyn_paymentterm
     partner: msdyn_paymentterm_Annotations
+  - name: objectid_msdyn_playbookinstance
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_Annotations
+  - name: objectid_msdyn_playbooktemplate
+    type: Microsoft.Dynamics.CRM.msdyn_playbooktemplate
+    partner: msdyn_playbooktemplate_Annotations
   - name: objectid_msdyn_postalbum
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: msdyn_postalbum_Annotations
@@ -838,6 +883,12 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_shipvia
     type: Microsoft.Dynamics.CRM.msdyn_shipvia
     partner: msdyn_shipvia_Annotations
+  - name: objectid_msdyn_solutioncomponentdatasource
+    type: Microsoft.Dynamics.CRM.msdyn_solutioncomponentdatasource
+    partner: msdyn_solutioncomponentdatasource_Annotations
+  - name: objectid_msdyn_solutionhistorydatasource
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhistorydatasource
+    partner: msdyn_solutionhistorydatasource_Annotations
   - name: objectid_msdyn_systemuserschedulersetting
     type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
     partner: msdyn_systemuserschedulersetting_Annotations
@@ -910,6 +961,15 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_workordersubstatus
     type: Microsoft.Dynamics.CRM.msdyn_workordersubstatus
     partner: msdyn_workordersubstatus_Annotations
+  - name: objectid_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: msfp_alert_Annotations
+  - name: objectid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: msfp_surveyinvite_Annotations
+  - name: objectid_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: msfp_surveyresponse_Annotations
   - name: objectid_opportunity
     type: Microsoft.Dynamics.CRM.opportunity
     partner: Opportunity_Annotation
@@ -1006,11 +1066,17 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+  - type: Microsoft.Dynamics.CRM.msdynce_ActivitiesPatch
+    description: "Patch for Dynamics 365 workload for activities."
+  - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
+    description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

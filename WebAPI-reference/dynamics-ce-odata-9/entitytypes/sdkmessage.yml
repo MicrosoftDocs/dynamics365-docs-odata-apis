@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.sdkmessage
 name: "sdkmessage"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement sdkmessage EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5cf179ce-706b-4a59-8f1d-4c629174e452
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the sdkmessage entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service sdkmessage entitytype."
 description: "Message that is supported by the SDK."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/sdkmessages"
@@ -75,6 +75,12 @@ properties:
       description: "Customization level of the SDK message."
       iscomputed: false
       isreadonly: true
+    - name: executeprivilegename
+      type: Edm.String
+      display_name: "Execute Privilege Name"
+      description: "Name of the privilege that allows execution of the SDK message"
+      iscomputed: false
+      isreadonly: false
     - name: expand
       type: Edm.Boolean
       display_name: "Expand"
@@ -272,11 +278,13 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the sdkmessage entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.ApiMessagesExtension
+    description: "This solution contains CDS API message extensions."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

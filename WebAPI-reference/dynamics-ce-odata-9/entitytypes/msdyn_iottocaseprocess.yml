@@ -1,0 +1,249 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_iottocaseprocess
+name: "msdyn_iottocaseprocess"
+type: entitytype
+metadata: 
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 943ffb7d-fa5c-4b31-858b-b9be0691fe0f
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_iottocaseprocess entitytype."
+description: "Base entity for process IoT to Case Process"
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_iottocaseprocesses"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: IoT Alert to Case Process
+  primary_key: businessprocessflowinstanceid
+  primary_name_attribute: bpf_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: activestagestartedon
+      type: Edm.DateTimeOffset
+      display_name: "Active Stage Started On"
+      description: "Date and time when current active stage is started"
+      iscomputed: false
+      isreadonly: false
+    - name: bpf_duration
+      type: Edm.Int32
+      display_name: "Duration"
+      description: "Duration of Business Process Flow"
+      iscomputed: true
+      isreadonly: true
+    - name: bpf_name
+      type: Edm.String
+      display_name: "Name"
+      description: "Description"
+      iscomputed: false
+      isreadonly: false
+    - name: businessprocessflowinstanceid
+      type: Edm.Guid
+      display_name: "IoT to Case Process"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: completedon
+      type: Edm.DateTimeOffset
+      display_name: "Completed On"
+      description: "Date and time when Business Process Flow instance is completed."
+      iscomputed: false
+      isreadonly: false
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the IoT to Case Process"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the IoT to Case Process"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Finished"
+        - value: 3
+          label: "Aborted"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: traversedpath
+      type: Edm.String
+      display_name: "Traversed Path"
+      description: "Comma delimited string of process stage ids that represent visited stages of the Business Process Flow instance."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _activestageid_value
+    single_valued_navigation_property:
+    - activestageid
+    description: "Unique identifier of the active stage for the Business Process Flow instance."
+  - name: _bpf_incidentid_value
+    single_valued_navigation_property:
+    - bpf_incidentid
+    description: ""
+  - name: _bpf_msdyn_iotalertid_value
+    single_valued_navigation_property:
+    - bpf_msdyn_iotalertid
+    description: ""
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _organizationid_value
+    single_valued_navigation_property:
+    - organizationid
+    description: "Unique identifier for the organization"
+  - name: _processid_value
+    single_valued_navigation_property:
+    - processid
+    description: "Unique identifier of the workflow associated to the Business Process Flow instance."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: activestageid
+    type: Microsoft.Dynamics.CRM.processstage
+    partner: lk_msdyn_iottocaseprocess_activestageid
+  - name: bpf_incidentid
+    type: Microsoft.Dynamics.CRM.incident
+    partner: bpf_incident_msdyn_iottocaseprocess
+  - name: bpf_msdyn_iotalertid
+    type: Microsoft.Dynamics.CRM.msdyn_iotalert
+    partner: bpf_msdyn_iotalert_msdyn_iottocaseprocess
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_iottocaseprocess_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_iottocaseprocess_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_iottocaseprocess_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_iottocaseprocess_modifiedonbehalfby
+  - name: organizationid
+    type: Microsoft.Dynamics.CRM.organization
+    partner: organization_msdyn_iottocaseprocess
+  - name: processid
+    type: Microsoft.Dynamics.CRM.workflow
+    partner: lk_msdyn_iottocaseprocess_processid
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_iottocaseprocess_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_iottocaseprocess
+  - name: msdyn_iottocaseprocess_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_iottocaseprocess
+  - name: msdyn_iottocaseprocess_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_iottocaseprocess
+  - name: msdyn_iottocaseprocess_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_iottocaseprocess
+  - name: msdyn_iottocaseprocess_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_iottocaseprocess
+  - name: msdyn_iottocaseprocess_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_iottocaseprocess
+  - name: msdyn_iottocaseprocess_WorkflowLogs
+    type: Microsoft.Dynamics.CRM.workflowlog
+    partner: asyncoperationid_msdyn_iottocaseprocess
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_iottocaseprocess entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_iottocaseprocess entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerService
+    description: "Use Connected Customer Service to monitor connected devices to make sure your customer’s equipment is functioning properly. If a piece of equipment fails, you’ll receive a notification so that you can troubleshoot the problem remotely."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

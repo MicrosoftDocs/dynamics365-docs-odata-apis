@@ -1,0 +1,39 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_InsightsAnalyticsFSConfiguration
+name: "Insights and Analytics configuration for Field Service"
+type: solution
+metadata: 
+  title: "Common Data Service Insights and Analytics configuration for Field Service Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 495848e3-2c12-4404-a2db-71dc59160473
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Insights and Analytics configuration for Field Service Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Enable Insights and Analytics capability for Field Service"
+ unique_name: msdyn_InsightsAnalyticsFSConfiguration
+ version: "1.0.20280.7"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_datainsightsandanalyticsfeature
+     description: "Analytics and insights feature entity"
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

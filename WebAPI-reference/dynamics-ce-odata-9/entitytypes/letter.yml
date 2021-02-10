@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.letter
 name: "letter"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement letter EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 991391ed-b15c-4de1-a743-356d6f9b6925
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the letter entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service letter entitytype."
 description: "Activity that tracks the delivery of a letter. The activity can contain the electronic copy of the letter."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/letters"
@@ -419,6 +419,9 @@ single_valued_navigation_properties:
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_activitypointers
+  - name: ownerid_letter
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_letters
   - name: owningbusinessunit
     type: Microsoft.Dynamics.CRM.businessunit
     partner: business_unit_activitypointer
@@ -527,6 +530,18 @@ single_valued_navigation_properties:
   - name: regardingobjectid_lead_letter
     type: Microsoft.Dynamics.CRM.lead
     partner: Lead_Letters
+  - name: regardingobjectid_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_ActivityPointers
+  - name: regardingobjectid_ms_newsitem_letter
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_Letters
+  - name: regardingobjectid_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_ActivityPointers
+  - name: regardingobjectid_ms_satori_letter
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_Letters
   - name: regardingobjectid_msdyn_agreement
     type: Microsoft.Dynamics.CRM.msdyn_agreement
     partner: msdyn_agreement_ActivityPointers
@@ -683,6 +698,12 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_paymentterm_letter
     type: Microsoft.Dynamics.CRM.msdyn_paymentterm
     partner: msdyn_paymentterm_Letters
+  - name: regardingobjectid_msdyn_playbookinstance
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_ActivityPointers
+  - name: regardingobjectid_msdyn_playbookinstance_letter
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_Letters
   - name: regardingobjectid_msdyn_postalbum
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: msdyn_postalbum_ActivityPointers
@@ -998,12 +1019,30 @@ collection_valued_navigation_properties:
   - name: activity_pointer_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: activityid_activitypointer
+  - name: activity_pointer_li_inmail
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: activityid_li_inmail
+  - name: activity_pointer_li_message
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: activityid_li_message
+  - name: activity_pointer_li_pointdrivepresentationviewed
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: activityid_li_pointdrivepresentationviewed
   - name: activity_pointer_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: activityid_msdyn_approval
   - name: activity_pointer_msdyn_bookingalert
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: activityid_msdyn_bookingalert
+  - name: activity_pointer_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: activityid_msfp_alert
+  - name: activity_pointer_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: activityid_msfp_surveyinvite
+  - name: activity_pointer_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: activityid_msfp_surveyresponse
   - name: activity_pointer_opportunity_close
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: activityid_activitypointer
@@ -1124,6 +1163,8 @@ solutions:
     description: "Patch for Dynamics 365 workload for activities."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
+    description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
     description: "Dynamics 365 workload for lead management."
   - type: Microsoft.Dynamics.CRM.msdynce_LeadManagementPatch
@@ -1146,9 +1187,9 @@ solutions:
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -1,0 +1,71 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_GetAvailabilitySummaryFromDemand
+name: "msdyn_GetAvailabilitySummaryFromDemand"
+type: action
+metadata: 
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 51dff4e9-1863-4d4e-8de0-f759c19b39d9
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_GetAvailabilitySummaryFromDemand Action."
+namespace: Microsoft.Dynamics.CRM
+description: "For internal use only."
+owningsolution: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: RequirementIds
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "For internal use only."
+  - name: Timescale
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+  - name: TimeZoneCode
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+  - name: ResourceIds
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "For internal use only."
+  - name: StartDate
+    type: Edm.DateTimeOffset
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+  - name: EndDate
+    type: Edm.DateTimeOffset
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+return_type:
+  description: "The msdyn_GetAvailabilitySummaryFromDemand action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_GetAvailabilitySummaryFromDemandResponse
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

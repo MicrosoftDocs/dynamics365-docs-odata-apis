@@ -1,0 +1,165 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_suggestedcontact
+name: "msdyn_suggestedcontact"
+type: entitytype
+metadata: 
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 4ec819c4-273c-494c-b92d-9dbe5890c0f9
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_suggestedcontact entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_suggestedcontacts"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Suggested Contact
+  primary_key: msdyn_suggestedcontactid
+  primary_name_attribute: msdyn_fullname
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: msdyn_accountidname
+      type: Edm.String
+      display_name: "Account Name"
+      description: "Account Name"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_accountname
+      type: Edm.String
+      display_name: "Account Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_addresscity
+      type: Edm.String
+      display_name: "Address City"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_addressline1
+      type: Edm.String
+      display_name: "AddressLine1"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_addressline2
+      type: Edm.String
+      display_name: "AddressLine2"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_addresspostalcode
+      type: Edm.String
+      display_name: "Address Postal Code"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_companyname
+      type: Edm.String
+      display_name: "Company Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_createdon
+      type: Edm.DateTimeOffset
+      display_name: "Date"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_description
+      type: Edm.String
+      display_name: "Description"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_email
+      type: Edm.String
+      display_name: "Email"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_firstname
+      type: Edm.String
+      display_name: "First Name"
+      description: "first name"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_fullname
+      type: Edm.String
+      display_name: "Full Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_jobtitle
+      type: Edm.String
+      display_name: "Job Title"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_lastname
+      type: Edm.String
+      display_name: "Last Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_mobilephone
+      type: Edm.String
+      display_name: "Mobile Phone"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_preferredcontactmethodcode
+      type: Edm.String
+      display_name: "Preferred Contact Method Code"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_suggestedcontactid
+      type: Edm.Guid
+      display_name: "Suggested Contact"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_telephone
+      type: Edm.String
+      display_name: "Telephone"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _msdyn_accountid_value
+    description: "Account Name"
+# This entity has no single-valued navigation properties
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the msdyn_suggestedcontact entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.AutoDataCapture
+    description: "Auto Data Capture Feature Description."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

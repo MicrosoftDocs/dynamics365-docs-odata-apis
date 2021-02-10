@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AppEntityInfo
 name: "AppEntityInfo"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AppEntityInfo ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service AppEntityInfo ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 84fd4d54-cd0c-4994-a3e9-6922658e37bd
-  author: "KumarVivek"
+  ms.assetid: 6f56c286-1caf-470a-89e7-9d821443b221
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API AppEntityInfo ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API AppEntityInfo ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -54,9 +54,9 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.AppContext
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

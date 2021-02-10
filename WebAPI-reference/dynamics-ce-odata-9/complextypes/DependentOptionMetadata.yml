@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DependentOptionMetadata
 name: "DependentOptionMetadata"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement DependentOptionMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service DependentOptionMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: c487ae09-c9ff-4232-9dbe-5360ad5a2704
-  author: "KumarVivek"
+  ms.assetid: f6a4f0c7-c77a-4805-929a-c388a3e315e4
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API DependentOptionMetadata ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API DependentOptionMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -40,9 +40,9 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.DependentOptionSetMetadata
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -3,17 +3,17 @@ uid: Microsoft.Dynamics.CRM.RetrieveUsersPrivilegesThroughTeams
 name: "RetrieveUsersPrivilegesThroughTeams"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveUsersPrivilegesThroughTeams Function Reference | MicrosoftDocs"
-  ms.date: "07/24/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveUsersPrivilegesThroughTeams Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 62874b19-c54b-43c2-b320-244bf170f85c
-  author: "KumarVivek"
+  ms.assetid: dc916d82-9fd1-4849-b274-08501b78fec8
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveUsersPrivilegesThroughTeams Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service RetrieveUsersPrivilegesThroughTeams Function."
 namespace: Microsoft.Dynamics.CRM
-description: "Retrieves privileges that the user gets through team memberships. "
+description: ""
 iscomposable: false
 bound_entities:
   description: "Bound functions are invoked by appending the function name to the URI representing an entity or collection."
@@ -27,13 +27,13 @@ parameters:
     type: Edm.Boolean
     nullable: false
     unicode: true
-    description: "Indicates whether to exclude disabled privileges. "
+    description: ""
     iscollection: false
   - name: IncludeSetupUserFiltering
     type: Edm.Boolean
     nullable: false
     unicode: true
-    description: "Indicates whether to exclude privileges based on user license and access mode. "
+    description: ""
     iscollection: false
 return_type:
   description: "The RetrieveUsersPrivilegesThroughTeams function returns the following value."
@@ -41,9 +41,9 @@ return_type:
   iscollection: false
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -1,0 +1,45 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_IoTAssetCommon
+name: "IoT Asset Common"
+type: solution
+metadata: 
+  title: "Common Data Service IoT Asset Common Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 8d124fc4-a31a-49c6-8ad4-df3f3b9899bf
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service IoT Asset Common Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Enables IoT Scenarios for Customer Asset"
+ unique_name: msdyn_IoTAssetCommon
+ version: "1.7.38.7"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_customerasset
+     description: "Specify Customer Asset."
+   - type: Microsoft.Dynamics.CRM.msdyn_iotalert
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_iotdevice
+     description: "Represents a connected device that can be registered with an IoT provider."
+   - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+     description: "Represents an outgoing message to a device connected to an IoT provider."
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

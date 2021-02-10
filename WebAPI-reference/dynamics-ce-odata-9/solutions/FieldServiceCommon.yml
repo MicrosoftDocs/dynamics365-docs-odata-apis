@@ -1,0 +1,69 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.FieldServiceCommon
+name: "Field Service Common"
+type: solution
+metadata: 
+  title: "Common Data Service Field Service Common Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 67e01f61-b965-4baa-a457-59a97e9801b0
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Field Service Common Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "This solution contains components that are prerequisites for both the Field Service solution, as well as for Supply Chain solutions for Finance and Operations integration."
+ unique_name: FieldServiceCommon
+ version: "1.0.0.134"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.account
+     description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+   - type: Microsoft.Dynamics.CRM.invoice
+     description: "Order that has been billed."
+   - type: Microsoft.Dynamics.CRM.lead
+     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
+   - type: Microsoft.Dynamics.CRM.msdyn_paymentterm
+     description: "Specify payment terms used for billing."
+   - type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+     description: "Record Purchase Orders pertaining to Work Orders or otherwise"
+   - type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+     description: "Record products to be ordered on purchase order"
+   - type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
+     description: "Specify purchase order receipt."
+   - type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
+     description: "Specify product for purchase order receipt."
+   - type: Microsoft.Dynamics.CRM.msdyn_shipvia
+     description: "Specify the different shipping methods used."
+   - type: Microsoft.Dynamics.CRM.msdyn_taxcode
+     description: "Store tax related information. Each tax code could contain multiple child tax codes, and in that case the tax rate will be determined by the total tax of all children."
+   - type: Microsoft.Dynamics.CRM.msdyn_taxcodedetail
+     description: "In this entity you can link multiple tax codes together to form a group of tax codes to be charged for the customer to form the total tax."
+   - type: Microsoft.Dynamics.CRM.msdyn_warehouse
+     description: "Warehouses where inventory products are stored and managed"
+   - type: Microsoft.Dynamics.CRM.opportunity
+     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
+   - type: Microsoft.Dynamics.CRM.product
+     description: "Information about products and their pricing information."
+   - type: Microsoft.Dynamics.CRM.quote
+     description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
+   - type: Microsoft.Dynamics.CRM.salesorder
+     description: "Quote that has been accepted."
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

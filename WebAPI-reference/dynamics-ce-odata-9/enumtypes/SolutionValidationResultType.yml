@@ -3,17 +3,17 @@ uid: Microsoft.Dynamics.CRM.SolutionValidationResultType
 name: "SolutionValidationResultType"
 type: enumtype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SolutionValidationResultType EnumType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service SolutionValidationResultType EnumType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: a01c84f7-1eb6-42d6-a71d-674cbce0c90d
-  author: "KumarVivek"
+  ms.assetid: 1439bacb-076d-403a-8db7-1876d0820976
+  author: "kumarVivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API SolutionValidationResultType ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API SolutionValidationResultType ComplexType."
 namespace: Microsoft.Dynamics.CRM
-description: "Not Found" 
+description: "The type of result returned from validating a solution." 
 members:
   description: "Members define the discrete options for the enumeration type."
   member_items:
@@ -31,9 +31,9 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.SolutionValidationResult
     used_as: Property
-# This enum type has no remarks.
+# There are no remarks for this enum type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

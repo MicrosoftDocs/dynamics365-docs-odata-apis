@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ComplexEntityMetadata
 name: "ComplexEntityMetadata"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ComplexEntityMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service ComplexEntityMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 271618ff-8839-4989-a0d3-431084be5b3f
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API ComplexEntityMetadata ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API ComplexEntityMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains the metadata for a complex entity." 
@@ -624,6 +624,24 @@ properties:
     unicode: true
     description: ""
     iscollection: true
+  - name: CreatedOn
+    type: Edm.DateTimeOffset
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+  - name: ModifiedOn
+    type: Edm.DateTimeOffset
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+  - name: HasEmailAddresses
+    type: Edm.Boolean
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
   - name: MetadataId
     type: Edm.Guid
     nullable: true
@@ -648,9 +666,9 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.ClientEntityMetadata
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.bulkdeleteoperation
 name: "bulkdeleteoperation"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement bulkdeleteoperation EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 217cf8dd-31de-4c7f-92b5-6488d32bbef7
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the bulkdeleteoperation entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service bulkdeleteoperation entitytype."
 description: "User-submitted bulk deletion job."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/bulkdeleteoperations"
@@ -210,9 +210,9 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

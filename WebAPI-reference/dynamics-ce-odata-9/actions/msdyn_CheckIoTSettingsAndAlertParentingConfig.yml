@@ -1,0 +1,40 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_CheckIoTSettingsAndAlertParentingConfig
+name: "msdyn_CheckIoTSettingsAndAlertParentingConfig"
+type: action
+metadata: 
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: b4419e32-da33-492d-aecc-6433c6519468
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_CheckIoTSettingsAndAlertParentingConfig Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.msdyn_IoTHealth
+# This action has no bound entities.
+isbound: false
+# This action has no parameters.
+hasparameters: false
+return_type:
+  description: "The msdyn_CheckIoTSettingsAndAlertParentingConfig action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_CheckIoTSettingsAndAlertParentingConfigResponse
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

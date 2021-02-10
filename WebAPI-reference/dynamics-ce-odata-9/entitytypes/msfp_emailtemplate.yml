@@ -1,0 +1,322 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msfp_emailtemplate
+name: "msfp_emailtemplate"
+type: entitytype
+metadata: 
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: eec37371-5ade-4fdd-8c62-155472f3fa7e
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msfp_emailtemplate entitytype."
+description: "Template for an email message that contains the survey invitation link."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msfp_emailtemplates"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Customer Voice survey email template
+  primary_key: msfp_emailtemplateid
+  primary_name_attribute: msfp_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msfp_candelete
+      type: Edm.Boolean
+      display_name: "Is deletable"
+      description: "Specifies if the email template can be deleted."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msfp_canedit
+      type: Edm.Boolean
+      display_name: "Is editable"
+      description: "Specifies if the email template can be edited."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msfp_canrename
+      type: Edm.Boolean
+      display_name: "Is renamable"
+      description: "Specifies if the email template can be renamed."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msfp_emailtemplatebody
+      type: Edm.String
+      display_name: "Email template body"
+      description: "Stores body of the email template."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_emailtemplateid
+      type: Edm.Guid
+      display_name: "Survey email template"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_emailtemplatesubject
+      type: Edm.String
+      display_name: "Email template subject"
+      description: "Stores subject of the email template."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_language
+      type: Edm.String
+      display_name: "Language"
+      description: "Language of the email message template"
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_sourcesurveyidentifier
+      type: Edm.String
+      display_name: "Source survey identifier"
+      description: "Unique identifier for the survey in the source application."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_tags
+      type: Edm.String
+      display_name: "Tags"
+      description: "Stores tags added to the email template."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_templatetype
+      type: Edm.Int32
+      display_name: "Template type"
+      description: "Determines the type of template."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 647390000
+          label: "User"
+        - value: 647390001
+          label: "Survey"
+    - name: msfp_version
+      type: Edm.String
+      display_name: "Version"
+      description: "Version of the email message template"
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Survey email template"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Survey email template"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _msfp_survey_value
+    single_valued_navigation_property:
+    - msfp_survey
+    description: "Unique identifier for Customer Voice survey associated with Customer Voice survey email template."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_emailtemplate_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_emailtemplate_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_emailtemplate_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_emailtemplate_modifiedonbehalfby
+  - name: msfp_survey
+    type: Microsoft.Dynamics.CRM.msfp_survey
+    partner: msfp_msfp_survey_msfp_emailtemplate_surveyid
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msfp_emailtemplate
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msfp_emailtemplate
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msfp_emailtemplate
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msfp_emailtemplate
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msfp_emailtemplate_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msfp_emailtemplate
+  - name: msfp_emailtemplate_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msfp_emailtemplate
+  - name: msfp_emailtemplate_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msfp_emailtemplate
+  - name: msfp_emailtemplate_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msfp_emailtemplate
+  - name: msfp_emailtemplate_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msfp_emailtemplate
+  - name: msfp_emailtemplate_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msfp_emailtemplate
+  - name: msfp_emailtemplate_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msfp_emailtemplate
+  - name: msfp_emailtemplate_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msfp_emailtemplate
+  - name: msfp_msfp_emailtemplate_msfp_localizedemailtem
+    type: Microsoft.Dynamics.CRM.msfp_localizedemailtemplate
+    partner: msfp_emailtemplateid
+  - name: msfp_msfp_emailtemplate_msfp_surveyreminder_emailtemplate
+    type: Microsoft.Dynamics.CRM.msfp_surveyreminder
+    partner: msfp_emailtemplate
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msfp_emailtemplate entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msfp_emailtemplate entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.MicrosoftFormsPro
+    description: "Create and send surveys to your customers or employees and collect their valuable feedback about your products or services."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

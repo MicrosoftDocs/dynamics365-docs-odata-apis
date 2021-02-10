@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_AppCommon
 name: "Application Common"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Application Common Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Application Common Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: cf374717-162f-49e3-b4bb-3d08d5392762
-  author: "KumarVivek"
+  ms.assetid: 6139b9c3-e5b6-45cf-90da-99b6cbef47e1
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Application Common Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Application Common Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_AppCommon
  version: "9.0.4.0066"
- customization_prefix: none
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -72,9 +72,9 @@ entities:
    - type: Microsoft.Dynamics.CRM.workflow
      description: "Set of logical rules that define the steps necessary to automate a specific business process, task, or set of actions to be performed."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

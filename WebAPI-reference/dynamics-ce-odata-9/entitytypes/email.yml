@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.email
 name: "email"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement email EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: dbf7bf98-8ef0-4fdc-a9c5-5f9f00fc7797
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the email entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service email entitytype."
 description: "Activity that is delivered using email protocols."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/emails"
@@ -492,6 +492,18 @@ properties:
       description: "Shows the number of replies received for an email."
       iscomputed: false
       isreadonly: true
+    - name: reservedforinternaluse
+      type: Edm.String
+      display_name: "Reserved for internal use"
+      description: "For internal use only"
+      iscomputed: false
+      isreadonly: false
+    - name: safedescription
+      type: Edm.String
+      display_name: "Safe Description"
+      description: "Safe body text of the e-mail."
+      iscomputed: false
+      isreadonly: true
     - name: scheduleddurationminutes
       type: Edm.Int32
       display_name: "Scheduled Duration"
@@ -633,18 +645,20 @@ properties:
 lookup_properties:
   description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
   property_items:
+  - name: _correlatedactivityid_value
+    description: "Correlated Activity Id"
   - name: _createdby_value
     description: "Unique identifier of the user who created the activity."
   - name: _createdonbehalfby_value
     description: "Unique identifier of the delegate user who created the activitypointer."
   - name: _emailsender_value
     single_valued_navigation_property:
+    - emailsender_account
     - emailsender_contact
     - emailsender_queue
-    - emailsender_account
     - emailsender_systemuser
-    - emailsender_lead
     - emailsender_equipment
+    - emailsender_lead
     description: "Shows the sender of the email."
   - name: _modifiedby_value
     description: "Unique identifier of user who last modified the activity."
@@ -686,6 +700,9 @@ single_valued_navigation_properties:
   - name: activityid_activitypointer
     type: Microsoft.Dynamics.CRM.activitypointer
     partner: activity_pointer_email
+  - name: CorrelatedActivityId_Email
+    type: Microsoft.Dynamics.CRM.email
+    partner: email_email_CorrelatedActivityId
   - name: createdby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_activitypointer_createdby
@@ -731,6 +748,9 @@ single_valued_navigation_properties:
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_activitypointers
+  - name: ownerid_email
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_emails
   - name: owningbusinessunit
     type: Microsoft.Dynamics.CRM.businessunit
     partner: business_unit_activitypointer
@@ -845,6 +865,18 @@ single_valued_navigation_properties:
   - name: regardingobjectid_lead_email
     type: Microsoft.Dynamics.CRM.lead
     partner: Lead_Emails
+  - name: regardingobjectid_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_ActivityPointers
+  - name: regardingobjectid_ms_newsitem_email
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_Emails
+  - name: regardingobjectid_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_ActivityPointers
+  - name: regardingobjectid_ms_satori_email
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_Emails
   - name: regardingobjectid_msdyn_agreement
     type: Microsoft.Dynamics.CRM.msdyn_agreement
     partner: msdyn_agreement_ActivityPointers
@@ -1001,6 +1033,12 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_paymentterm_email
     type: Microsoft.Dynamics.CRM.msdyn_paymentterm
     partner: msdyn_paymentterm_Emails
+  - name: regardingobjectid_msdyn_playbookinstance
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_ActivityPointers
+  - name: regardingobjectid_msdyn_playbookinstance_email
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_Emails
   - name: regardingobjectid_msdyn_postalbum
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: msdyn_postalbum_ActivityPointers
@@ -1325,12 +1363,30 @@ collection_valued_navigation_properties:
   - name: activity_pointer_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: activityid_activitypointer
+  - name: activity_pointer_li_inmail
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: activityid_li_inmail
+  - name: activity_pointer_li_message
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: activityid_li_message
+  - name: activity_pointer_li_pointdrivepresentationviewed
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: activityid_li_pointdrivepresentationviewed
   - name: activity_pointer_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: activityid_msdyn_approval
   - name: activity_pointer_msdyn_bookingalert
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: activityid_msdyn_bookingalert
+  - name: activity_pointer_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: activityid_msfp_alert
+  - name: activity_pointer_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: activityid_msfp_surveyinvite
+  - name: activity_pointer_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: activityid_msfp_surveyresponse
   - name: activity_pointer_opportunity_close
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: activityid_activitypointer
@@ -1415,6 +1471,9 @@ collection_valued_navigation_properties:
   - name: Email_DuplicateMatchingRecord
     type: Microsoft.Dynamics.CRM.duplicaterecord
     partner: duplicaterecordid_email
+  - name: email_email_CorrelatedActivityId
+    type: Microsoft.Dynamics.CRM.email
+    partner: CorrelatedActivityId_Email
   - name: email_email_parentactivityid
     type: Microsoft.Dynamics.CRM.email
     partner: parentactivityid
@@ -1483,12 +1542,20 @@ solutions:
     description: ""
   - type: Microsoft.Dynamics.CRM.EmailEngagement
     description: "Stay on top of your email with alerts and reminders, prioritizing prospects, or customers that are most engaged."
+  - type: Microsoft.Dynamics.CRM.EmailEngagementPatch_managed
+    description: "Stay on top of your email with alerts and reminders, prioritizing prospects, or customers that are most engaged."
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.msdynce_Activities
     description: "Dynamics 365 workload for activities."
   - type: Microsoft.Dynamics.CRM.msdynce_ActivitiesPatch
     description: "Patch for Dynamics 365 workload for activities."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
+    description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementFeatures
+    description: "Dynamics 365 features and migrated controls for knowledge management."
   - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
     description: "Dynamics 365 workload for lead management."
   - type: Microsoft.Dynamics.CRM.msdynce_LeadManagementPatch
@@ -1515,11 +1582,13 @@ solutions:
     description: "Patch for Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
     description: "Dynamics 365 workload for service."
+  - type: Microsoft.Dynamics.CRM.msft_ActivitiesInfra_Extensions
+    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

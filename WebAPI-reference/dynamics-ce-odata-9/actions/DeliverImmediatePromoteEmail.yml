@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DeliverImmediatePromoteEmail
 name: "DeliverImmediatePromoteEmail"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement DeliverImmediatePromoteEmail Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: d33ae0f0-4e16-4456-b0ba-4b4c7881a70d
-  author: "KumarVivek"
+  ms.assetid: c475eae0-1a0f-4bfc-9148-3a0caa6cd9f1
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the DeliverImmediatePromoteEmail Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service DeliverImmediatePromoteEmail Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -99,9 +99,9 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.email
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

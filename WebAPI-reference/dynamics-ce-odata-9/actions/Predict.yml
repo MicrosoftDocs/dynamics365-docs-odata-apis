@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.Predict
 name: "Predict"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Predict Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: b55d1735-bdab-4ac4-911e-047858bd0ef0
-  author: "KumarVivek"
+  ms.assetid: 421b5968-1a8e-4d4c-8952-eb4b501af35d
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Predict Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Predict Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -33,11 +33,6 @@ parameters:
     nullable: true
     unicode: false
     description: ""
-  - name: recordId
-    type: Microsoft.Dynamics.CRM.crmbaseentity
-    nullable: true
-    unicode: true
-    description: ""
   - name: requestv2
     type: Microsoft.Dynamics.CRM.crmbaseentity
     nullable: true
@@ -49,9 +44,9 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.PredictResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

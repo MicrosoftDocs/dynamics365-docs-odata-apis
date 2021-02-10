@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.goal
 name: "goal"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement goal EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: aba9bc0d-bb47-4fc7-965b-e206141537a4
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the goal entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service goal entitytype."
 description: "Target objective for a user or a team for a specified time period."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/goals"
@@ -666,8 +666,8 @@ lookup_properties:
     description: "Shows who created the record on behalf of another user."
   - name: _goalownerid_value
     single_valued_navigation_property:
-    - goalownerid_team
     - goalownerid_systemuser
+    - goalownerid_team
     description: "Choose the user or team responsible for meeting the goal."
   - name: _goalwitherrorid_value
     single_valued_navigation_property:
@@ -853,6 +853,9 @@ collection_valued_navigation_properties:
   - name: Goal_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_goal_syncerror
+  - name: msdyn_goal_msdyn_forecastinstance
+    type: Microsoft.Dynamics.CRM.msdyn_forecastinstance
+    partner: msdyn_matchinggoalid
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the goal entity type."
@@ -880,9 +883,9 @@ solutions:
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

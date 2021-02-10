@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_postruleconfig
 name: "msdyn_postruleconfig"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_postruleconfig EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f2d9e3ee-c07e-4d01-9298-f0a97958b3e3
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_postruleconfig entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_postruleconfig entitytype."
 description: "Enable or disable system post rules for an entity for Activity Feeds and Yammer."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_postruleconfigs"
@@ -221,9 +221,9 @@ solutions:
     description: "This solution enables Activity Feeds including Walls for your Microsoft Dynamics 365 organization."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

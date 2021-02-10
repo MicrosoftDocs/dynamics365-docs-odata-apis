@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.StringFormat
 name: "StringFormat"
 type: enumtype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement StringFormat EnumType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service StringFormat EnumType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f466a362-05ba-472a-a48c-54ea9a84d8a7
-  author: "KumarVivek"
+  author: "kumarVivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API StringFormat ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API StringFormat ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "Describes the formatting of a string attribute for the StringAttributeMetadata.Format property. (Deprecated)" 
 members:
@@ -41,6 +41,9 @@ members:
   - description: "For internal use only. "
     name: "Phone"
     value: 7
+  - description: ""
+    name: "Json"
+    value: 8
 usedby:
   description: "The following use the StringFormat EnumType."
   usedby_items:
@@ -52,9 +55,9 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.ComplexStringAttributeMetadata
     used_as: Property
-# This enum type has no remarks.
+# There are no remarks for this enum type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

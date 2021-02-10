@@ -1,0 +1,57 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_CheckForDeletedSDKMessageProcessingStepsResponse
+name: "msdyn_CheckForDeletedSDKMessageProcessingStepsResponse"
+type: complextype
+metadata: 
+  title: "Common Data Service msdyn_CheckForDeletedSDKMessageProcessingStepsResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: d12c90be-203c-4885-91c5-8bda10676c7c
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API msdyn_CheckForDeletedSDKMessageProcessingStepsResponse ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "" 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: Message
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
+  - name: ResultEntities
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
+  - name: ReturnStatus
+    type: Edm.Int32
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+# This complex type doesn't have any navigation properties.
+usedby:
+  description: "The following use the msdyn_CheckForDeletedSDKMessageProcessingStepsResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.msdyn_CheckForDeletedSDKMessageProcessingSteps
+    used_as: ReturnType
+# There are no remarks for this complex type.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

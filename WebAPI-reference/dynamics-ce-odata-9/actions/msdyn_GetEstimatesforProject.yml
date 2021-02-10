@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_GetEstimatesforProject
 name: "msdyn_GetEstimatesforProject"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_GetEstimatesforProject Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 98db7aef-390d-441d-8156-34e2bc3ac167
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_GetEstimatesforProject Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_GetEstimatesforProject Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.ProjectService
@@ -34,9 +34,9 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.crmbaseentity
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

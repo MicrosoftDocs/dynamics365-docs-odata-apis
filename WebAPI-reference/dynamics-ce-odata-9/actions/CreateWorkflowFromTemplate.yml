@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CreateWorkflowFromTemplate
 name: "CreateWorkflowFromTemplate"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CreateWorkflowFromTemplate Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1bf121f9-afd0-44c4-92c3-ad73f1e21a61
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the CreateWorkflowFromTemplate Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service CreateWorkflowFromTemplate Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Creates a workflow (process) from a workflow template. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -34,9 +34,9 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.workflow
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

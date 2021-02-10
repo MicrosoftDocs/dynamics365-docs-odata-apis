@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.customeraddress
 name: "customeraddress"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement customeraddress EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0ce92c6e-08b5-4657-a2e2-f4532540cbb7
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the customeraddress entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service customeraddress entitytype."
 description: "Address and shipping information. Used to store additional addresses for an account or contact."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/customeraddresses"
@@ -288,8 +288,8 @@ lookup_properties:
     description: "Unique identifier of the user who owns the customer address."
   - name: _parentid_value
     single_valued_navigation_property:
-    - parentid_contact
     - parentid_account
+    - parentid_contact
     description: "Choose the customer's address."
   - name: _transactioncurrencyid_value
     single_valued_navigation_property:
@@ -355,9 +355,9 @@ solutions:
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

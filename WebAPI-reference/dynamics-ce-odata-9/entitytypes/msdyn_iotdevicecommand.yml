@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
 name: "msdyn_iotdevicecommand"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_iotdevicecommand EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7c71db04-c5eb-43e7-8bce-f1dab6c72e8a
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_iotdevicecommand entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_iotdevicecommand entitytype."
 description: "Represents an outgoing message to a device connected to an IoT provider."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_iotdevicecommands"
@@ -180,7 +180,7 @@ lookup_properties:
   - name: _msdyn_parentalert_value
     single_valued_navigation_property:
     - msdyn_ParentAlert
-    description: "Reference to a parent alert in response to which the message is being sent."
+    description: "Reference to a primary alert in response to which the message is being sent."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -212,6 +212,9 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_msdyn_iotdevicecommand_modifiedonbehalfby
+  - name: msdyn_Command
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommanddefinition
+    partner: msdyn_msdyn_iotdevicecommanddefinition_msdyn_iotdevicecommand_Command
   - name: msdyn_CustomerAsset
     type: Microsoft.Dynamics.CRM.msdyn_customerasset
     partner: msdyn_msdyn_customerasset_msdyn_iotdevicecommand_CustomerAsset
@@ -301,9 +304,13 @@ solutions:
     description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
   - type: Microsoft.Dynamics.CRM.IoTConnector
     description: "Enables IoT scenarios in Dynamics 365."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerService
+    description: "Use Connected Customer Service to monitor connected devices to make sure your customer’s equipment is functioning properly. If a piece of equipment fails, you’ll receive a notification so that you can troubleshoot the problem remotely."
+  - type: Microsoft.Dynamics.CRM.msdyn_IoTAssetCommon
+    description: "Enables IoT Scenarios for Customer Asset"
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

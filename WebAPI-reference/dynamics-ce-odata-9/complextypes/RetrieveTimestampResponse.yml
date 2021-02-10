@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveTimestampResponse
 name: "RetrieveTimestampResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveTimestampResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service RetrieveTimestampResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 95870885-3790-49b8-bc38-1af4819d968a
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API RetrieveTimestampResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API RetrieveTimestampResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains the response from the RetrieveTimestamp function." 
@@ -30,9 +30,9 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.RetrieveTimestamp
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

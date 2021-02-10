@@ -1,15 +1,15 @@
 ### YamlMime:ODataIndex
 uid: Microsoft.Dynamics.CRM.FunctionIndex
 name: Web API Function Reference
-title: "Microsoft Dataverse and 365 Customer Engagement Web API Function Reference | MicrosoftDocs"
+title: "Common Data Service Web API Function Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ab719434-7c3c-4bc3-8fee-bb14335d3f9d
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
+  manager: "annbe"
 description: "A function is an operation which does not have observable side effects. They typically retrieve data. They may have parameters and they may return values. Functions may be bound to entity types."
 in_this_section:
 - type: Microsoft.Dynamics.CRM.CalculateRollupField
@@ -22,6 +22,8 @@ in_this_section:
   description: "Contains the data that is needed to check whether the incoming email message should be promoted to the Microsoft Dynamics 365 system. "
 - type: Microsoft.Dynamics.CRM.DownloadReportDefinition
   description: "Downloads a report definition.  "
+- type: Microsoft.Dynamics.CRM.ExecuteCosmosSqlQuery
+  description: ""
 - type: Microsoft.Dynamics.CRM.ExpandCalendar
   description: "Converts the calendar rules to an array of available time blocks for the specified period. "
 - type: Microsoft.Dynamics.CRM.ExportFieldTranslation
@@ -38,6 +40,8 @@ in_this_section:
   description: "Retrieves the default price level (price list) for the current user based on the user’s territory relationship with the price level. "
 - type: Microsoft.Dynamics.CRM.GetDistinctValuesImportFile
   description: "Retrieves distinct values from the parse table for a column in the source file that contains list values.  "
+- type: Microsoft.Dynamics.CRM.GetFileSasUrl
+  description: ""
 - type: Microsoft.Dynamics.CRM.GetHeaderColumnsImportFile
   description: "Retrieves the source-file column headings; or retrieve the system-generated column headings if the source file does not contain column headings. "
 - type: Microsoft.Dynamics.CRM.GetQuantityDecimal
@@ -76,6 +80,8 @@ in_this_section:
   description: "Retrieves a collection of stages currently in the active path for a business process flow instance."
 - type: Microsoft.Dynamics.CRM.RetrieveAllChildUsersSystemUser
   description: "Retrieves the collection of users that report to the specified system user (user).  "
+- type: Microsoft.Dynamics.CRM.RetrieveAllCompositeDataSources
+  description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveAllEntities
   description: "Retrieves metadata information about all the entities. "
 - type: Microsoft.Dynamics.CRM.RetrieveAnalyticsStoreDetails
@@ -85,7 +91,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.RetrieveApplicationRibbon
   description: "Retrieve the data that defines the content and behavior of the application ribbon.  "
 - type: Microsoft.Dynamics.CRM.RetrieveAttributeChangeHistory
-  description: "Retrieve all metadata changes to a specific attribute."
+  description: "retrieve all metadata changes to a specific attribute."
 - type: Microsoft.Dynamics.CRM.RetrieveAuditDetails
   description: "Retrieve the full audit details from an Audit record. "
 - type: Microsoft.Dynamics.CRM.RetrieveAuditPartitionList
@@ -104,6 +110,12 @@ in_this_section:
   description: "Retrieves the top-ten articles about a specified product from the knowledge base of articles for the organization "
 - type: Microsoft.Dynamics.CRM.RetrieveByTopIncidentSubjectKbArticle
   description: "Retrieves the top-ten articles about a specified subject from the knowledge base of articles for your organization.  "
+- type: Microsoft.Dynamics.CRM.RetrieveCascadeAssignAsyncJobId
+  description: ""
+- type: Microsoft.Dynamics.CRM.RetrieveCascadeDeleteAsyncJobId
+  description: ""
+- type: Microsoft.Dynamics.CRM.RetrieveCompositeDataSource
+  description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveCurrentOrganization
   description: "Retrieve information about the current organization. "
 - type: Microsoft.Dynamics.CRM.RetrieveDataEncryptionKey
@@ -124,6 +136,10 @@ in_this_section:
   description: "Retrieves entity metadata. "
 - type: Microsoft.Dynamics.CRM.RetrieveEntityRibbon
   description: "Retrieves ribbon definitions for an entity.  "
+- type: Microsoft.Dynamics.CRM.RetrieveEnvironmentVariables
+  description: ""
+- type: Microsoft.Dynamics.CRM.RetrieveEnvironmentVariableValue
+  description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveExchangeAppointments
   description: "Retrieves the appointments for the current user for a specific date range from the exchange web service. "
 - type: Microsoft.Dynamics.CRM.RetrieveExchangeRate
@@ -162,6 +178,8 @@ in_this_section:
   description: "Retrieves pages of posts, including comments for each post, for all records that the calling user is following.  "
 - type: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
   description: "Retrieves the access rights of the specified security principal (team or user) to the specified record."
+- type: Microsoft.Dynamics.CRM.RetrievePrincipalAccessInfo
+  description: ""
 - type: Microsoft.Dynamics.CRM.RetrievePrincipalAttributePrivileges
   description: "Retrieves all the secured attribute privileges a user or team has through direct or indirect (through team membership) associations with the FieldSecurityProfile entity. "
 - type: Microsoft.Dynamics.CRM.RetrievePrincipalSyncAttributeMappings
@@ -210,6 +228,10 @@ in_this_section:
   description: "Retrieves the privileges a system user (user) has through his or her roles in the specified business unit.  "
 - type: Microsoft.Dynamics.CRM.RetrieveUserQueues
   description: "Retrieves all private queues of a specified user and optionally all public queues. "
+- type: Microsoft.Dynamics.CRM.RetrieveUserSetOfPrivilegesByIds
+  description: ""
+- type: Microsoft.Dynamics.CRM.RetrieveUserSetOfPrivilegesByNames
+  description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveUsersPrivilegesThroughTeams
   description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveVersion

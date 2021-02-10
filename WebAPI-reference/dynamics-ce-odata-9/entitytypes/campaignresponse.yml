@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.campaignresponse
 name: "campaignresponse"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement campaignresponse EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 104d3d5a-d44d-4560-9467-1750daad492e
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the campaignresponse entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service campaignresponse entitytype."
 description: "Response from an existing or a potential new customer for a campaign."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/campaignresponses"
@@ -373,7 +373,7 @@ properties:
       isreadonly: false
     - name: stageid
       type: Edm.Guid
-      display_name: "(Deprecated) Process Stage"
+      display_name: "Process Stage"
       description: "Unique identifier of the Stage."
       iscomputed: false
       isreadonly: false
@@ -429,7 +429,7 @@ properties:
       isreadonly: false
     - name: traversedpath
       type: Edm.String
-      display_name: "(Deprecated) Traversed Path"
+      display_name: "Traversed Path"
       description: "For internal use only."
       iscomputed: false
       isreadonly: false
@@ -546,12 +546,30 @@ single_valued_navigation_properties:
   - name: originatingactivityid_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: letter_campaignresponse
+  - name: originatingactivityid_li_inmail_campaignresponse
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: CampaignResponse_li_inmails
+  - name: originatingactivityid_li_message_campaignresponse
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: CampaignResponse_li_messages
+  - name: originatingactivityid_li_pointdrivepresentationviewed_campaignresponse
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: CampaignResponse_li_pointdrivepresentationvieweds
   - name: originatingactivityid_msdyn_approval_campaignresponse
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: CampaignResponse_msdyn_approvals
   - name: originatingactivityid_msdyn_bookingalert_campaignresponse
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: CampaignResponse_msdyn_bookingalerts
+  - name: originatingactivityid_msfp_alert_campaignresponse
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: CampaignResponse_msfp_alerts
+  - name: originatingactivityid_msfp_surveyinvite_campaignresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: CampaignResponse_msfp_surveyinvites
+  - name: originatingactivityid_msfp_surveyresponse_campaignresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: CampaignResponse_msfp_surveyresponses
   - name: originatingactivityid_opportunityclose_campaignresponse
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: CampaignResponse_OpportunityCloses
@@ -617,7 +635,7 @@ single_valued_navigation_properties:
     partner: BulkOperation_ActivityPointers
   - name: regardingobjectid_bulkoperation_campaignresponse
     type: Microsoft.Dynamics.CRM.bulkoperation
-    partner: BulkOperation_CampaignResponse
+    partner: bulkoperation_CampaignResponses
   - name: regardingobjectid_campaign
     type: Microsoft.Dynamics.CRM.campaign
     partner: Campaign_ActivityPointers
@@ -669,6 +687,12 @@ single_valued_navigation_properties:
   - name: regardingobjectid_lead_campaignresponse
     type: Microsoft.Dynamics.CRM.lead
     partner: lead_CampaignResponses
+  - name: regardingobjectid_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_ActivityPointers
+  - name: regardingobjectid_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_ActivityPointers
   - name: regardingobjectid_msdyn_agreement
     type: Microsoft.Dynamics.CRM.msdyn_agreement
     partner: msdyn_agreement_ActivityPointers
@@ -747,6 +771,9 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_paymentterm
     type: Microsoft.Dynamics.CRM.msdyn_paymentterm
     partner: msdyn_paymentterm_ActivityPointers
+  - name: regardingobjectid_msdyn_playbookinstance
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_ActivityPointers
   - name: regardingobjectid_msdyn_postalbum
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: msdyn_postalbum_ActivityPointers
@@ -942,12 +969,30 @@ collection_valued_navigation_properties:
   - name: activity_pointer_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: activityid_activitypointer
+  - name: activity_pointer_li_inmail
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: activityid_li_inmail
+  - name: activity_pointer_li_message
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: activityid_li_message
+  - name: activity_pointer_li_pointdrivepresentationviewed
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: activityid_li_pointdrivepresentationviewed
   - name: activity_pointer_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: activityid_msdyn_approval
   - name: activity_pointer_msdyn_bookingalert
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: activityid_msdyn_bookingalert
+  - name: activity_pointer_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: activityid_msfp_alert
+  - name: activity_pointer_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: activityid_msfp_surveyinvite
+  - name: activity_pointer_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: activityid_msfp_surveyresponse
   - name: activity_pointer_opportunity_close
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: activityid_activitypointer
@@ -1067,9 +1112,9 @@ solutions:
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_MarketingService
     description: "For internal use only."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

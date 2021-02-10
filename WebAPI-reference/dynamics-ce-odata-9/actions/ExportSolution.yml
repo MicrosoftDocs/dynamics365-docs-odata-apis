@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ExportSolution
 name: "ExportSolution"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ExportSolution Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 50811842-4659-4d11-aca6-ddfb5f0a4dfc
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the ExportSolution Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service ExportSolution Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Exports a solution. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -90,15 +90,20 @@ parameters:
     nullable: true
     unicode: true
     description: ""
+  - name: ExportComponentsParams
+    type: Microsoft.Dynamics.CRM.ExportComponentsParams
+    nullable: true
+    unicode: true
+    description: ""
 return_type:
   description: "The ExportSolution action returns the following value."
   iscollection: false
   nullable: false
   type: Microsoft.Dynamics.CRM.ExportSolutionResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

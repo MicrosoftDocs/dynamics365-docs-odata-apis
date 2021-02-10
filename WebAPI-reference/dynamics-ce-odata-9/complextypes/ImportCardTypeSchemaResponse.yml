@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ImportCardTypeSchemaResponse
 name: "ImportCardTypeSchemaResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ImportCardTypeSchemaResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service ImportCardTypeSchemaResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 695a63a1-8d66-4c74-b3dd-92e18f96f16c
-  author: "KumarVivek"
+  ms.assetid: a00d9579-554d-4b37-9628-d2049241e22a
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API ImportCardTypeSchemaResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API ImportCardTypeSchemaResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -30,9 +30,9 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.ImportCardTypeSchema
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

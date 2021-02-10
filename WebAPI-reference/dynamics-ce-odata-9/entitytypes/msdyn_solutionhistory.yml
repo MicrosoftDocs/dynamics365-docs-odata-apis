@@ -1,0 +1,248 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_solutionhistory
+name: "msdyn_solutionhistory"
+type: entitytype
+metadata: 
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 603a5adc-4f3a-4d1b-823a-6bc4024a3dc0
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_solutionhistory entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_solutionhistories"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Solution History
+  primary_key: msdyn_solutionhistoryid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: msdyn_activityid
+      type: Edm.String
+      display_name: "Activity Id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_correlationid
+      type: Edm.String
+      display_name: "Correlation Id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_endtime
+      type: Edm.DateTimeOffset
+      display_name: "End Time"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_errorcode
+      type: Edm.String
+      display_name: "Error Code"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_exceptionmessage
+      type: Edm.String
+      display_name: "Exception Message"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_exceptionstack
+      type: Edm.String
+      display_name: "Exception Stack"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_ismanaged
+      type: Edm.Boolean
+      display_name: "Managed"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_isoverwritecustomizations
+      type: Edm.Boolean
+      display_name: "Overwrite Customizations"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_ispatch
+      type: Edm.Boolean
+      display_name: "Patch"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Solution Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_operation
+      type: Edm.Int32
+      display_name: "Operation"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Import"
+        - value: 1
+          label: "Uninstall"
+        - value: 2
+          label: "Export"
+        - value: 3
+          label: "Publish"
+        - value: 4
+          label: "PublishAll"
+        - value: 5
+          label: "LanguageProvision"
+        - value: 6
+          label: "ImportTranslation"
+        - value: 7
+          label: "RibbonMetadataGeneration"
+        - value: 8
+          label: "WorkflowSetState"
+        - value: 9
+          label: "None"
+    - name: msdyn_packagename
+      type: Edm.String
+      display_name: "Package Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_packageversion
+      type: Edm.String
+      display_name: "Package Version"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_publisherid
+      type: Edm.String
+      display_name: "Publisher Id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_publishername
+      type: Edm.String
+      display_name: "Publisher Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_result
+      type: Edm.Boolean
+      display_name: "Result"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Success"
+        - value: 0
+          label: "Failure"
+    - name: msdyn_solutionhistoryid
+      type: Edm.Guid
+      display_name: "Solutionhistory"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_solutionid
+      type: Edm.String
+      display_name: "Solution Id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_solutionversion
+      type: Edm.String
+      display_name: "Solution Version"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_starttime
+      type: Edm.DateTimeOffset
+      display_name: "Start Time"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_status
+      type: Edm.Int32
+      display_name: "Status"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Started"
+        - value: 1
+          label: "Completed"
+    - name: msdyn_suboperation
+      type: Edm.Int32
+      display_name: "Suboperation"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "None"
+        - value: 1
+          label: "New"
+        - value: 2
+          label: "Upgrade"
+        - value: 3
+          label: "Update"
+        - value: 4
+          label: "Delete"
+    - name: msdyn_totaltime
+      type: Edm.Int32
+      display_name: "Total Time (seconds)"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+# This entity has no lookup properties
+# This entity has no single-valued navigation properties
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the msdyn_solutionhistory entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.SolutionHistoryAPIs
+    description: ""
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

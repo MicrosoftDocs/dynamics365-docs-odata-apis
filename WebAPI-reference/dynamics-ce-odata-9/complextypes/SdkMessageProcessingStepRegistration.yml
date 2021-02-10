@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.SdkMessageProcessingStepRegistration
 name: "SdkMessageProcessingStepRegistration"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SdkMessageProcessingStepRegistration ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service SdkMessageProcessingStepRegistration ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 365f1bef-b910-49d4-8938-a4dc2326e5b6
-  author: "KumarVivek"
+  ms.assetid: e99c772c-c7d9-4ddd-97b0-c250e2f9d6aa
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API SdkMessageProcessingStepRegistration ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API SdkMessageProcessingStepRegistration ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -104,9 +104,9 @@ properties:
     iscollection: true
 # This complex type doesn't have any navigation properties.
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

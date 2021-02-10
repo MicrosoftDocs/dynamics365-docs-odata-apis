@@ -1,0 +1,58 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesRecall
+name: "msdyn_ExpenseEntriesRecall"
+type: action
+metadata: 
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 90a693e3-3346-4239-8995-b36bf9b9437e
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_ExpenseEntriesRecall Action."
+namespace: Microsoft.Dynamics.CRM
+description: "For internal use only."
+owningsolution: Microsoft.Dynamics.CRM.ProjectService
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: CorrelationId
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "For internal use only."
+  - name: NoteText
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: "For internal use only."
+  - name: ExpenseEntryIds
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "For internal use only."
+  - name: IsRecallingApprovedAllowed
+    type: Edm.Boolean
+    nullable: true
+    unicode: true
+    description: ""
+# This action has no return value.
+hasreturnvalue: false
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

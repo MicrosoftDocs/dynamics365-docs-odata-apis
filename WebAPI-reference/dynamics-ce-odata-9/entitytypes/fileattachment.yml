@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.fileattachment
 name: "fileattachment"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement fileattachment EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 0d81dfbd-f6cd-47aa-9c3f-9b6b74d6afc4
-  author: "KumarVivek"
+  ms.assetid: 432a5310-9c86-4606-954b-984740e0dcf6
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the fileattachment entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service fileattachment entitytype."
 description: "File Attachment"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/fileattachments"
@@ -19,7 +19,10 @@ header:
   display_name: FileAttachment
   primary_key: fileattachmentid
   primary_name_attribute: filename
-  # This entity does not support any operations.
+  operations_supported:
+  - POST
+  - GET (Retrieve Only)
+  - DELETE
 namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
@@ -40,6 +43,12 @@ properties:
       type: Edm.String
       display_name: "File Name"
       description: "File name of the attachment."
+      iscomputed: false
+      isreadonly: false
+    - name: filesize
+      type: Edm.Int32
+      display_name: "File Size (Bytes)"
+      description: "File size of the attachment."
       iscomputed: false
       isreadonly: false
     - name: filesizeinbytes
@@ -78,12 +87,22 @@ lookup_properties:
   - name: _objectid_value
     single_valued_navigation_property:
     - FileAttachment_Solution
-    - objectid_stagesolutionupload
     - objectid_msdyn_knowledgearticleimage
-    - objectid_msdyn_aibfile
     - objectid_workflowlog
     - objectid_flowsession
     - objectid_workflowbinary
+    - objectid_msdyn_aibfile
+    - objectid_stagesolutionupload
+    - objectid_msdyn_aiconfiguration
+    - objectid_exportsolutionupload
+    - objectid_asyncoperation
+    - objectid_cascadegrantrevokeaccessrecordstracker
+    - objectid_canvasapp
+    - objectid_mailbox
+    - objectid_msdyn_customerassetattachment
+    - objectid_msfp_fileresponse
+    - objectid_revokeinheritedaccessrecordstracker
+    - objectid_webresource
     description: "Unique identifier of the object with which the attachment is associated."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
@@ -91,18 +110,72 @@ single_valued_navigation_properties:
   - name: FileAttachment_Solution
     type: Microsoft.Dynamics.CRM.solution
     partner: regardingobjectid_fileattachment_solution
+  - name: objectid_asyncoperation
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: asyncoperation_FileAttachments
+  - name: objectid_canvasapp
+    type: Microsoft.Dynamics.CRM.canvasapp
+    partner: canvasapp_FileAttachments
+  - name: objectid_exportsolutionupload
+    type: Microsoft.Dynamics.CRM.exportsolutionupload
+    partner: exportsolutionupload_FileAttachments
   - name: objectid_flowsession
     type: Microsoft.Dynamics.CRM.flowsession
     partner: flowsession_FileAttachments
+  - name: objectid_mailbox
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: mailbox_FileAttachments
   - name: objectid_msdyn_aibfile
     type: Microsoft.Dynamics.CRM.msdyn_aibfile
     partner: msdyn_aibfile_FileAttachments
+  - name: objectid_msdyn_aiconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_aiconfiguration
+    partner: msdyn_aiconfiguration_FileAttachments
+  - name: objectid_msdyn_customerassetattachment
+    type: Microsoft.Dynamics.CRM.msdyn_customerassetattachment
+    partner: msdyn_customerassetattachment_FileAttachments
+  - name: objectid_msdyn_knowledgearticleimage
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticleimage
+    partner: msdyn_knowledgearticleimage_FileAttachments
+  - name: objectid_msfp_fileresponse
+    type: Microsoft.Dynamics.CRM.msfp_fileresponse
+    partner: msfp_fileresponse_FileAttachments
+  - name: objectid_revokeinheritedaccessrecordstracker
+    type: Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker
+    partner: revokeinheritedaccessrecordstracker_FileAttachments
+  - name: objectid_stagesolutionupload
+    type: Microsoft.Dynamics.CRM.stagesolutionupload
+    partner: stagesolutionupload_FileAttachments
+  - name: objectid_webresource
+    type: Microsoft.Dynamics.CRM.webresource
+    partner: webresource_FileAttachments
+  - name: objectid_workflowbinary
+    type: Microsoft.Dynamics.CRM.workflowbinary
+    partner: workflowbinary_FileAttachments
   - name: objectid_workflowlog
     type: Microsoft.Dynamics.CRM.workflowlog
     partner: workflowlog_FileAttachments
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: FileAttachment_CanvasApp_BackgroundImage
+    type: Microsoft.Dynamics.CRM.canvasapp
+    partner: backgroundimage
+  - name: FileAttachment_CanvasApp_LargeIcon
+    type: Microsoft.Dynamics.CRM.canvasapp
+    partner: largeicon
+  - name: FileAttachment_CanvasApp_MediumIcon
+    type: Microsoft.Dynamics.CRM.canvasapp
+    partner: mediumicon
+  - name: FileAttachment_CanvasApp_SmallIcon
+    type: Microsoft.Dynamics.CRM.canvasapp
+    partner: smallicon
+  - name: FileAttachment_CanvasApp_TeamsIcon
+    type: Microsoft.Dynamics.CRM.canvasapp
+    partner: teamsicon
+  - name: FileAttachment_CanvasApp_WideIcon
+    type: Microsoft.Dynamics.CRM.canvasapp
+    partner: wideicon
   - name: FileAttachment_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_fileattachment_syncerror
@@ -111,10 +184,16 @@ collection_valued_navigation_properties:
     partner: fileid
 # This entity has no derived entities.
 # This entity has no operations
-# This entity is not included in any solutions.
-# This entity has no remarks.
+solutions:
+  description: "The following solutions include the fileattachment entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.FileStoreServiceExtension
+    description: ""
+  - type: Microsoft.Dynamics.CRM.System
+    description: "Internal CRM System Solution"
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

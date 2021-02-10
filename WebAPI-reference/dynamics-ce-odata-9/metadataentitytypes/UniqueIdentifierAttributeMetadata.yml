@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.UniqueIdentifierAttributeMetadata
 name: "UniqueIdentifierAttributeMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement UniqueIdentifierAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service UniqueIdentifierAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d8458227-5cae-42bc-a4cd-d41ca10cfded
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the UniqueIdentifierAttributeMetadata metadata entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service UniqueIdentifierAttributeMetadata metadata entitytype."
 header: 
   description: "Represents the unique identifier attribute metadata."
   base_type: Microsoft.Dynamics.CRM.AttributeMetadata
@@ -59,6 +59,10 @@ properties:
     type: Edm.Int32
     inherited_from: Microsoft.Dynamics.CRM.AttributeMetadata
     description: "An organization-specific ID for the attribute used for auditing."
+  - name: CreatedOn
+    type: Edm.DateTimeOffset
+    inherited_from: Microsoft.Dynamics.CRM.AttributeMetadata
+    description: ""
   - name: DeprecatedVersion
     type: Edm.String
     inherited_from: Microsoft.Dynamics.CRM.AttributeMetadata
@@ -195,6 +199,10 @@ properties:
     type: Edm.Guid
     inherited_from: Microsoft.Dynamics.CRM.MetadataBase
     description: "A unique identifier for the metadata item."
+  - name: ModifiedOn
+    type: Edm.DateTimeOffset
+    inherited_from: Microsoft.Dynamics.CRM.AttributeMetadata
+    description: ""
   - name: RequiredLevel
     type: Microsoft.Dynamics.CRM.AttributeRequiredLevelManagedProperty
     inherited_from: Microsoft.Dynamics.CRM.AttributeMetadata
@@ -212,9 +220,9 @@ properties:
 # No functions or actions are bound to this entity.
 # This entity has no derived entities.
 # This entity is not used by other entities or operations.
-# This metadata entity has no remarks.
+# There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

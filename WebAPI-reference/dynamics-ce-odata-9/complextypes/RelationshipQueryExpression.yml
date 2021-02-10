@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RelationshipQueryExpression
 name: "RelationshipQueryExpression"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RelationshipQueryExpression ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service RelationshipQueryExpression ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a11e233c-d4ab-45b0-bb47-03b9e6cb501b
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API RelationshipQueryExpression ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API RelationshipQueryExpression ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains a complex query to retrieve entity relationship metadata for entities retrieved using an EntityQueryExpression." 
@@ -36,9 +36,9 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.EntityQueryExpression
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

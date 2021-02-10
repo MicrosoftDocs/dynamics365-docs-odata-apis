@@ -1,0 +1,404 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.ms_newsitem
+name: "ms_newsitem"
+type: entitytype
+metadata: 
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 961b467c-f705-4204-8810-ca59a5816fa3
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service ms_newsitem entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/ms_newsitems"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: News
+  primary_key: ms_newsitemid
+  primary_name_attribute: ms_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: entityimage
+      type: Edm.Binary
+      display_name: "Thumbnail"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: entityimage_timestamp
+      type: Edm.Int64
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+    - name: entityimage_url
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+    - name: entityimageid
+      type: Edm.Guid
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: ms_category
+      type: Edm.String
+      display_name: "Category"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: ms_dateposted
+      type: Edm.DateTimeOffset
+      display_name: "Date Posted"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: ms_daysago
+      type: Edm.Int32
+      display_name: "Days Ago"
+      description: ""
+      iscomputed: true
+      isreadonly: true
+    - name: ms_displaysummary
+      type: Edm.String
+      display_name: "Display Summary"
+      description: ""
+      iscomputed: true
+      isreadonly: true
+    - name: ms_displaytimeago
+      type: Edm.String
+      display_name: "Display Time Ago"
+      description: ""
+      iscomputed: true
+      isreadonly: true
+    - name: ms_group
+      type: Edm.String
+      display_name: "Group"
+      description: ""
+      iscomputed: true
+      isreadonly: true
+    - name: ms_grouporder
+      type: Edm.Int32
+      display_name: "Group Order"
+      description: ""
+      iscomputed: true
+      isreadonly: true
+    - name: ms_hoursago
+      type: Edm.Int32
+      display_name: "Hours Ago"
+      description: ""
+      iscomputed: true
+      isreadonly: true
+    - name: ms_minutesago
+      type: Edm.Int32
+      display_name: "Minutes Ago"
+      description: ""
+      iscomputed: true
+      isreadonly: true
+    - name: ms_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: ms_newsitemid
+      type: Edm.Guid
+      display_name: "News"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: ms_resharecount
+      type: Edm.Int32
+      display_name: "Reshare Count"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: ms_source
+      type: Edm.String
+      display_name: "Source"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: ms_type
+      type: Edm.Int32
+      display_name: "Type"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 717660000
+          label: "News"
+        - value: 717660001
+          label: "Social"
+    - name: ms_url
+      type: Edm.String
+      display_name: "Url"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: ms_weeksago
+      type: Edm.Int32
+      display_name: "Weeks Ago"
+      description: ""
+      iscomputed: true
+      isreadonly: true
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the News"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the News"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _ms_accountid_value
+    single_valued_navigation_property:
+    - ms_AccountId
+    description: "Unique identifier for Account associated with News."
+  - name: _ms_contactid_value
+    single_valued_navigation_property:
+    - ms_ContactId
+    description: "Unique identifier for Contact associated with News."
+  - name: _ms_leadid_value
+    single_valued_navigation_property:
+    - ms_LeadId
+    description: "Unique identifier for Lead associated with News."
+  - name: _ms_opportunityid_value
+    single_valued_navigation_property:
+    - ms_OpportunityId
+    description: "Unique identifier for Opportunity associated with News."
+  - name: _organizationid_value
+    single_valued_navigation_property:
+    - organizationid
+    description: "Unique identifier for the organization"
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_ms_newsitem_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_ms_newsitem_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_ms_newsitem_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_ms_newsitem_modifiedonbehalfby
+  - name: ms_AccountId
+    type: Microsoft.Dynamics.CRM.account
+    partner: ms_account_ms_newsitem
+  - name: ms_ContactId
+    type: Microsoft.Dynamics.CRM.contact
+    partner: ms_contact_ms_newsitem
+  - name: ms_LeadId
+    type: Microsoft.Dynamics.CRM.lead
+    partner: ms_lead_ms_newsitem
+  - name: ms_OpportunityId
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: ms_opportunity_ms_newsitem
+  - name: organizationid
+    type: Microsoft.Dynamics.CRM.organization
+    partner: organization_ms_newsitem
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: ms_newsitem_ActivityPointers
+    type: Microsoft.Dynamics.CRM.activitypointer
+    partner: regardingobjectid_ms_newsitem
+  - name: ms_newsitem_Annotations
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: objectid_ms_newsitem
+  - name: ms_newsitem_Appointments
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: regardingobjectid_ms_newsitem_appointment
+  - name: ms_newsitem_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_ms_newsitem
+  - name: ms_newsitem_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_ms_newsitem
+  - name: ms_newsitem_connections1
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record1id_ms_newsitem
+  - name: ms_newsitem_connections2
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record2id_ms_newsitem
+  - name: ms_newsitem_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_ms_newsitem
+  - name: ms_newsitem_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_ms_newsitem
+  - name: ms_newsitem_Emails
+    type: Microsoft.Dynamics.CRM.email
+    partner: regardingobjectid_ms_newsitem_email
+  - name: ms_newsitem_Faxes
+    type: Microsoft.Dynamics.CRM.fax
+    partner: regardingobjectid_ms_newsitem_fax
+  - name: ms_newsitem_Letters
+    type: Microsoft.Dynamics.CRM.letter
+    partner: regardingobjectid_ms_newsitem_letter
+  - name: ms_newsitem_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_ms_newsitem_li_inmail
+  - name: ms_newsitem_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_ms_newsitem_li_message
+  - name: ms_newsitem_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_ms_newsitem_li_pointdrivepresentationviewed
+  - name: ms_newsitem_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_ms_newsitem
+  - name: ms_newsitem_msdyn_approvals
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: regardingobjectid_ms_newsitem_msdyn_approval
+  - name: ms_newsitem_msdyn_bookingalerts
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: regardingobjectid_ms_newsitem_msdyn_bookingalert
+  - name: ms_newsitem_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_ms_newsitem_msfp_alert
+  - name: ms_newsitem_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_ms_newsitem_msfp_surveyinvite
+  - name: ms_newsitem_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_ms_newsitem_msfp_surveyresponse
+  - name: ms_newsitem_PhoneCalls
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: regardingobjectid_ms_newsitem_phonecall
+  - name: ms_newsitem_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_ms_newsitem
+  - name: ms_newsitem_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_ms_newsitem
+  - name: ms_newsitem_RecurringAppointmentMasters
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: regardingobjectid_ms_newsitem_recurringappointmentmaster
+  - name: ms_newsitem_ServiceAppointments
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: regardingobjectid_ms_newsitem_serviceappointment
+  - name: ms_newsitem_SocialActivities
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: regardingobjectid_ms_newsitem_socialactivity
+  - name: ms_newsitem_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_ms_newsitem
+  - name: ms_newsitem_Tasks
+    type: Microsoft.Dynamics.CRM.task
+    partner: regardingobjectid_ms_newsitem_task
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the ms_newsitem entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the ms_newsitem entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.CompanyNewsTimeline
+    description: "You can now view news related to an Account, Lead, Contact or Opportunity in the CRM app on your mobile device. The Company news timeline solution for mobile enables sales and service users to view the latest and most important news in the mobile client from Bing news. The news articles are organized by time (Today, This Week, Last Week) and contain the headline, date/time, and source of the news article.  Important events are detected and categorized (including Management Changes, Earnings Releases, New Offerings, Cost Cutting, Growth, Legal Issues, Acquisitions and Partnerships)."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsCRMBasicOperations
+    description: ""
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

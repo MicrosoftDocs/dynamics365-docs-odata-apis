@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.discount
 name: "discount"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement discount EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: dde986a1-2fcc-4001-8b68-386a264820a8
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the discount entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service discount entitytype."
 description: "Price reduction made from the list price of a product or service based on the quantity purchased."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/discounts"
@@ -217,9 +217,9 @@ solutions:
     description: "Dynamics 365 workload for Sales Patch Version 2."
   - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
     description: "Dynamics 365 workload for third patch of Sales."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

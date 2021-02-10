@@ -1,0 +1,299 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.listoperation
+name: "listoperation"
+type: entitytype
+metadata: 
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: a76a1fad-d317-4799-bba3-38b104591328
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service listoperation entitytype."
+description: "System operation used to perform lengthy and asynchronous list operations on large data sets, such as adding members to a list."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/listoperations"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: List Operation
+  primary_key: listoperationid
+  primary_name_attribute: listoperationprimaryname
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: added
+      type: Edm.Int32
+      display_name: "Added"
+      description: "Number of items added in the list operation."
+      iscomputed: false
+      isreadonly: false
+    - name: batchinput
+      type: Edm.String
+      display_name: "BatchInput"
+      description: "Input data required by the list operation on every processing batch. Used by asynchronous list operations only."
+      iscomputed: false
+      isreadonly: false
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: errorcode
+      type: Edm.Int32
+      display_name: "ErrorCode"
+      description: "List operation error code. Populated when the list operation does not complete successfully."
+      iscomputed: false
+      isreadonly: false
+    - name: errordescription
+      type: Edm.String
+      display_name: "ErrorDescription"
+      description: "List operation error description. Populated when the list operation does not complete successfully."
+      iscomputed: false
+      isreadonly: false
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: input
+      type: Edm.String
+      display_name: "Input"
+      description: "List operation input data."
+      iscomputed: false
+      isreadonly: false
+    - name: listoperationid
+      type: Edm.Guid
+      display_name: "List Operation"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: listoperationname
+      type: Edm.String
+      display_name: "List Operation Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: listoperationprimaryname
+      type: Edm.String
+      display_name: "List Operation Primary Name"
+      description: "The primary name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: log
+      type: Edm.String
+      display_name: "Log"
+      description: "List operation log."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: processed
+      type: Edm.Int32
+      display_name: "Processed"
+      description: "Number of items processed in the list operation."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the List Operation"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the List Operation"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 100000001
+          label: "Created"
+        - value: 100000000
+          label: "In Progress"
+        - value: 100000002
+          label: "Completed"
+        - value: 100000003
+          label: "Failed"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: type
+      type: Edm.Int32
+      display_name: "Type"
+      description: "List operation type."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 100000000
+          label: "Add members by query"
+        - value: 100000001
+          label: "Add members by id"
+        - value: 100000002
+          label: "Remove members by query"
+        - value: 100000003
+          label: "Remove members by id"
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _listid_value
+    single_valued_navigation_property:
+    - ListId
+    description: "Associated list identifier"
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_listoperation_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_listoperation_createdonbehalfby
+  - name: ListId
+    type: Microsoft.Dynamics.CRM.list
+    partner: list_listoperation_ListId
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_listoperation_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_listoperation_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_listoperation
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_listoperation
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_listoperation
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_listoperation
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: listoperation_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_listoperation
+  - name: listoperation_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_listoperation
+  - name: listoperation_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_listoperation
+  - name: listoperation_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_listoperation
+  - name: listoperation_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_listoperation
+  - name: listoperation_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_listoperation
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the listoperation entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the listoperation entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdynce_MarketingPatch201905
+    description: "Patch from 05/2019 for Dynamics 365 workload for marketing and enterprise."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

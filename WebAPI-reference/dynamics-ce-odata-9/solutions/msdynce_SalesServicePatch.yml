@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_SalesServicePatch
 name: "Sales Service Patch"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Sales Service Patch Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Sales Service Patch Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 5a222f32-9d95-484c-a483-59ed38368114
-  author: "KumarVivek"
+  ms.assetid: 5bb43039-cca7-4c73-ba75-8226a3974dba
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Sales Service Patch Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Sales Service Patch Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_SalesServicePatch
- version: "9.0.1912.5020"
- customization_prefix: noe
+ version: "9.0.20122.10003"
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -28,9 +28,9 @@ entities:
    - type: Microsoft.Dynamics.CRM.quoteclose
      description: "Activity generated when a quote is closed."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

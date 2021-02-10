@@ -3,26 +3,30 @@ uid: Microsoft.Dynamics.CRM.DataflowSolution
 name: "Dataflow Solution"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Dataflow Solution Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Dataflow Solution Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: e044d31d-eaa0-443f-ac06-25ad16694213
-  author: "KumarVivek"
+  ms.assetid: a52339c8-f832-48cf-a63f-dc1915d54bad
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Dataflow Solution Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Dataflow Solution Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dataflow solution"
  unique_name: DataflowSolution
- version: "1.0.0.0"
- customization_prefix: none
-# This solution includes no entities.
+ version: "1.0.0.7"
+ customization_prefix: default
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_dataflow
+     description: ""
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

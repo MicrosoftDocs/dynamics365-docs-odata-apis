@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.sharepointdocumentlocation
 name: "sharepointdocumentlocation"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement sharepointdocumentlocation EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e36b40e6-57b5-4e1b-9d6c-885579320dc6
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the sharepointdocumentlocation entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service sharepointdocumentlocation entitytype."
 description: "Document libraries or folders on a SharePoint server from where documents can be managed in Microsoft Dynamics 365."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/sharepointdocumentlocations"
@@ -208,20 +208,14 @@ lookup_properties:
     description: "Unique identifier of the parent site or location."
   - name: _regardingobjectid_value
     single_valued_navigation_property:
-    - regardingobjectid_kbarticle
     - regardingobjectid_knowledgearticle
     - regardingobjectid_account
-    - regardingobjectid_msdyn_knowledgearticletemplate
-    - regardingobjectid_lead
-    - regardingobjectid_product
-    - regardingobjectid_msdyn_playbookactivity
-    - regardingobjectid_opportunity
-    - regardingobjectid_quote
-    - regardingobjectid_salesliterature
-    - regardingobjectid_contact
+    - regardingobjectid_kbarticle
     - regardingobjectid_msdyn_resourceterritory
     - regardingobjectid_msdyn_timegroup
     - regardingobjectid_msdyn_timegroupdetail
+    - regardingobjectid_msdyn_expense
+    - regardingobjectid_msdyn_project
     - regardingobjectid_msdyn_agreement
     - regardingobjectid_msdyn_agreementbookingdate
     - regardingobjectid_msdyn_agreementbookingsetup
@@ -244,8 +238,14 @@ lookup_properties:
     - regardingobjectid_msdyn_workorderproduct
     - regardingobjectid_msdyn_workorderservice
     - regardingobjectid_msdyn_workorderservicetask
-    - regardingobjectid_msdyn_expense
-    - regardingobjectid_msdyn_project
+    - regardingobjectid_msdyn_playbookactivity
+    - regardingobjectid_product
+    - regardingobjectid_lead
+    - regardingobjectid_opportunity
+    - regardingobjectid_quote
+    - regardingobjectid_salesliterature
+    - regardingobjectid_contact
+    - regardingobjectid_msdyn_knowledgearticletemplate
     description: "Unique identifier of the object with which the SharePoint document location record is associated."
   - name: _transactioncurrencyid_value
     single_valued_navigation_property:
@@ -332,6 +332,12 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_inventorytransfer
     type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
     partner: msdyn_inventorytransfer_SharePointDocumentLocations
+  - name: regardingobjectid_msdyn_knowledgearticletemplate
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate
+    partner: msdyn_knowledgearticletemplate_SharePointDocumentLocations
+  - name: regardingobjectid_msdyn_playbookactivity
+    type: Microsoft.Dynamics.CRM.msdyn_playbookactivity
+    partner: msdyn_playbookactivity_SharePointDocumentLocations
   - name: regardingobjectid_msdyn_project
     type: Microsoft.Dynamics.CRM.msdyn_project
     partner: msdyn_project_SharePointDocumentLocations
@@ -446,9 +452,9 @@ solutions:
     description: "Dynamics 365 workload for sales."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

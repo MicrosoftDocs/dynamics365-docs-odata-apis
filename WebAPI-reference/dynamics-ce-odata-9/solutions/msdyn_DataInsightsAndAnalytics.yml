@@ -1,0 +1,51 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_DataInsightsAndAnalytics
+name: "Insights and Analytics for Dynamics 365"
+type: solution
+metadata: 
+  title: "Common Data Service Insights and Analytics for Dynamics 365 Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 8d67eb29-b085-4a4c-b762-f7d1cb15535f
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Insights and Analytics for Dynamics 365 Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Enable Analytics capability for Dynamics 365 applications like Customer Service, Field Service and Universal Resource Scheduling"
+ unique_name: msdyn_DataInsightsAndAnalytics
+ version: "1.0.20280.7"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_analyticsadminsettings
+     description: "[Deprecated]"
+   - type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport
+     description: "Data Analytics Reports"
+   - type: Microsoft.Dynamics.CRM.msdyn_datainsightsandanalyticsfeature
+     description: "Analytics and insights feature entity"
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_AnalyticsSaveDataInConfigStore
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetAnalyticsReportDetail
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetAnalyticsReportToken
+     description: ""
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

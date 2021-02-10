@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CalculateActualValueOpportunity
 name: "CalculateActualValueOpportunity"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CalculateActualValueOpportunity Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d82eac0f-1dde-4564-acd8-40e8cb3e5b5b
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the CalculateActualValueOpportunity Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service CalculateActualValueOpportunity Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Calculates the value of an opportunity that is in the \"Won\" state. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -28,9 +28,9 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.CalculateActualValueOpportunityResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

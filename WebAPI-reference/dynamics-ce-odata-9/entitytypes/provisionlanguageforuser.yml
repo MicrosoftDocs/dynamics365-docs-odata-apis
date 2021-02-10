@@ -1,0 +1,128 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.provisionlanguageforuser
+name: "provisionlanguageforuser"
+type: entitytype
+metadata: 
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 42b9ad40-112c-4b67-976d-7041db063f33
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service provisionlanguageforuser entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/provisionlanguageforusers"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: ProvisionLanguageForUser
+  primary_key: provisionlanguageforuserid
+  primary_name_attribute: name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: asyncoperationid
+      type: Edm.Guid
+      display_name: "AsyncOperationId"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: lcid
+      type: Edm.Int32
+      display_name: "Lcid"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: operationstatus
+      type: Edm.Int32
+      display_name: "OperationStatus"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Queued"
+        - value: 1
+          label: "Completed"
+        - value: 2
+          label: "Waiting For Language Provision"
+        - value: 3
+          label: "Failed"
+    - name: organizationid
+      type: Edm.Guid
+      display_name: "Organization Id"
+      description: "Unique identifier for the organization"
+      iscomputed: false
+      isreadonly: true
+    - name: provisionlanguageforuserid
+      type: Edm.Guid
+      display_name: "ProvisionLanguageForUser"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: userid
+      type: Edm.Guid
+      display_name: "UserId"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+# This entity has no lookup properties
+# This entity has no single-valued navigation properties
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: provisionlanguageforuser_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_provisionlanguageforuser
+  - name: provisionlanguageforuser_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_provisionlanguageforuser
+  - name: provisionlanguageforuser_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_provisionlanguageforuser
+  - name: provisionlanguageforuser_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_provisionlanguageforuser
+  - name: provisionlanguageforuser_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_provisionlanguageforuser
+  - name: provisionlanguageforuser_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_provisionlanguageforuser
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the provisionlanguageforuser entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the provisionlanguageforuser entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msft_LocalizationExtension
+    description: ""
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
 name: "msdyn_iotdevicecategory"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_iotdevicecategory EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3c8a32e1-273b-4636-9f38-255bd21dac65
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_iotdevicecategory entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_iotdevicecategory entitytype."
 description: "Used to categorize IoT devices."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_iotdevicecategories"
@@ -202,9 +202,18 @@ collection_valued_navigation_properties:
   - name: msdyn_iotdevicecategory_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_msdyn_iotdevicecategory
+  - name: msdyn_iotdevicecategorycommands
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommanddefinition
+    partner: msdyn_iotdevicecategorycommands
+  - name: msdyn_iotdevicevisualizationconfiguration_iotdevicecategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicevisualizationconfiguration
+    partner: msdyn_IoTDeviceCategory
   - name: msdyn_msdyn_iotdevicecategory_msdyn_iotdevice_Category
     type: Microsoft.Dynamics.CRM.msdyn_iotdevice
     partner: msdyn_Category
+  - name: msdyn_msdyn_iotdevicecategory_msdyn_iotdeviceproperty_DeviceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceproperty
+    partner: msdyn_DeviceCategory
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the msdyn_iotdevicecategory entity type."
@@ -226,9 +235,9 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.IoTConnector
     description: "Enables IoT scenarios in Dynamics 365."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -1,0 +1,76 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_GetOrganizationalUnitsWithinRadius
+name: "msdyn_GetOrganizationalUnitsWithinRadius"
+type: action
+metadata: 
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: a88141ad-4316-44d4-a648-52d129a1f362
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_GetOrganizationalUnitsWithinRadius Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: Version
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+  - name: Latitude
+    type: Edm.Double
+    nullable: false
+    unicode: true
+    description: ""
+  - name: Longitude
+    type: Edm.Double
+    nullable: false
+    unicode: true
+    description: ""
+  - name: Radius
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: ""
+  - name: Unit
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: ""
+  - name: EligibleOrganizationlUnitIds
+    type: Microsoft.Dynamics.CRM.crmbaseentity
+    nullable: false
+    unicode: true
+    description: ""
+  - name: AdditionalCustomInput
+    type: Microsoft.Dynamics.CRM.crmbaseentity
+    nullable: true
+    unicode: true
+    description: ""
+return_type:
+  description: "The msdyn_GetOrganizationalUnitsWithinRadius action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_GetOrganizationalUnitsWithinRadiusResponse
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

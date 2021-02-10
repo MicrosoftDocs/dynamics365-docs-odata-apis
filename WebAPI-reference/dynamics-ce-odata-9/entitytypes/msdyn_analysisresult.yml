@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_analysisresult
 name: "msdyn_analysisresult"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_analysisresult EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 9bb75b6f-7831-4002-968e-b69d2cd5d74d
-  author: "KumarVivek"
+  ms.assetid: 0702b2f1-cee7-4a5c-811b-c00a5c0c5737
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_analysisresult entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_analysisresult entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_analysisresults"
@@ -200,6 +200,8 @@ properties:
           label: "Config Error"
         - value: 192350004
           label: "Warning"
+        - value: 192350005
+          label: "Error"
     - name: msdyn_ruleid
       type: Edm.String
       display_name: "Rule Id"
@@ -417,10 +419,10 @@ solutions:
   description: "The following solutions include the msdyn_analysisresult entity type."
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdyn_PowerAppsChecker
-    description: "PowerApps Checker promotes higher-quality model-driven apps by helping app makers follow best practices when they customize and extend the PowerApps platform. PowerApps Checker performs a static analysis of your PowerApps solutions to identify performance and stability risks, and provides detailed recommendations to remove these risks from your solutions."
-# This entity has no remarks.
+    description: "Power Apps Checker promotes higher-quality model-driven apps by helping app makers follow best practices when they customize and extend the Power Apps platform. Power Apps Checker performs a static analysis of your Power Apps solutions to identify performance and stability risks, and provides detailed recommendations to remove these risks from your solutions."
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

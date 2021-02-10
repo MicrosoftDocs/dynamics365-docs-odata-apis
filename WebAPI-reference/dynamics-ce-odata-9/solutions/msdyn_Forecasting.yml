@@ -3,30 +3,52 @@ uid: Microsoft.Dynamics.CRM.msdyn_Forecasting
 name: "Forecasting"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Forecasting Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Forecasting Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 4c87a75c-598d-4e8c-bf89-c891ac5ac5f6
-  author: "KumarVivek"
+  ms.assetid: 5f741cbc-1f14-43fe-9531-2747aeaf1619
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Forecasting Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Forecasting Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "An extension that helps sales managers and sales people to predict risks in the revenue spotting pipeline."
  unique_name: msdyn_Forecasting
- version: "9.0.2001.4240"
+ version: "9.0.20122.10050"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
   entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_forecastconfiguration
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_forecastdefinition
+     description: "Defines the parameters used for forecasting."
+   - type: Microsoft.Dynamics.CRM.msdyn_forecastinstance
+     description: "Stores sales predictions for your team or organization. For internal use."
+   - type: Microsoft.Dynamics.CRM.msdyn_forecastrecurrence
+     description: "Stores recalculation information for each recurrence of the forecast hierarchy. For internal use."
    - type: Microsoft.Dynamics.CRM.opportunity
      description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
-# This solution includes no actions.
-# This solution has no remarks.
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_ForecastApi
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ForecastGenerateHierarchy
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ForecastInstanceActions
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ForecastRecalculate
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ForecastRecalculateAll
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ForecastRecalculateAsync
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

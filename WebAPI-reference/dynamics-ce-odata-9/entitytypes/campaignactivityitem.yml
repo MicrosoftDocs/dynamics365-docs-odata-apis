@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.campaignactivityitem
 name: "campaignactivityitem"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement campaignactivityitem EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d8e2ca9a-7bc8-4143-9f7d-b119baee344c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the campaignactivityitem entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service campaignactivityitem entitytype."
 description: "Work item of a campaign activity, such as a list or sales literature."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/campaignactivityitems"
@@ -134,9 +134,9 @@ solutions:
     description: "Patch for Dynamics 365 workload for marketing and enterprise."
   - type: Microsoft.Dynamics.CRM.msdynce_MarketingPatch201905
     description: "Patch from 05/2019 for Dynamics 365 workload for marketing and enterprise."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

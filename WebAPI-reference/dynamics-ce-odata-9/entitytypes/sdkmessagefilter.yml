@@ -3,22 +3,22 @@ uid: Microsoft.Dynamics.CRM.sdkmessagefilter
 name: "sdkmessagefilter"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement sdkmessagefilter EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: aa91a5d2-9cf9-40e3-9a7b-16e6ed15c5c8
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the sdkmessagefilter entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service sdkmessagefilter entitytype."
 description: "Filter that defines which SDK messages are valid for each type of entity."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/sdkmessagefilters"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: Sdk Message Filter
   primary_key: sdkmessagefilterid
-  # This entity doesn't have a primaryAttributeName
+  primary_name_attribute: name
   operations_supported:
   - GET
 namespace: Microsoft.Dynamics.CRM
@@ -103,6 +103,12 @@ properties:
       description: "Date and time when the SDK message filter was last modified."
       iscomputed: false
       isreadonly: true
+    - name: name
+      type: Edm.String
+      display_name: "Name"
+      description: "Name of the SDK message filter."
+      iscomputed: false
+      isreadonly: false
     - name: overwritetime
       type: Edm.DateTimeOffset
       display_name: "Record Overwrite Time"
@@ -221,11 +227,13 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the sdkmessagefilter entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.ApiMessagesExtension
+    description: "This solution contains CDS API message extensions."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

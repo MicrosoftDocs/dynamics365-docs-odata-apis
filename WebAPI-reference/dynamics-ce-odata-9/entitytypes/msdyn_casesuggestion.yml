@@ -1,0 +1,112 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_casesuggestion
+name: "msdyn_casesuggestion"
+type: entitytype
+metadata: 
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 5c7ef0c2-49a0-4cef-81e7-f11484c29e30
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_casesuggestion entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_casesuggestions"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Case Suggestion
+  primary_key: msdyn_casesuggestionid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: msdyn_additionalcontext
+      type: Edm.String
+      display_name: "Additional Context"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_casesuggestionid
+      type: Edm.Guid
+      display_name: "Case Suggestion"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_confidencescore
+      type: Edm.Decimal
+      display_name: "Confidence Score"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_keyphrases
+      type: Edm.String
+      display_name: "Key Phrases"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_rank
+      type: Edm.Int32
+      display_name: "Rank"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_suggestionforentitylogicalname
+      type: Edm.String
+      display_name: "suggestion for entity  logical name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_suggestionforid
+      type: Edm.String
+      display_name: "suggestion for entity id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _msdyn_suggestedentity_value
+    single_valued_navigation_property:
+    - msdyn_suggestedentity
+    description: ""
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: msdyn_suggestedentity
+    type: Microsoft.Dynamics.CRM.incident
+    partner: msdyn_incident_msdyn_casesuggestion_suggestedentity
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the msdyn_casesuggestion entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_CSIntelligence
+    description: "Customer Service Intelligence."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

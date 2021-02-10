@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.mobileofflineprofileitemassociation
 name: "mobileofflineprofileitemassociation"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement mobileofflineprofileitemassociation EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e7a70b20-cf61-423c-b2b0-bf740cfd368a
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the mobileofflineprofileitemassociation entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service mobileofflineprofileitemassociation entitytype."
 description: "Information on relationships to be used to follow related entity's records for mobile offline profile item."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/mobileofflineprofileitemassociations"
@@ -241,9 +241,9 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

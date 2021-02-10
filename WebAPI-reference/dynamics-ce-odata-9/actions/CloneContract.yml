@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CloneContract
 name: "CloneContract"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CloneContract Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b602ab4d-e486-463e-a34e-d962d6860ec1
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the CloneContract Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service CloneContract Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Copies an existing contract and its line items. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -34,9 +34,9 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.contract
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

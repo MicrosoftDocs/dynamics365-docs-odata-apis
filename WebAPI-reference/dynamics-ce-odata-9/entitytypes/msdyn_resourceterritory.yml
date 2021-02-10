@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_resourceterritory
 name: "msdyn_resourceterritory"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_resourceterritory EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8df520b4-e8c8-4045-a45c-6088b50b7db1
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_resourceterritory entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_resourceterritory entitytype."
 description: "Allows to specify for which territory a resource could provide services for"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_resourceterritories"
@@ -219,6 +219,15 @@ collection_valued_navigation_properties:
   - name: msdyn_resourceterritory_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_msdyn_resourceterritory_letter
+  - name: msdyn_resourceterritory_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_resourceterritory_li_inmail
+  - name: msdyn_resourceterritory_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_resourceterritory_li_message
+  - name: msdyn_resourceterritory_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_resourceterritory_li_pointdrivepresentationviewed
   - name: msdyn_resourceterritory_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_resourceterritory
@@ -228,6 +237,15 @@ collection_valued_navigation_properties:
   - name: msdyn_resourceterritory_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_msdyn_resourceterritory_msdyn_bookingalert
+  - name: msdyn_resourceterritory_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_resourceterritory_msfp_alert
+  - name: msdyn_resourceterritory_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_resourceterritory_msfp_surveyinvite
+  - name: msdyn_resourceterritory_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_resourceterritory_msfp_surveyresponse
   - name: msdyn_resourceterritory_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_resourceterritory_phonecall
@@ -276,9 +294,15 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_24
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

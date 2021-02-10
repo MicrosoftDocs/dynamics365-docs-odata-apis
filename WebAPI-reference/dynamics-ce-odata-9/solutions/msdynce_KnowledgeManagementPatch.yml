@@ -3,32 +3,36 @@ uid: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementPatch
 name: "Knowledge Management Patch"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Knowledge Management Patch Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Knowledge Management Patch Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: e46f2de9-6301-40c0-895f-3c711459c344
-  author: "KumarVivek"
+  ms.assetid: ffa6272f-37f4-406d-a221-6c9f77ea9772
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Knowledge Management Patch Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Knowledge Management Patch Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for knowledge management."
  unique_name: msdynce_KnowledgeManagementPatch
- version: "9.0.1.1092"
- customization_prefix: none
+ version: "9.0.1.3575"
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
+   - type: Microsoft.Dynamics.CRM.category
+     description: "Entity for categorizing records to make it easier for your customers to find them on portals and through search."
    - type: Microsoft.Dynamics.CRM.connection
      description: "Relationship between two entities."
+   - type: Microsoft.Dynamics.CRM.feedback
+     description: "Container for feedback and ratings for knowledge articles."
    - type: Microsoft.Dynamics.CRM.knowledgearticle
      description: "Organizational knowledge for internal and external use."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

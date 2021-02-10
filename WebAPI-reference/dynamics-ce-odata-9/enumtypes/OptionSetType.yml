@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.OptionSetType
 name: "OptionSetType"
 type: enumtype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement OptionSetType EnumType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service OptionSetType EnumType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 47ff322a-813f-4831-8a92-dcc484a0114f
-  author: "KumarVivek"
+  author: "kumarVivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API OptionSetType ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API OptionSetType ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "Indicates the type of option set. " 
 members:
@@ -38,9 +38,9 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.ComplexOptionSetMetadata
     used_as: Property
-# This enum type has no remarks.
+# There are no remarks for this enum type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

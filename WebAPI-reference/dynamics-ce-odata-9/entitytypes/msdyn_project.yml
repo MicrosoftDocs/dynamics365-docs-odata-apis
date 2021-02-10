@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_project
 name: "msdyn_project"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_project EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1ad0b5f3-65cd-4e51-aab3-6a815b539deb
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_project entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_project entitytype."
 description: "Delivery entity in an engagement."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_projects"
@@ -67,43 +67,43 @@ properties:
     - name: msdyn_actualexpensecost
       type: Edm.Decimal
       display_name: "Actual Expense Cost"
-      description: "Shows the aggregate of actual expense cost on the project."
+      description: "Shows the aggregate of actual expense cost on the project. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: false
     - name: msdyn_actualexpensecost_base
       type: Edm.Decimal
       display_name: "Actual Expense Cost (Base)"
-      description: "Value of the Actual Expense Cost in base currency."
+      description: "Value of the Actual Expense Cost in base currency. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: true
     - name: msdyn_actualhours
       type: Edm.Decimal
       display_name: "Actual Hours"
-      description: "Shows the total actual hours of the project"
+      description: "Shows the total actual hours of the project. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: false
     - name: msdyn_actuallaborcost
       type: Edm.Decimal
       display_name: "Actual Labor Cost"
-      description: "Shows the aggregate of actual labor cost on the project."
+      description: "Shows the aggregate of actual labor cost on the project. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: false
     - name: msdyn_actuallaborcost_base
       type: Edm.Decimal
       display_name: "Actual Labor Cost (Base)"
-      description: "Value of the Actual Labor Cost in base currency."
+      description: "Value of the Actual Labor Cost in base currency. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: true
     - name: msdyn_actualsales
       type: Edm.Decimal
       display_name: "Actual Sales"
-      description: "Shows the actual sales value."
+      description: "Shows the actual sales value. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: false
     - name: msdyn_actualsales_base
       type: Edm.Decimal
       display_name: "Actual Sales (Base)"
-      description: "Shows the value of the actual sales in the base currency."
+      description: "Shows the value of the actual sales in the base currency. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: true
     - name: msdyn_actualstart
@@ -115,7 +115,7 @@ properties:
     - name: msdyn_bulkgenerationstatus
       type: Edm.Int32
       display_name: "Bulk Generation Status"
-      description: "The status of the bulk generation operations running on the project entity. If no operation is running, the value is null."
+      description: "The status of the bulk generation operations running on the project entity. If no operation is running, the value is null. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: false
       options:
@@ -138,25 +138,25 @@ properties:
     - name: msdyn_costconsumption
       type: Edm.Decimal
       display_name: "Cost Consumption %"
-      description: "Shows the actual cost divided by the estimated cost at completion."
+      description: "Shows the actual cost divided by the estimated cost at completion. System Field - For PSA Use Only."
       iscomputed: true
-      isreadonly: true
+      isreadonly: false
     - name: msdyn_costestimateatcomplete
       type: Edm.Decimal
       display_name: "Cost estimate at completion (EAC)"
-      description: "Sum of Actual Cost and Remaining cost"
+      description: "Sum of Actual Cost and Remaining cost. System Field - For PSA Use Only."
       iscomputed: true
       isreadonly: true
     - name: msdyn_costestimateatcomplete_base
       type: Edm.Decimal
       display_name: "Cost estimate at completion (EAC)(Base)"
-      description: "Value of the Cost estimate at completion (EAC) in base currency."
+      description: "Value of the Cost estimate at completion (EAC) in base currency. System Field - For PSA Use Only."
       iscomputed: true
       isreadonly: true
     - name: msdyn_costperformence
       type: Edm.Int32
       display_name: "Cost Performance"
-      description: ""
+      description: "System Field - For PSA Use Only."
       iscomputed: true
       isreadonly: true
       options:
@@ -169,13 +169,13 @@ properties:
     - name: msdyn_costvariance
       type: Edm.Decimal
       display_name: "Cost Variance"
-      description: "Variance between the estimated cost and the forecasted cost based on the estimate at completion (EAC)."
+      description: "Variance between the estimated cost and the forecasted cost based on the estimate at completion (EAC). System Field - For PSA Use Only."
       iscomputed: true
       isreadonly: true
     - name: msdyn_costvariance_base
       type: Edm.Decimal
       display_name: "Cost Variance (Base)"
-      description: "Shows the value of the cost variance in the base currency."
+      description: "Shows the value of the cost variance in the base currency. System Field - For PSA Use Only."
       iscomputed: true
       isreadonly: true
     - name: msdyn_description
@@ -187,7 +187,7 @@ properties:
     - name: msdyn_disablecreateofteammemberformanager
       type: Edm.Boolean
       display_name: "Disable create of team member for project manager"
-      description: "This is an internal field, mainly used during import so that we don't create a team member record for the project manager."
+      description: "This is an internal field, mainly used during import so that we don't create a team member record for the project manager. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: false
       options:
@@ -210,7 +210,7 @@ properties:
     - name: msdyn_islinkedtomsprojectclient
       type: Edm.Boolean
       display_name: "Is Linked To MS Project Client"
-      description: "Specifies if the project is linked to a project in MS Project"
+      description: "Specifies if the project is linked to a project in MS Project. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: false
       options:
@@ -221,7 +221,7 @@ properties:
     - name: msdyn_istemplate
       type: Edm.Boolean
       display_name: "Is Template"
-      description: "Shows if the project is a project template."
+      description: "Shows if the project is a project template. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: false
       options:
@@ -232,7 +232,7 @@ properties:
     - name: msdyn_linkeddocumenturl
       type: Edm.String
       display_name: "Linked Document URL"
-      description: "The URL for the linked document."
+      description: "The URL for the linked document. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: false
     - name: msdyn_overallprojectstatus
@@ -257,7 +257,7 @@ properties:
     - name: msdyn_plannedexpensecost_base
       type: Edm.Decimal
       display_name: "Estimated Expense Cost (Base)"
-      description: "Value of the Estimated Expense Cost in base currency."
+      description: "Value of the Estimated Expense Cost in base currency. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: true
     - name: msdyn_plannedhours
@@ -275,19 +275,19 @@ properties:
     - name: msdyn_plannedlaborcost_base
       type: Edm.Decimal
       display_name: "Estimated Labor Cost (Base)"
-      description: "Value of the Estimated Labor Cost in base currency."
+      description: "Value of the Estimated Labor Cost in base currency. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: true
     - name: msdyn_plannedsales
       type: Edm.Decimal
       display_name: "Planned Sales"
-      description: "Shows the total planned sales."
+      description: "Shows the total planned sales. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: false
     - name: msdyn_plannedsales_base
       type: Edm.Decimal
       display_name: "Planned Sales (Base)"
-      description: "Shows the value of the planned sales in the base currency."
+      description: "Shows the value of the planned sales in the base currency. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: true
     - name: msdyn_progress
@@ -803,25 +803,39 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_AutoGenerateProjectTeam
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_CopyProject
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_CopyRelatedProjectEntitiesFromTemplate
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_CopyWbsToProject
     binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_CreateTaskBasedEstimatesForProject
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_CreateTemplateFromProject
     binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_FetchProjectCalendarWorkHours
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_GetEstimatesforProject
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_GetProjectCurrencies
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_JoinProjectTeam
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_MoveProject
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_MSProject_ExportToProject
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_MSProject_LinkToProject
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_MSProject_PublishToExistingProject
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_MSProject_ReadFromExistingProject
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_MSProject_UnlinkFromProject
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_RefreshProjectActuals
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_UpdateAllEstimatesForProject
     binding_type: "Entity"
@@ -834,11 +848,13 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_project entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_GDPROptoutContact
 name: "msdyn_GDPROptoutContact"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_GDPROptoutContact Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 76b49e2f-fce8-4bd5-9ab4-6d3c6718d23a
-  author: "KumarVivek"
+  ms.assetid: ddb3de0f-d7a5-40bb-9f9d-7bd70f0a2f7f
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_GDPROptoutContact Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_GDPROptoutContact Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.SICommon
@@ -31,9 +31,9 @@ parameters:
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.webwizard
 name: "webwizard"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement webwizard EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5db5649b-a6d9-4885-8119-84c82f5ef1ea
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the webwizard entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service webwizard entitytype."
 description: "Definition for a Web-based wizard."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/webwizards"
@@ -194,9 +194,9 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

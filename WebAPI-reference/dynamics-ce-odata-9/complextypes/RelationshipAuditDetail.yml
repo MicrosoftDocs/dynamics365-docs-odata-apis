@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RelationshipAuditDetail
 name: "RelationshipAuditDetail"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RelationshipAuditDetail ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service RelationshipAuditDetail ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 6a80fa63-bdb2-4a6d-bd79-23c16270701f
-  author: "KumarVivek"
+  ms.assetid: b0ca6dce-53af-49e0-b08b-7247989de0ad
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API RelationshipAuditDetail ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API RelationshipAuditDetail ComplexType."
 namespace: Microsoft.Dynamics.CRM
 header:
   base_type: Microsoft.Dynamics.CRM.AuditDetail
@@ -34,9 +34,9 @@ navigation_properties:
     description: ""
     iscollection: true
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveExchangeRate
 name: "RetrieveExchangeRate"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveExchangeRate Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveExchangeRate Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8f0b857b-7568-472f-bee1-f6e34b2766ac
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveExchangeRate Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service RetrieveExchangeRate Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the exchange rate.  "
 iscomposable: false
@@ -37,9 +37,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.transactioncurrency
     displayName: "Currency"
     description: "Currency in which a financial transaction is carried out."
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

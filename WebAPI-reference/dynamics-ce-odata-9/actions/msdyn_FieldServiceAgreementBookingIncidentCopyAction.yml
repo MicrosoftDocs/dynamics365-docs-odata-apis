@@ -1,0 +1,54 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_FieldServiceAgreementBookingIncidentCopyAction
+name: "msdyn_FieldServiceAgreementBookingIncidentCopyAction"
+type: action
+metadata: 
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 3e83f107-02d7-4737-b39b-db4e6c5b429c
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_FieldServiceAgreementBookingIncidentCopyAction Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+bound_entities:
+  description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."
+  bound_entity_items:
+  - entity_type: Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
+    binding_type: entity
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: Type
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: ""
+  - name: InputParameter
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+return_type:
+  description: "The msdyn_FieldServiceAgreementBookingIncidentCopyAction action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_FieldServiceAgreementBookingIncidentCopyActionResponse
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

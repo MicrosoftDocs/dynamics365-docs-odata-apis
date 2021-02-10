@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_workorder
 name: "msdyn_workorder"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_workorder EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f62908d5-6f04-4553-bb11-f8a70a26d32b
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_workorder entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_workorder entitytype."
 description: "Work orders store all information about the job performed for an account. Stores incident details, resource, expenses, tasks, communications, billing and more"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_workorders"
@@ -26,7 +26,7 @@ header:
   - DELETE
 namespace: Microsoft.Dynamics.CRM
 properties:
-  description: "Properties represent fields of data stored in the entity. Some properties are read-only."
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
   property_items:
     - name: createdon
       type: Edm.DateTimeOffset
@@ -100,6 +100,12 @@ properties:
       description: ""
       iscomputed: false
       isreadonly: false
+    - name: msdyn_completedon
+      type: Edm.DateTimeOffset
+      display_name: "Completed On"
+      description: "When Bookings are used on a Work Order, this field is auto-populated based on the latest End Time from the related Bookings. Otherwise, this field is populated based on the change of System Status"
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_country
       type: Edm.String
       display_name: "Country/Region"
@@ -130,6 +136,12 @@ properties:
       description: "Shows the value of the estimate subtotal amount in the base currency."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_firstarrivedon
+      type: Edm.DateTimeOffset
+      display_name: "First Arrived On"
+      description: "When Bookings are used on a Work Order, this field is auto-populated based on the earliest Actual Arrival Time from the related Bookings."
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_followupnote
       type: Edm.String
       display_name: "Follow Up Note (Deprecated)"
@@ -313,6 +325,12 @@ properties:
       description: "Shows the value of the total amount in the base currency."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_totalestimatedduration
+      type: Edm.Int32
+      display_name: "Total Estimated Duration"
+      description: "Calculated from the estimated duration of Work Order Incidents and Work Order Service Tasks not related to a Work Order Incident on the Work Order. Intended to be read-only."
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_totalsalestax
       type: Edm.Decimal
       display_name: "Total Sales Tax"
@@ -443,6 +461,10 @@ lookup_properties:
     single_valued_navigation_property:
     - msdyn_customerasset
     description: "Customer Asset related to this incident reported"
+  - name: _msdyn_functionallocation_value
+    single_valued_navigation_property:
+    - msdyn_FunctionalLocation
+    description: "Workorder's functional location"
   - name: _msdyn_iotalert_value
     single_valued_navigation_property:
     - msdyn_IoTAlert
@@ -574,6 +596,9 @@ single_valued_navigation_properties:
   - name: msdyn_customerasset
     type: Microsoft.Dynamics.CRM.msdyn_customerasset
     partner: msdyn_msdyn_customerasset_msdyn_workorder_CustomerAsset
+  - name: msdyn_FunctionalLocation
+    type: Microsoft.Dynamics.CRM.msdyn_functionallocation
+    partner: msdyn_msdyn_functionallocation_msdyn_workorder_FunctionalLocation
   - name: msdyn_IoTAlert
     type: Microsoft.Dynamics.CRM.msdyn_iotalert
     partner: msdyn_msdyn_iotalert_msdyn_workorder_IoTAlert
@@ -715,6 +740,9 @@ collection_valued_navigation_properties:
   - name: msdyn_msdyn_workorder_msdyn_rtvproduct_WorkOrder
     type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
     partner: msdyn_workorder
+  - name: msdyn_msdyn_workorder_msdyn_timeentry_WorkOrder
+    type: Microsoft.Dynamics.CRM.msdyn_timeentry
+    partner: msdyn_WorkOrder
   - name: msdyn_msdyn_workorder_msdyn_workorder_ParentWorkOrder
     type: Microsoft.Dynamics.CRM.msdyn_workorder
     partner: msdyn_parentworkorder_msdyn_workorder
@@ -772,6 +800,15 @@ collection_valued_navigation_properties:
   - name: msdyn_workorder_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_msdyn_workorder_letter
+  - name: msdyn_workorder_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_workorder_li_inmail
+  - name: msdyn_workorder_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_workorder_li_message
+  - name: msdyn_workorder_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_workorder_li_pointdrivepresentationviewed
   - name: msdyn_workorder_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_workorder
@@ -781,6 +818,15 @@ collection_valued_navigation_properties:
   - name: msdyn_workorder_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_msdyn_workorder_msdyn_bookingalert
+  - name: msdyn_workorder_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_workorder_msfp_alert
+  - name: msdyn_workorder_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_workorder_msfp_surveyinvite
+  - name: msdyn_workorder_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_workorder_msfp_surveyresponse
   - name: msdyn_workorder_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_workorder_phonecall
@@ -821,6 +867,8 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_FieldServiceWorkOrderSystemStatusAction
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -834,9 +882,11 @@ solutions:
     description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

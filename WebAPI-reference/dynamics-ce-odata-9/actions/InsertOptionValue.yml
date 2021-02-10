@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.InsertOptionValue
 name: "InsertOptionValue"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement InsertOptionValue Action Reference | MicrosoftDocs"
-  ms.date: "12/08/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 62aa8236-cf75-445e-80c3-2035d693d420
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the InsertOptionValue Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service InsertOptionValue Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Inserts a new option value for a global or local option set.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -20,31 +20,36 @@ isbound: false
 parameters:
   description: "Parameters allow for data to be passed to the action."
   parameter_items:
+  - name: Color
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
   - name: OptionSetName
     type: Edm.String
     nullable: true
     unicode: false
-    description: "Name of the global option set when the option set is global."
+    description: "Reserved for future use."
   - name: AttributeLogicalName
     type: Edm.String
     nullable: true
     unicode: false
-    description: "The logical name of the picklist attribute for a local option set.  "
+    description: "The logical name of the status attribute.  "
   - name: EntityLogicalName
     type: Edm.String
     nullable: true
     unicode: false
-    description: "Logical name of the entity for a local option set. "
+    description: "Logical name of the entity. "
   - name: Value
     type: Edm.Int32
     nullable: true
     unicode: true
-    description: "Value for the new option."
+    description: "Value for the new status."
   - name: Label
     type: Microsoft.Dynamics.CRM.Label
     nullable: true
     unicode: true
-    description: "Label for the new option. "
+    description: "Label for the new status. "
   - name: Description
     type: Microsoft.Dynamics.CRM.Label
     nullable: true
@@ -54,7 +59,7 @@ parameters:
     type: Edm.Int32
     nullable: false
     unicode: true
-    description: "Reserved for future use."
+    description: ""
   - name: SolutionUniqueName
     type: Edm.String
     nullable: true
@@ -66,9 +71,9 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.InsertOptionValueResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

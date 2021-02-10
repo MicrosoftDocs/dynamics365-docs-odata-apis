@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.Rollup
 name: "Rollup"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Rollup Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement Rollup Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 73e29e35-9f12-4e0a-ab1b-cd318311e024
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Rollup Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Rollup Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves all the entity records that are related to the specified record. "
 iscomposable: false
@@ -76,9 +76,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.salesorder
     displayName: "Order"
     description: "Quote that has been accepted."
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

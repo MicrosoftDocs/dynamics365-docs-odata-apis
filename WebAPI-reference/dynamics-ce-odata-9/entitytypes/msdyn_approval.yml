@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_approval
 name: "msdyn_approval"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_approval EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 50429d24-5270-4bd9-bd55-234e5b05fce9
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_approval entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service msdyn_approval entitytype."
 description: "Container for approvals."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_approvals"
@@ -554,6 +554,18 @@ single_valued_navigation_properties:
   - name: regardingobjectid_lead_msdyn_approval
     type: Microsoft.Dynamics.CRM.lead
     partner: lead_msdyn_approvals
+  - name: regardingobjectid_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_ActivityPointers
+  - name: regardingobjectid_ms_newsitem_msdyn_approval
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_msdyn_approvals
+  - name: regardingobjectid_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_ActivityPointers
+  - name: regardingobjectid_ms_satori_msdyn_approval
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_msdyn_approvals
   - name: regardingobjectid_msdyn_agreement
     type: Microsoft.Dynamics.CRM.msdyn_agreement
     partner: msdyn_agreement_ActivityPointers
@@ -710,6 +722,12 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_paymentterm_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_paymentterm
     partner: msdyn_paymentterm_msdyn_approvals
+  - name: regardingobjectid_msdyn_playbookinstance
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_ActivityPointers
+  - name: regardingobjectid_msdyn_playbookinstance_msdyn_approval
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_msdyn_approvals
   - name: regardingobjectid_msdyn_postalbum
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: msdyn_postalbum_ActivityPointers
@@ -1028,12 +1046,30 @@ collection_valued_navigation_properties:
   - name: activity_pointer_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: activityid_activitypointer
+  - name: activity_pointer_li_inmail
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: activityid_li_inmail
+  - name: activity_pointer_li_message
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: activityid_li_message
+  - name: activity_pointer_li_pointdrivepresentationviewed
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: activityid_li_pointdrivepresentationviewed
   - name: activity_pointer_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: activityid_msdyn_approval
   - name: activity_pointer_msdyn_bookingalert
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: activityid_msdyn_bookingalert
+  - name: activity_pointer_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: activityid_msfp_alert
+  - name: activity_pointer_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: activityid_msfp_surveyinvite
+  - name: activity_pointer_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: activityid_msfp_surveyresponse
   - name: activity_pointer_opportunity_close
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: activityid_activitypointer
@@ -1152,11 +1188,13 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_approval entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

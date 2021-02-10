@@ -3,26 +3,30 @@ uid: Microsoft.Dynamics.CRM.msdynce_MarketingUpdateListMetadata
 name: "Marketing Update List Metadata"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Marketing Update List Metadata Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Marketing Update List Metadata Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 7c37138f-779c-40dd-a9ef-cae475f93f1c
-  author: "KumarVivek"
+  ms.assetid: 125079c5-71e8-4a18-9924-b22eb805c554
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Marketing Update List Metadata Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Marketing Update List Metadata Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Updates the attribute for mobile client availability of Marketing List"
  unique_name: msdynce_MarketingUpdateListMetadata
- version: "9.0.2003.3004"
+ version: "9.0.2009.3003"
  customization_prefix: msdyn
 # This solution includes no entities.
-# This solution includes no actions.
-# This solution has no remarks.
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_MarketingListMetadataUpdate
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

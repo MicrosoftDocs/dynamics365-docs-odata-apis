@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CommitAttachmentBlocksUploadResponse
 name: "CommitAttachmentBlocksUploadResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CommitAttachmentBlocksUploadResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service CommitAttachmentBlocksUploadResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 961e8335-6f0a-406f-b317-a77677cf2296
-  author: "KumarVivek"
+  ms.assetid: e18b9c0a-4f21-4ac3-a59b-605d2403c0da
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API CommitAttachmentBlocksUploadResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API CommitAttachmentBlocksUploadResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -36,9 +36,9 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.CommitAttachmentBlocksUpload
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

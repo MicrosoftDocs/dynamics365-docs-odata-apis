@@ -3,18 +3,18 @@ uid: Microsoft.Dynamics.CRM.SolutionDetails
 name: "SolutionDetails"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SolutionDetails ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service SolutionDetails ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 0027a895-2a3d-4b2c-846c-5131f81ad712
-  author: "KumarVivek"
+  ms.assetid: c4e06348-2256-4c0e-b2e0-a87f0b54360d
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API SolutionDetails ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Web API SolutionDetails ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
-description: "" 
+description: "Provides detailed information about a solution." 
 properties:
   description: "The properties of a complex type contain the structured data of the type."
   property_items:
@@ -22,91 +22,91 @@ properties:
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "Solution name that is unique in the target environment."
     iscollection: false
   - name: SolutionFriendlyName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "User-friendly display name for the solution."
     iscollection: false
   - name: SolutionDescription
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "Description of the solution."
     iscollection: false
   - name: PublisherUniqueName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "”Publisher name that is unique in the target environment."
     iscollection: false
   - name: PublisherFriendlyName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "User-friendly display name for the publisher."
     iscollection: false
   - name: PreviousSolutionUniqueName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The solution’s previous unique name."
     iscollection: false
   - name: PreviousSolutionFriendlyName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The solution’s previous user-friendly name."
     iscollection: false
   - name: PreviousPublisherUniqueName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The previous unique name of the solution publisher."
     iscollection: false
   - name: PreviousPublisherFriendlyName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The previous user-friendly name of the solution publisher."
     iscollection: false
   - name: IsPatchSolution
     type: Edm.Boolean
     nullable: true
     unicode: true
-    description: ""
+    description: "True if the solution is managed; otherwise false."
     iscollection: false
   - name: IsManaged
     type: Edm.Boolean
     nullable: true
     unicode: true
-    description: ""
+    description: "True is the solution was previously managed; otherwise false."
     iscollection: false
   - name: PreviousIsManaged
     type: Edm.Boolean
     nullable: true
     unicode: true
-    description: ""
+    description: "Results of the validation pass on the staged solution."
     iscollection: false
   - name: SolutionVersion
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The solution version."
     iscollection: false
   - name: PreviousSolutionVersion
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The previous solution version."
     iscollection: false
   - name: PreviousPatchSolutionsNames
     type: Edm.String
     nullable: false
     unicode: false
-    description: ""
+    description: "A collection of previous names for the solution patch."
     iscollection: true
 # This complex type doesn't have any navigation properties.
 usedby:
@@ -114,9 +114,9 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.StageSolutionResults
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -3,26 +3,42 @@ uid: Microsoft.Dynamics.CRM.msdynce_SalesHealth
 name: "Sales Health"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Sales Health Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Common Data Service Sales Health Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 038f1e29-e61e-4393-8324-289f602bc35a
-  author: "KumarVivek"
+  ms.assetid: f2995ec0-1b14-480c-87a6-886a5294b200
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Sales Health Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Sales Health Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Sales Health introduces rules to evaluate the health of any Sales implementation. New rules will be shipped regularly to highlight fixes and improvements to Field Service configurations. Analysis jobs can be triggered from the Solution Health Hub."
  unique_name: msdynce_SalesHealth
- version: "9.0.2001.2003"
+ version: "9.0.2003.4016"
  customization_prefix: msdyn
 # This solution includes no entities.
-# This solution includes no actions.
-# This solution has no remarks.
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckAnyUserIsIntegrationUser
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckFetchXmlAndLayoutXmlOfSavedQueries
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckIfSalesFormsFromUnmanagedLayer
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckOrgSettingIsSOPIntegrationEnabled
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckOrgSettingOOBPriceCalculationEnabled
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckReqRibbonCommandDef
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckReqWebResourceOnSystemForm
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Common Data Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
