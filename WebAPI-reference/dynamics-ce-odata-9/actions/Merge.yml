@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.Merge
 name: "Merge"
 type: action
 metadata: 
-  title: "Common Data Service Action Reference | MicrosoftDocs"
+  title: "Dataverse Action Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service Merge Action."
+  meta-description: "Reference information about the Dataverse Merge Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Merges the information from two entity records of the same type. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -59,8 +59,8 @@ entities:
     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

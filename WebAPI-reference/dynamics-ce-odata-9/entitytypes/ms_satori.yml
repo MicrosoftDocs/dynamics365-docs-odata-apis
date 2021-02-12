@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.ms_satori
 name: "ms_satori"
 type: entitytype
 metadata: 
-  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service ms_satori entitytype."
+  meta-description: "Reference information about the Dataverse ms_satori entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/ms_satoris"
@@ -314,8 +314,8 @@ solutions:
     description: "You can now view news related to an Account, Lead, Contact or Opportunity in the CRM app on your mobile device. The Company news timeline solution for mobile enables sales and service users to view the latest and most important news in the mobile client from Bing news. The news articles are organized by time (Today, This Week, Last Week) and contain the headline, date/time, and source of the news article.  Important events are detected and categorized (including Management Changes, Earnings Releases, New Offerings, Cost Cutting, Growth, Legal Issues, Acquisitions and Partnerships)."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

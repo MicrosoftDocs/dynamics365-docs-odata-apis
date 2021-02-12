@@ -12,7 +12,7 @@ manager: "Annbe"
 # Web API Reference 
 This section contains reference documentation of the types, functions, and actions that constitute the Web API for Microsoft Dataverse and Dynamics 365 Customer Engagement (on-premises). More information:
 
-- [Use the Microsoft Dataverse Web API](/powerapps/developer/common-data-service/webapi/overview)
+- [Use the Microsoft Dataverse Web API](/powerapps/developer/data-platform/webapi/overview)
 
 - [Use the Microsoft Dynamics 365 Customer Engagement (on-premises) Web API](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api) 
 
@@ -50,6 +50,6 @@ objects available to use in the Web API.
   
 ## Related Sections  
 
- [Use the Microsoft Dataverse Web API](/powerapps/developer/common-data-service/webapi/overview)<br/>
+ [Use the Microsoft Dataverse Web API](/powerapps/developer/data-platform/webapi/overview)<br/>
  [Use the Dynamics 365 Customer Engagement (on-premises) Web API](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api)
 

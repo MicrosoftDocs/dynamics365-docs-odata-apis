@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.AppforOutlookPatch
 name: "Patch for Dynamics 365 App for Outlook"
 type: solution
 metadata: 
-  title: "Common Data Service Patch for Dynamics 365 App for Outlook Solution Reference | MicrosoftDocs"
+  title: "Dataverse Patch for Dynamics 365 App for Outlook Solution Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service Patch for Dynamics 365 App for Outlook Solution."
+  meta-description: "Reference information about the Dataverse Patch for Dynamics 365 App for Outlook Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Microsoft Dynamics 365 App for Outlook is an Office add-in that you can quickly add to your users’ mailbox so they can track communication and review Dynamics 365 applications’ information in Outlook."
@@ -32,8 +32,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

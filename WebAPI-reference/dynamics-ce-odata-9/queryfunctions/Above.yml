@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.Above
 name: "Above"
 type: queryfunction
 metadata: 
-  title: "Common Data Service Above Query Function Reference | MicrosoftDocs"
+  title: "Dataverse Above Query Function Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service Above Query Function."
+  meta-description: "Reference information about the Dataverse Above Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function that evaluates whether the entity is above the referenced entity in the hierarchy.  "
 parameters:
@@ -30,8 +30,8 @@ parameters:
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.Above(PropertyName=@p1,PropertyValue=@p2)&@p1='name'&@p2='value'"
 # There are no remarks for this query function.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

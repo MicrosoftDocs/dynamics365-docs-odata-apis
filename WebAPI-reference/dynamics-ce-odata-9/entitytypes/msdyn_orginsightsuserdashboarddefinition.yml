@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
 name: "msdyn_orginsightsuserdashboarddefinition"
 type: entitytype
 metadata: 
-  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service msdyn_orginsightsuserdashboarddefinition entitytype."
+  meta-description: "Reference information about the Dataverse msdyn_orginsightsuserdashboarddefinition entitytype."
 description: "OrgInsights User Dashboard Definition"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_orginsightsuserdashboarddefinitions"
@@ -228,8 +228,8 @@ solutions:
     description: "Insights into usage and activities for your Microsoft Dynamics 365 (online) organization."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

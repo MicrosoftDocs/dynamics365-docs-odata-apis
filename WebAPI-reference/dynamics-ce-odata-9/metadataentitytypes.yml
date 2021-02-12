@@ -1,7 +1,7 @@
 ### YamlMime:ODataIndex
 uid: Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
 name: Web API Metadata EntityType Reference
-title: "Common Data Service Web API Metadata EntityType Reference | MicrosoftDocs"
+title: "Dataverse Web API Metadata EntityType Reference | MicrosoftDocs"
 metadata:   
   ms.date: "02/10/2021"
   ms.service: "powerapps"

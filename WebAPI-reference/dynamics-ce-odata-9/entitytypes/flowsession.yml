@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.flowsession
 name: "flowsession"
 type: entitytype
 metadata: 
-  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service flowsession entitytype."
+  meta-description: "Reference information about the Dataverse flowsession entitytype."
 description: "Entity to store the information that is generated when a modern flow or UI flow runs."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/flowsessions"
@@ -324,8 +324,8 @@ solutions:
     description: ""
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

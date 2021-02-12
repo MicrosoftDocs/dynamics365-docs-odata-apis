@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.LinkEntity
 name: "LinkEntity"
 type: complextype
 metadata: 
-  title: "Common Data Service LinkEntity ComplexType Reference | MicrosoftDocs"
+  title: "Dataverse LinkEntity ComplexType Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service Web API LinkEntity ComplexType."
+  meta-description: "Reference information about the Dataverse Web API LinkEntity ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Specifies the links between multiple entity types used in creating complex queries." 
@@ -88,8 +88,8 @@ usedby:
     used_as: Property
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

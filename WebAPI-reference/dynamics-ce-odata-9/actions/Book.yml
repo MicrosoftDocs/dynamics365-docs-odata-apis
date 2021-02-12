@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.Book
 name: "Book"
 type: action
 metadata: 
-  title: "Common Data Service Action Reference | MicrosoftDocs"
+  title: "Dataverse Action Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service Book Action."
+  meta-description: "Reference information about the Dataverse Book Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Schedules or \"books\" an appointment, recurring appointment, or service appointment (service activity). "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -49,8 +49,8 @@ entities:
     description: "Activity offered by the organization to satisfy its customer's needs. Each service activity includes date, time, duration, and required resources."
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

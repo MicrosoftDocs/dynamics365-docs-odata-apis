@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.CreateException
 name: "CreateException"
 type: action
 metadata: 
-  title: "Common Data Service Action Reference | MicrosoftDocs"
+  title: "Dataverse Action Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service CreateException Action."
+  meta-description: "Reference information about the Dataverse CreateException Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Creates an exception for the recurring appointment instance. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -51,8 +51,8 @@ entities:
     description: "Commitment representing a time interval with start/end times and duration."
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

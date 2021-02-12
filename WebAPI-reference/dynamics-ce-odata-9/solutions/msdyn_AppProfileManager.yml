@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.msdyn_AppProfileManager
 name: "App profile manager"
 type: solution
 metadata: 
-  title: "Common Data Service App profile manager Solution Reference | MicrosoftDocs"
+  title: "Dataverse App profile manager Solution Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service App profile manager Solution."
+  meta-description: "Reference information about the Dataverse App profile manager Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "App profile manager helps you to create targeted user experiences for your agents and supervisors by specifying the channels and tools that should be available to solve the customer issues"
@@ -46,8 +46,8 @@ actions:
      description: ""
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service RetrieveByGroupResource Function."
+  meta-description: "Reference information about the Dataverse RetrieveByGroupResource Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves all resources that are related to the specified resource group  "
 iscomposable: true
@@ -36,8 +36,8 @@ entities:
     description: "User or facility/equipment that can be scheduled for a service."
 # There are no remarks for this function.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

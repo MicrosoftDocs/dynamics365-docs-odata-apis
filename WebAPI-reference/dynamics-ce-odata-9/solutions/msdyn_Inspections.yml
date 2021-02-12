@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.msdyn_Inspections
 name: "Inspections"
 type: solution
 metadata: 
-  title: "Common Data Service Inspections Solution Reference | MicrosoftDocs"
+  title: "Dataverse Inspections Solution Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service Inspections Solution."
+  meta-description: "Reference information about the Dataverse Inspections Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Enable Inspections in Dynamics 365."
@@ -38,8 +38,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

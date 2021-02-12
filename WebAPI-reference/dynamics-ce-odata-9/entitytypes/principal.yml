@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.principal
 name: "principal"
 type: entitytype
 metadata: 
-  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service principal entitytype."
+  meta-description: "Reference information about the Dataverse principal entitytype."
 description: "Group of undeleted system users and undeleted teams. Owners can be used to control access to specific objects."
 header:
   # This entity doesn't have an entitysetname
@@ -1207,8 +1207,8 @@ derived_types:
 # This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

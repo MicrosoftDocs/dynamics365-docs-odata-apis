@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.entitydataprovider
 name: "entitydataprovider"
 type: entitytype
 metadata: 
-  title: "Common Data Service EntityType Reference | MicrosoftDocs"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service entitydataprovider entitytype."
+  meta-description: "Reference information about the Dataverse entitydataprovider entitytype."
 description: "Developers can register plug-ins on a data provider to enable data access for virtual entities in the system."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/entitydataproviders"
@@ -188,8 +188,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

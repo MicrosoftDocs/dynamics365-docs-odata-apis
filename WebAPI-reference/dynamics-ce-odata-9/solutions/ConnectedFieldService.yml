@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.ConnectedFieldService
 name: "Connected Field Service for Microsoft Dynamics 365"
 type: solution
 metadata: 
-  title: "Common Data Service Connected Field Service for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
+  title: "Dataverse Connected Field Service for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service Connected Field Service for Microsoft Dynamics 365 Solution."
+  meta-description: "Reference information about the Dataverse Connected Field Service for Microsoft Dynamics 365 Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
@@ -42,8 +42,8 @@ actions:
      description: ""
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service RetrieveUnpublished Function."
+  meta-description: "Reference information about the Dataverse RetrieveUnpublished Function."
 namespace: Microsoft.Dynamics.CRM
 description: ""
 iscomposable: true
@@ -57,8 +57,8 @@ entities:
     description: "Information on relationships to be used to follow related entity's records for mobile offline profile item."
 # There are no remarks for this function.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

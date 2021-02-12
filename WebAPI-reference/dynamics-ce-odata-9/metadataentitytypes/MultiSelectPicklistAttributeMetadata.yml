@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.MultiSelectPicklistAttributeMetadata
 name: "MultiSelectPicklistAttributeMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Common Data Service MultiSelectPicklistAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
+  title: "Dataverse MultiSelectPicklistAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
   ms.date: "02/10/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service MultiSelectPicklistAttributeMetadata metadata entitytype."
+  meta-description: "Reference information about the Dataverse MultiSelectPicklistAttributeMetadata metadata entitytype."
 header: 
 # This entity has no description.
   base_type: Microsoft.Dynamics.CRM.EnumAttributeMetadata
@@ -246,8 +246,8 @@ single_valued_navigation_properties:
 # This entity is not used by other entities or operations.
 # There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Common Data Service Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex
