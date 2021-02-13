@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.entitlement
 name: "entitlement"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement entitlement EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5f36c031-5ac0-47ad-8f32-8dc0c74dd1ea
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the entitlement entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse entitlement entitytype."
 description: "Defines the amount and type of support a customer should receive."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/entitlements"
@@ -197,7 +197,7 @@ properties:
           label: "No"
     - name: stageid
       type: Edm.Guid
-      display_name: "(Deprecated) Stage Id"
+      display_name: "Stage Id"
       description: "Contains the id of the stage where the entity is located."
       iscomputed: false
       isreadonly: false
@@ -255,7 +255,7 @@ properties:
       isreadonly: false
     - name: traversedpath
       type: Edm.String
-      display_name: "(Deprecated) Traversed Path"
+      display_name: "Traversed Path"
       description: "A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur."
       iscomputed: false
       isreadonly: false
@@ -437,6 +437,15 @@ collection_valued_navigation_properties:
   - name: entitlement_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_entitlement_letter
+  - name: entitlement_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_entitlement_li_inmail
+  - name: entitlement_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_entitlement_li_message
+  - name: entitlement_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_entitlement_li_pointdrivepresentationviewed
   - name: Entitlement_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_entitlement
@@ -446,6 +455,15 @@ collection_valued_navigation_properties:
   - name: entitlement_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_entitlement_msdyn_bookingalert
+  - name: entitlement_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_entitlement_msfp_alert
+  - name: entitlement_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_entitlement_msfp_surveyinvite
+  - name: entitlement_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_entitlement_msfp_surveyresponse
   - name: entitlement_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_entitlement_opportunityclose
@@ -482,6 +500,9 @@ collection_valued_navigation_properties:
   - name: entitlementcontacts_association
     type: Microsoft.Dynamics.CRM.contact
     partner: entitlementcontacts_association
+  - name: msdyn_entitlement_msdyn_entitlementapplication_entitlement
+    type: Microsoft.Dynamics.CRM.msdyn_entitlementapplication
+    partner: msdyn_entitlement
   - name: msdyn_entitlement_msdyn_workorderproduct_Entitlement
     type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
     partner: msdyn_Entitlement
@@ -512,16 +533,18 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.msdynce_Service
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch
     description: "Patch for Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
     description: "Dynamics 365 workload for service."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

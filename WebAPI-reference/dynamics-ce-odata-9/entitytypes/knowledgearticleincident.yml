@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.knowledgearticleincident
 name: "knowledgearticleincident"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement knowledgearticleincident EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 96de4e8d-5cec-4b44-84c3-f5e9e214e04d
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the knowledgearticleincident entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse knowledgearticleincident entitytype."
 description: "Association between an knowledge article and incident."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/knowledgearticleincidents"
@@ -233,10 +233,10 @@ solutions:
     description: "Patch for Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
     description: "Dynamics 365 workload for service."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

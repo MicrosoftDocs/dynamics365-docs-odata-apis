@@ -2,18 +2,18 @@
 uid: Microsoft.Dynamics.CRM.RevokeAccess
 name: "RevokeAccess"
 type: action
-metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RevokeAccess Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+metadata:
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 362a2d8f-b543-4994-b87c-6ede3ca5e7f6
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RevokeAccess Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse RevokeAccess Action."
 namespace: Microsoft.Dynamics.CRM
-description: "Replaces the access rights on the target record for the specified security principal (organization, user, or team).  "
+description: "Replaces the access rights on the target record for the specified security principal (user or team).  "
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
@@ -92,9 +92,6 @@ entities:
   - type: Microsoft.Dynamics.CRM.connection
     displayName: Connection
     description: "Relationship between two entities."
-  - type: Microsoft.Dynamics.CRM.connectionreference
-    displayName: Connection Reference
-    description: ""
   - type: Microsoft.Dynamics.CRM.connector
     displayName: Connector
     description: "Connector Entity to support Solutioning Integration"
@@ -116,12 +113,18 @@ entities:
   - type: Microsoft.Dynamics.CRM.entitlement
     displayName: Entitlement
     description: "Defines the amount and type of support a customer should receive."
+  - type: Microsoft.Dynamics.CRM.entitlemententityallocationtypemapping
+    displayName: Entitlement Entity Allocation Type Mapping
+    description: "Mapping to define which Allocation Types are available for Entity Type to be used on Entitlement"
   - type: Microsoft.Dynamics.CRM.environmentvariabledefinition
     displayName: Environment Variable Definition
     description: "Contains information about the settable variable: its type, default value, and etc."
   - type: Microsoft.Dynamics.CRM.environmentvariablevalue
     displayName: Environment Variable Value
     description: "Holds the value for the associated EnvironmentVariableDefinition entity."
+  - type: Microsoft.Dynamics.CRM.exportsolutionupload
+    displayName: ExportSolutionUpload
+    description: ""
   - type: Microsoft.Dynamics.CRM.fax
     displayName: Fax
     description: "Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document."
@@ -167,9 +170,21 @@ entities:
   - type: Microsoft.Dynamics.CRM.letter
     displayName: Letter
     description: "Activity that tracks the delivery of a letter. The activity can contain the electronic copy of the letter."
+  - type: Microsoft.Dynamics.CRM.li_inmail
+    displayName: inMail
+    description: "Custom Activity entity to store LinkedIn inMail records."
+  - type: Microsoft.Dynamics.CRM.li_message
+    displayName: Message
+    description: "Custom Activity entity to store LinkedIn Message records."
+  - type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    displayName: Smart Links Content Viewed
+    description: "Custom Activity entity to store Smart Links Content Viewed records."
   - type: Microsoft.Dynamics.CRM.list
     displayName: Marketing List
     description: "Group of existing or potential customers created for a marketing campaign or other sales purposes."
+  - type: Microsoft.Dynamics.CRM.listoperation
+    displayName: List Operation
+    description: "System operation used to perform lengthy and asynchronous list operations on large data sets, such as adding members to a list."
   - type: Microsoft.Dynamics.CRM.mailbox
     displayName: Mailbox
     description: ""
@@ -179,6 +194,12 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
     displayName: Account Project Price List
     description: "Sales price list for this customer to capture special pricing agreements for products, roles and categories."
+  - type: Microsoft.Dynamics.CRM.msdyn_actioncardregarding
+    displayName: Action Card Regarding
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_actioncardrolesetting
+    displayName: Action Card Role Setting
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_actual
     displayName: Actual
     description: ""
@@ -269,9 +290,39 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_analysisresultdetail
     displayName: Analysis Result Detail
     description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_analyticsadminsettings
+    displayName: (Deprecated) Data Analytics Admin Settings
+    description: "(Deprecated)"
+  - type: Microsoft.Dynamics.CRM.msdyn_analyticsforcs
+    displayName: (Deprecated) Dynamics Customer Service Analytics
+    description: "(Deprecated) Controls access to Analytics Reporting Sitemap in Dynamics Customer Service App"
+  - type: Microsoft.Dynamics.CRM.msdyn_appconfiguration
+    displayName: App profile
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_applicationextension
+    displayName: Application Extension
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_applicationtabtemplate
+    displayName: Application Tab Template
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_approval
     displayName: Project Service Approval
     description: "Container for approvals."
+  - type: Microsoft.Dynamics.CRM.msdyn_assetcategorytemplateassociation
+    displayName: Asset Category Template Association
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_assettemplateassociation
+    displayName: Asset Template Association
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_autocapturerule
+    displayName: Auto Capture Rule
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_autocapturesettings
+    displayName: Auto Capture Settings
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_bookableresourceassociation
+    displayName: Bookable Resource Association
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     displayName: Booking Alert
     description: "Alerts that notify schedule board users of booking issues or information."
@@ -293,6 +344,15 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
     displayName: Booking Timestamp
     description: "Tracks status changes of bookings and timestamps the change of the status"
+  - type: Microsoft.Dynamics.CRM.msdyn_businessclosure
+    displayName: Business Closure
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_callablecontext
+    displayName: Playbook Callable Context
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_channelprovider
+    displayName: Channel Provider
+    description: "Entity that will hold the information (configuration) about a channel provider"
   - type: Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember
     displayName: Competency Requirement (Deprecated)
     description: "Characteristic requirement for team member"
@@ -302,21 +362,54 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_configuration
     displayName: Configuration
     description: "This entity is used to store queries and templates."
+  - type: Microsoft.Dynamics.CRM.msdyn_connector
+    displayName: Connector
+    description: "Connector Entity to support Solutioning Integration"
   - type: Microsoft.Dynamics.CRM.msdyn_contactpricelist
     displayName: Contact Price List
     description: "Specific sales price list for this customer to capture special pricing agreements for products, roles, and categories."
+  - type: Microsoft.Dynamics.CRM.msdyn_contractlinedetailperformance
+    displayName: Contract Line Detail Performance
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_contractlinescheduleofvalue
     displayName: Project Contract Line Milestone
     description: "List of billing milestones and invoice amounts for this project contract line."
+  - type: Microsoft.Dynamics.CRM.msdyn_contractperformance
+    displayName: Contract Performance
+    description: "Data related to contract and contractline performance"
   - type: Microsoft.Dynamics.CRM.msdyn_customerasset
     displayName: Customer Asset
-    description: "Specify customer asset."
+    description: "Specify Customer Asset."
+  - type: Microsoft.Dynamics.CRM.msdyn_customerassetattachment
+    displayName: Customer Asset Attachment
+    description: "Attachments for Customer Asset"
+  - type: Microsoft.Dynamics.CRM.msdyn_customerassetcategory
+    displayName: Customer Asset Category
+    description: "The Category of Customer Asset."
+  - type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport
+    displayName: Data Analytics Report
+    description: "Data Analytics Reports"
   - type: Microsoft.Dynamics.CRM.msdyn_dataexport
     displayName: Actual Data Export (Deprecated)
     description: "Data export entity for the actual entity."
+  - type: Microsoft.Dynamics.CRM.msdyn_dataflow
+    displayName: Dataflow
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_delegation
     displayName: Delegation
     description: "Delegation of time, expense entities among users"
+  - type: Microsoft.Dynamics.CRM.msdyn_dimension
+    displayName: Pricing Dimension
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_entitlementapplication
+    displayName: Entitlement Application
+    description: "Entitlement Application that will drive automatic application when the work was performed for Service Account, Customer Asset, Asset Category, Incident Type and Entitlement."
+  - type: Microsoft.Dynamics.CRM.msdyn_entityconfiguration
+    displayName: Entity Configuration
+    description: "Enables records for an entity type to act as geofences or tracking points."
+  - type: Microsoft.Dynamics.CRM.msdyn_entityrankingrule
+    displayName: EntityRankingRule
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_estimate
     displayName: Estimate
     description: "Labor, cost, and revenue estimates for a project."
@@ -332,6 +425,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_fact
     displayName: Fact
     description: "Aggregated fact entity for actual transactions."
+  - type: Microsoft.Dynamics.CRM.msdyn_federatedarticle
+    displayName: Knowledge Federated Article
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_fieldcomputation
     displayName: Field Computation
     description: "Product properties whose values are to be considered as factors for quantity computation on a transaction line."
@@ -344,21 +440,75 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_findworkevent
     displayName: Find Work Event (Deprecated in v3.0)
     description: "Entity used for counting the number of times resources apply for open positions and other behavioral attributes of resources."
+  - type: Microsoft.Dynamics.CRM.msdyn_flowcardtype
+    displayName: flowcardtype
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_forecastconfiguration
+    displayName: Forecast Configuration
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_forecastdefinition
+    displayName: Forecast definition
+    description: "Defines the parameters used for forecasting."
+  - type: Microsoft.Dynamics.CRM.msdyn_forecastinstance
+    displayName: Forecast
+    description: "Stores sales predictions for your team or organization. For internal use."
+  - type: Microsoft.Dynamics.CRM.msdyn_forecastrecurrence
+    displayName: Forecast recurrence
+    description: "Stores recalculation information for each recurrence of the forecast hierarchy. For internal use."
+  - type: Microsoft.Dynamics.CRM.msdyn_functionallocation
+    displayName: Functional Location
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_geofence
+    displayName: Geofence
+    description: "A radial boundary around a physical location that, when active, can be entered or exited by geotracked records, in turn generating events."
+  - type: Microsoft.Dynamics.CRM.msdyn_geofenceevent
+    displayName: Geofence Event
+    description: "Created when a geotracked record enters or exits a geofence."
+  - type: Microsoft.Dynamics.CRM.msdyn_geofencingsettings
+    displayName: Geofencing Settings
+    description: "Configure organization-wide settings for geofencing."
+  - type: Microsoft.Dynamics.CRM.msdyn_icebreakersconfig
+    displayName: icebreakersconfig
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_incidenttype
     displayName: Incident Type
     description: "Incident types define the various types of incidents (issues) that a customer could report, on which work orders are based."
+  - type: Microsoft.Dynamics.CRM.msdyn_incidenttype_requirementgroup
+    displayName: Incident Type Requirement Group
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
     displayName: Incident Type Characteristic
     description: "Specify characteristic insident type."
   - type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
     displayName: Incident Type Product
     description: "This entity gives the ability to pre-configure products to be added to a work order when the related incident is added to the work order"
+  - type: Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationresult
+    displayName: Incident Type Suggestion Result
+    description: "Incident Type Suggestion Results store all suggestion results."
+  - type: Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationrunhistory
+    displayName: Incident Type Suggestion Run History
+    description: "Incident Type Suggestion Run Histories store all suggestion job run histories."
   - type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
     displayName: Incident Type Service
     description: "This entity gives the ability to pre-configure services to be added to a work order when the related incident is added to the work order"
   - type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservicetask
     displayName: Incident Type Service Task
     description: "In this entity you define all the default service tasks that should be added to the work order as soon as this incident type is added to the work order"
+  - type: Microsoft.Dynamics.CRM.msdyn_incidenttypessetup
+    displayName: Incident Types Setup
+    description: "Service entity necessary for the setup of the recurrent suggested duration calculations for all the incident types."
+  - type: Microsoft.Dynamics.CRM.msdyn_inspection
+    displayName: Inspection
+    description: "Entity used for creating Inspections."
+  - type: Microsoft.Dynamics.CRM.msdyn_inspectionattachment
+    displayName: Inspection Attachment
+    description: "Entity used to save the attachment details of an Inspection Response."
+  - type: Microsoft.Dynamics.CRM.msdyn_inspectiondefinition
+    displayName: Inspection Version
+    description: "Entity used to save different sets of questions related to an Inspection."
+  - type: Microsoft.Dynamics.CRM.msdyn_inspectionresponse
+    displayName: Inspection Response
+    description: "Entity used to save the responses of the Inspection."
   - type: Microsoft.Dynamics.CRM.msdyn_integrationjob
     displayName: Integration Job
     description: "Staging table for integration data"
@@ -392,15 +542,75 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
     displayName: IoT Device Command
     description: "Represents an outgoing message to a device connected to an IoT provider."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommanddefinition
+    displayName: IoT Device Command Definition
+    description: "Metadata for commands that a device or a device category supports."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevicedatahistory
+    displayName: IoT Device Data History
+    description: "The name of the entity that holds the device data every time a device data pull occurs between Dynamics 365 and an IoT provider"
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdeviceproperty
+    displayName: IoT Device Property
+    description: "Link entity between IoT Device Category and IoT Property Definition. This is used to model properties and tags for devices."
   - type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
     displayName: IoT Device Registration History
     description: "Tracks registration activities on an IoT device."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotdevicevisualizationconfiguration
+    displayName: IoT Device Visualization Configuration
+    description: "IoT Device Visualization Configuration"
+  - type: Microsoft.Dynamics.CRM.msdyn_iotfieldmapping
+    displayName: IoT Field Mapping
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_iotpropertydefinition
+    displayName: IoT Property Definition
+    description: "Defines a device property or a parameter that can be used for one or more command definitions."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotprovider
+    displayName: IoT Provider
+    description: "The IoT Provider where a device is registered and through which all interactions with the device take place"
+  - type: Microsoft.Dynamics.CRM.msdyn_iotproviderinstance
+    displayName: IoT Provider Instance
+    description: "An instance of an IoT Provider."
+  - type: Microsoft.Dynamics.CRM.msdyn_iotsettings
+    displayName: IoT Settings
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_journal
     displayName: Journal
     description: "Unposted business transactions, for example, time and expense."
   - type: Microsoft.Dynamics.CRM.msdyn_journalline
     displayName: Journal Line
     description: "Unposted business transaction line details."
+  - type: Microsoft.Dynamics.CRM.msdyn_kmfederatedsearchconfig
+    displayName: Search provider
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_knowledgearticleimage
+    displayName: Knowledge Article Image
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate
+    displayName: Knowledge Article Template
+    description: "Organizational Knowledge Article Template for Internal and external creation of Knowledge Articles."
+  - type: Microsoft.Dynamics.CRM.msdyn_knowledgeinteractioninsight
+    displayName: Knowledge Interaction Insight
+    description: "Knowledge Interaction Insight"
+  - type: Microsoft.Dynamics.CRM.msdyn_knowledgesearchinsight
+    displayName: Knowledge Search Insight
+    description: "Knowledge Search Insight"
+  - type: Microsoft.Dynamics.CRM.msdyn_macrosession
+    displayName: Macro Run History
+    description: "Stores history of macro runs"
+  - type: Microsoft.Dynamics.CRM.msdyn_migrationtracker
+    displayName: Migration tracker
+    description: "Entity that tracks the migration process of legacy to modern SLA/ARC items"
+  - type: Microsoft.Dynamics.CRM.msdyn_msteamssetting
+    displayName: msdyn_msteamssetting
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_notesanalysisconfig
+    displayName: Notes analysis Config
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_notificationfield
+    displayName: Notification Field
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_notificationtemplate
+    displayName: Notification Template
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory
     displayName: Opportunity Line Resource Category (Deprecated)
     description: "List of roles that will be considered as costs when understanding the profit of an opportunity line (Deprecated in v3.0)"
@@ -443,6 +653,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_orderpricelist
     displayName: Project Contract Project Price List
     description: "Sales price list used on the contract to set default sales prices on all project-based components such as time and expense."
+  - type: Microsoft.Dynamics.CRM.msdyn_orginsightsuserdashboarddefinition
+    displayName: OrgInsights User Dashboard Definition
+    description: "OrgInsights User Dashboard Definition"
   - type: Microsoft.Dynamics.CRM.msdyn_payment
     displayName: Payment
     description: "Specify payment."
@@ -455,6 +668,21 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_paymentterm
     displayName: Payment Term
     description: "Specify payment terms used for billing."
+  - type: Microsoft.Dynamics.CRM.msdyn_playbookactivity
+    displayName: Playbook activity
+    description: "Stores the details of the activities to be created when a playbook is launched."
+  - type: Microsoft.Dynamics.CRM.msdyn_playbookactivityattribute
+    displayName: Playbook activity attribute
+    description: "Stores attribute names and values of the playbook activity."
+  - type: Microsoft.Dynamics.CRM.msdyn_playbookcategory
+    displayName: Playbook category
+    description: "List of categories for which a playbook can be created."
+  - type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    displayName: Playbook
+    description: "Actual instance of a playbook template once it is launched."
+  - type: Microsoft.Dynamics.CRM.msdyn_playbooktemplate
+    displayName: Playbook template
+    description: "Playbook templates contains the definition of the Playbook that helps to standardize a set of best practices or next best actions."
   - type: Microsoft.Dynamics.CRM.msdyn_postalbum
     displayName: Profile Album
     description: "Contains user profile images that are stored as attachments and displayed in posts."
@@ -464,6 +692,36 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_priority
     displayName: Priority
     description: "Priorities to be used on bookings. In addition, a color could be specified for each priority type and the color selected will be shown visually on the schedule board."
+  - type: Microsoft.Dynamics.CRM.msdyn_problematicasset
+    displayName: Asset Suggestion
+    description: "Asset Suggestions"
+  - type: Microsoft.Dynamics.CRM.msdyn_problematicassetfeedback
+    displayName: Problematic Asset Feedback
+    description: "Problematic asset feedback"
+  - type: Microsoft.Dynamics.CRM.msdyn_productivityactioninputparameter
+    displayName: Action Input Parameter
+    description: "Attributes of action input parameters"
+  - type: Microsoft.Dynamics.CRM.msdyn_productivityactionoutputparameter
+    displayName: Action Output Parameter
+    description: "Attributes of action output parameters"
+  - type: Microsoft.Dynamics.CRM.msdyn_productivityagentscript
+    displayName: Agent script
+    description: "Agent script v2"
+  - type: Microsoft.Dynamics.CRM.msdyn_productivityagentscriptstep
+    displayName: Agent script step
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_productivitymacroactiontemplate
+    displayName: Macro Action Template
+    description: "Attributes for macro action template"
+  - type: Microsoft.Dynamics.CRM.msdyn_productivitymacroconnector
+    displayName: Macro Connector
+    description: "Attributes for macro connectors"
+  - type: Microsoft.Dynamics.CRM.msdyn_productivitymacrosolutionconfiguration
+    displayName: Macro Solution Configuration
+    description: "Macro solution related configurations"
+  - type: Microsoft.Dynamics.CRM.msdyn_productivityparameterdefinition
+    displayName: Parameter definition
+    description: "Macro parameter definitions"
   - type: Microsoft.Dynamics.CRM.msdyn_project
     displayName: Project
     description: "Delivery entity in an engagement."
@@ -488,6 +746,18 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_projecttransactioncategory
     displayName: Project Transaction Category (Deprecated)
     description: "(Deprecated in v3.0)"
+  - type: Microsoft.Dynamics.CRM.msdyn_property
+    displayName: Property Definition
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_propertyassetassociation
+    displayName: Property Asset Association
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_propertylog
+    displayName: Property Log
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_propertytemplateassociation
+    displayName: Property Template Association
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
     displayName: Purchase Order
     description: "Record Purchase Orders pertaining to Work Orders or otherwise"
@@ -548,12 +818,24 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_quotepricelist
     displayName: Quote Project Price List
     description: "Sales price list that will used by the quote to default sales prices on all project-based components such as time and expense."
+  - type: Microsoft.Dynamics.CRM.msdyn_relationshipinsightsunifiedconfig
+    displayName: msdyn_relationshipinsightsunifiedconfig
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
     displayName: Requirement Characteristic
     description: "Requirement Characteristic"
+  - type: Microsoft.Dynamics.CRM.msdyn_requirementdependency
+    displayName: Requirement Dependency
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_requirementgroup
+    displayName: Requirement Group
+    description: "Service which has resource requirement offering periods"
   - type: Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
     displayName: Requirement Organization Unit
     description: "Requirement of Organization Unit"
+  - type: Microsoft.Dynamics.CRM.msdyn_requirementrelationship
+    displayName: Requirement Relationship
+    description: "Relationship of requirements in the group"
   - type: Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
     displayName: Requirement Resource Category
     description: "Requirement Resource Category"
@@ -584,6 +866,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
     displayName: Resource Territory
     description: "Allows to specify for which territory a resource could provide services for"
+  - type: Microsoft.Dynamics.CRM.msdyn_richtextfile
+    displayName: Rich Text Attachment
+    description: "Image or file attached to a rich text field"
   - type: Microsoft.Dynamics.CRM.msdyn_rma
     displayName: RMA
     description: "Records RMAs for products to be retuned from customers"
@@ -620,14 +905,32 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
     displayName: Schedule Board Setting
     description: "To store settings of SB by user & tabs"
+  - type: Microsoft.Dynamics.CRM.msdyn_schedulingfeatureflag
+    displayName: Scheduling Feature Flag
+    description: "Update records in this entity to enable a new feature."
+  - type: Microsoft.Dynamics.CRM.msdyn_serviceconfiguration
+    displayName: Service Configuration
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_servicetasktype
     displayName: Service Task Type
     description: "Specify the different service task and labor types that your resources perform as part of their work orders."
+  - type: Microsoft.Dynamics.CRM.msdyn_sessiontemplate
+    displayName: Session Template
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_shipvia
     displayName: Ship Via
     description: "Specify the different shipping methods used."
   - type: Microsoft.Dynamics.CRM.msdyn_siconfig
     displayName: siconfig
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_slakpi
+    displayName: SLA KPI
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_solutionhealthrule
+    displayName: Solution Health Rule
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleargument
+    displayName: Solution Health Rule Argument
     description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
     displayName: System User Scheduler Setting
@@ -638,9 +941,18 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_taxcodedetail
     displayName: Tax Code Detail
     description: "In this entity you can link multiple tax codes together to form a group of tax codes to be charged for the customer to form the total tax."
+  - type: Microsoft.Dynamics.CRM.msdyn_templateforproperties
+    displayName: Template For Properties
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_templateparameter
+    displayName: Template Parameter
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_timeentry
     displayName: Time Entry
     description: "Entity used  for time entry."
+  - type: Microsoft.Dynamics.CRM.msdyn_timeentrysetting
+    displayName: Time Source
+    description: "Settings for Time Entry."
   - type: Microsoft.Dynamics.CRM.msdyn_timegroup
     displayName: Fulfillment Preference
     description: "Specify time groups consisting of multiple time windows to be used for scheduling, for example."
@@ -659,6 +971,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_transactionorigin
     displayName: Transaction Origin
     description: "System entity used to record the source of a project cost or sales actual."
+  - type: Microsoft.Dynamics.CRM.msdyn_untrackedappointment
+    displayName: UntrackedAppointment
+    description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_userworkhistory
     displayName: User Work History
     description: "Entity used to look up resources based on demonstrated skills."
@@ -698,6 +1013,51 @@ entities:
   - type: Microsoft.Dynamics.CRM.msdyn_workordertype
     displayName: Work Order Type
     description: "Create different work order types to reflect the different types of work that your company offers. Work Order types are used to control various settings on a work order."
+  - type: Microsoft.Dynamics.CRM.msdynce_botcontent
+    displayName: BotContent
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msfp_alert
+    displayName: Customer Voice alert
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msfp_alertrule
+    displayName: Customer Voice alert rule
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msfp_emailtemplate
+    displayName: Customer Voice survey email template
+    description: "Template for an email message that contains the survey invitation link."
+  - type: Microsoft.Dynamics.CRM.msfp_fileresponse
+    displayName: Customer Voice file response
+    description: "Response to a file upload question."
+  - type: Microsoft.Dynamics.CRM.msfp_localizedemailtemplate
+    displayName: Customer Voice localized survey email template
+    description: "Stores localized data for email templates."
+  - type: Microsoft.Dynamics.CRM.msfp_project
+    displayName: Customer Voice project
+    description: "Set of surveys to collect feedback."
+  - type: Microsoft.Dynamics.CRM.msfp_question
+    displayName: Customer Voice survey question
+    description: "Question in a survey to collect feedback."
+  - type: Microsoft.Dynamics.CRM.msfp_questionresponse
+    displayName: Customer Voice survey question response
+    description: "Response to a question in a survey."
+  - type: Microsoft.Dynamics.CRM.msfp_satisfactionmetric
+    displayName: Customer Voice satisfaction metric
+    description: "Satisfaction metric defined for a project."
+  - type: Microsoft.Dynamics.CRM.msfp_survey
+    displayName: Customer Voice survey
+    description: "Set of questions to collect feedback."
+  - type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    displayName: Customer Voice survey invite
+    description: "Activity that tracks a survey invitation sent to a person."
+  - type: Microsoft.Dynamics.CRM.msfp_surveyreminder
+    displayName: Customer Voice survey reminder
+    description: "Email reminders for surveys created in Customer Voice."
+  - type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    displayName: Customer Voice survey response
+    description: "Response to a survey."
+  - type: Microsoft.Dynamics.CRM.msfp_unsubscribedrecipient
+    displayName: Customer Voice unsubscribed recipient
+    description: "Email address of an unsubscribed respondent."
   - type: Microsoft.Dynamics.CRM.opportunity
     displayName: Opportunity
     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
@@ -716,6 +1076,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.processsession
     displayName: Process Session
     description: "Information that is generated when a dialog is run. Every time that you run a dialog, a dialog session is created."
+  - type: Microsoft.Dynamics.CRM.processstageparameter
+    displayName: ProcessStageParameter
+    description: ""
   - type: Microsoft.Dynamics.CRM.queue
     displayName: Queue
     description: "A list of records that require action, such as accounts, activities, and cases."
@@ -737,6 +1100,12 @@ entities:
   - type: Microsoft.Dynamics.CRM.report
     displayName: Report
     description: "Data summary in an easy-to-read layout."
+  - type: Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker
+    displayName: RevokeInheritedAccessRecordsTracker
+    description: ""
+  - type: Microsoft.Dynamics.CRM.sales_linkedin_profileassociations
+    displayName: Profile Associations
+    description: "For Internal Use Only."
   - type: Microsoft.Dynamics.CRM.salesorder
     displayName: Order
     description: "Quote that has been accepted."
@@ -761,6 +1130,9 @@ entities:
   - type: Microsoft.Dynamics.CRM.socialprofile
     displayName: Social Profile
     description: "This entity is used to store social profile information of its associated account and contacts on different social channels."
+  - type: Microsoft.Dynamics.CRM.stagesolutionupload
+    displayName: StageSolutionUpload
+    description: ""
   - type: Microsoft.Dynamics.CRM.task
     displayName: Task
     description: "Generic activity representing work needed to be done."
@@ -779,10 +1151,13 @@ entities:
   - type: Microsoft.Dynamics.CRM.workflow
     displayName: Process
     description: "Set of logical rules that define the steps necessary to automate a specific business process, task, or set of actions to be performed."
-# This action has no remarks.
+  - type: Microsoft.Dynamics.CRM.workflowbinary
+    displayName: Workflow Binary
+    description: ""
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

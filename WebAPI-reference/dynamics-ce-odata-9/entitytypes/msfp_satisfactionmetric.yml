@@ -1,0 +1,318 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msfp_satisfactionmetric
+name: "msfp_satisfactionmetric"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 27b8b022-6a1a-414f-ab68-415270e9d3a3
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msfp_satisfactionmetric entitytype."
+description: "Satisfaction metric defined for a project."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msfp_satisfactionmetrics"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Customer Voice satisfaction metric
+  primary_key: msfp_satisfactionmetricid
+  primary_name_attribute: msfp_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msfp_description
+      type: Edm.String
+      display_name: "Description"
+      description: "Description of the satisfaction metric."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_historicalcomputedvalue
+      type: Edm.String
+      display_name: "Historical computed value"
+      description: "Historical computed value of the satisfaction metric."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_issystemkpi
+      type: Edm.Boolean
+      display_name: "Is system KPI"
+      description: "Indicates if the satisfaction metric is system defined or user defined."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "True"
+        - value: 0
+          label: "False"
+    - name: msfp_lastcomputedon
+      type: Edm.DateTimeOffset
+      display_name: "Last computed on"
+      description: "Date and time when the satisfaction metric was last computed."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_lastcomputedvalue
+      type: Edm.String
+      display_name: "Last Computed Value"
+      description: "Last computed value of the satisfaction metric."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_maximumvalue
+      type: Edm.Int32
+      display_name: "Maximum value"
+      description: "Maximum value of the satisfaction metric."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_minimumvalue
+      type: Edm.Int32
+      display_name: "Minimum value"
+      description: "Minimum value of the satisfaction metric."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_name
+      type: Edm.String
+      display_name: "Name"
+      description: "Name of the satisfaction metric."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_questions
+      type: Edm.String
+      display_name: "Questions"
+      description: "Questions on which the satisfaction metric is calculated."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_satisfactionmetricid
+      type: Edm.Guid
+      display_name: "Customer Voice satisfaction metric"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_status
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the satisfaction metric."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 647390000
+          label: "Active"
+        - value: 647390001
+          label: "InActive"
+    - name: msfp_threshold
+      type: Edm.Int32
+      display_name: "Threshold"
+      description: "Threshold value of the satisfaction metric."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_type
+      type: Edm.String
+      display_name: "Type"
+      description: "Type of the satisfaction metric."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_versionnumber
+      type: Edm.Int32
+      display_name: "Version number"
+      description: "Version number of the satisfaction metric."
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Satisfaction metric"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Satisfaction metric"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _msfp_project_value
+    single_valued_navigation_property:
+    - msfp_project
+    description: "Project to which the satisfaction metric belongs."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "User who owns the satisfaction metric."
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_satisfactionmetric_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_satisfactionmetric_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_satisfactionmetric_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_satisfactionmetric_modifiedonbehalfby
+  - name: msfp_project
+    type: Microsoft.Dynamics.CRM.msfp_project
+    partner: msfp_msfp_project_msfp_satisfactionmetric_project
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msfp_satisfactionmetric
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msfp_satisfactionmetric
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msfp_satisfactionmetric
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msfp_satisfactionmetric
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msfp_msfp_satisfactionmetric_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: msfp_satisfactionmetric
+  - name: msfp_msfp_satisfactionmetric_msfp_alertrule
+    type: Microsoft.Dynamics.CRM.msfp_alertrule
+    partner: msfp_satisfactionmetric
+  - name: msfp_satisfactionmetric_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msfp_satisfactionmetric
+  - name: msfp_satisfactionmetric_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msfp_satisfactionmetric
+  - name: msfp_satisfactionmetric_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msfp_satisfactionmetric
+  - name: msfp_satisfactionmetric_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msfp_satisfactionmetric
+  - name: msfp_satisfactionmetric_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msfp_satisfactionmetric
+  - name: msfp_satisfactionmetric_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msfp_satisfactionmetric
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msfp_satisfactionmetric entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msfp_satisfactionmetric entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.MicrosoftFormsPro
+    description: "Create and send surveys to your customers or employees and collect their valuable feedback about your products or services."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

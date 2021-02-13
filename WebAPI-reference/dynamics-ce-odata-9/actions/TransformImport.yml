@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.TransformImport
 name: "TransformImport"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement TransformImport Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e2f1ec4f-3c33-43eb-b996-1b80aee6fe85
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the TransformImport Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse TransformImport Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Submits an asynchronous job that transforms the parsed data.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -36,10 +36,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.import
     displayName: Data Import
     description: "Status and ownership information for an import job."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.category
 name: "category"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement category EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 37533ff7-ce6e-4ac9-ae03-a02367474749
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the category entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse category entitytype."
 description: "Entity for categorizing records to make it easier for your customers to find them on portals and through search."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/categories"
@@ -187,12 +187,14 @@ operations:
 solutions:
   description: "The following solutions include the category entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementPatch
+    description: "Dynamics 365 workload for knowledge management."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

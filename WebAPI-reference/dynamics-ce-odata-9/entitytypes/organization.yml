@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.organization
 name: "organization"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement organization EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9e191826-8548-4fe6-a631-0227c15d8c99
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the organization entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse organization entitytype."
 description: "Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/organizations"
@@ -231,6 +231,12 @@ properties:
       description: "Audit Retention Period settings stored in Organization Database."
       iscomputed: false
       isreadonly: false
+    - name: auditretentionperiodv2
+      type: Edm.Int32
+      display_name: "Audit Retention Period Settings"
+      description: "Audit Retention Period settings stored in Organization Database."
+      iscomputed: false
+      isreadonly: false
     - name: autoapplydefaultoncasecreate
       type: Edm.Boolean
       display_name: "Auto Apply Default Entitlement on Case Create"
@@ -335,6 +341,17 @@ properties:
       description: "Prefix used for campaign numbering."
       iscomputed: false
       isreadonly: false
+    - name: canoptoutnewsearchexperience
+      type: Edm.Boolean
+      display_name: "Can disable Oct 2020 Search"
+      description: "Indicates whether the organization can opt out of the new Relevance search experience (released in Oct 2020)"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: cascadestatusupdate
       type: Edm.Boolean
       display_name: "Cascade Status Update"
@@ -1023,6 +1040,17 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
+    - name: improvesearchloggingenabled
+      type: Edm.Boolean
+      display_name: "Share search query data"
+      description: "Indicates whether an organization has consented to sharing search query data to help improve search results"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: inactivitytimeoutenabled
       type: Edm.Boolean
       display_name: "Inactivity timeout enabled"
@@ -1378,6 +1406,17 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
+    - name: isembedteamscollabenabled
+      type: Edm.Boolean
+      display_name: "Indicates whether embed Teams collaboration has been enabled for the organization"
+      description: "Indicates whether embed Teams collaboration has been enabled for the organization"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: isenabledforallroles
       type: Edm.Boolean
       display_name: "option set values for isenabledforallroles"
@@ -1455,6 +1494,17 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
+    - name: isgeospatialazuremapsintegrationenabled
+      type: Edm.Boolean
+      display_name: "Enable geospatial Azure Maps integration."
+      description: "Indicates whether geospatial capabilities leveraging Azure Maps are enabled."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: ishierarchicalsecuritymodelenabled
       type: Edm.Boolean
       display_name: "Enable Hierarchical Security Model"
@@ -1525,6 +1575,17 @@ properties:
       type: Edm.Boolean
       display_name: "Enable MobileOffline for this Organization"
       description: "Indicates whether the feature MobileOffline should be enabled for the organization."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: ismodeldrivenappsinmsteamsenabled
+      type: Edm.Boolean
+      display_name: "Enable embedding Model Apps in Microsoft Teams"
+      description: "Indicates whether Model Apps can be embedded within Microsoft Teams. This is a tenant admin controlled preview/experimental feature."
       iscomputed: false
       isreadonly: false
       options:
@@ -1769,6 +1830,17 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
+    - name: issalesmobilepreviewenabled
+      type: Edm.Boolean
+      display_name: "Indicates whether Sales Mobile Preview has been enabled for the organization"
+      description: "Indicates whether Sales Mobile Preview has been enabled for the organization"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: issopintegrationenabled
       type: Edm.Boolean
       display_name: "Is Sales Order Integration Enabled"
@@ -1847,6 +1919,18 @@ properties:
       type: Edm.Int32
       display_name: "Long Date Format"
       description: "Information that specifies how the Long Date format is displayed in Microsoft Dynamics 365."
+      iscomputed: false
+      isreadonly: false
+    - name: lookupcharactercountbeforeresolve
+      type: Edm.Int32
+      display_name: "Minimum number of characters before resolving suggestions in lookup"
+      description: "Minimum number of characters that should be entered in the lookup control before resolving for suggestions"
+      iscomputed: false
+      isreadonly: false
+    - name: lookupresolvedelayms
+      type: Edm.Int32
+      display_name: "Minimum delay (in milliseconds) for debouncing lookup control input"
+      description: "Minimum delay (in milliseconds) between consecutive inputs in a lookup control that will trigger a search for suggestions"
       iscomputed: false
       isreadonly: false
     - name: mailboxintermittentissueminrange
@@ -1937,6 +2021,12 @@ properties:
       type: Edm.Int32
       display_name: "Max Records Filter Selection"
       description: "Maximum number of lookup and picklist records that can be selected by user for filtering."
+      iscomputed: false
+      isreadonly: false
+    - name: maxslaitemspersla
+      type: Edm.Int32
+      display_name: "Max SLA Items Per SLA"
+      description: ""
       iscomputed: false
       isreadonly: false
     - name: maxsupportedinternetexplorerversion
@@ -2040,6 +2130,17 @@ properties:
           label: "Trailing Dash"
         - value: 4
           label: "Space plus Trailing Dash"
+    - name: newsearchexperienceenabled
+      type: Edm.Boolean
+      display_name: "Oct 2020 Search enabled"
+      description: "Indicates whether an organization has enabled the new Relevance search experience (released in Oct 2020) for the organization"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: nexttrackingnumber
       type: Edm.Int32
       display_name: "Next Tracking Number"
@@ -3027,6 +3128,9 @@ collection_valued_navigation_properties:
   - name: organization_aciviewmapper
     type: Microsoft.Dynamics.CRM.aciviewmapper
     partner: organizationid
+  - name: organization_apisettings
+    type: Microsoft.Dynamics.CRM.apisettings
+    partner: organizationid
   - name: organization_appconfig
     type: Microsoft.Dynamics.CRM.appconfig
     partner: organization_appconfig
@@ -3108,8 +3212,26 @@ collection_valued_navigation_properties:
   - name: Organization_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: organizationid
+  - name: organization_mbs_pluginprofile
+    type: Microsoft.Dynamics.CRM.mbs_pluginprofile
+    partner: organizationid
   - name: organization_metric
     type: Microsoft.Dynamics.CRM.metric
+    partner: organizationid
+  - name: organization_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: organizationid
+  - name: organization_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: organizationid
+  - name: organization_msdyn_3dmodel
+    type: Microsoft.Dynamics.CRM.msdyn_3dmodel
+    partner: organizationid
+  - name: organization_msdyn_adaptivecardconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_adaptivecardconfiguration
+    partner: organizationid
+  - name: organization_msdyn_assetsuggestionssetting
+    type: Microsoft.Dynamics.CRM.msdyn_assetsuggestionssetting
     partner: organizationid
   - name: organization_msdyn_batchjob
     type: Microsoft.Dynamics.CRM.msdyn_batchjob
@@ -3135,11 +3257,56 @@ collection_valued_navigation_properties:
   - name: organization_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
     type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
     partner: organizationid
+  - name: organization_msdyn_caseenrichment
+    type: Microsoft.Dynamics.CRM.msdyn_caseenrichment
+    partner: organizationid
+  - name: organization_msdyn_casesuggestionrequestpayload
+    type: Microsoft.Dynamics.CRM.msdyn_casesuggestionrequestpayload
+    partner: organizationid
+  - name: organization_msdyn_casetopic
+    type: Microsoft.Dynamics.CRM.msdyn_casetopic
+    partner: organizationid
+  - name: organization_msdyn_casetopic_incident
+    type: Microsoft.Dynamics.CRM.msdyn_casetopic_incident
+    partner: organizationid
+  - name: organization_msdyn_casetopicsetting
+    type: Microsoft.Dynamics.CRM.msdyn_casetopicsetting
+    partner: organizationid
+  - name: organization_msdyn_casetopicsummary
+    type: Microsoft.Dynamics.CRM.msdyn_casetopicsummary
+    partner: organizationid
   - name: organization_msdyn_contractlineinvoiceschedule
     type: Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule
     partner: organizationid
+  - name: organization_msdyn_dataanalyticsreport_csrmanager
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_csrmanager
+    partner: organizationid
+  - name: organization_msdyn_dataanalyticsreport_fs
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fs
+    partner: organizationid
+  - name: organization_msdyn_dataanalyticsreport_fspredictrs
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictrs
+    partner: organizationid
+  - name: organization_msdyn_dataanalyticsreport_fspredictwhd
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictwhd
+    partner: organizationid
+  - name: organization_msdyn_dataanalyticsreport_ksinsights
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_ksinsights
+    partner: organizationid
+  - name: organization_msdyn_databaseversion
+    type: Microsoft.Dynamics.CRM.msdyn_databaseversion
+    partner: organizationid
+  - name: organization_msdyn_datainsightsandanalyticsfeature
+    type: Microsoft.Dynamics.CRM.msdyn_datainsightsandanalyticsfeature
+    partner: organizationid
+  - name: organization_msdyn_dimensionfieldname
+    type: Microsoft.Dynamics.CRM.msdyn_dimensionfieldname
+    partner: organizationid
   - name: organization_msdyn_expensecategory
     type: Microsoft.Dynamics.CRM.msdyn_expensecategory
+    partner: organizationid
+  - name: organization_msdyn_federatedarticleincident
+    type: Microsoft.Dynamics.CRM.msdyn_federatedarticleincident
     partner: organizationid
   - name: organization_msdyn_fieldservicepricelistitem
     type: Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem
@@ -3147,11 +3314,26 @@ collection_valued_navigation_properties:
   - name: organization_msdyn_fieldservicesystemjob
     type: Microsoft.Dynamics.CRM.msdyn_fieldservicesystemjob
     partner: organizationid
+  - name: organization_msdyn_geolocationsettings
+    type: Microsoft.Dynamics.CRM.msdyn_geolocationsettings
+    partner: organizationid
+  - name: organization_msdyn_geolocationtracking
+    type: Microsoft.Dynamics.CRM.msdyn_geolocationtracking
+    partner: organizationid
+  - name: organization_msdyn_helppage
+    type: Microsoft.Dynamics.CRM.msdyn_helppage
+    partner: organizationid
   - name: organization_msdyn_invoicefrequency
     type: Microsoft.Dynamics.CRM.msdyn_invoicefrequency
     partner: organizationid
   - name: organization_msdyn_invoicefrequencydetail
     type: Microsoft.Dynamics.CRM.msdyn_invoicefrequencydetail
+    partner: organizationid
+  - name: organization_msdyn_iottocaseprocess
+    type: Microsoft.Dynamics.CRM.msdyn_iottocaseprocess
+    partner: organizationid
+  - name: organization_msdyn_kbenrichment
+    type: Microsoft.Dynamics.CRM.msdyn_kbenrichment
     partner: organizationid
   - name: organization_msdyn_mlresultcache
     type: Microsoft.Dynamics.CRM.msdyn_mlresultcache
@@ -3159,11 +3341,23 @@ collection_valued_navigation_properties:
   - name: organization_msdyn_organizationalunit
     type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
     partner: organizationid
+  - name: organization_msdyn_paneconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_paneconfiguration
+    partner: organizationid
+  - name: organization_msdyn_panetabconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_panetabconfiguration
+    partner: organizationid
+  - name: organization_msdyn_panetoolconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_panetoolconfiguration
+    partner: organizationid
   - name: organization_msdyn_postconfig
     type: Microsoft.Dynamics.CRM.msdyn_postconfig
     partner: organizationid
   - name: organization_msdyn_postruleconfig
     type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
+    partner: organizationid
+  - name: organization_msdyn_predictworkhourdurationsetting
+    type: Microsoft.Dynamics.CRM.msdyn_predictworkhourdurationsetting
     partner: organizationid
   - name: organization_msdyn_processnotes
     type: Microsoft.Dynamics.CRM.msdyn_processnotes
@@ -3183,6 +3377,9 @@ collection_valued_navigation_properties:
   - name: organization_msdyn_quotelineinvoiceschedule
     type: Microsoft.Dynamics.CRM.msdyn_quotelineinvoiceschedule
     partner: organizationid
+  - name: organization_msdyn_resourcecategorymarkuppricelevel
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorymarkuppricelevel
+    partner: organizationid
   - name: organization_msdyn_resourcecategorypricelevel
     type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
     partner: organizationid
@@ -3191,6 +3388,24 @@ collection_valued_navigation_properties:
     partner: organizationid
   - name: organization_msdyn_sikeyvalueconfig
     type: Microsoft.Dynamics.CRM.msdyn_sikeyvalueconfig
+    partner: organizationid
+  - name: organization_msdyn_smartassistconfig
+    type: Microsoft.Dynamics.CRM.msdyn_smartassistconfig
+    partner: organizationid
+  - name: organization_msdyn_solutionhealthruleset
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleset
+    partner: organizationid
+  - name: organization_msdyn_suggestioninteraction
+    type: Microsoft.Dynamics.CRM.msdyn_suggestioninteraction
+    partner: organizationid
+  - name: organization_msdyn_suggestionrequestpayload
+    type: Microsoft.Dynamics.CRM.msdyn_suggestionrequestpayload
+    partner: organizationid
+  - name: organization_msdyn_suggestionsmodelsummary
+    type: Microsoft.Dynamics.CRM.msdyn_suggestionsmodelsummary
+    partner: organizationid
+  - name: organization_msdyn_suggestionssetting
+    type: Microsoft.Dynamics.CRM.msdyn_suggestionssetting
     partner: organizationid
   - name: organization_msdyn_transactioncategory
     type: Microsoft.Dynamics.CRM.msdyn_transactioncategory
@@ -3210,6 +3425,15 @@ collection_valued_navigation_properties:
   - name: organization_msdyn_uniquenumber
     type: Microsoft.Dynamics.CRM.msdyn_uniquenumber
     partner: organizationid
+  - name: organization_msdyn_upgraderun
+    type: Microsoft.Dynamics.CRM.msdyn_upgraderun
+    partner: organizationid
+  - name: organization_msdyn_upgradestep
+    type: Microsoft.Dynamics.CRM.msdyn_upgradestep
+    partner: organizationid
+  - name: organization_msdyn_upgradeversion
+    type: Microsoft.Dynamics.CRM.msdyn_upgradeversion
+    partner: organizationid
   - name: organization_msdyn_wallsavedquery
     type: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
     partner: organizationid
@@ -3227,6 +3451,15 @@ collection_valued_navigation_properties:
     partner: organizationid
   - name: organization_opportunitysalesprocess
     type: Microsoft.Dynamics.CRM.opportunitysalesprocess
+    partner: organizationid
+  - name: organization_organizationdatasyncsubscription
+    type: Microsoft.Dynamics.CRM.organizationdatasyncsubscription
+    partner: organizationid
+  - name: organization_organizationdatasyncsubscriptionentity
+    type: Microsoft.Dynamics.CRM.organizationdatasyncsubscriptionentity
+    partner: organizationid
+  - name: organization_package
+    type: Microsoft.Dynamics.CRM.package
     partner: organizationid
   - name: organization_phonetocaseprocess
     type: Microsoft.Dynamics.CRM.phonetocaseprocess
@@ -3330,6 +3563,15 @@ collection_valued_navigation_properties:
   - name: organization_solution
     type: Microsoft.Dynamics.CRM.solution
     partner: organizationid
+  - name: organization_solutioncomponentattributeconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentattributeconfiguration
+    partner: organizationid
+  - name: organization_solutioncomponentconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentconfiguration
+    partner: organizationid
+  - name: organization_solutioncomponentrelationshipconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentrelationshipconfiguration
+    partner: organizationid
   - name: organization_subjects
     type: Microsoft.Dynamics.CRM.subject
     partner: organizationid
@@ -3373,7 +3615,11 @@ collection_valued_navigation_properties:
     type: Microsoft.Dynamics.CRM.webresource
     partner: organizationid
 # This entity has no derived entities.
-# This entity has no operations
+operations:
+  description: "The following operations can be used with the organization entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Entity"
 solutions:
   description: "The following solutions include the organization entity type."
   solution_items:
@@ -3381,14 +3627,22 @@ solutions:
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
   - type: Microsoft.Dynamics.CRM.msdynce_Activities
     description: "Dynamics 365 workload for activities."
+  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
+    description: "Dynamics 365 workload for third patch of Sales."
   - type: Microsoft.Dynamics.CRM.msdynce_SchedulingPatch
     description: "Dynamics 365 workload for scheduling."
+  - type: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreement
+    description: "Dynamics 365 workload for service level agreements."
+  - type: Microsoft.Dynamics.CRM.msft_PowerAppsUnifiedClientInfraExtensions
+    description: "Power Apps Unified Client base infra extensions"
+  - type: Microsoft.Dynamics.CRM.msft_UnifiedClientLookupExtension
+    description: "Solution having customizations used for lookup control extension"
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

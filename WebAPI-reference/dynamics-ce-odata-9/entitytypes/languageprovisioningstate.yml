@@ -1,0 +1,96 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.languageprovisioningstate
+name: "languageprovisioningstate"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: f13bf180-7374-4304-84d3-adb33fba56e4
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse languageprovisioningstate entitytype."
+description: "Container for language provisioning checkpoint states"
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/languageprovisioningstates"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Language Provisioning State
+  primary_key: languageprovisioningstateid
+  # This entity doesn't have a primaryAttributeName
+  # This entity does not support any operations.
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: applicationversion
+      type: Edm.String
+      display_name: "Application Version"
+      description: "Application Version"
+      iscomputed: false
+      isreadonly: false
+    - name: languageid
+      type: Edm.Int32
+      display_name: "Language Id"
+      description: "Language Id"
+      iscomputed: false
+      isreadonly: false
+    - name: languageprovisioningstateid
+      type: Edm.Guid
+      display_name: "Language Provisioning State"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: provisioningstage
+      type: Edm.Int32
+      display_name: "Provisioning Stage"
+      description: "Provisioning Stage"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "FileBased"
+        - value: 2
+          label: "MetadataHelperDependent"
+        - value: 3
+          label: "SystemOnly"
+        - value: 4
+          label: "Other"
+        - value: 5
+          label: "Ribbon"
+    - name: solutionfileversion
+      type: Edm.String
+      display_name: "Solution File Version"
+      description: "Solution File Version"
+      iscomputed: false
+      isreadonly: false
+    - name: solutionuniquename
+      type: Edm.String
+      display_name: "Solution Unique Name"
+      description: "Solution Unique Name"
+      iscomputed: false
+      isreadonly: false
+# This entity has no lookup properties
+# This entity has no single-valued navigation properties
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the languageprovisioningstate entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.System
+    description: "Internal CRM System Solution"
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

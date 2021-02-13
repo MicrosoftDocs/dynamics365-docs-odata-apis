@@ -1,0 +1,354 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_productivitymacroconnector
+name: "msdyn_productivitymacroconnector"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: e52172a3-0d76-4114-845e-3a727d5237a8
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_productivitymacroconnector entitytype."
+description: "Attributes for macro connectors"
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_productivitymacroconnectors"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Macro Connector
+  primary_key: msdyn_productivitymacroconnectorid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: componentidunique
+      type: Edm.Guid
+      display_name: "Row id unique"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: true
+    - name: componentstate
+      type: Edm.Int32
+      display_name: "Component State"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 0
+          label: "Published"
+        - value: 1
+          label: "Unpublished"
+        - value: 2
+          label: "Deleted"
+        - value: 3
+          label: "Deleted Unpublished"
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: iscustomizable
+      type: Microsoft.Dynamics.CRM.BooleanManagedProperty
+      display_name: "Is Customizable"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: ismanaged
+      type: Edm.Boolean
+      display_name: "Is Managed"
+      description: "Indicates whether the solution component is part of a managed solution."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Managed"
+        - value: 0
+          label: "Unmanaged"
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_brandcolor
+      type: Edm.String
+      display_name: "Brand Color"
+      description: "The color in which tile for this connector is rendered"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_callback
+      type: Edm.String
+      display_name: "Callback"
+      description: "Sets the callback value"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_categorykey
+      type: Edm.String
+      display_name: "Category key"
+      description: "A string label for the category under which this connector should be rendered"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_categorylabel
+      type: Edm.String
+      display_name: "Category Label"
+      description: "Textual display text for the category key under which this connector is to be displayed"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_description
+      type: Edm.String
+      display_name: "Description"
+      description: "Text describing this connector displayed in the designer"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_displayname
+      type: Edm.String
+      display_name: "Display Name"
+      description: "The display name for this connector in the designer"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_icon
+      type: Edm.String
+      display_name: "Icon"
+      description: "Icon URL to be rendered for this connector"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_prefix
+      type: Edm.String
+      display_name: "Prefix"
+      description: "Sets the prefix value"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_productivitymacroconnectorid
+      type: Edm.Guid
+      display_name: "Macro Connector"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_title
+      type: Edm.String
+      display_name: "Title"
+      description: "The title displayed on the desginer for this connector"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_type
+      type: Edm.String
+      display_name: "Type"
+      description: "The type of this connector"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_uniquename
+      type: Edm.String
+      display_name: "Unique Name"
+      description: "Unique Name for the entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_webresourcename
+      type: Edm.String
+      display_name: "Webresource Name"
+      description: "Unique identifier for webresource name"
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: overwritetime
+      type: Edm.DateTimeOffset
+      display_name: "Record Overwrite Time"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: true
+    - name: solutionid
+      type: Edm.Guid
+      display_name: "Solution"
+      description: "Unique identifier of the associated solution."
+      iscomputed: false
+      isreadonly: true
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Macro Connector"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Macro Connector"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_productivitymacroconnector_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_productivitymacroconnector_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_productivitymacroconnector_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_productivitymacroconnector_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_productivitymacroconnector
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_productivitymacroconnector
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_productivitymacroconnector
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_productivitymacroconnector
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_msdyn_Prod_macroconnector_msdyn_macroactiontemplate_macroconnector
+    type: Microsoft.Dynamics.CRM.msdyn_productivitymacroactiontemplate
+    partner: msdyn_macroconnector
+  - name: msdyn_productivitymacroconnector_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_productivitymacroconnector
+  - name: msdyn_productivitymacroconnector_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_productivitymacroconnector
+  - name: msdyn_productivitymacroconnector_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_productivitymacroconnector
+  - name: msdyn_productivitymacroconnector_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_productivitymacroconnector
+  - name: msdyn_productivitymacroconnector_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_productivitymacroconnector
+  - name: msdyn_productivitymacroconnector_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_productivitymacroconnector
+  - name: msdyn_productivitymacroconnector_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_productivitymacroconnector
+  - name: msdyn_productivitymacroconnector_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_productivitymacroconnector
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_productivitymacroconnector entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_productivitymacroconnector entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_Macros
+    description: "Macros to be used in productivity tool."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

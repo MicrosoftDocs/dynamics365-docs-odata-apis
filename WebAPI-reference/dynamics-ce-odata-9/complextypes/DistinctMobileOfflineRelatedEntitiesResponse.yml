@@ -1,0 +1,47 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.DistinctMobileOfflineRelatedEntitiesResponse
+name: "DistinctMobileOfflineRelatedEntitiesResponse"
+type: complextype
+metadata: 
+  title: "Dataverse DistinctMobileOfflineRelatedEntitiesResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: d2a03566-ea16-4c94-9c6b-eb1abb6b88f9
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API DistinctMobileOfflineRelatedEntitiesResponse ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "" 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: DistinctRelatedEntities
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+    iscollection: true
+  - name: EntitiesNotInProfile
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+    iscollection: true
+# This complex type doesn't have any navigation properties.
+
+# There are no remarks for this complex type.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

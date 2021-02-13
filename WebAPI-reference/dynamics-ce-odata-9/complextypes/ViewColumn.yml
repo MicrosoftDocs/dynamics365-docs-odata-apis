@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ViewColumn
 name: "ViewColumn"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ViewColumn ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse ViewColumn ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: fa1b6d8f-0c88-4683-bb8f-b1195d4b700f
-  author: "KumarVivek"
+  ms.assetid: bff945e7-abfe-4e70-ad47-05d760682f37
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API ViewColumn ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API ViewColumn ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -54,10 +54,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.LookupView
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

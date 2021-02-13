@@ -1,0 +1,1330 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msfp_surveyinvite
+name: "msfp_surveyinvite"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: d77101c3-27fe-457f-97b7-88703a2cc98a
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msfp_surveyinvite entitytype."
+description: "Activity that tracks a survey invitation sent to a person."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msfp_surveyinvites"
+  base_type: Microsoft.Dynamics.CRM.activitypointer
+  display_name: Customer Voice survey invite
+  primary_key: activityid
+  primary_name_attribute: subject
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: activityadditionalparams
+      type: Edm.String
+      display_name: "Activity Additional Parameters"
+      description: "Additional information provided by the external application as JSON. For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: activityid
+      type: Edm.Guid
+      display_name: "Activity"
+      description: "Unique identifier of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: activitytypecode
+      type: Edm.String
+      display_name: "Activity Type"
+      description: "Type of activity."
+      iscomputed: false
+      isreadonly: true
+    - name: actualdurationminutes
+      type: Edm.Int32
+      display_name: "Actual Duration"
+      description: "Actual duration of the activity in minutes."
+      iscomputed: false
+      isreadonly: false
+    - name: actualend
+      type: Edm.DateTimeOffset
+      display_name: "Actual End"
+      description: "Actual end time of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: actualstart
+      type: Edm.DateTimeOffset
+      display_name: "Actual Start"
+      description: "Actual start time of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: community
+      type: Edm.Int32
+      display_name: "Social Channel"
+      description: "Shows how contact about the social activity originated, such as from Twitter or Facebook. This field is read-only."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Facebook"
+        - value: 2
+          label: "Twitter"
+        - value: 0
+          label: "Other"
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Date Created"
+      description: "Date and time when the activity was created."
+      iscomputed: false
+      isreadonly: true
+    - name: deliverylastattemptedon
+      type: Edm.DateTimeOffset
+      display_name: "Date Delivery Last Attempted"
+      description: "Date and time when the delivery of the activity was last attempted."
+      iscomputed: false
+      isreadonly: true
+    - name: deliveryprioritycode
+      type: Edm.Int32
+      display_name: "Delivery Priority"
+      description: "Priority of delivery of the activity to the email server."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Low"
+        - value: 1
+          label: "Normal"
+        - value: 2
+          label: "High"
+    - name: description
+      type: Edm.String
+      display_name: "Description"
+      description: "Description of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: exchangeitemid
+      type: Edm.String
+      display_name: "Exchange Item ID"
+      description: "The message id of activity which is returned from Exchange Server."
+      iscomputed: false
+      isreadonly: false
+    - name: exchangerate
+      type: Edm.Decimal
+      display_name: "Exchange Rate"
+      description: "Exchange rate for the currency associated with the activitypointer with respect to the base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: exchangeweblink
+      type: Edm.String
+      display_name: "Exchange WebLink"
+      description: "Shows the web link of Activity of type email."
+      iscomputed: false
+      isreadonly: false
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: instancetypecode
+      type: Edm.Int32
+      display_name: "Recurring Instance Type"
+      description: "Type of instance of a recurring series."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 0
+          label: "Not Recurring"
+        - value: 1
+          label: "Recurring Master"
+        - value: 2
+          label: "Recurring Instance"
+        - value: 3
+          label: "Recurring Exception"
+        - value: 4
+          label: "Recurring Future Exception"
+    - name: isbilled
+      type: Edm.Boolean
+      display_name: "Is Billed"
+      description: "Information regarding whether the activity was billed as part of resolving a case."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: ismapiprivate
+      type: Edm.Boolean
+      display_name: "Is Private"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: isregularactivity
+      type: Edm.Boolean
+      display_name: "Is Regular Activity"
+      description: "Information regarding whether the activity is a regular activity type or event type."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: isworkflowcreated
+      type: Edm.Boolean
+      display_name: "Is Workflow Created"
+      description: "Information regarding whether the activity was created from a workflow rule."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: lastonholdtime
+      type: Edm.DateTimeOffset
+      display_name: "Last On Hold Time"
+      description: "Contains the date and time stamp of the last on hold time."
+      iscomputed: false
+      isreadonly: false
+    - name: leftvoicemail
+      type: Edm.Boolean
+      display_name: "Left Voice Mail"
+      description: "Left the voice mail"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Last Updated"
+      description: "Date and time when activity was last modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msfp_channel
+      type: Edm.Int32
+      display_name: "Survey invitation source channel"
+      description: "Channel through which the survey invitation was sent."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 647390000
+          label: "Email"
+        - value: 647390001
+          label: "Flow"
+    - name: msfp_contextparameters
+      type: Edm.String
+      display_name: "Context parameters"
+      description: "Context parameters for the invitation."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_emailmessage
+      type: Edm.String
+      display_name: "Message"
+      description: "Content of the email message."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_fromemailaddress
+      type: Edm.String
+      display_name: "From email address"
+      description: "Email address from which the survey invitation was sent."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_inviteemailaddress
+      type: Edm.String
+      display_name: "Invitation email address"
+      description: "Email to which the survey invitation is sent."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_invitesentdate
+      type: Edm.DateTimeOffset
+      display_name: "Invitation sent date"
+      description: "Date when the survey invitation was sent."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_invitestatus
+      type: Edm.Int32
+      display_name: "Survey Invite status"
+      description: "Status of the survey invitation."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 647390000
+          label: "Queued"
+        - value: 647390001
+          label: "UnSubscribed"
+        - value: 647390002
+          label: "Sent"
+        - value: 647390003
+          label: "Responded"
+        - value: 647390004
+          label: "Failed"
+        - value: 647390005
+          label: "Created"
+        - value: 647390006
+          label: "Read"
+        - value: 647390007
+          label: "Started"
+        - value: 647390008
+          label: "Delayed"
+        - value: 647390009
+          label: "Reminder scheduled"
+        - value: 647390010
+          label: "Reminder sent"
+        - value: 647390011
+          label: "Reminder failed"
+        - value: 647390012
+          label: "Reminder in progress"
+        - value: 647390013
+          label: "Skipped"
+    - name: msfp_invitestatusreason
+      type: Edm.String
+      display_name: "Invite status reason"
+      description: "Survey invitation status reason."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_inviteupdateddate
+      type: Edm.DateTimeOffset
+      display_name: "Invitation updated date"
+      description: "Date when the survey invitation was updated."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_isincentiveenabled
+      type: Edm.Boolean
+      display_name: "isincentiveEnabled"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msfp_otherproperties
+      type: Edm.String
+      display_name: "Other properties"
+      description: "Stores other survey invitation properties in JSON format."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_respondent
+      type: Edm.String
+      display_name: "Respondent"
+      description: "Name of the respondent"
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_sourcesurveyidentifier
+      type: Edm.String
+      display_name: "Source survey identifier"
+      description: "Unique identifier for the survey in the source application."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_subject
+      type: Edm.String
+      display_name: "Subject"
+      description: "Stores the subject associated with the invitation."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_surveyinvitationurl
+      type: Edm.String
+      display_name: "Survey invitation URL"
+      description: "Personalized survey link sent with the invitation."
+      iscomputed: false
+      isreadonly: false
+    - name: onholdtime
+      type: Edm.Int32
+      display_name: "On Hold Time (Minutes)"
+      description: "Shows how long, in minutes, that the record was on hold."
+      iscomputed: false
+      isreadonly: true
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: postponeactivityprocessinguntil
+      type: Edm.DateTimeOffset
+      display_name: "Delay activity processing until"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: true
+    - name: prioritycode
+      type: Edm.Int32
+      display_name: "Priority"
+      description: "Priority of the activity."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Low"
+        - value: 1
+          label: "Normal"
+        - value: 2
+          label: "High"
+    - name: processid
+      type: Edm.Guid
+      display_name: "Process"
+      description: "Unique identifier of the Process."
+      iscomputed: false
+      isreadonly: false
+    - name: scheduleddurationminutes
+      type: Edm.Int32
+      display_name: "Scheduled Duration"
+      description: "Scheduled duration of the activity, specified in minutes."
+      iscomputed: false
+      isreadonly: false
+    - name: scheduledend
+      type: Edm.DateTimeOffset
+      display_name: "Due Date"
+      description: "Scheduled end time of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: scheduledstart
+      type: Edm.DateTimeOffset
+      display_name: "Start Date"
+      description: "Scheduled start time of the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: senton
+      type: Edm.DateTimeOffset
+      display_name: "Date Sent"
+      description: "Date and time when the activity was sent."
+      iscomputed: false
+      isreadonly: true
+    - name: seriesid
+      type: Edm.Guid
+      display_name: "Series Id"
+      description: "Uniqueidentifier specifying the id of recurring series of an instance."
+      iscomputed: false
+      isreadonly: true
+    - name: sortdate
+      type: Edm.DateTimeOffset
+      display_name: "Sort Date"
+      description: "Shows the date and time by which the activities are sorted."
+      iscomputed: false
+      isreadonly: false
+    - name: stageid
+      type: Edm.Guid
+      display_name: "(Deprecated) Process Stage"
+      description: "Unique identifier of the Stage."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Activity Status"
+      description: "Status of the activity."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Open"
+        - value: 1
+          label: "Completed"
+        - value: 2
+          label: "Canceled"
+        - value: 3
+          label: "Scheduled"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the activity."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Open"
+        - value: 2
+          label: "Completed"
+        - value: 3
+          label: "Canceled"
+        - value: 4
+          label: "Scheduled"
+    - name: subject
+      type: Edm.String
+      display_name: "Subject"
+      description: "Subject associated with the activity."
+      iscomputed: false
+      isreadonly: false
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: traversedpath
+      type: Edm.String
+      display_name: "(Deprecated) Traversed Path"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version number of the activity."
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    description: "Unique identifier of the user who created the activity."
+  - name: _createdonbehalfby_value
+    description: "Unique identifier of the delegate user who created the activitypointer."
+  - name: _modifiedby_value
+    description: "Unique identifier of user who last modified the activity."
+  - name: _modifiedonbehalfby_value
+    description: "Unique identifier of the delegate user who last modified the activitypointer."
+  - name: _msfp_surveyid_value
+    single_valued_navigation_property:
+    - msfp_surveyid_msfp_surveyinvite
+    description: "Stores the survey associated with the survey invitation."
+  - name: _msfp_unsubscribedrecipientsurveyinviteid_value
+    single_valued_navigation_property:
+    - msfp_UnsubscribedRecipientSurveyInviteId_msfp_surveyinvite
+    description: "Unique identifier for Customer Voice unsubscribed recipient associated with Customer Voice survey invite."
+  - name: _ownerid_value
+    description: "Unique identifier of the user or team who owns the activity."
+  - name: _owningbusinessunit_value
+    description: "Unique identifier of the business unit that owns the activity."
+  - name: _owningteam_value
+    description: "Unique identifier of the team that owns the activity."
+  - name: _owninguser_value
+    description: "Unique identifier of the user that owns the activity."
+  - name: _regardingobjectid_value
+    description: "Unique identifier of the object with which the activity is associated."
+  - name: _sendermailboxid_value
+    description: "Unique identifier of the mailbox associated with the sender of the email message."
+  - name: _serviceid_value
+    description: "Unique identifier of an associated service."
+  - name: _slaid_value
+    description: "Choose the service level agreement (SLA) that you want to apply to the case record."
+  - name: _slainvokedid_value
+    description: "Last SLA that was applied to this case. This field is for internal use only."
+  - name: _transactioncurrencyid_value
+    description: "Unique identifier of the currency associated with the activitypointer."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: activityid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.activitypointer
+    partner: activity_pointer_msfp_surveyinvite
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_activitypointer_createdby
+  - name: createdby_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: msfp_surveyinvite_systemuser_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_activitypointer_createdonbehalfby
+  - name: createdonbehalfby_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: msfp_surveyinvite_systemuser_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_activitypointer_modifiedby
+  - name: modifiedby_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: msfp_surveyinvite_systemuser_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_activitypointer_modifiedonbehalfby
+  - name: modifiedonbehalfby_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: msfp_surveyinvite_systemuser_modifiedonbehalfby
+  - name: msfp_surveyid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_survey
+    partner: msfp_msfp_survey_msfp_surveyinvite_surveyid
+  - name: msfp_UnsubscribedRecipientSurveyInviteId_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_unsubscribedrecipient
+    partner: msfp_msfp_unsubscribedrecipient_msfp_surveyinvite
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_activitypointers
+  - name: ownerid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.principal
+    partner: msfp_surveyinvite_owner_ownerid
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_activitypointer
+  - name: owningbusinessunit_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: msfp_surveyinvite_businessunit_owningbusinessunit
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_activity
+  - name: owningteam_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.team
+    partner: msfp_surveyinvite_team_owningteam
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_activity
+  - name: owninguser_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: msfp_surveyinvite_systemuser_owninguser
+  - name: regardingobjectid_account
+    type: Microsoft.Dynamics.CRM.account
+    partner: Account_ActivityPointers
+  - name: regardingobjectid_account_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.account
+    partner: account_msfp_surveyinvites
+  - name: regardingobjectid_bookableresourcebooking
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: bookableresourcebooking_ActivityPointers
+  - name: regardingobjectid_bookableresourcebooking_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: bookableresourcebooking_msfp_surveyinvites
+  - name: regardingobjectid_bookableresourcebookingheader
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: bookableresourcebookingheader_ActivityPointers
+  - name: regardingobjectid_bookableresourcebookingheader_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.bookableresourcebookingheader
+    partner: bookableresourcebookingheader_msfp_surveyinvites
+  - name: regardingobjectid_bulkoperation
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: BulkOperation_ActivityPointers
+  - name: regardingobjectid_bulkoperation_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: bulkoperation_msfp_surveyinvites
+  - name: regardingobjectid_campaign
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: Campaign_ActivityPointers
+  - name: regardingobjectid_campaign_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.campaign
+    partner: campaign_msfp_surveyinvites
+  - name: regardingobjectid_campaignactivity
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: CampaignActivity_ActivityPointers
+  - name: regardingobjectid_campaignactivity_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: campaignactivity_msfp_surveyinvites
+  - name: regardingobjectid_contact
+    type: Microsoft.Dynamics.CRM.contact
+    partner: Contact_ActivityPointers
+  - name: regardingobjectid_contact_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.contact
+    partner: contact_msfp_surveyinvites
+  - name: regardingobjectid_contract
+    type: Microsoft.Dynamics.CRM.contract
+    partner: Contract_ActivityPointers
+  - name: regardingobjectid_contract_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.contract
+    partner: contract_msfp_surveyinvites
+  - name: regardingobjectid_entitlement
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: entitlement_ActivityPointers
+  - name: regardingobjectid_entitlement_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.entitlement
+    partner: entitlement_msfp_surveyinvites
+  - name: regardingobjectid_entitlementtemplate
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: entitlementtemplate_ActivityPointers
+  - name: regardingobjectid_entitlementtemplate_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.entitlementtemplate
+    partner: entitlementtemplate_msfp_surveyinvites
+  - name: regardingobjectid_incident
+    type: Microsoft.Dynamics.CRM.incident
+    partner: Incident_ActivityPointers
+  - name: regardingobjectid_incident_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.incident
+    partner: incident_msfp_surveyinvites
+  - name: regardingobjectid_invoice
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: Invoice_ActivityPointers
+  - name: regardingobjectid_invoice_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.invoice
+    partner: invoice_msfp_surveyinvites
+  - name: regardingobjectid_knowledgearticle
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: KnowledgeArticle_ActivityPointers
+  - name: regardingobjectid_knowledgearticle_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: knowledgearticle_msfp_surveyinvites
+  - name: regardingobjectid_knowledgebaserecord
+    type: Microsoft.Dynamics.CRM.knowledgebaserecord
+    partner: KnowledgeBaseRecord_ActivityPointers
+  - name: regardingobjectid_knowledgebaserecord_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.knowledgebaserecord
+    partner: knowledgebaserecord_msfp_surveyinvites
+  - name: regardingobjectid_lead
+    type: Microsoft.Dynamics.CRM.lead
+    partner: Lead_ActivityPointers
+  - name: regardingobjectid_lead_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.lead
+    partner: lead_msfp_surveyinvites
+  - name: regardingobjectid_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_ActivityPointers
+  - name: regardingobjectid_ms_newsitem_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_msfp_surveyinvites
+  - name: regardingobjectid_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_ActivityPointers
+  - name: regardingobjectid_ms_satori_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_agreement
+    type: Microsoft.Dynamics.CRM.msdyn_agreement
+    partner: msdyn_agreement_ActivityPointers
+  - name: regardingobjectid_msdyn_agreement_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_agreement
+    partner: msdyn_agreement_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_agreementbookingdate
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
+    partner: msdyn_agreementbookingdate_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingdate_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
+    partner: msdyn_agreementbookingdate_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_agreementbookingincident
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
+    partner: msdyn_agreementbookingincident_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingincident_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
+    partner: msdyn_agreementbookingincident_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_agreementbookingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
+    partner: msdyn_agreementbookingproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingproduct_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
+    partner: msdyn_agreementbookingproduct_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_agreementbookingservice
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
+    partner: msdyn_agreementbookingservice_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingservice_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
+    partner: msdyn_agreementbookingservice_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_agreementbookingservicetask
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask
+    partner: msdyn_agreementbookingservicetask_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingservicetask_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask
+    partner: msdyn_agreementbookingservicetask_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_agreementbookingsetup
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
+    partner: msdyn_agreementbookingsetup_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementbookingsetup_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
+    partner: msdyn_agreementbookingsetup_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_agreementinvoicedate
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
+    partner: msdyn_agreementinvoicedate_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementinvoicedate_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
+    partner: msdyn_agreementinvoicedate_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_agreementinvoiceproduct
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+    partner: msdyn_agreementinvoiceproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementinvoiceproduct_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
+    partner: msdyn_agreementinvoiceproduct_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_agreementinvoicesetup
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
+    partner: msdyn_agreementinvoicesetup_ActivityPointers
+  - name: regardingobjectid_msdyn_agreementinvoicesetup_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
+    partner: msdyn_agreementinvoicesetup_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_bookingalertstatus
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
+    partner: msdyn_bookingalertstatus_ActivityPointers
+  - name: regardingobjectid_msdyn_bookingalertstatus_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
+    partner: msdyn_bookingalertstatus_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_bookingrule
+    type: Microsoft.Dynamics.CRM.msdyn_bookingrule
+    partner: msdyn_bookingrule_ActivityPointers
+  - name: regardingobjectid_msdyn_bookingrule_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_bookingrule
+    partner: msdyn_bookingrule_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_bookingtimestamp
+    type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
+    partner: msdyn_bookingtimestamp_ActivityPointers
+  - name: regardingobjectid_msdyn_bookingtimestamp_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
+    partner: msdyn_bookingtimestamp_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_customerasset
+    type: Microsoft.Dynamics.CRM.msdyn_customerasset
+    partner: msdyn_customerasset_ActivityPointers
+  - name: regardingobjectid_msdyn_customerasset_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_customerasset
+    partner: msdyn_customerasset_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_fieldservicesetting
+    type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
+    partner: msdyn_fieldservicesetting_ActivityPointers
+  - name: regardingobjectid_msdyn_fieldservicesetting_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
+    partner: msdyn_fieldservicesetting_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_incidenttypecharacteristic
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
+    partner: msdyn_incidenttypecharacteristic_ActivityPointers
+  - name: regardingobjectid_msdyn_incidenttypecharacteristic_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
+    partner: msdyn_incidenttypecharacteristic_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_incidenttypeproduct
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
+    partner: msdyn_incidenttypeproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_incidenttypeproduct_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
+    partner: msdyn_incidenttypeproduct_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_incidenttypeservice
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
+    partner: msdyn_incidenttypeservice_ActivityPointers
+  - name: regardingobjectid_msdyn_incidenttypeservice_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
+    partner: msdyn_incidenttypeservice_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_inventoryadjustment
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
+    partner: msdyn_inventoryadjustment_ActivityPointers
+  - name: regardingobjectid_msdyn_inventoryadjustment_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
+    partner: msdyn_inventoryadjustment_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_inventoryadjustmentproduct
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
+    partner: msdyn_inventoryadjustmentproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_inventoryadjustmentproduct_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
+    partner: msdyn_inventoryadjustmentproduct_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_inventoryjournal
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
+    partner: msdyn_inventoryjournal_ActivityPointers
+  - name: regardingobjectid_msdyn_inventoryjournal_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
+    partner: msdyn_inventoryjournal_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_inventorytransfer
+    type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
+    partner: msdyn_inventorytransfer_ActivityPointers
+  - name: regardingobjectid_msdyn_inventorytransfer_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
+    partner: msdyn_inventorytransfer_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_payment
+    type: Microsoft.Dynamics.CRM.msdyn_payment
+    partner: msdyn_payment_ActivityPointers
+  - name: regardingobjectid_msdyn_payment_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_payment
+    partner: msdyn_payment_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_paymentdetail
+    type: Microsoft.Dynamics.CRM.msdyn_paymentdetail
+    partner: msdyn_paymentdetail_ActivityPointers
+  - name: regardingobjectid_msdyn_paymentdetail_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_paymentdetail
+    partner: msdyn_paymentdetail_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_paymentmethod
+    type: Microsoft.Dynamics.CRM.msdyn_paymentmethod
+    partner: msdyn_paymentmethod_ActivityPointers
+  - name: regardingobjectid_msdyn_paymentmethod_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_paymentmethod
+    partner: msdyn_paymentmethod_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_paymentterm
+    type: Microsoft.Dynamics.CRM.msdyn_paymentterm
+    partner: msdyn_paymentterm_ActivityPointers
+  - name: regardingobjectid_msdyn_paymentterm_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_paymentterm
+    partner: msdyn_paymentterm_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_playbookinstance
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_ActivityPointers
+  - name: regardingobjectid_msdyn_playbookinstance_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_postalbum
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_ActivityPointers
+  - name: regardingobjectid_msdyn_postalbum_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_postalbum
+    partner: msdyn_postalbum_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_postalcode
+    type: Microsoft.Dynamics.CRM.msdyn_postalcode
+    partner: msdyn_postalcode_ActivityPointers
+  - name: regardingobjectid_msdyn_postalcode_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_postalcode
+    partner: msdyn_postalcode_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_processnotes
+    type: Microsoft.Dynamics.CRM.msdyn_processnotes
+    partner: msdyn_processnotes_ActivityPointers
+  - name: regardingobjectid_msdyn_processnotes_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_processnotes
+    partner: msdyn_processnotes_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_productinventory
+    type: Microsoft.Dynamics.CRM.msdyn_productinventory
+    partner: msdyn_productinventory_ActivityPointers
+  - name: regardingobjectid_msdyn_productinventory_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_productinventory
+    partner: msdyn_productinventory_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_projectteam
+    type: Microsoft.Dynamics.CRM.msdyn_projectteam
+    partner: msdyn_projectteam_ActivityPointers
+  - name: regardingobjectid_msdyn_projectteam_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_projectteam
+    partner: msdyn_projectteam_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_purchaseorder
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+    partner: msdyn_purchaseorder_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseorder_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+    partner: msdyn_purchaseorder_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_purchaseorderbill
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
+    partner: msdyn_purchaseorderbill_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseorderbill_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
+    partner: msdyn_purchaseorderbill_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_purchaseorderproduct
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+    partner: msdyn_purchaseorderproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseorderproduct_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
+    partner: msdyn_purchaseorderproduct_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_purchaseorderreceipt
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
+    partner: msdyn_purchaseorderreceipt_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseorderreceipt_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
+    partner: msdyn_purchaseorderreceipt_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_purchaseorderreceiptproduct
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
+    partner: msdyn_purchaseorderreceiptproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseorderreceiptproduct_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
+    partner: msdyn_purchaseorderreceiptproduct_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_purchaseordersubstatus
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus
+    partner: msdyn_purchaseordersubstatus_ActivityPointers
+  - name: regardingobjectid_msdyn_purchaseordersubstatus_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus
+    partner: msdyn_purchaseordersubstatus_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_quotebookingincident
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingincident
+    partner: msdyn_quotebookingincident_ActivityPointers
+  - name: regardingobjectid_msdyn_quotebookingincident_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingincident
+    partner: msdyn_quotebookingincident_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_quotebookingproduct
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+    partner: msdyn_quotebookingproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_quotebookingproduct_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
+    partner: msdyn_quotebookingproduct_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_quotebookingservice
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+    partner: msdyn_quotebookingservice_ActivityPointers
+  - name: regardingobjectid_msdyn_quotebookingservice_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
+    partner: msdyn_quotebookingservice_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_quotebookingservicetask
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask
+    partner: msdyn_quotebookingservicetask_ActivityPointers
+  - name: regardingobjectid_msdyn_quotebookingservicetask_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask
+    partner: msdyn_quotebookingservicetask_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_resourceterritory
+    type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
+    partner: msdyn_resourceterritory_ActivityPointers
+  - name: regardingobjectid_msdyn_resourceterritory_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
+    partner: msdyn_resourceterritory_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_rma
+    type: Microsoft.Dynamics.CRM.msdyn_rma
+    partner: msdyn_rma_ActivityPointers
+  - name: regardingobjectid_msdyn_rma_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_rma
+    partner: msdyn_rma_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_rmaproduct
+    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+    partner: msdyn_rmaproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_rmaproduct_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
+    partner: msdyn_rmaproduct_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_rmareceipt
+    type: Microsoft.Dynamics.CRM.msdyn_rmareceipt
+    partner: msdyn_rmareceipt_ActivityPointers
+  - name: regardingobjectid_msdyn_rmareceipt_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_rmareceipt
+    partner: msdyn_rmareceipt_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_rmareceiptproduct
+    type: Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct
+    partner: msdyn_rmareceiptproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_rmareceiptproduct_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct
+    partner: msdyn_rmareceiptproduct_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_rmasubstatus
+    type: Microsoft.Dynamics.CRM.msdyn_rmasubstatus
+    partner: msdyn_rmasubstatus_ActivityPointers
+  - name: regardingobjectid_msdyn_rmasubstatus_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_rmasubstatus
+    partner: msdyn_rmasubstatus_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_rtv
+    type: Microsoft.Dynamics.CRM.msdyn_rtv
+    partner: msdyn_rtv_ActivityPointers
+  - name: regardingobjectid_msdyn_rtv_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_rtv
+    partner: msdyn_rtv_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_rtvproduct
+    type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
+    partner: msdyn_rtvproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_rtvproduct_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
+    partner: msdyn_rtvproduct_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_rtvsubstatus
+    type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
+    partner: msdyn_rtvsubstatus_ActivityPointers
+  - name: regardingobjectid_msdyn_rtvsubstatus_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
+    partner: msdyn_rtvsubstatus_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_shipvia
+    type: Microsoft.Dynamics.CRM.msdyn_shipvia
+    partner: msdyn_shipvia_ActivityPointers
+  - name: regardingobjectid_msdyn_shipvia_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_shipvia
+    partner: msdyn_shipvia_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_systemuserschedulersetting
+    type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
+    partner: msdyn_systemuserschedulersetting_ActivityPointers
+  - name: regardingobjectid_msdyn_systemuserschedulersetting_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
+    partner: msdyn_systemuserschedulersetting_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_timegroup
+    type: Microsoft.Dynamics.CRM.msdyn_timegroup
+    partner: msdyn_timegroup_ActivityPointers
+  - name: regardingobjectid_msdyn_timegroup_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_timegroup
+    partner: msdyn_timegroup_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_timegroupdetail
+    type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
+    partner: msdyn_timegroupdetail_ActivityPointers
+  - name: regardingobjectid_msdyn_timegroupdetail_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
+    partner: msdyn_timegroupdetail_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_timeoffrequest
+    type: Microsoft.Dynamics.CRM.msdyn_timeoffrequest
+    partner: msdyn_timeoffrequest_ActivityPointers
+  - name: regardingobjectid_msdyn_timeoffrequest_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_timeoffrequest
+    partner: msdyn_timeoffrequest_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_warehouse
+    type: Microsoft.Dynamics.CRM.msdyn_warehouse
+    partner: msdyn_warehouse_ActivityPointers
+  - name: regardingobjectid_msdyn_warehouse_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_warehouse
+    partner: msdyn_warehouse_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_workorder
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_workorder_ActivityPointers
+  - name: regardingobjectid_msdyn_workorder_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_workorder
+    partner: msdyn_workorder_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_workordercharacteristic
+    type: Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
+    partner: msdyn_workordercharacteristic_ActivityPointers
+  - name: regardingobjectid_msdyn_workordercharacteristic_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
+    partner: msdyn_workordercharacteristic_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_workorderincident
+    type: Microsoft.Dynamics.CRM.msdyn_workorderincident
+    partner: msdyn_workorderincident_ActivityPointers
+  - name: regardingobjectid_msdyn_workorderincident_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_workorderincident
+    partner: msdyn_workorderincident_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_workorderproduct
+    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+    partner: msdyn_workorderproduct_ActivityPointers
+  - name: regardingobjectid_msdyn_workorderproduct_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
+    partner: msdyn_workorderproduct_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_workorderresourcerestriction
+    type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
+    partner: msdyn_workorderresourcerestriction_ActivityPointers
+  - name: regardingobjectid_msdyn_workorderresourcerestriction_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
+    partner: msdyn_workorderresourcerestriction_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_workorderservice
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+    partner: msdyn_workorderservice_ActivityPointers
+  - name: regardingobjectid_msdyn_workorderservice_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
+    partner: msdyn_workorderservice_msfp_surveyinvites
+  - name: regardingobjectid_msdyn_workorderservicetask
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
+    partner: msdyn_workorderservicetask_ActivityPointers
+  - name: regardingobjectid_msdyn_workorderservicetask_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
+    partner: msdyn_workorderservicetask_msfp_surveyinvites
+  - name: regardingobjectid_new_interactionforemail
+    type: Microsoft.Dynamics.CRM.interactionforemail
+    partner: new_interactionforemail_ActivityPointers
+  - name: regardingobjectid_new_interactionforemail_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.interactionforemail
+    partner: interactionforemail_msfp_surveyinvites
+  - name: regardingobjectid_opportunity
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: Opportunity_ActivityPointers
+  - name: regardingobjectid_opportunity_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.opportunity
+    partner: opportunity_msfp_surveyinvites
+  - name: regardingobjectid_quote
+    type: Microsoft.Dynamics.CRM.quote
+    partner: Quote_ActivityPointers
+  - name: regardingobjectid_quote_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.quote
+    partner: quote_msfp_surveyinvites
+  - name: regardingobjectid_salesorder
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: SalesOrder_ActivityPointers
+  - name: regardingobjectid_salesorder_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.salesorder
+    partner: salesorder_msfp_surveyinvites
+  - name: regardingobjectid_site
+    type: Microsoft.Dynamics.CRM.site
+    partner: site_ActivityPointers
+  - name: regardingobjectid_site_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.site
+    partner: site_msfp_surveyinvites
+  - name: sendermailboxid
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: activitypointer_sendermailboxid_mailbox
+  - name: sendermailboxid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.mailbox
+    partner: msfp_surveyinvite_mailbox_sendermailboxid
+  - name: serviceid
+    type: Microsoft.Dynamics.CRM.service
+    partner: service_activity_pointers
+  - name: serviceid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.service
+    partner: msfp_surveyinvite_service_serviceid
+  - name: sla_activitypointer_sla
+    type: Microsoft.Dynamics.CRM.sla
+    partner: manualsla_activitypointer
+  - name: sla_activitypointer_sla_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.sla
+    partner: msfp_surveyinvite_sla_slaid
+  - name: slainvokedid_activitypointer_sla
+    type: Microsoft.Dynamics.CRM.sla
+    partner: sla_activitypointer
+  - name: slainvokedid_activitypointer_sla_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.sla
+    partner: msfp_surveyinvite_sla_slainvokedid
+  - name: transactioncurrencyid
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: TransactionCurrency_ActivityPointer
+  - name: transactioncurrencyid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    partner: msfp_surveyinvite_transactioncurrency_transactioncurrencyid
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: activity_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: originatingactivityid_activitypointer
+  - name: activity_pointer_activity_mime_attachment
+    type: Microsoft.Dynamics.CRM.activitymimeattachment
+    partner: objectid_activitypointer
+  - name: activity_pointer_appointment
+    type: Microsoft.Dynamics.CRM.appointment
+    partner: activityid_activitypointer
+  - name: activity_pointer_BulkOperation
+    type: Microsoft.Dynamics.CRM.bulkoperation
+    partner: activityid_activitypointer
+  - name: activity_pointer_BulkOperation_logs
+    type: Microsoft.Dynamics.CRM.bulkoperationlog
+    partner: bulkoperationid_activitypointer
+  - name: activity_pointer_campaignactivity
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: activityid_activitypointer
+  - name: activity_pointer_campaignresponse
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: activityid_activitypointer
+  - name: activity_pointer_email
+    type: Microsoft.Dynamics.CRM.email
+    partner: activityid_activitypointer
+  - name: activity_pointer_fax
+    type: Microsoft.Dynamics.CRM.fax
+    partner: activityid_activitypointer
+  - name: activity_pointer_incident_resolution
+    type: Microsoft.Dynamics.CRM.incidentresolution
+    partner: activityid_activitypointer
+  - name: activity_pointer_letter
+    type: Microsoft.Dynamics.CRM.letter
+    partner: activityid_activitypointer
+  - name: activity_pointer_li_inmail
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: activityid_li_inmail
+  - name: activity_pointer_li_message
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: activityid_li_message
+  - name: activity_pointer_li_pointdrivepresentationviewed
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: activityid_li_pointdrivepresentationviewed
+  - name: activity_pointer_msdyn_approval
+    type: Microsoft.Dynamics.CRM.msdyn_approval
+    partner: activityid_msdyn_approval
+  - name: activity_pointer_msdyn_bookingalert
+    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
+    partner: activityid_msdyn_bookingalert
+  - name: activity_pointer_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: activityid_msfp_alert
+  - name: activity_pointer_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: activityid_msfp_surveyinvite
+  - name: activity_pointer_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: activityid_msfp_surveyresponse
+  - name: activity_pointer_opportunity_close
+    type: Microsoft.Dynamics.CRM.opportunityclose
+    partner: activityid_activitypointer
+  - name: activity_pointer_order_close
+    type: Microsoft.Dynamics.CRM.orderclose
+    partner: activityid_activitypointer
+  - name: activity_pointer_phonecall
+    type: Microsoft.Dynamics.CRM.phonecall
+    partner: activityid_activitypointer
+  - name: activity_pointer_quote_close
+    type: Microsoft.Dynamics.CRM.quoteclose
+    partner: activityid_activitypointer
+  - name: activity_pointer_recurrencerule
+    type: Microsoft.Dynamics.CRM.recurrencerule
+    partner: objectid
+  - name: activity_pointer_recurringappointmentmaster
+    type: Microsoft.Dynamics.CRM.recurringappointmentmaster
+    partner: activityid_activitypointer
+  - name: activity_pointer_service_appointment
+    type: Microsoft.Dynamics.CRM.serviceappointment
+    partner: activityid_activitypointer
+  - name: activity_pointer_socialactivity
+    type: Microsoft.Dynamics.CRM.socialactivity
+    partner: activityid_activitypointer
+  - name: activity_pointer_task
+    type: Microsoft.Dynamics.CRM.task
+    partner: activityid_activitypointer
+  - name: activitypointer_activity_parties
+    type: Microsoft.Dynamics.CRM.activityparty
+    partner: activityid_activitypointer
+  - name: ActivityPointer_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_activitypointer
+  - name: ActivityPointer_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_activitypointer
+  - name: ActivityPointer_CampaignActivityItems
+    type: Microsoft.Dynamics.CRM.campaignactivityitem
+    partner: campaignactivityid
+  - name: activitypointer_connections1
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record1id_activitypointer
+  - name: activitypointer_connections2
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record2id_activitypointer
+  - name: ActivityPointer_QueueItem
+    type: Microsoft.Dynamics.CRM.queueitem
+    partner: objectid_activitypointer
+  - name: CampaignResponse_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.campaignresponse
+    partner: originatingactivityid_msfp_surveyinvite_campaignresponse
+  - name: CreatedActivity_BulkOperationLogs
+    type: Microsoft.Dynamics.CRM.bulkoperationlog
+    partner: createdobjectid_activitypointer
+  - name: msfp_msfp_surveyinvite_msfp_surveyresponse_surveyinviteid
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: msfp_surveyinviteid_msfp_surveyresponse
+  - name: msfp_surveyinvite_ActionCards
+    type: Microsoft.Dynamics.CRM.actioncard
+    partner: regardingobjectid_msfp_surveyinvite
+  - name: msfp_surveyinvite_activity_parties
+    type: Microsoft.Dynamics.CRM.activityparty
+    partner: activityid_msfp_surveyinvite_activityparty
+  - name: msfp_surveyinvite_Annotations
+    type: Microsoft.Dynamics.CRM.annotation
+    partner: objectid_msfp_surveyinvite
+  - name: msfp_surveyinvite_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msfp_surveyinvite
+  - name: msfp_surveyinvite_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msfp_surveyinvite
+  - name: msfp_surveyinvite_connections1
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record1id_msfp_surveyinvite
+  - name: msfp_surveyinvite_connections2
+    type: Microsoft.Dynamics.CRM.connection
+    partner: record2id_msfp_surveyinvite
+  - name: msfp_surveyinvite_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msfp_surveyinvite
+  - name: msfp_surveyinvite_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msfp_surveyinvite
+  - name: msfp_surveyinvite_Feedback
+    type: Microsoft.Dynamics.CRM.feedback
+    partner: regardingobjectid_msfp_surveyinvite
+  - name: msfp_surveyinvite_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msfp_surveyinvite
+  - name: msfp_surveyinvite_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msfp_surveyinvite
+  - name: msfp_surveyinvite_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msfp_surveyinvite
+  - name: msfp_surveyinvite_QueueItems
+    type: Microsoft.Dynamics.CRM.queueitem
+    partner: objectid_msfp_surveyinvite
+  - name: msfp_surveyinvite_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msfp_surveyinvite
+  - name: slakpiinstance_activitypointer
+    type: Microsoft.Dynamics.CRM.slakpiinstance
+    partner: regarding_activitypointer
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msfp_surveyinvite entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msfp_surveyinvite entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.MicrosoftFormsPro
+    description: "Create and send surveys to your customers or employees and collect their valuable feedback about your products or services."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

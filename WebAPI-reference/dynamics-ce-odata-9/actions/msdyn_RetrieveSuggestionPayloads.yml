@@ -1,0 +1,56 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_RetrieveSuggestionPayloads
+name: "msdyn_RetrieveSuggestionPayloads"
+type: action
+metadata: 
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 17f180ab-8cf9-4f5a-95aa-0940ad5b93db
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_RetrieveSuggestionPayloads Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.msdyn_CSIntelligence
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: SuggestionFor
+    type: Microsoft.Dynamics.CRM.crmbaseentity
+    nullable: false
+    unicode: true
+    description: ""
+  - name: Context
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+  - name: SuggestionType
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+return_type:
+  description: "The msdyn_RetrieveSuggestionPayloads action returns the following value."
+  iscollection: true
+  nullable: false
+  type: Microsoft.Dynamics.CRM.crmbaseentity
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

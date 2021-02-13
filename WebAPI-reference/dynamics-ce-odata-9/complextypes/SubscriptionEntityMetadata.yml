@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.SubscriptionEntityMetadata
 name: "SubscriptionEntityMetadata"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SubscriptionEntityMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse SubscriptionEntityMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: f97b3952-8c15-4e55-97f3-65d4cf4bc94f
-  author: "KumarVivek"
+  ms.assetid: b6ef155c-1965-4ecf-9e21-6fbb43453608
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API SubscriptionEntityMetadata ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API SubscriptionEntityMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -46,12 +46,14 @@ properties:
 usedby:
   description: "The following use the SubscriptionEntityMetadata ComplexType."
   usedby_items:
+  - name: Microsoft.Dynamics.CRM.SyncOfflineDataSchemaResponse
+    used_as: Property
   - name: Microsoft.Dynamics.CRM.SyncSubscriptionMetadataResponse
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

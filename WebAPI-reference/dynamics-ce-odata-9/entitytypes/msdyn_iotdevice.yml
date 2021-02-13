@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_iotdevice
 name: "msdyn_iotdevice"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_iotdevice EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0f2edad7-0605-48fb-ae89-f4f37a97778a
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_iotdevice entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_iotdevice entitytype."
 description: "Represents a connected device that can be registered with an IoT provider."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_iotdevices"
@@ -263,6 +263,9 @@ single_valued_navigation_properties:
   - name: msdyn_Category
     type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
     partner: msdyn_msdyn_iotdevicecategory_msdyn_iotdevice_Category
+  - name: msdyn_IoTProviderInstance
+    type: Microsoft.Dynamics.CRM.msdyn_iotproviderinstance
+    partner: msdyn_msdyn_iotproviderinstance_msdyn_iotdevice_IoTProviderInstance
   - name: msdyn_LastCommandSent
     type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
     partner: msdyn_msdyn_iotdevicecommand_msdyn_iotdevice_LastCommandSent
@@ -314,11 +317,17 @@ collection_valued_navigation_properties:
   - name: msdyn_iotdevice_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_msdyn_iotdevice
+  - name: msdyn_iotdevicevisualizationconfiguration_iotdevice
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicevisualizationconfiguration
+    partner: msdyn_IoTDevice
   - name: msdyn_msdyn_iotdevice_msdyn_iotalert_Device
     type: Microsoft.Dynamics.CRM.msdyn_iotalert
     partner: msdyn_Device
   - name: msdyn_msdyn_iotdevice_msdyn_iotdevicecommand_Device
     type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
+    partner: msdyn_Device
+  - name: msdyn_msdyn_iotdevice_msdyn_iotdevicedatahistory_Device
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicedatahistory
     partner: msdyn_Device
   - name: msdyn_msdyn_iotdevice_msdyn_iotdeviceregistrationhistory_Device
     type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
@@ -344,10 +353,14 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.IoTConnector
     description: "Enables IoT scenarios in Dynamics 365."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerService
+    description: "Use Connected Customer Service to monitor connected devices to make sure your customer’s equipment is functioning properly. If a piece of equipment fails, you’ll receive a notification so that you can troubleshoot the problem remotely."
+  - type: Microsoft.Dynamics.CRM.msdyn_IoTAssetCommon
+    description: "Enables IoT Scenarios for Customer Asset"
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

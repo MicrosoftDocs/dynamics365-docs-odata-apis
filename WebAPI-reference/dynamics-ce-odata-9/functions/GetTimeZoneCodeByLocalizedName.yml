@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.GetTimeZoneCodeByLocalizedName
 name: "GetTimeZoneCodeByLocalizedName"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement GetTimeZoneCodeByLocalizedName Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement GetTimeZoneCodeByLocalizedName Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 62925e6c-86ee-49af-8391-e1bf54e98a82
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the GetTimeZoneCodeByLocalizedName Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse GetTimeZoneCodeByLocalizedName Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the time zone code for the specified localized time zone name. "
 iscomposable: false
@@ -43,10 +43,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.timezonedefinition
     displayName: "Time Zone Definition"
     description: "Time zone definition, including name and time zone code."
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

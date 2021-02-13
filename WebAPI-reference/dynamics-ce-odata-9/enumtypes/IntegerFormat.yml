@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.IntegerFormat
 name: "IntegerFormat"
 type: enumtype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement IntegerFormat EnumType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse IntegerFormat EnumType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4ca1517f-2574-4416-9cdf-1e15e2bd3c86
-  author: "KumarVivek"
+  author: "kumarVivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API IntegerFormat ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API IntegerFormat ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "Describes the formatting of an integer attribute. " 
 members:
@@ -39,10 +39,10 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.ComplexIntegerAttributeMetadata
     used_as: Property
-# This enum type has no remarks.
+# There are no remarks for this enum type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

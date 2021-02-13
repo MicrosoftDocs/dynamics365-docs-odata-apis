@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ComplexBooleanOptionSetMetadata
 name: "ComplexBooleanOptionSetMetadata"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ComplexBooleanOptionSetMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse ComplexBooleanOptionSetMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: b95db8f0-524b-4ddc-9404-68507ed1e024
-  author: "KumarVivek"
+  ms.assetid: a850716c-57d6-440e-be6d-945636499e3f
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API ComplexBooleanOptionSetMetadata ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API ComplexBooleanOptionSetMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -108,10 +108,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.ComplexBooleanAttributeMetadata
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

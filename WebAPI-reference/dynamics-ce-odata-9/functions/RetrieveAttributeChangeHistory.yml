@@ -3,17 +3,17 @@ uid: Microsoft.Dynamics.CRM.RetrieveAttributeChangeHistory
 name: "RetrieveAttributeChangeHistory"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveAttributeChangeHistory Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveAttributeChangeHistory Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ed993cfb-47fb-4430-86c5-cba3610e5f42
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveAttributeChangeHistory Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse RetrieveAttributeChangeHistory Function."
 namespace: Microsoft.Dynamics.CRM
-description: "Retrieve all metadata changes to a specific attribute."
+description: "retrieve all metadata changes to a specific attribute."
 iscomposable: false
 # This function is not bound to any entities.
 isbound: false
@@ -49,10 +49,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.audit
     displayName: "Auditing"
     description: "Track changes to records for analysis, record keeping, and compliance."
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

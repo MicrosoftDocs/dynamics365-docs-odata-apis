@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.knowledgearticle
 name: "knowledgearticle"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement knowledgearticle EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 438dc89a-b8c2-4e28-b4fc-a130d70eff22
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the knowledgearticle entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse knowledgearticle entitytype."
 description: "Organizational knowledge for internal and external use."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/knowledgearticles"
@@ -535,6 +535,9 @@ collection_valued_navigation_properties:
   - name: knowledgearticle_BulkOperations
     type: Microsoft.Dynamics.CRM.bulkoperation
     partner: regardingobjectid_knowledgearticle_bulkoperation
+  - name: knowledgearticle_CampaignActivities
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: regardingobjectid_knowledgearticle_campaignactivity
   - name: knowledgearticle_CampaignResponses
     type: Microsoft.Dynamics.CRM.campaignresponse
     partner: regardingobjectid_knowledgearticle_campaignresponse
@@ -571,12 +574,30 @@ collection_valued_navigation_properties:
   - name: KnowledgeArticle_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_knowledgearticle_letter
+  - name: knowledgearticle_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_knowledgearticle_li_inmail
+  - name: knowledgearticle_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_knowledgearticle_li_message
+  - name: knowledgearticle_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_knowledgearticle_li_pointdrivepresentationviewed
   - name: knowledgearticle_msdyn_approvals
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: regardingobjectid_knowledgearticle_msdyn_approval
   - name: knowledgearticle_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_knowledgearticle_msdyn_bookingalert
+  - name: knowledgearticle_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_knowledgearticle_msfp_alert
+  - name: knowledgearticle_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_knowledgearticle_msfp_surveyinvite
+  - name: knowledgearticle_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_knowledgearticle_msfp_surveyresponse
   - name: knowledgearticle_newprocess
     type: Microsoft.Dynamics.CRM.newprocess
     partner: knowledgearticleid
@@ -643,6 +664,18 @@ collection_valued_navigation_properties:
   - name: knowledgearticle_views
     type: Microsoft.Dynamics.CRM.knowledgearticleviews
     partner: knowledgearticleid
+  - name: msdyn_knowledgearticle_feedback_context
+    type: Microsoft.Dynamics.CRM.feedback
+    partner: msdyn_ContextObjectId_knowledgearticle
+  - name: msdyn_knowledgearticle_msdyn_kbenrichment_kbid
+    type: Microsoft.Dynamics.CRM.msdyn_kbenrichment
+    partner: msdyn_kbid
+  - name: msdyn_knowledgearticle_msdyn_knowledgearticlesuggestion_suggestedentity
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticlesuggestion
+    partner: msdyn_suggestedentity
+  - name: msdyn_knowledgearticle_msdyn_suggestioninteraction_msdyn_suggestedentity
+    type: Microsoft.Dynamics.CRM.msdyn_suggestioninteraction
+    partner: msdyn_suggestedentity_knowledgearticle
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the knowledgearticle entity type."
@@ -682,10 +715,10 @@ solutions:
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.flowsession
 name: "flowsession"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement flowsession EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: ed145c81-cf79-4500-b42a-ba6658024a45
-  author: "KumarVivek"
+  ms.assetid: 7b8d6147-73a7-419e-830e-4fe236605027
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the flowsession entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse flowsession entitytype."
 description: "Entity to store the information that is generated when a modern flow or UI flow runs."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/flowsessions"
@@ -292,6 +292,15 @@ collection_valued_navigation_properties:
   - name: flowsession_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_flowsession
+  - name: flowsession_workflowbinary_FlowSessionId
+    type: Microsoft.Dynamics.CRM.workflowbinary
+    partner: FlowSessionId
+  - name: lk_workflowlog_flowsession_childworkflow
+    type: Microsoft.Dynamics.CRM.workflowlog
+    partner: childworkflowinstanceid_flowsession
+  - name: lk_workflowlog_flowsessions
+    type: Microsoft.Dynamics.CRM.workflowlog
+    partner: flowsessionid_flowsession
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the flowsession entity type."
@@ -313,10 +322,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.MicrosoftFlowExtensionsCore
     description: ""
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

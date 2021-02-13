@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.SearchByBodyKbArticle
 name: "SearchByBodyKbArticle"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SearchByBodyKbArticle Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement SearchByBodyKbArticle Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8e8546b0-d52d-417f-a296-03ffb1ead6b7
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the SearchByBodyKbArticle Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse SearchByBodyKbArticle Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Searches for knowledge base articles that contain the specified body text."
 iscomposable: true
@@ -48,10 +48,10 @@ return_type:
   iscollection: true
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

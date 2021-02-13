@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveEntityRibbon
 name: "RetrieveEntityRibbon"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveEntityRibbon Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveEntityRibbon Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 73aeae1c-32bc-42ce-a191-7b078499b35c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveEntityRibbon Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse RetrieveEntityRibbon Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves ribbon definitions for an entity.  "
 iscomposable: false
@@ -38,10 +38,10 @@ return_type:
   iscollection: false
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

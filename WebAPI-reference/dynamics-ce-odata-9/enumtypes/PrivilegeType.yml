@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.PrivilegeType
 name: "PrivilegeType"
 type: enumtype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement PrivilegeType EnumType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse PrivilegeType EnumType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d6d6c832-f5cc-4d4c-90d8-af036b5acf38
-  author: "KumarVivek"
+  author: "kumarVivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API PrivilegeType ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API PrivilegeType ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "Describes the type of operation for the privilege " 
 members:
@@ -49,10 +49,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.SecurityPrivilegeMetadata
     used_as: Property
-# This enum type has no remarks.
+# There are no remarks for this enum type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

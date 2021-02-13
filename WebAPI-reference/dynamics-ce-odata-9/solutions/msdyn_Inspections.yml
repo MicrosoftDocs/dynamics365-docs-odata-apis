@@ -1,0 +1,51 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_Inspections
+name: "Inspections"
+type: solution
+metadata: 
+  title: "Dataverse Inspections Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: b9455aeb-1927-4a0d-aa3c-f5533baf5e88
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Inspections Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Enable Inspections in Dynamics 365."
+ unique_name: msdyn_Inspections
+ version: "1.0.1.200"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_inspection
+     description: "Entity used for creating Inspections."
+   - type: Microsoft.Dynamics.CRM.msdyn_inspectionattachment
+     description: "Entity used to save the attachment details of an Inspection Response."
+   - type: Microsoft.Dynamics.CRM.msdyn_inspectiondefinition
+     description: "Entity used to save different sets of questions related to an Inspection."
+   - type: Microsoft.Dynamics.CRM.msdyn_inspectionresponse
+     description: "Entity used to save the responses of the Inspection."
+   - type: Microsoft.Dynamics.CRM.msfp_questionresponse
+     description: "Response to a question in a survey."
+   - type: Microsoft.Dynamics.CRM.msfp_survey
+     description: "Set of questions to collect feedback."
+   - type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+     description: "Response to a survey."
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

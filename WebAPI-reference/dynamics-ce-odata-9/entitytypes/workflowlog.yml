@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.workflowlog
 name: "workflowlog"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement workflowlog EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d30a875d-acbf-40e2-b968-5ba4789851bf
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the workflowlog entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse workflowlog entitytype."
 description: "Log used to track process execution."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/workflowlogs"
@@ -176,26 +176,29 @@ lookup_properties:
   property_items:
   - name: _asyncoperationid_value
     single_valued_navigation_property:
+    - asyncoperationid_processsession
+    - ExpiredProcess_asyncoperationid
     - TranslationProcess_asyncoperationid
     - asyncoperationid_asyncoperation
-    - ExpiredProcess_asyncoperationid
     - NewProcess_asyncoperationid
-    - asyncoperationid_processsession
-    - PhoneToCaseProcess_asyncoperationid
-    - LeadToOpportunitySalesProcess_asyncoperationid
-    - OpportunitySalesProcess_asyncoperationid
+    - asyncoperationid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
+    - asyncoperationid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
     - asyncoperationid_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
     - asyncoperationid_msdyn_bpf_989e9b1857e24af18787d5143b67523b
     - asyncoperationid_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
     - asyncoperationid_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
     - asyncoperationid_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
-    - asyncoperationid_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
-    - asyncoperationid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
+    - PhoneToCaseProcess_asyncoperationid
+    - LeadToOpportunitySalesProcess_asyncoperationid
+    - OpportunitySalesProcess_asyncoperationid
+    - flowsessionid_flowsession
+    - asyncoperationid_msdyn_iottocaseprocess
     description: "Unique identifier of the parent record."
   - name: _childworkflowinstanceid_value
     single_valued_navigation_property:
-    - childworkflowinstanceid_asyncoperation
     - childworkflowinstanceid_processsession
+    - childworkflowinstanceid_asyncoperation
+    - childworkflowinstanceid_flowsession
     description: "Unique identifier of the system job."
   - name: _createdby_value
     single_valued_navigation_property:
@@ -254,12 +257,18 @@ single_valued_navigation_properties:
   - name: asyncoperationid_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
     type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
     partner: msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d_WorkflowLogs
+  - name: asyncoperationid_msdyn_iottocaseprocess
+    type: Microsoft.Dynamics.CRM.msdyn_iottocaseprocess
+    partner: msdyn_iottocaseprocess_WorkflowLogs
   - name: asyncoperationid_processsession
     type: Microsoft.Dynamics.CRM.processsession
     partner: lk_workflowlog_processsession
   - name: childworkflowinstanceid_asyncoperation
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: lk_workflowlog_asyncoperation_childworkflow
+  - name: childworkflowinstanceid_flowsession
+    type: Microsoft.Dynamics.CRM.flowsession
+    partner: lk_workflowlog_flowsession_childworkflow
   - name: childworkflowinstanceid_processsession
     type: Microsoft.Dynamics.CRM.processsession
     partner: lk_workflowlog_processsession_childworkflow
@@ -272,6 +281,9 @@ single_valued_navigation_properties:
   - name: ExpiredProcess_asyncoperationid
     type: Microsoft.Dynamics.CRM.expiredprocess
     partner: workflowlogs_expiredprocess
+  - name: flowsessionid_flowsession
+    type: Microsoft.Dynamics.CRM.flowsession
+    partner: lk_workflowlog_flowsessions
   - name: LeadToOpportunitySalesProcess_asyncoperationid
     type: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
     partner: workflowlogs_leadtoopportunitysalesprocess
@@ -314,10 +326,10 @@ solutions:
     description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

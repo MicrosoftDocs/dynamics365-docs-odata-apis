@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.BooleanOptionSetMetadata
 name: "BooleanOptionSetMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement BooleanOptionSetMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse BooleanOptionSetMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: dbcc1811-2089-41b0-bffc-db43ceb882d4
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the BooleanOptionSetMetadata metadata entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse BooleanOptionSetMetadata metadata entitytype."
 header: 
   description: "Contains the data for the options in a boolean attribute."
   base_type: Microsoft.Dynamics.CRM.OptionSetMetadataBase
@@ -88,10 +88,10 @@ usedby:
     used_as: NavigationProperty
   - name: Microsoft.Dynamics.CRM.BooleanAttributeMetadata
     used_as: NavigationProperty
-# This metadata entity has no remarks.
+# There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

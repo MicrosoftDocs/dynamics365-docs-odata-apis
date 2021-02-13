@@ -1,0 +1,86 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_GetCategoryPrice
+name: "msdyn_GetCategoryPrice"
+type: action
+metadata: 
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: ab858fa4-1d79-4c91-9da8-50018afdf3bd
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_GetCategoryPrice Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.ProjectService
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: TransactionCategory
+    type: Microsoft.Dynamics.CRM.msdyn_transactioncategory
+    nullable: true
+    unicode: true
+    description: ""
+  - name: ExpenseCategory
+    type: Microsoft.Dynamics.CRM.msdyn_expensecategory
+    nullable: true
+    unicode: true
+    description: ""
+  - name: TransactionType
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: ""
+  - name: TransactionStartDate
+    type: Edm.DateTimeOffset
+    nullable: false
+    unicode: true
+    description: ""
+  - name: TransactionEndDate
+    type: Edm.DateTimeOffset
+    nullable: false
+    unicode: true
+    description: ""
+  - name: Project
+    type: Microsoft.Dynamics.CRM.msdyn_project
+    nullable: true
+    unicode: true
+    description: ""
+  - name: Currency
+    type: Microsoft.Dynamics.CRM.transactioncurrency
+    nullable: false
+    unicode: true
+    description: ""
+  - name: UnitGroup
+    type: Microsoft.Dynamics.CRM.uomschedule
+    nullable: false
+    unicode: true
+    description: ""
+  - name: Unit
+    type: Microsoft.Dynamics.CRM.uom
+    nullable: false
+    unicode: true
+    description: ""
+return_type:
+  description: "The msdyn_GetCategoryPrice action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_GetCategoryPriceResponse
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

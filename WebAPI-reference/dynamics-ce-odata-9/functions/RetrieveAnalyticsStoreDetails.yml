@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveAnalyticsStoreDetails
 name: "RetrieveAnalyticsStoreDetails"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveAnalyticsStoreDetails Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveAnalyticsStoreDetails Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: d4235bc9-92e0-4303-96e6-c00f4b1849f6
-  author: "KumarVivek"
+  ms.assetid: a31bbe42-4c02-4b66-b542-e07f51620d36
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveAnalyticsStoreDetails Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse RetrieveAnalyticsStoreDetails Function."
 namespace: Microsoft.Dynamics.CRM
 description: ""
 iscomposable: false
@@ -25,10 +25,10 @@ return_type:
   iscollection: false
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

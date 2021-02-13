@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.bookableresource
 name: "bookableresource"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement bookableresource EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 50a2b8b0-ca74-4012-97cb-e4df9a03571e
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the bookableresource entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse bookableresource entitytype."
 description: "Resource that has capacity which can be allocated to work."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/bookableresources"
@@ -60,10 +60,23 @@ properties:
       isreadonly: true
     - name: msdyn_bookingstodrip
       type: Edm.Int32
-      display_name: "Bookings To Drip (Deprecated)"
+      display_name: "Bookings To Drip"
       description: "The number of bookings to drip on the Mobile . This field is disabled/enabled based on Enable Drip Scheduling field"
       iscomputed: false
       isreadonly: false
+    - name: msdyn_crewstrategy
+      type: Edm.Int32
+      display_name: "Crew Strategy"
+      description: "Crew Strategy"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Cascade and Accept Cascade Completely"
+        - value: 192350001
+          label: "Crew Leader Management"
+        - value: 192350002
+          label: "Crew Member Self-Management"
     - name: msdyn_derivecapacity
       type: Edm.Boolean
       display_name: "Derive Capacity From Group Members"
@@ -110,7 +123,7 @@ properties:
           label: "No"
     - name: msdyn_enabledripscheduling
       type: Edm.Boolean
-      display_name: "Enable Drip Scheduling (Deprecated)"
+      display_name: "Enable Drip Scheduling"
       description: "Enables drip scheduling on the mobile app."
       iscomputed: false
       isreadonly: false
@@ -153,6 +166,12 @@ properties:
       description: "Value of the Hourly Rate in base currency."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_internalflags
+      type: Edm.String
+      display_name: "Internal Flags"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_isgenericresourceprojectscoped
       type: Edm.Boolean
       display_name: "Is Default"
@@ -168,6 +187,12 @@ properties:
       type: Edm.Double
       display_name: "Latitude"
       description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_locationtimestamp
+      type: Edm.DateTimeOffset
+      display_name: "Location Timestamp"
+      description: "The location timestamp."
       iscomputed: false
       isreadonly: false
     - name: msdyn_longitude
@@ -261,7 +286,7 @@ properties:
           label: "Pool"
     - name: stageid
       type: Edm.Guid
-      display_name: "(Deprecated) Stage Id"
+      display_name: "Stage Id"
       description: "Contains the id of the stage where the entity is located."
       iscomputed: false
       isreadonly: false
@@ -301,7 +326,7 @@ properties:
       isreadonly: false
     - name: traversedpath
       type: Edm.String
-      display_name: "(Deprecated) Traversed Path"
+      display_name: "Traversed Path"
       description: "A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur."
       iscomputed: false
       isreadonly: false
@@ -476,6 +501,9 @@ collection_valued_navigation_properties:
   - name: msdyn_bookableresource_account_PreferredResource
     type: Microsoft.Dynamics.CRM.account
     partner: msdyn_PreferredResource
+  - name: msdyn_bookableresource_bookableresourcebooking_Crew
+    type: Microsoft.Dynamics.CRM.bookableresourcebooking
+    partner: msdyn_Crew
   - name: msdyn_bookableresource_bookableresourcebooking_ResourceGroup
     type: Microsoft.Dynamics.CRM.bookableresourcebooking
     partner: msdyn_resourcegroup
@@ -491,6 +519,12 @@ collection_valued_navigation_properties:
   - name: msdyn_bookableresource_msdyn_agreementbookingsetup_PreferredResource
     type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
     partner: msdyn_preferredresource
+  - name: msdyn_bookableresource_msdyn_bookableresourceassociation_Resource1
+    type: Microsoft.Dynamics.CRM.msdyn_bookableresourceassociation
+    partner: msdyn_Resource1
+  - name: msdyn_bookableresource_msdyn_bookableresourceassociation_Resource2
+    type: Microsoft.Dynamics.CRM.msdyn_bookableresourceassociation
+    partner: msdyn_Resource2
   - name: msdyn_bookableresource_msdyn_delegation_delegationfrom
     type: Microsoft.Dynamics.CRM.msdyn_delegation
     partner: msdyn_delegationfrom
@@ -563,6 +597,9 @@ collection_valued_navigation_properties:
   - name: msdyn_bookableresource_msdyn_resourceassignment_bookableresourceid
     type: Microsoft.Dynamics.CRM.msdyn_resourceassignment
     partner: msdyn_bookableresourceid
+  - name: msdyn_bookableresource_msdyn_resourcecategorymarkuppricelevel_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorymarkuppricelevel
+    partner: msdyn_bookableresource
   - name: msdyn_bookableresource_msdyn_resourcecategorypricelevel_bookableresource
     type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
     partner: msdyn_bookableresource
@@ -590,6 +627,9 @@ collection_valued_navigation_properties:
   - name: msdyn_bookableresource_msdyn_workorderresourcerestriction_Resource
     type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
     partner: msdyn_resource
+  - name: msdyn_geofence_bookableresource
+    type: Microsoft.Dynamics.CRM.msdyn_geofence
+    partner: msdyn_bookableresource
   - name: msdyn_resourcerequirement_bookableresource
     type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
     partner: msdyn_resourcerequirement_bookableresource
@@ -618,18 +658,28 @@ solutions:
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_24
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.msdyn_Geofencing
     description: "Define Geofences and the records that should be monitored for entry and exit, resulting in Geofence Event records that can be configured to trigger some action via a workflow or Microsoft Flow."
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.msdynce_Scheduling
     description: "Dynamics 365 workload for scheduling."
   - type: Microsoft.Dynamics.CRM.msdynce_SchedulingPatch
     description: "Dynamics 365 workload for scheduling."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

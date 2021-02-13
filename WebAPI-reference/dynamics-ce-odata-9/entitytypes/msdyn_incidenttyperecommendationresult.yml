@@ -1,0 +1,347 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationresult
+name: "msdyn_incidenttyperecommendationresult"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: f58d243e-3874-4977-b221-f442fbfc6e13
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_incidenttyperecommendationresult entitytype."
+description: "Incident Type Suggestion Results store all suggestion results."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_incidenttyperecommendationresults"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Incident Type Suggestion Result
+  primary_key: msdyn_incidenttyperecommendationresultid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_incidenttypeid
+      type: Edm.String
+      display_name: "Incident Type Id"
+      description: "Shows unique identifier of an incident type."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_incidenttypeidformerge
+      type: Edm.String
+      display_name: "Incident Type Id (For Merge)"
+      description: "Shows unique identifier of an incident (for merge)."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_incidenttyperecommendationresultid
+      type: Edm.Guid
+      display_name: "Incident Type Suggestion Result"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_occurrencetimes
+      type: Edm.Int32
+      display_name: "Occurrence Times"
+      description: "Shows the occurrence times of the related incident type."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_productserviceid
+      type: Edm.String
+      display_name: "Product/Service Id"
+      description: "Shows unique identifier of a product."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_recommendationdescription
+      type: Edm.String
+      display_name: "Suggestion Description"
+      description: "Shows the suggestion description."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_recommendationtype
+      type: Edm.Int32
+      display_name: "Suggestion Type"
+      description: "Shows the type of incident type suggestion."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Work Order Product"
+        - value: 192350001
+          label: "Work Order Service"
+        - value: 192350002
+          label: "Incident Type"
+    - name: msdyn_runid
+      type: Edm.String
+      display_name: "Run Id"
+      description: "Shows unique identifier of the related run job."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_scoreranking
+      type: Edm.Int32
+      display_name: "Score Ranking"
+      description: "Shows the score ranking of the result."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_suggestedvalue
+      type: Edm.Int32
+      display_name: "Suggested Value"
+      description: "Shows the suggested value of product quantity or service duration."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_totaloccurrencetimes
+      type: Edm.Int32
+      display_name: "Total Occurrence Times"
+      description: "Shows the total occurrence times of the related incident type."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_unitid
+      type: Edm.String
+      display_name: "Unit Id"
+      description: "Shows unique identifier of the unit."
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Incident Type Suggestion Result"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Incident Type Suggestion Result"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+        - value: 192350000
+          label: "Disliked"
+        - value: 192350001
+          label: "Applied"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_incidenttype_value
+    single_valued_navigation_property:
+    - msdyn_IncidentType
+    description: "Shows the incident related to this suggestion result."
+  - name: _msdyn_incidenttypeformerge_value
+    single_valued_navigation_property:
+    - msdyn_IncidentTypeForMerge
+    description: "Shows the incident (for merge) related to this suggestion result."
+  - name: _msdyn_productservice_value
+    single_valued_navigation_property:
+    - msdyn_ProductService
+    description: "Shows the product related to this suggestion result."
+  - name: _msdyn_runhistoryid_value
+    single_valued_navigation_property:
+    - msdyn_RunHistoryId
+    description: "Id of Incident Type Suggestion Run History"
+  - name: _msdyn_unit_value
+    single_valued_navigation_property:
+    - msdyn_Unit
+    description: "The unit that determines the pricing and final quantity for this product or service."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_incidenttyperecommendationresult_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_incidenttyperecommendationresult_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_incidenttyperecommendationresult_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_incidenttyperecommendationresult_modifiedonbehalfby
+  - name: msdyn_IncidentType
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttype
+    partner: msdyn_msdyn_incidenttype_msdyn_incidenttyperecommendationresult_IncidentType
+  - name: msdyn_IncidentTypeForMerge
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttype
+    partner: msdyn_msdyn_incidenttype_msdyn_incidenttyperecommendationresult_IncidentTypeForMerge
+  - name: msdyn_ProductService
+    type: Microsoft.Dynamics.CRM.product
+    partner: msdyn_product_msdyn_incidenttyperecommendationresult_ProductService
+  - name: msdyn_RunHistoryId
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationrunhistory
+    partner: msdyn_msdyn_incidenttyperecommendationrunhistory_msdyn_incidenttyperecommendationresult_RunHistoryId
+  - name: msdyn_Unit
+    type: Microsoft.Dynamics.CRM.uom
+    partner: msdyn_uom_msdyn_incidenttyperecommendationresult_Unit
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_incidenttyperecommendationresult
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_incidenttyperecommendationresult
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_incidenttyperecommendationresult
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_incidenttyperecommendationresult
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_incidenttyperecommendationresult_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_incidenttyperecommendationresult
+  - name: msdyn_incidenttyperecommendationresult_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_incidenttyperecommendationresult
+  - name: msdyn_incidenttyperecommendationresult_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_incidenttyperecommendationresult
+  - name: msdyn_incidenttyperecommendationresult_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_incidenttyperecommendationresult
+  - name: msdyn_incidenttyperecommendationresult_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_incidenttyperecommendationresult
+  - name: msdyn_incidenttyperecommendationresult_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_incidenttyperecommendationresult
+  - name: msdyn_incidenttyperecommendationresult_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_incidenttyperecommendationresult
+  - name: msdyn_incidenttyperecommendationresult_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_incidenttyperecommendationresult
+  - name: msdyn_msdyn_incidenttyperecommendationresult_msdyn_incidenttypeproduct_AppliedSuggestionResult
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
+    partner: msdyn_AppliedSuggestionResult
+  - name: msdyn_msdyn_incidenttyperecommendationresult_msdyn_incidenttypeservice_AppliedSuggestionResult
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
+    partner: msdyn_AppliedSuggestionResult
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_incidenttyperecommendationresult entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_incidenttyperecommendationresult entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

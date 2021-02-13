@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.EndpointAccessType
 name: "EndpointAccessType"
 type: enumtype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement EndpointAccessType EnumType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EndpointAccessType EnumType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fff46bd5-9ff1-4bb5-b27c-cc91b1dcc758
-  author: "KumarVivek"
+  author: "kumarVivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API EndpointAccessType ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API EndpointAccessType ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "Indicates the type of network access an endpoint has. " 
 members:
@@ -31,10 +31,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.RetrieveCurrentOrganization
     used_as: Parameter
-# This enum type has no remarks.
+# There are no remarks for this enum type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

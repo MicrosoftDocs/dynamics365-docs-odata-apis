@@ -1,0 +1,35 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.ContentModerationPolicy
+name: "Dynamics 365 Portal - Content Moderation Policy"
+type: solution
+metadata: 
+  title: "Dataverse Dynamics 365 Portal - Content Moderation Policy Solution Reference | MicrosoftDocs"
+  ms.date: "01/20/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 1b7ee148-0510-407b-a521-0347b0ef01b7
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Dynamics 365 Portal - Content Moderation Policy Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Common Content Moderation Policy for Portal"
+ unique_name: ContentModerationPolicy
+ version: "9.1.2.0"
+ customization_prefix: adx
+# This solution includes no entities.
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -3,31 +3,31 @@ uid: Microsoft.Dynamics.CRM.AdvancedAnalyticsInfra
 name: "Advanced Analytics Infrastructure"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Advanced Analytics Infrastructure Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Advanced Analytics Infrastructure Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: f565e985-3fc0-42f5-aa4b-0ef628581f23
-  author: "KumarVivek"
+  ms.assetid: 04e306b3-0034-4721-b758-1969ce6bf43b
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Advanced Analytics Infrastructure Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Advanced Analytics Infrastructure Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: AdvancedAnalyticsInfra
- version: "1.0.0.7"
- customization_prefix: none
+ version: "1.0.0.12"
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
    - type: Microsoft.Dynamics.CRM.entityanalyticsconfig
      description: "This entity contains information about which entities are enabled for Azure Data Lake Services integration"
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

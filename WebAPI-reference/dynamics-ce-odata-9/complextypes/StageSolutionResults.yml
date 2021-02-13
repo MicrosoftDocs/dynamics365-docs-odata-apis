@@ -3,18 +3,18 @@ uid: Microsoft.Dynamics.CRM.StageSolutionResults
 name: "StageSolutionResults"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement StageSolutionResults ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse StageSolutionResults ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 3a3cb385-d97a-453e-a5f8-2f11eeda394a
-  author: "KumarVivek"
+  ms.assetid: 67ddf860-3822-4fd1-84ff-579d280da845
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API StageSolutionResults ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API StageSolutionResults ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
-description: "" 
+description: "Contains detailed information from staging a solution." 
 properties:
   description: "The properties of a complex type contain the structured data of the type."
   property_items:
@@ -22,44 +22,48 @@ properties:
     type: Edm.Guid
     nullable: true
     unicode: true
-    description: ""
+    description: "The upload unique identifier (ID) for the staged solution."
     iscollection: false
   - name: SolutionComponentsDetails
     type: Microsoft.Dynamics.CRM.SolutionComponentDetails
     nullable: false
     unicode: true
-    description: ""
+    description: "Details of the components in the staged solution."
     iscollection: true
   - name: SolutionDetails
     type: Microsoft.Dynamics.CRM.SolutionDetails
     nullable: true
     unicode: true
-    description: ""
+    description: "Details of the staged solution."
     iscollection: false
   - name: MissingDependencies
     type: Microsoft.Dynamics.CRM.MissingDependency
     nullable: false
     unicode: true
-    description: ""
+    description: "Missing dependencies in the staged solution."
     iscollection: true
-  - name: StageSolutionPassed
-    type: Edm.Boolean
+  - name: StageSolutionStatus
+    type: Microsoft.Dynamics.CRM.StageSolutionStatus
     nullable: true
     unicode: true
-    description: ""
+    description: "Status of the staged solution."
     iscollection: false
   - name: SolutionValidationResults
     type: Microsoft.Dynamics.CRM.SolutionValidationResult
     nullable: false
     unicode: true
-    description: ""
+    description: "Results of the validation pass on the staged solution."
     iscollection: true
 # This complex type doesn't have any navigation properties.
-
-# This complex type has no remarks.
+usedby:
+  description: "The following use the StageSolutionResults ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.StageSolutionResponse
+    used_as: Property
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

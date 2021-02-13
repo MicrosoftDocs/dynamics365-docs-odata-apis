@@ -1,0 +1,51 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.ImportSolutionAsyncResponse
+name: "ImportSolutionAsyncResponse"
+type: complextype
+metadata: 
+  title: "Dataverse ImportSolutionAsyncResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 1435ae3a-7299-435b-9e34-e023c56a4182
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API ImportSolutionAsyncResponse ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "Contains the response from the ImportSolutionAsync action." 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: ImportJobKey
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: "The unique key that identifies the solution import job."
+    iscollection: false
+  - name: AsyncOperationId
+    type: Edm.Guid
+    nullable: true
+    unicode: true
+    description: "The unique identifier (ID) of the asynchronous operation for the solution import."
+    iscollection: false
+# This complex type doesn't have any navigation properties.
+usedby:
+  description: "The following use the ImportSolutionAsyncResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.ImportSolutionAsync
+    used_as: ReturnType
+# There are no remarks for this complex type.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveMetadataChangesResponse
 name: "RetrieveMetadataChangesResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveMetadataChangesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse RetrieveMetadataChangesResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c2460161-48b1-42a4-9d02-8f7f7bb2c002
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API RetrieveMetadataChangesResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API RetrieveMetadataChangesResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains the response from RetrieveMetadataChanges function." 
@@ -42,10 +42,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.RetrieveMetadataChanges
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

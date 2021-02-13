@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.SyncSubscriptionMetadataResponse
 name: "SyncSubscriptionMetadataResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SyncSubscriptionMetadataResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse SyncSubscriptionMetadataResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 8b2e051b-586d-44b4-b490-62602d0bea90
-  author: "KumarVivek"
+  ms.assetid: 189e5313-7c3d-490d-97eb-2fd174f100a0
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API SyncSubscriptionMetadataResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API SyncSubscriptionMetadataResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -50,10 +50,10 @@ properties:
     iscollection: false
 # This complex type doesn't have any navigation properties.
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

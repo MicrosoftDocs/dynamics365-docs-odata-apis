@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.Next7Days
 name: "Next7Days"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Next7Days Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Next7Days Query Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e1cd9033-2038-4ed4-8fc4-63842753dbd4
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Next7Days Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Next7Days Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function to evaluate whether the value is within the next 7 days."
 parameters:
@@ -23,10 +23,10 @@ parameters:
     unicode: false
     description: "The name of the property to evaluate."
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.Next7Days(PropertyName=@p1)&@p1='name'"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

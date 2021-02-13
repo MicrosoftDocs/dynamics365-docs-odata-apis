@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.duplicaterecord
 name: "duplicaterecord"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement duplicaterecord EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a29c6379-e1d1-495e-9062-97d25604f27e
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the duplicaterecord entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse duplicaterecord entitytype."
 description: "Potential duplicate record."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/duplicaterecords"
@@ -58,109 +58,37 @@ lookup_properties:
     description: "Unique identifier of the system job that created this record."
   - name: _baserecordid_value
     single_valued_navigation_property:
-    - baserecordid_kbarticle
-    - baserecordid_socialprofile
+    - baserecordid_feedback
     - baserecordid_knowledgearticle
-    - baserecordid_emailserverprofile
-    - baserecordid_publisher
-    - baserecordid_sharepointdocumentlocation
-    - baserecordid_account
-    - baserecordid_goal
-    - baserecordid_systemuser
-    - baserecordid_contact
     - baserecordid_knowledgebaserecord
     - baserecordid_goalrollupquery
-    - baserecordid_queue
     - baserecordid_transactioncurrency
+    - baserecordid_socialprofile
     - baserecordid_team
+    - baserecordid_systemuser
+    - baserecordid_account
+    - baserecordid_sharepointdocumentlocation
+    - baserecordid_publisher
     - baserecordid_sharepointsite
-    - baserecordid_feedback
-    - baserecordid_solutioncomponentattributeconfiguration
-    - baserecordid_solutioncomponentconfiguration
-    - baserecordid_stagesolutionupload
-    - baserecordid_serviceplan
-    - baserecordid_msdyn_knowledgearticleimage
-    - baserecordid_msdyn_knowledgearticletemplate
-    - baserecordid_msdyn_dataflow
-    - baserecordid_connector
-    - baserecordid_msdyn_aibdataset
-    - baserecordid_msdyn_aibdatasetfile
-    - baserecordid_msdyn_aibdatasetrecord
-    - baserecordid_msdyn_aibdatasetscontainer
-    - baserecordid_msdyn_aibfile
-    - baserecordid_msdyn_aibfileattacheddata
-    - baserecordid_msdyn_aiodimage
-    - baserecordid_msdyn_aiodlabel
-    - baserecordid_msdyn_aiodtrainingboundingbox
-    - baserecordid_msdyn_aiodtrainingimage
-    - baserecordid_environmentvariabledefinition
-    - baserecordid_environmentvariablevalue
-    - baserecordid_msdyn_analysiscomponent
-    - baserecordid_msdyn_analysisjob
-    - baserecordid_msdyn_analysisresult
-    - baserecordid_msdyn_analysisresultdetail
-    - baserecordid_msdyn_solutionhealthrule
-    - baserecordid_msdyn_solutionhealthruleargument
-    - baserecordid_msdyn_solutionhealthruleset
-    - baserecordid_lead
-    - baserecordid_bookableresource
-    - baserecordid_bookableresourcebooking
-    - baserecordid_bookableresourcebookingheader
-    - baserecordid_bookableresourcecategory
-    - baserecordid_bookableresourcecategoryassn
-    - baserecordid_bookableresourcecharacteristic
-    - baserecordid_bookableresourcegroup
-    - baserecordid_bookingstatus
-    - baserecordid_characteristic
-    - baserecordid_ratingmodel
-    - baserecordid_ratingvalue
-    - baserecordid_campaign
-    - baserecordid_list
-    - baserecordid_contract
-    - baserecordid_equipment
-    - baserecordid_incident
-    - baserecordid_entitlement
-    - baserecordid_entitlementchannel
-    - baserecordid_entitlementtemplate
-    - baserecordid_resourcegroup
-    - baserecordid_service
-    - baserecordid_entitlemententityallocationtypemapping
-    - baserecordid_msdyn_callablecontext
-    - baserecordid_msdyn_playbookactivity
-    - baserecordid_msdyn_playbookactivityattribute
-    - baserecordid_msdyn_playbookcategory
-    - baserecordid_msdyn_playbookinstance
-    - baserecordid_msdyn_playbooktemplate
-    - baserecordid_opportunity
-    - baserecordid_quote
-    - baserecordid_competitor
-    - baserecordid_territory
-    - baserecordid_adminsettingsentity
-    - baserecordid_msdyn_forecastconfiguration
-    - baserecordid_msdyn_forecastdefinition
-    - baserecordid_msdyn_forecastinstance
-    - baserecordid_msdyn_forecastrecurrence
-    - baserecordid_msdyn_relationshipinsightsunifiedconfig
-    - baserecordid_msdyn_siconfig
-    - baserecordid_msdyn_actioncardregarding
-    - baserecordid_msdyn_flowcardtype
-    - baserecordid_msdyn_salesinsightssettings
-    - baserecordid_msdyn_autocapturerule
-    - baserecordid_msdyn_autocapturesettings
-    - baserecordid_msdyn_untrackedappointment
-    - baserecordid_msdyn_icebreakersconfig
+    - baserecordid_kbarticle
+    - baserecordid_goal
+    - baserecordid_contact
+    - baserecordid_queue
+    - baserecordid_emailserverprofile
+    - baserecordid_msdyn_iotdevicecommanddefinition
+    - baserecordid_msdyn_iotdevicedatahistory
+    - baserecordid_msdyn_iotdeviceproperty
+    - baserecordid_msdyn_iotpropertydefinition
+    - baserecordid_msdyn_iotsettings
     - baserecordid_msdyn_postalbum
     - baserecordid_msdyn_actual
-    - baserecordid_msdyn_bookableresourceassociation
     - baserecordid_msdyn_bookingalertstatus
     - baserecordid_msdyn_bookingrule
     - baserecordid_msdyn_clientextension
     - baserecordid_msdyn_organizationalunit
     - baserecordid_msdyn_priority
     - baserecordid_msdyn_requirementcharacteristic
-    - baserecordid_msdyn_requirementgroup
     - baserecordid_msdyn_requirementorganizationunit
-    - baserecordid_msdyn_requirementrelationship
     - baserecordid_msdyn_requirementresourcecategory
     - baserecordid_msdyn_requirementresourcepreference
     - baserecordid_msdyn_requirementstatus
@@ -173,6 +101,69 @@ lookup_properties:
     - baserecordid_msdyn_timegroupdetail
     - baserecordid_msdyn_transactionorigin
     - baserecordid_msdyn_workhourtemplate
+    - baserecordid_msdyn_accountpricelist
+    - baserecordid_msdyn_batchjob
+    - baserecordid_msdyn_characteristicreqforteammember
+    - baserecordid_msdyn_contactpricelist
+    - baserecordid_msdyn_contractlineinvoiceschedule
+    - baserecordid_msdyn_contractlinescheduleofvalue
+    - baserecordid_msdyn_dataexport
+    - baserecordid_msdyn_delegation
+    - baserecordid_msdyn_estimate
+    - baserecordid_msdyn_estimateline
+    - baserecordid_msdyn_expense
+    - baserecordid_msdyn_expensecategory
+    - baserecordid_msdyn_fact
+    - baserecordid_msdyn_fieldcomputation
+    - baserecordid_msdyn_findworkevent
+    - baserecordid_msdyn_invoicefrequency
+    - baserecordid_msdyn_invoicefrequencydetail
+    - baserecordid_msdyn_invoicelinetransaction
+    - baserecordid_msdyn_journal
+    - baserecordid_msdyn_journalline
+    - baserecordid_msdyn_opportunitylineresourcecategory
+    - baserecordid_msdyn_opportunitylinetransaction
+    - baserecordid_msdyn_opportunitylinetransactioncategory
+    - baserecordid_msdyn_opportunitylinetransactionclassificatio
+    - baserecordid_msdyn_opportunitypricelist
+    - baserecordid_msdyn_orderlineresourcecategory
+    - baserecordid_msdyn_orderlinetransaction
+    - baserecordid_msdyn_orderlinetransactioncategory
+    - baserecordid_msdyn_orderlinetransactionclassification
+    - baserecordid_msdyn_orderpricelist
+    - baserecordid_msdyn_processnotes
+    - baserecordid_msdyn_project
+    - baserecordid_msdyn_projectapproval
+    - baserecordid_msdyn_projectparameter
+    - baserecordid_msdyn_projectparameterpricelist
+    - baserecordid_msdyn_projectpricelist
+    - baserecordid_msdyn_projecttask
+    - baserecordid_msdyn_projecttaskdependency
+    - baserecordid_msdyn_projecttaskstatususer
+    - baserecordid_msdyn_projectteam
+    - baserecordid_msdyn_projectteammembersignup
+    - baserecordid_msdyn_projecttransactioncategory
+    - baserecordid_msdyn_quotelineanalyticsbreakdown
+    - baserecordid_msdyn_quotelineinvoiceschedule
+    - baserecordid_msdyn_quotelineresourcecategory
+    - baserecordid_msdyn_quotelinescheduleofvalue
+    - baserecordid_msdyn_quotelinetransaction
+    - baserecordid_msdyn_quotelinetransactioncategory
+    - baserecordid_msdyn_quotelinetransactionclassification
+    - baserecordid_msdyn_quotepricelist
+    - baserecordid_msdyn_resourceassignmentdetail
+    - baserecordid_msdyn_resourcecategorypricelevel
+    - baserecordid_msdyn_resourcerequest
+    - baserecordid_msdyn_rolecompetencyrequirement
+    - baserecordid_msdyn_roleutilization
+    - baserecordid_msdyn_timeoffcalendar
+    - baserecordid_msdyn_transactioncategory
+    - baserecordid_msdyn_transactioncategoryclassification
+    - baserecordid_msdyn_transactioncategoryhierarchyelement
+    - baserecordid_msdyn_transactioncategorypricelevel
+    - baserecordid_msdyn_transactionconnection
+    - baserecordid_msdyn_transactiontype
+    - baserecordid_msdyn_userworkhistory
     - baserecordid_msdyn_agreement
     - baserecordid_msdyn_agreementbookingdate
     - baserecordid_msdyn_agreementbookingincident
@@ -186,16 +177,12 @@ lookup_properties:
     - baserecordid_msdyn_agreementsubstatus
     - baserecordid_msdyn_bookingtimestamp
     - baserecordid_msdyn_customerasset
-    - baserecordid_msdyn_customerassetcategory
-    - baserecordid_msdyn_entitlementapplication
     - baserecordid_msdyn_fieldservicepricelistitem
     - baserecordid_msdyn_incidenttype
     - baserecordid_msdyn_incidenttypecharacteristic
     - baserecordid_msdyn_incidenttypeproduct
     - baserecordid_msdyn_incidenttypeservice
     - baserecordid_msdyn_incidenttypeservicetask
-    - baserecordid_msdyn_incidenttypessetup
-    - baserecordid_msdyn_incidenttype_requirementgroup
     - baserecordid_msdyn_inventoryadjustment
     - baserecordid_msdyn_inventoryadjustmentproduct
     - baserecordid_msdyn_inventoryjournal
@@ -244,193 +231,212 @@ lookup_properties:
     - baserecordid_msdyn_workorderservicetask
     - baserecordid_msdyn_workordersubstatus
     - baserecordid_msdyn_workordertype
+    - baserecordid_msdyn_analysiscomponent
+    - baserecordid_msdyn_analysisjob
+    - baserecordid_msdyn_analysisresult
+    - baserecordid_msdyn_analysisresultdetail
+    - baserecordid_msdyn_solutionhealthrule
+    - baserecordid_msdyn_solutionhealthruleargument
+    - baserecordid_msdyn_solutionhealthruleset
+    - baserecordid_msdyn_forecastdefinition
+    - baserecordid_msdyn_forecastinstance
+    - baserecordid_msdyn_forecastrecurrence
+    - baserecordid_msdyn_aiodimage
+    - baserecordid_msdyn_aiodlabel
+    - baserecordid_msdyn_aiodtrainingboundingbox
+    - baserecordid_msdyn_aiodtrainingimage
+    - baserecordid_msdyn_icebreakersconfig
+    - baserecordid_msdyn_callablecontext
+    - baserecordid_msdyn_playbookactivity
+    - baserecordid_msdyn_playbookactivityattribute
+    - baserecordid_msdyn_playbookcategory
+    - baserecordid_msdyn_playbookinstance
+    - baserecordid_msdyn_playbooktemplate
+    - baserecordid_sales_linkedin_configuration
+    - baserecordid_msdyn_actioncardregarding
+    - baserecordid_msdyn_flowcardtype
+    - baserecordid_msdyn_salesinsightssettings
+    - baserecordid_connector
+    - baserecordid_msfp_emailtemplate
+    - baserecordid_msfp_question
+    - baserecordid_msfp_questionresponse
+    - baserecordid_msfp_survey
+    - baserecordid_msfp_unsubscribedrecipient
+    - baserecordid_msdyn_connector
+    - baserecordid_msdyn_relationshipinsightsunifiedconfig
+    - baserecordid_msdyn_siconfig
+    - baserecordid_msdyn_untrackedappointment
     - baserecordid_msdyn_iotdevice
     - baserecordid_msdyn_iotdevicecategory
     - baserecordid_msdyn_iotdevicecommand
-    - baserecordid_msdyn_iotdevicecommanddefinition
-    - baserecordid_msdyn_iotdevicedatahistory
-    - baserecordid_msdyn_iotdeviceproperty
     - baserecordid_msdyn_iotdeviceregistrationhistory
-    - baserecordid_msdyn_iotpropertydefinition
+    - baserecordid_ms_newsitem
+    - baserecordid_ms_satori
+    - baserecordid_entitlemententityallocationtypemapping
+    - baserecordid_contract
+    - baserecordid_equipment
+    - baserecordid_incident
+    - baserecordid_entitlement
+    - baserecordid_entitlementchannel
+    - baserecordid_entitlementtemplate
+    - baserecordid_resourcegroup
+    - baserecordid_service
+    - baserecordid_campaign
+    - baserecordid_list
+    - baserecordid_adminsettingsentity
+    - baserecordid_bookableresource
+    - baserecordid_bookableresourcebooking
+    - baserecordid_bookableresourcebookingheader
+    - baserecordid_bookableresourcecategory
+    - baserecordid_bookableresourcecategoryassn
+    - baserecordid_bookableresourcecharacteristic
+    - baserecordid_bookableresourcegroup
+    - baserecordid_bookingstatus
+    - baserecordid_characteristic
+    - baserecordid_ratingmodel
+    - baserecordid_ratingvalue
+    - baserecordid_lead
+    - baserecordid_msdyn_knowledgearticleimage
+    - baserecordid_msdyn_knowledgearticletemplate
+    - baserecordid_environmentvariabledefinition
+    - baserecordid_environmentvariablevalue
+    - baserecordid_msdyn_forecastconfiguration
+    - baserecordid_apisettings
+    - baserecordid_serviceplan
+    - baserecordid_solutioncomponentattributeconfiguration
+    - baserecordid_opportunity
+    - baserecordid_quote
+    - baserecordid_competitor
+    - baserecordid_territory
+    - baserecordid_msdyn_autocapturerule
+    - baserecordid_msdyn_autocapturesettings
+    - baserecordid_msdyn_aibdataset
+    - baserecordid_msdyn_aibdatasetfile
+    - baserecordid_msdyn_aibdatasetscontainer
+    - baserecordid_msdyn_aibfile
+    - baserecordid_msdyn_aibfileattacheddata
+    - baserecordid_solutioncomponentconfiguration
+    - baserecordid_stagesolutionupload
+    - baserecordid_msdyn_aibdatasetrecord
+    - baserecordid_msdyn_serviceconfiguration
+    - baserecordid_msdyn_slakpi
+    - baserecordid_msdyn_dataflow
+    - baserecordid_datalakeworkspace
+    - baserecordid_datalakeworkspacepermission
+    - baserecordid_applicationuser
+    - baserecordid_solutioncomponentrelationshipconfiguration
+    - baserecordid_exportsolutionupload
+    - baserecordid_msdyn_bookableresourceassociation
+    - baserecordid_msdyn_requirementgroup
+    - baserecordid_msdyn_requirementrelationship
+    - baserecordid_msdyn_requirementdependency
+    - baserecordid_msdyn_schedulingfeatureflag
+    - baserecordid_msdyn_timeentrysetting
+    - baserecordid_msdyn_dimension
+    - baserecordid_msdyn_dimensionfieldname
+    - baserecordid_msdyn_resourcecategorymarkuppricelevel
+    - baserecordid_msdyn_customerassetcategory
+    - baserecordid_msdyn_entitlementapplication
+    - baserecordid_msdyn_incidenttypessetup
+    - baserecordid_msdyn_incidenttype_requirementgroup
+    - baserecordid_msdyn_incidenttyperecommendationresult
+    - baserecordid_msdyn_incidenttyperecommendationrunhistory
+    - baserecordid_msdyn_iotdevicevisualizationconfiguration
+    - baserecordid_msdyn_iotfieldmapping
     - baserecordid_msdyn_iotprovider
     - baserecordid_msdyn_iotproviderinstance
-    - baserecordid_msdyn_iotsettings
     - baserecordid_msdyn_entityconfiguration
     - baserecordid_msdyn_geofence
     - baserecordid_msdyn_geofenceevent
     - baserecordid_msdyn_geofencingsettings
-    - baserecordid_msdyn_accountpricelist
-    - baserecordid_msdyn_batchjob
-    - baserecordid_msdyn_characteristicreqforteammember
-    - baserecordid_msdyn_contactpricelist
-    - baserecordid_msdyn_contractlineinvoiceschedule
-    - baserecordid_msdyn_contractlinescheduleofvalue
-    - baserecordid_msdyn_dataexport
-    - baserecordid_msdyn_delegation
-    - baserecordid_msdyn_dimension
-    - baserecordid_msdyn_dimensionfieldname
-    - baserecordid_msdyn_estimate
-    - baserecordid_msdyn_estimateline
-    - baserecordid_msdyn_expense
-    - baserecordid_msdyn_expensecategory
-    - baserecordid_msdyn_fact
-    - baserecordid_msdyn_fieldcomputation
-    - baserecordid_msdyn_findworkevent
-    - baserecordid_msdyn_invoicefrequency
-    - baserecordid_msdyn_invoicefrequencydetail
-    - baserecordid_msdyn_invoicelinetransaction
-    - baserecordid_msdyn_journal
-    - baserecordid_msdyn_journalline
-    - baserecordid_msdyn_opportunitylineresourcecategory
-    - baserecordid_msdyn_opportunitylinetransaction
-    - baserecordid_msdyn_opportunitylinetransactioncategory
-    - baserecordid_msdyn_opportunitylinetransactionclassificatio
-    - baserecordid_msdyn_opportunitypricelist
-    - baserecordid_msdyn_orderlineresourcecategory
-    - baserecordid_msdyn_orderlinetransaction
-    - baserecordid_msdyn_orderlinetransactioncategory
-    - baserecordid_msdyn_orderlinetransactionclassification
-    - baserecordid_msdyn_orderpricelist
-    - baserecordid_msdyn_processnotes
-    - baserecordid_msdyn_project
-    - baserecordid_msdyn_projectapproval
-    - baserecordid_msdyn_projectparameter
-    - baserecordid_msdyn_projectparameterpricelist
-    - baserecordid_msdyn_projectpricelist
-    - baserecordid_msdyn_projecttask
-    - baserecordid_msdyn_projecttaskdependency
-    - baserecordid_msdyn_projecttaskstatususer
-    - baserecordid_msdyn_projectteam
-    - baserecordid_msdyn_projectteammembersignup
-    - baserecordid_msdyn_projecttransactioncategory
-    - baserecordid_msdyn_quotelineanalyticsbreakdown
-    - baserecordid_msdyn_quotelineinvoiceschedule
-    - baserecordid_msdyn_quotelineresourcecategory
-    - baserecordid_msdyn_quotelinescheduleofvalue
-    - baserecordid_msdyn_quotelinetransaction
-    - baserecordid_msdyn_quotelinetransactioncategory
-    - baserecordid_msdyn_quotelinetransactionclassification
-    - baserecordid_msdyn_quotepricelist
-    - baserecordid_msdyn_resourceassignmentdetail
-    - baserecordid_msdyn_resourcecategorymarkuppricelevel
-    - baserecordid_msdyn_resourcecategorypricelevel
-    - baserecordid_msdyn_resourcerequest
-    - baserecordid_msdyn_rolecompetencyrequirement
-    - baserecordid_msdyn_roleutilization
-    - baserecordid_msdyn_timeoffcalendar
-    - baserecordid_msdyn_transactioncategory
-    - baserecordid_msdyn_transactioncategoryclassification
-    - baserecordid_msdyn_transactioncategoryhierarchyelement
-    - baserecordid_msdyn_transactioncategorypricelevel
-    - baserecordid_msdyn_transactionconnection
-    - baserecordid_msdyn_transactiontype
-    - baserecordid_msdyn_userworkhistory
+    - baserecordid_cascadegrantrevokeaccessrecordstracker
+    - baserecordid_cascadegrantrevokeaccessversiontracker
+    - baserecordid_msdyn_knowledgeinteractioninsight
+    - baserecordid_msdyn_knowledgesearchinsight
+    - baserecordid_conversationtranscript
+    - baserecordid_package
+    - baserecordid_msfp_alertrule
+    - baserecordid_datalakefolder
+    - baserecordid_datalakefolderpermission
+    - baserecordid_catalogassignment
+    - baserecordid_activitymonitor
+    - baserecordid_msdyn_migrationtracker
+    - baserecordid_msdyn_customerassetattachment
+    - baserecordid_msdyn_appconfiguration
+    - baserecordid_msdyn_applicationextension
+    - baserecordid_msdyn_applicationtabtemplate
+    - baserecordid_msdyn_notificationfield
+    - baserecordid_msdyn_notificationtemplate
+    - baserecordid_msdyn_sessiontemplate
+    - baserecordid_msdyn_templateparameter
+    - baserecordid_msdyn_channelprovider
+    - baserecordid_msdyn_paneconfiguration
+    - baserecordid_msdyn_panetabconfiguration
+    - baserecordid_msdyn_panetoolconfiguration
+    - baserecordid_msdyn_productivityagentscript
+    - baserecordid_msdyn_productivityagentscriptstep
+    - baserecordid_msdyn_productivityactioninputparameter
+    - baserecordid_msdyn_productivityactionoutputparameter
+    - baserecordid_msdyn_productivitymacroactiontemplate
+    - baserecordid_msdyn_productivitymacrosolutionconfiguration
+    - baserecordid_msdyn_productivitymacroconnector
+    - baserecordid_msdyn_macrosession
+    - baserecordid_msdyn_productivityparameterdefinition
+    - baserecordid_msdyn_smartassistconfig
+    - baserecordid_msdyn_federatedarticle
+    - baserecordid_msdyn_federatedarticleincident
+    - baserecordid_msdyn_kmfederatedsearchconfig
+    - baserecordid_msdyn_inspection
+    - baserecordid_msdyn_inspectionattachment
+    - baserecordid_msdyn_inspectiondefinition
+    - baserecordid_msdyn_inspectionresponse
+    - baserecordid_msdyn_problematicasset
+    - baserecordid_msdyn_problematicassetfeedback
+    - baserecordid_msdyn_geolocationsettings
+    - baserecordid_msdyn_geolocationtracking
+    - baserecordid_msdyn_dataanalyticsreport_fs
+    - baserecordid_msdyn_dataanalyticsreport_fspredictrs
+    - baserecordid_msdyn_dataanalyticsreport_fspredictwhd
+    - baserecordid_msdyn_contractlinedetailperformance
+    - baserecordid_msfp_fileresponse
+    - baserecordid_msfp_surveyreminder
+    - baserecordid_revokeinheritedaccessrecordstracker
+    - baserecordid_organizationdatasyncsubscription
+    - baserecordid_organizationdatasyncsubscriptionentity
     description: "Unique identifier of the base record."
   - name: _duplicaterecordid_value
     single_valued_navigation_property:
-    - duplicaterecordid_kbarticle
-    - duplicaterecordid_publisher
-    - duplicaterecordid_socialprofile
+    - duplicaterecordid_feedback
     - duplicaterecordid_knowledgearticle
     - duplicaterecordid_knowledgebaserecord
+    - duplicaterecordid_publisher
+    - duplicaterecordid_goal
     - duplicaterecordid_transactioncurrency
+    - duplicaterecordid_sharepointsite
+    - duplicaterecordid_kbarticle
+    - duplicaterecordid_team
+    - duplicaterecordid_goalrollupquery
+    - duplicaterecordid_contact
     - duplicaterecordid_systemuser
+    - duplicaterecordid_sharepointdocumentlocation
+    - duplicaterecordid_socialprofile
+    - duplicaterecordid_account
     - duplicaterecordid_queue
     - duplicaterecordid_emailserverprofile
-    - duplicaterecordid_team
-    - duplicaterecordid_sharepointdocumentlocation
-    - duplicaterecordid_goal
-    - duplicaterecordid_goalrollupquery
-    - duplicaterecordid_feedback
-    - duplicaterecordid_account
-    - duplicaterecordid_contact
-    - duplicaterecordid_sharepointsite
-    - duplicaterecordid_solutioncomponentattributeconfiguration
-    - duplicaterecordid_solutioncomponentconfiguration
-    - duplicaterecordid_stagesolutionupload
-    - duplicaterecordid_serviceplan
-    - duplicaterecordid_msdyn_knowledgearticleimage
-    - duplicaterecordid_msdyn_knowledgearticletemplate
-    - duplicaterecordid_msdyn_dataflow
-    - duplicaterecordid_connector
-    - duplicaterecordid_msdyn_aibdataset
-    - duplicaterecordid_msdyn_aibdatasetfile
-    - duplicaterecordid_msdyn_aibdatasetrecord
-    - duplicaterecordid_msdyn_aibdatasetscontainer
-    - duplicaterecordid_msdyn_aibfile
-    - duplicaterecordid_msdyn_aibfileattacheddata
-    - duplicaterecordid_msdyn_aiodimage
-    - duplicaterecordid_msdyn_aiodlabel
-    - duplicaterecordid_msdyn_aiodtrainingboundingbox
-    - duplicaterecordid_msdyn_aiodtrainingimage
-    - duplicaterecordid_environmentvariabledefinition
-    - duplicaterecordid_environmentvariablevalue
-    - duplicaterecordid_msdyn_analysiscomponent
-    - duplicaterecordid_msdyn_analysisjob
-    - duplicaterecordid_msdyn_analysisresult
-    - duplicaterecordid_msdyn_analysisresultdetail
-    - duplicaterecordid_msdyn_solutionhealthrule
-    - duplicaterecordid_msdyn_solutionhealthruleargument
-    - duplicaterecordid_msdyn_solutionhealthruleset
-    - duplicaterecordid_lead
-    - duplicaterecordid_bookableresource
-    - duplicaterecordid_bookableresourcebooking
-    - duplicaterecordid_bookableresourcebookingheader
-    - duplicaterecordid_bookableresourcecategory
-    - duplicaterecordid_bookableresourcecategoryassn
-    - duplicaterecordid_bookableresourcecharacteristic
-    - duplicaterecordid_bookableresourcegroup
-    - duplicaterecordid_bookingstatus
-    - duplicaterecordid_characteristic
-    - duplicaterecordid_ratingmodel
-    - duplicaterecordid_ratingvalue
-    - duplicaterecordid_campaign
-    - duplicaterecordid_list
-    - duplicaterecordid_contract
-    - duplicaterecordid_equipment
-    - duplicaterecordid_incident
-    - duplicaterecordid_entitlement
-    - duplicaterecordid_entitlementchannel
-    - duplicaterecordid_entitlementtemplate
-    - duplicaterecordid_resourcegroup
-    - duplicaterecordid_service
-    - duplicaterecordid_entitlemententityallocationtypemapping
-    - duplicaterecordid_msdyn_callablecontext
-    - duplicaterecordid_msdyn_playbookactivity
-    - duplicaterecordid_msdyn_playbookactivityattribute
-    - duplicaterecordid_msdyn_playbookcategory
-    - duplicaterecordid_msdyn_playbookinstance
-    - duplicaterecordid_msdyn_playbooktemplate
-    - duplicaterecordid_opportunity
-    - duplicaterecordid_quote
-    - duplicaterecordid_competitor
-    - duplicaterecordid_territory
-    - duplicaterecordid_adminsettingsentity
-    - duplicaterecordid_msdyn_forecastconfiguration
-    - duplicaterecordid_msdyn_forecastdefinition
-    - duplicaterecordid_msdyn_forecastinstance
-    - duplicaterecordid_msdyn_forecastrecurrence
-    - duplicaterecordid_msdyn_relationshipinsightsunifiedconfig
-    - duplicaterecordid_msdyn_siconfig
-    - duplicaterecordid_msdyn_actioncardregarding
-    - duplicaterecordid_msdyn_flowcardtype
-    - duplicaterecordid_msdyn_salesinsightssettings
-    - duplicaterecordid_msdyn_autocapturerule
-    - duplicaterecordid_msdyn_autocapturesettings
-    - duplicaterecordid_msdyn_untrackedappointment
-    - duplicaterecordid_msdyn_icebreakersconfig
+    - duplicaterecordid_msdyn_iotdevicecommanddefinition
+    - duplicaterecordid_msdyn_iotdevicedatahistory
+    - duplicaterecordid_msdyn_iotdeviceproperty
+    - duplicaterecordid_msdyn_iotpropertydefinition
+    - duplicaterecordid_msdyn_iotsettings
     - duplicaterecordid_msdyn_postalbum
     - duplicaterecordid_msdyn_actual
-    - duplicaterecordid_msdyn_bookableresourceassociation
     - duplicaterecordid_msdyn_bookingalertstatus
     - duplicaterecordid_msdyn_bookingrule
     - duplicaterecordid_msdyn_clientextension
     - duplicaterecordid_msdyn_organizationalunit
     - duplicaterecordid_msdyn_priority
     - duplicaterecordid_msdyn_requirementcharacteristic
-    - duplicaterecordid_msdyn_requirementgroup
     - duplicaterecordid_msdyn_requirementorganizationunit
-    - duplicaterecordid_msdyn_requirementrelationship
     - duplicaterecordid_msdyn_requirementresourcecategory
     - duplicaterecordid_msdyn_requirementresourcepreference
     - duplicaterecordid_msdyn_requirementstatus
@@ -443,6 +449,69 @@ lookup_properties:
     - duplicaterecordid_msdyn_timegroupdetail
     - duplicaterecordid_msdyn_transactionorigin
     - duplicaterecordid_msdyn_workhourtemplate
+    - duplicaterecordid_msdyn_accountpricelist
+    - duplicaterecordid_msdyn_batchjob
+    - duplicaterecordid_msdyn_characteristicreqforteammember
+    - duplicaterecordid_msdyn_contactpricelist
+    - duplicaterecordid_msdyn_contractlineinvoiceschedule
+    - duplicaterecordid_msdyn_contractlinescheduleofvalue
+    - duplicaterecordid_msdyn_dataexport
+    - duplicaterecordid_msdyn_delegation
+    - duplicaterecordid_msdyn_estimate
+    - duplicaterecordid_msdyn_estimateline
+    - duplicaterecordid_msdyn_expense
+    - duplicaterecordid_msdyn_expensecategory
+    - duplicaterecordid_msdyn_fact
+    - duplicaterecordid_msdyn_fieldcomputation
+    - duplicaterecordid_msdyn_findworkevent
+    - duplicaterecordid_msdyn_invoicefrequency
+    - duplicaterecordid_msdyn_invoicefrequencydetail
+    - duplicaterecordid_msdyn_invoicelinetransaction
+    - duplicaterecordid_msdyn_journal
+    - duplicaterecordid_msdyn_journalline
+    - duplicaterecordid_msdyn_opportunitylineresourcecategory
+    - duplicaterecordid_msdyn_opportunitylinetransaction
+    - duplicaterecordid_msdyn_opportunitylinetransactioncategory
+    - duplicaterecordid_msdyn_opportunitylinetransactionclassificatio
+    - duplicaterecordid_msdyn_opportunitypricelist
+    - duplicaterecordid_msdyn_orderlineresourcecategory
+    - duplicaterecordid_msdyn_orderlinetransaction
+    - duplicaterecordid_msdyn_orderlinetransactioncategory
+    - duplicaterecordid_msdyn_orderlinetransactionclassification
+    - duplicaterecordid_msdyn_orderpricelist
+    - duplicaterecordid_msdyn_processnotes
+    - duplicaterecordid_msdyn_project
+    - duplicaterecordid_msdyn_projectapproval
+    - duplicaterecordid_msdyn_projectparameter
+    - duplicaterecordid_msdyn_projectparameterpricelist
+    - duplicaterecordid_msdyn_projectpricelist
+    - duplicaterecordid_msdyn_projecttask
+    - duplicaterecordid_msdyn_projecttaskdependency
+    - duplicaterecordid_msdyn_projecttaskstatususer
+    - duplicaterecordid_msdyn_projectteam
+    - duplicaterecordid_msdyn_projectteammembersignup
+    - duplicaterecordid_msdyn_projecttransactioncategory
+    - duplicaterecordid_msdyn_quotelineanalyticsbreakdown
+    - duplicaterecordid_msdyn_quotelineinvoiceschedule
+    - duplicaterecordid_msdyn_quotelineresourcecategory
+    - duplicaterecordid_msdyn_quotelinescheduleofvalue
+    - duplicaterecordid_msdyn_quotelinetransaction
+    - duplicaterecordid_msdyn_quotelinetransactioncategory
+    - duplicaterecordid_msdyn_quotelinetransactionclassification
+    - duplicaterecordid_msdyn_quotepricelist
+    - duplicaterecordid_msdyn_resourceassignmentdetail
+    - duplicaterecordid_msdyn_resourcecategorypricelevel
+    - duplicaterecordid_msdyn_resourcerequest
+    - duplicaterecordid_msdyn_rolecompetencyrequirement
+    - duplicaterecordid_msdyn_roleutilization
+    - duplicaterecordid_msdyn_timeoffcalendar
+    - duplicaterecordid_msdyn_transactioncategory
+    - duplicaterecordid_msdyn_transactioncategoryclassification
+    - duplicaterecordid_msdyn_transactioncategoryhierarchyelement
+    - duplicaterecordid_msdyn_transactioncategorypricelevel
+    - duplicaterecordid_msdyn_transactionconnection
+    - duplicaterecordid_msdyn_transactiontype
+    - duplicaterecordid_msdyn_userworkhistory
     - duplicaterecordid_msdyn_agreement
     - duplicaterecordid_msdyn_agreementbookingdate
     - duplicaterecordid_msdyn_agreementbookingincident
@@ -456,16 +525,12 @@ lookup_properties:
     - duplicaterecordid_msdyn_agreementsubstatus
     - duplicaterecordid_msdyn_bookingtimestamp
     - duplicaterecordid_msdyn_customerasset
-    - duplicaterecordid_msdyn_customerassetcategory
-    - duplicaterecordid_msdyn_entitlementapplication
     - duplicaterecordid_msdyn_fieldservicepricelistitem
     - duplicaterecordid_msdyn_incidenttype
     - duplicaterecordid_msdyn_incidenttypecharacteristic
     - duplicaterecordid_msdyn_incidenttypeproduct
     - duplicaterecordid_msdyn_incidenttypeservice
     - duplicaterecordid_msdyn_incidenttypeservicetask
-    - duplicaterecordid_msdyn_incidenttypessetup
-    - duplicaterecordid_msdyn_incidenttype_requirementgroup
     - duplicaterecordid_msdyn_inventoryadjustment
     - duplicaterecordid_msdyn_inventoryadjustmentproduct
     - duplicaterecordid_msdyn_inventoryjournal
@@ -514,87 +579,178 @@ lookup_properties:
     - duplicaterecordid_msdyn_workorderservicetask
     - duplicaterecordid_msdyn_workordersubstatus
     - duplicaterecordid_msdyn_workordertype
+    - duplicaterecordid_msdyn_analysiscomponent
+    - duplicaterecordid_msdyn_analysisjob
+    - duplicaterecordid_msdyn_analysisresult
+    - duplicaterecordid_msdyn_analysisresultdetail
+    - duplicaterecordid_msdyn_solutionhealthrule
+    - duplicaterecordid_msdyn_solutionhealthruleargument
+    - duplicaterecordid_msdyn_solutionhealthruleset
+    - duplicaterecordid_msdyn_forecastdefinition
+    - duplicaterecordid_msdyn_forecastinstance
+    - duplicaterecordid_msdyn_forecastrecurrence
+    - duplicaterecordid_msdyn_aiodimage
+    - duplicaterecordid_msdyn_aiodlabel
+    - duplicaterecordid_msdyn_aiodtrainingboundingbox
+    - duplicaterecordid_msdyn_aiodtrainingimage
+    - duplicaterecordid_msdyn_icebreakersconfig
+    - duplicaterecordid_msdyn_callablecontext
+    - duplicaterecordid_msdyn_playbookactivity
+    - duplicaterecordid_msdyn_playbookactivityattribute
+    - duplicaterecordid_msdyn_playbookcategory
+    - duplicaterecordid_msdyn_playbookinstance
+    - duplicaterecordid_msdyn_playbooktemplate
+    - duplicaterecordid_sales_linkedin_configuration
+    - duplicaterecordid_msdyn_actioncardregarding
+    - duplicaterecordid_msdyn_flowcardtype
+    - duplicaterecordid_msdyn_salesinsightssettings
+    - duplicaterecordid_connector
+    - duplicaterecordid_msfp_emailtemplate
+    - duplicaterecordid_msfp_question
+    - duplicaterecordid_msfp_questionresponse
+    - duplicaterecordid_msfp_survey
+    - duplicaterecordid_msfp_unsubscribedrecipient
+    - duplicaterecordid_msdyn_connector
+    - duplicaterecordid_msdyn_relationshipinsightsunifiedconfig
+    - duplicaterecordid_msdyn_siconfig
+    - duplicaterecordid_msdyn_untrackedappointment
     - duplicaterecordid_msdyn_iotdevice
     - duplicaterecordid_msdyn_iotdevicecategory
     - duplicaterecordid_msdyn_iotdevicecommand
-    - duplicaterecordid_msdyn_iotdevicecommanddefinition
-    - duplicaterecordid_msdyn_iotdevicedatahistory
-    - duplicaterecordid_msdyn_iotdeviceproperty
     - duplicaterecordid_msdyn_iotdeviceregistrationhistory
-    - duplicaterecordid_msdyn_iotpropertydefinition
+    - duplicaterecordid_ms_newsitem
+    - duplicaterecordid_ms_satori
+    - duplicaterecordid_entitlemententityallocationtypemapping
+    - duplicaterecordid_contract
+    - duplicaterecordid_equipment
+    - duplicaterecordid_incident
+    - duplicaterecordid_entitlement
+    - duplicaterecordid_entitlementchannel
+    - duplicaterecordid_entitlementtemplate
+    - duplicaterecordid_resourcegroup
+    - duplicaterecordid_service
+    - duplicaterecordid_campaign
+    - duplicaterecordid_list
+    - duplicaterecordid_adminsettingsentity
+    - duplicaterecordid_bookableresource
+    - duplicaterecordid_bookableresourcebooking
+    - duplicaterecordid_bookableresourcebookingheader
+    - duplicaterecordid_bookableresourcecategory
+    - duplicaterecordid_bookableresourcecategoryassn
+    - duplicaterecordid_bookableresourcecharacteristic
+    - duplicaterecordid_bookableresourcegroup
+    - duplicaterecordid_bookingstatus
+    - duplicaterecordid_characteristic
+    - duplicaterecordid_ratingmodel
+    - duplicaterecordid_ratingvalue
+    - duplicaterecordid_lead
+    - duplicaterecordid_msdyn_knowledgearticleimage
+    - duplicaterecordid_msdyn_knowledgearticletemplate
+    - duplicaterecordid_environmentvariabledefinition
+    - duplicaterecordid_environmentvariablevalue
+    - duplicaterecordid_msdyn_forecastconfiguration
+    - duplicaterecordid_apisettings
+    - duplicaterecordid_serviceplan
+    - duplicaterecordid_solutioncomponentattributeconfiguration
+    - duplicaterecordid_opportunity
+    - duplicaterecordid_quote
+    - duplicaterecordid_competitor
+    - duplicaterecordid_territory
+    - duplicaterecordid_msdyn_autocapturerule
+    - duplicaterecordid_msdyn_autocapturesettings
+    - duplicaterecordid_msdyn_aibdataset
+    - duplicaterecordid_msdyn_aibdatasetfile
+    - duplicaterecordid_msdyn_aibdatasetscontainer
+    - duplicaterecordid_msdyn_aibfile
+    - duplicaterecordid_msdyn_aibfileattacheddata
+    - duplicaterecordid_solutioncomponentconfiguration
+    - duplicaterecordid_stagesolutionupload
+    - duplicaterecordid_msdyn_aibdatasetrecord
+    - duplicaterecordid_msdyn_serviceconfiguration
+    - duplicaterecordid_msdyn_slakpi
+    - duplicaterecordid_msdyn_dataflow
+    - duplicaterecordid_datalakeworkspace
+    - duplicaterecordid_datalakeworkspacepermission
+    - duplicaterecordid_applicationuser
+    - duplicaterecordid_solutioncomponentrelationshipconfiguration
+    - duplicaterecordid_exportsolutionupload
+    - duplicaterecordid_msdyn_bookableresourceassociation
+    - duplicaterecordid_msdyn_requirementgroup
+    - duplicaterecordid_msdyn_requirementrelationship
+    - duplicaterecordid_msdyn_requirementdependency
+    - duplicaterecordid_msdyn_schedulingfeatureflag
+    - duplicaterecordid_msdyn_timeentrysetting
+    - duplicaterecordid_msdyn_dimension
+    - duplicaterecordid_msdyn_dimensionfieldname
+    - duplicaterecordid_msdyn_resourcecategorymarkuppricelevel
+    - duplicaterecordid_msdyn_customerassetcategory
+    - duplicaterecordid_msdyn_entitlementapplication
+    - duplicaterecordid_msdyn_incidenttypessetup
+    - duplicaterecordid_msdyn_incidenttype_requirementgroup
+    - duplicaterecordid_msdyn_incidenttyperecommendationresult
+    - duplicaterecordid_msdyn_incidenttyperecommendationrunhistory
+    - duplicaterecordid_msdyn_iotdevicevisualizationconfiguration
+    - duplicaterecordid_msdyn_iotfieldmapping
     - duplicaterecordid_msdyn_iotprovider
     - duplicaterecordid_msdyn_iotproviderinstance
-    - duplicaterecordid_msdyn_iotsettings
     - duplicaterecordid_msdyn_entityconfiguration
     - duplicaterecordid_msdyn_geofence
     - duplicaterecordid_msdyn_geofenceevent
     - duplicaterecordid_msdyn_geofencingsettings
-    - duplicaterecordid_msdyn_accountpricelist
-    - duplicaterecordid_msdyn_batchjob
-    - duplicaterecordid_msdyn_characteristicreqforteammember
-    - duplicaterecordid_msdyn_contactpricelist
-    - duplicaterecordid_msdyn_contractlineinvoiceschedule
-    - duplicaterecordid_msdyn_contractlinescheduleofvalue
-    - duplicaterecordid_msdyn_dataexport
-    - duplicaterecordid_msdyn_delegation
-    - duplicaterecordid_msdyn_dimension
-    - duplicaterecordid_msdyn_dimensionfieldname
-    - duplicaterecordid_msdyn_estimate
-    - duplicaterecordid_msdyn_estimateline
-    - duplicaterecordid_msdyn_expense
-    - duplicaterecordid_msdyn_expensecategory
-    - duplicaterecordid_msdyn_fact
-    - duplicaterecordid_msdyn_fieldcomputation
-    - duplicaterecordid_msdyn_findworkevent
-    - duplicaterecordid_msdyn_invoicefrequency
-    - duplicaterecordid_msdyn_invoicefrequencydetail
-    - duplicaterecordid_msdyn_invoicelinetransaction
-    - duplicaterecordid_msdyn_journal
-    - duplicaterecordid_msdyn_journalline
-    - duplicaterecordid_msdyn_opportunitylineresourcecategory
-    - duplicaterecordid_msdyn_opportunitylinetransaction
-    - duplicaterecordid_msdyn_opportunitylinetransactioncategory
-    - duplicaterecordid_msdyn_opportunitylinetransactionclassificatio
-    - duplicaterecordid_msdyn_opportunitypricelist
-    - duplicaterecordid_msdyn_orderlineresourcecategory
-    - duplicaterecordid_msdyn_orderlinetransaction
-    - duplicaterecordid_msdyn_orderlinetransactioncategory
-    - duplicaterecordid_msdyn_orderlinetransactionclassification
-    - duplicaterecordid_msdyn_orderpricelist
-    - duplicaterecordid_msdyn_processnotes
-    - duplicaterecordid_msdyn_project
-    - duplicaterecordid_msdyn_projectapproval
-    - duplicaterecordid_msdyn_projectparameter
-    - duplicaterecordid_msdyn_projectparameterpricelist
-    - duplicaterecordid_msdyn_projectpricelist
-    - duplicaterecordid_msdyn_projecttask
-    - duplicaterecordid_msdyn_projecttaskdependency
-    - duplicaterecordid_msdyn_projecttaskstatususer
-    - duplicaterecordid_msdyn_projectteam
-    - duplicaterecordid_msdyn_projectteammembersignup
-    - duplicaterecordid_msdyn_projecttransactioncategory
-    - duplicaterecordid_msdyn_quotelineanalyticsbreakdown
-    - duplicaterecordid_msdyn_quotelineinvoiceschedule
-    - duplicaterecordid_msdyn_quotelineresourcecategory
-    - duplicaterecordid_msdyn_quotelinescheduleofvalue
-    - duplicaterecordid_msdyn_quotelinetransaction
-    - duplicaterecordid_msdyn_quotelinetransactioncategory
-    - duplicaterecordid_msdyn_quotelinetransactionclassification
-    - duplicaterecordid_msdyn_quotepricelist
-    - duplicaterecordid_msdyn_resourceassignmentdetail
-    - duplicaterecordid_msdyn_resourcecategorymarkuppricelevel
-    - duplicaterecordid_msdyn_resourcecategorypricelevel
-    - duplicaterecordid_msdyn_resourcerequest
-    - duplicaterecordid_msdyn_rolecompetencyrequirement
-    - duplicaterecordid_msdyn_roleutilization
-    - duplicaterecordid_msdyn_timeoffcalendar
-    - duplicaterecordid_msdyn_transactioncategory
-    - duplicaterecordid_msdyn_transactioncategoryclassification
-    - duplicaterecordid_msdyn_transactioncategoryhierarchyelement
-    - duplicaterecordid_msdyn_transactioncategorypricelevel
-    - duplicaterecordid_msdyn_transactionconnection
-    - duplicaterecordid_msdyn_transactiontype
-    - duplicaterecordid_msdyn_userworkhistory
+    - duplicaterecordid_cascadegrantrevokeaccessrecordstracker
+    - duplicaterecordid_cascadegrantrevokeaccessversiontracker
+    - duplicaterecordid_msdyn_knowledgeinteractioninsight
+    - duplicaterecordid_msdyn_knowledgesearchinsight
+    - duplicaterecordid_conversationtranscript
+    - duplicaterecordid_package
+    - duplicaterecordid_msfp_alertrule
+    - duplicaterecordid_datalakefolder
+    - duplicaterecordid_datalakefolderpermission
+    - duplicaterecordid_catalogassignment
+    - duplicaterecordid_activitymonitor
+    - duplicaterecordid_msdyn_migrationtracker
+    - duplicaterecordid_msdyn_customerassetattachment
+    - duplicaterecordid_msdyn_appconfiguration
+    - duplicaterecordid_msdyn_applicationextension
+    - duplicaterecordid_msdyn_applicationtabtemplate
+    - duplicaterecordid_msdyn_notificationfield
+    - duplicaterecordid_msdyn_notificationtemplate
+    - duplicaterecordid_msdyn_sessiontemplate
+    - duplicaterecordid_msdyn_templateparameter
+    - duplicaterecordid_msdyn_channelprovider
+    - duplicaterecordid_msdyn_paneconfiguration
+    - duplicaterecordid_msdyn_panetabconfiguration
+    - duplicaterecordid_msdyn_panetoolconfiguration
+    - duplicaterecordid_msdyn_productivityagentscript
+    - duplicaterecordid_msdyn_productivityagentscriptstep
+    - duplicaterecordid_msdyn_productivityactioninputparameter
+    - duplicaterecordid_msdyn_productivityactionoutputparameter
+    - duplicaterecordid_msdyn_productivitymacroactiontemplate
+    - duplicaterecordid_msdyn_productivitymacrosolutionconfiguration
+    - duplicaterecordid_msdyn_productivitymacroconnector
+    - duplicaterecordid_msdyn_macrosession
+    - duplicaterecordid_msdyn_productivityparameterdefinition
+    - duplicaterecordid_msdyn_smartassistconfig
+    - duplicaterecordid_msdyn_federatedarticle
+    - duplicaterecordid_msdyn_federatedarticleincident
+    - duplicaterecordid_msdyn_kmfederatedsearchconfig
+    - duplicaterecordid_msdyn_inspection
+    - duplicaterecordid_msdyn_inspectionattachment
+    - duplicaterecordid_msdyn_inspectiondefinition
+    - duplicaterecordid_msdyn_inspectionresponse
+    - duplicaterecordid_msdyn_problematicasset
+    - duplicaterecordid_msdyn_problematicassetfeedback
+    - duplicaterecordid_msdyn_geolocationsettings
+    - duplicaterecordid_msdyn_geolocationtracking
+    - duplicaterecordid_msdyn_dataanalyticsreport_fs
+    - duplicaterecordid_msdyn_dataanalyticsreport_fspredictrs
+    - duplicaterecordid_msdyn_dataanalyticsreport_fspredictwhd
+    - duplicaterecordid_msdyn_contractlinedetailperformance
+    - duplicaterecordid_msfp_fileresponse
+    - duplicaterecordid_msfp_surveyreminder
+    - duplicaterecordid_revokeinheritedaccessrecordstracker
+    - duplicaterecordid_organizationdatasyncsubscription
+    - duplicaterecordid_organizationdatasyncsubscriptionentity
     description: "Unique identifier of the potential duplicate record."
   - name: _duplicateruleid_value
     single_valued_navigation_property:
@@ -614,6 +770,9 @@ single_valued_navigation_properties:
   - name: baserecordid_adminsettingsentity
     type: Microsoft.Dynamics.CRM.adminsettingsentity
     partner: adminsettingsentity_DuplicateBaseRecord
+  - name: baserecordid_apisettings
+    type: Microsoft.Dynamics.CRM.apisettings
+    partner: apisettings_DuplicateBaseRecord
   - name: baserecordid_appointment
     type: Microsoft.Dynamics.CRM.appointment
     partner: Appointment_DuplicateBaseRecord
@@ -674,6 +833,9 @@ single_valued_navigation_properties:
   - name: baserecordid_entitlementchannel
     type: Microsoft.Dynamics.CRM.entitlementchannel
     partner: entitlementchannel_DuplicateBaseRecord
+  - name: baserecordid_entitlemententityallocationtypemapping
+    type: Microsoft.Dynamics.CRM.entitlemententityallocationtypemapping
+    partner: entitlemententityallocationtypemapping_DuplicateBaseRecord
   - name: baserecordid_entitlementtemplate
     type: Microsoft.Dynamics.CRM.entitlementtemplate
     partner: entitlementtemplate_DuplicateBaseRecord
@@ -686,6 +848,9 @@ single_valued_navigation_properties:
   - name: baserecordid_equipment
     type: Microsoft.Dynamics.CRM.equipment
     partner: Equipment_DuplicateBaseRecord
+  - name: baserecordid_exportsolutionupload
+    type: Microsoft.Dynamics.CRM.exportsolutionupload
+    partner: exportsolutionupload_DuplicateBaseRecord
   - name: baserecordid_fax
     type: Microsoft.Dynamics.CRM.fax
     partner: Fax_DuplicateBaseRecord
@@ -719,9 +884,18 @@ single_valued_navigation_properties:
   - name: baserecordid_list
     type: Microsoft.Dynamics.CRM.list
     partner: List_DuplicateBaseRecord
+  - name: baserecordid_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_DuplicateBaseRecord
+  - name: baserecordid_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_DuplicateBaseRecord
   - name: baserecordid_msdyn_accountpricelist
     type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
     partner: msdyn_accountpricelist_DuplicateBaseRecord
+  - name: baserecordid_msdyn_actioncardregarding
+    type: Microsoft.Dynamics.CRM.msdyn_actioncardregarding
+    partner: msdyn_actioncardregarding_DuplicateBaseRecord
   - name: baserecordid_msdyn_actual
     type: Microsoft.Dynamics.CRM.msdyn_actual
     partner: msdyn_actual_DuplicateBaseRecord
@@ -800,12 +974,30 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_analysisresultdetail
     type: Microsoft.Dynamics.CRM.msdyn_analysisresultdetail
     partner: msdyn_analysisresultdetail_DuplicateBaseRecord
+  - name: baserecordid_msdyn_appconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_appconfiguration
+    partner: msdyn_appconfiguration_DuplicateBaseRecord
+  - name: baserecordid_msdyn_applicationextension
+    type: Microsoft.Dynamics.CRM.msdyn_applicationextension
+    partner: msdyn_applicationextension_DuplicateBaseRecord
+  - name: baserecordid_msdyn_applicationtabtemplate
+    type: Microsoft.Dynamics.CRM.msdyn_applicationtabtemplate
+    partner: msdyn_applicationtabtemplate_DuplicateBaseRecord
   - name: baserecordid_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: msdyn_approval_DuplicateBaseRecord
+  - name: baserecordid_msdyn_autocapturerule
+    type: Microsoft.Dynamics.CRM.msdyn_autocapturerule
+    partner: msdyn_autocapturerule_DuplicateBaseRecord
+  - name: baserecordid_msdyn_autocapturesettings
+    type: Microsoft.Dynamics.CRM.msdyn_autocapturesettings
+    partner: msdyn_autocapturesettings_DuplicateBaseRecord
   - name: baserecordid_msdyn_batchjob
     type: Microsoft.Dynamics.CRM.msdyn_batchjob
     partner: msdyn_batchjob_DuplicateBaseRecord
+  - name: baserecordid_msdyn_bookableresourceassociation
+    type: Microsoft.Dynamics.CRM.msdyn_bookableresourceassociation
+    partner: msdyn_bookableresourceassociation_DuplicateBaseRecord
   - name: baserecordid_msdyn_bookingalert
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: msdyn_bookingalert_DuplicateBaseRecord
@@ -818,15 +1010,27 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_bookingtimestamp
     type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
     partner: msdyn_bookingtimestamp_DuplicateBaseRecord
+  - name: baserecordid_msdyn_callablecontext
+    type: Microsoft.Dynamics.CRM.msdyn_callablecontext
+    partner: msdyn_callablecontext_DuplicateBaseRecord
+  - name: baserecordid_msdyn_channelprovider
+    type: Microsoft.Dynamics.CRM.msdyn_channelprovider
+    partner: msdyn_channelprovider_DuplicateBaseRecord
   - name: baserecordid_msdyn_characteristicreqforteammember
     type: Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember
     partner: msdyn_characteristicreqforteammember_DuplicateBaseRecord
   - name: baserecordid_msdyn_clientextension
     type: Microsoft.Dynamics.CRM.msdyn_clientextension
     partner: msdyn_clientextension_DuplicateBaseRecord
+  - name: baserecordid_msdyn_connector
+    type: Microsoft.Dynamics.CRM.msdyn_connector
+    partner: msdyn_connector_DuplicateBaseRecord
   - name: baserecordid_msdyn_contactpricelist
     type: Microsoft.Dynamics.CRM.msdyn_contactpricelist
     partner: msdyn_contactpricelist_DuplicateBaseRecord
+  - name: baserecordid_msdyn_contractlinedetailperformance
+    type: Microsoft.Dynamics.CRM.msdyn_contractlinedetailperformance
+    partner: msdyn_contractlinedetailperformance_DuplicateBaseRecord
   - name: baserecordid_msdyn_contractlineinvoiceschedule
     type: Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule
     partner: msdyn_contractlineinvoiceschedule_DuplicateBaseRecord
@@ -836,12 +1040,42 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_customerasset
     type: Microsoft.Dynamics.CRM.msdyn_customerasset
     partner: msdyn_customerasset_DuplicateBaseRecord
+  - name: baserecordid_msdyn_customerassetattachment
+    type: Microsoft.Dynamics.CRM.msdyn_customerassetattachment
+    partner: msdyn_customerassetattachment_DuplicateBaseRecord
+  - name: baserecordid_msdyn_customerassetcategory
+    type: Microsoft.Dynamics.CRM.msdyn_customerassetcategory
+    partner: msdyn_customerassetcategory_DuplicateBaseRecord
+  - name: baserecordid_msdyn_dataanalyticsreport_fs
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fs
+    partner: msdyn_dataanalyticsreport_fs_DuplicateBaseRecord
+  - name: baserecordid_msdyn_dataanalyticsreport_fspredictrs
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictrs
+    partner: msdyn_dataanalyticsreport_fspredictrs_DuplicateBaseRecord
+  - name: baserecordid_msdyn_dataanalyticsreport_fspredictwhd
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictwhd
+    partner: msdyn_dataanalyticsreport_fspredictwhd_DuplicateBaseRecord
   - name: baserecordid_msdyn_dataexport
     type: Microsoft.Dynamics.CRM.msdyn_dataexport
     partner: msdyn_dataexport_DuplicateBaseRecord
+  - name: baserecordid_msdyn_dataflow
+    type: Microsoft.Dynamics.CRM.msdyn_dataflow
+    partner: msdyn_dataflow_DuplicateBaseRecord
   - name: baserecordid_msdyn_delegation
     type: Microsoft.Dynamics.CRM.msdyn_delegation
     partner: msdyn_delegation_DuplicateBaseRecord
+  - name: baserecordid_msdyn_dimension
+    type: Microsoft.Dynamics.CRM.msdyn_dimension
+    partner: msdyn_dimension_DuplicateBaseRecord
+  - name: baserecordid_msdyn_dimensionfieldname
+    type: Microsoft.Dynamics.CRM.msdyn_dimensionfieldname
+    partner: msdyn_dimensionfieldname_DuplicateBaseRecord
+  - name: baserecordid_msdyn_entitlementapplication
+    type: Microsoft.Dynamics.CRM.msdyn_entitlementapplication
+    partner: msdyn_entitlementapplication_DuplicateBaseRecord
+  - name: baserecordid_msdyn_entityconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_entityconfiguration
+    partner: msdyn_entityconfiguration_DuplicateBaseRecord
   - name: baserecordid_msdyn_estimate
     type: Microsoft.Dynamics.CRM.msdyn_estimate
     partner: msdyn_estimate_DuplicateBaseRecord
@@ -857,6 +1091,12 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_fact
     type: Microsoft.Dynamics.CRM.msdyn_fact
     partner: msdyn_fact_DuplicateBaseRecord
+  - name: baserecordid_msdyn_federatedarticle
+    type: Microsoft.Dynamics.CRM.msdyn_federatedarticle
+    partner: msdyn_federatedarticle_DuplicateBaseRecord
+  - name: baserecordid_msdyn_federatedarticleincident
+    type: Microsoft.Dynamics.CRM.msdyn_federatedarticleincident
+    partner: msdyn_federatedarticleincident_DuplicateBaseRecord
   - name: baserecordid_msdyn_fieldcomputation
     type: Microsoft.Dynamics.CRM.msdyn_fieldcomputation
     partner: msdyn_fieldcomputation_DuplicateBaseRecord
@@ -866,21 +1106,78 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_findworkevent
     type: Microsoft.Dynamics.CRM.msdyn_findworkevent
     partner: msdyn_findworkevent_DuplicateBaseRecord
+  - name: baserecordid_msdyn_flowcardtype
+    type: Microsoft.Dynamics.CRM.msdyn_flowcardtype
+    partner: msdyn_flowcardtype_DuplicateBaseRecord
+  - name: baserecordid_msdyn_forecastconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_forecastconfiguration
+    partner: msdyn_forecastconfiguration_DuplicateBaseRecord
+  - name: baserecordid_msdyn_forecastdefinition
+    type: Microsoft.Dynamics.CRM.msdyn_forecastdefinition
+    partner: msdyn_forecastdefinition_DuplicateBaseRecord
+  - name: baserecordid_msdyn_forecastinstance
+    type: Microsoft.Dynamics.CRM.msdyn_forecastinstance
+    partner: msdyn_forecastinstance_DuplicateBaseRecord
+  - name: baserecordid_msdyn_forecastrecurrence
+    type: Microsoft.Dynamics.CRM.msdyn_forecastrecurrence
+    partner: msdyn_forecastrecurrence_DuplicateBaseRecord
+  - name: baserecordid_msdyn_geofence
+    type: Microsoft.Dynamics.CRM.msdyn_geofence
+    partner: msdyn_geofence_DuplicateBaseRecord
+  - name: baserecordid_msdyn_geofenceevent
+    type: Microsoft.Dynamics.CRM.msdyn_geofenceevent
+    partner: msdyn_geofenceevent_DuplicateBaseRecord
+  - name: baserecordid_msdyn_geofencingsettings
+    type: Microsoft.Dynamics.CRM.msdyn_geofencingsettings
+    partner: msdyn_geofencingsettings_DuplicateBaseRecord
+  - name: baserecordid_msdyn_geolocationsettings
+    type: Microsoft.Dynamics.CRM.msdyn_geolocationsettings
+    partner: msdyn_geolocationsettings_DuplicateBaseRecord
+  - name: baserecordid_msdyn_geolocationtracking
+    type: Microsoft.Dynamics.CRM.msdyn_geolocationtracking
+    partner: msdyn_geolocationtracking_DuplicateBaseRecord
+  - name: baserecordid_msdyn_icebreakersconfig
+    type: Microsoft.Dynamics.CRM.msdyn_icebreakersconfig
+    partner: msdyn_icebreakersconfig_DuplicateBaseRecord
   - name: baserecordid_msdyn_incidenttype
     type: Microsoft.Dynamics.CRM.msdyn_incidenttype
     partner: msdyn_incidenttype_DuplicateBaseRecord
+  - name: baserecordid_msdyn_incidenttype_requirementgroup
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttype_requirementgroup
+    partner: msdyn_incidenttype_requirementgroup_DuplicateBaseRecord
   - name: baserecordid_msdyn_incidenttypecharacteristic
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
     partner: msdyn_incidenttypecharacteristic_DuplicateBaseRecord
   - name: baserecordid_msdyn_incidenttypeproduct
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
     partner: msdyn_incidenttypeproduct_DuplicateBaseRecord
+  - name: baserecordid_msdyn_incidenttyperecommendationresult
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationresult
+    partner: msdyn_incidenttyperecommendationresult_DuplicateBaseRecord
+  - name: baserecordid_msdyn_incidenttyperecommendationrunhistory
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationrunhistory
+    partner: msdyn_incidenttyperecommendationrunhistory_DuplicateBaseRecord
   - name: baserecordid_msdyn_incidenttypeservice
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
     partner: msdyn_incidenttypeservice_DuplicateBaseRecord
   - name: baserecordid_msdyn_incidenttypeservicetask
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservicetask
     partner: msdyn_incidenttypeservicetask_DuplicateBaseRecord
+  - name: baserecordid_msdyn_incidenttypessetup
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypessetup
+    partner: msdyn_incidenttypessetup_DuplicateBaseRecord
+  - name: baserecordid_msdyn_inspection
+    type: Microsoft.Dynamics.CRM.msdyn_inspection
+    partner: msdyn_inspection_DuplicateBaseRecord
+  - name: baserecordid_msdyn_inspectionattachment
+    type: Microsoft.Dynamics.CRM.msdyn_inspectionattachment
+    partner: msdyn_inspectionattachment_DuplicateBaseRecord
+  - name: baserecordid_msdyn_inspectiondefinition
+    type: Microsoft.Dynamics.CRM.msdyn_inspectiondefinition
+    partner: msdyn_inspectiondefinition_DuplicateBaseRecord
+  - name: baserecordid_msdyn_inspectionresponse
+    type: Microsoft.Dynamics.CRM.msdyn_inspectionresponse
+    partner: msdyn_inspectionresponse_DuplicateBaseRecord
   - name: baserecordid_msdyn_inventoryadjustment
     type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
     partner: msdyn_inventoryadjustment_DuplicateBaseRecord
@@ -911,15 +1208,69 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_iotdevicecommand
     type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
     partner: msdyn_iotdevicecommand_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotdevicecommanddefinition
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommanddefinition
+    partner: msdyn_iotdevicecommanddefinition_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotdevicedatahistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicedatahistory
+    partner: msdyn_iotdevicedatahistory_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotdeviceproperty
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceproperty
+    partner: msdyn_iotdeviceproperty_DuplicateBaseRecord
   - name: baserecordid_msdyn_iotdeviceregistrationhistory
     type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
     partner: msdyn_iotdeviceregistrationhistory_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotdevicevisualizationconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicevisualizationconfiguration
+    partner: msdyn_iotdevicevisualizationconfiguration_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotfieldmapping
+    type: Microsoft.Dynamics.CRM.msdyn_iotfieldmapping
+    partner: msdyn_iotfieldmapping_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotpropertydefinition
+    type: Microsoft.Dynamics.CRM.msdyn_iotpropertydefinition
+    partner: msdyn_iotpropertydefinition_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotprovider
+    type: Microsoft.Dynamics.CRM.msdyn_iotprovider
+    partner: msdyn_iotprovider_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotproviderinstance
+    type: Microsoft.Dynamics.CRM.msdyn_iotproviderinstance
+    partner: msdyn_iotproviderinstance_DuplicateBaseRecord
+  - name: baserecordid_msdyn_iotsettings
+    type: Microsoft.Dynamics.CRM.msdyn_iotsettings
+    partner: msdyn_iotsettings_DuplicateBaseRecord
   - name: baserecordid_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal
     partner: msdyn_journal_DuplicateBaseRecord
   - name: baserecordid_msdyn_journalline
     type: Microsoft.Dynamics.CRM.msdyn_journalline
     partner: msdyn_journalline_DuplicateBaseRecord
+  - name: baserecordid_msdyn_kmfederatedsearchconfig
+    type: Microsoft.Dynamics.CRM.msdyn_kmfederatedsearchconfig
+    partner: msdyn_kmfederatedsearchconfig_DuplicateBaseRecord
+  - name: baserecordid_msdyn_knowledgearticleimage
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticleimage
+    partner: msdyn_knowledgearticleimage_DuplicateBaseRecord
+  - name: baserecordid_msdyn_knowledgearticletemplate
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate
+    partner: msdyn_knowledgearticletemplate_DuplicateBaseRecord
+  - name: baserecordid_msdyn_knowledgeinteractioninsight
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgeinteractioninsight
+    partner: msdyn_knowledgeinteractioninsight_DuplicateBaseRecord
+  - name: baserecordid_msdyn_knowledgesearchinsight
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgesearchinsight
+    partner: msdyn_knowledgesearchinsight_DuplicateBaseRecord
+  - name: baserecordid_msdyn_macrosession
+    type: Microsoft.Dynamics.CRM.msdyn_macrosession
+    partner: msdyn_macrosession_DuplicateBaseRecord
+  - name: baserecordid_msdyn_migrationtracker
+    type: Microsoft.Dynamics.CRM.msdyn_migrationtracker
+    partner: msdyn_migrationtracker_DuplicateBaseRecord
+  - name: baserecordid_msdyn_notificationfield
+    type: Microsoft.Dynamics.CRM.msdyn_notificationfield
+    partner: msdyn_notificationfield_DuplicateBaseRecord
+  - name: baserecordid_msdyn_notificationtemplate
+    type: Microsoft.Dynamics.CRM.msdyn_notificationtemplate
+    partner: msdyn_notificationtemplate_DuplicateBaseRecord
   - name: baserecordid_msdyn_opportunitylineresourcecategory
     type: Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory
     partner: msdyn_opportunitylineresourcecategory_DuplicateBaseRecord
@@ -965,6 +1316,15 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_organizationalunit
     type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
     partner: msdyn_organizationalunit_DuplicateBaseRecord
+  - name: baserecordid_msdyn_paneconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_paneconfiguration
+    partner: msdyn_paneconfiguration_DuplicateBaseRecord
+  - name: baserecordid_msdyn_panetabconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_panetabconfiguration
+    partner: msdyn_panetabconfiguration_DuplicateBaseRecord
+  - name: baserecordid_msdyn_panetoolconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_panetoolconfiguration
+    partner: msdyn_panetoolconfiguration_DuplicateBaseRecord
   - name: baserecordid_msdyn_payment
     type: Microsoft.Dynamics.CRM.msdyn_payment
     partner: msdyn_payment_DuplicateBaseRecord
@@ -977,6 +1337,21 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_paymentterm
     type: Microsoft.Dynamics.CRM.msdyn_paymentterm
     partner: msdyn_paymentterm_DuplicateBaseRecord
+  - name: baserecordid_msdyn_playbookactivity
+    type: Microsoft.Dynamics.CRM.msdyn_playbookactivity
+    partner: msdyn_playbookactivity_DuplicateBaseRecord
+  - name: baserecordid_msdyn_playbookactivityattribute
+    type: Microsoft.Dynamics.CRM.msdyn_playbookactivityattribute
+    partner: msdyn_playbookactivityattribute_DuplicateBaseRecord
+  - name: baserecordid_msdyn_playbookcategory
+    type: Microsoft.Dynamics.CRM.msdyn_playbookcategory
+    partner: msdyn_playbookcategory_DuplicateBaseRecord
+  - name: baserecordid_msdyn_playbookinstance
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_DuplicateBaseRecord
+  - name: baserecordid_msdyn_playbooktemplate
+    type: Microsoft.Dynamics.CRM.msdyn_playbooktemplate
+    partner: msdyn_playbooktemplate_DuplicateBaseRecord
   - name: baserecordid_msdyn_postalbum
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: msdyn_postalbum_DuplicateBaseRecord
@@ -986,12 +1361,42 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_priority
     type: Microsoft.Dynamics.CRM.msdyn_priority
     partner: msdyn_priority_DuplicateBaseRecord
+  - name: baserecordid_msdyn_problematicasset
+    type: Microsoft.Dynamics.CRM.msdyn_problematicasset
+    partner: msdyn_problematicasset_DuplicateBaseRecord
+  - name: baserecordid_msdyn_problematicassetfeedback
+    type: Microsoft.Dynamics.CRM.msdyn_problematicassetfeedback
+    partner: msdyn_problematicassetfeedback_DuplicateBaseRecord
   - name: baserecordid_msdyn_processnotes
     type: Microsoft.Dynamics.CRM.msdyn_processnotes
     partner: msdyn_processnotes_DuplicateBaseRecord
   - name: baserecordid_msdyn_productinventory
     type: Microsoft.Dynamics.CRM.msdyn_productinventory
     partner: msdyn_productinventory_DuplicateBaseRecord
+  - name: baserecordid_msdyn_productivityactioninputparameter
+    type: Microsoft.Dynamics.CRM.msdyn_productivityactioninputparameter
+    partner: msdyn_productivityactioninputparameter_DuplicateBaseRecord
+  - name: baserecordid_msdyn_productivityactionoutputparameter
+    type: Microsoft.Dynamics.CRM.msdyn_productivityactionoutputparameter
+    partner: msdyn_productivityactionoutputparameter_DuplicateBaseRecord
+  - name: baserecordid_msdyn_productivityagentscript
+    type: Microsoft.Dynamics.CRM.msdyn_productivityagentscript
+    partner: msdyn_productivityagentscript_DuplicateBaseRecord
+  - name: baserecordid_msdyn_productivityagentscriptstep
+    type: Microsoft.Dynamics.CRM.msdyn_productivityagentscriptstep
+    partner: msdyn_productivityagentscriptstep_DuplicateBaseRecord
+  - name: baserecordid_msdyn_productivitymacroactiontemplate
+    type: Microsoft.Dynamics.CRM.msdyn_productivitymacroactiontemplate
+    partner: msdyn_productivitymacroactiontemplate_DuplicateBaseRecord
+  - name: baserecordid_msdyn_productivitymacroconnector
+    type: Microsoft.Dynamics.CRM.msdyn_productivitymacroconnector
+    partner: msdyn_productivitymacroconnector_DuplicateBaseRecord
+  - name: baserecordid_msdyn_productivitymacrosolutionconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_productivitymacrosolutionconfiguration
+    partner: msdyn_productivitymacrosolutionconfiguration_DuplicateBaseRecord
+  - name: baserecordid_msdyn_productivityparameterdefinition
+    type: Microsoft.Dynamics.CRM.msdyn_productivityparameterdefinition
+    partner: msdyn_productivityparameterdefinition_DuplicateBaseRecord
   - name: baserecordid_msdyn_project
     type: Microsoft.Dynamics.CRM.msdyn_project
     partner: msdyn_project_DuplicateBaseRecord
@@ -1085,12 +1490,24 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_quotepricelist
     type: Microsoft.Dynamics.CRM.msdyn_quotepricelist
     partner: msdyn_quotepricelist_DuplicateBaseRecord
+  - name: baserecordid_msdyn_relationshipinsightsunifiedconfig
+    type: Microsoft.Dynamics.CRM.msdyn_relationshipinsightsunifiedconfig
+    partner: msdyn_relationshipinsightsunifiedconfig_DuplicateBaseRecord
   - name: baserecordid_msdyn_requirementcharacteristic
     type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
     partner: msdyn_requirementcharacteristic_DuplicateBaseRecord
+  - name: baserecordid_msdyn_requirementdependency
+    type: Microsoft.Dynamics.CRM.msdyn_requirementdependency
+    partner: msdyn_requirementdependency_DuplicateBaseRecord
+  - name: baserecordid_msdyn_requirementgroup
+    type: Microsoft.Dynamics.CRM.msdyn_requirementgroup
+    partner: msdyn_requirementgroup_DuplicateBaseRecord
   - name: baserecordid_msdyn_requirementorganizationunit
     type: Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
     partner: msdyn_requirementorganizationunit_DuplicateBaseRecord
+  - name: baserecordid_msdyn_requirementrelationship
+    type: Microsoft.Dynamics.CRM.msdyn_requirementrelationship
+    partner: msdyn_requirementrelationship_DuplicateBaseRecord
   - name: baserecordid_msdyn_requirementresourcecategory
     type: Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
     partner: msdyn_requirementresourcecategory_DuplicateBaseRecord
@@ -1103,6 +1520,9 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_resourceassignmentdetail
     type: Microsoft.Dynamics.CRM.msdyn_resourceassignmentdetail
     partner: msdyn_resourceassignmentdetail_DuplicateBaseRecord
+  - name: baserecordid_msdyn_resourcecategorymarkuppricelevel
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorymarkuppricelevel
+    partner: msdyn_resourcecategorymarkuppricelevel_DuplicateBaseRecord
   - name: baserecordid_msdyn_resourcecategorypricelevel
     type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
     partner: msdyn_resourcecategorypricelevel_DuplicateBaseRecord
@@ -1151,15 +1571,39 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_scheduleboardsetting
     type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
     partner: msdyn_scheduleboardsetting_DuplicateBaseRecord
+  - name: baserecordid_msdyn_schedulingfeatureflag
+    type: Microsoft.Dynamics.CRM.msdyn_schedulingfeatureflag
+    partner: msdyn_schedulingfeatureflag_DuplicateBaseRecord
+  - name: baserecordid_msdyn_serviceconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_serviceconfiguration
+    partner: msdyn_serviceconfiguration_DuplicateBaseRecord
   - name: baserecordid_msdyn_servicetasktype
     type: Microsoft.Dynamics.CRM.msdyn_servicetasktype
     partner: msdyn_servicetasktype_DuplicateBaseRecord
+  - name: baserecordid_msdyn_sessiontemplate
+    type: Microsoft.Dynamics.CRM.msdyn_sessiontemplate
+    partner: msdyn_sessiontemplate_DuplicateBaseRecord
   - name: baserecordid_msdyn_shipvia
     type: Microsoft.Dynamics.CRM.msdyn_shipvia
     partner: msdyn_shipvia_DuplicateBaseRecord
   - name: baserecordid_msdyn_siconfig
     type: Microsoft.Dynamics.CRM.msdyn_siconfig
     partner: msdyn_siconfig_DuplicateBaseRecord
+  - name: baserecordid_msdyn_slakpi
+    type: Microsoft.Dynamics.CRM.msdyn_slakpi
+    partner: msdyn_slakpi_DuplicateBaseRecord
+  - name: baserecordid_msdyn_smartassistconfig
+    type: Microsoft.Dynamics.CRM.msdyn_smartassistconfig
+    partner: msdyn_smartassistconfig_DuplicateBaseRecord
+  - name: baserecordid_msdyn_solutionhealthrule
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthrule
+    partner: msdyn_solutionhealthrule_DuplicateBaseRecord
+  - name: baserecordid_msdyn_solutionhealthruleargument
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleargument
+    partner: msdyn_solutionhealthruleargument_DuplicateBaseRecord
+  - name: baserecordid_msdyn_solutionhealthruleset
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleset
+    partner: msdyn_solutionhealthruleset_DuplicateBaseRecord
   - name: baserecordid_msdyn_systemuserschedulersetting
     type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
     partner: msdyn_systemuserschedulersetting_DuplicateBaseRecord
@@ -1169,6 +1613,12 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_taxcodedetail
     type: Microsoft.Dynamics.CRM.msdyn_taxcodedetail
     partner: msdyn_taxcodedetail_DuplicateBaseRecord
+  - name: baserecordid_msdyn_templateparameter
+    type: Microsoft.Dynamics.CRM.msdyn_templateparameter
+    partner: msdyn_templateparameter_DuplicateBaseRecord
+  - name: baserecordid_msdyn_timeentrysetting
+    type: Microsoft.Dynamics.CRM.msdyn_timeentrysetting
+    partner: msdyn_timeentrysetting_DuplicateBaseRecord
   - name: baserecordid_msdyn_timegroup
     type: Microsoft.Dynamics.CRM.msdyn_timegroup
     partner: msdyn_timegroup_DuplicateBaseRecord
@@ -1202,6 +1652,9 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_transactiontype
     type: Microsoft.Dynamics.CRM.msdyn_transactiontype
     partner: msdyn_transactiontype_DuplicateBaseRecord
+  - name: baserecordid_msdyn_untrackedappointment
+    type: Microsoft.Dynamics.CRM.msdyn_untrackedappointment
+    partner: msdyn_untrackedappointment_DuplicateBaseRecord
   - name: baserecordid_msdyn_userworkhistory
     type: Microsoft.Dynamics.CRM.msdyn_userworkhistory
     partner: msdyn_userworkhistory_DuplicateBaseRecord
@@ -1238,9 +1691,51 @@ single_valued_navigation_properties:
   - name: baserecordid_msdyn_workordertype
     type: Microsoft.Dynamics.CRM.msdyn_workordertype
     partner: msdyn_workordertype_DuplicateBaseRecord
+  - name: baserecordid_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: msfp_alert_DuplicateBaseRecord
+  - name: baserecordid_msfp_alertrule
+    type: Microsoft.Dynamics.CRM.msfp_alertrule
+    partner: msfp_alertrule_DuplicateBaseRecord
+  - name: baserecordid_msfp_emailtemplate
+    type: Microsoft.Dynamics.CRM.msfp_emailtemplate
+    partner: msfp_emailtemplate_DuplicateBaseRecord
+  - name: baserecordid_msfp_fileresponse
+    type: Microsoft.Dynamics.CRM.msfp_fileresponse
+    partner: msfp_fileresponse_DuplicateBaseRecord
+  - name: baserecordid_msfp_question
+    type: Microsoft.Dynamics.CRM.msfp_question
+    partner: msfp_question_DuplicateBaseRecord
+  - name: baserecordid_msfp_questionresponse
+    type: Microsoft.Dynamics.CRM.msfp_questionresponse
+    partner: msfp_questionresponse_DuplicateBaseRecord
+  - name: baserecordid_msfp_survey
+    type: Microsoft.Dynamics.CRM.msfp_survey
+    partner: msfp_survey_DuplicateBaseRecord
+  - name: baserecordid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: msfp_surveyinvite_DuplicateBaseRecord
+  - name: baserecordid_msfp_surveyreminder
+    type: Microsoft.Dynamics.CRM.msfp_surveyreminder
+    partner: msfp_surveyreminder_DuplicateBaseRecord
+  - name: baserecordid_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: msfp_surveyresponse_DuplicateBaseRecord
+  - name: baserecordid_msfp_unsubscribedrecipient
+    type: Microsoft.Dynamics.CRM.msfp_unsubscribedrecipient
+    partner: msfp_unsubscribedrecipient_DuplicateBaseRecord
   - name: baserecordid_opportunity
     type: Microsoft.Dynamics.CRM.opportunity
     partner: Opportunity_DuplicateBaseRecord
+  - name: baserecordid_organizationdatasyncsubscription
+    type: Microsoft.Dynamics.CRM.organizationdatasyncsubscription
+    partner: organizationdatasyncsubscription_DuplicateBaseRecord
+  - name: baserecordid_organizationdatasyncsubscriptionentity
+    type: Microsoft.Dynamics.CRM.organizationdatasyncsubscriptionentity
+    partner: organizationdatasyncsubscriptionentity_DuplicateBaseRecord
+  - name: baserecordid_package
+    type: Microsoft.Dynamics.CRM.package
+    partner: package_DuplicateBaseRecord
   - name: baserecordid_phonecall
     type: Microsoft.Dynamics.CRM.phonecall
     partner: PhoneCall_DuplicateBaseRecord
@@ -1265,6 +1760,12 @@ single_valued_navigation_properties:
   - name: baserecordid_resourcegroup
     type: Microsoft.Dynamics.CRM.resourcegroup
     partner: ResourceGroup_DuplicateBaseRecord
+  - name: baserecordid_revokeinheritedaccessrecordstracker
+    type: Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker
+    partner: revokeinheritedaccessrecordstracker_DuplicateBaseRecord
+  - name: baserecordid_sales_linkedin_configuration
+    type: Microsoft.Dynamics.CRM.sales_linkedin_configuration
+    partner: sales_linkedin_configuration_DuplicateBaseRecord
   - name: baserecordid_service
     type: Microsoft.Dynamics.CRM.service
     partner: Service_DuplicateBaseRecord
@@ -1283,6 +1784,18 @@ single_valued_navigation_properties:
   - name: baserecordid_socialprofile
     type: Microsoft.Dynamics.CRM.socialprofile
     partner: SocialProfile_DuplicateBaseRecord
+  - name: baserecordid_solutioncomponentattributeconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentattributeconfiguration
+    partner: solutioncomponentattributeconfiguration_DuplicateBaseRecord
+  - name: baserecordid_solutioncomponentconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentconfiguration
+    partner: solutioncomponentconfiguration_DuplicateBaseRecord
+  - name: baserecordid_solutioncomponentrelationshipconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentrelationshipconfiguration
+    partner: solutioncomponentrelationshipconfiguration_DuplicateBaseRecord
+  - name: baserecordid_stagesolutionupload
+    type: Microsoft.Dynamics.CRM.stagesolutionupload
+    partner: stagesolutionupload_DuplicateBaseRecord
   - name: baserecordid_systemuser
     type: Microsoft.Dynamics.CRM.systemuser
     partner: SystemUser_DuplicateBaseRecord
@@ -1304,6 +1817,9 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_adminsettingsentity
     type: Microsoft.Dynamics.CRM.adminsettingsentity
     partner: adminsettingsentity_DuplicateMatchingRecord
+  - name: duplicaterecordid_apisettings
+    type: Microsoft.Dynamics.CRM.apisettings
+    partner: apisettings_DuplicateMatchingRecord
   - name: duplicaterecordid_appointment
     type: Microsoft.Dynamics.CRM.appointment
     partner: Appointment_DuplicateMatchingRecord
@@ -1364,6 +1880,9 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_entitlementchannel
     type: Microsoft.Dynamics.CRM.entitlementchannel
     partner: entitlementchannel_DuplicateMatchingRecord
+  - name: duplicaterecordid_entitlemententityallocationtypemapping
+    type: Microsoft.Dynamics.CRM.entitlemententityallocationtypemapping
+    partner: entitlemententityallocationtypemapping_DuplicateMatchingRecord
   - name: duplicaterecordid_entitlementtemplate
     type: Microsoft.Dynamics.CRM.entitlementtemplate
     partner: entitlementtemplate_DuplicateMatchingRecord
@@ -1376,6 +1895,9 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_equipment
     type: Microsoft.Dynamics.CRM.equipment
     partner: Equipment_DuplicateMatchingRecord
+  - name: duplicaterecordid_exportsolutionupload
+    type: Microsoft.Dynamics.CRM.exportsolutionupload
+    partner: exportsolutionupload_DuplicateMatchingRecord
   - name: duplicaterecordid_fax
     type: Microsoft.Dynamics.CRM.fax
     partner: Fax_DuplicateMatchingRecord
@@ -1409,9 +1931,18 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_list
     type: Microsoft.Dynamics.CRM.list
     partner: List_DuplicateMatchingRecord
+  - name: duplicaterecordid_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_DuplicateMatchingRecord
+  - name: duplicaterecordid_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_accountpricelist
     type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
     partner: msdyn_accountpricelist_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_actioncardregarding
+    type: Microsoft.Dynamics.CRM.msdyn_actioncardregarding
+    partner: msdyn_actioncardregarding_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_actual
     type: Microsoft.Dynamics.CRM.msdyn_actual
     partner: msdyn_actual_DuplicateMatchingRecord
@@ -1490,12 +2021,30 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_analysisresultdetail
     type: Microsoft.Dynamics.CRM.msdyn_analysisresultdetail
     partner: msdyn_analysisresultdetail_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_appconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_appconfiguration
+    partner: msdyn_appconfiguration_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_applicationextension
+    type: Microsoft.Dynamics.CRM.msdyn_applicationextension
+    partner: msdyn_applicationextension_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_applicationtabtemplate
+    type: Microsoft.Dynamics.CRM.msdyn_applicationtabtemplate
+    partner: msdyn_applicationtabtemplate_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: msdyn_approval_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_autocapturerule
+    type: Microsoft.Dynamics.CRM.msdyn_autocapturerule
+    partner: msdyn_autocapturerule_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_autocapturesettings
+    type: Microsoft.Dynamics.CRM.msdyn_autocapturesettings
+    partner: msdyn_autocapturesettings_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_batchjob
     type: Microsoft.Dynamics.CRM.msdyn_batchjob
     partner: msdyn_batchjob_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_bookableresourceassociation
+    type: Microsoft.Dynamics.CRM.msdyn_bookableresourceassociation
+    partner: msdyn_bookableresourceassociation_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_bookingalert
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: msdyn_bookingalert_DuplicateMatchingRecord
@@ -1508,15 +2057,27 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_bookingtimestamp
     type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
     partner: msdyn_bookingtimestamp_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_callablecontext
+    type: Microsoft.Dynamics.CRM.msdyn_callablecontext
+    partner: msdyn_callablecontext_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_channelprovider
+    type: Microsoft.Dynamics.CRM.msdyn_channelprovider
+    partner: msdyn_channelprovider_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_characteristicreqforteammember
     type: Microsoft.Dynamics.CRM.msdyn_characteristicreqforteammember
     partner: msdyn_characteristicreqforteammember_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_clientextension
     type: Microsoft.Dynamics.CRM.msdyn_clientextension
     partner: msdyn_clientextension_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_connector
+    type: Microsoft.Dynamics.CRM.msdyn_connector
+    partner: msdyn_connector_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_contactpricelist
     type: Microsoft.Dynamics.CRM.msdyn_contactpricelist
     partner: msdyn_contactpricelist_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_contractlinedetailperformance
+    type: Microsoft.Dynamics.CRM.msdyn_contractlinedetailperformance
+    partner: msdyn_contractlinedetailperformance_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_contractlineinvoiceschedule
     type: Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule
     partner: msdyn_contractlineinvoiceschedule_DuplicateMatchingRecord
@@ -1526,12 +2087,42 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_customerasset
     type: Microsoft.Dynamics.CRM.msdyn_customerasset
     partner: msdyn_customerasset_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_customerassetattachment
+    type: Microsoft.Dynamics.CRM.msdyn_customerassetattachment
+    partner: msdyn_customerassetattachment_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_customerassetcategory
+    type: Microsoft.Dynamics.CRM.msdyn_customerassetcategory
+    partner: msdyn_customerassetcategory_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_dataanalyticsreport_fs
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fs
+    partner: msdyn_dataanalyticsreport_fs_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_dataanalyticsreport_fspredictrs
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictrs
+    partner: msdyn_dataanalyticsreport_fspredictrs_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_dataanalyticsreport_fspredictwhd
+    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictwhd
+    partner: msdyn_dataanalyticsreport_fspredictwhd_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_dataexport
     type: Microsoft.Dynamics.CRM.msdyn_dataexport
     partner: msdyn_dataexport_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_dataflow
+    type: Microsoft.Dynamics.CRM.msdyn_dataflow
+    partner: msdyn_dataflow_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_delegation
     type: Microsoft.Dynamics.CRM.msdyn_delegation
     partner: msdyn_delegation_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_dimension
+    type: Microsoft.Dynamics.CRM.msdyn_dimension
+    partner: msdyn_dimension_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_dimensionfieldname
+    type: Microsoft.Dynamics.CRM.msdyn_dimensionfieldname
+    partner: msdyn_dimensionfieldname_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_entitlementapplication
+    type: Microsoft.Dynamics.CRM.msdyn_entitlementapplication
+    partner: msdyn_entitlementapplication_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_entityconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_entityconfiguration
+    partner: msdyn_entityconfiguration_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_estimate
     type: Microsoft.Dynamics.CRM.msdyn_estimate
     partner: msdyn_estimate_DuplicateMatchingRecord
@@ -1547,6 +2138,12 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_fact
     type: Microsoft.Dynamics.CRM.msdyn_fact
     partner: msdyn_fact_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_federatedarticle
+    type: Microsoft.Dynamics.CRM.msdyn_federatedarticle
+    partner: msdyn_federatedarticle_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_federatedarticleincident
+    type: Microsoft.Dynamics.CRM.msdyn_federatedarticleincident
+    partner: msdyn_federatedarticleincident_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_fieldcomputation
     type: Microsoft.Dynamics.CRM.msdyn_fieldcomputation
     partner: msdyn_fieldcomputation_DuplicateMatchingRecord
@@ -1556,21 +2153,78 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_findworkevent
     type: Microsoft.Dynamics.CRM.msdyn_findworkevent
     partner: msdyn_findworkevent_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_flowcardtype
+    type: Microsoft.Dynamics.CRM.msdyn_flowcardtype
+    partner: msdyn_flowcardtype_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_forecastconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_forecastconfiguration
+    partner: msdyn_forecastconfiguration_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_forecastdefinition
+    type: Microsoft.Dynamics.CRM.msdyn_forecastdefinition
+    partner: msdyn_forecastdefinition_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_forecastinstance
+    type: Microsoft.Dynamics.CRM.msdyn_forecastinstance
+    partner: msdyn_forecastinstance_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_forecastrecurrence
+    type: Microsoft.Dynamics.CRM.msdyn_forecastrecurrence
+    partner: msdyn_forecastrecurrence_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_geofence
+    type: Microsoft.Dynamics.CRM.msdyn_geofence
+    partner: msdyn_geofence_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_geofenceevent
+    type: Microsoft.Dynamics.CRM.msdyn_geofenceevent
+    partner: msdyn_geofenceevent_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_geofencingsettings
+    type: Microsoft.Dynamics.CRM.msdyn_geofencingsettings
+    partner: msdyn_geofencingsettings_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_geolocationsettings
+    type: Microsoft.Dynamics.CRM.msdyn_geolocationsettings
+    partner: msdyn_geolocationsettings_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_geolocationtracking
+    type: Microsoft.Dynamics.CRM.msdyn_geolocationtracking
+    partner: msdyn_geolocationtracking_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_icebreakersconfig
+    type: Microsoft.Dynamics.CRM.msdyn_icebreakersconfig
+    partner: msdyn_icebreakersconfig_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_incidenttype
     type: Microsoft.Dynamics.CRM.msdyn_incidenttype
     partner: msdyn_incidenttype_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_incidenttype_requirementgroup
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttype_requirementgroup
+    partner: msdyn_incidenttype_requirementgroup_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_incidenttypecharacteristic
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
     partner: msdyn_incidenttypecharacteristic_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_incidenttypeproduct
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
     partner: msdyn_incidenttypeproduct_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_incidenttyperecommendationresult
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationresult
+    partner: msdyn_incidenttyperecommendationresult_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_incidenttyperecommendationrunhistory
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationrunhistory
+    partner: msdyn_incidenttyperecommendationrunhistory_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_incidenttypeservice
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
     partner: msdyn_incidenttypeservice_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_incidenttypeservicetask
     type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservicetask
     partner: msdyn_incidenttypeservicetask_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_incidenttypessetup
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttypessetup
+    partner: msdyn_incidenttypessetup_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_inspection
+    type: Microsoft.Dynamics.CRM.msdyn_inspection
+    partner: msdyn_inspection_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_inspectionattachment
+    type: Microsoft.Dynamics.CRM.msdyn_inspectionattachment
+    partner: msdyn_inspectionattachment_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_inspectiondefinition
+    type: Microsoft.Dynamics.CRM.msdyn_inspectiondefinition
+    partner: msdyn_inspectiondefinition_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_inspectionresponse
+    type: Microsoft.Dynamics.CRM.msdyn_inspectionresponse
+    partner: msdyn_inspectionresponse_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_inventoryadjustment
     type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
     partner: msdyn_inventoryadjustment_DuplicateMatchingRecord
@@ -1601,15 +2255,69 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_iotdevicecommand
     type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
     partner: msdyn_iotdevicecommand_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotdevicecommanddefinition
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommanddefinition
+    partner: msdyn_iotdevicecommanddefinition_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotdevicedatahistory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicedatahistory
+    partner: msdyn_iotdevicedatahistory_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotdeviceproperty
+    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceproperty
+    partner: msdyn_iotdeviceproperty_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_iotdeviceregistrationhistory
     type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
     partner: msdyn_iotdeviceregistrationhistory_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotdevicevisualizationconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicevisualizationconfiguration
+    partner: msdyn_iotdevicevisualizationconfiguration_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotfieldmapping
+    type: Microsoft.Dynamics.CRM.msdyn_iotfieldmapping
+    partner: msdyn_iotfieldmapping_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotpropertydefinition
+    type: Microsoft.Dynamics.CRM.msdyn_iotpropertydefinition
+    partner: msdyn_iotpropertydefinition_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotprovider
+    type: Microsoft.Dynamics.CRM.msdyn_iotprovider
+    partner: msdyn_iotprovider_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotproviderinstance
+    type: Microsoft.Dynamics.CRM.msdyn_iotproviderinstance
+    partner: msdyn_iotproviderinstance_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_iotsettings
+    type: Microsoft.Dynamics.CRM.msdyn_iotsettings
+    partner: msdyn_iotsettings_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_journal
     type: Microsoft.Dynamics.CRM.msdyn_journal
     partner: msdyn_journal_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_journalline
     type: Microsoft.Dynamics.CRM.msdyn_journalline
     partner: msdyn_journalline_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_kmfederatedsearchconfig
+    type: Microsoft.Dynamics.CRM.msdyn_kmfederatedsearchconfig
+    partner: msdyn_kmfederatedsearchconfig_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_knowledgearticleimage
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticleimage
+    partner: msdyn_knowledgearticleimage_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_knowledgearticletemplate
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate
+    partner: msdyn_knowledgearticletemplate_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_knowledgeinteractioninsight
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgeinteractioninsight
+    partner: msdyn_knowledgeinteractioninsight_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_knowledgesearchinsight
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgesearchinsight
+    partner: msdyn_knowledgesearchinsight_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_macrosession
+    type: Microsoft.Dynamics.CRM.msdyn_macrosession
+    partner: msdyn_macrosession_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_migrationtracker
+    type: Microsoft.Dynamics.CRM.msdyn_migrationtracker
+    partner: msdyn_migrationtracker_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_notificationfield
+    type: Microsoft.Dynamics.CRM.msdyn_notificationfield
+    partner: msdyn_notificationfield_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_notificationtemplate
+    type: Microsoft.Dynamics.CRM.msdyn_notificationtemplate
+    partner: msdyn_notificationtemplate_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_opportunitylineresourcecategory
     type: Microsoft.Dynamics.CRM.msdyn_opportunitylineresourcecategory
     partner: msdyn_opportunitylineresourcecategory_DuplicateMatchingRecord
@@ -1655,6 +2363,15 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_organizationalunit
     type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
     partner: msdyn_organizationalunit_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_paneconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_paneconfiguration
+    partner: msdyn_paneconfiguration_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_panetabconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_panetabconfiguration
+    partner: msdyn_panetabconfiguration_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_panetoolconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_panetoolconfiguration
+    partner: msdyn_panetoolconfiguration_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_payment
     type: Microsoft.Dynamics.CRM.msdyn_payment
     partner: msdyn_payment_DuplicateMatchingRecord
@@ -1667,6 +2384,21 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_paymentterm
     type: Microsoft.Dynamics.CRM.msdyn_paymentterm
     partner: msdyn_paymentterm_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_playbookactivity
+    type: Microsoft.Dynamics.CRM.msdyn_playbookactivity
+    partner: msdyn_playbookactivity_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_playbookactivityattribute
+    type: Microsoft.Dynamics.CRM.msdyn_playbookactivityattribute
+    partner: msdyn_playbookactivityattribute_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_playbookcategory
+    type: Microsoft.Dynamics.CRM.msdyn_playbookcategory
+    partner: msdyn_playbookcategory_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_playbookinstance
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_playbooktemplate
+    type: Microsoft.Dynamics.CRM.msdyn_playbooktemplate
+    partner: msdyn_playbooktemplate_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_postalbum
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: msdyn_postalbum_DuplicateMatchingRecord
@@ -1676,12 +2408,42 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_priority
     type: Microsoft.Dynamics.CRM.msdyn_priority
     partner: msdyn_priority_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_problematicasset
+    type: Microsoft.Dynamics.CRM.msdyn_problematicasset
+    partner: msdyn_problematicasset_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_problematicassetfeedback
+    type: Microsoft.Dynamics.CRM.msdyn_problematicassetfeedback
+    partner: msdyn_problematicassetfeedback_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_processnotes
     type: Microsoft.Dynamics.CRM.msdyn_processnotes
     partner: msdyn_processnotes_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_productinventory
     type: Microsoft.Dynamics.CRM.msdyn_productinventory
     partner: msdyn_productinventory_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_productivityactioninputparameter
+    type: Microsoft.Dynamics.CRM.msdyn_productivityactioninputparameter
+    partner: msdyn_productivityactioninputparameter_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_productivityactionoutputparameter
+    type: Microsoft.Dynamics.CRM.msdyn_productivityactionoutputparameter
+    partner: msdyn_productivityactionoutputparameter_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_productivityagentscript
+    type: Microsoft.Dynamics.CRM.msdyn_productivityagentscript
+    partner: msdyn_productivityagentscript_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_productivityagentscriptstep
+    type: Microsoft.Dynamics.CRM.msdyn_productivityagentscriptstep
+    partner: msdyn_productivityagentscriptstep_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_productivitymacroactiontemplate
+    type: Microsoft.Dynamics.CRM.msdyn_productivitymacroactiontemplate
+    partner: msdyn_productivitymacroactiontemplate_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_productivitymacroconnector
+    type: Microsoft.Dynamics.CRM.msdyn_productivitymacroconnector
+    partner: msdyn_productivitymacroconnector_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_productivitymacrosolutionconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_productivitymacrosolutionconfiguration
+    partner: msdyn_productivitymacrosolutionconfiguration_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_productivityparameterdefinition
+    type: Microsoft.Dynamics.CRM.msdyn_productivityparameterdefinition
+    partner: msdyn_productivityparameterdefinition_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_project
     type: Microsoft.Dynamics.CRM.msdyn_project
     partner: msdyn_project_DuplicateMatchingRecord
@@ -1775,12 +2537,24 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_quotepricelist
     type: Microsoft.Dynamics.CRM.msdyn_quotepricelist
     partner: msdyn_quotepricelist_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_relationshipinsightsunifiedconfig
+    type: Microsoft.Dynamics.CRM.msdyn_relationshipinsightsunifiedconfig
+    partner: msdyn_relationshipinsightsunifiedconfig_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_requirementcharacteristic
     type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
     partner: msdyn_requirementcharacteristic_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_requirementdependency
+    type: Microsoft.Dynamics.CRM.msdyn_requirementdependency
+    partner: msdyn_requirementdependency_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_requirementgroup
+    type: Microsoft.Dynamics.CRM.msdyn_requirementgroup
+    partner: msdyn_requirementgroup_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_requirementorganizationunit
     type: Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
     partner: msdyn_requirementorganizationunit_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_requirementrelationship
+    type: Microsoft.Dynamics.CRM.msdyn_requirementrelationship
+    partner: msdyn_requirementrelationship_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_requirementresourcecategory
     type: Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
     partner: msdyn_requirementresourcecategory_DuplicateMatchingRecord
@@ -1793,6 +2567,9 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_resourceassignmentdetail
     type: Microsoft.Dynamics.CRM.msdyn_resourceassignmentdetail
     partner: msdyn_resourceassignmentdetail_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_resourcecategorymarkuppricelevel
+    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorymarkuppricelevel
+    partner: msdyn_resourcecategorymarkuppricelevel_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_resourcecategorypricelevel
     type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
     partner: msdyn_resourcecategorypricelevel_DuplicateMatchingRecord
@@ -1841,15 +2618,39 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_scheduleboardsetting
     type: Microsoft.Dynamics.CRM.msdyn_scheduleboardsetting
     partner: msdyn_scheduleboardsetting_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_schedulingfeatureflag
+    type: Microsoft.Dynamics.CRM.msdyn_schedulingfeatureflag
+    partner: msdyn_schedulingfeatureflag_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_serviceconfiguration
+    type: Microsoft.Dynamics.CRM.msdyn_serviceconfiguration
+    partner: msdyn_serviceconfiguration_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_servicetasktype
     type: Microsoft.Dynamics.CRM.msdyn_servicetasktype
     partner: msdyn_servicetasktype_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_sessiontemplate
+    type: Microsoft.Dynamics.CRM.msdyn_sessiontemplate
+    partner: msdyn_sessiontemplate_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_shipvia
     type: Microsoft.Dynamics.CRM.msdyn_shipvia
     partner: msdyn_shipvia_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_siconfig
     type: Microsoft.Dynamics.CRM.msdyn_siconfig
     partner: msdyn_siconfig_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_slakpi
+    type: Microsoft.Dynamics.CRM.msdyn_slakpi
+    partner: msdyn_slakpi_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_smartassistconfig
+    type: Microsoft.Dynamics.CRM.msdyn_smartassistconfig
+    partner: msdyn_smartassistconfig_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_solutionhealthrule
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthrule
+    partner: msdyn_solutionhealthrule_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_solutionhealthruleargument
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleargument
+    partner: msdyn_solutionhealthruleargument_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_solutionhealthruleset
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleset
+    partner: msdyn_solutionhealthruleset_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_systemuserschedulersetting
     type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
     partner: msdyn_systemuserschedulersetting_DuplicateMatchingRecord
@@ -1859,6 +2660,12 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_taxcodedetail
     type: Microsoft.Dynamics.CRM.msdyn_taxcodedetail
     partner: msdyn_taxcodedetail_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_templateparameter
+    type: Microsoft.Dynamics.CRM.msdyn_templateparameter
+    partner: msdyn_templateparameter_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_timeentrysetting
+    type: Microsoft.Dynamics.CRM.msdyn_timeentrysetting
+    partner: msdyn_timeentrysetting_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_timegroup
     type: Microsoft.Dynamics.CRM.msdyn_timegroup
     partner: msdyn_timegroup_DuplicateMatchingRecord
@@ -1892,6 +2699,9 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_transactiontype
     type: Microsoft.Dynamics.CRM.msdyn_transactiontype
     partner: msdyn_transactiontype_DuplicateMatchingRecord
+  - name: duplicaterecordid_msdyn_untrackedappointment
+    type: Microsoft.Dynamics.CRM.msdyn_untrackedappointment
+    partner: msdyn_untrackedappointment_DuplicateMatchingRecord
   - name: duplicaterecordid_msdyn_userworkhistory
     type: Microsoft.Dynamics.CRM.msdyn_userworkhistory
     partner: msdyn_userworkhistory_DuplicateMatchingRecord
@@ -1928,9 +2738,51 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_msdyn_workordertype
     type: Microsoft.Dynamics.CRM.msdyn_workordertype
     partner: msdyn_workordertype_DuplicateMatchingRecord
+  - name: duplicaterecordid_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: msfp_alert_DuplicateMatchingRecord
+  - name: duplicaterecordid_msfp_alertrule
+    type: Microsoft.Dynamics.CRM.msfp_alertrule
+    partner: msfp_alertrule_DuplicateMatchingRecord
+  - name: duplicaterecordid_msfp_emailtemplate
+    type: Microsoft.Dynamics.CRM.msfp_emailtemplate
+    partner: msfp_emailtemplate_DuplicateMatchingRecord
+  - name: duplicaterecordid_msfp_fileresponse
+    type: Microsoft.Dynamics.CRM.msfp_fileresponse
+    partner: msfp_fileresponse_DuplicateMatchingRecord
+  - name: duplicaterecordid_msfp_question
+    type: Microsoft.Dynamics.CRM.msfp_question
+    partner: msfp_question_DuplicateMatchingRecord
+  - name: duplicaterecordid_msfp_questionresponse
+    type: Microsoft.Dynamics.CRM.msfp_questionresponse
+    partner: msfp_questionresponse_DuplicateMatchingRecord
+  - name: duplicaterecordid_msfp_survey
+    type: Microsoft.Dynamics.CRM.msfp_survey
+    partner: msfp_survey_DuplicateMatchingRecord
+  - name: duplicaterecordid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: msfp_surveyinvite_DuplicateMatchingRecord
+  - name: duplicaterecordid_msfp_surveyreminder
+    type: Microsoft.Dynamics.CRM.msfp_surveyreminder
+    partner: msfp_surveyreminder_DuplicateMatchingRecord
+  - name: duplicaterecordid_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: msfp_surveyresponse_DuplicateMatchingRecord
+  - name: duplicaterecordid_msfp_unsubscribedrecipient
+    type: Microsoft.Dynamics.CRM.msfp_unsubscribedrecipient
+    partner: msfp_unsubscribedrecipient_DuplicateMatchingRecord
   - name: duplicaterecordid_opportunity
     type: Microsoft.Dynamics.CRM.opportunity
     partner: Opportunity_DuplicateMatchingRecord
+  - name: duplicaterecordid_organizationdatasyncsubscription
+    type: Microsoft.Dynamics.CRM.organizationdatasyncsubscription
+    partner: organizationdatasyncsubscription_DuplicateMatchingRecord
+  - name: duplicaterecordid_organizationdatasyncsubscriptionentity
+    type: Microsoft.Dynamics.CRM.organizationdatasyncsubscriptionentity
+    partner: organizationdatasyncsubscriptionentity_DuplicateMatchingRecord
+  - name: duplicaterecordid_package
+    type: Microsoft.Dynamics.CRM.package
+    partner: package_DuplicateMatchingRecord
   - name: duplicaterecordid_phonecall
     type: Microsoft.Dynamics.CRM.phonecall
     partner: PhoneCall_DuplicateMatchingRecord
@@ -1955,6 +2807,12 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_resourcegroup
     type: Microsoft.Dynamics.CRM.resourcegroup
     partner: ResourceGroup_DuplicateMatchingRecord
+  - name: duplicaterecordid_revokeinheritedaccessrecordstracker
+    type: Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker
+    partner: revokeinheritedaccessrecordstracker_DuplicateMatchingRecord
+  - name: duplicaterecordid_sales_linkedin_configuration
+    type: Microsoft.Dynamics.CRM.sales_linkedin_configuration
+    partner: sales_linkedin_configuration_DuplicateMatchingRecord
   - name: duplicaterecordid_service
     type: Microsoft.Dynamics.CRM.service
     partner: Service_DuplicateMatchingRecord
@@ -1973,6 +2831,18 @@ single_valued_navigation_properties:
   - name: duplicaterecordid_socialprofile
     type: Microsoft.Dynamics.CRM.socialprofile
     partner: SocialProfile_DuplicateMatchingRecord
+  - name: duplicaterecordid_solutioncomponentattributeconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentattributeconfiguration
+    partner: solutioncomponentattributeconfiguration_DuplicateMatchingRecord
+  - name: duplicaterecordid_solutioncomponentconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentconfiguration
+    partner: solutioncomponentconfiguration_DuplicateMatchingRecord
+  - name: duplicaterecordid_solutioncomponentrelationshipconfiguration
+    type: Microsoft.Dynamics.CRM.solutioncomponentrelationshipconfiguration
+    partner: solutioncomponentrelationshipconfiguration_DuplicateMatchingRecord
+  - name: duplicaterecordid_stagesolutionupload
+    type: Microsoft.Dynamics.CRM.stagesolutionupload
+    partner: stagesolutionupload_DuplicateMatchingRecord
   - name: duplicaterecordid_systemuser
     type: Microsoft.Dynamics.CRM.systemuser
     partner: SystemUser_DuplicateMatchingRecord
@@ -1999,10 +2869,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

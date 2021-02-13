@@ -1,0 +1,45 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM._ResourcesAddUpdateActionResponse
+name: "_ResourcesAddUpdateActionResponse"
+type: complextype
+metadata: 
+  title: "Dataverse _ResourcesAddUpdateActionResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 0fd598d0-dbc3-45ff-a912-05a3669d92db
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API _ResourcesAddUpdateActionResponse ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "" 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: CyclicResources
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
+# This complex type doesn't have any navigation properties.
+usedby:
+  description: "The following use the _ResourcesAddUpdateActionResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM._ResourcesAddUpdateAction
+    used_as: ReturnType
+# There are no remarks for this complex type.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

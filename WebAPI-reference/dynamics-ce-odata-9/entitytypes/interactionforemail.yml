@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.interactionforemail
 name: "interactionforemail"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement interactionforemail EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7f139a3d-9066-42f0-8d7c-8201824ae676
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the interactionforemail entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse interactionforemail entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/interactionforemails"
@@ -258,18 +258,39 @@ collection_valued_navigation_properties:
   - name: interactionforemail_BulkOperations
     type: Microsoft.Dynamics.CRM.bulkoperation
     partner: regardingobjectid_new_interactionforemail_bulkoperation
+  - name: interactionforemail_CampaignActivities
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: regardingobjectid_new_interactionforemail_campaignactivity
   - name: interactionforemail_CampaignResponses
     type: Microsoft.Dynamics.CRM.campaignresponse
     partner: regardingobjectid_new_interactionforemail_campaignresponse
   - name: interactionforemail_IncidentResolutions
     type: Microsoft.Dynamics.CRM.incidentresolution
     partner: regardingobjectid_new_interactionforemail_incidentresolution
+  - name: interactionforemail_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_new_interactionforemail_li_inmail
+  - name: interactionforemail_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_new_interactionforemail_li_message
+  - name: interactionforemail_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_new_interactionforemail_li_pointdrivepresentationviewed
   - name: interactionforemail_msdyn_approvals
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: regardingobjectid_new_interactionforemail_msdyn_approval
   - name: interactionforemail_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_new_interactionforemail_msdyn_bookingalert
+  - name: interactionforemail_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_new_interactionforemail_msfp_alert
+  - name: interactionforemail_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_new_interactionforemail_msfp_surveyinvite
+  - name: interactionforemail_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_new_interactionforemail_msfp_surveyresponse
   - name: interactionforemail_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_new_interactionforemail_opportunityclose
@@ -295,10 +316,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.SICommon
 name: "SI Common"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SI Common Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse SI Common Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 6bbcad99-9e2d-4591-aed2-59bff44c4193
-  author: "KumarVivek"
+  ms.assetid: 4a7962e4-3313-44ed-99ed-f52e83d56b9c
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement SI Common Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse SI Common Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: SICommon
- version: "9.0.2.618"
+ version: "9.0.2.1310"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -27,6 +27,8 @@ entities:
      description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
    - type: Microsoft.Dynamics.CRM.lead
      description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
+   - type: Microsoft.Dynamics.CRM.msdyn_relationshipinsightsunifiedconfig
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_siconfig
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_sikeyvalueconfig
@@ -38,16 +40,64 @@ entities:
 actions:
   description: "The following actions are included in this solution."
   action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_cesinvoke
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CreateSimilarOpportunitiyPredictionModel
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ExecuteSIRequest
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_Feedback
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_GDPROptoutContact
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_GDPROptoutLead
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_GDPROptoutUser
      description: ""
-# This solution has no remarks.
+   - type: Microsoft.Dynamics.CRM.msdyn_GetACIMarsConnectorStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetLegalAcceptanceStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetRICommonFCBStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetRIProvisioningStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetRITenantEndpoint
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetServiceBaseUrl
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetSIFeatureConfiguration
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetSILicenseStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetSIPackageStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_InstallSalesInsightsSolution
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveKPIvaluesfromDCI
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveKpiValuesFromRI
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveTypeValuesFromDCI
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_SetFeatureStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_SetLegalAcceptanceStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_SIGetFCBStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_StartODOSProvisioning
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_StartRIProvisioning
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_Updatefeatureconfig
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_UpdateRITenantInfo
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

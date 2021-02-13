@@ -3,31 +3,31 @@ uid: Microsoft.Dynamics.CRM.ServicePlanData
 name: "Service Plan Data"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Service Plan Data Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Service Plan Data Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 1cf5e350-0ad7-4907-9459-ba16adaa1604
-  author: "KumarVivek"
+  ms.assetid: 429baaba-cbec-483e-9774-0fe4941d238d
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Service Plan Data Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Service Plan Data Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Service Plan Data solution"
  unique_name: ServicePlanData
- version: "1.01"
- customization_prefix: none
+ version: "2.1.0.0"
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
    - type: Microsoft.Dynamics.CRM.serviceplan
      description: "Service Plan"
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

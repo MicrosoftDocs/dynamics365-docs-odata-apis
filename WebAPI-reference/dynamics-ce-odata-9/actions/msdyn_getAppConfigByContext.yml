@@ -1,0 +1,61 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_getAppConfigByContext
+name: "msdyn_getAppConfigByContext"
+type: action
+metadata: 
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: beb3aeea-e8d5-44bd-8a33-fc364656d4a4
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_getAppConfigByContext Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.msdyn_AppProfileManager
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: AppUniqueName
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+  - name: UserId
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+  - name: Roles
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+  - name: FormFactor
+    type: Edm.Int32
+    nullable: true
+    unicode: true
+    description: ""
+return_type:
+  description: "The msdyn_getAppConfigByContext action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_getAppConfigByContextResponse
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

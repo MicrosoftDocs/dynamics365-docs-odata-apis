@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.QuickTestResponse
 name: "QuickTestResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement QuickTestResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse QuickTestResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 047b3f9d-6347-4bd9-b602-d5d54b61fece
-  author: "KumarVivek"
+  ms.assetid: a038717f-6d41-4ff1-bc96-48e10d67be88
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API QuickTestResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API QuickTestResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -37,10 +37,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.QuickTest
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

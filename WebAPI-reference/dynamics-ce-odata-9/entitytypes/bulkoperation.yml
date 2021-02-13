@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.bulkoperation
 name: "bulkoperation"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement bulkoperation EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5162e448-7489-416d-880c-6db695f0d30b
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the bulkoperation entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse bulkoperation entitytype."
 description: "System operation used to perform lengthy and asynchronous operations on large data sets, such as distributing a campaign activity or quick campaign."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/bulkoperations"
@@ -353,7 +353,7 @@ properties:
       isreadonly: false
     - name: stageid
       type: Edm.Guid
-      display_name: "(Deprecated) Process Stage"
+      display_name: "Process Stage"
       description: "Unique identifier of the Stage."
       iscomputed: false
       isreadonly: false
@@ -426,7 +426,7 @@ properties:
       isreadonly: false
     - name: traversedpath
       type: Edm.String
-      display_name: "(Deprecated) Traversed Path"
+      display_name: "Traversed Path"
       description: "For internal use only."
       iscomputed: false
       isreadonly: false
@@ -605,6 +605,12 @@ single_valued_navigation_properties:
   - name: regardingobjectid_list
     type: Microsoft.Dynamics.CRM.list
     partner: List_BulkOperations
+  - name: regardingobjectid_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_newsitem_ActivityPointers
+  - name: regardingobjectid_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_satori_ActivityPointers
   - name: regardingobjectid_msdyn_agreement
     type: Microsoft.Dynamics.CRM.msdyn_agreement
     partner: msdyn_agreement_ActivityPointers
@@ -683,6 +689,9 @@ single_valued_navigation_properties:
   - name: regardingobjectid_msdyn_paymentterm
     type: Microsoft.Dynamics.CRM.msdyn_paymentterm
     partner: msdyn_paymentterm_ActivityPointers
+  - name: regardingobjectid_msdyn_playbookinstance
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: msdyn_playbookinstance_ActivityPointers
   - name: regardingobjectid_msdyn_postalbum
     type: Microsoft.Dynamics.CRM.msdyn_postalbum
     partner: msdyn_postalbum_ActivityPointers
@@ -875,12 +884,30 @@ collection_valued_navigation_properties:
   - name: activity_pointer_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: activityid_activitypointer
+  - name: activity_pointer_li_inmail
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: activityid_li_inmail
+  - name: activity_pointer_li_message
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: activityid_li_message
+  - name: activity_pointer_li_pointdrivepresentationviewed
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: activityid_li_pointdrivepresentationviewed
   - name: activity_pointer_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: activityid_msdyn_approval
   - name: activity_pointer_msdyn_bookingalert
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: activityid_msdyn_bookingalert
+  - name: activity_pointer_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: activityid_msfp_alert
+  - name: activity_pointer_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: activityid_msfp_surveyinvite
+  - name: activity_pointer_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: activityid_msfp_surveyresponse
   - name: activity_pointer_opportunity_close
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: activityid_activitypointer
@@ -950,7 +977,10 @@ collection_valued_navigation_properties:
   - name: BulkOperation_BulkDeleteFailures
     type: Microsoft.Dynamics.CRM.bulkdeletefailure
     partner: regardingobjectid_bulkoperation
-  - name: BulkOperation_CampaignResponse
+  - name: bulkoperation_CampaignActivities
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: regardingobjectid_bulkoperation_campaignactivity
+  - name: bulkoperation_CampaignResponses
     type: Microsoft.Dynamics.CRM.campaignresponse
     partner: regardingobjectid_bulkoperation_campaignresponse
   - name: BulkOperation_Contacts
@@ -971,6 +1001,15 @@ collection_valued_navigation_properties:
   - name: BulkOperation_Letter
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_bulkoperation_letter
+  - name: bulkoperation_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_bulkoperation_li_inmail
+  - name: bulkoperation_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_bulkoperation_li_message
+  - name: bulkoperation_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_bulkoperation_li_pointdrivepresentationviewed
   - name: BulkOperation_logs
     type: Microsoft.Dynamics.CRM.bulkoperationlog
     partner: bulkoperationid
@@ -983,6 +1022,15 @@ collection_valued_navigation_properties:
   - name: bulkoperation_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_bulkoperation_msdyn_bookingalert
+  - name: bulkoperation_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_bulkoperation_msfp_alert
+  - name: bulkoperation_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_bulkoperation_msfp_surveyinvite
+  - name: bulkoperation_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_bulkoperation_msfp_surveyresponse
   - name: bulkoperation_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_bulkoperation_opportunityclose
@@ -1041,10 +1089,10 @@ solutions:
     description: "Patch from 05/2019 for Dynamics 365 workload for marketing and enterprise."
   - type: Microsoft.Dynamics.CRM.msdynce_MarketingService
     description: "For internal use only."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

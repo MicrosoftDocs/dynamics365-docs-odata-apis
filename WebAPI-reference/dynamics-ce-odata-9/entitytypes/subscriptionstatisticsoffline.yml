@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.subscriptionstatisticsoffline
 name: "subscriptionstatisticsoffline"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement subscriptionstatisticsoffline EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3de1b270-ce08-4c3a-b7f0-4c2477129619
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the subscriptionstatisticsoffline entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse subscriptionstatisticsoffline entitytype."
 description: "Subscription Statistic Offline"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/subscriptionstatisticsofflineset"
@@ -57,10 +57,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

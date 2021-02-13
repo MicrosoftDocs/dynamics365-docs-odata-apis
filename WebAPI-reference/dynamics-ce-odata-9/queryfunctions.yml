@@ -1,15 +1,15 @@
 ### YamlMime:ODataIndex
 uid: Microsoft.Dynamics.CRM.QueryFunctionIndex
 name: Web API Query Function Reference
-title: "Microsoft Dataverse and 365 Customer Engagement Web API Query Function Reference | MicrosoftDocs"
+title: "Dataverse Web API Query Function Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a4f5a9d6-50eb-404b-ad11-33ff562edab3
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
+  manager: "annbe"
 description: "Query functions are functions that can be used as a filter criteria in a query. They accept parameters and return a boolean value."
 in_this_section:
 - type: Microsoft.Dynamics.CRM.Above

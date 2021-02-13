@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ReactivateEntityKey
 name: "ReactivateEntityKey"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ReactivateEntityKey Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1aabd468-3514-46e6-a748-4fea18eaa344
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the ReactivateEntityKey Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse ReactivateEntityKey Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Submit a new asynchronous system job to create the index for the key."
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -33,10 +33,10 @@ parameters:
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

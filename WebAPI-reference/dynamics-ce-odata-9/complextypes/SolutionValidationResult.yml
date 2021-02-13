@@ -3,18 +3,18 @@ uid: Microsoft.Dynamics.CRM.SolutionValidationResult
 name: "SolutionValidationResult"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SolutionValidationResult ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse SolutionValidationResult ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 065b1d6a-88c7-4ee8-a9b8-b693ca8452d5
-  author: "KumarVivek"
+  ms.assetid: 16b8cec2-444c-4265-bc18-8c04bc40a802
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API SolutionValidationResult ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API SolutionValidationResult ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
-description: "" 
+description: "The result returned from validating the solution." 
 properties:
   description: "The properties of a complex type contain the structured data of the type."
   property_items:
@@ -22,25 +22,25 @@ properties:
     type: Microsoft.Dynamics.CRM.SolutionValidationResultType
     nullable: true
     unicode: true
-    description: ""
+    description: "The type of result returned from validating a solution."
     iscollection: false
   - name: Message
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "Contains the message returned after validating the solution."
     iscollection: false
   - name: ErrorCode
     type: Edm.Int32
     nullable: true
     unicode: true
-    description: ""
+    description: "The error code returned after validating the solution."
     iscollection: false
   - name: AdditionalInfo
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "A user-friendly description of the solution validation results."
     iscollection: false
 # This complex type doesn't have any navigation properties.
 usedby:
@@ -48,10 +48,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.StageSolutionResults
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_MarketingService
 name: "Marketing Service"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Marketing Service Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Marketing Service Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: f5938611-31fc-4ce3-9c4e-54c080649c11
-  author: "KumarVivek"
+  ms.assetid: 0f72bab3-c2f6-41ee-8dd5-de501ce352ac
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Marketing Service Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Marketing Service Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_MarketingService
  version: "9.0.4.29"
- customization_prefix: none
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -30,10 +30,10 @@ entities:
    - type: Microsoft.Dynamics.CRM.socialactivity
      description: "For internal use only."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

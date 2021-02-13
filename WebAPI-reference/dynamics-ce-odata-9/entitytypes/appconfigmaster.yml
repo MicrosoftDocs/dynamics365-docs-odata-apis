@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.appconfigmaster
 name: "appconfigmaster"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement appconfigmaster EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 088db9d7-e994-4451-bade-a810f739c2c0
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the appconfigmaster entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse appconfigmaster entitytype."
 description: "Contains the master list of all properties that can be customized for apps in Dynamics 365. For internal use only."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/appconfigmasters"
@@ -151,10 +151,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

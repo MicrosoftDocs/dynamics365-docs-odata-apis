@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AttributeMetadata
 name: "AttributeMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse AttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 418c8a27-99ca-45d6-9a12-2e43e5364f2e
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the AttributeMetadata metadata entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse AttributeMetadata metadata entitytype."
 header: 
   description: "Contains all the metadata for an entity attribute."
   base_type: Microsoft.Dynamics.CRM.MetadataBase
@@ -50,6 +50,9 @@ properties:
   - name: ColumnNumber
     type: Edm.Int32
     description: "An organization-specific ID for the attribute used for auditing."
+  - name: CreatedOn
+    type: Edm.DateTimeOffset
+    description: ""
   - name: DeprecatedVersion
     type: Edm.String
     description: "The Microsoft Dynamics 365 version that the attribute was deprecated in."
@@ -154,6 +157,9 @@ properties:
     type: Edm.Guid
     inherited_from: Microsoft.Dynamics.CRM.MetadataBase
     description: "A unique identifier for the metadata item."
+  - name: ModifiedOn
+    type: Edm.DateTimeOffset
+    description: ""
   - name: RequiredLevel
     type: Microsoft.Dynamics.CRM.AttributeRequiredLevelManagedProperty
     description: "The property that determines the data entry requirement level enforced for the attribute."
@@ -182,9 +188,9 @@ derived_types:
    - type: Microsoft.Dynamics.CRM.EnumAttributeMetadata
      description: "An abstract class that contains the data for an attribute that provides options."
    - type: Microsoft.Dynamics.CRM.FileAttributeMetadata
-     description: "Contains the metadata for a File attribute."
+     description: "An abstract class that contains the metadata for an attribute type File."
    - type: Microsoft.Dynamics.CRM.ImageAttributeMetadata
-     description: "Contains the metadata for an Image attribute."
+     description: "Contains the metadata for a Image attribute"
    - type: Microsoft.Dynamics.CRM.IntegerAttributeMetadata
      description: "Contains the metadata for a Integer attribute."
    - type: Microsoft.Dynamics.CRM.LookupAttributeMetadata
@@ -204,10 +210,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.EntityMetadata
     used_as: NavigationProperty
-# This metadata entity has no remarks.
+# There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DependentEntityMetadataCollection
 name: "DependentEntityMetadataCollection"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement DependentEntityMetadataCollection ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse DependentEntityMetadataCollection ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 8f54dfd4-0344-42c1-b4b7-8724cc1030a5
-  author: "KumarVivek"
+  ms.assetid: 5e5f92c2-c916-4153-a6a0-66faeecd059c
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API DependentEntityMetadataCollection ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API DependentEntityMetadataCollection ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -32,10 +32,10 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.EntityRelationsWithDependantEntityMetadata
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

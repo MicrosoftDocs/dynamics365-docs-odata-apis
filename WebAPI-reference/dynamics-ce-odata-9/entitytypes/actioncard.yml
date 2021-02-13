@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.actioncard
 name: "actioncard"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement actioncard EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 83b4cfe3-5b08-456a-80a8-20ccea1833be
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the actioncard entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse actioncard entitytype."
 description: "Action card entity to show action cards."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/actioncards"
@@ -222,10 +222,10 @@ lookup_properties:
     description: "Shows the record ID."
   - name: _regardingobjectid_value
     single_valued_navigation_property:
-    - regardingobjectid_account_actioncard
     - regardingobjectid_contact_actioncard
-    - regardingobjectid_lead_actioncard
+    - regardingobjectid_account_actioncard
     - regardingobjectid_incident_actioncard
+    - regardingobjectid_lead_actioncard
     - regardingobjectid_opportunity_actioncard
     description: "Choose the record that the card relates to."
   - name: _transactioncurrencyid_value
@@ -277,12 +277,30 @@ single_valued_navigation_properties:
   - name: regardingobjectid_letter_actioncard
     type: Microsoft.Dynamics.CRM.letter
     partner: letter_actioncard
+  - name: regardingobjectid_li_inmail
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: li_inmail_ActionCards
+  - name: regardingobjectid_li_message
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: li_message_ActionCards
+  - name: regardingobjectid_li_pointdrivepresentationviewed
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: li_pointdrivepresentationviewed_ActionCards
   - name: regardingobjectid_msdyn_approval
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: msdyn_approval_ActionCards
   - name: regardingobjectid_msdyn_bookingalert
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: msdyn_bookingalert_ActionCards
+  - name: regardingobjectid_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: msfp_alert_ActionCards
+  - name: regardingobjectid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: msfp_surveyinvite_ActionCards
+  - name: regardingobjectid_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: msfp_surveyresponse_ActionCards
   - name: regardingobjectid_opportunity_actioncard
     type: Microsoft.Dynamics.CRM.opportunity
     partner: opportunity_actioncard
@@ -313,7 +331,9 @@ solutions:
   description: "The following solutions include the actioncard entity type."
   solution_items:
   - type: Microsoft.Dynamics.CRM.AutoDataCapture
-    description: ""
+    description: "Auto Data Capture Feature Description."
+  - type: Microsoft.Dynamics.CRM.LinkedInSalesNavigatorControlsForUnifiedClient
+    description: "Target, understand and engage customers on LinkedIn Sales Navigator from within Dynamics 365"
   - type: Microsoft.Dynamics.CRM.msdyn_LinkedInExtensions
     description: "LinkedIn Extension for Dynamics365"
   - type: Microsoft.Dynamics.CRM.msdynce_Sales
@@ -324,10 +344,10 @@ solutions:
     description: "Relationship assistant Feature Description."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

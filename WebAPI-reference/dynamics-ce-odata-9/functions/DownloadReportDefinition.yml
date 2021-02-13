@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DownloadReportDefinition
 name: "DownloadReportDefinition"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement DownloadReportDefinition Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement DownloadReportDefinition Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8fd8045e-13cf-466c-8730-5a55d02e0815
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the DownloadReportDefinition Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse DownloadReportDefinition Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Downloads a report definition.  "
 iscomposable: false
@@ -28,10 +28,10 @@ return_type:
   iscollection: false
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

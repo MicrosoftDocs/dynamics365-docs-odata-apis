@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.list
 name: "list"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement list EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ace4973a-7d83-441d-a981-0556fcd2d9b4
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the list entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse list entitytype."
 description: "Group of existing or potential customers created for a marketing campaign or other sales purposes."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/lists"
@@ -107,7 +107,7 @@ properties:
       isreadonly: false
     - name: listid
       type: Edm.Guid
-      display_name: "List"
+      display_name: "Marketing List"
       description: "Unique identifier of the marketing list."
       iscomputed: false
       isreadonly: false
@@ -190,7 +190,7 @@ properties:
       isreadonly: false
     - name: stageid
       type: Edm.Guid
-      display_name: "(Deprecated) Stage Id"
+      display_name: "Stage Id"
       description: "Contains the id of the stage where the entity is located."
       iscomputed: false
       isreadonly: false
@@ -224,7 +224,7 @@ properties:
       isreadonly: false
     - name: traversedpath
       type: Edm.String
-      display_name: "(Deprecated) Traversed Path"
+      display_name: "Traversed Path"
       description: "A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur."
       iscomputed: false
       isreadonly: false
@@ -356,6 +356,9 @@ collection_valued_navigation_properties:
   - name: List_DuplicateMatchingRecord
     type: Microsoft.Dynamics.CRM.duplicaterecord
     partner: duplicaterecordid_list
+  - name: list_listoperation_ListId
+    type: Microsoft.Dynamics.CRM.listoperation
+    partner: ListId
   - name: list_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_list
@@ -424,10 +427,10 @@ solutions:
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_MarketingSalesPatch
     description: "For internal use only."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

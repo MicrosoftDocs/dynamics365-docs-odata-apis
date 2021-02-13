@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveOrganizationInfo
 name: "RetrieveOrganizationInfo"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveOrganizationInfo Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dynamics 365 Customer Engagement RetrieveOrganizationInfo Function Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 234d3e59-cb4a-42c3-beff-df1e2d30567c
-  author: "KumarVivek"
+  ms.assetid: 9f493240-db5b-4873-935a-faf4fdc5a745
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveOrganizationInfo Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse RetrieveOrganizationInfo Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves information about an organization such as the instance type and solutions available in the organization.  "
 iscomposable: false
@@ -25,10 +25,10 @@ return_type:
   iscollection: false
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.slakpiinstance
 name: "slakpiinstance"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement slakpiinstance EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e44bf0cb-d6f9-4f6d-b75b-027c955c87a2
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the slakpiinstance entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse slakpiinstance entitytype."
 description: "Service level agreement (SLA) key performance indicator (KPI) instance that is tracked for an individual case"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/slakpiinstances"
@@ -28,6 +28,12 @@ namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
   property_items:
+    - name: applicablefromvalue
+      type: Edm.DateTimeOffset
+      display_name: "Applicable From Value"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: computedfailuretime
       type: Edm.DateTimeOffset
       display_name: "Computed Failure Time"
@@ -52,6 +58,12 @@ properties:
       description: "For internal use only."
       iscomputed: false
       isreadonly: false
+    - name: elapsedtime
+      type: Edm.Int32
+      display_name: "Elapsed Time"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: exchangerate
       type: Edm.Decimal
       display_name: "Exchange Rate"
@@ -64,16 +76,59 @@ properties:
       description: "Enter the date and time when the service level agreement (SLA) key performance indicator (KPI) will expire."
       iscomputed: false
       isreadonly: false
+    - name: lastresumetime
+      type: Edm.DateTimeOffset
+      display_name: "Last Resume Time"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: modifiedon
       type: Edm.DateTimeOffset
       display_name: "Modified On"
       description: "For internal use only."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_actionexecutionstatus
+      type: Edm.Int32
+      display_name: "Action Execution Status"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "None"
+        - value: 1
+          label: "Warning"
+        - value: 2
+          label: "Success"
+    - name: msdyn_calendarid
+      type: Edm.String
+      display_name: "Applicable Calendar"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_prevslakpiinstanceid
+      type: Edm.String
+      display_name: "Previous SLAKPI Instance"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: name
       type: Edm.String
       display_name: "Name"
       description: "Type a descriptive name for the service level agreement (SLA) key performance indicator (KPI) instance."
+      iscomputed: false
+      isreadonly: false
+    - name: pausedon
+      type: Edm.DateTimeOffset
+      display_name: "Paused On"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: regardingentityid
+      type: Edm.String
+      display_name: "Regarding ID"
+      description: ""
       iscomputed: false
       isreadonly: false
     - name: slakpiinstanceid
@@ -105,6 +160,29 @@ properties:
       type: Edm.DateTimeOffset
       display_name: "Succeeded On"
       description: "Shows the date and time when the service level agreement (SLA) key performance indicator (KPI) success criteria was met."
+      iscomputed: false
+      isreadonly: false
+    - name: successcheckedat
+      type: Edm.DateTimeOffset
+      display_name: "SuccessCheckedAt"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: terminalstatereached
+      type: Edm.Boolean
+      display_name: "Terminal State Reached"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: terminalstatetime
+      type: Edm.DateTimeOffset
+      display_name: "Terminal State Time"
+      description: ""
       iscomputed: false
       isreadonly: false
     - name: versionnumber
@@ -149,6 +227,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "For internal use only."
+  - name: _msdyn_slaitemid_value
+    single_valued_navigation_property:
+    - msdyn_slaitemid
+    description: "Unique identifier for SLA KPI Instance associated with SLA Item."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -163,11 +245,11 @@ lookup_properties:
     description: "Owning User."
   - name: _regarding_value
     single_valued_navigation_property:
-    - regarding_contact
     - regarding_account
+    - regarding_contact
     - regarding_activitypointer
-    - regarding_lead
     - regarding
+    - regarding_lead
     - regarding_invoice
     - regarding_opportunity
     - regarding_quote
@@ -192,6 +274,9 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_slakpiinstancebase_modifiedonbehalfby
+  - name: msdyn_slaitemid
+    type: Microsoft.Dynamics.CRM.slaitem
+    partner: msdyn_slaitem_slakpiinstance
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: slakpiinstance_owner
@@ -293,12 +378,14 @@ solutions:
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreement
     description: "Dynamics 365 workload for service level agreements."
+  - type: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreementExtension
+    description: "Extension solution for Dynamics 365 workload for service level agreements."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

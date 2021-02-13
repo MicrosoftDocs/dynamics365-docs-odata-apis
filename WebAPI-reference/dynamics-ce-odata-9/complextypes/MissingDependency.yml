@@ -3,18 +3,18 @@ uid: Microsoft.Dynamics.CRM.MissingDependency
 name: "MissingDependency"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement MissingDependency ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse MissingDependency ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 41ccd042-8046-4307-b1f4-dd6be88a4b9c
-  author: "KumarVivek"
+  ms.assetid: a22fb8d8-b774-4bdb-be56-425423bc6297
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API MissingDependency ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API MissingDependency ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
-description: "" 
+description: "Provides information about a missing dependent solution component." 
 properties:
   description: "The properties of a complex type contain the structured data of the type."
   property_items:
@@ -22,79 +22,79 @@ properties:
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: " The schema name of the required but missing component."
     iscollection: false
   - name: RequiredComponentDisplayName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The display name of the required but missing component."
     iscollection: false
   - name: RequiredComponentParentSchemaName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The parent schema name of the required but missing component."
     iscollection: false
   - name: RequiredComponentParentDisplayName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The parent display name of the required but missing component."
     iscollection: false
   - name: RequiredComponentId
     type: Edm.Guid
     nullable: true
     unicode: true
-    description: ""
+    description: "The unique identifier (ID) of the required but missing component."
     iscollection: false
   - name: RequiredSolutionName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The solution name of the required but missing component."
     iscollection: false
   - name: RequiredComponentType
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The type of the required but missing component."
     iscollection: false
   - name: DependentComponentSchemaName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The schema name of the dependent component."
     iscollection: false
   - name: DependentComponentDisplayName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The display name of the dependent component."
     iscollection: false
   - name: DependentComponentParentSchemaName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The schema name of the dependent component’s parent."
     iscollection: false
   - name: DependentComponentParentDisplayName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The display name of the dependent component’s parent."
     iscollection: false
   - name: DependentComponentType
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The type of the dependent component."
     iscollection: false
   - name: DependentComponentId
     type: Edm.Guid
     nullable: true
     unicode: true
-    description: ""
+    description: "The unique identifier (ID) of the dependent component."
     iscollection: false
 # This complex type doesn't have any navigation properties.
 usedby:
@@ -102,10 +102,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.StageSolutionResults
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

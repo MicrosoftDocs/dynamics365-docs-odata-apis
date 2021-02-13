@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.LoseOpportunity
 name: "LoseOpportunity"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement LoseOpportunity Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5a5c4943-8472-4f39-a511-a718b66bc511
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the LoseOpportunity Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse LoseOpportunity Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Sets the state of an opportunity to Lost. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -43,10 +43,10 @@ entities:
   - type: Microsoft.Dynamics.CRM.opportunity
     displayName: Opportunity
     description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

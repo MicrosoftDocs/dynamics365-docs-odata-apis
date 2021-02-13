@@ -1,0 +1,59 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_AppProfileManager
+name: "App profile manager"
+type: solution
+metadata: 
+  title: "Dataverse App profile manager Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 770c4496-836b-485d-a0df-78ad8970b5ea
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse App profile manager Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "App profile manager helps you to create targeted user experiences for your agents and supervisors by specifying the channels and tools that should be available to solve the customer issues"
+ unique_name: msdyn_AppProfileManager
+ version: "10.1.0.58"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_appconfiguration
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_applicationextension
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_applicationtabtemplate
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_notificationfield
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_notificationtemplate
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_sessiontemplate
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_templateparameter
+     description: ""
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_CreateApmEventHandler
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_getAppConfig
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_getAppConfigByContext
+     description: ""
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

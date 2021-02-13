@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_aitemplate
 name: "msdyn_aitemplate"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_aitemplate EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 782f15a5-5816-4154-9253-81f23ccd3dae
-  author: "KumarVivek"
+  ms.assetid: 820909d4-207d-4590-8073-56563a77c984
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_aitemplate entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_aitemplate entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_aitemplates"
@@ -332,10 +332,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdyn_AISolution
     description: ""
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

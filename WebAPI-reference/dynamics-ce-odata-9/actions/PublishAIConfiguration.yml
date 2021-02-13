@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.PublishAIConfiguration
 name: "PublishAIConfiguration"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement PublishAIConfiguration Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 819f663b-5109-44a3-9620-de310c1936d8
-  author: "KumarVivek"
+  ms.assetid: 0f9a9cdd-6d88-4bfd-8872-cbee82467735
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the PublishAIConfiguration Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse PublishAIConfiguration Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -34,10 +34,10 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.PublishAIConfigurationResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -1,0 +1,57 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreementExtension
+name: "Service Level Agreement (SLA) Extension"
+type: solution
+metadata: 
+  title: "Dataverse Service Level Agreement (SLA) Extension Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 1d2a4b96-3db5-43fb-b11e-d514119e358f
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Service Level Agreement (SLA) Extension Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Extension solution for Dynamics 365 workload for service level agreements."
+ unique_name: msdynce_ServiceLevelAgreementExtension
+ version: "9.0.20122.1012"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_serviceconfiguration
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_slakpi
+     description: ""
+   - type: Microsoft.Dynamics.CRM.sla
+     description: "Contains information about the tracked service-level KPIs for cases that belong to different customers."
+   - type: Microsoft.Dynamics.CRM.slaitem
+     description: "Contains information about a tracked support KPI for a specific customer."
+   - type: Microsoft.Dynamics.CRM.slakpiinstance
+     description: "Service level agreement (SLA) key performance indicator (KPI) instance that is tracked for an individual case"
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_CreateActionFlow
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ManageSLAInstances
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_MigrateSlaProactiveRun
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_SendEmailFromTemplate
+     description: ""
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

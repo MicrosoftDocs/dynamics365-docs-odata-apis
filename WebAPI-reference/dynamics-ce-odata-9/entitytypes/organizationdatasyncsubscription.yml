@@ -1,0 +1,313 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.organizationdatasyncsubscription
+name: "organizationdatasyncsubscription"
+type: entitytype
+metadata: 
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 1dbd6fde-aeb6-4e95-8c2e-22e53dca55cc
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse organizationdatasyncsubscription entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/organizationdatasyncsubscriptions"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: OrganizationDataSyncSubscription
+  primary_key: organizationdatasyncsubscriptionid
+  primary_name_attribute: name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: aadapplicationid
+      type: Edm.String
+      display_name: "AadApplicationId"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: blobpartitionby
+      type: Edm.Int32
+      display_name: "BlobPartitionBy"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "None"
+        - value: 1
+          label: "Day"
+        - value: 2
+          label: "Month"
+        - value: 3
+          label: "Year"
+    - name: cansyncallmetadata
+      type: Edm.Boolean
+      display_name: "CanSyncAllMetadata"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: dataendpointpostingtype
+      type: Edm.Int32
+      display_name: "DataEndpointPostingType"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "DefaultEndpoint"
+        - value: 1
+          label: "ServiceBusTopic"
+        - value: 2
+          label: "HTTPS"
+        - value: 3
+          label: "ServiceBusEventHub"
+    - name: dataprocessingtype
+      type: Edm.Int32
+      display_name: "DataProcessingType"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Unknown"
+        - value: 1
+          label: "Streaming"
+        - value: 2
+          label: "Batch"
+        - value: 3
+          label: "Mixed"
+        - value: 4
+          label: "NotificationOnly"
+    - name: endpointsettings
+      type: Edm.String
+      display_name: "EndpointSettings"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: entityfilters
+      type: Edm.String
+      display_name: "EntityFilters"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: isoutofboxsubscription
+      type: Edm.Boolean
+      display_name: "IsOutOfBoxSubscription"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: needcopyattachmentstoblob
+      type: Edm.Boolean
+      display_name: "NeedCopyAttachmentsToBlob"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: organizationdatasyncsubscriptionid
+      type: Edm.Guid
+      display_name: "OrganizationDataSyncSubscription"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: partnerprefix
+      type: Edm.String
+      display_name: "PartnerPrefix"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the OrganizationDataSyncSubscription"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the OrganizationDataSyncSubscription"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 3
+          label: "Uninitialized"
+        - value: 4
+          label: "Activated"
+        - value: 5
+          label: "Deactivated"
+    - name: subscriptionendpointstatus
+      type: Edm.Int32
+      display_name: "SubscriptionEndpointStatus"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version number of OrganizationDataSyncSubscription."
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _organizationid_value
+    single_valued_navigation_property:
+    - organizationid
+    description: "Unique identifier for the organization"
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_organizationdatasyncsubscription_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_organizationdatasyncsubscription_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_organizationdatasyncsubscription_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_organizationdatasyncsubscription_modifiedonbehalfby
+  - name: organizationid
+    type: Microsoft.Dynamics.CRM.organization
+    partner: organization_organizationdatasyncsubscription
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: organizationdatasyncsubscription_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_organizationdatasyncsubscription
+  - name: organizationdatasyncsubscription_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_organizationdatasyncsubscription
+  - name: organizationdatasyncsubscription_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_organizationdatasyncsubscription
+  - name: organizationdatasyncsubscription_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_organizationdatasyncsubscription
+  - name: organizationdatasyncsubscription_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_organizationdatasyncsubscription
+  - name: organizationdatasyncsubscription_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_organizationdatasyncsubscription
+  - name: organizationdatasyncsubscription_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_organizationdatasyncsubscription
+  - name: organizationdatasyncsubscription_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_organizationdatasyncsubscription
+  - name: subscription_subscriptionentity
+    type: Microsoft.Dynamics.CRM.organizationdatasyncsubscriptionentity
+    partner: organizationdatasyncsubscriptionId
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the organizationdatasyncsubscription entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the organizationdatasyncsubscription entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.OrganizationDataSyncSolution
+    description: ""
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

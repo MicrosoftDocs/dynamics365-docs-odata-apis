@@ -3,23 +3,28 @@ uid: Microsoft.Dynamics.CRM.msdyn_RetrieveDistanceMatrix
 name: "msdyn_RetrieveDistanceMatrix"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_RetrieveDistanceMatrix Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6a65bd5f-764e-42da-a415-12742bcf1678
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_RetrieveDistanceMatrix Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse msdyn_RetrieveDistanceMatrix Action."
 namespace: Microsoft.Dynamics.CRM
 description: "For internal use only."
-owningsolution: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+owningsolution: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
 # This action has no bound entities.
 isbound: false
 parameters:
   description: "Parameters allow for data to be passed to the action."
   parameter_items:
+  - name: Version
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
   - name: Sources
     type: Microsoft.Dynamics.CRM.crmbaseentity
     nullable: false
@@ -36,10 +41,10 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.msdyn_RetrieveDistanceMatrixResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

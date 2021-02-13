@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.incident
 name: "incident"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement incident EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 13b598d9-aea9-4cf0-8d80-d038f96790ff
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the incident entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse incident entitytype."
 description: "Service request case associated with a contract."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/incidents"
@@ -79,6 +79,8 @@ properties:
           label: "Facebook"
         - value: 3986
           label: "Twitter"
+        - value: 700610000
+          label: "IoT"
     - name: casetypecode
       type: Edm.Int32
       display_name: "Case Type"
@@ -446,7 +448,7 @@ properties:
           label: "Default Value"
     - name: stageid
       type: Edm.Guid
-      display_name: "(Deprecated) Stage Id"
+      display_name: "Stage Id"
       description: "Contains the id of the stage where the entity is located."
       iscomputed: false
       isreadonly: false
@@ -506,7 +508,7 @@ properties:
       isreadonly: false
     - name: traversedpath
       type: Edm.String
-      display_name: "(Deprecated) Traversed Path"
+      display_name: "Traversed Path"
       description: "A comma separated list of string values representing the unique identifiers of stages in a Business Process Flow Instance in the order that they occur."
       iscomputed: false
       isreadonly: false
@@ -582,6 +584,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Shows who last updated the record on behalf of another user."
+  - name: _msdyn_functionallocation_value
+    single_valued_navigation_property:
+    - msdyn_FunctionalLocation
+    description: "Case's functional location"
   - name: _msdyn_incidenttype_value
     single_valued_navigation_property:
     - msdyn_incidenttype
@@ -684,6 +690,9 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_incidentbase_modifiedonbehalfby
+  - name: msdyn_FunctionalLocation
+    type: Microsoft.Dynamics.CRM.msdyn_functionallocation
+    partner: msdyn_msdyn_functionallocation_incident_FunctionalLocation
   - name: msdyn_incidenttype
     type: Microsoft.Dynamics.CRM.msdyn_incidenttype
     partner: msdyn_msdyn_incidenttype_incident_IncidentType
@@ -744,6 +753,9 @@ collection_valued_navigation_properties:
   - name: bpf_incident_msdyn_bpf_989e9b1857e24af18787d5143b67523b
     type: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
     partner: bpf_incidentid
+  - name: bpf_incident_msdyn_iottocaseprocess
+    type: Microsoft.Dynamics.CRM.msdyn_iottocaseprocess
+    partner: bpf_incidentid
   - name: incident_actioncard
     type: Microsoft.Dynamics.CRM.actioncard
     partner: regardingobjectid_incident_actioncard
@@ -792,6 +804,15 @@ collection_valued_navigation_properties:
   - name: Incident_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_incident_letter
+  - name: incident_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_incident_li_inmail
+  - name: incident_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_incident_li_message
+  - name: incident_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_incident_li_pointdrivepresentationviewed
   - name: Incident_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_incident
@@ -804,6 +825,15 @@ collection_valued_navigation_properties:
   - name: incident_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_incident_msdyn_bookingalert
+  - name: incident_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_incident_msfp_alert
+  - name: incident_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_incident_msfp_surveyinvite
+  - name: incident_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_incident_msfp_surveyresponse
   - name: incident_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_incident_opportunityclose
@@ -858,9 +888,39 @@ collection_valued_navigation_properties:
   - name: KnowledgeBaseRecord_Incident
     type: Microsoft.Dynamics.CRM.knowledgebaserecord
     partner: KnowledgeBaseRecord_Incident
+  - name: msdyn_incident_feedback_context
+    type: Microsoft.Dynamics.CRM.feedback
+    partner: msdyn_ContextObjectId_incident
+  - name: msdyn_incident_msdyn_caseenrichment_caseid
+    type: Microsoft.Dynamics.CRM.msdyn_caseenrichment
+    partner: msdyn_caseid
+  - name: msdyn_incident_msdyn_casesuggestion_suggestedentity
+    type: Microsoft.Dynamics.CRM.msdyn_casesuggestion
+    partner: msdyn_suggestedentity
+  - name: msdyn_incident_msdyn_casesuggestionrequestpayload_caseid
+    type: Microsoft.Dynamics.CRM.msdyn_casesuggestionrequestpayload
+    partner: msdyn_caseid
+  - name: msdyn_incident_msdyn_casetopic_incident_incidentid
+    type: Microsoft.Dynamics.CRM.msdyn_casetopic_incident
+    partner: msdyn_incidentid
+  - name: msdyn_incident_msdyn_customerasset
+    type: Microsoft.Dynamics.CRM.msdyn_customerasset
+    partner: msdyn_incident_msdyn_customerasset
+  - name: msdyn_incident_msdyn_federatedarticleincident_IncidentId
+    type: Microsoft.Dynamics.CRM.msdyn_federatedarticleincident
+    partner: msdyn_incidentid
   - name: msdyn_incident_msdyn_iotalert_Case
     type: Microsoft.Dynamics.CRM.msdyn_iotalert
     partner: msdyn_Case
+  - name: msdyn_incident_msdyn_suggestioninteraction_msdyn_suggestedentity
+    type: Microsoft.Dynamics.CRM.msdyn_suggestioninteraction
+    partner: msdyn_suggestedentity_incident
+  - name: msdyn_incident_msdyn_suggestioninteraction_msdyn_suggestionfor
+    type: Microsoft.Dynamics.CRM.msdyn_suggestioninteraction
+    partner: msdyn_suggestionfor_incident
+  - name: msdyn_incident_msdyn_suggestionrequestpayload
+    type: Microsoft.Dynamics.CRM.msdyn_suggestionrequestpayload
+    partner: msdyn_suggestionfor_incident
   - name: msdyn_incident_msdyn_workorder_ServiceRequest
     type: Microsoft.Dynamics.CRM.msdyn_workorder
     partner: msdyn_servicerequest
@@ -890,6 +950,8 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_GetCaseSuggestions
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -909,6 +971,10 @@ solutions:
     description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerService
+    description: "Use Connected Customer Service to monitor connected devices to make sure your customer’s equipment is functioning properly. If a piece of equipment fails, you’ll receive a notification so that you can troubleshoot the problem remotely."
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.msdynce_SalesService
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_Service
@@ -917,10 +983,12 @@ solutions:
     description: "Patch for Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
     description: "Dynamics 365 workload for service."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.Relationshipassistant
+    description: "Relationship assistant Feature Description."
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

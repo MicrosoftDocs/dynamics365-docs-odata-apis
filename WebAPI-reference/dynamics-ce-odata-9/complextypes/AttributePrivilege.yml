@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AttributePrivilege
 name: "AttributePrivilege"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AttributePrivilege ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse AttributePrivilege ComplexType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7b3155c9-8fae-42c6-b0b5-0375d3291c63
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API AttributePrivilege ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Web API AttributePrivilege ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Specifies the field level security privileges allowed for an attribute." 
@@ -48,10 +48,10 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAttributePrivilegesResponse
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

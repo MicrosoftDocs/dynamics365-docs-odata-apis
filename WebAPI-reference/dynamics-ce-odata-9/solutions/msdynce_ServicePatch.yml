@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_ServicePatch
 name: "Service Patch"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Service Patch Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Service Patch Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 84c66255-342f-401e-858c-d6900141c05e
-  author: "KumarVivek"
+  ms.assetid: c03a0025-de9c-49c7-b0c7-0e4c9e48544c
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Service Patch Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Service Patch Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Patch for Dynamics 365 workload for service."
  unique_name: msdynce_ServicePatch
  version: "9.0.19111.1004"
- customization_prefix: none
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -37,6 +37,8 @@ entities:
      description: "Defines the amount and type of support a customer should receive."
    - type: Microsoft.Dynamics.CRM.entitlementchannel
      description: "Defines the amount and type of support for a channel."
+   - type: Microsoft.Dynamics.CRM.entitlemententityallocationtypemapping
+     description: "Mapping to define which Allocation Types are available for Entity Type to be used on Entitlement"
    - type: Microsoft.Dynamics.CRM.entitlementtemplate
      description: "Contains predefined customer support terms that can be used to created entitlements for customers."
    - type: Microsoft.Dynamics.CRM.entitlementtemplatechannel
@@ -62,10 +64,10 @@ entities:
    - type: Microsoft.Dynamics.CRM.task
      description: "Generic activity representing work needed to be done."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

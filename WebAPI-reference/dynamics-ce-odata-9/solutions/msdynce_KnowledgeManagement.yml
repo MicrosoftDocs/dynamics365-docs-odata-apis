@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagement
 name: "Knowledge Management"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Knowledge Management Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Knowledge Management Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 618a6a89-0e5c-4cff-87d6-100ad61542ec
-  author: "KumarVivek"
+  ms.assetid: 7aee2369-59e7-48e3-a8c6-f57681a265a3
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Knowledge Management Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Knowledge Management Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for knowledge management."
  unique_name: msdynce_KnowledgeManagement
  version: "9.0.1.33"
- customization_prefix: none
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -26,10 +26,10 @@ entities:
    - type: Microsoft.Dynamics.CRM.knowledgearticle
      description: "Organizational knowledge for internal and external use."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

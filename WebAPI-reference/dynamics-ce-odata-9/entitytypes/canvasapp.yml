@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.canvasapp
 name: "canvasapp"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement canvasapp EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: b15f91bb-c713-48b9-a684-f8db2d429882
-  author: "KumarVivek"
+  ms.assetid: 2d70259a-7b57-4d0d-b64b-92debbf2035a
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the canvasapp entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse canvasapp entitytype."
 description: "An application built through a canvas-based editing experience."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/canvasapps"
@@ -57,6 +57,18 @@ properties:
           label: "True"
         - value: 0
           label: "False"
+    - name: appcomponentdependencies
+      type: Edm.String
+      display_name: ""
+      description: "The app component dependencies."
+      iscomputed: false
+      isreadonly: false
+    - name: appcomponents
+      type: Edm.String
+      display_name: ""
+      description: "The app components."
+      iscomputed: false
+      isreadonly: false
     - name: appopenuri
       type: Edm.String
       display_name: ""
@@ -69,22 +81,57 @@ properties:
       description: "The application version."
       iscomputed: false
       isreadonly: false
+    - name: assets
+      type: Edm.Binary
+      display_name: ""
+      description: "Assets for Canvas Apps."
+      iscomputed: false
+      isreadonly: true
+    - name: assets_name
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: authorizationreferences
       type: Edm.String
       display_name: ""
       description: "The authorization references of the application."
       iscomputed: false
       isreadonly: false
+    - name: background_image
+      type: Edm.Binary
+      display_name: ""
+      description: "Background image for Canvas Apps."
+      iscomputed: false
+      isreadonly: true
     - name: backgroundcolor
       type: Edm.String
       display_name: ""
       description: "The background image color."
       iscomputed: false
       isreadonly: false
+    - name: backgroundimage_name
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: bypassconsent
       type: Edm.Boolean
       display_name: "Bypass Consent"
       description: "Indicates whether the canvas app should bypass consent from consumers."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "True"
+        - value: 0
+          label: "False"
+    - name: canconsumeapppass
+      type: Edm.Boolean
+      display_name: "Can Consume App Pass"
+      description: "The type of the canvas app."
       iscomputed: false
       isreadonly: false
       options:
@@ -104,6 +151,21 @@ properties:
       description: "For internal use only."
       iscomputed: false
       isreadonly: true
+    - name: canvasapptype
+      type: Edm.Int32
+      display_name: "Canvas App Type"
+      description: "The type of the canvas app."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Classic Canvas App"
+        - value: 1
+          label: "App Component Library"
+        - value: 2
+          label: "Custom Canvas Page"
+        - value: 3
+          label: "Unified App"
     - name: cdsdependencies
       type: Edm.String
       display_name: ""
@@ -167,6 +229,18 @@ properties:
       description: "The display name of the app."
       iscomputed: false
       isreadonly: false
+    - name: document
+      type: Edm.Binary
+      display_name: ""
+      description: "Document for Canvas Apps."
+      iscomputed: false
+      isreadonly: true
+    - name: document_name
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: embeddedapp
       type: Edm.String
       display_name: ""
@@ -196,6 +270,12 @@ properties:
           label: "True"
         - value: 0
           label: "False"
+    - name: iscustomizable
+      type: Microsoft.Dynamics.CRM.BooleanManagedProperty
+      display_name: "Customizable"
+      description: "Information that specifies whether this component can be customized."
+      iscomputed: false
+      isreadonly: false
     - name: isfeaturedapp
       type: Edm.Boolean
       display_name: "Is Featured App"
@@ -240,6 +320,18 @@ properties:
           label: "Managed"
         - value: 0
           label: "Unmanaged"
+    - name: large_icon
+      type: Edm.Binary
+      display_name: ""
+      description: "Large icon for Canvas Apps."
+      iscomputed: false
+      isreadonly: true
+    - name: largeicon_name
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: lastmodifiedtime
       type: Edm.DateTimeOffset
       display_name: "Last Modified Time"
@@ -252,6 +344,18 @@ properties:
       description: "Date and time when the application was last published."
       iscomputed: false
       isreadonly: false
+    - name: medium_icon
+      type: Edm.Binary
+      display_name: ""
+      description: "Medium icon for Canvas Apps."
+      iscomputed: false
+      isreadonly: true
+    - name: mediumicon_name
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: minclientversion
       type: Edm.String
       display_name: ""
@@ -276,6 +380,18 @@ properties:
       description: "The publisher of the app."
       iscomputed: false
       isreadonly: false
+    - name: small_icon
+      type: Edm.Binary
+      display_name: ""
+      description: "Small icon for Canvas Apps."
+      iscomputed: false
+      isreadonly: true
+    - name: smallicon_name
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: solutionid
       type: Edm.Guid
       display_name: "Solution"
@@ -294,8 +410,32 @@ properties:
       description: "The metadata tags of the application."
       iscomputed: false
       isreadonly: false
+    - name: teams_icon
+      type: Edm.Binary
+      display_name: ""
+      description: "Teams icon for Canvas Apps."
+      iscomputed: false
+      isreadonly: true
+    - name: teamsicon_name
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: versionnumber
       type: Edm.Int64
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+    - name: wide_icon
+      type: Edm.Binary
+      display_name: ""
+      description: "Wide icon for Canvas Apps."
+      iscomputed: false
+      isreadonly: true
+    - name: wideicon_name
+      type: Edm.String
       display_name: ""
       description: ""
       iscomputed: false
@@ -318,33 +458,62 @@ lookup_properties:
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
   property_items:
+  - name: backgroundimage
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: FileAttachment_CanvasApp_BackgroundImage
   - name: FK_CanvasApp_Solution
     type: Microsoft.Dynamics.CRM.solution
     partner: FK_CanvasApp_Solution
+  - name: largeicon
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: FileAttachment_CanvasApp_LargeIcon
+  - name: mediumicon
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: FileAttachment_CanvasApp_MediumIcon
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_canvasapp
   - name: owningbusinessunit
     type: Microsoft.Dynamics.CRM.businessunit
     partner: businessunit_canvasapp
-# This entity has no collection-valued navigation properties
+  - name: smallicon
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: FileAttachment_CanvasApp_SmallIcon
+  - name: teamsicon
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: FileAttachment_CanvasApp_TeamsIcon
+  - name: wideicon
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: FileAttachment_CanvasApp_WideIcon
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: canvasapp_FileAttachments
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: objectid_canvasapp
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the canvasapp entity type."
   operation_items:
   - name: Microsoft.Dynamics.CRM.GrantAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RevokeAccess
     binding_type: "Not Bound"
 solutions:
   description: "The following solutions include the canvasapp entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.CanvasAppMetadataExtensionSolution
+    description: "Canvas App Metadata Extension solution for Model-Driven Apps."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

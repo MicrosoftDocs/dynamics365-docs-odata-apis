@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
 name: "Universal Resource Scheduling"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Universal Resource Scheduling Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse Universal Resource Scheduling Solution Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 55913065-fedf-41f7-8416-2253c9f09af0
-  author: "KumarVivek"
+  ms.assetid: 218a6861-7369-40e9-a14f-c8433866b235
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Universal Resource Scheduling Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse Universal Resource Scheduling Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
@@ -47,6 +47,8 @@ entities:
      description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
    - type: Microsoft.Dynamics.CRM.msdyn_actual
      description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_bookableresourceassociation
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_bookingalert
      description: "Alerts that notify schedule board users of booking issues or information."
    - type: Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
@@ -56,6 +58,8 @@ entities:
    - type: Microsoft.Dynamics.CRM.msdyn_bookingrule
      description: "Specify custom rules to be validated by the system before saving a booking record."
    - type: Microsoft.Dynamics.CRM.msdyn_bookingsetupmetadata
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_businessclosure
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_clientextension
      description: ""
@@ -67,8 +71,12 @@ entities:
      description: "Priorities to be used on bookings. In addition, a color could be specified for each priority type and the color selected will be shown visually on the schedule board."
    - type: Microsoft.Dynamics.CRM.msdyn_requirementcharacteristic
      description: "Requirement Characteristic"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementgroup
+     description: "Service which has resource requirement offering periods"
    - type: Microsoft.Dynamics.CRM.msdyn_requirementorganizationunit
      description: "Requirement of Organization Unit"
+   - type: Microsoft.Dynamics.CRM.msdyn_requirementrelationship
+     description: "Relationship of requirements in the group"
    - type: Microsoft.Dynamics.CRM.msdyn_requirementresourcecategory
      description: "Requirement Resource Category"
    - type: Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
@@ -104,42 +112,110 @@ entities:
 actions:
   description: "The following actions are included in this solution."
   action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_AnalyzeServiceHealth
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_AnalyzeServiceHealthAsync
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_applyworktemplateforresources
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_BookingResource
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_BookingResourceRequirement
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_BookRequirementGroup
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_BusinessClosureDelete
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_BusinessClosureRetrieve
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_BusinessClosureSave
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CalculateAndUpdateBookingTravel
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_CancelBookings
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_CascadeBookingChanges
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_cloneentity
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_CloneMultiple
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CreateRequirementModel
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CreateResourceOptimizationRequest
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_FpsAction
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_GeocodeAddress
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_GetAvailabilitySummaryFromDemand
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_GetBookableResources
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_GetBookingDetailsByRequirementIds
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_GetChildResources
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_GetMultipleResourceBookingDetails
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_GetOrCreateBookableResources
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetOrganizationalUnitsWithinRadius
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_GetRequirementChartData
      description: "For internal use only."
    - type: Microsoft.Dynamics.CRM.msdyn_GetRequirementDemand
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_GetRequirementDemandDisplay
+     description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_GetRequirementModels
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_GetResourceBookingDetails
      description: "For internal use only."
    - type: Microsoft.Dynamics.CRM.msdyn_GetResourceBookingFormParameters
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_GetResourceGroupMemberships
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_GetResourcePopupDetails
      description: "For internal use only."
    - type: Microsoft.Dynamics.CRM.msdyn_GetResources
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_GetResourceUtilizationGrid
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetResourceWorkHoursForTimeFrame
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_GetSummaryBookings
      description: "For internal use only."
    - type: Microsoft.Dynamics.CRM.msdyn_initializedefaultclonequery
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_RemoveRequirementModel
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RequirementGroupOverview
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ResolveTimezone
+     description: "For internal use only."
    - type: Microsoft.Dynamics.CRM.msdyn_RetrieveDistanceMatrix
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveRequirementGroupCandidates
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_RetrieveResourceAvailability
      description: "For internal use only."
+   - type: Microsoft.Dynamics.CRM.msdyn_ScheduleRequirementGroup
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_SearchResourceAvailability
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_transformentity
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_UpdateBookingsStatus
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_UpdateRequirementDemand
      description: "For internal use only."
-# This solution has no remarks.
+   - type: Microsoft.Dynamics.CRM.msdyn_UpdateRequirementModel
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.discounttype
 name: "discounttype"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement discounttype EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "02/10/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: cd5556b4-b520-4d2f-a92d-ebb21794de93
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the discounttype entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Dataverse discounttype entitytype."
 description: "Type of discount specified as either a percentage or an amount."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/discounttypes"
@@ -209,10 +209,10 @@ solutions:
     description: "Dynamics 365 workload for Sales Patch Version 2."
   - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
     description: "Dynamics 365 workload for third patch of Sales."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+- text: "Use the Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex
