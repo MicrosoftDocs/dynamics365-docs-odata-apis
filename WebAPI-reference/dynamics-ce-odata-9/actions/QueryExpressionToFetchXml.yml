@@ -33,7 +33,7 @@ return_type:
 # This action has no identified unbound entities.
 
 remarks:
-  description: "Type action accepts a Microsoft.Dynamics.CRM.QueryBase however only Microsoft.Dynamics.CRM.QueryExpression can be converted to Fetch. Specify the @odata.type property on the Microsoft.Dynamics.CRM.QueryBase object. The value should be "Microsoft.Dynamics.CRM.QueryExpression"
+  description: "Type action accepts a Microsoft.Dynamics.CRM.QueryBase however only Microsoft.Dynamics.CRM.QueryExpression can be converted to Fetch. Specify the @odata.type property on the Microsoft.Dynamics.CRM.QueryBase object. The value should be Microsoft.Dynamics.CRM.QueryExpression"
   
 href_see_also:
 - text: "Use the Dataverse Web API"
