@@ -16,7 +16,7 @@ description: "[Deprecated]"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_analyticsadminsettings"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
-  display_name: [Deprecated] Data Analytics Admin Settings
+  display_name: (Deprecated) Data Analytics Admin Settings
   primary_key: msdyn_analyticsadminsettingsid
   primary_name_attribute: msdyn_name
   operations_supported:

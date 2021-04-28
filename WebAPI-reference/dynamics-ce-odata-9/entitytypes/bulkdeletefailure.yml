@@ -58,12 +58,11 @@ properties:
     - name: owninguser
       type: Edm.Guid
       display_name: "Owning User"
-      description: "Unique identifier of the user who owns the bulk deletion failure record.
-"
+      description: "Unique identifier of the user who owns the bulk deletion failure record."
       iscomputed: false
       isreadonly: true
 lookup_properties:
-  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties and https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties."
   property_items:
   - name: _asyncoperationid_value
     description: "Unique identifier of the system job that created this record."

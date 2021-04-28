@@ -1,7 +1,7 @@
 ### YamlMime:ODataIndex
 uid: Microsoft.Dynamics.CRM.ActionIndex
 name: Web API Action Reference
-title: "Microsoft DataverseWeb API Action Reference | MicrosoftDocs"
+title: "Microsoft Dataverse Web API Action Reference | MicrosoftDocs"
 metadata:   
   ms.date: "04/12/2021"
   ms.service: "powerapps"
@@ -89,7 +89,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.CanBeReferenced
   description: "Checks whether the specified entity can be the primary entity (one) in a one-to-many relationship. "
 - type: Microsoft.Dynamics.CRM.CanBeReferencing
-  description: "Checkes whether an entity can be the referencing entity in a one-to-many relationship. "
+  description: "Checks whether an entity can be the referencing entity in a one-to-many relationship. "
 - type: Microsoft.Dynamics.CRM.CancelContract
   description: "Cancels a contract.  "
 - type: Microsoft.Dynamics.CRM.CancelSalesOrder

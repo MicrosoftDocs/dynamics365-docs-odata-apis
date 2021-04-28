@@ -16,7 +16,7 @@ description: "[Deprecated] Controls access to Analytics Reporting Sitemap in Dyn
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_analyticsforcs"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
-  display_name: [Deprecated] Dynamics Customer Service Analytics
+  display_name: (Deprecated) Dynamics Customer Service Analytics
   primary_key: msdyn_analyticsforcsid
   primary_name_attribute: msdyn_name
   operations_supported:

@@ -85,11 +85,7 @@ properties:
     - name: msdyn_amountmethod
       type: Edm.Int32
       display_name: "Amount Method"
-      description: "Select the amount calculation method used for this project contract estimate line. Valid values are: 
-0: Multiply Quantity By Price
-1: Fixed Price
-2: Multiply Basis Quantity By Price
-3: Multiply Basis Amount By Percent "
+      description: "Select the amount calculation method used for this project contract estimate line. Valid values are: 0: Multiply Quantity By Price, 1: Fixed Price, 2: Multiply Basis Quantity By Price, 3: Multiply Basis Amount By Percent "
       iscomputed: false
       isreadonly: false
       options:
