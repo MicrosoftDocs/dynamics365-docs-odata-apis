@@ -3,17 +3,17 @@ uid: Microsoft.Dynamics.CRM.DownloadSolutionExportData
 name: "DownloadSolutionExportData"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f10c7a7d-46e7-4682-983c-bb986bd53d38
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse DownloadSolutionExportData Action."
+  meta-description: "Reference information about the Microsoft Dataverse DownloadSolutionExportData Action."
 namespace: Microsoft.Dynamics.CRM
-# This Action has no description.
+description: "Download the exported solution data. "
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
@@ -24,7 +24,7 @@ parameters:
     type: Edm.Guid
     nullable: false
     unicode: true
-    description: ""
+    description: "The unique identifier of the solution export job. "
 return_type:
   description: "The DownloadSolutionExportData action returns the following value."
   iscollection: false
@@ -33,8 +33,8 @@ return_type:
 # This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

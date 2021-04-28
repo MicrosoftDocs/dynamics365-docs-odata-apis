@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ApplyRecordCreationAndUpdateRule
 name: "ApplyRecordCreationAndUpdateRule"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: edb4b6f4-2850-4085-b2d9-4eaeadbd5b65
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse ApplyRecordCreationAndUpdateRule Action."
+  meta-description: "Reference information about the Microsoft Dataverse ApplyRecordCreationAndUpdateRule Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Applies record creation and update rules to activities in 365 created as a result of the integration with external applications.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -30,8 +30,8 @@ hasreturnvalue: false
 # This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate
 name: "msdyn_knowledgearticletemplate"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1d51d357-ef09-4fef-85bd-a16a65a41ad2
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_knowledgearticletemplate entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_knowledgearticletemplate entitytype."
 description: "Organizational Knowledge Article Template for Internal and external creation of Knowledge Articles."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_knowledgearticletemplates"
@@ -276,8 +276,8 @@ solutions:
     description: "Dynamics 365 features and migrated controls for knowledge management."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.EqualUserOrUserHierarchy
 name: "EqualUserOrUserHierarchy"
 type: queryfunction
 metadata: 
-  title: "Dataverse EqualUserOrUserHierarchy Query Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EqualUserOrUserHierarchy Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 303ba667-3b8c-4c2c-81b2-d715ee522907
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse EqualUserOrUserHierarchy Query Function."
+  meta-description: "Reference information about the Microsoft Dataverse EqualUserOrUserHierarchy Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: " Query function that evaluates whether the entity equals current user or their reporting hierarchy."
 parameters:
@@ -25,8 +25,8 @@ parameters:
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.EqualUserOrUserHierarchy(PropertyName=@p1)&@p1='name'"
 # There are no remarks for this query function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

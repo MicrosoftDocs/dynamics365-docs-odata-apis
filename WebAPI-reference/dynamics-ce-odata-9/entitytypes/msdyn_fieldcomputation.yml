@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_fieldcomputation
 name: "msdyn_fieldcomputation"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ce62ddc3-d202-4841-95cd-c36d7c20baed
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_fieldcomputation entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_fieldcomputation entitytype."
 description: "Product properties whose values are to be considered as factors for quantity computation on a transaction line."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_fieldcomputations"
@@ -241,8 +241,8 @@ solutions:
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.webresource
 name: "webresource"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0f732d46-1be8-42e4-abb0-24ed633958ac
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse webresource entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse webresource entitytype."
 description: "Data equivalent to files used in Web development. Web resources provide client-side components that are used to provide custom user interface elements."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/webresourceset"
@@ -327,8 +327,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

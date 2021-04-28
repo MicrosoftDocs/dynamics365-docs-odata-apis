@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ConvertSalesOrderToInvoice
 name: "ConvertSalesOrderToInvoice"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7ecfa2c6-d4c8-470d-9e5d-ff96e97140af
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse ConvertSalesOrderToInvoice Action."
+  meta-description: "Reference information about the Microsoft Dataverse ConvertSalesOrderToInvoice Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Converts a sales order to an invoice.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -48,8 +48,8 @@ entities:
     description: "Quote that has been accepted."
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

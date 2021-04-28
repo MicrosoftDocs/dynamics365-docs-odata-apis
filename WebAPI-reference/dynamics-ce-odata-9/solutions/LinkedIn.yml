@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.LinkedIn
 name: "LinkedIn - Sales Navigator"
 type: solution
 metadata: 
-  title: "Dataverse LinkedIn - Sales Navigator Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse LinkedIn - Sales Navigator Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c334977e-b6a1-44ab-8a3e-8f27c01bc7c9
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse LinkedIn - Sales Navigator Solution."
+  meta-description: "Reference information about the Microsoft Dataverse LinkedIn - Sales Navigator Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "LinkedIn For Microsoft Dynamics CRM Integration. Get Insights. Close deals faster. All without leaving your CRM! Equip yourself with the most accurate and up-to-date info."
@@ -30,8 +30,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

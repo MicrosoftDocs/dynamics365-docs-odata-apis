@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.GrantAccess
 name: "GrantAccess"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3eed923d-b536-4764-a687-e55083e9b218
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse GrantAccess Action."
+  meta-description: "Reference information about the Microsoft Dataverse GrantAccess Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Grants a security principal (user or team) access to the specified record."
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -291,10 +291,10 @@ entities:
     displayName: Analysis Result Detail
     description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_analyticsadminsettings
-    displayName: (Deprecated) Data Analytics Admin Settings
-    description: "(Deprecated)"
+    displayName: [Deprecated] Data Analytics Admin Settings
+    description: "[Deprecated]"
   - type: Microsoft.Dynamics.CRM.msdyn_analyticsforcs
-    displayName: (Deprecated) Dynamics Customer Service Analytics
+    displayName: [Deprecated] Dynamics Customer Service Analytics
     description: "[Deprecated] Controls access to Analytics Reporting Sitemap in Dynamics Customer Service App"
   - type: Microsoft.Dynamics.CRM.msdyn_appconfiguration
     displayName: App profile
@@ -1156,8 +1156,8 @@ entities:
     description: ""
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

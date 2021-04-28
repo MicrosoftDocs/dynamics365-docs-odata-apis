@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.mailboxtrackingfolder
 name: "mailboxtrackingfolder"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f6cf14db-0289-4912-b0ee-e85657552f91
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse mailboxtrackingfolder entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse mailboxtrackingfolder entitytype."
 description: "Stores data about what folders for a mailbox are auto tracked"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/mailboxtrackingfolders"
@@ -597,14 +597,18 @@ lookup_properties:
     - regardingobjectid_msdyn_contractlinedetailperformance
     - regardingobjectid_msdyn_contractperformance
     - regardingobjectid_msdyn_helppage
-    - regardingobjectid_teammobileofflineprofilemembership
-    - regardingobjectid_usermobileofflineprofilemembership
     - regardingobjectid_msfp_fileresponse
     - regardingobjectid_msfp_surveyreminder
     - regardingobjectid_revokeinheritedaccessrecordstracker
     - regardingobjectid_systemuserauthorizationchangetracker
     - regardingobjectid_organizationdatasyncsubscription
     - regardingobjectid_organizationdatasyncsubscriptionentity
+    - regardingobjectid_teammobileofflineprofilemembership
+    - regardingobjectid_usermobileofflineprofilemembership
+    - regardingobjectid_msdyn_teamsdialeradminsettings
+    - regardingobjectid_keyvaultreference
+    - regardingobjectid_managedidentity
+    - regardingobjectid_appnotification
     description: "The regarding object such as Account, Contact, Lead etc. that the folder relates to."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
@@ -2115,12 +2119,14 @@ single_valued_navigation_properties:
 solutions:
   description: "The following solutions include the mailboxtrackingfolder entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msft_ServerSideSync_Extensions
+    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.FileAttributeMetadata
 name: "FileAttributeMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Dataverse FileAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse FileAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ebd76725-5179-4cc0-b453-8b6c2fb6ad30
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse FileAttributeMetadata metadata entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse FileAttributeMetadata metadata entitytype."
 header: 
   description: "An abstract class that contains the metadata for an attribute type File."
   base_type: Microsoft.Dynamics.CRM.AttributeMetadata
@@ -225,8 +225,8 @@ properties:
 # This entity is not used by other entities or operations.
 # There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

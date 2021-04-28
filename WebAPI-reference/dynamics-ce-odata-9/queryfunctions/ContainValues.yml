@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ContainValues
 name: "ContainValues"
 type: queryfunction
 metadata: 
-  title: "Dataverse ContainValues Query Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse ContainValues Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9faa92c0-5ca5-41bf-8976-f4a3842b2087
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse ContainValues Query Function."
+  meta-description: "Reference information about the Microsoft Dataverse ContainValues Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: ""
 parameters:
@@ -30,8 +30,8 @@ parameters:
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.ContainValues(PropertyName=@p1,PropertyValues=@p2)&@p1='name'&@p2=['value','value']"
 # There are no remarks for this query function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

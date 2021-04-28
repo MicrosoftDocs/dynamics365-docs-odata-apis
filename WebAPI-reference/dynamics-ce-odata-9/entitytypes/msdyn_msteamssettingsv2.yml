@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_msteamssettingsv2
 name: "msdyn_msteamssettingsv2"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 28eed8b4-4115-43b6-bbd9-12cc6fa05989
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_msteamssettingsv2 entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_msteamssettingsv2 entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_msteamssettingsv2"
@@ -46,6 +46,12 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_embedcollabserviceurl
+      type: Edm.String
+      display_name: "Embeded Collaboration Service Url"
+      description: "URL for embeded collaboration MSteams service"
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_msteamssettingsname
       type: Edm.String
       display_name: "MSTeams settingsv2 name"
@@ -180,8 +186,8 @@ solutions:
     description: "This solution contains Office Productivity implementation"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

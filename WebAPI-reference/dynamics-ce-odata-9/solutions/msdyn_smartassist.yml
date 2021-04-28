@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_smartassist
 name: "Smart assist"
 type: solution
 metadata: 
-  title: "Dataverse Smart assist Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Smart assist Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 837bda21-b2ff-456b-b2fd-6213ccb5ba66
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Smart assist Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Smart assist Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "This solution enables smart assist functionality for agents. "
@@ -30,8 +30,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

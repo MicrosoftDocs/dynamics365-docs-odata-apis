@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_QueryExchangeResponse
 name: "msdyn_QueryExchangeResponse"
 type: complextype
 metadata: 
-  title: "Dataverse msdyn_QueryExchangeResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse msdyn_QueryExchangeResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1e829df6-d00c-4032-992d-89b67aaa4724
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API msdyn_QueryExchangeResponse ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API msdyn_QueryExchangeResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -32,8 +32,8 @@ usedby:
     used_as: ReturnType
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

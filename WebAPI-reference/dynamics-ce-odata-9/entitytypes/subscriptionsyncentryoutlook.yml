@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.subscriptionsyncentryoutlook
 name: "subscriptionsyncentryoutlook"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1390bb32-33bf-48d9-86e2-b977e7d27dcd
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse subscriptionsyncentryoutlook entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse subscriptionsyncentryoutlook entitytype."
 description: "Used for outlook sync, internal use only."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/subscriptionsyncentriesoutlook"
@@ -66,8 +66,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

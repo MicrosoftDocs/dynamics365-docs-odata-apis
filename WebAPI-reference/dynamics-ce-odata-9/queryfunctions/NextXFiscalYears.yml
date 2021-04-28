@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.NextXFiscalYears
 name: "NextXFiscalYears"
 type: queryfunction
 metadata: 
-  title: "Dataverse NextXFiscalYears Query Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse NextXFiscalYears Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 23dad51d-5b49-469e-897c-6b5551231efb
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse NextXFiscalYears Query Function."
+  meta-description: "Reference information about the Microsoft Dataverse NextXFiscalYears Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function to evaluate whether the value is in the next X fiscal years.  "
 parameters:
@@ -30,8 +30,8 @@ parameters:
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.NextXFiscalYears(PropertyName=@p1,PropertyValue=@p2)&@p1='name'&@p2=42"
 # There are no remarks for this query function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

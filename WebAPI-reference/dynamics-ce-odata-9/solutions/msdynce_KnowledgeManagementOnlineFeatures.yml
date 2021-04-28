@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementOnlineFeatures
 name: "Knowledge Management Online Features"
 type: solution
 metadata: 
-  title: "Dataverse Knowledge Management Online Features Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Knowledge Management Online Features Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 447b2880-a215-455e-853d-ffb4d998660b
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Knowledge Management Online Features Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Knowledge Management Online Features Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 knowledge management Online Features"
  unique_name: msdynce_KnowledgeManagementOnlineFeatures
- version: "9.0.1.3575"
+ version: "9.0.1.3655"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -36,8 +36,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

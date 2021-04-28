@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.serviceendpoint
 name: "serviceendpoint"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 302cc977-c26b-4001-be1e-759f1af5ab6c
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse serviceendpoint entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse serviceendpoint entitytype."
 description: "Service endpoint that can be contacted."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/serviceendpoints"
@@ -47,6 +47,8 @@ properties:
           label: "Http Header"
         - value: 6
           label: "Http Query String"
+        - value: 7
+          label: "Connection String"
     - name: authvalue
       type: Edm.String
       display_name: "Authentication Value"
@@ -272,6 +274,17 @@ properties:
       description: "Full service endpoint Url."
       iscomputed: false
       isreadonly: false
+    - name: usekeyvaultconfiguration
+      type: Edm.Boolean
+      display_name: "Use Auth Information in KeyVault"
+      description: "Use Auth Information in KeyVault"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: userclaim
       type: Edm.Int32
       display_name: "User Claim"
@@ -296,6 +309,10 @@ lookup_properties:
     single_valued_navigation_property:
     - createdonbehalfby
     description: "Unique identifier of the delegate user who created the service endpoint."
+  - name: _keyvaultreferenceid_value
+    single_valued_navigation_property:
+    - keyvaultreferenceid
+    description: "Unique identifier for keyvaultreference associated with serviceendpoint."
   - name: _modifiedby_value
     single_valued_navigation_property:
     - modifiedby
@@ -345,8 +362,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

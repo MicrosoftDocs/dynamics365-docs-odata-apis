@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveActivePath
 name: "RetrieveActivePath"
 type: function
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement RetrieveActivePath Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse RetrieveActivePath Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5502e57f-f7f8-4b24-a3eb-b29f1622fe03
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse RetrieveActivePath Function."
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveActivePath Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves a collection of stages currently in the active path for a business process flow instance."
 iscomposable: false
@@ -39,8 +39,8 @@ entities:
     description: "Stage associated with a process."
 # There are no remarks for this function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

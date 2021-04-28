@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveCascadeAssignAsyncJobId
 name: "RetrieveCascadeAssignAsyncJobId"
 type: function
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement RetrieveCascadeAssignAsyncJobId Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse RetrieveCascadeAssignAsyncJobId Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e22dec95-cdda-4373-bf5a-b7ee5d70c3db
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse RetrieveCascadeAssignAsyncJobId Function."
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveCascadeAssignAsyncJobId Function."
 namespace: Microsoft.Dynamics.CRM
 description: ""
 iscomposable: false
@@ -34,8 +34,8 @@ return_type:
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

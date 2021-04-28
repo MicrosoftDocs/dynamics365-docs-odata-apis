@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_SolutionPackageMapping
 name: "msdyn_SolutionPackageMapping"
 type: solution
 metadata: 
-  title: "Dataverse msdyn_SolutionPackageMapping Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse msdyn_SolutionPackageMapping Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 394254dd-3c26-4556-8fba-911b8ad5ed58
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_SolutionPackageMapping Solution."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_SolutionPackageMapping Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
@@ -28,8 +28,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

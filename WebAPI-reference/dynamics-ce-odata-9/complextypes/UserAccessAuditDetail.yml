@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.UserAccessAuditDetail
 name: "UserAccessAuditDetail"
 type: complextype
 metadata: 
-  title: "Dataverse UserAccessAuditDetail ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse UserAccessAuditDetail ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d0fffbf0-c954-4cc9-9ec1-b8e81fd695ba
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API UserAccessAuditDetail ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API UserAccessAuditDetail ComplexType."
 namespace: Microsoft.Dynamics.CRM
 header:
   base_type: Microsoft.Dynamics.CRM.AuditDetail
@@ -35,8 +35,8 @@ properties:
 
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

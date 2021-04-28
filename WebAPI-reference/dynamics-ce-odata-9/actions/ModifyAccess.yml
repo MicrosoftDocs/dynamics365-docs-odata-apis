@@ -2,16 +2,16 @@
 uid: Microsoft.Dynamics.CRM.ModifyAccess
 name: "ModifyAccess"
 type: action
-metadata:
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+metadata: 
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: adfee6c3-6788-4c98-87ad-290d82843741
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse ModifyAccess Action."
+  meta-description: "Reference information about the Microsoft Dataverse ModifyAccess Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Replaces the access rights on the target record for the specified security principal (user or team). "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -285,11 +285,11 @@ entities:
     displayName: Analysis Result Detail
     description: ""
   - type: Microsoft.Dynamics.CRM.msdyn_analyticsadminsettings
-    displayName: (Deprecated) Data Analytics Admin Settings
-    description: "(Deprecated)"
+    displayName: [Deprecated] Data Analytics Admin Settings
+    description: "[Deprecated]"
   - type: Microsoft.Dynamics.CRM.msdyn_analyticsforcs
-    displayName: (Deprecated) Dynamics Customer Service Analytics
-    description: "(Deprecated) Controls access to Analytics Reporting Sitemap in Dynamics Customer Service App"
+    displayName: [Deprecated] Dynamics Customer Service Analytics
+    description: "[Deprecated] Controls access to Analytics Reporting Sitemap in Dynamics Customer Service App"
   - type: Microsoft.Dynamics.CRM.msdyn_appconfiguration
     displayName: App profile
     description: ""
@@ -1150,8 +1150,8 @@ entities:
     description: ""
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

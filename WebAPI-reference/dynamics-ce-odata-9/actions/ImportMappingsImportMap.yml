@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ImportMappingsImportMap
 name: "ImportMappingsImportMap"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 88ad50ba-a74f-478e-90d5-6368b7bd1166
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse ImportMappingsImportMap Action."
+  meta-description: "Reference information about the Microsoft Dataverse ImportMappingsImportMap Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Imports the XML representation of a data map and create an import map (data map) based on this data.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -43,8 +43,8 @@ entities:
     description: "Data map used in import."
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.AdvancedAnalyticsInfra
 name: "Advanced Analytics Infrastructure"
 type: solution
 metadata: 
-  title: "Dataverse Advanced Analytics Infrastructure Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Advanced Analytics Infrastructure Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 04e306b3-0034-4721-b758-1969ce6bf43b
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Advanced Analytics Infrastructure Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Advanced Analytics Infrastructure Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: AdvancedAnalyticsInfra
- version: "1.0.0.12"
+ version: "1.0.0.14"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
@@ -26,8 +26,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

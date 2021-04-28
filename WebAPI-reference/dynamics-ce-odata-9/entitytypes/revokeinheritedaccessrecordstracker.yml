@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker
 name: "revokeinheritedaccessrecordstracker"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 11a5b7e0-ccb5-4cbc-b412-507970c82fb7
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse revokeinheritedaccessrecordstracker entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse revokeinheritedaccessrecordstracker entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/revokeinheritedaccessrecordstrackers"
@@ -190,6 +190,9 @@ single_valued_navigation_properties:
   - name: owninguser
     type: Microsoft.Dynamics.CRM.systemuser
     partner: user_revokeinheritedaccessrecordstracker
+  - name: RecordsAttachment
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: FileAttachment_revokeinheritedaccessrecordstracker_RecordsAttachment
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
@@ -243,8 +246,8 @@ solutions:
     description: "DataEngine Cascading Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

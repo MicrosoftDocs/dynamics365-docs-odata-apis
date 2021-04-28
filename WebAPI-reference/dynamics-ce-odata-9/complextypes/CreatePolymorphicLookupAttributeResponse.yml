@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CreatePolymorphicLookupAttributeResponse
 name: "CreatePolymorphicLookupAttributeResponse"
 type: complextype
 metadata: 
-  title: "Dataverse CreatePolymorphicLookupAttributeResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse CreatePolymorphicLookupAttributeResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bdb634f2-1a0b-450c-93b9-eac531860594
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API CreatePolymorphicLookupAttributeResponse ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API CreatePolymorphicLookupAttributeResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -22,13 +22,13 @@ properties:
     type: Edm.Guid
     nullable: false
     unicode: true
-    description: ""
+    description: "An array od relationship IDs created for the attribute to Account and contact."
     iscollection: true
   - name: AttributeId
     type: Edm.Guid
     nullable: true
     unicode: true
-    description: ""
+    description: "The MetadataId of the LookupAttributeMetadata that is created."
     iscollection: false
 # This complex type doesn't have any navigation properties.
 usedby:
@@ -38,8 +38,8 @@ usedby:
     used_as: ReturnType
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

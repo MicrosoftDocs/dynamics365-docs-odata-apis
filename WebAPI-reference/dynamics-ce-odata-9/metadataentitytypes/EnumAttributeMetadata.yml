@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.EnumAttributeMetadata
 name: "EnumAttributeMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Dataverse EnumAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EnumAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0422bf25-9ef0-49d2-b877-7c090caead59
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse EnumAttributeMetadata metadata entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse EnumAttributeMetadata metadata entitytype."
 header: 
   description: "An abstract class that contains the data for an attribute that provides options."
   base_type: Microsoft.Dynamics.CRM.AttributeMetadata
@@ -246,8 +246,8 @@ derived_types:
 # This entity is not used by other entities or operations.
 # There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

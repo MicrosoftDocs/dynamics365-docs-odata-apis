@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.IoTConnector
 name: "IoT Connector for Microsoft Dynamics 365"
 type: solution
 metadata: 
-  title: "Dataverse IoT Connector for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse IoT Connector for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3085184e-f2b6-48ba-bd69-3fe02153c640
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse IoT Connector for Microsoft Dynamics 365 Solution."
+  meta-description: "Reference information about the Microsoft Dataverse IoT Connector for Microsoft Dynamics 365 Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Enables IoT scenarios in Dynamics 365."
  unique_name: IoTConnector
- version: "1.8.9.7"
+ version: "1.8.11.1"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -106,8 +106,8 @@ actions:
      description: "Publishes the registration requests for an IoT device."
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

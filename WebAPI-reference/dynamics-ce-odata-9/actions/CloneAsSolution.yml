@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CloneAsSolution
 name: "CloneAsSolution"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 96f91a65-49e3-4943-8127-51b663e205a2
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse CloneAsSolution Action."
+  meta-description: "Reference information about the Microsoft Dataverse CloneAsSolution Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Creates a new copy of an unmanged solution that contains the original solution plus all of its patches."
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -48,8 +48,8 @@ entities:
     description: "A solution which contains CRM customizations."
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

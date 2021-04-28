@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdynce_ActivitiesPatch
 name: "Activities Patch"
 type: solution
 metadata: 
-  title: "Dataverse Activities Patch Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Activities Patch Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 127311eb-da18-4d3f-96fa-4cadf3ad9a67
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Activities Patch Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Activities Patch Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Patch for Dynamics 365 workload for activities."
  unique_name: msdynce_ActivitiesPatch
- version: "9.0.20123.201209003"
+ version: "9.0.21031.210330006"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
@@ -37,6 +37,10 @@ entities:
      description: "Activity that tracks the delivery of a letter. The activity can contain the electronic copy of the letter."
    - type: Microsoft.Dynamics.CRM.phonecall
      description: "Activity to track a telephone call."
+   - type: Microsoft.Dynamics.CRM.post
+     description: "An activity feed post."
+   - type: Microsoft.Dynamics.CRM.postcomment
+     description: "A comment on an activity feed post."
    - type: Microsoft.Dynamics.CRM.recurringappointmentmaster
      description: "The Master appointment of a recurring appointment series."
    - type: Microsoft.Dynamics.CRM.task
@@ -46,8 +50,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RolePrivilege
 name: "RolePrivilege"
 type: complextype
 metadata: 
-  title: "Dataverse RolePrivilege ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse RolePrivilege ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d9487317-ed6d-4569-8d65-6732db95a86c
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API RolePrivilege ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API RolePrivilege ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains information about a privilege." 
@@ -50,30 +50,10 @@ usedby:
     used_as: Parameter
   - name: Microsoft.Dynamics.CRM.ReplacePrivilegesRole
     used_as: Parameter
-  - name: Microsoft.Dynamics.CRM.RetrieveRolePrivilegesRoleResponse
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.RetrieveTeamPrivilegesResponse
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeIdResponse
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeNameResponse
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.RetrieveUserPrivilegesResponse
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.RetrieveUserSetOfPrivilegesByIdsResponse
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.RetrieveUserSetOfPrivilegesByNamesResponse
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.RetrieveUsersPrivilegesThroughTeamsResponse
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.RolePrivilegeAuditDetail
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.RolePrivilegeAuditDetail
-    used_as: Property
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

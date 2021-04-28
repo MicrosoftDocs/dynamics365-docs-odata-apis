@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_project
 name: "msdyn_project"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1ad0b5f3-65cd-4e51-aab3-6a815b539deb
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_project entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_project entitytype."
 description: "Delivery entity in an engagement."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_projects"
@@ -76,6 +76,18 @@ properties:
       description: "Value of the Actual Expense Cost in base currency. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_actualexpensesales
+      type: Edm.Decimal
+      display_name: "Actual Expense Sales"
+      description: "Shows the aggregate of actual expense sales on the project - For PSA use only"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_actualexpensesales_base
+      type: Edm.Decimal
+      display_name: "Actual Expense Sales (Base)"
+      description: "Shows the value of the actual expense sales in the base currency. System Field - For PSA Use Only."
+      iscomputed: false
+      isreadonly: true
     - name: msdyn_actualhours
       type: Edm.Decimal
       display_name: "Actual Hours"
@@ -96,14 +108,14 @@ properties:
       isreadonly: true
     - name: msdyn_actualsales
       type: Edm.Decimal
-      display_name: "Actual Sales"
-      description: "Shows the actual sales value. System Field - For PSA Use Only."
+      display_name: "Actual Labor Sales"
+      description: "Shows the aggregate of actual labor sales on the project - For PSA use only"
       iscomputed: false
       isreadonly: false
     - name: msdyn_actualsales_base
       type: Edm.Decimal
-      display_name: "Actual Sales (Base)"
-      description: "Shows the value of the actual sales in the base currency. System Field - For PSA Use Only."
+      display_name: "Actual Labor Sales (Base)"
+      description: "Shows the value of the actual labor sales in the base currency. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: true
     - name: msdyn_actualstart
@@ -260,6 +272,18 @@ properties:
       description: "Value of the Estimated Expense Cost in base currency. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_plannedexpensesales
+      type: Edm.Decimal
+      display_name: "Estimated Expense Sales"
+      description: "Shows the aggregate of estimated expense sales on the project - For PSA use only"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_plannedexpensesales_base
+      type: Edm.Decimal
+      display_name: "Estimated Expense Sales (Base)"
+      description: "Shows the value of the estimated expense sales in the base currency. System Field - For PSA Use Only."
+      iscomputed: false
+      isreadonly: true
     - name: msdyn_plannedhours
       type: Edm.Decimal
       display_name: "Estimated Hours"
@@ -280,14 +304,14 @@ properties:
       isreadonly: true
     - name: msdyn_plannedsales
       type: Edm.Decimal
-      display_name: "Planned Sales"
-      description: "Shows the total planned sales. System Field - For PSA Use Only."
+      display_name: "Estimated Labor Sales"
+      description: "Shows the aggregate of estimated labor sales on the project - For PSA use only"
       iscomputed: false
       isreadonly: false
     - name: msdyn_plannedsales_base
       type: Edm.Decimal
-      display_name: "Planned Sales (Base)"
-      description: "Shows the value of the planned sales in the base currency. System Field - For PSA Use Only."
+      display_name: "Estimated Labor Sales (Base)"
+      description: "Shows the value of the estimated labor sales in the base currency. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: true
     - name: msdyn_progress
@@ -315,14 +339,14 @@ properties:
           label: "No"
     - name: msdyn_remainingcost
       type: Edm.Decimal
-      display_name: "Remaining Cost"
-      description: "Shows the difference between the estimated cost and the actual cost."
+      display_name: "Remaining Labor Cost"
+      description: "Shows the difference between the estimated labor cost and the actual labor cost."
       iscomputed: false
       isreadonly: false
     - name: msdyn_remainingcost_base
       type: Edm.Decimal
-      display_name: "Remaining Cost (Base)"
-      description: "Shows the value of the remaining cost in the  base currency."
+      display_name: "Remaining Labor Cost (Base)"
+      description: "Shows the value of the remaining labor cost in the  base currency."
       iscomputed: false
       isreadonly: true
     - name: msdyn_remaininghours
@@ -333,14 +357,14 @@ properties:
       isreadonly: false
     - name: msdyn_remainingsales
       type: Edm.Decimal
-      display_name: "Remaining Sales"
-      description: "Shows the difference between estimated sales and the actual sales."
+      display_name: "Remaining Labor Sales"
+      description: "Shows the difference between the estimated labor sales and the actual labor sales."
       iscomputed: false
       isreadonly: false
     - name: msdyn_remainingsales_base
       type: Edm.Decimal
-      display_name: "Remaining Sales (Base)"
-      description: "Shows the value of the remaining sales in the base currency."
+      display_name: "Remaining Labor Sales (Base)"
+      description: "Shows the value of the remaining labor sales in the base currency."
       iscomputed: false
       isreadonly: true
     - name: msdyn_salesconsumption
@@ -458,6 +482,18 @@ properties:
       description: "Shows the value of the total actual cost in the base currency."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_totalactualsales
+      type: Edm.Decimal
+      display_name: "Actual Total Sales"
+      description: "Shows aggregated sales values from all project actuals - For PSA use only"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_totalactualsales_base
+      type: Edm.Decimal
+      display_name: "Actual Total Sales (Base)"
+      description: "Shows the value of the actual total sales in the base currency. System Field - For PSA Use Only."
+      iscomputed: false
+      isreadonly: true
     - name: msdyn_totalplannedcost
       type: Edm.Decimal
       display_name: "Estimated Total Cost"
@@ -468,6 +504,18 @@ properties:
       type: Edm.Decimal
       display_name: "Estimated Total Cost (Base)"
       description: "Shows the value of the total planned cost in the base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_totalplannedsales
+      type: Edm.Decimal
+      display_name: "Estimated Total Sales"
+      description: "Shows aggregate of estimated sales values on the project - For PSA use only"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_totalplannedsales_base
+      type: Edm.Decimal
+      display_name: "Estimated Total Sales (Base)"
+      description: "Shows the value of the estimated total sales in the base currency. System Field - For PSA Use Only."
       iscomputed: false
       isreadonly: true
     - name: msdyn_wbsduration
@@ -854,8 +902,8 @@ solutions:
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.MicrosoftFlowExtensions
 name: "Microsoft Flow Extensions package"
 type: solution
 metadata: 
-  title: "Dataverse Microsoft Flow Extensions package Solution Reference | MicrosoftDocs"
+  title: "Common Data Service Microsoft Flow Extensions package Solution Reference | MicrosoftDocs"
   ms.date: "01/20/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,13 +11,13 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Microsoft Flow Extensions package Solution."
+  meta-description: "Reference information about the Common Data Service Microsoft Flow Extensions package Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: MicrosoftFlowExtensions
  version: "1.0.0.3"
- customization_prefix: default
+ customization_prefix: 
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -26,8 +26,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

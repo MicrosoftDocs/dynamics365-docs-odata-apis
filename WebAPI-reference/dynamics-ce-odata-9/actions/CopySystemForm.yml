@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CopySystemForm
 name: "CopySystemForm"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e68e815f-3129-4844-84f5-f4f116adaf4c
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse CopySystemForm Action."
+  meta-description: "Reference information about the Microsoft Dataverse CopySystemForm Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Creates a new entity form that is based on an existing entity form.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -36,8 +36,8 @@ return_type:
 # This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

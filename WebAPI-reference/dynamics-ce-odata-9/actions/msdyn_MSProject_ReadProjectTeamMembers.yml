@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_MSProject_ReadProjectTeamMembers
 name: "msdyn_MSProject_ReadProjectTeamMembers"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f04e5596-0c96-4a8a-9543-4a1ac8d2959e
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_MSProject_ReadProjectTeamMembers Action."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_MSProject_ReadProjectTeamMembers Action."
 namespace: Microsoft.Dynamics.CRM
 description: "For internal use only."
 owningsolution: Microsoft.Dynamics.CRM.ProjectService
@@ -33,8 +33,8 @@ return_type:
 # This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

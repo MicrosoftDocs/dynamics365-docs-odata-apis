@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_requirementrelationship
 name: "msdyn_requirementrelationship"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a423fe22-f0f8-4fb2-86b9-a91ba407dae5
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_requirementrelationship entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_requirementrelationship entitytype."
 description: "Relationship of requirements in the group"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_requirementrelationships"
@@ -271,8 +271,8 @@ solutions:
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

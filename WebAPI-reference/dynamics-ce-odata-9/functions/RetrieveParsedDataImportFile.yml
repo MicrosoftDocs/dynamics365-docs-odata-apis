@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveParsedDataImportFile
 name: "RetrieveParsedDataImportFile"
 type: function
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement RetrieveParsedDataImportFile Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse RetrieveParsedDataImportFile Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 51bd73d3-592d-4409-84f3-7fb844ca9c2f
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse RetrieveParsedDataImportFile Function."
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveParsedDataImportFile Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the data from the parse table."
 iscomposable: false
@@ -45,8 +45,8 @@ entities:
     description: "File name of file used for import."
 # There are no remarks for this function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

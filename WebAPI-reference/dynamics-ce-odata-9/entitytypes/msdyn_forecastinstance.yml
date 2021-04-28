@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_forecastinstance
 name: "msdyn_forecastinstance"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a4844e60-6d57-4763-abc5-5a4e60ee6998
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_forecastinstance entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_forecastinstance entitytype."
 description: "Stores sales predictions for your team or organization. For internal use."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_forecastinstances"
@@ -409,8 +409,8 @@ solutions:
     description: "An extension that helps sales managers and sales people to predict risks in the revenue spotting pipeline."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

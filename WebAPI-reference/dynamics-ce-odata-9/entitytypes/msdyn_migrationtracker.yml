@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_migrationtracker
 name: "msdyn_migrationtracker"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6e6018e6-d7fd-4fca-a0d3-20ae7e69c3e4
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_migrationtracker entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_migrationtracker entitytype."
 description: "Entity that tracks the migration process of legacy to modern SLA/ARC items"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_migrationtrackers"
@@ -367,8 +367,8 @@ solutions:
     description: "Migration solution for Dynamics 365 workload for service level agreements."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

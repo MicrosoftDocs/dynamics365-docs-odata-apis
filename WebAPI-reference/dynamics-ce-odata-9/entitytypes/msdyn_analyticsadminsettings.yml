@@ -2,21 +2,21 @@
 uid: Microsoft.Dynamics.CRM.msdyn_analyticsadminsettings
 name: "msdyn_analyticsadminsettings"
 type: entitytype
-metadata:
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+metadata: 
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0bb34004-6fb5-440e-815d-def8acec19d6
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_analyticsadminsettings entitytype."
-description: "(Deprecated)"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_analyticsadminsettings entitytype."
+description: "[Deprecated]"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_analyticsadminsettings"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
-  display_name: (Deprecated) Data Analytics Admin Settings
+  display_name: [Deprecated] Data Analytics Admin Settings
   primary_key: msdyn_analyticsadminsettingsid
   primary_name_attribute: msdyn_name
   operations_supported:
@@ -279,8 +279,8 @@ solutions:
     description: "Enable Analytics capability for Dynamics 365 applications like Customer Service, Field Service and Universal Resource Scheduling"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

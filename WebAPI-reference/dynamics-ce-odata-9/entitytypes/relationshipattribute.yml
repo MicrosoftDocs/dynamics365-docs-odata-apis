@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.relationshipattribute
 name: "relationshipattribute"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f2603328-4b51-4641-a9d6-3672178b6d63
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse relationshipattribute entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse relationshipattribute entitytype."
 description: "Stores relationship attributes mapping for Multi-predicate relationship"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/relationshipattributes"
@@ -19,7 +19,8 @@ header:
   display_name: Relationship Attribute
   primary_key: relationshipattributeid
   primary_name_attribute: name
-  # This entity does not support any operations.
+  operations_supported:
+  - GET
 namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
@@ -89,6 +90,10 @@ properties:
 lookup_properties:
   description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
   property_items:
+  - name: _organizationid_value
+    single_valued_navigation_property:
+    - organizationid
+    description: "Unique identifier for the organization"
   - name: _referencedattributeid_value
     single_valued_navigation_property:
     - referencedattributeid_relationshipattribute
@@ -104,6 +109,9 @@ lookup_properties:
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
   property_items:
+  - name: organizationid
+    type: Microsoft.Dynamics.CRM.organization
+    partner: organization_relationshipattribute
   - name: referencedattributeid_relationshipattribute
     type: Microsoft.Dynamics.CRM.attribute
     partner: referencedattribute_relationshipattribute
@@ -140,8 +148,8 @@ solutions:
     description: ""
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

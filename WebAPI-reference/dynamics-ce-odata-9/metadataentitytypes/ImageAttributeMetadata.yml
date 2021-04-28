@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ImageAttributeMetadata
 name: "ImageAttributeMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Dataverse ImageAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse ImageAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7030da43-c0f9-4e69-bab5-19a14683a617
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse ImageAttributeMetadata metadata entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse ImageAttributeMetadata metadata entitytype."
 header: 
   description: "Contains the metadata for a Image attribute"
   base_type: Microsoft.Dynamics.CRM.AttributeMetadata
@@ -237,8 +237,8 @@ properties:
 # This entity is not used by other entities or operations.
 # There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

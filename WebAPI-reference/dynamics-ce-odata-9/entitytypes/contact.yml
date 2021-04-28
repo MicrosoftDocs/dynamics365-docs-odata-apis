@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.contact
 name: "contact"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 27308cb4-1fb8-4f13-bfc9-d7f22ab25ae4
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse contact entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse contact entitytype."
 description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/contacts"
@@ -1846,8 +1846,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.searchtelemetry
 name: "searchtelemetry"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 12cbcfb4-19ea-4362-8beb-9d12738331dc
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse searchtelemetry entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse searchtelemetry entitytype."
 description: "Entity to log telemetry that used to improve search quality"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/searchtelemetries"
@@ -40,6 +40,17 @@ properties:
       description: "Date and time when the record was created."
       iscomputed: false
       isreadonly: true
+    - name: eyesonanalyticsallowed
+      type: Edm.Boolean
+      display_name: "EyesOnAnalyticsAllowed"
+      description: "If customer is allow our engineer to eye on"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: feedbackdata
       type: Edm.String
       display_name: "FeedbackData"
@@ -50,6 +61,12 @@ properties:
       type: Edm.String
       display_name: "RequestId"
       description: "RequestId for the search"
+      iscomputed: false
+      isreadonly: false
+    - name: scenarioname
+      type: Edm.String
+      display_name: "ScenarioName"
+      description: "ScenarioName for the search, current will be one of RelevanceSearch/Marketing/Cxp"
       iscomputed: false
       isreadonly: false
     - name: searchtelemetryid
@@ -88,8 +105,8 @@ solutions:
     description: "msdyn_RelevanceSearch solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.systemuser
 name: "systemuser"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: eab4e150-fafa-40a4-b929-4a6fc08d5cdd
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse systemuser entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse systemuser entitytype."
 description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/systemusers"
@@ -343,7 +343,7 @@ properties:
     - name: caltype
       type: Edm.Int32
       display_name: "License Type"
-      description: "License type of user."
+      description: "License type of user. This is used only in the on-premises version of the product. Online licenses are managed through Microsoft 365 Office Portal"
       iscomputed: false
       isreadonly: false
       options:
@@ -7776,6 +7776,18 @@ collection_valued_navigation_properties:
   - name: lk_teambase_modifiedby
     type: Microsoft.Dynamics.CRM.team
     partner: modifiedby
+  - name: lk_teammobileofflineprofilemembership_createdby
+    type: Microsoft.Dynamics.CRM.teammobileofflineprofilemembership
+    partner: createdby
+  - name: lk_teammobileofflineprofilemembership_createdonbehalfby
+    type: Microsoft.Dynamics.CRM.teammobileofflineprofilemembership
+    partner: createdonbehalfby
+  - name: lk_teammobileofflineprofilemembership_modifiedby
+    type: Microsoft.Dynamics.CRM.teammobileofflineprofilemembership
+    partner: modifiedby
+  - name: lk_teammobileofflineprofilemembership_modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.teammobileofflineprofilemembership
+    partner: modifiedonbehalfby
   - name: lk_teamtemplate_createdby
     type: Microsoft.Dynamics.CRM.teamtemplate
     partner: createdby
@@ -7967,6 +7979,18 @@ collection_valued_navigation_properties:
     partner: modifiedby
   - name: lk_usermapping_modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.usermapping
+    partner: modifiedonbehalfby
+  - name: lk_usermobileofflineprofilemembership_createdby
+    type: Microsoft.Dynamics.CRM.usermobileofflineprofilemembership
+    partner: createdby
+  - name: lk_usermobileofflineprofilemembership_createdonbehalfby
+    type: Microsoft.Dynamics.CRM.usermobileofflineprofilemembership
+    partner: createdonbehalfby
+  - name: lk_usermobileofflineprofilemembership_modifiedby
+    type: Microsoft.Dynamics.CRM.usermobileofflineprofilemembership
+    partner: modifiedby
+  - name: lk_usermobileofflineprofilemembership_modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.usermobileofflineprofilemembership
     partner: modifiedonbehalfby
   - name: lk_userquery_createdby
     type: Microsoft.Dynamics.CRM.userquery
@@ -10647,6 +10671,9 @@ collection_valued_navigation_properties:
   - name: user_task
     type: Microsoft.Dynamics.CRM.task
     partner: owninguser_task
+  - name: user_userauthztracker
+    type: Microsoft.Dynamics.CRM.systemuserauthorizationchangetracker
+    partner: systemuserid_userauthztracker
   - name: user_userform
     type: Microsoft.Dynamics.CRM.userform
     partner: owninguser
@@ -10784,8 +10811,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_IoTSetConfiguration
 name: "msdyn_IoTSetConfiguration"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c0a8259d-f984-4ced-92d6-a7a12f0e1caf
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_IoTSetConfiguration Action."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_IoTSetConfiguration Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.IoTProviders
@@ -35,8 +35,8 @@ hasreturnvalue: false
 # This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

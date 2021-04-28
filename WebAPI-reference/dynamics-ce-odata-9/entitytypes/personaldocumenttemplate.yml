@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.personaldocumenttemplate
 name: "personaldocumenttemplate"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 13ee7f7c-de9f-40d3-88fe-519ee10fe906
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse personaldocumenttemplate entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse personaldocumenttemplate entitytype."
 description: "Used to store Personal Document Templates in database in binary format."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/personaldocumenttemplates"
@@ -190,8 +190,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

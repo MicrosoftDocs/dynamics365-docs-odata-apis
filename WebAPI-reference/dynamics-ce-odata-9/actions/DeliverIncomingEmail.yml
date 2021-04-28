@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DeliverIncomingEmail
 name: "DeliverIncomingEmail"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3835306f-b479-43a8-88bc-ff5d7a284213
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse DeliverIncomingEmail Action."
+  meta-description: "Reference information about the Microsoft Dataverse DeliverIncomingEmail Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Creates an email activity record from an incoming email message. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -96,8 +96,8 @@ return_type:
 # This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

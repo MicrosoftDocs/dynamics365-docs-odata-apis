@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AccessTeam
 name: "Access Team"
 type: solution
 metadata: 
-  title: "Dataverse Access Team Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Access Team Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6e44b081-ff10-4854-a32b-0c06f6d9b144
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Access Team Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Access Team Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Access Team solution"
@@ -26,8 +26,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

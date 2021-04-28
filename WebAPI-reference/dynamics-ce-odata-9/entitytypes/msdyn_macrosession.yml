@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_macrosession
 name: "msdyn_macrosession"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 73b4df22-25ca-4d56-a5aa-9d4b5f298d83
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_macrosession entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_macrosession entitytype."
 description: "Stores history of macro runs"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_macrosessions"
@@ -235,8 +235,8 @@ solutions:
     description: "Macros to be used in productivity tool."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

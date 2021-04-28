@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msft_ActivitiesInfra_Extensions
 name: "msft_ActivitiesInfra_Extensions"
 type: solution
 metadata: 
-  title: "Dataverse msft_ActivitiesInfra_Extensions Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse msft_ActivitiesInfra_Extensions Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d2da3f49-5c9e-4ac5-93c2-e3674ab82137
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msft_ActivitiesInfra_Extensions Solution."
+  meta-description: "Reference information about the Microsoft Dataverse msft_ActivitiesInfra_Extensions Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: msft_ActivitiesInfra_Extensions
- version: "1.0.0.1"
+ version: "1.0.0.2"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
@@ -26,8 +26,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

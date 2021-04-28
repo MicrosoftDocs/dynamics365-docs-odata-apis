@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.fileattachment
 name: "fileattachment"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 432a5310-9c86-4606-954b-984740e0dcf6
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse fileattachment entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse fileattachment entitytype."
 description: "File Attachment"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/fileattachments"
@@ -19,10 +19,7 @@ header:
   display_name: FileAttachment
   primary_key: fileattachmentid
   primary_name_attribute: filename
-  operations_supported:
-  - POST
-  - GET (Retrieve Only)
-  - DELETE
+  # This entity does not support any operations.
 namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
@@ -48,7 +45,7 @@ properties:
     - name: filesize
       type: Edm.Int32
       display_name: "File Size (Bytes)"
-      description: "File size of the attachment."
+      description: ""
       iscomputed: false
       isreadonly: false
     - name: filesizeinbytes
@@ -176,6 +173,9 @@ collection_valued_navigation_properties:
   - name: FileAttachment_CanvasApp_WideIcon
     type: Microsoft.Dynamics.CRM.canvasapp
     partner: wideicon
+  - name: FileAttachment_revokeinheritedaccessrecordstracker_RecordsAttachment
+    type: Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker
+    partner: RecordsAttachment
   - name: FileAttachment_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_fileattachment_syncerror
@@ -193,8 +193,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

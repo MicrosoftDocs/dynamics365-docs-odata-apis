@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_forecastconfiguration
 name: "msdyn_forecastconfiguration"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4a881568-7f9a-4260-b6b1-b51b92583d18
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_forecastconfiguration entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_forecastconfiguration entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_forecastconfigurations"
@@ -46,6 +46,12 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_addedweekindex
+      type: Edm.Int32
+      display_name: "addedWeekIndex"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_additionalfilter
       type: Edm.String
       display_name: "Additional filters"
@@ -58,6 +64,31 @@ properties:
       description: "Forecast configuration settings"
       iscomputed: false
       isreadonly: false
+    - name: msdyn_calendartemplate
+      type: Edm.Int32
+      display_name: "Calendar Template"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 100000000
+          label: "4-4-5"
+        - value: 100000001
+          label: "4-5-4"
+        - value: 100000002
+          label: "5-4-4"
+        - value: 100000003
+          label: "Gregorian"
+        - value: 100000004
+          label: "Broadcast Calendar"
+        - value: 100000005
+          label: "3-3-3-4"
+        - value: 100000006
+          label: "3-3-4-3"
+        - value: 100000007
+          label: "3-4-3-3"
+        - value: 100000008
+          label: "4-3-3-3"
     - name: msdyn_columns
       type: Edm.String
       display_name: "Columns"
@@ -73,6 +104,12 @@ properties:
     - name: msdyn_errormessage
       type: Edm.String
       display_name: "Error message"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_fiscalyearstartdate
+      type: Edm.DateTimeOffset
+      display_name: "Fiscal Year Start Date"
       description: ""
       iscomputed: false
       isreadonly: false
@@ -149,6 +186,12 @@ properties:
     - name: msdyn_pivots
       type: Edm.String
       display_name: "Pivots"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_previewflags
+      type: Edm.String
+      display_name: "previewFlags"
       description: ""
       iscomputed: false
       isreadonly: false
@@ -433,8 +476,8 @@ solutions:
     description: "An extension that helps sales managers and sales people to predict risks in the revenue spotting pipeline."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

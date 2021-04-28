@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_Agentscripts
 name: "Agent scripts"
 type: solution
 metadata: 
-  title: "Dataverse Agent scripts Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Agent scripts Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b3aa5556-bb69-4586-9a35-22ef6936df14
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Agent scripts Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Agent scripts Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Agent scripts to be used in productivity tool"
@@ -32,8 +32,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

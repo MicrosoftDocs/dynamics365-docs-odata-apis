@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.LookupAttributeMetadata
 name: "LookupAttributeMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Dataverse LookupAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse LookupAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6887b8e5-41f9-41e3-b676-8b676f12ab40
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse LookupAttributeMetadata metadata entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse LookupAttributeMetadata metadata entitytype."
 header: 
   description: "Contains the metadata for a lookup attribute."
   base_type: Microsoft.Dynamics.CRM.AttributeMetadata
@@ -232,8 +232,8 @@ usedby:
     used_as: NavigationProperty
 # There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

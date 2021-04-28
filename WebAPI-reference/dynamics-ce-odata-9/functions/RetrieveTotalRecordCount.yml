@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveTotalRecordCount
 name: "RetrieveTotalRecordCount"
 type: function
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement RetrieveTotalRecordCount Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse RetrieveTotalRecordCount Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7d1ffabc-78a2-4e25-a4a4-b8925c601df1
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse RetrieveTotalRecordCount Function."
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveTotalRecordCount Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Returns data on the total number of records for specific entities."
 iscomposable: false
@@ -34,8 +34,8 @@ return_type:
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

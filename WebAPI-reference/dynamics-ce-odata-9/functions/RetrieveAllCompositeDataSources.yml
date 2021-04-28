@@ -3,17 +3,17 @@ uid: Microsoft.Dynamics.CRM.RetrieveAllCompositeDataSources
 name: "RetrieveAllCompositeDataSources"
 type: function
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement RetrieveAllCompositeDataSources Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse RetrieveAllCompositeDataSources Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0ffa8e8c-16fe-4b90-a134-1ef0e9feba47
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse RetrieveAllCompositeDataSources Function."
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveAllCompositeDataSources Function."
 namespace: Microsoft.Dynamics.CRM
-description: ""
+description: "API responsible for retrieving all composite environment variables starting from a root variable. "
 iscomposable: false
 # This function is not bound to any entities.
 isbound: false
@@ -24,7 +24,7 @@ parameters:
     type: Edm.String
     nullable: false
     unicode: false
-    description: ""
+    description: "Identifier of the environment variable (Required)."
     iscollection: false
 return_type:
   description: "The RetrieveAllCompositeDataSources function returns the following value."
@@ -39,8 +39,8 @@ entities:
     description: "Contains information about the settable variable: its type, default value, and etc."
 # There are no remarks for this function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

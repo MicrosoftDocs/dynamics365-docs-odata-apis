@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_MSProject_ReadProjectTeamMembersResponse
 name: "msdyn_MSProject_ReadProjectTeamMembersResponse"
 type: complextype
 metadata: 
-  title: "Dataverse msdyn_MSProject_ReadProjectTeamMembersResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse msdyn_MSProject_ReadProjectTeamMembersResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fe145b72-7c1c-49ec-891c-74fed33001cd
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API msdyn_MSProject_ReadProjectTeamMembersResponse ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API msdyn_MSProject_ReadProjectTeamMembersResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -32,8 +32,8 @@ usedby:
     used_as: ReturnType
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

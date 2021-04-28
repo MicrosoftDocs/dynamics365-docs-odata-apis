@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.principalobjectattributeaccess
 name: "principalobjectattributeaccess"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2d9c9b60-1989-4c54-a5cf-85163f11e593
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse principalobjectattributeaccess entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse principalobjectattributeaccess entitytype."
 description: "Defines CRM security principals (users and teams) access rights to secured field for an entity instance."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/principalobjectattributeaccessset"
@@ -575,14 +575,18 @@ lookup_properties:
     - objectid_msdyn_contractlinedetailperformance
     - objectid_msdyn_contractperformance
     - objectid_msdyn_helppage
-    - objectid_teammobileofflineprofilemembership
-    - objectid_usermobileofflineprofilemembership
     - objectid_msfp_fileresponse
     - objectid_msfp_surveyreminder
     - objectid_revokeinheritedaccessrecordstracker
     - objectid_systemuserauthorizationchangetracker
     - objectid_organizationdatasyncsubscription
     - objectid_organizationdatasyncsubscriptionentity
+    - objectid_teammobileofflineprofilemembership
+    - objectid_usermobileofflineprofilemembership
+    - objectid_msdyn_teamsdialeradminsettings
+    - objectid_keyvaultreference
+    - objectid_managedidentity
+    - objectid_appnotification
     description: "Unique identifier of the entity instance with shared secured field"
   - name: _organizationid_value
     single_valued_navigation_property:
@@ -2166,8 +2170,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

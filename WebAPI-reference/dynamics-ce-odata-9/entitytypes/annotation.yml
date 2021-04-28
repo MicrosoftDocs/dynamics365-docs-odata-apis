@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.annotation
 name: "annotation"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 108a7d17-f416-4d6b-9045-e23a1f6c21a5
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse annotation entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse annotation entitytype."
 description: "Note that is attached to one or more objects, including other notes."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/annotations"
@@ -359,6 +359,7 @@ lookup_properties:
     - objectid_msdyn_3dmodel
     - objectid_msdyn_incidenttypessetup
     - objectid_msdyn_inspectionattachment
+    - objectid_msfp_question
     description: "Unique identifier of the object with which the note is associated."
   - name: _ownerid_value
     single_valued_navigation_property:
@@ -964,6 +965,9 @@ single_valued_navigation_properties:
   - name: objectid_msfp_alert
     type: Microsoft.Dynamics.CRM.msfp_alert
     partner: msfp_alert_Annotations
+  - name: objectid_msfp_question
+    type: Microsoft.Dynamics.CRM.msfp_question
+    partner: msfp_question_Annotations
   - name: objectid_msfp_surveyinvite
     type: Microsoft.Dynamics.CRM.msfp_surveyinvite
     partner: msfp_surveyinvite_Annotations
@@ -1076,8 +1080,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

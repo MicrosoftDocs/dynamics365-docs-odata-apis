@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CompanyNewsTimeline
 name: "Company News Timeline"
 type: solution
 metadata: 
-  title: "Dataverse Company News Timeline Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Company News Timeline Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 32b8372f-cb1a-48ef-8e99-faaed52709cf
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Company News Timeline Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Company News Timeline Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "You can now view news related to an Account, Lead, Contact or Opportunity in the CRM app on your mobile device. The Company news timeline solution for mobile enables sales and service users to view the latest and most important news in the mobile client from Bing news. The news articles are organized by time (Today, This Week, Last Week) and contain the headline, date/time, and source of the news article.  Important events are detected and categorized (including Management Changes, Earnings Releases, New Offerings, Cost Cutting, Growth, Legal Issues, Acquisitions and Partnerships)."
@@ -36,8 +36,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

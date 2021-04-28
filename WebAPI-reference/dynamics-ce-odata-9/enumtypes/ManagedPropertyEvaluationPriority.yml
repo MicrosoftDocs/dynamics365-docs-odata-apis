@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ManagedPropertyEvaluationPriority
 name: "ManagedPropertyEvaluationPriority"
 type: enumtype
 metadata: 
-  title: "Dataverse ManagedPropertyEvaluationPriority EnumType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse ManagedPropertyEvaluationPriority EnumType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 055cbcbb-1610-418b-aae6-e67c979f400a
   author: "kumarVivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API ManagedPropertyEvaluationPriority ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API ManagedPropertyEvaluationPriority ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "For internal use only." 
 members:
@@ -39,8 +39,8 @@ usedby:
     used_as: Property
 # There are no remarks for this enum type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

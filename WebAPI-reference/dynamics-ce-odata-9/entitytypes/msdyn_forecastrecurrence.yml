@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_forecastrecurrence
 name: "msdyn_forecastrecurrence"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c8ba9842-1ded-40b7-bdb4-6ec83eb233e5
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_forecastrecurrence entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_forecastrecurrence entitytype."
 description: "Stores recalculation information for each recurrence of the forecast hierarchy. For internal use."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_forecastrecurrences"
@@ -303,8 +303,8 @@ solutions:
     description: "An extension that helps sales managers and sales people to predict risks in the revenue spotting pipeline."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

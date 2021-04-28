@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ReassignObjectsOwner
 name: "ReassignObjectsOwner"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5c4c83b5-8011-481a-98b1-07b26855df3f
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse ReassignObjectsOwner Action."
+  meta-description: "Reference information about the Microsoft Dataverse ReassignObjectsOwner Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Reassigns all records that are owned by the security principal (user or team) to another security principal (user or team).  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -35,8 +35,8 @@ hasreturnvalue: false
 # This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

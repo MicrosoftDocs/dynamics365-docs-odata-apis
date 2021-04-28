@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.SearchDirection
 name: "SearchDirection"
 type: enumtype
 metadata: 
-  title: "Dataverse SearchDirection EnumType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse SearchDirection EnumType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1fcc62a3-2867-4f12-89c6-315fbb4d8075
   author: "kumarVivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API SearchDirection ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API SearchDirection ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "Contains the possible values for the search direction in an appointment request. " 
 members:
@@ -30,8 +30,8 @@ usedby:
     used_as: Property
 # There are no remarks for this enum type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

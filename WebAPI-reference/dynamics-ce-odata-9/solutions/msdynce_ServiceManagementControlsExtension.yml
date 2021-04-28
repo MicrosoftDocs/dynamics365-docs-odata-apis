@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdynce_ServiceManagementControlsExtension
 name: "Service management controls extension"
 type: solution
 metadata: 
-  title: "Dataverse Service management controls extension Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Service management controls extension Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 332674f0-36c0-414d-9385-0fa44f6e37d3
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Service management controls extension Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Service management controls extension Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Service management controls extension"
  unique_name: msdynce_ServiceManagementControlsExtension
- version: "9.1.20122.1015"
+ version: "9.1.21031.1008"
  customization_prefix: msdyn
 # This solution includes no entities.
 actions:
@@ -26,8 +26,8 @@ actions:
      description: ""
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

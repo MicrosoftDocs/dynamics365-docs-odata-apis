@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.msdynce_FieldServiceHealth_Patch
 name: "Field Service Health"
 type: solution
 metadata: 
-  title: "Dataverse Field Service Health Solution Reference | MicrosoftDocs"
+  title: "Common Data Service Field Service Health Solution Reference | MicrosoftDocs"
   ms.date: "01/20/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Field Service Health Solution."
+  meta-description: "Reference information about the Common Data Service Field Service Health Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Field Service Health introduces rules to evaluate the health of any Field Service implementation. New rules will be shipped regularly to highlight fixes and improvements to Field Service configurations. Analysis jobs can be triggered from the Solution Health Hub."
@@ -22,8 +22,8 @@ header:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

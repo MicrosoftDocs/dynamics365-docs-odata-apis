@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.System
 name: "System Solution"
 type: solution
 metadata: 
-  title: "Dataverse System Solution Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse System Solution Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fd140aad-4df4-11dd-bd17-0019b9312238
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse System Solution Solution."
+  meta-description: "Reference information about the Microsoft Dataverse System Solution Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Internal CRM System Solution"
@@ -541,7 +541,7 @@ actions:
    - type: Microsoft.Dynamics.CRM.DownloadBlock
      description: ""
    - type: Microsoft.Dynamics.CRM.DownloadSolutionExportData
-     description: ""
+     description: "Download the exported solution data. "
    - type: Microsoft.Dynamics.CRM.ExecuteWorkflow
      description: "Executes a workflow."
    - type: Microsoft.Dynamics.CRM.ExportMappingsImportMap
@@ -744,8 +744,6 @@ actions:
      description: "Reschedules an appointment, recurring appointment, or service appointment (service activity). "
    - type: Microsoft.Dynamics.CRM.ResetUserFilters
      description: "Resets the offline data filters for the calling user to the default filters for the organization.  "
-   - type: Microsoft.Dynamics.CRM.RetrieveAccessOrigin
-     description: ""
    - type: Microsoft.Dynamics.CRM.RevertProduct
      description: "Reverts changes done to properties of a product family, product, or bundle record, and set it back to its last published (active) state. "
    - type: Microsoft.Dynamics.CRM.ReviseQuote
@@ -827,9 +825,9 @@ actions:
    - type: Microsoft.Dynamics.CRM.UploadBlock
      description: ""
    - type: Microsoft.Dynamics.CRM.UpsertCompositeDataSource
-     description: ""
+     description: "API responsible for creating or updating a composite environment variable."
    - type: Microsoft.Dynamics.CRM.UpsertEnvironmentVariable
-     description: ""
+     description: "API responsible for creating or updating an environment variable. "
    - type: Microsoft.Dynamics.CRM.Validate
      description: "Verifies that an appointment or service appointment (service activity) has valid available resources for the activity, duration, and site, as appropriate.  "
    - type: Microsoft.Dynamics.CRM.ValidateAIConfiguration
@@ -844,8 +842,8 @@ actions:
      description: "Sets the state of a quote to Won.  "
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

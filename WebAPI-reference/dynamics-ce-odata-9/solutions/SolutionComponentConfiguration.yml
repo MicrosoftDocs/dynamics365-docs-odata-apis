@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.SolutionComponentConfiguration
 name: "Solution Component Configuration"
 type: solution
 metadata: 
-  title: "Dataverse Solution Component Configuration Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Solution Component Configuration Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 11b9c18e-f1eb-4da6-820f-1893241a6258
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Solution Component Configuration Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Solution Component Configuration Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: SolutionComponentConfiguration
- version: "9.1.0.20"
+ version: "9.1.0.40"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
@@ -30,8 +30,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

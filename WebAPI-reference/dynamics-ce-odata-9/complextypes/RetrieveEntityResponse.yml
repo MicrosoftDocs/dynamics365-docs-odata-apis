@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveEntityResponse
 name: "RetrieveEntityResponse"
 type: complextype
 metadata: 
-  title: "Dataverse RetrieveEntityResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse RetrieveEntityResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0d78dedc-a821-471c-9ff5-3f4aca0fd3b3
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API RetrieveEntityResponse ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API RetrieveEntityResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains the response from RetrieveEntity function." 
@@ -32,8 +32,8 @@ usedby:
     used_as: ReturnType
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

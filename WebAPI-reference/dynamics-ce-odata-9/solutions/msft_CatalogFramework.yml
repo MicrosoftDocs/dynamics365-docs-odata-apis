@@ -3,27 +3,27 @@ uid: Microsoft.Dynamics.CRM.msft_CatalogFramework
 name: "CatalogFramework"
 type: solution
 metadata: 
-  title: "Dataverse CatalogFramework Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse CatalogFramework Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0a0ca609-c0ea-40ff-b58b-e41da1f6fb7d
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse CatalogFramework Solution."
+  meta-description: "Reference information about the Microsoft Dataverse CatalogFramework Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: msft_CatalogFramework
- version: "1.0.0.0"
+ version: "1.0.0.2"
  customization_prefix: default
 # This solution includes no entities.
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

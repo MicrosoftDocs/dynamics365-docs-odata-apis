@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdynce_Talkingpoints
 name: "Talking points"
 type: solution
 metadata: 
-  title: "Dataverse Talking points Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Talking points Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a0bb7304-e9c4-4299-830b-d4e4e00b075a
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Talking points Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Talking points Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Intelligently extracts talking points with your contact, from your exchange mailbox"
  unique_name: msdynce_Talkingpoints
- version: "9.0.1.701283"
+ version: "9.0.1.701375"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -34,8 +34,8 @@ actions:
      description: ""
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.SetReportRelated
 name: "SetReportRelated"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 86b76269-e26f-404b-b23c-1edecee76ee8
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse SetReportRelated Action."
+  meta-description: "Reference information about the Microsoft Dataverse SetReportRelated Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Links an instance of a report entity to related entities.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -50,8 +50,8 @@ entities:
     description: "Data summary in an easy-to-read layout."
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

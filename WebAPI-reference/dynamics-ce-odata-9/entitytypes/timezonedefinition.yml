@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.timezonedefinition
 name: "timezonedefinition"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 586c3fdc-d8df-4e0c-a36f-05ecddabe83f
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse timezonedefinition entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse timezonedefinition entitytype."
 description: "Time zone definition, including name and time zone code."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/timezonedefinitions"
@@ -149,8 +149,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

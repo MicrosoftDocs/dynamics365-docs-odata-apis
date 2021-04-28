@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.asyncoperation
 name: "asyncoperation"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a3d5e391-3751-4d67-bb96-2d03256c9ad1
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse asyncoperation entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse asyncoperation entitytype."
 description: "Process whose execution can proceed independently or in the background."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/asyncoperations"
@@ -1047,14 +1047,18 @@ lookup_properties:
     - regardingobjectid_msdyn_contractlinedetailperformance
     - regardingobjectid_msdyn_contractperformance
     - regardingobjectid_msdyn_helppage
-    - regardingobjectid_teammobileofflineprofilemembership
-    - regardingobjectid_usermobileofflineprofilemembership
     - regardingobjectid_msfp_fileresponse
     - regardingobjectid_msfp_surveyreminder
     - regardingobjectid_revokeinheritedaccessrecordstracker
     - regardingobjectid_systemuserauthorizationchangetracker
     - regardingobjectid_organizationdatasyncsubscription
     - regardingobjectid_organizationdatasyncsubscriptionentity
+    - regardingobjectid_teammobileofflineprofilemembership
+    - regardingobjectid_usermobileofflineprofilemembership
+    - regardingobjectid_msdyn_teamsdialeradminsettings
+    - regardingobjectid_keyvaultreference
+    - regardingobjectid_managedidentity
+    - regardingobjectid_appnotification
     description: "Unique identifier of the object with which the system job is associated."
   - name: _workflowactivationid_value
     single_valued_navigation_property:
@@ -2813,8 +2817,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.IsValidStateTransition
 name: "IsValidStateTransition"
 type: function
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement IsValidStateTransition Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse IsValidStateTransition Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 27121c41-5d48-4079-bf8f-2a03e9e44a12
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse IsValidStateTransition Function."
+  meta-description: "Reference information about the Microsoft Dataverse IsValidStateTransition Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Validates the state transition."
 iscomposable: false
@@ -1236,8 +1236,8 @@ entities:
     description: ""
 # There are no remarks for this function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex
