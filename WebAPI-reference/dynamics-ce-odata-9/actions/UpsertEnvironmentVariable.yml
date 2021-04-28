@@ -3,17 +3,17 @@ uid: Microsoft.Dynamics.CRM.UpsertEnvironmentVariable
 name: "UpsertEnvironmentVariable"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 95509a79-cdc3-4c6f-8c56-c5da75bd08c9
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse UpsertEnvironmentVariable Action."
+  meta-description: "Reference information about the Microsoft Dataverse UpsertEnvironmentVariable Action."
 namespace: Microsoft.Dynamics.CRM
-# This Action has no description.
+description: "API responsible for creating or updating an environment variable. "
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
@@ -24,49 +24,44 @@ parameters:
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "Display name of the environment variable (Optional). "
   - name: SchemaName
     type: Edm.String
     nullable: false
     unicode: false
-    description: ""
+    description: " Identifier of the environment variable. It's recommended to provide a human readable name with no special characters and a publisher prefix. Such requirements reduce the changes of collisions when multiple variables are present in an environment, in addition to providing easier maintenance in source control (Required). "
   - name: Type
     type: Edm.Int32
     nullable: false
     unicode: true
-    description: ""
+    description: "Optionset value corresponding to the supported types of environment variables (Required). Supported types: [String, 100000000], [Integer, 100000001], [Boolean, 100000002], [JSON, 100000003], [Data Source, 100000004]. "
   - name: DefaultValue
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
-  - name: ConnectionId
-    type: Edm.String
-    nullable: true
-    unicode: false
-    description: ""
+    description: " Variable's default value (Optional). "
   - name: Value
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "Actual value for the environment variable (Optional). "
   - name: ParameterKey
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "Parameter key corresponding to the value (Optional)."
   - name: ApiId
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "Logical name of the Connection Id backing the environment variable (Optional). "
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

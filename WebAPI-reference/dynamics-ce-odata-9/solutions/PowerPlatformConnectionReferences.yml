@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.PowerPlatformConnectionReferences
 name: "Power Platform Connection References"
 type: solution
 metadata: 
-  title: "Dataverse Power Platform Connection References Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Power Platform Connection References Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b5c2f1fb-385f-49f4-9b8c-d1a7b9f696eb
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Power Platform Connection References Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Power Platform Connection References Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Power Platform Connection References Solution."
@@ -22,8 +22,8 @@ header:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

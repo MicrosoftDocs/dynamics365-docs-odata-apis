@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ComplexBigIntAttributeMetadata
 name: "ComplexBigIntAttributeMetadata"
 type: complextype
 metadata: 
-  title: "Dataverse ComplexBigIntAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse ComplexBigIntAttributeMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 927c1b26-c9e4-4699-8a98-49d2679ab841
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API ComplexBigIntAttributeMetadata ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API ComplexBigIntAttributeMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 header:
   base_type: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
@@ -35,8 +35,8 @@ properties:
 
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

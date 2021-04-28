@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_inspectiondefinition
 name: "msdyn_inspectiondefinition"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a1b05b35-e563-4352-9e96-6703052184b2
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_inspectiondefinition entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_inspectiondefinition entitytype."
 description: "Entity used to save different sets of questions related to an Inspection."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_inspectiondefinitions"
@@ -297,8 +297,8 @@ solutions:
     description: "Enable Inspections in Dynamics 365."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

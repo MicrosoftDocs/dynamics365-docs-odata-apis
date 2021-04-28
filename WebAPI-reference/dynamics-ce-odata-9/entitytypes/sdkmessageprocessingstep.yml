@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.sdkmessageprocessingstep
 name: "sdkmessageprocessingstep"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8b4d5a48-8d82-4c43-a83c-220452bb1ae0
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse sdkmessageprocessingstep entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse sdkmessageprocessingstep entitytype."
 description: "Stage in the execution pipeline that a plug-in is to execute."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/sdkmessageprocessingsteps"
@@ -358,8 +358,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

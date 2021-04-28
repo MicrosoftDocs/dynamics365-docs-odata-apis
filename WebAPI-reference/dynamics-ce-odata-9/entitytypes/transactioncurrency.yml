@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.transactioncurrency
 name: "transactioncurrency"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 76f8bc95-adb3-499e-aec7-e46d2ce87b87
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse transactioncurrency entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse transactioncurrency entitytype."
 description: "Currency in which a financial transaction is carried out."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/transactioncurrencies"
@@ -717,8 +717,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

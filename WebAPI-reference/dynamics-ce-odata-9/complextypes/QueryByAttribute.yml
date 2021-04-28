@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.QueryByAttribute
 name: "QueryByAttribute"
 type: complextype
 metadata: 
-  title: "Dataverse QueryByAttribute ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse QueryByAttribute ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2d0a3b10-4ce6-48bd-8614-6f6b838682c0
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API QueryByAttribute ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API QueryByAttribute ComplexType."
 namespace: Microsoft.Dynamics.CRM
 header:
   base_type: Microsoft.Dynamics.CRM.QueryBase
@@ -65,8 +65,8 @@ properties:
 
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

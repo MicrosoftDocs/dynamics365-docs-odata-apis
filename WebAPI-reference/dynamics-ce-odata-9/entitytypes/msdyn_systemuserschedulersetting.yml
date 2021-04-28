@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
 name: "msdyn_systemuserschedulersetting"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2691bba0-0062-4483-89f8-65d3775a861d
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_systemuserschedulersetting entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_systemuserschedulersetting entitytype."
 description: "Stores user-specific settings for the schedule board."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_systemuserschedulersettinges"
@@ -298,8 +298,8 @@ solutions:
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

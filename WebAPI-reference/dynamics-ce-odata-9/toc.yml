@@ -2625,8 +2625,6 @@
       name: Reschedule
     - uid: Microsoft.Dynamics.CRM.ResetUserFilters
       name: ResetUserFilters
-    - uid: Microsoft.Dynamics.CRM.RetrieveAccessOrigin
-      name: RetrieveAccessOrigin
     - uid: Microsoft.Dynamics.CRM.RevertProduct
       name: RevertProduct
     - uid: Microsoft.Dynamics.CRM.ReviseQuote
@@ -4579,6 +4577,8 @@
       name: Application Common Patch
     - uid: Microsoft.Dynamics.CRM.ApplicationUserSolution
       name: ApplicationUserSolution
+    - uid: Microsoft.Dynamics.CRM.AppNotifications
+      name: AppNotifications
     - uid: Microsoft.Dynamics.CRM.msdyn_AssetCommon
       name: Asset Common
     - uid: Microsoft.Dynamics.CRM.msft_AsyncServiceInfrastructure
@@ -4621,6 +4621,8 @@
       name: Custom API Framework
     - uid: Microsoft.Dynamics.CRM.msdynce_CustomerCareIntelligenceBots
       name: Customer Care Intelligence Bots
+    - uid: Microsoft.Dynamics.CRM.msdyn_CustomerServiceHealth
+      name: Customer Service Health
     - uid: Microsoft.Dynamics.CRM.datalakeworkspaces
       name: Data lake workspaces
     - uid: Microsoft.Dynamics.CRM.DataEngineCascading
@@ -4711,6 +4713,8 @@
       name: LinkedInExtensions
     - uid: Microsoft.Dynamics.CRM.msdyn_Macros
       name: Macros
+    - uid: Microsoft.Dynamics.CRM.ManagedIdentityExtensions
+      name: ManagedIdentityExtensions
     - uid: Microsoft.Dynamics.CRM.msdynce_Marketing
       name: Marketing
     - uid: Microsoft.Dynamics.CRM.msdynce_MarketingEntitiesUpdateMetadata
@@ -4739,8 +4743,6 @@
       name: Microsoft Dynamics 365 Solution History APIs
     - uid: Microsoft.Dynamics.CRM.MicrosoftDynamicsCRMBasicOperations
       name: Microsoft Dynamics CRM Basic Operations
-    - uid: Microsoft.Dynamics.CRM.MicrosoftFlowExtensionsCore
-      name: Microsoft Flow Extensions core package
     - uid: Microsoft.Dynamics.CRM.MobileOfflineMembership
       name: MobileOfflineMembership
     - uid: Microsoft.Dynamics.CRM.MobileOfflineSyncInterval
@@ -4781,6 +4783,8 @@
       name: Plug-in Profiler
     - uid: Microsoft.Dynamics.CRM.msdyn_PowerAppsChecker
       name: Power Apps Checker
+    - uid: Microsoft.Dynamics.CRM.MicrosoftFlowExtensionsCore
+      name: Power Automate Extensions core package
     - uid: Microsoft.Dynamics.CRM.msdyn_PowerConnectors
       name: Power Connector Solution
     - uid: Microsoft.Dynamics.CRM.PowerPlatformConnectionReferences
@@ -4815,6 +4819,8 @@
       name: Sales
     - uid: Microsoft.Dynamics.CRM.msdynce_SalesHealth
       name: Sales Health
+    - uid: Microsoft.Dynamics.CRM.SalesInsightsMetadataConfig
+      name: Sales Insights Metadata Config
     - uid: Microsoft.Dynamics.CRM.LinkedInSalesNavigatorControlsForUnifiedClient
       name: Sales Navigator for Dynamics 365 Unified Interface
     - uid: Microsoft.Dynamics.CRM.msdynce_SalesPatch
@@ -4847,8 +4853,6 @@
       name: Service management controls extension
     - uid: Microsoft.Dynamics.CRM.msdynce_ServicePatch
       name: Service Patch
-    - uid: Microsoft.Dynamics.CRM.ServicePlanData
-      name: Service Plan Data
     - uid: Microsoft.Dynamics.CRM.msdynce_ServiceUpgradeScripts
       name: Service Upgrade Scripts
     - uid: Microsoft.Dynamics.CRM.SICommon
@@ -4871,6 +4875,8 @@
       name: systemform
     - uid: Microsoft.Dynamics.CRM.msdynce_Talkingpoints
       name: Talking points
+    - uid: Microsoft.Dynamics.CRM.msdyn_teamsdialersettings
+      name: Teams Dialer Settings
     - uid: Microsoft.Dynamics.CRM.msdyn_TerritoryHierarchyManagement
       name: Territory Hierarchy Management
     - uid: Microsoft.Dynamics.CRM.msdynce_OfficeProductivity
@@ -4883,6 +4889,8 @@
       name: Time Entry
     - uid: Microsoft.Dynamics.CRM.msdyn_UCICalendar
       name: UCI Calendar Control
+    - uid: Microsoft.Dynamics.CRM.msft_UnifiedClientCommandingExtension
+      name: UnifiedClientCommandingExtension
     - uid: Microsoft.Dynamics.CRM.msft_UnifiedClientLookupExtension
       name: UnifiedClientLookupExtension
     - uid: Microsoft.Dynamics.CRM.msft_UnifiedClientWebResourceFileType

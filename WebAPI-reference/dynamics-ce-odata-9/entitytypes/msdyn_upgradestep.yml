@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_upgradestep
 name: "msdyn_upgradestep"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e7b66b11-1d01-4279-8804-33eb40b4bc8e
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_upgradestep entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_upgradestep entitytype."
 description: "One step during an upgrade, such as a single method or stored procedure."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_upgradesteps"
@@ -229,8 +229,8 @@ solutions:
     description: "Contains upgrade logs for some solutions"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdyn_AISolutionDefaultTemplates
 name: "AI Solution default templates"
 type: solution
 metadata: 
-  title: "Dataverse AI Solution default templates Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse AI Solution default templates Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 75fcce75-8748-4f13-8dc9-f5a343f93166
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse AI Solution default templates Solution."
+  meta-description: "Reference information about the Microsoft Dataverse AI Solution default templates Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "AI Solution default templates"
  unique_name: msdyn_AISolutionDefaultTemplates
- version: "202011.2.1001.3"
+ version: "202102.4.2301.7"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -46,8 +46,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

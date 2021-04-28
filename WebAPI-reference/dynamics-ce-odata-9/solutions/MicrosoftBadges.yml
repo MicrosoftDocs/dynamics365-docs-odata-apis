@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.MicrosoftBadges
 name: "Dynamics 365 Portals - Community Badges"
 type: solution
 metadata: 
-  title: "Dataverse Dynamics 365 Portals - Community Badges Solution Reference | MicrosoftDocs"
+  title: "Common Data Service Dynamics 365 Portals - Community Badges Solution Reference | MicrosoftDocs"
   ms.date: "01/20/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Dynamics 365 Portals - Community Badges Solution."
+  meta-description: "Reference information about the Common Data Service Dynamics 365 Portals - Community Badges Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Extends portals with badges displayed with user name on forum posts."
@@ -22,8 +22,8 @@ header:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

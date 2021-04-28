@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdynce_SalesServicePatch
 name: "Sales Service Patch"
 type: solution
 metadata: 
-  title: "Dataverse Sales Service Patch Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Sales Service Patch Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5bb43039-cca7-4c73-ba75-8226a3974dba
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Sales Service Patch Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Sales Service Patch Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_SalesServicePatch
- version: "9.0.20122.10003"
+ version: "9.0.21031.10002"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
@@ -30,8 +30,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

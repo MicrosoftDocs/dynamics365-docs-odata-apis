@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.bulkoperation
 name: "bulkoperation"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5162e448-7489-416d-880c-6db695f0d30b
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse bulkoperation entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse bulkoperation entitytype."
 description: "System operation used to perform lengthy and asynchronous operations on large data sets, such as distributing a campaign activity or quick campaign."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/bulkoperations"
@@ -1091,8 +1091,8 @@ solutions:
     description: "For internal use only."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

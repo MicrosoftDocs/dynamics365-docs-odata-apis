@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ProvisionLanguageForUserResult
 name: "ProvisionLanguageForUserResult"
 type: complextype
 metadata: 
-  title: "Dataverse ProvisionLanguageForUserResult ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse ProvisionLanguageForUserResult ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 155ad822-e31f-4b84-8a2c-f72970d9d1ea
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API ProvisionLanguageForUserResult ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API ProvisionLanguageForUserResult ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -40,8 +40,8 @@ properties:
 
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

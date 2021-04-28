@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.PredictionSchemaResponse
 name: "PredictionSchemaResponse"
 type: complextype
 metadata: 
-  title: "Dataverse PredictionSchemaResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse PredictionSchemaResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0f5b2f33-2c1c-4535-912e-0a5ee385ab6e
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API PredictionSchemaResponse ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API PredictionSchemaResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -39,8 +39,8 @@ usedby:
     used_as: ReturnType
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

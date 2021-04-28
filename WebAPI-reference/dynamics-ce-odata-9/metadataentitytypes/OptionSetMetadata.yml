@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.OptionSetMetadata
 name: "OptionSetMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Dataverse OptionSetMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse OptionSetMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 07ce7eab-daed-4041-a948-a7a3a10faf06
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse OptionSetMetadata metadata entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse OptionSetMetadata metadata entitytype."
 header: 
   description: "Contains metadata that defines a set of options."
   base_type: Microsoft.Dynamics.CRM.OptionSetMetadataBase
@@ -90,8 +90,8 @@ usedby:
     used_as: NavigationProperty
 # There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

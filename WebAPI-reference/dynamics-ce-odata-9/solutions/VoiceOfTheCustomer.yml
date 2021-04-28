@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.VoiceOfTheCustomer
 name: "Voice of the Customer for Microsoft Dynamics 365"
 type: solution
 metadata: 
-  title: "Dataverse Voice of the Customer for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
+  title: "Common Data Service Voice of the Customer for Microsoft Dynamics 365 Solution Reference | MicrosoftDocs"
   ms.date: "01/20/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
@@ -11,7 +11,7 @@ metadata:
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Voice of the Customer for Microsoft Dynamics 365 Solution."
+  meta-description: "Reference information about the Common Data Service Voice of the Customer for Microsoft Dynamics 365 Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "With Voice of the Customer for Microsoft Dynamics 365, you can create and send out surveys to gain valuable feedback from your customers about your products or services. To install or upgrade Voice of the Customer, go to Applications area in Dynamics 365 Administration Center page."
@@ -22,8 +22,8 @@ header:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

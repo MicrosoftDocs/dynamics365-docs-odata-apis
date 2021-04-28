@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_geofenceevent
 name: "msdyn_geofenceevent"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5ae33d98-0780-4a70-a87d-45a085d41ccb
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_geofenceevent entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_geofenceevent entitytype."
 description: "Created when a geotracked record enters or exits a geofence."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_geofenceevents"
@@ -252,8 +252,8 @@ solutions:
     description: "Define Geofences and the records that should be monitored for entry and exit, resulting in Geofence Event records that can be configured to trigger some action via a workflow or Microsoft Flow."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

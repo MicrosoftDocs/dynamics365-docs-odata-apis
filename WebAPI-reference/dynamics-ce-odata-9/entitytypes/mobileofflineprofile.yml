@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.mobileofflineprofile
 name: "mobileofflineprofile"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 469d9ded-d4eb-4e3d-8da7-b40cba21f729
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse mobileofflineprofile entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse mobileofflineprofile entitytype."
 description: "Information to administer and manage the data available to mobile devices in offline mode."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/mobileofflineprofiles"
@@ -237,8 +237,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

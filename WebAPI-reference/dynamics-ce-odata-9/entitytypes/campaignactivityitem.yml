@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.campaignactivityitem
 name: "campaignactivityitem"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d8e2ca9a-7bc8-4143-9f7d-b119baee344c
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse campaignactivityitem entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse campaignactivityitem entitytype."
 description: "Work item of a campaign activity, such as a list or sales literature."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/campaignactivityitems"
@@ -136,8 +136,8 @@ solutions:
     description: "Patch from 05/2019 for Dynamics 365 workload for marketing and enterprise."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

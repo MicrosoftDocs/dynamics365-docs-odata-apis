@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.In
 name: "In"
 type: queryfunction
 metadata: 
-  title: "Dataverse In Query Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse In Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3ea57aee-abd0-4e65-8331-64337cadf9b0
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse In Query Function."
+  meta-description: "Reference information about the Microsoft Dataverse In Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function that evaluates whether the value exists in a list of values. "
 parameters:
@@ -30,8 +30,8 @@ parameters:
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.In(PropertyName=@p1,PropertyValues=@p2)&@p1='name'&@p2=['value','value']"
 # There are no remarks for this query function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

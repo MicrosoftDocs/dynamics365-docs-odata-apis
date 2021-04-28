@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.GetInvoiceProductsFromOpportunity
 name: "GetInvoiceProductsFromOpportunity"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3a2ca703-848e-4bb1-b747-3e306fffaa0c
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse GetInvoiceProductsFromOpportunity Action."
+  meta-description: "Reference information about the Microsoft Dataverse GetInvoiceProductsFromOpportunity Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the products from an opportunity and copy them to the invoice.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -33,8 +33,8 @@ hasreturnvalue: false
 # This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

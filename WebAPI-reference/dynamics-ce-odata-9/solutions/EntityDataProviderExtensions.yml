@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.EntityDataProviderExtensions
 name: "EntityDataProviderExtensions"
 type: solution
 metadata: 
-  title: "Dataverse EntityDataProviderExtensions Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityDataProviderExtensions Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2958b128-ed15-4136-9135-66e3ed7a4674
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse EntityDataProviderExtensions Solution."
+  meta-description: "Reference information about the Microsoft Dataverse EntityDataProviderExtensions Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "EntityDataProviderExtensions Solution"
@@ -26,8 +26,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

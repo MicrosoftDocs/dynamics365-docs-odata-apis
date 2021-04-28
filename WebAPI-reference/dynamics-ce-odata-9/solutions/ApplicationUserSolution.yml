@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ApplicationUserSolution
 name: "ApplicationUserSolution"
 type: solution
 metadata: 
-  title: "Dataverse ApplicationUserSolution Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse ApplicationUserSolution Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c38872a4-e9c6-480e-b8ec-eb9ed90bf91f
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse ApplicationUserSolution Solution."
+  meta-description: "Reference information about the Microsoft Dataverse ApplicationUserSolution Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
@@ -22,8 +22,8 @@ header:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

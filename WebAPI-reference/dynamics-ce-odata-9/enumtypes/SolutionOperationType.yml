@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.SolutionOperationType
 name: "SolutionOperationType"
 type: enumtype
 metadata: 
-  title: "Dataverse SolutionOperationType EnumType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse SolutionOperationType EnumType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 454767fa-543b-4310-a107-80a82c350a33
   author: "kumarVivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API SolutionOperationType ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API SolutionOperationType ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "Not Found" 
 members:
@@ -27,8 +27,8 @@ usedby:
     used_as: Property
 # There are no remarks for this enum type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

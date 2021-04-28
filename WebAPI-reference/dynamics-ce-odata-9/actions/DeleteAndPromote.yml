@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DeleteAndPromote
 name: "DeleteAndPromote"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2b38ffa3-7d04-434c-a1c1-355e22a406f2
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse DeleteAndPromote Action."
+  meta-description: "Reference information about the Microsoft Dataverse DeleteAndPromote Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Replaces managed solution (A) plus all of its patches with managed solution (B) that is the clone of (A) and all of its patches."
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -38,8 +38,8 @@ entities:
     description: "A solution which contains CRM customizations."
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

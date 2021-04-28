@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ExportMappingsImportMapResponse
 name: "ExportMappingsImportMapResponse"
 type: complextype
 metadata: 
-  title: "Dataverse ExportMappingsImportMapResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse ExportMappingsImportMapResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4089f8d9-0de1-41ff-b7e0-263b027c01a4
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API ExportMappingsImportMapResponse ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API ExportMappingsImportMapResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "The response from the ExportMappingsImportMap action. " 
@@ -32,8 +32,8 @@ usedby:
     used_as: ReturnType
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

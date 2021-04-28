@@ -1,9 +1,9 @@
 ### YamlMime:ODataIndex
 uid: Microsoft.Dynamics.CRM.SolutionIndex
 name: Web API Solution Reference
-title: "Dataverse Web API Solution Reference | MicrosoftDocs"
+title: "Microsoft DataverseWeb API Solution Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "02/10/2021"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2b9fc5b2-248a-42f2-bd94-c5db4d12f4b5
@@ -32,6 +32,8 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.AppModule
   description: "Metadata for Model-Driven App."
+- type: Microsoft.Dynamics.CRM.AppNotifications
+  description: "Contains the definitions of App Notification"
 - type: Microsoft.Dynamics.CRM.AuthorizationCore
   description: "Authorization Core solution"
 - type: Microsoft.Dynamics.CRM.AutoDataCapture
@@ -96,6 +98,8 @@ in_this_section:
   description: "LinkedIn For Microsoft Dynamics CRM Integration. Get Insights. Close deals faster. All without leaving your CRM! Equip yourself with the most accurate and up-to-date info."
 - type: Microsoft.Dynamics.CRM.LinkedInSalesNavigatorControlsForUnifiedClient
   description: "Target, understand and engage customers on LinkedIn Sales Navigator from within Dynamics 365"
+- type: Microsoft.Dynamics.CRM.ManagedIdentityExtensions
+  description: ""
 - type: Microsoft.Dynamics.CRM.MessageProcessorExtension
   description: "MessageProcessorExtension Solution"
 - type: Microsoft.Dynamics.CRM.MetadataExtension
@@ -138,6 +142,8 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_CSIntelligence
   description: "Customer Service Intelligence."
+- type: Microsoft.Dynamics.CRM.msdyn_CustomerServiceHealth
+  description: "Customer Service Health introduces rules to evaluate the health of any Customer Service implementation. New rules will be shipped regularly to highlight fixes and improvements to Customer Service configurations. Analysis jobs can be triggered from the Solution Health Hub."
 - type: Microsoft.Dynamics.CRM.msdyn_DataInsightsAndAnalytics
   description: "Enable Analytics capability for Dynamics 365 applications like Customer Service, Field Service and Universal Resource Scheduling"
 - type: Microsoft.Dynamics.CRM.msdyn_DataInsightsAndAnalyticsForFS
@@ -192,6 +198,8 @@ in_this_section:
   description: "This solution enables smart assist functionality for agents. "
 - type: Microsoft.Dynamics.CRM.msdyn_SolutionPackageMapping
   description: ""
+- type: Microsoft.Dynamics.CRM.msdyn_teamsdialersettings
+  description: "Dynamics 365 workload for Teams Dialer Settings."
 - type: Microsoft.Dynamics.CRM.msdyn_TerritoryHierarchyManagement
   description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_TESA
@@ -312,6 +320,8 @@ in_this_section:
   description: "Power Apps Unified Client base infra extensions"
 - type: Microsoft.Dynamics.CRM.msft_ServerSideSync_Extensions
   description: ""
+- type: Microsoft.Dynamics.CRM.msft_UnifiedClientCommandingExtension
+  description: "Unified Client Commanding Extension"
 - type: Microsoft.Dynamics.CRM.msft_UnifiedClientLookupExtension
   description: "Solution having customizations used for lookup control extension"
 - type: Microsoft.Dynamics.CRM.msft_UnifiedClientSystemForm
@@ -344,8 +354,8 @@ in_this_section:
   description: "Contains the Resource Scheduling controls like the next generation Schedule Board."
 - type: Microsoft.Dynamics.CRM.S2SApplicationExtension
   description: "S2SApplicationExtension Solution"
-- type: Microsoft.Dynamics.CRM.ServicePlanData
-  description: "Service Plan Data solution"
+- type: Microsoft.Dynamics.CRM.SalesInsightsMetadataConfig
+  description: ""
 - type: Microsoft.Dynamics.CRM.SICommon
   description: ""
 - type: Microsoft.Dynamics.CRM.SolutionComponentConfiguration

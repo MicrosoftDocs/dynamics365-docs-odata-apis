@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdyn_IoTAssetCommon
 name: "IoT Asset Common"
 type: solution
 metadata: 
-  title: "Dataverse IoT Asset Common Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse IoT Asset Common Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8d124fc4-a31a-49c6-8ad4-df3f3b9899bf
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse IoT Asset Common Solution."
+  meta-description: "Reference information about the Microsoft Dataverse IoT Asset Common Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Enables IoT Scenarios for Customer Asset"
  unique_name: msdyn_IoTAssetCommon
- version: "1.7.38.7"
+ version: "1.8.0.1"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -32,8 +32,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

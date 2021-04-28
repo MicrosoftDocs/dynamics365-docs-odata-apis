@@ -1,9 +1,9 @@
 ### YamlMime:ODataIndex
 uid: Microsoft.Dynamics.CRM.FunctionIndex
 name: Web API Function Reference
-title: "Dataverse Web API Function Reference | MicrosoftDocs"
+title: "Microsoft DataverseWeb API Function Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "02/10/2021"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ab719434-7c3c-4bc3-8fee-bb14335d3f9d
@@ -81,7 +81,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.RetrieveAllChildUsersSystemUser
   description: "Retrieves the collection of users that report to the specified system user (user).  "
 - type: Microsoft.Dynamics.CRM.RetrieveAllCompositeDataSources
-  description: ""
+  description: "API responsible for retrieving all composite environment variables starting from a root variable. "
 - type: Microsoft.Dynamics.CRM.RetrieveAllEntities
   description: "Retrieves metadata information about all the entities. "
 - type: Microsoft.Dynamics.CRM.RetrieveAnalyticsStoreDetails
@@ -115,7 +115,7 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.RetrieveCascadeDeleteAsyncJobId
   description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveCompositeDataSource
-  description: ""
+  description: "API responsible for retrieving a composite environment variable. "
 - type: Microsoft.Dynamics.CRM.RetrieveCurrentOrganization
   description: "Retrieve information about the current organization. "
 - type: Microsoft.Dynamics.CRM.RetrieveDataEncryptionKey
@@ -137,9 +137,9 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.RetrieveEntityRibbon
   description: "Retrieves ribbon definitions for an entity.  "
 - type: Microsoft.Dynamics.CRM.RetrieveEnvironmentVariables
-  description: ""
+  description: "API responsible for retrieving all environment variables based on a given criteria."
 - type: Microsoft.Dynamics.CRM.RetrieveEnvironmentVariableValue
-  description: ""
+  description: "API responsible for retrieving the corresponding value of an environment variable. "
 - type: Microsoft.Dynamics.CRM.RetrieveExchangeAppointments
   description: "Retrieves the appointments for the current user for a specific date range from the exchange web service. "
 - type: Microsoft.Dynamics.CRM.RetrieveExchangeRate

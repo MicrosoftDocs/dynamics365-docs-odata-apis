@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.InOrAfterFiscalPeriodAndYear
 name: "InOrAfterFiscalPeriodAndYear"
 type: queryfunction
 metadata: 
-  title: "Dataverse InOrAfterFiscalPeriodAndYear Query Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse InOrAfterFiscalPeriodAndYear Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5f3965ff-0cd4-41eb-b97a-bfa9d5f789f6
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse InOrAfterFiscalPeriodAndYear Query Function."
+  meta-description: "Reference information about the Microsoft Dataverse InOrAfterFiscalPeriodAndYear Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function that evaluates whether the value is within or after the specified fiscal period and year.  "
 parameters:
@@ -35,8 +35,8 @@ parameters:
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.InOrAfterFiscalPeriodAndYear(PropertyName=@p1,PropertyValue1=@p2,PropertyValue2=@p3)&@p1='name'&@p2=42&@p3=42"
 # There are no remarks for this query function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

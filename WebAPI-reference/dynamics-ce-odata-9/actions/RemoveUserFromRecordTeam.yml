@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RemoveUserFromRecordTeam
 name: "RemoveUserFromRecordTeam"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7ec60ff1-bc59-478a-8495-a6beb102af32
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse RemoveUserFromRecordTeam Action."
+  meta-description: "Reference information about the Microsoft Dataverse RemoveUserFromRecordTeam Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Removes a user from the auto created access team for the specified record. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -46,8 +46,8 @@ entities:
     description: "Team template for an entity enabled for automatically created access teams."
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

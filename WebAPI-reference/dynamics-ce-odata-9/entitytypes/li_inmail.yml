@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.li_inmail
 name: "li_inmail"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 91e990b2-9151-48b0-8596-fa989375ad83
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse li_inmail entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse li_inmail entitytype."
 description: "Custom Activity entity to store LinkedIn inMail records."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/li_inmails"
@@ -1162,8 +1162,8 @@ solutions:
     description: "LinkedIn For Microsoft Dynamics CRM Integration. Get Insights. Close deals faster. All without leaving your CRM! Equip yourself with the most accurate and up-to-date info."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

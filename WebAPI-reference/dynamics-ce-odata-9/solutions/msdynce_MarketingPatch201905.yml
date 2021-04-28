@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdynce_MarketingPatch201905
 name: "Marketing Patch 05/2019"
 type: solution
 metadata: 
-  title: "Dataverse Marketing Patch 05/2019 Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Marketing Patch 05/2019 Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7a1ac9fe-47f2-4b69-918c-b5fd38c51647
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Marketing Patch 05/2019 Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Marketing Patch 05/2019 Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Patch from 05/2019 for Dynamics 365 workload for marketing and enterprise."
  unique_name: msdynce_MarketingPatch201905
- version: "9.0.20122.10005  "
+ version: "9.0.21031.10003"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
@@ -52,8 +52,8 @@ actions:
      description: ""
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

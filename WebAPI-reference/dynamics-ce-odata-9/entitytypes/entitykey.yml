@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.entitykey
 name: "entitykey"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9fb81ac2-df03-43d5-966b-6e06c36803a4
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse entitykey entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse entitykey entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/entitykeys"
@@ -19,7 +19,8 @@ header:
   display_name: Entity Key
   primary_key: entitykeyid
   primary_name_attribute: logicalname
-  # This entity does not support any operations.
+  operations_supported:
+  - GET (RetrieveMultiple Only)
 namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
@@ -45,6 +46,12 @@ properties:
       description: "Unique identifier of the entity key."
       iscomputed: false
       isreadonly: false
+    - name: issecondarykey
+      type: Edm.Boolean
+      display_name: "IsSecondaryKey"
+      description: "Is the attribute secondary key."
+      iscomputed: false
+      isreadonly: true
     - name: logicalname
       type: Edm.String
       display_name: "Logical Name"
@@ -77,12 +84,14 @@ properties:
 solutions:
   description: "The following solutions include the entitykey entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.MetadataExtension
+    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

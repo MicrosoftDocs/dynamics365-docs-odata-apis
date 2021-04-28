@@ -3,26 +3,28 @@ uid: Microsoft.Dynamics.CRM.ApiMessagesExtension
 name: "API messages extension solution"
 type: solution
 metadata: 
-  title: "Dataverse API messages extension solution Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse API messages extension solution Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0a8f3bfa-72c4-42ae-a02f-c704adce4e4b
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse API messages extension solution Solution."
+  meta-description: "Reference information about the Microsoft Dataverse API messages extension solution Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "This solution contains CDS API message extensions."
  unique_name: ApiMessagesExtension
- version: "1.0.0.45"
+ version: "1.0.0.47"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
    - type: Microsoft.Dynamics.CRM.callbackregistration
      description: "Callback Registration that stores configuration."
+   - type: Microsoft.Dynamics.CRM.organization
+     description: "Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation."
    - type: Microsoft.Dynamics.CRM.plugintype
      description: "Type that inherits from the IPlugin interface and is contained within a plug-in assembly."
    - type: Microsoft.Dynamics.CRM.sdkmessage
@@ -32,8 +34,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

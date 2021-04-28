@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdyn_Forecasting
 name: "Forecasting"
 type: solution
 metadata: 
-  title: "Dataverse Forecasting Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Forecasting Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5f741cbc-1f14-43fe-9531-2747aeaf1619
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Forecasting Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Forecasting Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "An extension that helps sales managers and sales people to predict risks in the revenue spotting pipeline."
  unique_name: msdyn_Forecasting
- version: "9.0.20122.10050"
+ version: "9.0.21021.10010"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -48,8 +48,8 @@ actions:
      description: ""
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

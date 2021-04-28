@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ValidateFetchXmlExpressionResult
 name: "ValidateFetchXmlExpressionResult"
 type: complextype
 metadata: 
-  title: "Dataverse ValidateFetchXmlExpressionResult ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse ValidateFetchXmlExpressionResult ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b0b7f76f-e386-4e81-a8a1-c45d5a59b139
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API ValidateFetchXmlExpressionResult ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API ValidateFetchXmlExpressionResult ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -32,8 +32,8 @@ usedby:
     used_as: Property
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

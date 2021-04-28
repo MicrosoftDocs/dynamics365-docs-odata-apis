@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.site
 name: "site"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d7588eae-c24f-480b-87a3-6c340b4d1d93
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse site entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse site entitytype."
 description: "Location or branch office where an organization does business. An organization can have multiple sites."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/sites"
@@ -508,8 +508,8 @@ solutions:
     description: "Dynamics 365 workload for service."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

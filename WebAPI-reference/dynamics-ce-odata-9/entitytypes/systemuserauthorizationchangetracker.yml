@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.systemuserauthorizationchangetracker
 name: "systemuserauthorizationchangetracker"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0369e9d1-c002-4b6e-9952-53ad2dfb7bc9
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse systemuserauthorizationchangetracker entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse systemuserauthorizationchangetracker entitytype."
 description: "Internal authorization table to track user authorization changes"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/systemuserauthorizationchangetrackers"
@@ -55,7 +55,12 @@ properties:
       iscomputed: false
       isreadonly: false
 # This entity has no lookup properties
-# This entity has no single-valued navigation properties
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: systemuserid_userauthztracker
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_userauthztracker
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
@@ -86,8 +91,8 @@ solutions:
     description: "Authorization Core solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

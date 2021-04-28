@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.pluginassembly
 name: "pluginassembly"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6f44af15-6283-4a5c-98d0-2951ea931f97
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse pluginassembly entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse pluginassembly entitytype."
 description: "Assembly that contains one or more plug-in types."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/pluginassemblies"
@@ -263,6 +263,10 @@ lookup_properties:
     single_valued_navigation_property:
     - createdonbehalfby
     description: "Unique identifier of the delegate user who created the pluginassembly."
+  - name: _managedidentityid_value
+    single_valued_navigation_property:
+    - managedidentityid
+    description: "Unique identifier for managedidentity associated with pluginassembly."
   - name: _modifiedby_value
     single_valued_navigation_property:
     - modifiedby
@@ -308,8 +312,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.FindParentResourceGroup
 name: "FindParentResourceGroup"
 type: function
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement FindParentResourceGroup Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse FindParentResourceGroup Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ab61d0c5-a8db-4b74-9aa7-b4652e021683
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse FindParentResourceGroup Function."
+  meta-description: "Reference information about the Microsoft Dataverse FindParentResourceGroup Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Finds a parent resource group (scheduling group) for the specified resource groups (scheduling groups)."
 iscomposable: false
@@ -37,8 +37,8 @@ return_type:
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

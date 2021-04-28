@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.plugintype
 name: "plugintype"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a75e415c-022a-4304-9c48-6dc4dfe9b698
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse plugintype entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse plugintype entitytype."
 description: "Type that inherits from the IPlugin interface and is contained within a plug-in assembly."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/plugintypes"
@@ -259,8 +259,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

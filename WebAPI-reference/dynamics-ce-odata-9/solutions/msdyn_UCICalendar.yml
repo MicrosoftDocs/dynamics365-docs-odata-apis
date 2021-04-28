@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdyn_UCICalendar
 name: "UCI Calendar Control"
 type: solution
 metadata: 
-  title: "Dataverse UCI Calendar Control Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse UCI Calendar Control Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bff70e60-b671-46d5-b09c-4a237c793135
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse UCI Calendar Control Solution."
+  meta-description: "Reference information about the Microsoft Dataverse UCI Calendar Control Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "The UCI Calendar Control provides common UI experience for bookable resource time management"
  unique_name: msdyn_UCICalendar
- version: "1.0.0.655"
+ version: "1.0.0.846"
  customization_prefix: msdyn
 # This solution includes no entities.
 actions:
@@ -28,8 +28,8 @@ actions:
      description: ""
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

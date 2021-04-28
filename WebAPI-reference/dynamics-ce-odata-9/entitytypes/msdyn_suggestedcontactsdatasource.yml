@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_suggestedcontactsdatasource
 name: "msdyn_suggestedcontactsdatasource"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6296566a-e4c0-47c1-876a-ff3515a806c5
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_suggestedcontactsdatasource entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_suggestedcontactsdatasource entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_suggestedcontactsdatasources"
@@ -52,8 +52,8 @@ solutions:
     description: "Auto Data Capture Feature Description."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

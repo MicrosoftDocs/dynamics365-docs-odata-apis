@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdynce_ServicePatch
 name: "Service Patch"
 type: solution
 metadata: 
-  title: "Dataverse Service Patch Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Service Patch Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c03a0025-de9c-49c7-b0c7-0e4c9e48544c
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Service Patch Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Service Patch Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Patch for Dynamics 365 workload for service."
@@ -66,8 +66,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

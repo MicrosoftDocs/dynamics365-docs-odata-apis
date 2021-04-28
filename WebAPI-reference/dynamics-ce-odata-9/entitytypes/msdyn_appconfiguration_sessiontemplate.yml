@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_appconfiguration_sessiontemplate
 name: "msdyn_appconfiguration_sessiontemplate"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8d71bed6-5aae-4138-af70-e6f6092dd579
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_appconfiguration_sessiontemplate entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_appconfiguration_sessiontemplate entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_appconfiguration_sessiontemplateset"
@@ -107,8 +107,8 @@ properties:
 # This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

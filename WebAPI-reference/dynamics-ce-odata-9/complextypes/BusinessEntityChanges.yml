@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.BusinessEntityChanges
 name: "BusinessEntityChanges"
 type: complextype
 metadata: 
-  title: "Dataverse BusinessEntityChanges ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse BusinessEntityChanges ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6685ae82-a9f2-4961-9ca3-a2373e2b072c
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API BusinessEntityChanges ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API BusinessEntityChanges ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "The business entity changes from the RetrieveEntityChangesResponse.EntityChanges property" 
@@ -52,8 +52,8 @@ properties:
 
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

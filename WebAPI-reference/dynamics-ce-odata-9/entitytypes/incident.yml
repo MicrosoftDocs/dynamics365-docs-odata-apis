@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.incident
 name: "incident"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 13b598d9-aea9-4cf0-8d80-d038f96790ff
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse incident entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse incident entitytype."
 description: "Service request case associated with a contract."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/incidents"
@@ -987,8 +987,8 @@ solutions:
     description: "Relationship assistant Feature Description."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

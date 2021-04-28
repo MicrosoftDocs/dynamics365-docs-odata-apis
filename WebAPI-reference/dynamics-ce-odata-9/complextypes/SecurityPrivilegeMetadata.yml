@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.SecurityPrivilegeMetadata
 name: "SecurityPrivilegeMetadata"
 type: complextype
 metadata: 
-  title: "Dataverse SecurityPrivilegeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse SecurityPrivilegeMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 68b0cc49-55fa-446d-8648-0c3625c340f7
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API SecurityPrivilegeMetadata ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API SecurityPrivilegeMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "The metadata that describes a security privilege for access to an entity. " 
@@ -82,8 +82,8 @@ usedby:
     used_as: Property
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

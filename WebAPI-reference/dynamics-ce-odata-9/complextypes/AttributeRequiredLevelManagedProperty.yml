@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AttributeRequiredLevelManagedProperty
 name: "AttributeRequiredLevelManagedProperty"
 type: complextype
 metadata: 
-  title: "Dataverse AttributeRequiredLevelManagedProperty ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse AttributeRequiredLevelManagedProperty ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6ad3a123-511e-4c4e-bad4-8a5cc0007f12
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API AttributeRequiredLevelManagedProperty ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API AttributeRequiredLevelManagedProperty ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Represents the data to define a RequiredLevel property for an attribute." 
@@ -46,8 +46,8 @@ usedby:
     used_as: Property
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

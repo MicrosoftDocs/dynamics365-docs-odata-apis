@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.knowledgearticle
 name: "knowledgearticle"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 438dc89a-b8c2-4e28-b4fc-a130d70eff22
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse knowledgearticle entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse knowledgearticle entitytype."
 description: "Organizational knowledge for internal and external use."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/knowledgearticles"
@@ -187,6 +187,23 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_ingestedarticleurl
+      type: Edm.String
+      display_name: "Ingested Article URL"
+      description: "Ingested article URL"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_isingestedarticle
+      type: Edm.Boolean
+      display_name: "Is Ingested Article"
+      description: "Value is true for all Ingested articles"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: overriddencreatedon
       type: Edm.DateTimeOffset
       display_name: "Record Created On"
@@ -717,8 +734,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

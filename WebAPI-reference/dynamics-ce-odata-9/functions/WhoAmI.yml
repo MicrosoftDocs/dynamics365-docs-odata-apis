@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.WhoAmI
 name: "WhoAmI"
 type: function
 metadata: 
-  title: "Microsoft Dynamics 365 Customer Engagement WhoAmI Function Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse WhoAmI Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bf86bddc-810b-4fc6-809a-e2b3aac74b5e
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse WhoAmI Function."
+  meta-description: "Reference information about the Microsoft Dataverse WhoAmI Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the system user ID for the currently logged on user or the user under whose context the code is running.  "
 iscomposable: false
@@ -27,8 +27,8 @@ return_type:
 # This function no specific entities for this function identified.
 # There are no remarks for this function.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

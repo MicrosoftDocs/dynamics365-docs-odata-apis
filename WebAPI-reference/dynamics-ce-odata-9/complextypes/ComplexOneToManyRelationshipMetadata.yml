@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ComplexOneToManyRelationshipMetadata
 name: "ComplexOneToManyRelationshipMetadata"
 type: complextype
 metadata: 
-  title: "Dataverse ComplexOneToManyRelationshipMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse ComplexOneToManyRelationshipMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 67182399-9e94-473f-af0a-7037a35bebbc
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Web API ComplexOneToManyRelationshipMetadata ComplexType."
+  meta-description: "Reference information about the Microsoft Dataverse Web API ComplexOneToManyRelationshipMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains the metadata for a one-to-many entity relationship." 
@@ -90,6 +90,18 @@ properties:
     unicode: true
     description: ""
     iscollection: false
+  - name: IsDenormalizedLookup
+    type: Edm.Boolean
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+  - name: DenormalizedAttributeName
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
   - name: IsCustomRelationship
     type: Edm.Boolean
     nullable: true
@@ -164,8 +176,8 @@ usedby:
     used_as: Property
 # There are no remarks for this complex type.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

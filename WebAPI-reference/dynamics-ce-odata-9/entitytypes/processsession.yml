@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.processsession
 name: "processsession"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 42e8689d-57fb-4dd1-8146-47e9207d83f4
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse processsession entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse processsession entitytype."
 description: "Information that is generated when a dialog is run. Every time that you run a dialog, a dialog session is created."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/processsessions"
@@ -698,14 +698,18 @@ lookup_properties:
     - regardingobjectid_msdyn_contractlinedetailperformance
     - regardingobjectid_msdyn_contractperformance
     - regardingobjectid_msdyn_helppage
-    - regardingobjectid_teammobileofflineprofilemembership
-    - regardingobjectid_usermobileofflineprofilemembership
     - regardingobjectid_msfp_fileresponse
     - regardingobjectid_msfp_surveyreminder
     - regardingobjectid_revokeinheritedaccessrecordstracker
     - regardingobjectid_systemuserauthorizationchangetracker
     - regardingobjectid_organizationdatasyncsubscription
     - regardingobjectid_organizationdatasyncsubscriptionentity
+    - regardingobjectid_teammobileofflineprofilemembership
+    - regardingobjectid_usermobileofflineprofilemembership
+    - regardingobjectid_msdyn_teamsdialeradminsettings
+    - regardingobjectid_keyvaultreference
+    - regardingobjectid_managedidentity
+    - regardingobjectid_appnotification
     description: "Unique identifier of the object with which the dialog session is associated."
   - name: _startedby_value
     single_valued_navigation_property:
@@ -2286,8 +2290,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

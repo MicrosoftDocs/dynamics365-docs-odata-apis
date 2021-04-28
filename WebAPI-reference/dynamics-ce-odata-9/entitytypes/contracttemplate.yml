@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.contracttemplate
 name: "contracttemplate"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 89ff88ce-2f6b-4fe2-971a-9116a69943bf
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse contracttemplate entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse contracttemplate entitytype."
 description: "Template for a contract containing the standard attributes of a contract."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/contracttemplates"
@@ -288,8 +288,8 @@ solutions:
     description: "Dynamics 365 workload for service."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

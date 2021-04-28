@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_upgradeversion
 name: "msdyn_upgradeversion"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: dd0b4f05-1368-47f6-91ce-190403910318
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_upgradeversion entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_upgradeversion entitytype."
 description: "Information about upgrading from one release to the next release"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_upgradeversions"
@@ -220,8 +220,8 @@ solutions:
     description: "Contains upgrade logs for some solutions"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

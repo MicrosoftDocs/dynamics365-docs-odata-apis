@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.territory
 name: "territory"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1b428309-270e-4519-9b6d-118714a239aa
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse territory entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse territory entitytype."
 description: "Territory represents sales regions."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/territories"
@@ -265,8 +265,8 @@ solutions:
     description: "For internal use only."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

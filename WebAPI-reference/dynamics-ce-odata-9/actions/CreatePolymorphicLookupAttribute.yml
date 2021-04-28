@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CreatePolymorphicLookupAttribute
 name: "CreatePolymorphicLookupAttribute"
 type: action
 metadata: 
-  title: "Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1b5ec3f5-6200-4fb3-8c1a-bae52f343d37
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse CreatePolymorphicLookupAttribute Action."
+  meta-description: "Reference information about the Microsoft Dataverse CreatePolymorphicLookupAttribute Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -24,17 +24,17 @@ parameters:
     type: Microsoft.Dynamics.CRM.ComplexLookupAttributeMetadata
     nullable: true
     unicode: true
-    description: ""
+    description: "The metadata for the lookup field used to store the ID of the related record."
   - name: OneToManyRelationships
     type: Microsoft.Dynamics.CRM.ComplexOneToManyRelationshipMetadata
     nullable: false
     unicode: true
-    description: ""
+    description: "The metadata array forthe one-to-many relationships to the Account and contact."
   - name: SolutionUniqueName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The name of tthe unmanaged solution to which you want to add this  lookup attribute to."
 return_type:
   description: "The CreatePolymorphicLookupAttribute action returns the following value."
   iscollection: false
@@ -43,8 +43,8 @@ return_type:
 # This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

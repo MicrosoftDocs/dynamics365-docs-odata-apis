@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.EmailEngagementPatch_managed
 name: "Email Engagement"
 type: solution
 metadata: 
-  title: "Dataverse Email Engagement Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Email Engagement Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: df52d71c-5c79-40e4-82f7-b02882aa56bd
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Email Engagement Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Email Engagement Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Stay on top of your email with alerts and reminders, prioritizing prospects, or customers that are most engaged."
  unique_name: EmailEngagementPatch_managed
- version: "9.0.3.66"
+ version: "9.0.3.73"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -28,8 +28,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

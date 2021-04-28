@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ResourceSchedulingControls
 name: "Resource Scheduling Controls Solution"
 type: solution
 metadata: 
-  title: "Dataverse Resource Scheduling Controls Solution Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Resource Scheduling Controls Solution Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3b85bfd3-3c6c-4a5e-88a6-86e50b704e58
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Resource Scheduling Controls Solution Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Resource Scheduling Controls Solution Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Contains the Resource Scheduling controls like the next generation Schedule Board."
@@ -26,8 +26,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

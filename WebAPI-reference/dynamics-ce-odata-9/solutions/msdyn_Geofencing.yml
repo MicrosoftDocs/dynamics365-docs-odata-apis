@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdyn_Geofencing
 name: "Geofence Management"
 type: solution
 metadata: 
-  title: "Dataverse Geofence Management Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Geofence Management Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e866985f-76a4-40df-9239-531891b60254
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Geofence Management Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Geofence Management Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Define Geofences and the records that should be monitored for entry and exit, resulting in Geofence Event records that can be configured to trigger some action via a workflow or Microsoft Flow."
  unique_name: msdyn_Geofencing
- version: "1.1.0.34"
+ version: "1.1.0.78"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -38,8 +38,8 @@ actions:
      description: ""
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

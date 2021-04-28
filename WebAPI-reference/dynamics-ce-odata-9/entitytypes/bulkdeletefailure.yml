@@ -2,16 +2,16 @@
 uid: Microsoft.Dynamics.CRM.bulkdeletefailure
 name: "bulkdeletefailure"
 type: entitytype
-metadata:
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+metadata: 
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 190d387a-f97a-4d9d-ab6a-0b72a7ede0cb
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse bulkdeletefailure entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse bulkdeletefailure entitytype."
 description: "Record that was not deleted during a bulk deletion job."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/bulkdeletefailures"
@@ -62,7 +62,7 @@ properties:
       iscomputed: false
       isreadonly: true
 lookup_properties:
-  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties and https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties."
   property_items:
   - name: _asyncoperationid_value
     description: "Unique identifier of the system job that created this record."
@@ -598,14 +598,18 @@ lookup_properties:
     - regardingobjectid_msdyn_contractlinedetailperformance
     - regardingobjectid_msdyn_contractperformance
     - regardingobjectid_msdyn_helppage
-    - regardingobjectid_teammobileofflineprofilemembership
-    - regardingobjectid_usermobileofflineprofilemembership
     - regardingobjectid_msfp_fileresponse
     - regardingobjectid_msfp_surveyreminder
     - regardingobjectid_revokeinheritedaccessrecordstracker
     - regardingobjectid_systemuserauthorizationchangetracker
     - regardingobjectid_organizationdatasyncsubscription
     - regardingobjectid_organizationdatasyncsubscriptionentity
+    - regardingobjectid_teammobileofflineprofilemembership
+    - regardingobjectid_usermobileofflineprofilemembership
+    - regardingobjectid_msdyn_teamsdialeradminsettings
+    - regardingobjectid_keyvaultreference
+    - regardingobjectid_managedidentity
+    - regardingobjectid_appnotification
     description: "Unique identifier of the record that can not be deleted."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
@@ -2240,8 +2244,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.mailbox
 name: "mailbox"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 55719fd5-c785-46af-8a59-ab9730f1ef2c
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse mailbox entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse mailbox entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/mailboxes"
@@ -80,13 +80,13 @@ properties:
     - name: credentialinfo
       type: Edm.String
       display_name: ""
-      description: "Information about server credentials"
+      description: ""
       iscomputed: false
       isreadonly: false
     - name: dataencryptionkey
       type: Edm.String
       display_name: ""
-      description: "encryption key used for CredentialInfo"
+      description: ""
       iscomputed: false
       isreadonly: false
     - name: emailaddress
@@ -941,8 +941,8 @@ solutions:
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

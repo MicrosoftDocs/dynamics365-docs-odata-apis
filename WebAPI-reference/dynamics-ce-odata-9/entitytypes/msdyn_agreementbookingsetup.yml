@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
 name: "msdyn_agreementbookingsetup"
 type: entitytype
 metadata: 
-  title: "Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fd24e748-2b8f-4f7d-9aba-cefbb0e3af50
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_agreementbookingsetup entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_agreementbookingsetup entitytype."
 description: "Specify the maintenance bookings for the agreement."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_agreementbookingsetups"
@@ -483,8 +483,8 @@ solutions:
     description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
 # There are no remarks for this entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -1,22 +1,22 @@
 ### YamlMime:OData
 uid: Microsoft.Dynamics.CRM.MicrosoftFlowExtensionsCore
-name: "Microsoft Flow Extensions core package"
+name: "Power Automate Extensions core package"
 type: solution
 metadata: 
-  title: "Dataverse Microsoft Flow Extensions core package Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Power Automate Extensions core package Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 32bcf6c9-5788-4bef-9585-328ee6132d55
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Microsoft Flow Extensions core package Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Power Automate Extensions core package Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: MicrosoftFlowExtensionsCore
- version: "1.1.7.0"
+ version: "1.2.3.6"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
@@ -27,6 +27,8 @@ entities:
      description: "Stage associated with a process."
    - type: Microsoft.Dynamics.CRM.processstageparameter
      description: ""
+   - type: Microsoft.Dynamics.CRM.workflow
+     description: "Set of logical rules that define the steps necessary to automate a specific business process, task, or set of actions to be performed."
    - type: Microsoft.Dynamics.CRM.workflowbinary
      description: ""
    - type: Microsoft.Dynamics.CRM.workflowlog
@@ -34,8 +36,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

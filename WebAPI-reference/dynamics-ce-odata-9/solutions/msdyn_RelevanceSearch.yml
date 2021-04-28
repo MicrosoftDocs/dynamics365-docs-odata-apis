@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdyn_RelevanceSearch
 name: "msdyn_RelevanceSearch"
 type: solution
 metadata: 
-  title: "Dataverse msdyn_RelevanceSearch Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse msdyn_RelevanceSearch Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bf6eaf7c-042a-47ca-aa9d-60e75f70d25a
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse msdyn_RelevanceSearch Solution."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_RelevanceSearch Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "msdyn_RelevanceSearch solution"
  unique_name: msdyn_RelevanceSearch
- version: "1.0.0.4"
+ version: "1.0.0.7"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
@@ -30,8 +30,8 @@ entities:
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

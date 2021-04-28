@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AttributeMetadata
 name: "AttributeMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Dataverse AttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse AttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 418c8a27-99ca-45d6-9a12-2e43e5364f2e
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse AttributeMetadata metadata entitytype."
+  meta-description: "Reference information about the Microsoft Dataverse AttributeMetadata metadata entitytype."
 header: 
   description: "Contains all the metadata for an entity attribute."
   base_type: Microsoft.Dynamics.CRM.MetadataBase
@@ -212,8 +212,8 @@ usedby:
     used_as: NavigationProperty
 # There are no remarks for this metadata entity.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_PowerAppsChecker
 name: "Power Apps Checker"
 type: solution
 metadata: 
-  title: "Dataverse Power Apps Checker Solution Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Power Apps Checker Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c7358a33-bfd4-40ee-9289-161b3f0b0320
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Dataverse Power Apps Checker Solution."
+  meta-description: "Reference information about the Microsoft Dataverse Power Apps Checker Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Power Apps Checker promotes higher-quality model-driven apps by helping app makers follow best practices when they customize and extend the Power Apps platform. Power Apps Checker performs a static analysis of your Power Apps solutions to identify performance and stability risks, and provides detailed recommendations to remove these risks from your solutions."
@@ -72,8 +72,8 @@ actions:
      description: ""
 # There are no remarks for this solution.
 href_see_also:
-- text: "Use the Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex
