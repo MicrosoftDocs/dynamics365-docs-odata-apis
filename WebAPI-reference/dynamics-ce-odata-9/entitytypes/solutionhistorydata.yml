@@ -1,0 +1,225 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.solutionhistorydata
+name: "solutionhistorydata"
+type: entitytype
+metadata: 
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: bbc35a09-f5e1-4067-8971-752b2f26b392
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse solutionhistorydata entitytype."
+description: "solution history data"
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/solutionhistories"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: SolutionHistoryData
+  primary_key: solutionhistorydataid
+  # This entity doesn't have a primaryAttributeName
+  operations_supported:
+  - GET (RetrieveMultiple Only)
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: activityid
+      type: Edm.Guid
+      display_name: "The Activity Id"
+      description: "The Activity Id."
+      iscomputed: false
+      isreadonly: false
+    - name: correlationid
+      type: Edm.Guid
+      display_name: "The Correlation Id"
+      description: "The Correlation Id."
+      iscomputed: false
+      isreadonly: false
+    - name: endtime
+      type: Edm.DateTimeOffset
+      display_name: "End Time"
+      description: "DateTime of the end of the solution event."
+      iscomputed: false
+      isreadonly: false
+    - name: errorcode
+      type: Edm.Int32
+      display_name: "ErrorCode"
+      description: "The error code of the operation performed on the solution."
+      iscomputed: false
+      isreadonly: false
+    - name: exceptionmessage
+      type: Edm.String
+      display_name: "ExceptionMessage"
+      description: "The Exception Message."
+      iscomputed: false
+      isreadonly: false
+    - name: exceptionstack
+      type: Edm.String
+      display_name: "ExceptionStack"
+      description: "The Exception Stack."
+      iscomputed: false
+      isreadonly: false
+    - name: ismanaged
+      type: Edm.Boolean
+      display_name: "Is Solution Managed"
+      description: "Is Solution Managed"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: ismicrosoftpublisher
+      type: Edm.Boolean
+      display_name: "Is Published by Microsoft"
+      description: "Is the solution published by a Microsoft publisher."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: isoverwritecustomizations
+      type: Edm.Boolean
+      display_name: "Is Overwrite Customizations"
+      description: "Does the event overwrite customizations."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: ispatch
+      type: Edm.Boolean
+      display_name: "Is Solution Patch"
+      description: "Is Solution Patch"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: operation
+      type: Edm.Int32
+      display_name: "Operation"
+      description: "The operation performed on the solution."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Import"
+        - value: 1
+          label: "Uninstall"
+        - value: 2
+          label: "Export"
+    - name: packagename
+      type: Edm.String
+      display_name: "PackageName"
+      description: "Name of the package."
+      iscomputed: false
+      isreadonly: false
+    - name: packageversion
+      type: Edm.String
+      display_name: "PackageVersion"
+      description: "Version of the package."
+      iscomputed: false
+      isreadonly: false
+    - name: publishername
+      type: Edm.String
+      display_name: "PublisherName"
+      description: "Name of the solution's publisher."
+      iscomputed: false
+      isreadonly: false
+    - name: result
+      type: Edm.Int32
+      display_name: "Result"
+      description: "The result of the operation performed on the solution."
+      iscomputed: false
+      isreadonly: false
+    - name: solutionhistorydataid
+      type: Edm.Guid
+      display_name: "SolutionHistoryDataId"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: solutionid
+      type: Edm.Guid
+      display_name: "The Solution"
+      description: "The Solution."
+      iscomputed: false
+      isreadonly: false
+    - name: solutionname
+      type: Edm.String
+      display_name: "SolutionName"
+      description: "Name of the solution."
+      iscomputed: false
+      isreadonly: false
+    - name: solutionversion
+      type: Edm.String
+      display_name: "SolutionVersion"
+      description: "The Version of the Solution."
+      iscomputed: false
+      isreadonly: false
+    - name: starttime
+      type: Edm.DateTimeOffset
+      display_name: "Start Time"
+      description: "DateTime of the start of the solution event."
+      iscomputed: false
+      isreadonly: false
+    - name: status
+      type: Edm.Int32
+      display_name: "Status"
+      description: "The status of the operation performed on the solution."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Start"
+        - value: 1
+          label: "End"
+    - name: suboperation
+      type: Edm.Int32
+      display_name: "SubOperation"
+      description: "The suboperation performed on the solution."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "None"
+        - value: 1
+          label: "New"
+        - value: 2
+          label: "Upgrade"
+        - value: 3
+          label: "Update"
+        - value: 4
+          label: "Delete"
+# This entity has no lookup properties
+# This entity has no single-valued navigation properties
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the solutionhistorydata entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.System
+    description: "Internal CRM System Solution"
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

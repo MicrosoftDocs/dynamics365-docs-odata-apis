@@ -3,30 +3,42 @@ uid: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementFeatures
 name: "Knowledge Management Features"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Knowledge Management Features Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Knowledge Management Features Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 4555ef08-fa2a-4c48-a129-4fbbe44f552c
-  author: "KumarVivek"
+  ms.assetid: 0a2b06ad-deb1-4138-9916-dfb3bb2c9e52
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Knowledge Management Features Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Knowledge Management Features Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 features and migrated controls for knowledge management."
  unique_name: msdynce_KnowledgeManagementFeatures
- version: "9.0.1.1092"
+ version: "9.0.1.3655"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
   entity_items:
+   - type: Microsoft.Dynamics.CRM.email
+     description: "Activity that is delivered using email protocols."
    - type: Microsoft.Dynamics.CRM.knowledgearticle
      description: "Organizational knowledge for internal and external use."
-# This solution includes no actions.
-# This solution has no remarks.
+   - type: Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate
+     description: "Organizational Knowledge Article Template for Internal and external creation of Knowledge Articles."
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_GetKAObjectFromTemplate
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveKnowledgeSuggestions
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveSearchProviders
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Microsoft Dataverse Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

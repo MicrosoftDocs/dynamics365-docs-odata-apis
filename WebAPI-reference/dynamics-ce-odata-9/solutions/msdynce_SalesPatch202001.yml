@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
 name: "Sales Patch Version 3"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Sales Patch Version 3 Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Sales Patch Version 3 Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: d05873b6-e281-4cd7-a53e-2c681ef66817
-  author: "KumarVivek"
+  ms.assetid: d0695489-6115-4c5c-af9c-7e8e88c4423d
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Sales Patch Version 3 Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Sales Patch Version 3 Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for third patch of Sales."
  unique_name: msdynce_SalesPatch202001
- version: "9.0.2003.4015"
- customization_prefix: none
+ version: "9.0.21031.10005"
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -73,6 +73,8 @@ entities:
      description: "Base entity for process Opportunity Sales Process"
    - type: Microsoft.Dynamics.CRM.orderclose
      description: "Activity generated automatically when an order is closed."
+   - type: Microsoft.Dynamics.CRM.organization
+     description: "Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation."
    - type: Microsoft.Dynamics.CRM.productpricelevel
      description: "Information about how to price a product in the specified price level, including pricing method, rounding option, and discount type based on a specified product unit."
    - type: Microsoft.Dynamics.CRM.productsalesliterature
@@ -96,9 +98,9 @@ entities:
    - type: Microsoft.Dynamics.CRM.systemuser
      description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Microsoft Dataverse Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

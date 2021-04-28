@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.NotUnder
 name: "NotUnder"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement NotUnder Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse NotUnder Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f7119a88-87b7-45bb-954a-07a43f1678de
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the NotUnder Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse NotUnder Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function that evaluates whether the specified is not below the referenced record in the hierarchy.  "
 parameters:
@@ -28,7 +28,7 @@ parameters:
     unicode: false
     description: "The value to compare. "
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.NotUnder(PropertyName=@p1,PropertyValue=@p2)&@p1='name'&@p2='value'"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

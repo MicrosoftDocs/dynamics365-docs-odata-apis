@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.SetParentSystemUser
 name: "SetParentSystemUser"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SetParentSystemUser Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5a4d1065-09c4-4300-a2be-bb192dae5869
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the SetParentSystemUser Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse SetParentSystemUser Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Sets a new parent system user (user) for the specified user.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -44,7 +44,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.team
     displayName: Team
     description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

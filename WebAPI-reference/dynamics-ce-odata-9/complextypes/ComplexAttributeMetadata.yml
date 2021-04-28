@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
 name: "ComplexAttributeMetadata"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ComplexAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse ComplexAttributeMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 33bfd6cc-064b-46d4-be51-90e7b8831911
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API ComplexAttributeMetadata ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API ComplexAttributeMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains the metadata for a complex attribute." 
@@ -264,6 +264,18 @@ properties:
     unicode: false
     description: "For internal use only."
     iscollection: false
+  - name: CreatedOn
+    type: Edm.DateTimeOffset
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+  - name: ModifiedOn
+    type: Edm.DateTimeOffset
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
   - name: SourceType
     type: Edm.Int32
     nullable: true
@@ -294,7 +306,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

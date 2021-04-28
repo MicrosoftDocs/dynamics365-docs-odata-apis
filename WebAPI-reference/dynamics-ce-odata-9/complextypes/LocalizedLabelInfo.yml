@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.LocalizedLabelInfo
 name: "LocalizedLabelInfo"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement LocalizedLabelInfo ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse LocalizedLabelInfo ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 06f50bf4-efc3-4678-a63d-cab94074a36f
-  author: "KumarVivek"
+  ms.assetid: 88405720-d321-44b8-b772-0196df855f7e
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API LocalizedLabelInfo ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API LocalizedLabelInfo ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -36,7 +36,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.LocalizedLabelDetails
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

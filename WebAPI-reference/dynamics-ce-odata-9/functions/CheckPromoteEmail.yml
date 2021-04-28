@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CheckPromoteEmail
 name: "CheckPromoteEmail"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CheckPromoteEmail Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse CheckPromoteEmail Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0b7b1355-2da3-47ac-976d-5e694a1b81b2
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the CheckPromoteEmail Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse CheckPromoteEmail Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Contains the data that is needed to check whether the incoming email message should be promoted to the Microsoft Dynamics 365 system. "
 iscomposable: false
@@ -49,7 +49,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.email
     displayName: "Email"
     description: "Activity that is delivered using email protocols."
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.GetQuantityDecimal
 name: "GetQuantityDecimal"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement GetQuantityDecimal Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse GetQuantityDecimal Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1df0ff5f-66e9-4871-aac8-6d67196322cc
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the GetQuantityDecimal Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse GetQuantityDecimal Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Gets the quantity decimal value of a product for the specified entity in the target. "
 iscomposable: false
@@ -47,7 +47,7 @@ return_type:
   iscollection: false
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

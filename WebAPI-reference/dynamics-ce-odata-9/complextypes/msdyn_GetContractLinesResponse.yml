@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_GetContractLinesResponse
 name: "msdyn_GetContractLinesResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_GetContractLinesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse msdyn_GetContractLinesResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1dfa9a4a-d3c3-4ceb-8e8a-da4a20f8251d
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API msdyn_GetContractLinesResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API msdyn_GetContractLinesResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "For internal use only." 
@@ -30,7 +30,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.msdyn_GetContractLines
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AddPrincipalToQueue
 name: "AddPrincipalToQueue"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AddPrincipalToQueue Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2514afd5-88a5-46f1-8206-8426b67edc2d
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the AddPrincipalToQueue Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse AddPrincipalToQueue Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Adds the specified principal to the list of queue members. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -31,7 +31,7 @@ parameters:
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

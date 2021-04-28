@@ -3,18 +3,18 @@ uid: Microsoft.Dynamics.CRM.AppValidationResponse
 name: "AppValidationResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AppValidationResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse AppValidationResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 775e438f-a1a7-4fa8-b2f5-442eee52977a
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API AppValidationResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API AppValidationResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
-description: "Contains the results of the ValidateApp action. " 
+description: "" 
 properties:
   description: "The properties of a complex type contain the structured data of the type."
   property_items:
@@ -22,13 +22,13 @@ properties:
     type: Edm.Boolean
     nullable: true
     unicode: true
-    description: "Whether the app has any validation errors."
+    description: ""
     iscollection: false
   - name: ValidationIssueList
     type: Microsoft.Dynamics.CRM.ValidationIssue
     nullable: false
     unicode: true
-    description: "List of the validation errors, if any."
+    description: ""
     iscollection: true
 # This complex type doesn't have any navigation properties.
 usedby:
@@ -36,7 +36,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.ValidateAppResponse
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

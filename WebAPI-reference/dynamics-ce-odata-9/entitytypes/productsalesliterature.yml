@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.productsalesliterature
 name: "productsalesliterature"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement productsalesliterature EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6c77765f-c61b-442a-a6c9-c2539ce9cc7c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the productsalesliterature entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse productsalesliterature entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/productsalesliteratures"
@@ -105,7 +105,7 @@ solutions:
     description: "Dynamics 365 workload for sales."
   - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
     description: "Dynamics 365 workload for third patch of Sales."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

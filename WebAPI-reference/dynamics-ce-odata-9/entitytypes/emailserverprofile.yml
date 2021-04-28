@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.emailserverprofile
 name: "emailserverprofile"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement emailserverprofile EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bc588c67-2962-4d40-9f04-ef3beb2e6b41
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the emailserverprofile entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse emailserverprofile entitytype."
 description: "Holds the Email Server Profiles of an organization"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/emailserverprofiles"
@@ -34,6 +34,18 @@ properties:
       description: "Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
       iscomputed: false
       isreadonly: true
+    - name: credentialinfo
+      type: Edm.String
+      display_name: "Information about server credentials"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: dataencryptionkey
+      type: Edm.String
+      display_name: "encryption key used for CredentialInfo"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: defaultserverlocation
       type: Edm.String
       display_name: "Default Email Server Location"
@@ -128,6 +140,8 @@ properties:
           label: "NTLM"
         - value: 3
           label: "Basic"
+        - value: 4
+          label: "OAuth"
     - name: incomingcredentialretrieval
       type: Edm.Int32
       display_name: "Incoming Email Credential Retrieval"
@@ -145,6 +159,8 @@ properties:
           label: "Windows Integrated Authentication"
         - value: 4
           label: "Without Credentials (Anonymous)"
+        - value: 5
+          label: "Gmail OAuth"
     - name: incomingpassword
       type: Edm.String
       display_name: "Incoming Email Password"
@@ -191,7 +207,29 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
+    - name: isdataencryptionkeyset
+      type: Edm.Boolean
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: isincomingpasswordset
+      type: Edm.Boolean
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: isoauthclientsecretset
       type: Edm.Boolean
       display_name: ""
       description: ""
@@ -313,6 +351,18 @@ properties:
       description: "Type a meaningful name for the email server profile. This name is displayed when you need to select an email server profile."
       iscomputed: false
       isreadonly: false
+    - name: oauthclientid
+      type: Edm.String
+      display_name: "Oauth ClientId"
+      description: "ClientId used for OAuth athentication scheme"
+      iscomputed: false
+      isreadonly: false
+    - name: oauthclientsecret
+      type: Edm.String
+      display_name: "OAuth Client Secret"
+      description: "Client secret used for the OAuth authentication scheme"
+      iscomputed: false
+      isreadonly: false
     - name: outgoingauthenticationprotocol
       type: Edm.Int32
       display_name: "Outgoing Authentication Protocol"
@@ -328,6 +378,8 @@ properties:
           label: "NTLM"
         - value: 3
           label: "Basic"
+        - value: 4
+          label: "OAuth"
     - name: outgoingautograntdelegateaccess
       type: Edm.Boolean
       display_name: "Auto Grant Delegate Access for Outgoing Email."
@@ -356,6 +408,8 @@ properties:
           label: "Windows Integrated Authentication"
         - value: 4
           label: "Without Credentials (Anonymous)"
+        - value: 5
+          label: "Gmail OAuth"
     - name: outgoingpassword
       type: Edm.String
       display_name: "Outgoing Email Password"
@@ -649,7 +703,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

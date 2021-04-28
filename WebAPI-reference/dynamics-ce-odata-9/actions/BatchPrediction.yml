@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.BatchPrediction
 name: "BatchPrediction"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement BatchPrediction Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 5237664f-3aad-44de-a6a9-2255609149f2
-  author: "KumarVivek"
+  ms.assetid: cd163843-24fb-4d2a-a29c-4c0f4ab2759e
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the BatchPrediction Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse BatchPrediction Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -34,7 +34,7 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.BatchPredictionResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

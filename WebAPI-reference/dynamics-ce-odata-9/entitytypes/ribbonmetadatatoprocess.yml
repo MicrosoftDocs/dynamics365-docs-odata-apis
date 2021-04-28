@@ -1,0 +1,116 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.ribbonmetadatatoprocess
+name: "ribbonmetadatatoprocess"
+type: entitytype
+metadata: 
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 2f89c829-a318-43dc-8b4e-37476fd80159
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse ribbonmetadatatoprocess entitytype."
+description: "Container for Ribbon Metadata To Process"
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/ribbonmetadatasettoprocess"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Ribbon Metadata To Process
+  primary_key: ribbonmetadatarowid
+  # This entity doesn't have a primaryAttributeName
+  operations_supported:
+  - GET (RetrieveMultiple Only)
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: completedon
+      type: Edm.DateTimeOffset
+      display_name: "Completed On"
+      description: "Shows the date and time when the ribbon entity record has finished processing. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+      iscomputed: false
+      isreadonly: true
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+      iscomputed: false
+      isreadonly: true
+    - name: entityname
+      type: Edm.String
+      display_name: "Entity Logical Name"
+      description: "Entity Logical Name"
+      iscomputed: false
+      isreadonly: false
+    - name: exceptionmessage
+      type: Edm.String
+      display_name: "Exception message which occurred during ribbon entity processing."
+      description: "Exception message"
+      iscomputed: false
+      isreadonly: false
+    - name: isdbupdate
+      type: Edm.Int32
+      display_name: "Is entity created via Db Update"
+      description: "Is entity created via Db Update"
+      iscomputed: false
+      isreadonly: false
+    - name: processedon
+      type: Edm.DateTimeOffset
+      display_name: "Processed On"
+      description: "Shows the date and time when the record was processed. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+      iscomputed: false
+      isreadonly: true
+    - name: retrycount
+      type: Edm.Int32
+      display_name: "Retry Count"
+      description: "Retry Count"
+      iscomputed: false
+      isreadonly: false
+    - name: ribbonmetadatarowid
+      type: Edm.Guid
+      display_name: "Ribbon Metadata To Process"
+      description: "Unique identifier for Ribbon Metadata Instance To Process"
+      iscomputed: false
+      isreadonly: false
+    - name: solutionid
+      type: Edm.Guid
+      display_name: "Solution Id"
+      description: "Solution Id"
+      iscomputed: false
+      isreadonly: false
+    - name: solutionname
+      type: Edm.String
+      display_name: "Solution Name of the ribbon entity."
+      description: "Solution Name of the ribbon entity"
+      iscomputed: false
+      isreadonly: false
+    - name: status
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status"
+      iscomputed: false
+      isreadonly: false
+# This entity has no lookup properties
+# This entity has no single-valued navigation properties
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the ribbonmetadatatoprocess entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.System
+    description: "Internal CRM System Solution"
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

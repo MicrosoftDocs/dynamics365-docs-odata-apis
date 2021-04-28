@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.entityanalyticsconfig
 name: "entityanalyticsconfig"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement entityanalyticsconfig EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 8a511d50-a437-48b9-a445-1bc6ae1c250e
-  author: "KumarVivek"
+  ms.assetid: 07a0bc48-ccf9-4ead-9a55-5b4b3b02ff8c
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the entityanalyticsconfig entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse entityanalyticsconfig entitytype."
 description: "This entity contains information about which entities are enabled for Azure Data Lake Services integration"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/entityanalyticsconfigs"
@@ -49,6 +49,12 @@ properties:
           label: "Deleted"
         - value: 3
           label: "Deleted Unpublished"
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
     - name: entityanalyticsconfigid
       type: Edm.Guid
       display_name: "Entity Analytics Config"
@@ -59,6 +65,17 @@ properties:
       type: Edm.Boolean
       display_name: "Is Enabled For ADLS"
       description: "Azure Data Lake Storage is enabled for the selected entity"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: isenabledfortimeseries
+      type: Edm.Boolean
+      display_name: "Is Enabled For Time Series"
+      description: "Time series is enabled for the selected entity"
       iscomputed: false
       isreadonly: false
       options:
@@ -77,6 +94,12 @@ properties:
           label: "Managed"
         - value: 0
           label: "Unmanaged"
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
     - name: overwritetime
       type: Edm.DateTimeOffset
       display_name: "Record Overwrite Time"
@@ -146,7 +169,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.AdvancedAnalyticsInfra
     description: ""
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

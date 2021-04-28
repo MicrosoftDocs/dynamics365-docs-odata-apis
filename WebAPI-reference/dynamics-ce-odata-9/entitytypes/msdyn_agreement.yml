@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_agreement
 name: "msdyn_agreement"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_agreement EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3d527330-79b0-4055-9061-26c717ebdf4b
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_agreement entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_agreement entitytype."
 description: "Provides ability to store details about service agreements you have with your customers"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_agreements"
@@ -104,6 +104,12 @@ properties:
       type: Edm.String
       display_name: "Agreement Number"
       description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_processstartedon
+      type: Edm.DateTimeOffset
+      display_name: "Process Started On"
+      description: "For internal use only"
       iscomputed: false
       isreadonly: false
     - name: msdyn_startdate
@@ -356,6 +362,15 @@ collection_valued_navigation_properties:
   - name: msdyn_agreement_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_msdyn_agreement_letter
+  - name: msdyn_agreement_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_agreement_li_inmail
+  - name: msdyn_agreement_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_agreement_li_message
+  - name: msdyn_agreement_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_agreement_li_pointdrivepresentationviewed
   - name: msdyn_agreement_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_agreement
@@ -365,6 +380,15 @@ collection_valued_navigation_properties:
   - name: msdyn_agreement_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_msdyn_agreement_msdyn_bookingalert
+  - name: msdyn_agreement_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_agreement_msfp_alert
+  - name: msdyn_agreement_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_agreement_msfp_surveyinvite
+  - name: msdyn_agreement_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_agreement_msfp_surveyresponse
   - name: msdyn_agreement_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_agreement_phonecall
@@ -447,6 +471,8 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_FieldServiceAgreementSystemStatusAction
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -458,7 +484,9 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

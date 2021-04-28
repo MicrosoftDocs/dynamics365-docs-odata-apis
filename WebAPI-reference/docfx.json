@@ -109,7 +109,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/bc/toc.yml"
+      "breadcrumb_path": "~/bc/toc.yml",
+      "ms.topic": "reference"
     },
     "fileMetadata": {},
     "template": [],

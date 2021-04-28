@@ -1,0 +1,100 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.virtualresourcegroupresource
+name: "virtualresourcegroupresource"
+type: entitytype
+metadata: 
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: bc3dcecc-48ed-4d83-b35f-0a822bc62f35
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse virtualresourcegroupresource entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/virtualresourcegroupresources"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Virtual Resource Group Resource
+  primary_key: virtualresourcegroupresourceid
+  primary_name_attribute: name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: businessunit
+      type: Edm.String
+      display_name: "Business Unit"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: constraintbasedgroupid
+      type: Edm.String
+      display_name: "constraintbasedgroupid"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: resourceentitylogicalname
+      type: Edm.String
+      display_name: "Entity type logical name"
+      description: "Entity type logical name of resource"
+      iscomputed: false
+      isreadonly: false
+    - name: resourceentityname
+      type: Edm.String
+      display_name: "Entity Type"
+      description: "Entity type of resource"
+      iscomputed: false
+      isreadonly: false
+    - name: virtualresourcegroupresourceid
+      type: Edm.Guid
+      display_name: "virtualresourcegroupresource"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _resourcegroupid_value
+    single_valued_navigation_property:
+    - resourcegroupId
+    description: "Unique identifier for Resource Group associated with virtualresourcegroupresource."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: resourcegroupId
+    type: Microsoft.Dynamics.CRM.constraintbasedgroup
+    partner: constraintbasedgroup_virtualresourceg
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the virtualresourcegroupresource entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
+    description: "Dynamics 365 workload for service."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

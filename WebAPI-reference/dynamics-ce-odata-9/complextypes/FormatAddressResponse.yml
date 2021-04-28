@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.FormatAddressResponse
 name: "FormatAddressResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement FormatAddressResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse FormatAddressResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0efb5df7-3379-45f7-8857-2bec0d20d060
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API FormatAddressResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API FormatAddressResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains the response from the FormatAddress Function." 
@@ -30,7 +30,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.FormatAddress
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

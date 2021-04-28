@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.InFiscalYear
 name: "InFiscalYear"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement InFiscalYear Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse InFiscalYear Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4807d462-ebc9-4fc4-b549-81bd66272f06
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the InFiscalYear Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse InFiscalYear Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function that evaluates whether the value is within the specified fiscal year.  "
 parameters:
@@ -28,7 +28,7 @@ parameters:
     unicode: true
     description: "The value of the fiscal year. "
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.InFiscalYear(PropertyName=@p1,PropertyValue=@p2)&@p1='name'&@p2=42"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

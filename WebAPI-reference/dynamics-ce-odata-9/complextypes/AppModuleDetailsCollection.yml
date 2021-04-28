@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AppModuleDetailsCollection
 name: "AppModuleDetailsCollection"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AppModuleDetailsCollection ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse AppModuleDetailsCollection ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 54aaf90e-6c57-4442-85c5-14b22ccfcc8c
-  author: "KumarVivek"
+  ms.assetid: 5fa9e708-dd2d-42da-a61b-fe647a1ed80e
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API AppModuleDetailsCollection ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API AppModuleDetailsCollection ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -26,7 +26,7 @@ properties:
     iscollection: true
 # This complex type doesn't have any navigation properties.
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

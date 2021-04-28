@@ -1,0 +1,35 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.MicrosoftDynamics_PreImport
+name: "Pre-Import Adjustments"
+type: solution
+metadata: 
+  title: "Common Data Service Pre-Import Adjustments Solution Reference | MicrosoftDocs"
+  ms.date: "01/20/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 136a3b12-3971-413c-b943-3697573e3331
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Pre-Import Adjustments Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Pre-Import Adjustments"
+ unique_name: MicrosoftDynamics_PreImport
+ version: "1.57.1054.0"
+ customization_prefix: msdyn
+# This solution includes no entities.
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

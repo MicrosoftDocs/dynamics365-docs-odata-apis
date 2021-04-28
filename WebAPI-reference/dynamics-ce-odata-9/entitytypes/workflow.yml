@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.workflow
 name: "workflow"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement workflow EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7c5681b1-7ae7-428e-bbec-6a733a45bb34
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the workflow entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse workflow entitytype."
 description: "Set of logical rules that define the steps necessary to automate a specific business process, task, or set of actions to be performed."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/workflows"
@@ -70,7 +70,7 @@ properties:
         - value: 5
           label: "Modern Flow"
         - value: 6
-          label: "Reserved"
+          label: "Desktop Flow"
     - name: clientdata
       type: Edm.String
       display_name: "Client Data"
@@ -183,6 +183,12 @@ properties:
       type: Microsoft.Dynamics.CRM.BooleanManagedProperty
       display_name: "Customizable"
       description: "Information that specifies whether this component can be customized."
+      iscomputed: false
+      isreadonly: false
+    - name: iscustomprocessingstepallowedforotherpublishers
+      type: Microsoft.Dynamics.CRM.BooleanManagedProperty
+      display_name: "Allow custom processing step for other publishers"
+      description: "Defines whether other publishers can attach custom processing steps to this action"
       iscomputed: false
       isreadonly: false
     - name: ismanaged
@@ -425,17 +431,17 @@ properties:
       isreadonly: true
     - name: uiflowtype
       type: Edm.Int32
-      display_name: "UI Flow Type"
-      description: "Type of the UI Flow process."
+      display_name: "Desktop Flow Type"
+      description: "Type of the Desktop Flow process."
       iscomputed: false
       isreadonly: false
       options:
         - value: 0
-          label: "Desktop"
+          label: "Windows recorder (V1)"
         - value: 1
           label: "Selenium IDE"
         - value: 2
-          label: "PowerShell"
+          label: "Power Automate Desktop"
     - name: uniquename
       type: Edm.String
       display_name: "Unique Name"
@@ -584,12 +590,30 @@ collection_valued_navigation_properties:
   - name: lk_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d_processid
     type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
     partner: processid
+  - name: lk_msdyn_iottocaseprocess_processid
+    type: Microsoft.Dynamics.CRM.msdyn_iottocaseprocess
+    partner: processid
   - name: lk_processsession_processid
     type: Microsoft.Dynamics.CRM.processsession
     partner: processid
   - name: msdyn_retrainworkflow_msdyn_toaimodel
     type: Microsoft.Dynamics.CRM.msdyn_aimodel
     partner: msdyn_retrainworkflowid
+  - name: msdyn_scheduleinferenceworkflow_msdyn_toaimodel
+    type: Microsoft.Dynamics.CRM.msdyn_aimodel
+    partner: msdyn_scheduleinferenceworkflowid
+  - name: msdyn_workflow_msdyn_macrosession_macroname
+    type: Microsoft.Dynamics.CRM.msdyn_macrosession
+    partner: msdyn_macroname
+  - name: msdyn_workflow_msdyn_prod_agentscriptstep_macroactionid
+    type: Microsoft.Dynamics.CRM.msdyn_productivityagentscriptstep
+    partner: msdyn_macroactionid
+  - name: msdyn_workflow_msdyn_solutionhealthrule_resolutionaction
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthrule
+    partner: msdyn_resolutionaction
+  - name: msdyn_workflow_msdyn_solutionhealthrule_Workflow
+    type: Microsoft.Dynamics.CRM.msdyn_solutionhealthrule
+    partner: msdyn_Workflow
   - name: process_processstage
     type: Microsoft.Dynamics.CRM.processstage
     partner: processid
@@ -635,6 +659,9 @@ collection_valued_navigation_properties:
   - name: workflow_translationprocess
     type: Microsoft.Dynamics.CRM.translationprocess
     partner: processid
+  - name: workflow_workflowbinary_Process
+    type: Microsoft.Dynamics.CRM.workflowbinary
+    partner: Process
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the workflow entity type."
@@ -658,15 +685,25 @@ operations:
 solutions:
   description: "The following solutions include the workflow entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.MessageProcessorExtension
+    description: "MessageProcessorExtension Solution"
+  - type: Microsoft.Dynamics.CRM.MicrosoftFlowExtensionsCore
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msdyn_Agentscripts
+    description: "Agent scripts to be used in productivity tool"
+  - type: Microsoft.Dynamics.CRM.msdyn_Macros
+    description: "Macros to be used in productivity tool."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch
+    description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.Relationshipassistant
     description: "Relationship assistant Feature Description."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

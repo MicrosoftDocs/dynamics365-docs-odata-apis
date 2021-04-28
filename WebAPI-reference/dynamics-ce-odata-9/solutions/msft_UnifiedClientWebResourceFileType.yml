@@ -1,0 +1,39 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msft_UnifiedClientWebResourceFileType
+name: "UnifiedClientWebResourceFileType"
+type: solution
+metadata: 
+  title: "Microsoft Dataverse UnifiedClientWebResourceFileType Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 9c281abb-9338-499c-bdc1-4544ca863944
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse UnifiedClientWebResourceFileType Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Unified Client WebResource File Type"
+ unique_name: msft_UnifiedClientWebResourceFileType
+ version: "1.0.0.0"
+ customization_prefix: default
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.webresource
+     description: "Data equivalent to files used in Web development. Web resources provide client-side components that are used to provide custom user interface elements."
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

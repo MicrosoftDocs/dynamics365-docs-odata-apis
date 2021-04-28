@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_iotalert
 name: "msdyn_iotalert"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_iotalert EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e00fac3c-a88f-4b18-bd2d-b580edc36506
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_iotalert entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_iotalert entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_iotalerts"
@@ -50,6 +50,12 @@ properties:
       type: Edm.String
       display_name: "Alert Data"
       description: "Data sent from the device about the alert."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_alertpriorityscore
+      type: Edm.Int32
+      display_name: "Priority Score (%)"
+      description: "The suggested priority score for this alert."
       iscomputed: false
       isreadonly: false
     - name: msdyn_alerttime
@@ -111,10 +117,25 @@ properties:
       isreadonly: false
     - name: msdyn_parentalerttoken
       type: Edm.String
-      display_name: "Parent Alert Token"
-      description: "Reference to a previously created parent iot alert"
+      display_name: "Primary Alert Token"
+      description: "Reference to a previously created primary iot alert"
       iscomputed: false
       isreadonly: false
+    - name: msdyn_suggestedpriority
+      type: Edm.Int32
+      display_name: "Suggested Priority"
+      description: "The suggested priority for this alert."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Calculating"
+        - value: 192350001
+          label: "High"
+        - value: 192350002
+          label: "Low"
+        - value: 192350003
+          label: "No Suggestions"
     - name: overriddencreatedon
       type: Edm.DateTimeOffset
       display_name: "Record Created On"
@@ -161,6 +182,8 @@ properties:
           label: "In Progress - Command Sent"
         - value: 6
           label: "Closed"
+        - value: 7
+          label: "In Progress - Command Failed"
     - name: timezoneruleversionnumber
       type: Edm.Int32
       display_name: "Time Zone Rule Version Number"
@@ -223,7 +246,11 @@ lookup_properties:
   - name: _msdyn_parentalert_value
     single_valued_navigation_property:
     - msdyn_ParentAlert
-    description: "Reference to a parent alert. This field is inferred if Parent Alert Token is set."
+    description: "Reference to a primary alert. This field is inferred if Primary Alert Token is set."
+  - name: _msdyn_suggestedincidenttype_value
+    single_valued_navigation_property:
+    - msdyn_suggestedincidenttype
+    description: "The suggested incident type for this alert"
   - name: _msdyn_workorder_value
     single_valued_navigation_property:
     - msdyn_Workorder
@@ -278,6 +305,9 @@ single_valued_navigation_properties:
   - name: msdyn_ParentAlert
     type: Microsoft.Dynamics.CRM.msdyn_iotalert
     partner: msdyn_iotalert_msdyn_iotalert
+  - name: msdyn_suggestedincidenttype
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttype
+    partner: msdyn_msdyn_incidenttype_msdyn_iotalert_IncidentType
   - name: msdyn_Workorder
     type: Microsoft.Dynamics.CRM.msdyn_workorder
     partner: msdyn_msdyn_workorder_msdyn_iotalert_Workorder
@@ -301,6 +331,9 @@ collection_valued_navigation_properties:
   property_items:
   - name: bpf_msdyn_iotalert_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
     type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
+    partner: bpf_msdyn_iotalertid
+  - name: bpf_msdyn_iotalert_msdyn_iottocaseprocess
+    type: Microsoft.Dynamics.CRM.msdyn_iottocaseprocess
     partner: bpf_msdyn_iotalertid
   - name: msdyn_iotalert_Annotations
     type: Microsoft.Dynamics.CRM.annotation
@@ -369,7 +402,11 @@ solutions:
     description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
   - type: Microsoft.Dynamics.CRM.IoTConnector
     description: "Enables IoT scenarios in Dynamics 365."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerService
+    description: "Use Connected Customer Service to monitor connected devices to make sure your customer’s equipment is functioning properly. If a piece of equipment fails, you’ll receive a notification so that you can troubleshoot the problem remotely."
+  - type: Microsoft.Dynamics.CRM.msdyn_IoTAssetCommon
+    description: "Enables IoT Scenarios for Customer Asset"
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

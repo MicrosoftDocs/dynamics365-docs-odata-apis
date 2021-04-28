@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.postfollow
 name: "postfollow"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement postfollow EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 91b2760f-6981-4b78-b5f6-f326eca2b4b0
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the postfollow entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse postfollow entitytype."
 description: "Represents a user following the activity feed of an object."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/postfollows"
@@ -93,15 +93,15 @@ lookup_properties:
   - name: _regardingobjectid_value
     single_valued_navigation_property:
     - regardingobjectid_account
-    - regardingobjectid_processsession
-    - regardingobjectid_queue
-    - regardingobjectid_systemuser
     - regardingobjectid_contact
+    - regardingobjectid_systemuser
+    - regardingobjectid_queue
+    - regardingobjectid_processsession
     - regardingobjectid_knowledgearticle
-    - regardingobjectid_lead
-    - regardingobjectid_incident
-    - regardingobjectid_opportunity
     - regardingobjectid_competitor
+    - regardingobjectid_incident
+    - regardingobjectid_lead
+    - regardingobjectid_opportunity
     description: "Choose the parent record for the followed post to identify the customer, opportunity, case, or other record type that the post most closely relates to."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
@@ -190,7 +190,7 @@ solutions:
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

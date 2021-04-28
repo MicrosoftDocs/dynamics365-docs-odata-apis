@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveProductProperties
 name: "RetrieveProductProperties"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveProductProperties Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse RetrieveProductProperties Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 759ef479-77df-4101-87f1-7cf442e3e753
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveProductProperties Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveProductProperties Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieve all the property instances (dynamic property instances) for a product added to an opportunity, quote, order, or invoice. "
 iscomposable: false
@@ -39,7 +39,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.dynamicpropertyinstance
     displayName: "Property Instance"
     description: "Instance of a property with its value."
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

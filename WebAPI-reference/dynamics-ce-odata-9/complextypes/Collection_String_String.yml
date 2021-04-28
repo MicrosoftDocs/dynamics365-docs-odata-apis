@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.Collection_String_String
 name: "Collection_String_String"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Collection_String_String ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Collection_String_String ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 2889036d-c376-4cd9-8d70-eefc9085bebf
-  author: "KumarVivek"
+  ms.assetid: e08d94cd-4248-4b85-a710-cfb96fbae945
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API Collection_String_String ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API Collection_String_String ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -44,7 +44,7 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.SolutionComponentDetails
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.site
 name: "site"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement site EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d7588eae-c24f-480b-87a3-6c340b4d1d93
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the site entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse site entitytype."
 description: "Location or branch office where an organization does business. An organization can have multiple sites."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/sites"
@@ -426,6 +426,15 @@ collection_valued_navigation_properties:
   - name: site_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_site_letter
+  - name: site_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_site_li_inmail
+  - name: site_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_site_li_message
+  - name: site_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_site_li_pointdrivepresentationviewed
   - name: site_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_site
@@ -435,6 +444,15 @@ collection_valued_navigation_properties:
   - name: site_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_site_msdyn_bookingalert
+  - name: site_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_site_msfp_alert
+  - name: site_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_site_msfp_surveyinvite
+  - name: site_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_site_msfp_surveyresponse
   - name: site_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_site_opportunityclose
@@ -488,7 +506,7 @@ solutions:
     description: "Patch for Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
     description: "Dynamics 365 workload for service."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

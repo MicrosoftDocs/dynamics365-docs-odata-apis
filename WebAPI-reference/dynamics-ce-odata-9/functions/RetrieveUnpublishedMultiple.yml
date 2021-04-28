@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveUnpublishedMultiple
 name: "RetrieveUnpublishedMultiple"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveUnpublishedMultiple Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse RetrieveUnpublishedMultiple Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4ea21be4-fe0e-4fcf-afe9-0d428ee36210
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveUnpublishedMultiple Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveUnpublishedMultiple Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves a collection of unpublished organization-owned records that satisfy the specified query criteria. "
 iscomposable: true
@@ -56,7 +56,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.mobileofflineprofileitemassociation
     displayName: "Mobile Offline Profile Item Association"
     description: "Information on relationships to be used to follow related entity's records for mobile offline profile item."
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -1,0 +1,45 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_ResourceReservationCancelResponse
+name: "msdyn_ResourceReservationCancelResponse"
+type: complextype
+metadata: 
+  title: "Microsoft Dataverse msdyn_ResourceReservationCancelResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 9b73d3a7-429e-4a12-9f95-a8658afe5858
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API msdyn_ResourceReservationCancelResponse ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "For internal use only." 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: AvailabilityViewChartItems
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: "For internal use only."
+    iscollection: false
+# This complex type doesn't have any navigation properties.
+usedby:
+  description: "The following use the msdyn_ResourceReservationCancelResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.msdyn_ResourceReservationCancel
+    used_as: ReturnType
+# There are no remarks for this complex type.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

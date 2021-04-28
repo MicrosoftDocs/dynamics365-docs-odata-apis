@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_GetProjectCoparticipationResponse
 name: "msdyn_GetProjectCoparticipationResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_GetProjectCoparticipationResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse msdyn_GetProjectCoparticipationResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 376f938c-299d-4dea-b7da-3ba7f549e34f
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API msdyn_GetProjectCoparticipationResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API msdyn_GetProjectCoparticipationResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "For internal use only." 
@@ -30,7 +30,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.msdyn_GetProjectCoparticipation
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

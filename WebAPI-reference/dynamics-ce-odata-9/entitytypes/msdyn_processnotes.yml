@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_processnotes
 name: "msdyn_processnotes"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_processnotes EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a1c62eed-c212-4270-ace8-289f3f5502e3
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_processnotes entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_processnotes entitytype."
 description: "Stores messages or notes relevant to an operation or process executed by an entity."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_processnoteses"
@@ -214,6 +214,15 @@ collection_valued_navigation_properties:
   - name: msdyn_processnotes_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_msdyn_processnotes_letter
+  - name: msdyn_processnotes_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_processnotes_li_inmail
+  - name: msdyn_processnotes_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_processnotes_li_message
+  - name: msdyn_processnotes_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_processnotes_li_pointdrivepresentationviewed
   - name: msdyn_processnotes_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_processnotes
@@ -223,6 +232,15 @@ collection_valued_navigation_properties:
   - name: msdyn_processnotes_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_msdyn_processnotes_msdyn_bookingalert
+  - name: msdyn_processnotes_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_processnotes_msfp_alert
+  - name: msdyn_processnotes_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_processnotes_msfp_surveyinvite
+  - name: msdyn_processnotes_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_processnotes_msfp_surveyresponse
   - name: msdyn_processnotes_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_processnotes_phonecall
@@ -256,9 +274,11 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_processnotes entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

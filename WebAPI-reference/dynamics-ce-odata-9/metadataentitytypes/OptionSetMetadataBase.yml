@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.OptionSetMetadataBase
 name: "OptionSetMetadataBase"
 type: metadataentitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement OptionSetMetadataBase Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse OptionSetMetadataBase Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2913f357-a9ab-42ab-8d84-7fe514b8ac34
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the OptionSetMetadataBase metadata entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse OptionSetMetadataBase metadata entitytype."
 header: 
   description: "Contains data that defines a set of options."
   entity_set_path:  "[organization URI]/api/data/v9.0/GlobalOptionSetDefinitions"
@@ -83,7 +83,7 @@ derived_types:
    - type: Microsoft.Dynamics.CRM.OptionSetMetadata
      description: "Contains metadata that defines a set of options."
 # This entity is not used by other entities or operations.
-# This metadata entity has no remarks.
+# There are no remarks for this metadata entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_SchedulingPatch
 name: "Scheduling Patch"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Scheduling Patch Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Scheduling Patch Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 4a1588b5-8a23-4419-ad78-655ac7a34c1b
-  author: "KumarVivek"
+  ms.assetid: a3e98d94-3958-4eb7-adc5-77335d549cc4
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Scheduling Patch Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Scheduling Patch Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for scheduling."
  unique_name: msdynce_SchedulingPatch
  version: "9.0.3.0"
- customization_prefix: none
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -26,9 +26,9 @@ entities:
    - type: Microsoft.Dynamics.CRM.organization
      description: "Top level of the Microsoft Dynamics 365 business hierarchy. The organization can be a specific business, holding company, or corporation."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Microsoft Dataverse Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

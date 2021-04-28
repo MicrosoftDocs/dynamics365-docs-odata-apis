@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RelationshipMetadataBase
 name: "RelationshipMetadataBase"
 type: metadataentitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RelationshipMetadataBase Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse RelationshipMetadataBase Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e88dd69e-8f74-4346-85b5-ed8c26511de3
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RelationshipMetadataBase metadata entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RelationshipMetadataBase metadata entitytype."
 header: 
   description: "Contains the metadata for an entity relationship."
   entity_set_path:  "[organization URI]/api/data/v9.0/RelationshipDefinitions"
@@ -71,7 +71,7 @@ derived_types:
    - type: Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata
      description: "Contains the metadata for a one-to-many entity relationship."
 # This entity is not used by other entities or operations.
-# This metadata entity has no remarks.
+# There are no remarks for this metadata entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

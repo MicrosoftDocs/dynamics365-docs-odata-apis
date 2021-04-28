@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.PropagationOwnershipOptions
 name: "PropagationOwnershipOptions"
 type: enumtype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement PropagationOwnershipOptions EnumType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse PropagationOwnershipOptions EnumType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 86b7247c-f0d5-439d-97af-1f9065908795
-  author: "KumarVivek"
+  author: "kumarVivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API PropagationOwnershipOptions ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API PropagationOwnershipOptions ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "Contains the possible values for propagation ownership options. " 
 members:
@@ -35,7 +35,7 @@ usedby:
     used_as: Parameter
   - name: Microsoft.Dynamics.CRM.PropagateByExpression
     used_as: Parameter
-# This enum type has no remarks.
+# There are no remarks for this enum type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

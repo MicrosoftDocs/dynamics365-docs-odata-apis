@@ -1,0 +1,81 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_8
+name: "Field Service"
+type: solution
+metadata: 
+  title: "Common Data Service Field Service Solution Reference | MicrosoftDocs"
+  ms.date: "01/20/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 16e41a6c-4dc6-4a51-9457-905d1227d694
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Field Service Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+ unique_name: msdyn_FieldService_patch_8
+ version: "8.8.8.50"
+ customization_prefix: msdyn
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.bookableresource
+     description: "Resource that has capacity which can be allocated to work."
+   - type: Microsoft.Dynamics.CRM.bookableresourcebooking
+     description: "Represents the line details of a resource booking."
+   - type: Microsoft.Dynamics.CRM.bookableresourcegroup
+     description: "Associates resources with resource groups that they are a member of."
+   - type: Microsoft.Dynamics.CRM.invoice
+     description: "Order that has been billed."
+   - type: Microsoft.Dynamics.CRM.invoicedetail
+     description: "Line item in an invoice containing detailed billing information for a product."
+   - type: Microsoft.Dynamics.CRM.lead
+     description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
+   - type: Microsoft.Dynamics.CRM.msdyn_agreement
+     description: "Provides ability to store details about service agreements you have with your customers"
+   - type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
+     description: "Specify the invoices for this agreement."
+   - type: Microsoft.Dynamics.CRM.msdyn_fieldservicesetting
+     description: "Settings controlling functionality related to Field Service"
+   - type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
+     description: "Records inventory adjustments"
+   - type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
+     description: "Records inventory adjustments"
+   - type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
+     description: "Record Purchase Orders pertaining to Work Orders or otherwise"
+   - type: Microsoft.Dynamics.CRM.msdyn_quoteinvoicingproduct
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+     description: "Entity used to track the high-level information about resource requirements."
+   - type: Microsoft.Dynamics.CRM.msdyn_rma
+     description: "Records RMAs for products to be retuned from customers"
+   - type: Microsoft.Dynamics.CRM.msdyn_rtv
+     description: "Records RTVs for products to be retuned to vendors"
+   - type: Microsoft.Dynamics.CRM.msdyn_workorder
+     description: "Work orders store all information about the job performed for an account. Stores incident details, resource, expenses, tasks, communications, billing and more"
+   - type: Microsoft.Dynamics.CRM.opportunityproduct
+     description: "Association between an opportunity and a product."
+   - type: Microsoft.Dynamics.CRM.quote
+     description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
+   - type: Microsoft.Dynamics.CRM.quotedetail
+     description: "Product line item in a quote. The details include such information as product ID, description, quantity, and cost."
+   - type: Microsoft.Dynamics.CRM.salesorder
+     description: "Quote that has been accepted."
+   - type: Microsoft.Dynamics.CRM.salesorderdetail
+     description: "Line item in a sales order."
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

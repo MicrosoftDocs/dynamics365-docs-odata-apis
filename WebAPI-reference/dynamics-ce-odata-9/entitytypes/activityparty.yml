@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.activityparty
 name: "activityparty"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement activityparty EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c505dbea-388a-4925-a15b-b7b740089109
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the activityparty entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse activityparty entitytype."
 description: "Person or group associated with an activity. An activity can have multiple activity parties."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/activityparties"
@@ -185,17 +185,17 @@ lookup_properties:
     description: "Unique identifier of the user or team who owns the activity_party."
   - name: _partyid_value
     single_valued_navigation_property:
+    - partyid_queue
     - partyid_systemuser
-    - partyid_contact
     - partyid_knowledgearticle
     - partyid_account
-    - partyid_queue
-    - partyid_lead
-    - partyid_campaign
+    - partyid_contact
     - partyid_contract
     - partyid_entitlement
     - partyid_equipment
     - partyid_incident
+    - partyid_campaign
+    - partyid_lead
     - partyid_invoice
     - partyid_opportunity
     - partyid_quote
@@ -232,12 +232,30 @@ single_valued_navigation_properties:
   - name: activityid_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: letter_activity_parties
+  - name: activityid_li_inmail_activityparty
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: li_inmail_activity_parties
+  - name: activityid_li_message_activityparty
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: li_message_activity_parties
+  - name: activityid_li_pointdrivepresentationviewed_activityparty
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: li_pointdrivepresentationviewed_activity_parties
   - name: activityid_msdyn_approval_activityparty
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: msdyn_approval_activity_parties
   - name: activityid_msdyn_bookingalert_activityparty
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: msdyn_bookingalert_activity_parties
+  - name: activityid_msfp_alert_activityparty
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: msfp_alert_activity_parties
+  - name: activityid_msfp_surveyinvite_activityparty
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: msfp_surveyinvite_activity_parties
+  - name: activityid_msfp_surveyresponse_activityparty
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: msfp_surveyresponse_activity_parties
   - name: activityid_opportunityclose
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: opportunityclose_activity_parties
@@ -331,7 +349,7 @@ solutions:
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

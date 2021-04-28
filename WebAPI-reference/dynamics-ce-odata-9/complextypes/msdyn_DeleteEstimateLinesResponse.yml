@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_DeleteEstimateLinesResponse
 name: "msdyn_DeleteEstimateLinesResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_DeleteEstimateLinesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse msdyn_DeleteEstimateLinesResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 08d8173c-ae04-48d4-a05f-f20536df9394
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API msdyn_DeleteEstimateLinesResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API msdyn_DeleteEstimateLinesResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "For internal use only." 
@@ -30,7 +30,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.msdyn_DeleteEstimateLines
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -1,0 +1,75 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdynce_FieldServiceHealth
+name: "Field Service Health"
+type: solution
+metadata: 
+  title: "Microsoft Dataverse Field Service Health Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 1d8e2397-8d2e-4482-b528-2f643c9d26ab
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Field Service Health Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Field Service Health introduces rules to evaluate the health of any Field Service implementation. New rules will be shipped regularly to highlight fixes and improvements to Field Service configurations. Analysis jobs can be triggered from the Solution Health Hub."
+ unique_name: msdynce_FieldServiceHealth
+ version: "2.2.3.17"
+ customization_prefix: msdyn
+# This solution includes no entities.
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckCompatibilityBetweenFSAndPSASolution
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckFieldServiceDBVersion
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForActiveLayersOnProcesses
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForDeletedBSMRecords
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForFailingDeleteUniqueNumberWorkflow
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForFailingWorkflowRelatedToAgreement
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForFieldServiceSettingRecord
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForRemovedFormLibraries
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForRequiredPrivilegesAgreementBookingSetupOwners
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForRequiredPrivilegesAgreementInvoiceSetupOwners
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForSolutionVersion
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckForWorkOrderTypes
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckIfAutoNumberingIsOpted
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckIfExecutionContextIsPassed
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckIfWorkOrderGeneratedFromABS
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CheckMultiplePrimaryIncidentForWorkOrder
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CreateBSMRecord
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RestartAgreementRelatedWorkflow
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RestartUniqueNumberWorkflow
+     description: ""
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

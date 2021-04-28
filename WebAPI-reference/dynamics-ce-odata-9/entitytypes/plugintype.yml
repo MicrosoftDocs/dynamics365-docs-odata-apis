@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.plugintype
 name: "plugintype"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement plugintype EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a75e415c-022a-4304-9c48-6dc4dfe9b698
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the plugintype entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse plugintype entitytype."
 description: "Type that inherits from the IPlugin interface and is contained within a plug-in assembly."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/plugintypes"
@@ -253,9 +253,11 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the plugintype entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.ApiMessagesExtension
+    description: "This solution contains CDS API message extensions."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

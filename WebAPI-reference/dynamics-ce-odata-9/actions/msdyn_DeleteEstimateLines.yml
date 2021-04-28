@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_DeleteEstimateLines
 name: "msdyn_DeleteEstimateLines"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_DeleteEstimateLines Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 740b59ea-4c8b-4e53-bac2-d50f53b32113
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_DeleteEstimateLines Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_DeleteEstimateLines Action."
 namespace: Microsoft.Dynamics.CRM
 description: "For internal use only."
 owningsolution: Microsoft.Dynamics.CRM.ProjectService
@@ -31,7 +31,7 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.msdyn_DeleteEstimateLinesResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

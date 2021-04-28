@@ -1,0 +1,331 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_iotsettings
+name: "msdyn_iotsettings"
+type: entitytype
+metadata: 
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 5e5fbca9-8b61-437b-968b-c94ab3be8061
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_iotsettings entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_iotsettingses"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: IoT Settings
+  primary_key: msdyn_iotsettingsid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_commandnameproperty
+      type: Edm.String
+      display_name: "Command Name Property"
+      description: "This value will be used to specify the command name when sending device commands. Default property value is \"CommandName\" when this field is unspecified."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_commandparametersproperty
+      type: Edm.String
+      display_name: "Command Parameters Property"
+      description: "This value will be used to specify the command parameters when sending device commands. Default property value is \"Parameters\" when this field is unspecified."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_defaultiotsource
+      type: Edm.Int32
+      display_name: "Default IoT Source"
+      description: "This field is used to know the source of IoT for this organization. Example : IoT Suite or IoT Central or Others."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350000
+          label: "Other"
+        - value: 192350001
+          label: "Azure IoT Suite"
+        - value: 192350002
+          label: "Azure IoT Central"
+    - name: msdyn_deploymentappurl
+      type: Edm.String
+      display_name: "Deployment App URL"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_devicedatapullfrequency
+      type: Edm.Int32
+      display_name: "Device Data Pull Frequency"
+      description: "To specify the interval of scheduled device data pulls"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_enableiotsuggestions
+      type: Edm.Boolean
+      display_name: "Enable IoT suggestions"
+      description: "IoT suggestions provide you insights on priority level and incident type associated with an alert."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_enhancedbackgroundprocessing
+      type: Edm.Boolean
+      display_name: "Use Enhanced Background Processing"
+      description: "When this option is enabled, all Connected Field Service background processes will be processed through flows instead of the historic Connected Field Service workflows."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_iotalertaggregationrule
+      type: Edm.String
+      display_name: "IoT Alert Aggregation Rule"
+      description: "Select the columns that will be used to determine the aggregation of similar IoT alerts."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_iotsettingsid
+      type: Edm.Guid
+      display_name: "IoTSettings"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_nextdevicedatapulltime
+      type: Edm.DateTimeOffset
+      display_name: "Next Device Data Pull Time"
+      description: "The next scheduled running time for device data pull"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_scheduleddevicedatapull
+      type: Edm.Boolean
+      display_name: "Scheduled Data Pull"
+      description: "To turn on/off scheduled device data pulls, default is off"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "On"
+        - value: 0
+          label: "Off"
+    - name: msdyn_showwelcome
+      type: Edm.Boolean
+      display_name: "Show Welcome"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the IoTSettings"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the IoTSettings"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _msdyn_defaultiotproviderinstance_value
+    single_valued_navigation_property:
+    - msdyn_DefaultIoTProviderInstance
+    description: "The IoT Provider Instance to which IoT Devices should belong by default."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_iotsettings_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_iotsettings_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_iotsettings_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msdyn_iotsettings_modifiedonbehalfby
+  - name: msdyn_DefaultIoTProviderInstance
+    type: Microsoft.Dynamics.CRM.msdyn_iotproviderinstance
+    partner: msdyn_msdyn_iotproviderinstance_msdyn_iotsettings_DefaultIoTProviderInstance
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msdyn_iotsettings
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msdyn_iotsettings
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msdyn_iotsettings
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msdyn_iotsettings
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msdyn_iotsettings_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msdyn_iotsettings
+  - name: msdyn_iotsettings_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msdyn_iotsettings
+  - name: msdyn_iotsettings_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_msdyn_iotsettings
+  - name: msdyn_iotsettings_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_msdyn_iotsettings
+  - name: msdyn_iotsettings_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msdyn_iotsettings
+  - name: msdyn_iotsettings_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msdyn_iotsettings
+  - name: msdyn_iotsettings_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msdyn_iotsettings
+  - name: msdyn_iotsettings_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msdyn_iotsettings
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msdyn_iotsettings entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msdyn_iotsettings entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.ConnectedFieldService
+    description: "Use Connected Field Service to monitor connected devices to make sure your customer’s equipment is always functioning properly. If a piece of equipment fails, you’ll receive a notification, so that you can troubleshoot the problem remotely or send a technician to fix it."
+  - type: Microsoft.Dynamics.CRM.IoTConnector
+    description: "Enables IoT scenarios in Dynamics 365."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

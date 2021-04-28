@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_MarketingSalesPatch
 name: "Marketing Sales Patch"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Marketing Sales Patch Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Marketing Sales Patch Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 498f410b-87a1-48c2-846a-1b1b31378117
-  author: "KumarVivek"
+  ms.assetid: ceddd997-e55b-475c-b5fa-2c97812ac9ca
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Marketing Sales Patch Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Marketing Sales Patch Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_MarketingSalesPatch
- version: "9.0.1912.5021"
- customization_prefix: none
+ version: "9.0.21031.10002"
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -44,9 +44,9 @@ entities:
    - type: Microsoft.Dynamics.CRM.salesorder
      description: "Quote that has been accepted."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Microsoft Dataverse Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

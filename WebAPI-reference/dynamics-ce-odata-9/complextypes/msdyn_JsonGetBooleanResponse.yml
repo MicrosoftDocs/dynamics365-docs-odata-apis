@@ -1,0 +1,45 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_JsonGetBooleanResponse
+name: "msdyn_JsonGetBooleanResponse"
+type: complextype
+metadata: 
+  title: "Microsoft Dataverse msdyn_JsonGetBooleanResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 99957a6f-4220-4e8c-a4a8-4dd48b728b0b
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API msdyn_JsonGetBooleanResponse ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "Contains the value returned from the msdyn_JsonGetBoolean Action." 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: Value
+    type: Edm.Boolean
+    nullable: true
+    unicode: true
+    description: "Retrieved value."
+    iscollection: false
+# This complex type doesn't have any navigation properties.
+usedby:
+  description: "The following use the msdyn_JsonGetBooleanResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.msdyn_JsonGetBoolean
+    used_as: ReturnType
+# There are no remarks for this complex type.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

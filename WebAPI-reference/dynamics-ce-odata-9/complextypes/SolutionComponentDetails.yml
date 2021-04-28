@@ -3,18 +3,18 @@ uid: Microsoft.Dynamics.CRM.SolutionComponentDetails
 name: "SolutionComponentDetails"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SolutionComponentDetails ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse SolutionComponentDetails ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: a5bfb015-8538-4059-bbcd-05f1d8e8b107
-  author: "KumarVivek"
+  ms.assetid: 3b1915ac-3b2e-4db9-8388-bd64d1b4be43
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API SolutionComponentDetails ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API SolutionComponentDetails ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
-description: "" 
+description: "Provides detailed information about a solution component." 
 properties:
   description: "The properties of a complex type contain the structured data of the type."
   property_items:
@@ -22,22 +22,22 @@ properties:
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The name of the solution component."
     iscollection: false
   - name: Attributes
     type: Microsoft.Dynamics.CRM.Collection_String_String
     nullable: true
     unicode: true
-    description: ""
+    description: "The attributes of the solution component."
     iscollection: false
   - name: ComponentTypeName
     type: Edm.String
     nullable: true
     unicode: false
-    description: ""
+    description: "The solution component type name."
     iscollection: false
-  - name: Result
-    type: Microsoft.Dynamics.CRM.ComponentImportResult
+  - name: IsPresentInOrg
+    type: Microsoft.Dynamics.CRM.PresentInOrg
     nullable: true
     unicode: true
     description: ""
@@ -48,7 +48,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.StageSolutionResults
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

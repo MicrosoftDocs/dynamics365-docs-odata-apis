@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.dynamicpropertyinstance
 name: "dynamicpropertyinstance"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement dynamicpropertyinstance EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 09cd31b8-fc25-4141-9511-00e40d21141f
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the dynamicpropertyinstance entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse dynamicpropertyinstance entitytype."
 description: "Instance of a property with its value."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/dynamicpropertyinstances"
@@ -257,7 +257,7 @@ solutions:
     description: "Dynamics 365 workload for sales."
   - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch201904
     description: "Dynamics 365 workload for Sales Patch Version 2."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

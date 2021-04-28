@@ -3,21 +3,21 @@ uid: Microsoft.Dynamics.CRM.msdynce_Sales
 name: "Sales"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Sales Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Sales Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 8a90d50f-37eb-43a4-be97-8ea22dd39fd3
-  author: "KumarVivek"
+  ms.assetid: 1c527b4e-f63d-4dc8-a7a1-f5c186486246
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Sales Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Sales Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for sales."
  unique_name: msdynce_Sales
  version: "9.0.4.0076"
- customization_prefix: none
+ customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
@@ -120,9 +120,9 @@ entities:
    - type: Microsoft.Dynamics.CRM.template
      description: "Template for an email message that contains the standard attributes of an email message."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Microsoft Dataverse Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

@@ -1,0 +1,389 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_solutioncomponentsummary
+name: "msdyn_solutioncomponentsummary"
+type: entitytype
+metadata: 
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: e6916495-7fef-408b-9da0-3b6f75f32b9c
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_solutioncomponentsummary entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msdyn_solutioncomponentsummaries"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Solution Component Summary
+  primary_key: msdyn_solutioncomponentsummaryid
+  primary_name_attribute: msdyn_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: msdyn_canvasappuniqueid
+      type: Edm.String
+      display_name: "Canvas App Unique Id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_componentlogicalname
+      type: Edm.String
+      display_name: "Component Logical Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_componenttype
+      type: Edm.Decimal
+      display_name: "msdyn_componenttype"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_componenttypename
+      type: Edm.String
+      display_name: "Component Type Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_connectorinternalid
+      type: Edm.String
+      display_name: "Connector Internal Id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_createdon
+      type: Edm.String
+      display_name: "msdyn_createdon"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_culture
+      type: Edm.String
+      display_name: "msdyn_culture"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_deployment
+      type: Edm.String
+      display_name: "msdyn_deployment"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_description
+      type: Edm.String
+      display_name: "msdyn_description"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_displayname
+      type: Edm.String
+      display_name: "msdyn_displayname"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_eventhandler
+      type: Edm.String
+      display_name: "msdyn_eventhandler"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_executionorder
+      type: Edm.String
+      display_name: "msdyn_executionorder"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_executionstage
+      type: Edm.String
+      display_name: "msdyn_executionstage"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_fieldsecurity
+      type: Edm.String
+      display_name: "Field Security"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_fieldtype
+      type: Edm.String
+      display_name: "Field Type"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_isappaware
+      type: Edm.String
+      display_name: "msdyn_isappaware"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_isappawarename
+      type: Edm.String
+      display_name: "App Aware Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_isauditenabled
+      type: Edm.String
+      display_name: "msdyn_isauditenabled"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_isauditenabledname
+      type: Edm.String
+      display_name: "Audit Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_iscustom
+      type: Edm.String
+      display_name: "msdyn_iscustom"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_iscustomizable
+      type: Edm.String
+      display_name: "msdyn_iscustomizable"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_iscustomizablename
+      type: Edm.String
+      display_name: "Customizable Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_iscustomname
+      type: Edm.String
+      display_name: "Is Custom Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_isdefault
+      type: Edm.String
+      display_name: "Default"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_isdefaultname
+      type: Edm.String
+      display_name: "Default Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_ismanaged
+      type: Edm.String
+      display_name: "msdyn_ismanaged"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_ismanagedname
+      type: Edm.String
+      display_name: "Managed Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_isolationmode
+      type: Edm.String
+      display_name: "msdyn_isolationmode"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_istableenabled
+      type: Edm.String
+      display_name: "msdyn_istableenabled"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_logicalcollectionname
+      type: Edm.String
+      display_name: "Logical Collection Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_modifiedon
+      type: Edm.String
+      display_name: "msdyn_modifiedon"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_name
+      type: Edm.String
+      display_name: "msdyn_name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_objectid
+      type: Edm.String
+      display_name: "msdyn_objectid"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_objecttypecode
+      type: Edm.String
+      display_name: "msdyn_objecttypecode"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_owner
+      type: Edm.String
+      display_name: "msdyn_owner"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_owningbusinessunit
+      type: Edm.String
+      display_name: "owning business unit"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_primaryentityname
+      type: Edm.String
+      display_name: "Primary Entity Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_primaryidattribute
+      type: Edm.String
+      display_name: "Name of the primary id attribute"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_publickeytoken
+      type: Edm.String
+      display_name: "msdyn_publickeytoken"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_relatedentity
+      type: Edm.String
+      display_name: "Related Entity"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_relatedentityattribute
+      type: Edm.String
+      display_name: "Related Entity Attribute Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_schemaname
+      type: Edm.String
+      display_name: "msdyn_schemaname"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_sdkmessagename
+      type: Edm.String
+      display_name: "msdyn_sdkmessagename"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_solutioncomponentsummaryid
+      type: Edm.Guid
+      display_name: "SolutionComponentSummary"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_solutionid
+      type: Edm.String
+      display_name: "msdyn_solutionid"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_status
+      type: Edm.String
+      display_name: "msdyn_status"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_statusname
+      type: Edm.String
+      display_name: "Status Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_subtype
+      type: Edm.String
+      display_name: "msdyn_subtype"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_synctoexternalsearchindex
+      type: Edm.String
+      display_name: "msdyn_synctoexternalsearchindex"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_total
+      type: Edm.Decimal
+      display_name: "msdyn_total"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_typename
+      type: Edm.String
+      display_name: "msdyn_typename"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_uniquename
+      type: Edm.String
+      display_name: "msdyn_uniquename"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_version
+      type: Edm.String
+      display_name: "msdyn_version"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_workflowcategory
+      type: Edm.String
+      display_name: "msdyn_workflowcategory"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_workflowcategoryname
+      type: Edm.String
+      display_name: "Workflow Category Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_workflowidunique
+      type: Edm.String
+      display_name: "Workflow Id Unique"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+# This entity has no lookup properties
+# This entity has no single-valued navigation properties
+# This entity has no collection-valued navigation properties
+# This entity has no derived entities.
+# This entity has no operations
+solutions:
+  description: "The following solutions include the msdyn_solutioncomponentsummary entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.CRMSettingsAPIs
+    description: ""
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

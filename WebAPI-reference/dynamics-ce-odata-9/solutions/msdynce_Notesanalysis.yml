@@ -3,26 +3,36 @@ uid: Microsoft.Dynamics.CRM.msdynce_Notesanalysis
 name: "Notes analysis"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Notes analysis Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Notes analysis Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: d90fc80c-883d-41c9-acd2-119c915d2bbc
-  author: "KumarVivek"
+  ms.assetid: 74f8c4c2-583c-4f9d-88b6-678c76ba5141
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Notes analysis Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Notes analysis Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Suggests actions for notes and posts on the timeline wall"
  unique_name: msdynce_Notesanalysis
- version: "9.0.1.70947"
+ version: "9.0.1.701213"
  customization_prefix: msdyn
-# This solution includes no entities.
-# This solution includes no actions.
-# This solution has no remarks.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_notesanalysisconfig
+     description: ""
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_GetNotesAnalysis
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_PerformNotesAnalysisAction
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Microsoft Dataverse Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

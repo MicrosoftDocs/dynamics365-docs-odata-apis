@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_projecttask
 name: "msdyn_projecttask"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_projecttask EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b49c734a-3a3b-43f6-b9b5-e3c4e0dc77f6
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_projecttask entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_projecttask entitytype."
 description: "Tasks related to project."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_projecttasks"
@@ -490,6 +490,10 @@ lookup_properties:
     single_valued_navigation_property:
     - msdyn_AssignedTeamMembers
     description: "Select the project team member that has been assigned to a task."
+  - name: _msdyn_organizationalunitpricingdimension_value
+    single_valued_navigation_property:
+    - msdyn_OrganizationalUnitPricingDimension
+    description: "Select the organizational unit of the resource who should perform the work."
   - name: _msdyn_parenttask_value
     single_valued_navigation_property:
     - msdyn_parenttask
@@ -501,6 +505,10 @@ lookup_properties:
   - name: _msdyn_resourcecategory_value
     single_valued_navigation_property:
     - msdyn_resourcecategory
+    description: "Select the resource role for the task."
+  - name: _msdyn_resourcecategorypricingdimension_value
+    single_valued_navigation_property:
+    - msdyn_ResourceCategoryPricingDimension
     description: "Select the resource role for the task."
   - name: _msdyn_resourceorganizationalunitid_value
     single_valued_navigation_property:
@@ -548,6 +556,9 @@ single_valued_navigation_properties:
   - name: msdyn_AssignedTeamMembers
     type: Microsoft.Dynamics.CRM.msdyn_projectteam
     partner: msdyn_msdyn_projectteam_msdyn_projecttask_AssignedTeamMembers
+  - name: msdyn_OrganizationalUnitPricingDimension
+    type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
+    partner: msdyn_organizationalunit_msdyn_projecttask_OrganizationalUnitPricingDimension
   - name: msdyn_parenttask
     type: Microsoft.Dynamics.CRM.msdyn_projecttask
     partner: msdyn_msdyn_projecttask_msdyn_projecttask_parenttask
@@ -557,6 +568,9 @@ single_valued_navigation_properties:
   - name: msdyn_resourcecategory
     type: Microsoft.Dynamics.CRM.bookableresourcecategory
     partner: msdyn_bookableresourcecategory_msdyn_projecttask_resourcecategory
+  - name: msdyn_ResourceCategoryPricingDimension
+    type: Microsoft.Dynamics.CRM.bookableresourcecategory
+    partner: msdyn_bookableresourcecategory_msdyn_projecttask_ResourceCategoryPricingDimension
   - name: msdyn_ResourceOrganizationalUnitId
     type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
     partner: msdyn_organizationalunit_projecttask
@@ -675,6 +689,8 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_AssignResourcesForTask
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_BulkCreatePredecessorsForTask
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_BulkDeletePredecessorsForTask
@@ -682,6 +698,8 @@ operations:
   - name: Microsoft.Dynamics.CRM.msdyn_DeleteEstimatesForProjectTask
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_IndentWBSTask
+    binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.msdyn_MoveDownWBSTask
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_MoveUpWBSTask
     binding_type: "Entity"
@@ -698,9 +716,11 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_projecttask entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

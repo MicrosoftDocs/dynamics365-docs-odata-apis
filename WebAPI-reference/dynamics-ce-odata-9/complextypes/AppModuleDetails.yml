@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AppModuleDetails
 name: "AppModuleDetails"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AppModuleDetails ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse AppModuleDetails ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 13446d54-ec08-4156-a9ff-9cffee21b5d2
-  author: "KumarVivek"
+  ms.assetid: 60796cea-d3c7-4ee9-9f10-201f868ce246
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API AppModuleDetails ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API AppModuleDetails ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -61,9 +61,9 @@ properties:
     description: ""
     iscollection: false
   - name: CreatedBy
-    type: Edm.String
+    type: Microsoft.Dynamics.CRM.UserDetails
     nullable: true
-    unicode: false
+    unicode: true
     description: ""
     iscollection: false
   - name: CreatedOn
@@ -73,9 +73,9 @@ properties:
     description: ""
     iscollection: false
   - name: ModifiedBy
-    type: Edm.String
+    type: Microsoft.Dynamics.CRM.UserDetails
     nullable: true
-    unicode: false
+    unicode: true
     description: ""
     iscollection: false
   - name: ModifiedOn
@@ -145,18 +145,30 @@ properties:
     description: ""
     iscollection: false
   - name: CanvasApps
-    type: Microsoft.Dynamics.CRM.IEnumerable`1
+    type: Microsoft.Dynamics.CRM.CanvasAppsDetails
+    nullable: false
+    unicode: true
+    description: ""
+    iscollection: true
+  - name: StateCode
+    type: Edm.Int32
     nullable: true
     unicode: true
     description: ""
     iscollection: false
+  - name: AppSettingDetails
+    type: Microsoft.Dynamics.CRM.AppSettingDetails
+    nullable: false
+    unicode: true
+    description: ""
+    iscollection: true
 # This complex type doesn't have any navigation properties.
 usedby:
   description: "The following use the AppModuleDetails ComplexType."
   usedby_items:
   - name: Microsoft.Dynamics.CRM.AppModuleDetailsCollection
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

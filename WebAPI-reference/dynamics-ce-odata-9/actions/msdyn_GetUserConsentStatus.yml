@@ -1,0 +1,40 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_GetUserConsentStatus
+name: "msdyn_GetUserConsentStatus"
+type: action
+metadata: 
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: a7f7c2c0-0bd8-4429-ac16-0e241aa2c2f1
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_GetUserConsentStatus Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.AutoDataCapture
+# This action has no bound entities.
+isbound: false
+# This action has no parameters.
+hasparameters: false
+return_type:
+  description: "The msdyn_GetUserConsentStatus action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_GetUserConsentStatusResponse
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

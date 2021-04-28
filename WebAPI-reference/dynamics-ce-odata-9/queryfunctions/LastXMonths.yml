@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.LastXMonths
 name: "LastXMonths"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement LastXMonths Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse LastXMonths Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a230dbf1-85db-4f0b-80d4-af9feeac8af1
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the LastXMonths Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse LastXMonths Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function to evaluate whether the value is within the last X months. "
 parameters:
@@ -28,7 +28,7 @@ parameters:
     unicode: true
     description: "The value to compare. "
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.LastXMonths(PropertyName=@p1,PropertyValue=@p2)&@p1='name'&@p2=42"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

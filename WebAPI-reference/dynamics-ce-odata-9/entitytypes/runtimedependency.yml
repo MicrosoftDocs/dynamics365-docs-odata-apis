@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.runtimedependency
 name: "runtimedependency"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement runtimedependency EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7144d0a4-0f39-434f-ac92-520b80f88202
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the runtimedependency entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse runtimedependency entitytype."
 description: "Form Level dependencies in CRM."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/runtimedependencies"
@@ -82,7 +82,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

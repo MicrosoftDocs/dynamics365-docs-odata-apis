@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AttributeTypeDisplayName
 name: "AttributeTypeDisplayName"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AttributeTypeDisplayName ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse AttributeTypeDisplayName ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 54bad161-48df-4dda-877a-fd8937b9fc5c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API AttributeTypeDisplayName ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API AttributeTypeDisplayName ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Provides a list of types of attributes used by AttributeMetadata.AttributeTypeName" 
@@ -32,7 +32,7 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

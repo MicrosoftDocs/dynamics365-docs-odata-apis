@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AuditPartitionDetail
 name: "AuditPartitionDetail"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AuditPartitionDetail ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse AuditPartitionDetail ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 102ce880-a824-4183-92c7-38b4744db18e
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API AuditPartitionDetail ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API AuditPartitionDetail ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Identifies a Microsoft SQL Server partition that is used to store changes to entity data records." 
@@ -48,7 +48,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.RetrieveAuditPartitionListResponse
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.queueitem
 name: "queueitem"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement queueitem EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bdb8e12f-1f2d-40ce-8a80-ed6efd71edd2
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the queueitem entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse queueitem entitytype."
 description: "A specific item in a queue, such as a case record or an activity record."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/queueitems"
@@ -65,78 +65,86 @@ properties:
       iscomputed: false
       isreadonly: true
       options:
-        - value: 4402
-          label: "Campaign Activity"
-        - value: 10089
-          label: "Booking Alert"
-        - value: 10201
-          label: "IoT Alert"
-        - value: 10221
-          label: "Project Service Approval"
-        - value: 4406
-          label: "Quick Campaign"
-        - value: 10190
-          label: "Work Order"
-        - value: 10080
-          label: "Forms Pro survey response"
-        - value: 10123
-          label: "Agreement Invoice Date"
-        - value: 10260
-          label: "Project"
-        - value: 10283
-          label: "Resource Request"
-        - value: 10147
-          label: "Inventory Adjustment"
-        - value: 4204
-          label: "Fax"
-        - value: 10196
+        - value: 10277
+          label: "Smart Links Content Viewed"
+        - value: 10182
           label: "Work Order Service"
-        - value: 4216
-          label: "Social Activity"
-        - value: 10122
-          label: "Agreement Booking Setup"
-        - value: 4207
-          label: "Letter"
-        - value: 10112
-          label: "Fulfillment Preference"
-        - value: 4251
-          label: "Recurring Appointment"
-        - value: 10011
-          label: "Knowledge Article Template"
+        - value: 10028
+          label: "Time Group Detail"
+        - value: 10116
+          label: "Agreement Invoice Setup"
+        - value: 10091
+          label: "Resource Request"
+        - value: 10176
+          label: "Work Order"
+        - value: 10007
+          label: "Booking Alert"
+        - value: 10108
+          label: "Agreement Booking Date"
+        - value: 10074
+          label: "Project Task"
+        - value: 10179
+          label: "Work Order Incident"
         - value: 4401
           label: "Campaign Response"
-        - value: 10150
-          label: "Inventory Transfer"
-        - value: 4201
-          label: "Appointment"
-        - value: 10113
-          label: "Time Group Detail"
-        - value: 10265
-          label: "Project Task"
-        - value: 4212
-          label: "Task"
-        - value: 10125
-          label: "Agreement Invoice Setup"
-        - value: 4214
-          label: "Service Activity"
-        - value: 10117
-          label: "Agreement Booking Date"
-        - value: 10197
-          label: "Work Order Service Task"
-        - value: 10193
-          label: "Work Order Incident"
+        - value: 4406
+          label: "Quick Campaign"
+        - value: 4402
+          label: "Campaign Activity"
+        - value: 10392
+          label: "Customer Voice alert"
+        - value: 10297
+          label: "Knowledge Article Template"
+        - value: 10032
+          label: "Project Service Approval"
+        - value: 10186
+          label: "IoT Alert"
+        - value: 10133
+          label: "Inventory Adjustment"
         - value: 112
           label: "Case"
-        - value: 10079
-          label: "Forms Pro survey invite"
+        - value: 4214
+          label: "Service Activity"
+        - value: 4251
+          label: "Recurring Appointment"
+        - value: 4200
+          label: "Activity"
         - value: 4210
           label: "Phone Call"
         - value: 4202
           label: "Email"
+        - value: 4212
+          label: "Task"
+        - value: 4201
+          label: "Appointment"
+        - value: 4204
+          label: "Fax"
+        - value: 4216
+          label: "Social Activity"
+        - value: 4207
+          label: "Letter"
         - value: 9953
           label: "Knowledge Article"
-        - value: 4200
-          label: "Activity"
+        - value: 10183
+          label: "Work Order Service Task"
+        - value: 10027
+          label: "Fulfillment Preference"
+        - value: 10275
+          label: "inMail"
+        - value: 10113
+          label: "Agreement Booking Setup"
+        - value: 10136
+          label: "Inventory Transfer"
+        - value: 10256
+          label: "Customer Voice survey response"
+        - value: 10069
+          label: "Project"
+        - value: 10114
+          label: "Agreement Invoice Date"
+        - value: 10255
+          label: "Customer Voice survey invite"
+        - value: 10276
+          label: "Message"
     - name: overriddencreatedon
       type: Edm.DateTimeOffset
       display_name: "Record Created On"
@@ -224,10 +232,11 @@ lookup_properties:
     single_valued_navigation_property:
     - objectid_knowledgearticle
     - objectid_activitypointer
-    - objectid_msdyn_knowledgearticletemplate
-    - objectid_incident
     - objectid_msdyn_timegroup
     - objectid_msdyn_timegroupdetail
+    - objectid_msdyn_project
+    - objectid_msdyn_projecttask
+    - objectid_msdyn_resourcerequest
     - objectid_msdyn_agreementbookingdate
     - objectid_msdyn_agreementbookingsetup
     - objectid_msdyn_agreementinvoicedate
@@ -239,9 +248,8 @@ lookup_properties:
     - objectid_msdyn_workorderservice
     - objectid_msdyn_workorderservicetask
     - objectid_msdyn_iotalert
-    - objectid_msdyn_project
-    - objectid_msdyn_projecttask
-    - objectid_msdyn_resourcerequest
+    - objectid_incident
+    - objectid_msdyn_knowledgearticletemplate
     description: "Choose the activity, case, or article assigned to the queue."
   - name: _organizationid_value
     single_valued_navigation_property:
@@ -311,6 +319,15 @@ single_valued_navigation_properties:
   - name: objectid_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: Letter_QueueItem
+  - name: objectid_li_inmail
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: li_inmail_QueueItems
+  - name: objectid_li_message
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: li_message_QueueItems
+  - name: objectid_li_pointdrivepresentationviewed
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: li_pointdrivepresentationviewed_QueueItems
   - name: objectid_msdyn_agreementbookingdate
     type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
     partner: msdyn_agreementbookingdate_QueueItems
@@ -338,6 +355,9 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_iotalert
     type: Microsoft.Dynamics.CRM.msdyn_iotalert
     partner: msdyn_iotalert_QueueItems
+  - name: objectid_msdyn_knowledgearticletemplate
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate
+    partner: msdyn_knowledgearticletemplate_QueueItems
   - name: objectid_msdyn_project
     type: Microsoft.Dynamics.CRM.msdyn_project
     partner: msdyn_project_QueueItems
@@ -365,6 +385,15 @@ single_valued_navigation_properties:
   - name: objectid_msdyn_workorderservicetask
     type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
     partner: msdyn_workorderservicetask_QueueItems
+  - name: objectid_msfp_alert
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: msfp_alert_QueueItems
+  - name: objectid_msfp_surveyinvite
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: msfp_surveyinvite_QueueItems
+  - name: objectid_msfp_surveyresponse
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: msfp_surveyresponse_QueueItems
   - name: objectid_phonecall
     type: Microsoft.Dynamics.CRM.phonecall
     partner: PhoneCall_QueueItem
@@ -438,7 +467,7 @@ solutions:
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

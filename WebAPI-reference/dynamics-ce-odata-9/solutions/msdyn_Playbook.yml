@@ -3,26 +3,40 @@ uid: Microsoft.Dynamics.CRM.msdyn_Playbook
 name: "Playbook"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Playbook Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Playbook Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 42239d5e-fc62-4039-9133-ae11aaa5aa97
-  author: "KumarVivek"
+  ms.assetid: 0c424798-fbe7-4fc7-8b2f-60e901237ed6
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Playbook Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Playbook Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Playbook"
  unique_name: msdyn_Playbook
- version: "9.0.2003.1040 "
+ version: "9.0.2102.2000 "
  customization_prefix: msdyn
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_callablecontext
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_playbookactivity
+     description: "Stores the details of the activities to be created when a playbook is launched."
+   - type: Microsoft.Dynamics.CRM.msdyn_playbookactivityattribute
+     description: "Stores attribute names and values of the playbook activity."
+   - type: Microsoft.Dynamics.CRM.msdyn_playbookcategory
+     description: "List of categories for which a playbook can be created."
+   - type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+     description: "Actual instance of a playbook template once it is launched."
+   - type: Microsoft.Dynamics.CRM.msdyn_playbooktemplate
+     description: "Playbook templates contains the definition of the Playbook that helps to standardize a set of best practices or next best actions."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Microsoft Dataverse Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

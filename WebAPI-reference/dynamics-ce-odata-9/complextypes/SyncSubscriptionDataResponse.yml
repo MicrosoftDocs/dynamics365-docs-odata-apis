@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.SyncSubscriptionDataResponse
 name: "SyncSubscriptionDataResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SyncSubscriptionDataResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse SyncSubscriptionDataResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 0e51ac34-c74e-4b4a-ae0c-860736f6d349
-  author: "KumarVivek"
+  ms.assetid: b1f9a790-6060-40e9-b66f-41920db194c8
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API SyncSubscriptionDataResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API SyncSubscriptionDataResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -38,7 +38,7 @@ properties:
     iscollection: false
 # This complex type doesn't have any navigation properties.
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

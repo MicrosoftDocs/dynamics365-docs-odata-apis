@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.PropagateByExpression
 name: "PropagateByExpression"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement PropagateByExpression Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6b23d472-d5e0-415b-847f-fc8b629864f7
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the PropagateByExpression Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse PropagateByExpression Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Creates a quick campaign to distribute an activity to accounts, contacts, or leads that are selected by a query. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -81,7 +81,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.email
     displayName: Email
     description: "Activity that is delivered using email protocols."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

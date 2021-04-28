@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ContainValues
 name: "ContainValues"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ContainValues Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse ContainValues Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9faa92c0-5ca5-41bf-8976-f4a3842b2087
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the ContainValues Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse ContainValues Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: ""
 parameters:
@@ -28,7 +28,7 @@ parameters:
     unicode: false
     description: ""
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.ContainValues(PropertyName=@p1,PropertyValues=@p2)&@p1='name'&@p2=['value','value']"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

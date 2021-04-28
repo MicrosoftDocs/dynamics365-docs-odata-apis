@@ -3,30 +3,42 @@ uid: Microsoft.Dynamics.CRM.msdyn_Geofencing
 name: "Geofence Management"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Geofence Management Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Geofence Management Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 2f9a99c0-e404-4dac-813a-fac1c446e98b
-  author: "KumarVivek"
+  ms.assetid: e866985f-76a4-40df-9239-531891b60254
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Geofence Management Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Geofence Management Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "Define Geofences and the records that should be monitored for entry and exit, resulting in Geofence Event records that can be configured to trigger some action via a workflow or Microsoft Flow."
  unique_name: msdyn_Geofencing
- version: "1.0.0.238"
+ version: "1.1.0.78"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
   entity_items:
    - type: Microsoft.Dynamics.CRM.bookableresource
      description: "Resource that has capacity which can be allocated to work."
-# This solution includes no actions.
-# This solution has no remarks.
+   - type: Microsoft.Dynamics.CRM.msdyn_entityconfiguration
+     description: "Enables records for an entity type to act as geofences or tracking points."
+   - type: Microsoft.Dynamics.CRM.msdyn_geofence
+     description: "A radial boundary around a physical location that, when active, can be entered or exited by geotracked records, in turn generating events."
+   - type: Microsoft.Dynamics.CRM.msdyn_geofenceevent
+     description: "Created when a geotracked record enters or exits a geofence."
+   - type: Microsoft.Dynamics.CRM.msdyn_geofencingsettings
+     description: "Configure organization-wide settings for geofencing."
+actions:
+  description: "The following actions are included in this solution."
+  action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_GenerateGeofenceEvent
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Microsoft Dataverse Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

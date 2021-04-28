@@ -1,0 +1,43 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.StageSolutionStatus
+name: "StageSolutionStatus"
+type: enumtype
+metadata: 
+  title: "Microsoft Dataverse StageSolutionStatus EnumType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 3d434036-902e-4121-8528-7bb551b6033b
+  author: "kumarVivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API StageSolutionStatus ComplexType."
+namespace: Microsoft.Dynamics.CRM
+description: "The status of the solution staging request." 
+members:
+  description: "Members define the discrete options for the enumeration type."
+  member_items:
+  - description: ""
+    name: "Failed"
+    value: 0
+  - description: ""
+    name: "Passed"
+    value: 1
+usedby:
+  description: "The following use the StageSolutionStatus EnumType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.StageSolutionResults
+    used_as: Property
+# There are no remarks for this enum type.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

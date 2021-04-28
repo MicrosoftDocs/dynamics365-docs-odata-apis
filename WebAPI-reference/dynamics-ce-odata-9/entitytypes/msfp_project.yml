@@ -1,0 +1,288 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msfp_project
+name: "msfp_project"
+type: entitytype
+metadata: 
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: af667cd0-ff90-4b16-a715-a09bc1612b6d
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msfp_project entitytype."
+description: "Set of surveys to collect feedback."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/msfp_projects"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Customer Voice project
+  primary_key: msfp_projectid
+  primary_name_attribute: msfp_name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the project was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the project was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: msfp_customerinsightsconfiguration
+      type: Edm.String
+      display_name: "Customer Insights configuration"
+      description: "Stores Customer Insights configuration in JSON format."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_description
+      type: Edm.String
+      display_name: "Description"
+      description: "Description of the project."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_environmentid
+      type: Edm.String
+      display_name: "Environment ID"
+      description: "Environment ID where project is stored."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_environmentregion
+      type: Edm.String
+      display_name: "Environment region"
+      description: "Environment region where project is stored."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_name
+      type: Edm.String
+      display_name: "Name"
+      description: "Name of the project."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_permanentid
+      type: Edm.String
+      display_name: "Permanent ID"
+      description: "Permanent ID is auto-generated for a new project. For a copied project, the ID is carried over from the original project."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_projectid
+      type: Edm.Guid
+      display_name: "Customer Voice project"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_status
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the project."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 647390000
+          label: "Active"
+        - value: 647390001
+          label: "InActive"
+    - name: msfp_templateid
+      type: Edm.String
+      display_name: "Template ID"
+      description: "Project template ID."
+      iscomputed: false
+      isreadonly: false
+    - name: msfp_templateversion
+      type: Edm.String
+      display_name: "Template version"
+      description: "Version number of the project template."
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Customer Voice project"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Customer Voice project"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "User who created the project."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "User who modified the project."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_project_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_project_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_project_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_msfp_project_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_msfp_project
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_msfp_project
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_msfp_project
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_msfp_project
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: msfp_msfp_project_msfp_alert_project
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: msfp_project
+  - name: msfp_msfp_project_msfp_alertrule_project
+    type: Microsoft.Dynamics.CRM.msfp_alertrule
+    partner: msfp_project
+  - name: msfp_msfp_project_msfp_satisfactionmetric_project
+    type: Microsoft.Dynamics.CRM.msfp_satisfactionmetric
+    partner: msfp_project
+  - name: msfp_msfp_project_msfp_survey_project
+    type: Microsoft.Dynamics.CRM.msfp_survey
+    partner: msfp_project
+  - name: msfp_project_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_msfp_project
+  - name: msfp_project_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_msfp_project
+  - name: msfp_project_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_msfp_project
+  - name: msfp_project_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_msfp_project
+  - name: msfp_project_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_msfp_project
+  - name: msfp_project_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_msfp_project
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the msfp_project entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the msfp_project entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.MicrosoftFormsPro
+    description: "Create and send surveys to your customers or employees and collect their valuable feedback about your products or services."
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.savedqueryvisualization
 name: "savedqueryvisualization"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement savedqueryvisualization EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8281e867-cc6a-4d71-9752-3e265247c34d
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the savedqueryvisualization entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse savedqueryvisualization entitytype."
 description: "System chart attached to an entity."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/savedqueryvisualizations"
@@ -244,7 +244,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

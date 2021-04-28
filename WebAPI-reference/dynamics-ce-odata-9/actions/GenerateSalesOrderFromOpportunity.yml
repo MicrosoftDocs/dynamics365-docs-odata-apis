@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.GenerateSalesOrderFromOpportunity
 name: "GenerateSalesOrderFromOpportunity"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement GenerateSalesOrderFromOpportunity Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 68735a48-108a-4837-9566-28ffb1635945
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the GenerateSalesOrderFromOpportunity Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse GenerateSalesOrderFromOpportunity Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Generates a sales order (order) from an opportunity.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -41,7 +41,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.salesorder
     displayName: Order
     description: "Quote that has been accepted."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

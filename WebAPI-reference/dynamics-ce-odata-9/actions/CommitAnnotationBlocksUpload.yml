@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CommitAnnotationBlocksUpload
 name: "CommitAnnotationBlocksUpload"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CommitAnnotationBlocksUpload Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: daaa15c7-4a2e-4649-b0f8-c65d1b5da7c2
-  author: "KumarVivek"
+  ms.assetid: b826efe6-36e2-439c-80c5-808ce4b5e1ce
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the CommitAnnotationBlocksUpload Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse CommitAnnotationBlocksUpload Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -41,7 +41,7 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.CommitAnnotationBlocksUploadResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

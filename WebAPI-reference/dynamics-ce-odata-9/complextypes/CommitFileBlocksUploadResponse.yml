@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CommitFileBlocksUploadResponse
 name: "CommitFileBlocksUploadResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CommitFileBlocksUploadResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse CommitFileBlocksUploadResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: c3f9bc32-293a-4dd2-85b7-31dfe9c50c1a
-  author: "KumarVivek"
+  ms.assetid: 3677dd87-c0fb-4a46-bd62-d29869b7605e
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API CommitFileBlocksUploadResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API CommitFileBlocksUploadResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -36,7 +36,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.CommitFileBlocksUpload
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

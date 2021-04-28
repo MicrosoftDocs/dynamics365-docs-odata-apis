@@ -1,0 +1,35 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.MicrosoftIdentityWorkflows
+name: "Dynamics 365 Portals - Identity Workflows"
+type: solution
+metadata: 
+  title: "Common Data Service Dynamics 365 Portals - Identity Workflows Solution Reference | MicrosoftDocs"
+  ms.date: "01/20/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 5d1dac8d-ddbc-403e-b363-cd452a0a4e58
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Common Data Service Dynamics 365 Portals - Identity Workflows Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Contains the workflow processes that are used by Identity."
+ unique_name: MicrosoftIdentityWorkflows
+ version: "9.0.6.1"
+ customization_prefix: adx
+# This solution includes no entities.
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Common Data Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

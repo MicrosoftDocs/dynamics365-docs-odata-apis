@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveFilteredForms
 name: "RetrieveFilteredForms"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveFilteredForms Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse RetrieveFilteredForms Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7ce46556-cc95-4307-b22f-c7d65a77391e
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveFilteredForms Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveFilteredForms Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the entity forms that are available for a specified user. "
 iscomposable: false
@@ -47,7 +47,7 @@ return_type:
   iscollection: true
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

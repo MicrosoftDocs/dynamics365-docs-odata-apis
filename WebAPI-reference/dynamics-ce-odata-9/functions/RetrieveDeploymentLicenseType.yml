@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveDeploymentLicenseType
 name: "RetrieveDeploymentLicenseType"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveDeploymentLicenseType Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse RetrieveDeploymentLicenseType Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1944adce-7d01-4a6c-bc44-1d0613310af6
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveDeploymentLicenseType Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveDeploymentLicenseType Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the type of license for a deployment of Microsoft Dynamics 365.  "
 iscomposable: false
@@ -25,7 +25,7 @@ return_type:
   iscollection: false
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

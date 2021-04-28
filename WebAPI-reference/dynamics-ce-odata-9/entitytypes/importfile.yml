@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.importfile
 name: "importfile"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement importfile EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 36e70a00-7d6f-4aa1-86e9-59a70ba5729f
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the importfile entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse importfile entitytype."
 description: "File name of file used for import."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/importfiles"
@@ -378,8 +378,8 @@ lookup_properties:
     description: "Unique identifier of the user who owns the import file."
   - name: _recordsownerid_value
     single_valued_navigation_property:
-    - recordsownerid_systemuser
     - recordsownerid_team
+    - recordsownerid_systemuser
     description: "Choose the user that the records created during the import job should be assigned to."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
@@ -460,9 +460,11 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
+    description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

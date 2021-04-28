@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
 name: "msdyn_incidenttypeproduct"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_incidenttypeproduct EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 15a52a07-45dd-4632-9f48-c8c8af9ae34c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_incidenttypeproduct entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_incidenttypeproduct entitytype."
 description: "This entity gives the ability to pre-configure products to be added to a work order when the related incident is added to the work order"
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_incidenttypeproducts"
@@ -147,6 +147,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Shows who last updated the record on behalf of another user."
+  - name: _msdyn_appliedsuggestionresult_value
+    single_valued_navigation_property:
+    - msdyn_AppliedSuggestionResult
+    description: "Incident type suggestion result applied to this incident type product."
   - name: _msdyn_incidenttype_value
     single_valued_navigation_property:
     - msdyn_incidenttype
@@ -190,6 +194,9 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_msdyn_incidenttypeproduct_modifiedonbehalfby
+  - name: msdyn_AppliedSuggestionResult
+    type: Microsoft.Dynamics.CRM.msdyn_incidenttyperecommendationresult
+    partner: msdyn_msdyn_incidenttyperecommendationresult_msdyn_incidenttypeproduct_AppliedSuggestionResult
   - name: msdyn_incidenttype
     type: Microsoft.Dynamics.CRM.msdyn_incidenttype
     partner: msdyn_msdyn_incidenttype_msdyn_incidenttypeproduct_IncidentType
@@ -250,6 +257,15 @@ collection_valued_navigation_properties:
   - name: msdyn_incidenttypeproduct_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_msdyn_incidenttypeproduct_letter
+  - name: msdyn_incidenttypeproduct_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_msdyn_incidenttypeproduct_li_inmail
+  - name: msdyn_incidenttypeproduct_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_msdyn_incidenttypeproduct_li_message
+  - name: msdyn_incidenttypeproduct_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_msdyn_incidenttypeproduct_li_pointdrivepresentationviewed
   - name: msdyn_incidenttypeproduct_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_incidenttypeproduct
@@ -259,6 +275,15 @@ collection_valued_navigation_properties:
   - name: msdyn_incidenttypeproduct_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_msdyn_incidenttypeproduct_msdyn_bookingalert
+  - name: msdyn_incidenttypeproduct_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_msdyn_incidenttypeproduct_msfp_alert
+  - name: msdyn_incidenttypeproduct_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_msdyn_incidenttypeproduct_msfp_surveyinvite
+  - name: msdyn_incidenttypeproduct_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_msdyn_incidenttypeproduct_msfp_surveyresponse
   - name: msdyn_incidenttypeproduct_PhoneCalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_msdyn_incidenttypeproduct_phonecall
@@ -307,7 +332,9 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-# This entity has no remarks.
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.service
 name: "service"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement service EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4c60a0e6-bbac-4f12-a4cf-e2f9da658a99
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the service entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse service entitytype."
 description: "Activity that represents work done to satisfy a customer's need."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/services"
@@ -231,12 +231,30 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: li_inmail_service_serviceid
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: serviceid_li_inmail
+  - name: li_message_service_serviceid
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: serviceid_li_message
+  - name: li_pointdrivepresentationviewed_service_serviceid
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: serviceid_li_pointdrivepresentationviewed
   - name: msdyn_approval_service_serviceid
     type: Microsoft.Dynamics.CRM.msdyn_approval
     partner: serviceid_msdyn_approval
   - name: msdyn_bookingalert_service_serviceid
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: serviceid_msdyn_bookingalert
+  - name: msfp_alert_service_serviceid
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: serviceid_msfp_alert
+  - name: msfp_surveyinvite_service_serviceid
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: serviceid_msfp_surveyinvite
+  - name: msfp_surveyresponse_service_serviceid
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: serviceid_msfp_surveyresponse
   - name: service_accounts
     type: Microsoft.Dynamics.CRM.account
     partner: preferredserviceid
@@ -328,7 +346,7 @@ solutions:
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
     description: "Dynamics 365 workload for service."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -1,0 +1,46 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.ProvisionLanguageForUserStatusType
+name: "ProvisionLanguageForUserStatusType"
+type: enumtype
+metadata: 
+  title: "Microsoft Dataverse ProvisionLanguageForUserStatusType EnumType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 65684952-0a26-48c6-bfd6-b3f4a2b7b0f3
+  author: "kumarVivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API ProvisionLanguageForUserStatusType ComplexType."
+namespace: Microsoft.Dynamics.CRM
+description: "Not Found" 
+members:
+  description: "Members define the discrete options for the enumeration type."
+  member_items:
+  - description: ""
+    name: "Queued"
+    value: 0
+  - description: ""
+    name: "Completed"
+    value: 1
+  - description: ""
+    name: "Skipped"
+    value: 2
+usedby:
+  description: "The following use the ProvisionLanguageForUserStatusType EnumType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.ProvisionLanguageForUserResult
+    used_as: Property
+# There are no remarks for this enum type.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

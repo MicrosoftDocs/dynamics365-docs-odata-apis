@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.SetBusinessSystemUser
 name: "SetBusinessSystemUser"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement SetBusinessSystemUser Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0e06bbd2-adbb-484d-b487-1fb0c8f0da67
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the SetBusinessSystemUser Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse SetBusinessSystemUser Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Moves a system user (user) to a different business unit. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -41,7 +41,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.equipment
     displayName: Facility/Equipment
     description: "Resource that can be scheduled."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

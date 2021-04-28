@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.NextMonth
 name: "NextMonth"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement NextMonth Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse NextMonth Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a807457f-2f3b-4b02-b6fd-a43771c6de3b
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the NextMonth Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse NextMonth Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function to evaluate whether the value is in the next month. "
 parameters:
@@ -23,7 +23,7 @@ parameters:
     unicode: false
     description: "The name of the property to evaluate. "
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.NextMonth(PropertyName=@p1)&@p1='name'"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

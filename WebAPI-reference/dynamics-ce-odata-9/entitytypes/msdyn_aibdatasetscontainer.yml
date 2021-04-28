@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_aibdatasetscontainer
 name: "msdyn_aibdatasetscontainer"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_aibdatasetscontainer EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 3ac9e774-b1d9-4615-83cb-3b60f96c11ae
-  author: "KumarVivek"
+  ms.assetid: 8bc37a99-bcac-47af-8637-d75e79e274d7
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_aibdatasetscontainer entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_aibdatasetscontainer entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_aibdatasetscontainers"
@@ -227,7 +227,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdyn_AISolutionDefaultTemplates
     description: "AI Solution default templates"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

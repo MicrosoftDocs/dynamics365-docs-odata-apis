@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ProcessInboundEmail
 name: "ProcessInboundEmail"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ProcessInboundEmail Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8c23489d-966e-4649-bc7c-f1ede5679dc4
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the ProcessInboundEmail Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse ProcessInboundEmail Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Processes the email responses from a marketing campaign. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -25,7 +25,7 @@ hasparameters: false
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

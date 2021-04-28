@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
 name: "msdyn_iotdeviceregistrationhistory"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_iotdeviceregistrationhistory EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f157c53b-3c8b-42f9-9950-5e72bf4e5524
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_iotdeviceregistrationhistory entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_iotdeviceregistrationhistory entitytype."
 description: "Tracks registration activities on an IoT device."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_iotdeviceregistrationhistories"
@@ -245,7 +245,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.IoTConnector
     description: "Enables IoT scenarios in Dynamics 365."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -3,34 +3,52 @@ uid: Microsoft.Dynamics.CRM.msdynce_OfficeProductivity
 name: "This solution contains Office Productivity implementation"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement This solution contains Office Productivity implementation Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse This solution contains Office Productivity implementation Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 28b0c999-6786-4f01-b6ea-19ead04a301d
-  author: "KumarVivek"
+  ms.assetid: f5920dff-b428-427d-bfe6-375b9c2d4088
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement This solution contains Office Productivity implementation Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse This solution contains Office Productivity implementation Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "This solution contains Office Productivity implementation"
  unique_name: msdynce_OfficeProductivity
- version: "9.0.2.11032"
+ version: "9.0.21031.10007"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
   entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_collabgraphresource
+     description: "Entity which stores collaboration data of Dynamics 365 with Microsoft Teams"
+   - type: Microsoft.Dynamics.CRM.msdyn_msteamssetting
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_msteamssettingsv2
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_teamscollaboration
      description: "Entity which stores collaboration data of Dynamics 365 with Microsoft Teams"
 actions:
   description: "The following actions are included in this solution."
   action_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_EnableSharePoint
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_GetRecordUsers
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_IsMSTeamsUserSyncFeatureEnabled
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_IsSharePointEnabled
      description: ""
-# This solution has no remarks.
+   - type: Microsoft.Dynamics.CRM.msdyn_ProvisionSharePointDocumentLibraries
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_SetSharePointDocumentStatus
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_SetTeamsDocumentStatus
+     description: ""
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Microsoft Dataverse Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

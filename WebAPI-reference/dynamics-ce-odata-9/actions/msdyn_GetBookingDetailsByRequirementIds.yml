@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_GetBookingDetailsByRequirementIds
 name: "msdyn_GetBookingDetailsByRequirementIds"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_GetBookingDetailsByRequirementIds Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4e27a2a4-4ba4-4a00-baf0-b8f5d3234bca
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_GetBookingDetailsByRequirementIds Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_GetBookingDetailsByRequirementIds Action."
 namespace: Microsoft.Dynamics.CRM
 description: "For internal use only."
 owningsolution: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
@@ -36,7 +36,7 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.msdyn_GetBookingDetailsByRequirementIdsResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

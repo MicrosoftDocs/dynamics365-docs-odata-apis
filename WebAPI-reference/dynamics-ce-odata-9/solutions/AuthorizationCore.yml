@@ -1,0 +1,45 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.AuthorizationCore
+name: "AuthorizationCore"
+type: solution
+metadata: 
+  title: "Microsoft Dataverse AuthorizationCore Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: a972e008-2ab5-4046-ad05-c3fd35b25dd0
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse AuthorizationCore Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "Authorization Core solution"
+ unique_name: AuthorizationCore
+ version: "1.35.0.0"
+ customization_prefix: default
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.role
+     description: "Grouping of security privileges. Users are assigned roles that authorize their access to the Microsoft CRM system."
+   - type: Microsoft.Dynamics.CRM.systemuser
+     description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
+   - type: Microsoft.Dynamics.CRM.systemuserauthorizationchangetracker
+     description: "Internal authorization table to track user authorization changes"
+   - type: Microsoft.Dynamics.CRM.team
+     description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units."
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

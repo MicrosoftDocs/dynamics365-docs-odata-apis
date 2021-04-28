@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveRecordWall
 name: "RetrieveRecordWall"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveRecordWall Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse RetrieveRecordWall Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c854c5bb-31c3-436f-a6e9-077873d13021
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveRecordWall Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveRecordWall Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves pages of posts, including comments for each post, for a specified record. "
 iscomposable: false
@@ -89,7 +89,7 @@ return_type:
   iscollection: true
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

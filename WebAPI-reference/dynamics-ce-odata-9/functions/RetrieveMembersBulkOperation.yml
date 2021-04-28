@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveMembersBulkOperation
 name: "RetrieveMembersBulkOperation"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveMembersBulkOperation Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse RetrieveMembersBulkOperation Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 352c0d1c-76d5-4278-bd0d-8b3d38c070b9
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveMembersBulkOperation Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveMembersBulkOperation Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves the members of a bulk operation. "
 iscomposable: true
@@ -42,7 +42,7 @@ return_type:
   iscollection: true
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

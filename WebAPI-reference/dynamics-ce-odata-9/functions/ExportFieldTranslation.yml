@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ExportFieldTranslation
 name: "ExportFieldTranslation"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ExportFieldTranslation Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse ExportFieldTranslation Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 14d9f3a1-99a0-4fd4-891c-5751ee3c34ef
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the ExportFieldTranslation Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse ExportFieldTranslation Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Exports localizable fields values to a compressed file. "
 iscomposable: false
@@ -25,7 +25,7 @@ return_type:
   iscollection: false
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

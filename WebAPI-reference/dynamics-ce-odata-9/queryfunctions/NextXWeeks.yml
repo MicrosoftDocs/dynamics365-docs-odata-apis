@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.NextXWeeks
 name: "NextXWeeks"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement NextXWeeks Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse NextXWeeks Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 801c19f6-1eb1-43db-943b-65f7221520e8
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the NextXWeeks Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse NextXWeeks Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function to evaluate whether the value is in the next X weeks.  "
 parameters:
@@ -28,7 +28,7 @@ parameters:
     unicode: true
     description: "The value to compare. "
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.NextXWeeks(PropertyName=@p1,PropertyValue=@p2)&@p1='name'&@p2=42"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

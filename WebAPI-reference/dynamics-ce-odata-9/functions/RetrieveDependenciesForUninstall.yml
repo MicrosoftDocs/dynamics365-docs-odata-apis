@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveDependenciesForUninstall
 name: "RetrieveDependenciesForUninstall"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveDependenciesForUninstall Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse RetrieveDependenciesForUninstall Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8e3cb5a3-bf69-425a-be73-d309a238328c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveDependenciesForUninstall Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveDependenciesForUninstall Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieves a list of the solution component dependencies that can prevent you from uninstalling a managed solution.  "
 iscomposable: false
@@ -37,7 +37,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.dependency
     displayName: "Dependency"
     description: "A component dependency in CRM."
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

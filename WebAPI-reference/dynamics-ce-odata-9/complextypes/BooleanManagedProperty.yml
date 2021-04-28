@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.BooleanManagedProperty
 name: "BooleanManagedProperty"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement BooleanManagedProperty ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse BooleanManagedProperty ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 20243394-dd7b-4529-bf44-cc01e0247032
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API BooleanManagedProperty ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API BooleanManagedProperty ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Defines a managed property that stores a Boolean value." 
@@ -40,31 +40,9 @@ properties:
 usedby:
   description: "The following use the BooleanManagedProperty ComplexType."
   usedby_items:
-  - name: Microsoft.Dynamics.CRM.connectionreference
+  - name: Microsoft.Dynamics.CRM.apisettings
     used_as: Property
-  - name: Microsoft.Dynamics.CRM.connectionrole
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.connector
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.contracttemplate
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.entitydataprovider
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.environmentvariabledefinition
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.environmentvariablevalue
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.kbarticletemplate
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.mailmergetemplate
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.msdyn_aiconfiguration
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.msdyn_aimodel
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.msdyn_aitemplate
-    used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

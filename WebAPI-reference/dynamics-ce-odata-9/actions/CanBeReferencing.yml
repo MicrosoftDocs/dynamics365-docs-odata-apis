@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.CanBeReferencing
 name: "CanBeReferencing"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CanBeReferencing Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4bc3b68f-7b15-40a9-8f4b-f6eea20b7c32
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the CanBeReferencing Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse CanBeReferencing Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Checkes whether an entity can be the referencing entity in a one-to-many relationship. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -31,7 +31,7 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.CanBeReferencingResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

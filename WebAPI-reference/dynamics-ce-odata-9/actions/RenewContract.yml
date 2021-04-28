@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RenewContract
 name: "RenewContract"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RenewContract Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 232285b2-4bb1-4866-8ec5-853451e45063
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RenewContract Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RenewContract Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Renews a contract and create the contract details for a new contract.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -39,7 +39,7 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.contract
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

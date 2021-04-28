@@ -3,17 +3,17 @@ uid: Microsoft.Dynamics.CRM.CreateAsyncJobToRevokeInheritedAccess
 name: "CreateAsyncJobToRevokeInheritedAccess"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement CreateAsyncJobToRevokeInheritedAccess Action Reference | MicrosoftDocs"
-  ms.date: "08/17/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: c19b8aca-f005-4b06-8fe9-7e52f3b28ebd
-  author: "KumarVivek"
+  ms.assetid: 47958287-d4d3-4752-aa89-13c5514946bc
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the CreateAsyncJobToRevokeInheritedAccess Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse CreateAsyncJobToRevokeInheritedAccess Action."
 namespace: Microsoft.Dynamics.CRM
-description: "Creates and executes an asynchronous cleanup job to revoke inherited access granted through cascading inheritance. "
+# This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
@@ -24,12 +24,11 @@ parameters:
     type: Edm.String
     nullable: false
     unicode: false
-    description: "The schema name of the entity relationship."  
+    description: ""
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
-remarks: "When an entity relationship that is using Reparent or Share is changed from Cascade All to Cascade None, a cleanup job can be run to remove access that was granted through cascading inheritance. This cleanup will not impact any user that was directly granted access to an entity."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

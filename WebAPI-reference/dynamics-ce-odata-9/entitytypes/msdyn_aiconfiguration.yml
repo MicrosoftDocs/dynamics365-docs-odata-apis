@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_aiconfiguration
 name: "msdyn_aiconfiguration"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_aiconfiguration EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 5687aab5-3741-4b1b-b216-5c6b4239fe25
-  author: "KumarVivek"
+  ms.assetid: 59be91bc-9bc3-4501-8d0e-304026e6e094
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_aiconfiguration entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_aiconfiguration entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_aiconfigurations"
@@ -132,6 +132,18 @@ properties:
       description: ""
       iscomputed: false
       isreadonly: false
+    - name: msdyn_model
+      type: Edm.Binary
+      display_name: ""
+      description: "This is a file type attribute to store Ai builder Model."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_model_name
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: msdyn_modeldata
       type: Edm.String
       display_name: "ModelData"
@@ -389,6 +401,9 @@ collection_valued_navigation_properties:
   - name: msdyn_aiconfiguration_BulkDeleteFailures
     type: Microsoft.Dynamics.CRM.bulkdeletefailure
     partner: regardingobjectid_msdyn_aiconfiguration
+  - name: msdyn_aiconfiguration_FileAttachments
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: objectid_msdyn_aiconfiguration
   - name: msdyn_aiconfiguration_MailboxTrackingFolders
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_msdyn_aiconfiguration
@@ -451,7 +466,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdyn_AISolution
     description: ""
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

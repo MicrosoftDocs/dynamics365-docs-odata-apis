@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.timezonelocalizedname
 name: "timezonelocalizedname"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement timezonelocalizedname EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 096b8217-b92d-415a-a86e-8d5348c27122
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the timezonelocalizedname entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse timezonelocalizedname entitytype."
 description: "Localized name of the time zone."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/timezonelocalizednames"
@@ -124,7 +124,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

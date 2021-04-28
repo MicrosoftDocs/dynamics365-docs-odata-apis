@@ -1,0 +1,89 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_BookingResourceRequirement
+name: "msdyn_BookingResourceRequirement"
+type: action
+metadata: 
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 1dd95705-576b-4752-ac4f-55b9c5da7e6b
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_BookingResourceRequirement Action."
+namespace: Microsoft.Dynamics.CRM
+description: "For internal use only."
+owningsolution: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
+bound_entities:
+  description: "Bound actions are invoked by appending the action name to the URI representing an entity or collection."
+  bound_entity_items:
+  - entity_type: Microsoft.Dynamics.CRM.msdyn_resourcerequirement
+    binding_type: entity
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: ResourceId
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "For internal use only."
+  - name: BookingStatusId
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "For internal use only."
+  - name: BookingMethod
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+  - name: BookingType
+    type: Edm.Int32
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+  - name: StartDateTime
+    type: Edm.DateTimeOffset
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+  - name: EndDateTime
+    type: Edm.DateTimeOffset
+    nullable: false
+    unicode: true
+    description: "For internal use only."
+  - name: Timeframe
+    type: Edm.Int32
+    nullable: true
+    unicode: true
+    description: "For internal use only."
+  - name: Hours
+    type: Edm.Int32
+    nullable: true
+    unicode: true
+    description: "For internal use only."
+  - name: Percentage
+    type: Edm.Int32
+    nullable: true
+    unicode: true
+    description: "For internal use only."
+return_type:
+  description: "The msdyn_BookingResourceRequirement action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_BookingResourceRequirementResponse
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.EntityFilePointersRequest
 name: "EntityFilePointersRequest"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement EntityFilePointersRequest ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityFilePointersRequest ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 0172cdf1-b64c-4e6b-8b51-910405952e13
-  author: "KumarVivek"
+  ms.assetid: 4c8391ac-1970-42b3-bc09-3594899e09b3
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API EntityFilePointersRequest ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API EntityFilePointersRequest ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -30,9 +30,21 @@ properties:
     unicode: false
     description: ""
     iscollection: true
+  - name: OrganizationId
+    type: Edm.Guid
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+  - name: ScaleGroupId
+    type: Edm.Guid
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
 # This complex type doesn't have any navigation properties.
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

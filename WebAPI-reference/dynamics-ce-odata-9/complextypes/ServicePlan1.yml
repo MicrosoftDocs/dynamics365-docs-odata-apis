@@ -1,5 +1,5 @@
 ### YamlMime:OData
-uid: Microsoft.Dynamics.CRM.ServicePlan
+uid: Microsoft.Dynamics.CRM.ServicePlan1
 name: "ServicePlan"
 type: complextype
 metadata: 
@@ -39,7 +39,7 @@ usedby:
 # This complex type has no remarks.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

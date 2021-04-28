@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DeleteOpenInstances
 name: "DeleteOpenInstances"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement DeleteOpenInstances Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e8405993-4e34-4a7f-9007-b00db726ac23
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the DeleteOpenInstances Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse DeleteOpenInstances Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Deletes instances of a recurring appointment master that have an “Open” state.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -43,7 +43,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.recurringappointmentmaster
     displayName: Recurring Appointment
     description: "The Master appointment of a recurring appointment series."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.sharepointsite
 name: "sharepointsite"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement sharepointsite EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: eba98254-45d2-409b-8127-ff3ba0752289
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the sharepointsite entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse sharepointsite entitytype."
 description: "SharePoint site from where documents can be managed in Microsoft Dynamics 365."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/sharepointsites"
@@ -362,7 +362,7 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

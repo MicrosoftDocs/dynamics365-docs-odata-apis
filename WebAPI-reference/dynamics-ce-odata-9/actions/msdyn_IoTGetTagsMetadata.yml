@@ -1,0 +1,46 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_IoTGetTagsMetadata
+name: "msdyn_IoTGetTagsMetadata"
+type: action
+metadata: 
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 28e3463f-b00a-4ebe-83d3-c5aad6138523
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_IoTGetTagsMetadata Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.IoTConnector
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: DeviceCategory
+    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
+    nullable: false
+    unicode: true
+    description: ""
+return_type:
+  description: "The msdyn_IoTGetTagsMetadata action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_IoTGetTagsMetadataResponse
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

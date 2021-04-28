@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.teamtemplate
 name: "teamtemplate"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement teamtemplate EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f2acf955-3ed2-4cfb-aecf-8c7226021dbb
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the teamtemplate entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse teamtemplate entitytype."
 description: "Team template for an entity enabled for automatically created access teams."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/teamtemplates"
@@ -81,6 +81,12 @@ properties:
       description: "Type the name of the team template."
       iscomputed: false
       isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version number for team template."
+      iscomputed: false
+      isreadonly: true
 lookup_properties:
   description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
   property_items:
@@ -135,9 +141,11 @@ operations:
 solutions:
   description: "The following solutions include the teamtemplate entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.AccessTeam
+    description: "Access Team solution"
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

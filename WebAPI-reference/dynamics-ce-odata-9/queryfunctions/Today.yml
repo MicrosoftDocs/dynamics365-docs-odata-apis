@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.Today
 name: "Today"
 type: queryfunction
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Today Query Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Today Query Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e2331528-670e-4fe7-b0e3-b1f184bd6aca
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Today Query Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Today Query Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Query function that evaluates whether the value equals today’s date.  "
 parameters:
@@ -23,7 +23,7 @@ parameters:
     unicode: false
     description: "The name of the property to evaluate "
 syntax_example: "?$filter=Microsoft.Dynamics.CRM.Today(PropertyName=@p1)&@p1='name'"
-# This query function has no remarks.
+# There are no remarks for this query function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

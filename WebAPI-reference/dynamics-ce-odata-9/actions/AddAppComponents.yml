@@ -3,17 +3,17 @@ uid: Microsoft.Dynamics.CRM.AddAppComponents
 name: "AddAppComponents"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AddAppComponents Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 451d5c95-de1f-4f1c-a2b6-4e263c40b21b
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the AddAppComponents Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse AddAppComponents Action."
 namespace: Microsoft.Dynamics.CRM
-description: "Adds app components to an app."
+# This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
 # This action has no bound entities.
 isbound: false
@@ -24,12 +24,12 @@ parameters:
     type: Edm.Guid
     nullable: false
     unicode: true
-    description: "ID of the app to add the components to."
+    description: ""
   - name: Components
     type: Microsoft.Dynamics.CRM.crmbaseentity
     nullable: false
     unicode: true
-    description: "Collection of components, such as sitemap, entity, dashboard, business process flows, views, and forms, to be added to the app."
+    description: ""
 # This action has no return value.
 hasreturnvalue: false
 entities:
@@ -38,7 +38,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.appmodule
     displayName: Model-driven App
     description: "A role-based, modular business app that provides task-based functionality for a particular area of work."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

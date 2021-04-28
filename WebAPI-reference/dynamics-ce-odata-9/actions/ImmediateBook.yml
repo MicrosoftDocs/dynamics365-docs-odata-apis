@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ImmediateBook
 name: "ImmediateBook"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ImmediateBook Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: d89efb54-30cb-46c8-a97c-49ee1d3e9ddd
-  author: "KumarVivek"
+  ms.assetid: 507c63bf-0141-4649-bf87-af012d860e69
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the ImmediateBook Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse ImmediateBook Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -24,11 +24,6 @@ parameters:
     type: Microsoft.Dynamics.CRM.crmbaseentity
     nullable: false
     unicode: true
-    description: ""
-  - name: AttachmentIds
-    type: Edm.String
-    nullable: false
-    unicode: false
     description: ""
   - name: EWSUrl
     type: Edm.String
@@ -51,7 +46,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.appointment
     displayName: Appointment
     description: "Commitment representing a time interval with start/end times and duration."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

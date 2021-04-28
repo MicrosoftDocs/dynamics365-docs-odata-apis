@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_expense
 name: "msdyn_expense"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_expense EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 19302b4c-210f-4f5e-9749-3e9a4e65c141
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_expense entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_expense entitytype."
 description: "Main container that holds expense information."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/msdyn_expenses"
@@ -54,7 +54,7 @@ properties:
       isreadonly: true
     - name: msdyn_amount
       type: Edm.Decimal
-      display_name: "Amount"
+      display_name: "Subtotal"
       description: "Enter the total amount for expense."
       iscomputed: false
       isreadonly: false
@@ -105,8 +105,8 @@ properties:
       isreadonly: false
     - name: msdyn_price
       type: Edm.Decimal
-      display_name: "Price"
-      description: "Enter the Price"
+      display_name: "Unit Price"
+      description: "Enter the Unit Price"
       iscomputed: false
       isreadonly: false
     - name: msdyn_price_base
@@ -415,6 +415,8 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.msdyn_ExpenseApproveAction
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_ExpenseRejectAction
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.msdyn_ExpenseSubmitAction
@@ -428,9 +430,11 @@ operations:
 solutions:
   description: "The following solutions include the msdyn_expense entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

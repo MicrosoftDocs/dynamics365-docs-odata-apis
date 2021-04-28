@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ComplexManagedPropertyAttributeMetadata
 name: "ComplexManagedPropertyAttributeMetadata"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ComplexManagedPropertyAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse ComplexManagedPropertyAttributeMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: b73ddb2e-d067-4ff9-8d40-2ecf8037b8fc
-  author: "KumarVivek"
+  ms.assetid: 0ec5569a-8bed-4289-a8de-a55faa23539f
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API ComplexManagedPropertyAttributeMetadata ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API ComplexManagedPropertyAttributeMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 header:
   base_type: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
@@ -45,7 +45,7 @@ properties:
     iscollection: false
 # This complex type doesn't have any navigation properties.
 
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

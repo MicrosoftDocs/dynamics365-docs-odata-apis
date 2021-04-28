@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.account
 name: "account"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement account EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b587728b-db31-4d53-be70-98a1ed5fe7e9
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the account entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse account entitytype."
 description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/accounts"
@@ -794,6 +794,30 @@ properties:
       description: "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
       iscomputed: false
       isreadonly: true
+    - name: ms_newsandsocialid
+      type: Edm.String
+      display_name: "News ID"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: ms_traceid
+      type: Edm.String
+      display_name: "Trace ID"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: ms_tweetsaboutdate
+      type: Edm.String
+      display_name: "Tweets About Date"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: ms_tweetsfromdate
+      type: Edm.String
+      display_name: "Tweets From Date"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_externalaccountid
       type: Edm.String
       display_name: "External ID"
@@ -1267,7 +1291,7 @@ lookup_properties:
     description: "Choose the primary contact for the account to provide quick access to contact details."
   - name: _slaid_value
     single_valued_navigation_property:
-    - sla_account_sla
+    - slaid_sla
     description: "Choose the service level agreement (SLA) that you want to apply to the Account record."
   - name: _slainvokedid_value
     single_valued_navigation_property:
@@ -1347,7 +1371,7 @@ single_valued_navigation_properties:
   - name: primarycontactid
     type: Microsoft.Dynamics.CRM.contact
     partner: account_primary_contact
-  - name: sla_account_sla
+  - name: slaid_sla
     type: Microsoft.Dynamics.CRM.sla
     partner: manualsla_account
   - name: slainvokedid_account_sla
@@ -1392,6 +1416,9 @@ collection_valued_navigation_properties:
   - name: account_BulkOperations
     type: Microsoft.Dynamics.CRM.bulkoperation
     partner: regardingobjectid_account_bulkoperation
+  - name: account_CampaignActivities
+    type: Microsoft.Dynamics.CRM.campaignactivity
+    partner: regardingobjectid_account_campaignactivity
   - name: account_CampaignResponses
     type: Microsoft.Dynamics.CRM.campaignresponse
     partner: regardingobjectid_account_campaignresponse
@@ -1434,6 +1461,15 @@ collection_valued_navigation_properties:
   - name: Account_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_account_letter
+  - name: account_li_inmails
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: regardingobjectid_account_li_inmail
+  - name: account_li_messages
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: regardingobjectid_account_li_message
+  - name: account_li_pointdrivepresentationvieweds
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: regardingobjectid_account_li_pointdrivepresentationviewed
   - name: Account_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_account
@@ -1446,6 +1482,15 @@ collection_valued_navigation_properties:
   - name: account_msdyn_bookingalerts
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: regardingobjectid_account_msdyn_bookingalert
+  - name: account_msfp_alerts
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: regardingobjectid_account_msfp_alert
+  - name: account_msfp_surveyinvites
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: regardingobjectid_account_msfp_surveyinvite
+  - name: account_msfp_surveyresponses
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: regardingobjectid_account_msfp_surveyresponse
   - name: account_OpportunityCloses
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: regardingobjectid_account_opportunityclose
@@ -1530,6 +1575,12 @@ collection_valued_navigation_properties:
   - name: listaccount_association
     type: Microsoft.Dynamics.CRM.list
     partner: listaccount_association
+  - name: ms_account_ms_newsitem
+    type: Microsoft.Dynamics.CRM.ms_newsitem
+    partner: ms_AccountId
+  - name: ms_account_ms_satori
+    type: Microsoft.Dynamics.CRM.ms_satori
+    partner: ms_AccountId
   - name: msdyn_account_account_BillingAccount
     type: Microsoft.Dynamics.CRM.account
     partner: msdyn_billingaccount_account
@@ -1554,6 +1605,9 @@ collection_valued_navigation_properties:
   - name: msdyn_account_msdyn_customerasset_Account
     type: Microsoft.Dynamics.CRM.msdyn_customerasset
     partner: msdyn_account
+  - name: msdyn_account_msdyn_entitlementapplication_serviceaccount
+    type: Microsoft.Dynamics.CRM.msdyn_entitlementapplication
+    partner: msdyn_serviceaccount
   - name: msdyn_account_msdyn_estimateline_AccountCustomer
     type: Microsoft.Dynamics.CRM.msdyn_estimateline
     partner: msdyn_AccountCustomer
@@ -1650,6 +1704,15 @@ collection_valued_navigation_properties:
   - name: msdyn_account_salesorder_Account
     type: Microsoft.Dynamics.CRM.salesorder
     partner: msdyn_account
+  - name: msdyn_geofence_account
+    type: Microsoft.Dynamics.CRM.msdyn_geofence
+    partner: msdyn_account
+  - name: msdyn_msdyn_functionallocation_account
+    type: Microsoft.Dynamics.CRM.msdyn_functionallocation
+    partner: msdyn_msdyn_functionallocation_account
+  - name: msdyn_playbookinstance_account
+    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
+    partner: regarding_account
   - name: opportunity_customer_accounts
     type: Microsoft.Dynamics.CRM.opportunity
     partner: customerid_account
@@ -1702,12 +1765,34 @@ solutions:
     description: ""
   - type: Microsoft.Dynamics.CRM.AppforOutlookPatch
     description: "Microsoft Dynamics 365 App for Outlook is an Office add-in that you can quickly add to your users’ mailbox so they can track communication and review Dynamics 365 applications’ information in Outlook."
+  - type: Microsoft.Dynamics.CRM.CompanyNewsTimeline
+    description: "You can now view news related to an Account, Lead, Contact or Opportunity in the CRM app on your mobile device. The Company news timeline solution for mobile enables sales and service users to view the latest and most important news in the mobile client from Bing news. The news articles are organized by time (Today, This Week, Last Week) and contain the headline, date/time, and source of the news article.  Important events are detected and categorized (including Management Changes, Earnings Releases, New Offerings, Cost Cutting, Growth, Legal Issues, Acquisitions and Partnerships)."
   - type: Microsoft.Dynamics.CRM.FieldService
     description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
+  - type: Microsoft.Dynamics.CRM.FieldServiceCommon
+    description: "This solution contains components that are prerequisites for both the Field Service solution, as well as for Supply Chain solutions for Finance and Operations integration."
+  - type: Microsoft.Dynamics.CRM.LinkedInSalesNavigatorControlsForUnifiedClient
+    description: "Target, understand and engage customers on LinkedIn Sales Navigator from within Dynamics 365"
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsCRMBasicOperations
+    description: ""
   - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
     description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_24
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
+    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
+  - type: Microsoft.Dynamics.CRM.msdyn_AssetCommon
+    description: "This solution contains the Customer Asset entity and the attributes commonly used across Asset related scenarios within Dynamics 365. It is introduced as a precursor for any solution with work related to the Asset entity."
+  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerService
+    description: "Use Connected Customer Service to monitor connected devices to make sure your customer’s equipment is functioning properly. If a piece of equipment fails, you’ll receive a notification so that you can troubleshoot the problem remotely."
+  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
+    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
   - type: Microsoft.Dynamics.CRM.msdyn_LinkedInExtensions
     description: "LinkedIn Extension for Dynamics365"
+  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
+    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch
@@ -1742,11 +1827,13 @@ solutions:
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.ProjectService
     description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
+  - type: Microsoft.Dynamics.CRM.Relationshipassistant
+    description: "Relationship assistant Feature Description."
   - type: Microsoft.Dynamics.CRM.SICommon
     description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

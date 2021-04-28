@@ -3,20 +3,20 @@ uid: Microsoft.Dynamics.CRM.msdyn_TerritoryHierarchyManagement
 name: "Territory Hierarchy Management"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement Territory Hierarchy Management Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Territory Hierarchy Management Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 3247d907-7945-41d0-8418-850254df02b0
-  author: "KumarVivek"
+  ms.assetid: f9855a69-6569-442b-9410-cde5a224ee5d
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement Territory Hierarchy Management Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Territory Hierarchy Management Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdyn_TerritoryHierarchyManagement
- version: "9.0.0.0"
+ version: "9.0.2004.3013"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -24,9 +24,9 @@ entities:
    - type: Microsoft.Dynamics.CRM.territory
      description: "Territory represents sales regions."
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Microsoft Dataverse Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

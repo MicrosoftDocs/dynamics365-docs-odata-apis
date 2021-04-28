@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DeleteAndPromote
 name: "DeleteAndPromote"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement DeleteAndPromote Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2b38ffa3-7d04-434c-a1c1-355e22a406f2
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the DeleteAndPromote Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse DeleteAndPromote Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Replaces managed solution (A) plus all of its patches with managed solution (B) that is the clone of (A) and all of its patches."
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -36,7 +36,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.solution
     displayName: Solution
     description: "A solution which contains CRM customizations."
-remarks: "If using the DeleteAndPromote action takes longer than 20 minutes, the connection might be closed by the host with a 502 error or no response from the host. As a workaround, you can use the <xref:Microsoft.Crm.Sdk.Messages.DeleteAndPromoteRequest> message or poll the solution history table using [OrganizationURI]/api/data/v9.1/msdyn_solutionhistories."
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

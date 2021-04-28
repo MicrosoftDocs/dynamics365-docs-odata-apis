@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_CreateEstimateLinesResponse
 name: "msdyn_CreateEstimateLinesResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_CreateEstimateLinesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse msdyn_CreateEstimateLinesResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 140da617-7439-4b09-923e-38579137ff22
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API msdyn_CreateEstimateLinesResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API msdyn_CreateEstimateLinesResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "For internal use only." 
@@ -25,8 +25,12 @@ properties:
     description: "For internal use only."
     iscollection: false
 # This complex type doesn't have any navigation properties.
-
-# This complex type has no remarks.
+usedby:
+  description: "The following use the msdyn_CreateEstimateLinesResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.msdyn_CreateEstimateLines
+    used_as: ReturnType
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

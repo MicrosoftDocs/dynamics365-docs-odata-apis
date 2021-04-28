@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.EntityClientSetting
 name: "EntityClientSetting"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement EntityClientSetting ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityClientSetting ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: f84cacef-c9d6-4106-bb3a-92651dd1203a
-  author: "KumarVivek"
+  ms.assetid: 7f9bb32a-9eb3-45e7-b9b3-63ee4151a97b
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API EntityClientSetting ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API EntityClientSetting ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -36,7 +36,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.ClientEntityMetadata
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

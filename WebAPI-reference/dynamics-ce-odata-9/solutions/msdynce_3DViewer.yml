@@ -3,26 +3,30 @@ uid: Microsoft.Dynamics.CRM.msdynce_3DViewer
 name: "3D Viewer"
 type: solution
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement 3D Viewer Solution Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse 3D Viewer Solution Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 9e4e8e73-4013-4548-b6d4-82abf712e483
-  author: "KumarVivek"
+  ms.assetid: 7ffefea9-13c5-43ed-ace0-c5dd22b792c5
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Dynamics 365 Customer Engagement 3D Viewer Solution."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse 3D Viewer Solution."
 namespace: Microsoft.Dynamics.CRM
 header:
  description: "3D Viewer provides the ability to view 3D models in Dynamics 365"
  unique_name: msdynce_3DViewer
  version: "1.0.0.38"
  customization_prefix: msdyn
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.msdyn_3dmodel
+     description: ""
 # This solution includes no actions.
-# This solution has no remarks.
+# There are no remarks for this solution.
 href_see_also:
-- text: "Use the Microsoft Dataverse Web API"
+- text: "Use the Microsoft Dataverse Service Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

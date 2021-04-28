@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.XrmDateTimeGrouping
 name: "XrmDateTimeGrouping"
 type: enumtype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement XrmDateTimeGrouping EnumType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse XrmDateTimeGrouping EnumType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 3a347a19-fd87-4ee0-bf4d-1a8e013dabac
-  author: "KumarVivek"
+  ms.assetid: c7cba02a-a749-44f1-ba7e-4f2777054e6a
+  author: "kumarVivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API XrmDateTimeGrouping ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API XrmDateTimeGrouping ComplexType."
 namespace: Microsoft.Dynamics.CRM
 description: "Not Found" 
 members:
@@ -46,7 +46,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.XrmAttributeExpression
     used_as: Property
-# This enum type has no remarks.
+# There are no remarks for this enum type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

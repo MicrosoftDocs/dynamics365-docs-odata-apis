@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.msdyn_GetContractLineChargeability
 name: "msdyn_GetContractLineChargeability"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement msdyn_GetContractLineChargeability Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 239e99e4-6248-4ebd-a352-1c530f045f21
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the msdyn_GetContractLineChargeability Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_GetContractLineChargeability Action."
 namespace: Microsoft.Dynamics.CRM
 description: "For internal use only."
 owningsolution: Microsoft.Dynamics.CRM.ProjectService
@@ -28,7 +28,7 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.msdyn_GetContractLineChargeabilityResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

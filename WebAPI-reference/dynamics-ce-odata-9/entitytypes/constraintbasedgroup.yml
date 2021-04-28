@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.constraintbasedgroup
 name: "constraintbasedgroup"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement constraintbasedgroup EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e0af90c3-9975-4618-b2dc-fffe37b34cd7
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the constraintbasedgroup entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse constraintbasedgroup entitytype."
 description: "Group or collection of people, equipment, and/or facilities that can be scheduled."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/constraintbasedgroups"
@@ -192,6 +192,9 @@ collection_valued_navigation_properties:
   - name: constraintbasedgroup_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_constraintbasedgroup
+  - name: constraintbasedgroup_virtualresourceg
+    type: Microsoft.Dynamics.CRM.virtualresourcegroupresource
+    partner: resourcegroupId
 # This entity has no derived entities.
 # This entity has no operations
 solutions:
@@ -201,7 +204,7 @@ solutions:
     description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
     description: "Dynamics 365 workload for service."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

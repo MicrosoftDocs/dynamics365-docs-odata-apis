@@ -1,0 +1,320 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.mbs_pluginprofile
+name: "mbs_pluginprofile"
+type: entitytype
+metadata: 
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: bcc41c83-7c82-46c4-bda1-ec8dbda98d1b
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse mbs_pluginprofile entitytype."
+# This entity doesn't have a description
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/mbs_pluginprofiles"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Plug-in Profile
+  primary_key: mbs_pluginprofileid
+  primary_name_attribute: mbs_label
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_configuration
+      type: Edm.String
+      display_name: "Configuration"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_correlationid
+      type: Edm.String
+      display_name: "Correlation Id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_depth
+      type: Edm.Int32
+      display_name: "Depth"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_label
+      type: Edm.String
+      display_name: "Label"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_messagename
+      type: Edm.String
+      display_name: "Message Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_mode
+      type: Edm.Int32
+      display_name: "Mode"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 864340001
+          label: "Asynchronous"
+        - value: 864340000
+          label: "Synchronous"
+    - name: mbs_operationtype
+      type: Edm.Int32
+      display_name: "Operation Type"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Unknown"
+        - value: 864340000
+          label: "Plug-in"
+        - value: 864340001
+          label: "Workflow Activity"
+    - name: mbs_performanceconstructorduration
+      type: Edm.Int32
+      display_name: "Constructor Duration (ms)"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_performanceconstructorstarttime
+      type: Edm.DateTimeOffset
+      display_name: "Constructor Start Time"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_performanceexecutionduration
+      type: Edm.Int32
+      display_name: "Execution Duration (ms)"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_performanceexecutionstarttime
+      type: Edm.DateTimeOffset
+      display_name: "Execution Start Time"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_persistencekey
+      type: Edm.String
+      display_name: "Persistence Key"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_pluginprofileid
+      type: Edm.Guid
+      display_name: "Plug-in Profile"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_primaryentity
+      type: Edm.String
+      display_name: "Primary Entity"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_profile
+      type: Edm.String
+      display_name: "Profile"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_requestid
+      type: Edm.String
+      display_name: "Request Id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_secureconfiguration
+      type: Edm.String
+      display_name: "Secure Configuration"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_typename
+      type: Edm.String
+      display_name: "Type Name"
+      description: "The type name of the plugin that invoked this."
+      iscomputed: false
+      isreadonly: false
+    - name: mbs_workflowstepid
+      type: Edm.String
+      display_name: "Workflow Step Id"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the Plug-in Profile"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Plug-in Profile"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _mbs_businessunitid_value
+    single_valued_navigation_property:
+    - mbs_BusinessUnitId
+    description: "Unique identifier for Business Unit associated with Plug-in Profile."
+  - name: _mbs_initiatinguserid_value
+    single_valued_navigation_property:
+    - mbs_InitiatingUserId
+    description: "Unique identifier for User associated with Plug-in Profile."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _organizationid_value
+    single_valued_navigation_property:
+    - organizationid
+    description: "Unique identifier for the organization"
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_mbs_pluginprofile_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_mbs_pluginprofile_createdonbehalfby
+  - name: mbs_BusinessUnitId
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: mbs_businessunit_mbs_pluginprofile
+  - name: mbs_InitiatingUserId
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: mbs_systemuser_mbs_pluginprofile
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_mbs_pluginprofile_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_mbs_pluginprofile_modifiedonbehalfby
+  - name: organizationid
+    type: Microsoft.Dynamics.CRM.organization
+    partner: organization_mbs_pluginprofile
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: mbs_pluginprofile_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_mbs_pluginprofile
+  - name: mbs_pluginprofile_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_mbs_pluginprofile
+  - name: mbs_pluginprofile_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_mbs_pluginprofile
+  - name: mbs_pluginprofile_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_mbs_pluginprofile
+  - name: mbs_pluginprofile_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_mbs_pluginprofile
+  - name: mbs_pluginprofile_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_mbs_pluginprofile
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the mbs_pluginprofile entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the mbs_pluginprofile entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.PluginProfiler
+    description: ""
+# There are no remarks for this entity.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

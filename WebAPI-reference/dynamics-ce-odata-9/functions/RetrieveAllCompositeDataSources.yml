@@ -1,0 +1,52 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.RetrieveAllCompositeDataSources
+name: "RetrieveAllCompositeDataSources"
+type: function
+metadata: 
+  title: "Microsoft Dataverse RetrieveAllCompositeDataSources Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 0ffa8e8c-16fe-4b90-a134-1ef0e9feba47
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveAllCompositeDataSources Function."
+namespace: Microsoft.Dynamics.CRM
+description: "API responsible for retrieving all composite environment variables starting from a root variable. "
+iscomposable: false
+# This function is not bound to any entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the function."
+  parameter_items:
+  - name: ParentSchemaName
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "Identifier of the environment variable (Required)."
+    iscollection: false
+return_type:
+  description: "The RetrieveAllCompositeDataSources function returns the following value."
+  type: Microsoft.Dynamics.CRM.crmbaseentity
+  iscollection: true
+  nullable: false
+entities:
+  description: "Use the RetrieveAllCompositeDataSources function with this entity type:"
+  entity_items:
+  - type: Microsoft.Dynamics.CRM.environmentvariabledefinition
+    displayName: "Environment Variable Definition"
+    description: "Contains information about the settable variable: its type, default value, and etc."
+# There are no remarks for this function.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

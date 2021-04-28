@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DecimalAttributeMetadata
 name: "DecimalAttributeMetadata"
 type: metadataentitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement DecimalAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse DecimalAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f2742dcb-393e-405f-8495-c8f07ec705d5
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the DecimalAttributeMetadata metadata entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse DecimalAttributeMetadata metadata entitytype."
 header: 
   description: "Contains the metadata for a Decimal attribute."
   base_type: Microsoft.Dynamics.CRM.AttributeMetadata
@@ -59,6 +59,10 @@ properties:
     type: Edm.Int32
     inherited_from: Microsoft.Dynamics.CRM.AttributeMetadata
     description: "An organization-specific ID for the attribute used for auditing."
+  - name: CreatedOn
+    type: Edm.DateTimeOffset
+    inherited_from: Microsoft.Dynamics.CRM.AttributeMetadata
+    description: ""
   - name: DeprecatedVersion
     type: Edm.String
     inherited_from: Microsoft.Dynamics.CRM.AttributeMetadata
@@ -207,6 +211,10 @@ properties:
   - name: MinValue
     type: Edm.Decimal
     description: "The minimum value for the attribute."
+  - name: ModifiedOn
+    type: Edm.DateTimeOffset
+    inherited_from: Microsoft.Dynamics.CRM.AttributeMetadata
+    description: ""
   - name: Precision
     type: Edm.Int32
     description: "The precision for the attribute."
@@ -230,7 +238,7 @@ properties:
 # No functions or actions are bound to this entity.
 # This entity has no derived entities.
 # This entity is not used by other entities or operations.
-# This metadata entity has no remarks.
+# There are no remarks for this metadata entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

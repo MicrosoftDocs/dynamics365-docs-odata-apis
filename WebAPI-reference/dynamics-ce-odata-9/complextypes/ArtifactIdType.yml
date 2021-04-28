@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ArtifactIdType
 name: "ArtifactIdType"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ArtifactIdType ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse ArtifactIdType ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 68277ce4-c9fb-4839-a503-2ea66b7eeb3b
-  author: "KumarVivek"
+  ms.assetid: d647e654-dbc9-4730-9463-6cd77dc2e8b6
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API ArtifactIdType ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API ArtifactIdType ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -40,7 +40,7 @@ usedby:
     used_as: Property
   - name: Microsoft.Dynamics.CRM.AppEntityInfo
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

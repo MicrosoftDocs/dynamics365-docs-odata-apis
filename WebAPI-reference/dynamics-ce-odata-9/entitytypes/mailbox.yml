@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.mailbox
 name: "mailbox"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement mailbox EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 55719fd5-c785-46af-8a59-ab9730f1ef2c
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the mailbox entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse mailbox entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/mailboxes"
@@ -77,6 +77,18 @@ properties:
       description: "Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
       iscomputed: false
       isreadonly: true
+    - name: credentialinfo
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: dataencryptionkey
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: emailaddress
       type: Edm.String
       display_name: "Email Address"
@@ -186,6 +198,18 @@ properties:
       description: "Contains the exchange synchronization state in XML format."
       iscomputed: false
       isreadonly: false
+    - name: exchangesyncstatexmlfileref
+      type: Edm.Binary
+      display_name: ""
+      description: "Reference to the ExchangeSyncStateXml file on Azure."
+      iscomputed: false
+      isreadonly: true
+    - name: exchangesyncstatexmlfileref_name
+      type: Edm.String
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
     - name: folderhierarchy
       type: Edm.String
       display_name: "Folder Hierarchy"
@@ -243,6 +267,17 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
+    - name: isdataencryptionkeyset
+      type: Edm.Boolean
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: isemailaddressapprovedbyo365admin
       type: Edm.Boolean
       display_name: "Email Address O365 Admin Approval Status"
@@ -269,6 +304,28 @@ properties:
       type: Edm.Boolean
       display_name: "Is Forward Mailbox"
       description: "Select whether the mailbox is a forward mailbox."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: isoauthaccesstokenset
+      type: Edm.Boolean
+      display_name: ""
+      description: ""
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: isoauthrefreshtokenset
+      type: Edm.Boolean
+      display_name: ""
+      description: ""
       iscomputed: false
       isreadonly: true
       options:
@@ -407,6 +464,12 @@ properties:
       description: "Type the name of the mailbox."
       iscomputed: false
       isreadonly: false
+    - name: nextscheduledactsyncinseconds
+      type: Edm.Int32
+      display_name: "Next Scheduled ACT Sync Delay In Seconds"
+      description: "The next scheduled ACT sync delay, in seconds, to apply to the mailbox."
+      iscomputed: false
+      isreadonly: true
     - name: noactcount
       type: Edm.Int32
       display_name: "Zero appointment, contact, task count for mailbox"
@@ -419,6 +482,24 @@ properties:
       description: "For internal use only."
       iscomputed: false
       isreadonly: true
+    - name: oauthaccesstoken
+      type: Edm.String
+      display_name: "Oauth access token"
+      description: "Type the Oauth access token for the mailbox."
+      iscomputed: false
+      isreadonly: false
+    - name: oauthrefreshtoken
+      type: Edm.String
+      display_name: "Oauth refresh token"
+      description: "Type the Oauth refresh token for the mailbox."
+      iscomputed: false
+      isreadonly: false
+    - name: oauthtokenexpireson
+      type: Edm.DateTimeOffset
+      display_name: "Oauth token expiration datetime"
+      description: "Date and time when the Oauth token will expire"
+      iscomputed: false
+      isreadonly: false
     - name: officeappsdeploymentcompleteon
       type: Edm.DateTimeOffset
       display_name: "Office Apps Deployment Completed On"
@@ -705,8 +786,8 @@ lookup_properties:
     description: "Unique identifier for the user that owns the record."
   - name: _regardingobjectid_value
     single_valued_navigation_property:
-    - regardingobjectid_queue
     - regardingobjectid
+    - regardingobjectid_queue
     description: "Choose the user associated to the mailbox."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
@@ -768,12 +849,24 @@ collection_valued_navigation_properties:
   - name: incidentresolution_mailbox_sendermailboxid
     type: Microsoft.Dynamics.CRM.incidentresolution
     partner: sendermailboxid_incidentresolution
+  - name: li_inmail_mailbox_sendermailboxid
+    type: Microsoft.Dynamics.CRM.li_inmail
+    partner: sendermailboxid_li_inmail
+  - name: li_message_mailbox_sendermailboxid
+    type: Microsoft.Dynamics.CRM.li_message
+    partner: sendermailboxid_li_message
+  - name: li_pointdrivepresentationviewed_mailbox_sendermailboxid
+    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
+    partner: sendermailboxid_li_pointdrivepresentationviewed
   - name: Mailbox_Annotation
     type: Microsoft.Dynamics.CRM.annotation
     partner: objectid_mailbox
   - name: mailbox_asyncoperations
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: regardingobjectid_mailbox
+  - name: mailbox_FileAttachments
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: objectid_mailbox
   - name: Mailbox_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: mailboxid
@@ -789,6 +882,15 @@ collection_valued_navigation_properties:
   - name: msdyn_bookingalert_mailbox_sendermailboxid
     type: Microsoft.Dynamics.CRM.msdyn_bookingalert
     partner: sendermailboxid_msdyn_bookingalert
+  - name: msfp_alert_mailbox_sendermailboxid
+    type: Microsoft.Dynamics.CRM.msfp_alert
+    partner: sendermailboxid_msfp_alert
+  - name: msfp_surveyinvite_mailbox_sendermailboxid
+    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
+    partner: sendermailboxid_msfp_surveyinvite
+  - name: msfp_surveyresponse_mailbox_sendermailboxid
+    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
+    partner: sendermailboxid_msfp_surveyresponse
   - name: opportunityclose_mailbox_sendermailboxid
     type: Microsoft.Dynamics.CRM.opportunityclose
     partner: sendermailboxid_opportunityclose
@@ -831,9 +933,13 @@ solutions:
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch
     description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
+    description: "For internal use only."
+  - type: Microsoft.Dynamics.CRM.msft_ServerSideSync_Extensions
+    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

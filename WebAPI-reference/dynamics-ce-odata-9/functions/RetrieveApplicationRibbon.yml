@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RetrieveApplicationRibbon
 name: "RetrieveApplicationRibbon"
 type: function
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RetrieveApplicationRibbon Function Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse RetrieveApplicationRibbon Function Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 329b188c-e953-4017-93dc-441bd395facf
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RetrieveApplicationRibbon Function."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RetrieveApplicationRibbon Function."
 namespace: Microsoft.Dynamics.CRM
 description: "Retrieve the data that defines the content and behavior of the application ribbon.  "
 iscomposable: false
@@ -25,7 +25,7 @@ return_type:
   iscollection: false
   nullable: false
 # This function no specific entities for this function identified.
-# This function has no remarks.
+# There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

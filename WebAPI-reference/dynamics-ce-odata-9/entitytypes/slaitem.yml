@@ -3,22 +3,22 @@ uid: Microsoft.Dynamics.CRM.slaitem
 name: "slaitem"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement slaitem EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3dcb4125-028d-44a4-874f-62eeef593d62
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the slaitem entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse slaitem entitytype."
 description: "Contains information about a tracked support KPI for a specific customer."
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/slaitems"
   base_type: Microsoft.Dynamics.CRM.crmbaseentity
   display_name: SLA Item
   primary_key: slaitemid
-  # This entity doesn't have a primaryAttributeName
+  primary_name_attribute: name
   operations_supported:
   - POST
   - GET
@@ -28,10 +28,45 @@ namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
   property_items:
+    - name: actionflowuniquename
+      type: Edm.String
+      display_name: "Action Flow Unique Name"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: actionurl
+      type: Edm.String
+      display_name: "Action URL"
+      description: "Action URL"
+      iscomputed: false
+      isreadonly: false
+    - name: allowpauseresume
+      type: Edm.Boolean
+      display_name: "Allow Pause and Resume"
+      description: "Select whether this SLA will allow pausing and resuming during the time calculation."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: applicableentity
+      type: Edm.String
+      display_name: "Applicable Entity"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: applicablewhenxml
       type: Edm.String
       display_name: "ApplicableWhenXml"
       description: "Condition for SLA item"
+      iscomputed: false
+      isreadonly: false
+    - name: changedattributelist
+      type: Edm.String
+      display_name: "Changed Attribute List"
+      description: ""
       iscomputed: false
       isreadonly: false
     - name: componentstate
@@ -90,6 +125,23 @@ properties:
       description: "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_advancedpauseconfiguration
+      type: Edm.Boolean
+      display_name: "Advanced Pause Configuration"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_pauseconfigurationxml
+      type: Edm.String
+      display_name: "PauseConfigurationXml"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: name
       type: Edm.String
       display_name: "Name"
@@ -153,6 +205,10 @@ properties:
 lookup_properties:
   description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
   property_items:
+  - name: _businesshoursid_value
+    single_valued_navigation_property:
+    - businesshoursid
+    description: "Choose the business hours for calculating SLA item timelines."
   - name: _createdby_value
     single_valued_navigation_property:
     - createdby
@@ -169,6 +225,10 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Shows who created the record on behalf of another user."
+  - name: _msdyn_slakpiid_value
+    single_valued_navigation_property:
+    - msdyn_SLAKPIID
+    description: "Unique identifier for SLAKPI associated with SLA Item."
   - name: _ownerid_value
     description: "Enter the user or team who owns the SLA. This field is updated every time the item is assigned to a different user."
   - name: _owningbusinessunit_value
@@ -190,6 +250,9 @@ lookup_properties:
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
   property_items:
+  - name: businesshoursid
+    type: Microsoft.Dynamics.CRM.calendar
+    partner: calendar_slaitem
   - name: createdby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_slaitembase_createdby
@@ -202,6 +265,9 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_slaitembase_modifiedonbehalfby
+  - name: msdyn_SLAKPIID
+    type: Microsoft.Dynamics.CRM.msdyn_slakpi
+    partner: msdyn_msdyn_slakpi_slaitem
   - name: slaid
     type: Microsoft.Dynamics.CRM.sla
     partner: sla_slaitem_slaId
@@ -214,6 +280,15 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: msdyn_migrationtracker_LegacySLAItem_slaitem
+    type: Microsoft.Dynamics.CRM.msdyn_migrationtracker
+    partner: msdyn_LegacySLAItemId
+  - name: msdyn_migrationtracker_ModernSLAItem_slaitem
+    type: Microsoft.Dynamics.CRM.msdyn_migrationtracker
+    partner: msdyn_ModernSLAItemId
+  - name: msdyn_slaitem_slakpiinstance
+    type: Microsoft.Dynamics.CRM.slakpiinstance
+    partner: msdyn_slaitemid
   - name: SLAItem_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_slaitem_syncerror
@@ -224,9 +299,11 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreement
     description: "Dynamics 365 workload for service level agreements."
+  - type: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreementExtension
+    description: "Extension solution for Dynamics 365 workload for service level agreements."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

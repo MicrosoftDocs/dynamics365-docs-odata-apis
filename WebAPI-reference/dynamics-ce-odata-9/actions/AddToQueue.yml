@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.AddToQueue
 name: "AddToQueue"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement AddToQueue Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b0871fcd-bf63-41dc-81c8-a6dd2df1a39e
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the AddToQueue Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse AddToQueue Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Moves an entity record from a source queue to a destination queue."
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -49,7 +49,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.queueitem
     displayName: Queue Item
     description: "A specific item in a queue, such as a case record or an activity record."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

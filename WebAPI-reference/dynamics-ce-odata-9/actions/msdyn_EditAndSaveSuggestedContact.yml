@@ -1,0 +1,81 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msdyn_EditAndSaveSuggestedContact
+name: "msdyn_EditAndSaveSuggestedContact"
+type: action
+metadata: 
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 9ad7fd5f-2df8-4521-ac82-519a87c4dfad
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_EditAndSaveSuggestedContact Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.AutoDataCapture
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: SuggestedContactId
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+  - name: FirstName
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+  - name: LastName
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+  - name: Email
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+  - name: BusinessPhone
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+  - name: Address
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+  - name: MobilePhone
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+  - name: AccountId
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+return_type:
+  description: "The msdyn_EditAndSaveSuggestedContact action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.msdyn_EditAndSaveSuggestedContactResponse
+# This action has no identified unbound entities.
+# There are no remarks for this action.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

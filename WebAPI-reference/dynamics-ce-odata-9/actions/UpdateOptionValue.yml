@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.UpdateOptionValue
 name: "UpdateOptionValue"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement UpdateOptionValue Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c8bbcc8b-378e-44dc-b194-d363f5efec43
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the UpdateOptionValue Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse UpdateOptionValue Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Updates an option value in a global or local option set. "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -20,6 +20,11 @@ isbound: false
 parameters:
   description: "Parameters allow for data to be passed to the action."
   parameter_items:
+  - name: Color
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
   - name: OptionSetName
     type: Edm.String
     nullable: true
@@ -68,7 +73,7 @@ parameters:
 # This action has no return value.
 hasreturnvalue: false
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

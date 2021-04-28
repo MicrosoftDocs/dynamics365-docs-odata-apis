@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.DeleteRecordChangeHistory
 name: "DeleteRecordChangeHistory"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement DeleteRecordChangeHistory Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: d4f30930-b916-495a-a5d2-c0930a7fa39b
-  author: "KumarVivek"
+  ms.assetid: a1f36a7c-2b53-4928-98e5-8ec428389227
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the DeleteRecordChangeHistory Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse DeleteRecordChangeHistory Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Deletes all audit change history records for a particular record.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -36,7 +36,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.audit
     displayName: Auditing
     description: "Track changes to records for analysis, record keeping, and compliance."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

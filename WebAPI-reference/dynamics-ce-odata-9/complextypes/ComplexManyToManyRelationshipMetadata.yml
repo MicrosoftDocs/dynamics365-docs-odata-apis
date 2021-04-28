@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.ComplexManyToManyRelationshipMetadata
 name: "ComplexManyToManyRelationshipMetadata"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement ComplexManyToManyRelationshipMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse ComplexManyToManyRelationshipMetadata ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6a99d02b-32bd-441f-9b71-c43be47dda81
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API ComplexManyToManyRelationshipMetadata ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API ComplexManyToManyRelationshipMetadata ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "Contains the metadata for a many-to-many entity relationship." 
@@ -138,7 +138,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
     used_as: Property
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.GetJobStatus
 name: "GetJobStatus"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement GetJobStatus Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 3012800a-e02d-4244-ba31-49e3fd40c432
-  author: "KumarVivek"
+  ms.assetid: a0d5ce6a-fedf-48e6-8202-54320e2923c5
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the GetJobStatus Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse GetJobStatus Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -26,14 +26,14 @@ parameters:
     unicode: true
     description: ""
   - name: correlationid
-    type: Edm.Guid
+    type: Edm.String
     nullable: true
-    unicode: true
+    unicode: false
     description: ""
   - name: aimodelid
-    type: Edm.Guid
+    type: Edm.String
     nullable: true
-    unicode: true
+    unicode: false
     description: ""
 return_type:
   description: "The GetJobStatus action returns the following value."
@@ -41,7 +41,7 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.GetJobStatusResponse
 # This action has no identified unbound entities.
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

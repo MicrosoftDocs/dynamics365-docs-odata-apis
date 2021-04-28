@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.RemoveItemCampaign
 name: "RemoveItemCampaign"
 type: action
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement RemoveItemCampaign Action Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b82a4098-2ed5-4b49-b8de-273d77f54d11
-  author: "KumarVivek"
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the RemoveItemCampaign Action."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RemoveItemCampaign Action."
 namespace: Microsoft.Dynamics.CRM
 description: "Removes an item from a campaign.  "
 owningsolution: Microsoft.Dynamics.CRM.System
@@ -36,7 +36,7 @@ entities:
   - type: Microsoft.Dynamics.CRM.campaignactivity
     displayName: Campaign Activity
     description: "Task performed, or to be performed, by a user for planning or running a campaign."
-# This action has no remarks.
+# There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"

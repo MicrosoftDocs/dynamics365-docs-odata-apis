@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.InitializeAttachmentBlocksDownloadResponse
 name: "InitializeAttachmentBlocksDownloadResponse"
 type: complextype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement InitializeAttachmentBlocksDownloadResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse InitializeAttachmentBlocksDownloadResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "04/12/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 38d6ee18-d568-4ace-965d-7d5ec4341440
-  author: "KumarVivek"
+  ms.assetid: 1bd37359-d90a-4af5-b054-fa9112868e3a
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the Web API InitializeAttachmentBlocksDownloadResponse ComplexType."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API InitializeAttachmentBlocksDownloadResponse ComplexType."
 namespace: Microsoft.Dynamics.CRM
 # This complex type doesn't inherit from another complextype.
 description: "" 
@@ -42,7 +42,7 @@ usedby:
   usedby_items:
   - name: Microsoft.Dynamics.CRM.InitializeAttachmentBlocksDownload
     used_as: ReturnType
-# This complex type has no remarks.
+# There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
