@@ -212,6 +212,8 @@ properties:
           label: "Attribute Image Configuration"
         - value: 432
           label: "Entity Image Configuration"
+        - value: 10880
+          label: "Connection Reference"
     - name: createdon
       type: Edm.DateTimeOffset
       display_name: "Created On"
