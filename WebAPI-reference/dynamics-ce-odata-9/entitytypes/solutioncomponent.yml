@@ -134,6 +134,8 @@ properties:
           label: "Field Security Profile"
         - value: 71
           label: "Field Permission"
+        - value: 80
+          label: "App Module"
         - value: 90
           label: "Plugin Type"
         - value: 91
