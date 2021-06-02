@@ -4,7 +4,7 @@ name: "BulkDeleteResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse BulkDeleteResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b142c7f0-5479-4742-b203-722cd052ec02

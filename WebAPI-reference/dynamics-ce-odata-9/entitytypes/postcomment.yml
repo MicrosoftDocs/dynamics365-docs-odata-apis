@@ -4,7 +4,7 @@ name: "postcomment"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e6a478e4-834b-4029-99e6-7b1cff37ca99
@@ -33,6 +33,12 @@ properties:
       description: "Date and time when the record was created."
       iscomputed: false
       isreadonly: true
+    - name: largetext
+      type: Edm.String
+      display_name: "Text"
+      description: "Shows the text of a post comment."
+      iscomputed: false
+      isreadonly: false
     - name: postcommentid
       type: Edm.Guid
       display_name: "PostComment"
@@ -91,7 +97,12 @@ single_valued_navigation_properties:
   - name: postid
     type: Microsoft.Dynamics.CRM.post
     partner: Post_Comments
-# This entity has no collection-valued navigation properties
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: post_comment_activity_file_attachment
+    type: Microsoft.Dynamics.CRM.activityfileattachment
+    partner: parentid_postcomment
 # This entity has no derived entities.
 # This entity has no operations
 solutions:
@@ -99,8 +110,6 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_ActivitiesPatch
     description: "Patch for Dynamics 365 workload for activities."
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

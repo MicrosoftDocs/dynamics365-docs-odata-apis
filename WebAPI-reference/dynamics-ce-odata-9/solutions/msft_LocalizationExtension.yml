@@ -4,10 +4,10 @@ name: "msft_LocalizationExtension"
 type: solution
 metadata: 
   title: "Microsoft Dataverse msft_LocalizationExtension Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 4bd50bcd-c3de-48e7-b21a-26c5f4769025
+  ms.assetid: 75bcdf54-3ee1-4909-ab1f-3925a9cadab3
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

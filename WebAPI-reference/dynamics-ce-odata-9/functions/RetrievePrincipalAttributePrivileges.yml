@@ -4,7 +4,7 @@ name: "RetrievePrincipalAttributePrivileges"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrievePrincipalAttributePrivileges Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8319dc42-e40c-4888-9918-a54f6def7326

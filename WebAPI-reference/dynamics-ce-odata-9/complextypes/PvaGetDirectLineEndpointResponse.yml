@@ -4,7 +4,7 @@ name: "PvaGetDirectLineEndpointResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse PvaGetDirectLineEndpointResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6c14ee42-a5a2-45e5-ada4-55e8ed57696f

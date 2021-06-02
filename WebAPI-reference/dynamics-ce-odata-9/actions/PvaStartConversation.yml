@@ -1,0 +1,51 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.PvaStartConversation
+name: "PvaStartConversation"
+type: action
+metadata: 
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "06/02/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: de54e9a0-459d-46db-8ca5-09f1a0008c0e
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse PvaStartConversation Action."
+namespace: Microsoft.Dynamics.CRM
+# This Action has no description.
+owningsolution: Microsoft.Dynamics.CRM.System
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: Version
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: ""
+  - name: Request
+    type: Microsoft.Dynamics.CRM.crmbaseentity
+    nullable: false
+    unicode: true
+    description: ""
+return_type:
+  description: "The PvaStartConversation action returns the following value."
+  iscollection: false
+  nullable: false
+  type: Microsoft.Dynamics.CRM.crmbaseentity
+# This action has no identified unbound entities.
+# This action has no remarks.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

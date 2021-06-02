@@ -4,7 +4,7 @@ name: "AddToQueueResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AddToQueueResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f93022c2-4bb5-4098-9430-3758391c26ef

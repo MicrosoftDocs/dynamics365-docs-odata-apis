@@ -4,7 +4,7 @@ name: "NextFiscalPeriod"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse NextFiscalPeriod Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2b201e9f-d8f0-4779-a758-d0667f864a69

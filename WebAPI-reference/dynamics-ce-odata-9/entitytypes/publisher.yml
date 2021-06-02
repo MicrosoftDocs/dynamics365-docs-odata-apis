@@ -4,7 +4,7 @@ name: "publisher"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: cd4621de-1642-41cf-96bb-1f16dcf0baa0
@@ -474,8 +474,6 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_SolutionsFrameworkMetadata
     description: ""
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

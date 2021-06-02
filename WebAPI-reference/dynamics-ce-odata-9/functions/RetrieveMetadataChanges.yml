@@ -4,7 +4,7 @@ name: "RetrieveMetadataChanges"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveMetadataChanges Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 324fbeee-817a-4eb1-ada8-df5ace54c7c7

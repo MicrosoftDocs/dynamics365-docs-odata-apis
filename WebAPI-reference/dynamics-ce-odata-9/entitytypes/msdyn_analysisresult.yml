@@ -4,7 +4,7 @@ name: "msdyn_analysisresult"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0702b2f1-cee7-4a5c-811b-c00a5c0c5737
@@ -183,6 +183,12 @@ properties:
       description: "The name of the custom entity."
       iscomputed: false
       isreadonly: false
+    - name: msdyn_repairissuetype
+      type: Edm.String
+      display_name: "Repair Issue Type"
+      description: "Type of issue that needs to be repaired. Same as IssueType Input Parameter for Solution Health Rule."
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_returnstatus
       type: Edm.Int32
       display_name: "Return Status"
@@ -202,6 +208,8 @@ properties:
           label: "Warning"
         - value: 192350005
           label: "Error"
+        - value: 192350006
+          label: "Suggestion"
     - name: msdyn_ruleid
       type: Edm.String
       display_name: "Rule Id"

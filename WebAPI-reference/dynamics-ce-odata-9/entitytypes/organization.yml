@@ -4,7 +4,7 @@ name: "organization"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9e191826-8548-4fe6-a631-0227c15d8c99
@@ -32,6 +32,17 @@ properties:
       description: "ACI Web Endpoint URL."
       iscomputed: false
       isreadonly: false
+    - name: advancedlookupenabled
+      type: Edm.Boolean
+      display_name: "Advanced lookup enabled"
+      description: "Flag to indicate if the Advanced Lookup feature is enabled for lookup controls"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
     - name: allowaddressbooksyncs
       type: Edm.Boolean
       display_name: "Allow Address Book Synchronization"
@@ -1406,17 +1417,6 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
-    - name: isembedteamscollabenabled
-      type: Edm.Boolean
-      display_name: "Indicates whether embed Teams collaboration has been enabled for the organization"
-      description: "Indicates whether embed Teams collaboration has been enabled for the organization"
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 1
-          label: "Yes"
-        - value: 0
-          label: "No"
     - name: isenabledforallroles
       type: Edm.Boolean
       display_name: "option set values for isenabledforallroles"
@@ -1823,17 +1823,6 @@ properties:
       type: Edm.Boolean
       display_name: "Enable Sales Assistant mobile app"
       description: "Indicates whether Sales Assistant mobile app has been enabled for the organization."
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 1
-          label: "Yes"
-        - value: 0
-          label: "No"
-    - name: issalesmobilepreviewenabled
-      type: Edm.Boolean
-      display_name: "Indicates whether Sales Mobile Preview has been enabled for the organization"
-      description: "Indicates whether Sales Mobile Preview has been enabled for the organization"
       iscomputed: false
       isreadonly: false
       options:
@@ -2507,17 +2496,6 @@ properties:
       description: "Unique identifier of the sample data import job."
       iscomputed: false
       isreadonly: false
-    - name: schedulingengine
-      type: Edm.Int32
-      display_name: "Scheduling engine for Appointments and Service Activities"
-      description: "Scheduling engine for Appointments and Service Activities"
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 0
-          label: "Legacy Scheduling Engine"
-        - value: 192350000
-          label: "Universal Resource Scheduling"
     - name: schemanameprefix
       type: Edm.String
       display_name: "Customization Name Prefix"
@@ -3089,24 +3067,6 @@ collection_valued_navigation_properties:
   - name: customcontrolresource_organization
     type: Microsoft.Dynamics.CRM.customcontrolresource
     partner: organizationid
-  - name: dynamicproperty_organization
-    type: Microsoft.Dynamics.CRM.dynamicproperty
-    partner: organizationid
-  - name: DynamicPropertyAssociation_organization
-    type: Microsoft.Dynamics.CRM.dynamicpropertyassociation
-    partner: organizationid
-  - name: DynamicPropertyOptionSetItem_organization
-    type: Microsoft.Dynamics.CRM.dynamicpropertyoptionsetitem
-    partner: organizationid
-  - name: entitlementchannel_organization
-    type: Microsoft.Dynamics.CRM.entitlementchannel
-    partner: organizationid
-  - name: entitlementtemplate_organization
-    type: Microsoft.Dynamics.CRM.entitlementtemplate
-    partner: organizationid
-  - name: entitlementtemplatechannel_organization
-    type: Microsoft.Dynamics.CRM.entitlementtemplatechannel
-    partner: organizationid
   - name: languagelocale_organization
     type: Microsoft.Dynamics.CRM.languagelocale
     partner: organizationid
@@ -3133,9 +3093,6 @@ collection_valued_navigation_properties:
     partner: organizationid
   - name: organization_aciviewmapper
     type: Microsoft.Dynamics.CRM.aciviewmapper
-    partner: organizationid
-  - name: organization_apisettings
-    type: Microsoft.Dynamics.CRM.apisettings
     partner: organizationid
   - name: organization_appconfig
     type: Microsoft.Dynamics.CRM.appconfig
@@ -3164,8 +3121,11 @@ collection_valued_navigation_properties:
   - name: organization_calendars
     type: Microsoft.Dynamics.CRM.calendar
     partner: organizationid
-  - name: organization_competitors
-    type: Microsoft.Dynamics.CRM.competitor
+  - name: organization_catalog
+    type: Microsoft.Dynamics.CRM.catalog
+    partner: organizationid
+  - name: organization_catalogassignment
+    type: Microsoft.Dynamics.CRM.catalogassignment
     partner: organizationid
   - name: organization_complexcontrols
     type: Microsoft.Dynamics.CRM.complexcontrol
@@ -3173,26 +3133,20 @@ collection_valued_navigation_properties:
   - name: organization_connection_roles
     type: Microsoft.Dynamics.CRM.connectionrole
     partner: organizationid
-  - name: organization_constraint_based_groups
-    type: Microsoft.Dynamics.CRM.constraintbasedgroup
-    partner: organizationid
-  - name: organization_contract_templates
-    type: Microsoft.Dynamics.CRM.contracttemplate
-    partner: organizationid
   - name: organization_custom_displaystrings
     type: Microsoft.Dynamics.CRM.displaystring
     partner: organizationid
-  - name: organization_discount_types
-    type: Microsoft.Dynamics.CRM.discounttype
+  - name: organization_datalakeworkspace
+    type: Microsoft.Dynamics.CRM.datalakeworkspace
+    partner: organizationid
+  - name: organization_datalakeworkspacepermission
+    type: Microsoft.Dynamics.CRM.datalakeworkspacepermission
     partner: organizationid
   - name: organization_emailserverprofile
     type: Microsoft.Dynamics.CRM.emailserverprofile
     partner: organizationid
   - name: organization_entityanalyticsconfig
     type: Microsoft.Dynamics.CRM.entityanalyticsconfig
-    partner: organizationid
-  - name: organization_equipment
-    type: Microsoft.Dynamics.CRM.equipment
     partner: organizationid
   - name: organization_expiredprocess
     type: Microsoft.Dynamics.CRM.expiredprocess
@@ -3209,242 +3163,26 @@ collection_valued_navigation_properties:
   - name: organization_KnowledgeBaseRecord
     type: Microsoft.Dynamics.CRM.knowledgebaserecord
     partner: organizationid
-  - name: organization_leadtoopportunitysalesprocess
-    type: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
-    partner: organizationid
   - name: organization_mailbox
     type: Microsoft.Dynamics.CRM.mailbox
     partner: organizationid
   - name: Organization_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: organizationid
-  - name: organization_mbs_pluginprofile
-    type: Microsoft.Dynamics.CRM.mbs_pluginprofile
-    partner: organizationid
   - name: organization_metric
     type: Microsoft.Dynamics.CRM.metric
-    partner: organizationid
-  - name: organization_ms_newsitem
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: organizationid
-  - name: organization_ms_satori
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: organizationid
-  - name: organization_msdyn_3dmodel
-    type: Microsoft.Dynamics.CRM.msdyn_3dmodel
-    partner: organizationid
-  - name: organization_msdyn_adaptivecardconfiguration
-    type: Microsoft.Dynamics.CRM.msdyn_adaptivecardconfiguration
-    partner: organizationid
-  - name: organization_msdyn_assetsuggestionssetting
-    type: Microsoft.Dynamics.CRM.msdyn_assetsuggestionssetting
-    partner: organizationid
-  - name: organization_msdyn_batchjob
-    type: Microsoft.Dynamics.CRM.msdyn_batchjob
-    partner: organizationid
-  - name: organization_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
-    partner: organizationid
-  - name: organization_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
-    partner: organizationid
-  - name: organization_msdyn_bpf_665e73aa18c247d886bfc50499c73b82
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
-    partner: organizationid
-  - name: organization_msdyn_bpf_989e9b1857e24af18787d5143b67523b
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
-    partner: organizationid
-  - name: organization_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
-    partner: organizationid
-  - name: organization_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
-    partner: organizationid
-  - name: organization_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
-    partner: organizationid
-  - name: organization_msdyn_caseenrichment
-    type: Microsoft.Dynamics.CRM.msdyn_caseenrichment
-    partner: organizationid
-  - name: organization_msdyn_casesuggestionrequestpayload
-    type: Microsoft.Dynamics.CRM.msdyn_casesuggestionrequestpayload
-    partner: organizationid
-  - name: organization_msdyn_casetopic
-    type: Microsoft.Dynamics.CRM.msdyn_casetopic
-    partner: organizationid
-  - name: organization_msdyn_casetopic_incident
-    type: Microsoft.Dynamics.CRM.msdyn_casetopic_incident
-    partner: organizationid
-  - name: organization_msdyn_casetopicsetting
-    type: Microsoft.Dynamics.CRM.msdyn_casetopicsetting
-    partner: organizationid
-  - name: organization_msdyn_casetopicsummary
-    type: Microsoft.Dynamics.CRM.msdyn_casetopicsummary
-    partner: organizationid
-  - name: organization_msdyn_contractlineinvoiceschedule
-    type: Microsoft.Dynamics.CRM.msdyn_contractlineinvoiceschedule
-    partner: organizationid
-  - name: organization_msdyn_dataanalyticsreport_csrmanager
-    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_csrmanager
-    partner: organizationid
-  - name: organization_msdyn_dataanalyticsreport_fs
-    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fs
-    partner: organizationid
-  - name: organization_msdyn_dataanalyticsreport_fspredictrs
-    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictrs
-    partner: organizationid
-  - name: organization_msdyn_dataanalyticsreport_fspredictwhd
-    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_fspredictwhd
-    partner: organizationid
-  - name: organization_msdyn_dataanalyticsreport_ksinsights
-    type: Microsoft.Dynamics.CRM.msdyn_dataanalyticsreport_ksinsights
-    partner: organizationid
-  - name: organization_msdyn_databaseversion
-    type: Microsoft.Dynamics.CRM.msdyn_databaseversion
-    partner: organizationid
-  - name: organization_msdyn_datainsightsandanalyticsfeature
-    type: Microsoft.Dynamics.CRM.msdyn_datainsightsandanalyticsfeature
-    partner: organizationid
-  - name: organization_msdyn_dimensionfieldname
-    type: Microsoft.Dynamics.CRM.msdyn_dimensionfieldname
-    partner: organizationid
-  - name: organization_msdyn_expensecategory
-    type: Microsoft.Dynamics.CRM.msdyn_expensecategory
     partner: organizationid
   - name: organization_msdyn_federatedarticleincident
     type: Microsoft.Dynamics.CRM.msdyn_federatedarticleincident
     partner: organizationid
-  - name: organization_msdyn_fieldservicepricelistitem
-    type: Microsoft.Dynamics.CRM.msdyn_fieldservicepricelistitem
-    partner: organizationid
-  - name: organization_msdyn_fieldservicesystemjob
-    type: Microsoft.Dynamics.CRM.msdyn_fieldservicesystemjob
-    partner: organizationid
-  - name: organization_msdyn_geolocationsettings
-    type: Microsoft.Dynamics.CRM.msdyn_geolocationsettings
-    partner: organizationid
-  - name: organization_msdyn_geolocationtracking
-    type: Microsoft.Dynamics.CRM.msdyn_geolocationtracking
-    partner: organizationid
   - name: organization_msdyn_helppage
     type: Microsoft.Dynamics.CRM.msdyn_helppage
     partner: organizationid
-  - name: organization_msdyn_invoicefrequency
-    type: Microsoft.Dynamics.CRM.msdyn_invoicefrequency
-    partner: organizationid
-  - name: organization_msdyn_invoicefrequencydetail
-    type: Microsoft.Dynamics.CRM.msdyn_invoicefrequencydetail
-    partner: organizationid
-  - name: organization_msdyn_iottocaseprocess
-    type: Microsoft.Dynamics.CRM.msdyn_iottocaseprocess
-    partner: organizationid
-  - name: organization_msdyn_kbenrichment
-    type: Microsoft.Dynamics.CRM.msdyn_kbenrichment
-    partner: organizationid
-  - name: organization_msdyn_mlresultcache
-    type: Microsoft.Dynamics.CRM.msdyn_mlresultcache
-    partner: organizationid
-  - name: organization_msdyn_organizationalunit
-    type: Microsoft.Dynamics.CRM.msdyn_organizationalunit
-    partner: organizationid
-  - name: organization_msdyn_paneconfiguration
-    type: Microsoft.Dynamics.CRM.msdyn_paneconfiguration
-    partner: organizationid
-  - name: organization_msdyn_panetabconfiguration
-    type: Microsoft.Dynamics.CRM.msdyn_panetabconfiguration
-    partner: organizationid
-  - name: organization_msdyn_panetoolconfiguration
-    type: Microsoft.Dynamics.CRM.msdyn_panetoolconfiguration
-    partner: organizationid
-  - name: organization_msdyn_postconfig
-    type: Microsoft.Dynamics.CRM.msdyn_postconfig
-    partner: organizationid
-  - name: organization_msdyn_postruleconfig
-    type: Microsoft.Dynamics.CRM.msdyn_postruleconfig
-    partner: organizationid
-  - name: organization_msdyn_predictworkhourdurationsetting
-    type: Microsoft.Dynamics.CRM.msdyn_predictworkhourdurationsetting
-    partner: organizationid
-  - name: organization_msdyn_processnotes
-    type: Microsoft.Dynamics.CRM.msdyn_processnotes
-    partner: organizationid
-  - name: organization_msdyn_productinventory
-    type: Microsoft.Dynamics.CRM.msdyn_productinventory
-    partner: organizationid
-  - name: organization_msdyn_projectparameter
-    type: Microsoft.Dynamics.CRM.msdyn_projectparameter
-    partner: organizationid
-  - name: organization_msdyn_projectparameterpricelist
-    type: Microsoft.Dynamics.CRM.msdyn_projectparameterpricelist
-    partner: organizationid
-  - name: organization_msdyn_projectteammembersignup
-    type: Microsoft.Dynamics.CRM.msdyn_projectteammembersignup
-    partner: organizationid
-  - name: organization_msdyn_quotelineinvoiceschedule
-    type: Microsoft.Dynamics.CRM.msdyn_quotelineinvoiceschedule
-    partner: organizationid
-  - name: organization_msdyn_resourcecategorymarkuppricelevel
-    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorymarkuppricelevel
-    partner: organizationid
-  - name: organization_msdyn_resourcecategorypricelevel
-    type: Microsoft.Dynamics.CRM.msdyn_resourcecategorypricelevel
-    partner: organizationid
-  - name: organization_msdyn_schedulingparameter
-    type: Microsoft.Dynamics.CRM.msdyn_schedulingparameter
-    partner: organizationid
-  - name: organization_msdyn_sikeyvalueconfig
-    type: Microsoft.Dynamics.CRM.msdyn_sikeyvalueconfig
-    partner: organizationid
-  - name: organization_msdyn_smartassistconfig
-    type: Microsoft.Dynamics.CRM.msdyn_smartassistconfig
+  - name: organization_msdyn_kmpersonalizationsetting
+    type: Microsoft.Dynamics.CRM.msdyn_kmpersonalizationsetting
     partner: organizationid
   - name: organization_msdyn_solutionhealthruleset
     type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleset
-    partner: organizationid
-  - name: organization_msdyn_suggestioninteraction
-    type: Microsoft.Dynamics.CRM.msdyn_suggestioninteraction
-    partner: organizationid
-  - name: organization_msdyn_suggestionrequestpayload
-    type: Microsoft.Dynamics.CRM.msdyn_suggestionrequestpayload
-    partner: organizationid
-  - name: organization_msdyn_suggestionsmodelsummary
-    type: Microsoft.Dynamics.CRM.msdyn_suggestionsmodelsummary
-    partner: organizationid
-  - name: organization_msdyn_suggestionssetting
-    type: Microsoft.Dynamics.CRM.msdyn_suggestionssetting
-    partner: organizationid
-  - name: organization_msdyn_transactioncategory
-    type: Microsoft.Dynamics.CRM.msdyn_transactioncategory
-    partner: organizationid
-  - name: organization_msdyn_transactioncategoryclassification
-    type: Microsoft.Dynamics.CRM.msdyn_transactioncategoryclassification
-    partner: organizationid
-  - name: organization_msdyn_transactioncategoryhierarchyelement
-    type: Microsoft.Dynamics.CRM.msdyn_transactioncategoryhierarchyelement
-    partner: organizationid
-  - name: organization_msdyn_transactioncategorypricelevel
-    type: Microsoft.Dynamics.CRM.msdyn_transactioncategorypricelevel
-    partner: organizationid
-  - name: organization_msdyn_transactiontype
-    type: Microsoft.Dynamics.CRM.msdyn_transactiontype
-    partner: organizationid
-  - name: organization_msdyn_uniquenumber
-    type: Microsoft.Dynamics.CRM.msdyn_uniquenumber
-    partner: organizationid
-  - name: organization_msdyn_upgraderun
-    type: Microsoft.Dynamics.CRM.msdyn_upgraderun
-    partner: organizationid
-  - name: organization_msdyn_upgradestep
-    type: Microsoft.Dynamics.CRM.msdyn_upgradestep
-    partner: organizationid
-  - name: organization_msdyn_upgradeversion
-    type: Microsoft.Dynamics.CRM.msdyn_upgradeversion
-    partner: organizationid
-  - name: organization_msdyn_wallsavedquery
-    type: Microsoft.Dynamics.CRM.msdyn_wallsavedquery
-    partner: organizationid
-  - name: organization_msdyn_workorderdetailsgenerationqueue
-    type: Microsoft.Dynamics.CRM.msdyn_workorderdetailsgenerationqueue
     partner: organizationid
   - name: organization_navigationsetting
     type: Microsoft.Dynamics.CRM.navigationsetting
@@ -3455,9 +3193,6 @@ collection_valued_navigation_properties:
   - name: organization_officegraphdocument
     type: Microsoft.Dynamics.CRM.officegraphdocument
     partner: organizationid
-  - name: organization_opportunitysalesprocess
-    type: Microsoft.Dynamics.CRM.opportunitysalesprocess
-    partner: organizationid
   - name: organization_organizationdatasyncsubscription
     type: Microsoft.Dynamics.CRM.organizationdatasyncsubscription
     partner: organizationid
@@ -3466,9 +3201,6 @@ collection_valued_navigation_properties:
     partner: organizationid
   - name: organization_package
     type: Microsoft.Dynamics.CRM.package
-    partner: organizationid
-  - name: organization_phonetocaseprocess
-    type: Microsoft.Dynamics.CRM.phonetocaseprocess
     partner: organizationid
   - name: organization_pluginassembly
     type: Microsoft.Dynamics.CRM.pluginassembly
@@ -3491,18 +3223,6 @@ collection_valued_navigation_properties:
   - name: organization_postlike
     type: Microsoft.Dynamics.CRM.postlike
     partner: organizationid
-  - name: organization_price_levels
-    type: Microsoft.Dynamics.CRM.pricelevel
-    partner: organizationid
-  - name: organization_ProductAssociation
-    type: Microsoft.Dynamics.CRM.productassociation
-    partner: organizationid
-  - name: organization_products
-    type: Microsoft.Dynamics.CRM.product
-    partner: organizationid
-  - name: organization_ProductSubstitute
-    type: Microsoft.Dynamics.CRM.productsubstitute
-    partner: organizationid
   - name: organization_publisher
     type: Microsoft.Dynamics.CRM.publisher
     partner: organizationid
@@ -3518,21 +3238,9 @@ collection_valued_navigation_properties:
   - name: organization_relationshipattribute
     type: Microsoft.Dynamics.CRM.relationshipattribute
     partner: organizationid
-  - name: organization_resource_groups
-    type: Microsoft.Dynamics.CRM.resourcegroup
-    partner: organizationid
-  - name: organization_resource_specs
-    type: Microsoft.Dynamics.CRM.resourcespec
-    partner: organizationid
-  - name: organization_resources
-    type: Microsoft.Dynamics.CRM.resource
-    partner: organizationid
   - name: organization_roles
     type: Microsoft.Dynamics.CRM.role
     partner: organizationid_organization
-  - name: organization_sales_literature
-    type: Microsoft.Dynamics.CRM.salesliterature
-    partner: organizationid
   - name: organization_saved_queries
     type: Microsoft.Dynamics.CRM.savedquery
     partner: organizationid
@@ -3557,18 +3265,12 @@ collection_valued_navigation_properties:
   - name: organization_serviceendpoint
     type: Microsoft.Dynamics.CRM.serviceendpoint
     partner: organizationid
-  - name: organization_services
-    type: Microsoft.Dynamics.CRM.service
-    partner: organizationid
   - name: organization_similarityrule
     type: Microsoft.Dynamics.CRM.similarityrule
     partner: organizationid
   - name: organization_sitemap
     type: Microsoft.Dynamics.CRM.sitemap
     partner: organizationid
-  - name: organization_sites
-    type: Microsoft.Dynamics.CRM.site
-    partner: organizationid_organization
   - name: organization_solution
     type: Microsoft.Dynamics.CRM.solution
     partner: organizationid
@@ -3614,14 +3316,14 @@ collection_valued_navigation_properties:
   - name: organization_translationprocess
     type: Microsoft.Dynamics.CRM.translationprocess
     partner: organizationid
-  - name: organization_uof_schedules
-    type: Microsoft.Dynamics.CRM.uomschedule
-    partner: organizationid
   - name: organization_UserMapping
     type: Microsoft.Dynamics.CRM.usermapping
     partner: organizationid
   - name: organization_usermobileofflineprofilemembership
     type: Microsoft.Dynamics.CRM.usermobileofflineprofilemembership
+    partner: organizationid
+  - name: organization_virtualentitymetadata
+    type: Microsoft.Dynamics.CRM.virtualentitymetadata
     partner: organizationid
   - name: organization_webwizard
     type: Microsoft.Dynamics.CRM.webwizard
@@ -3640,14 +3342,8 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.ApiMessagesExtension
     description: "This solution contains CDS API message extensions."
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
-    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
   - type: Microsoft.Dynamics.CRM.msdynce_Activities
     description: "Dynamics 365 workload for activities."
-  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
-    description: "Dynamics 365 workload for third patch of Sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_SchedulingPatch
-    description: "Dynamics 365 workload for scheduling."
   - type: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreement
     description: "Dynamics 365 workload for service level agreements."
   - type: Microsoft.Dynamics.CRM.msft_PowerAppsUnifiedClientInfraExtensions

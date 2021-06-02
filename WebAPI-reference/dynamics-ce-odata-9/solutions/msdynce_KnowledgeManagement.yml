@@ -4,10 +4,10 @@ name: "Knowledge Management"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Knowledge Management Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 7aee2369-59e7-48e3-a8c6-f57681a265a3
+  ms.assetid: 3dfaa0cb-7aeb-444a-be0a-5ae9f8cbf811
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

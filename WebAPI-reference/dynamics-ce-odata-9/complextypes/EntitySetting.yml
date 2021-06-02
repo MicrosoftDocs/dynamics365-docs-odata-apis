@@ -4,7 +4,7 @@ name: "EntitySetting"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse EntitySetting ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0aa922dc-bcde-4d4a-90b3-71d1687c60d1

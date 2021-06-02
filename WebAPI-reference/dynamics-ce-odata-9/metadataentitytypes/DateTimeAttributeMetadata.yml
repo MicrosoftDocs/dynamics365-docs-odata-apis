@@ -4,7 +4,7 @@ name: "DateTimeAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse DateTimeAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5f46cd45-d647-4f20-84d0-dc771552c5d8

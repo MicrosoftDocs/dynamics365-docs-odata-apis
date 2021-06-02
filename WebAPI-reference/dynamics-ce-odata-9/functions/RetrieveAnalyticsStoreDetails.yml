@@ -4,7 +4,7 @@ name: "RetrieveAnalyticsStoreDetails"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveAnalyticsStoreDetails Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a31bbe42-4c02-4b66-b542-e07f51620d36

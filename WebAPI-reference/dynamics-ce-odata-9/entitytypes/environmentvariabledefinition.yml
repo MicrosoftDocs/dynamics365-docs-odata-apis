@@ -4,7 +4,7 @@ name: "environmentvariabledefinition"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b369907e-767d-4ef4-901c-fbc1ce792f95
@@ -304,6 +304,12 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: bot_environmentvariabledefinition
+    type: Microsoft.Dynamics.CRM.bot
+    partner: bot_environmentvariabledefinition
+  - name: botcomponent_environmentvariabledefinition
+    type: Microsoft.Dynamics.CRM.botcomponent
+    partner: botcomponent_environmentvariabledefinition
   - name: envdefinition_envdefinition
     type: Microsoft.Dynamics.CRM.environmentvariabledefinition
     partner: ParentDefinitionId

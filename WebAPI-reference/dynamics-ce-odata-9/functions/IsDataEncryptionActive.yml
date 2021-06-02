@@ -4,7 +4,7 @@ name: "IsDataEncryptionActive"
 type: function
 metadata: 
   title: "Microsoft Dataverse IsDataEncryptionActive Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6d1c7dd8-3a90-443a-bfc4-f8f9274d1876

@@ -4,7 +4,7 @@ name: "ColumnSet"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ColumnSet ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f70d43cd-d6a6-415e-9d41-8ad37fafbd41
@@ -40,18 +40,6 @@ properties:
 usedby:
   description: "The following use the ColumnSet ComplexType."
   usedby_items:
-  - name: Microsoft.Dynamics.CRM.ConvertQuoteToSalesOrder
-    used_as: Parameter
-  - name: Microsoft.Dynamics.CRM.ConvertSalesOrderToInvoice
-    used_as: Parameter
-  - name: Microsoft.Dynamics.CRM.GenerateInvoiceFromOpportunity
-    used_as: Parameter
-  - name: Microsoft.Dynamics.CRM.GenerateQuoteFromOpportunity
-    used_as: Parameter
-  - name: Microsoft.Dynamics.CRM.GenerateSalesOrderFromOpportunity
-    used_as: Parameter
-  - name: Microsoft.Dynamics.CRM.ReviseQuote
-    used_as: Parameter
   - name: Microsoft.Dynamics.CRM.QueryExpression
     used_as: Property
   - name: Microsoft.Dynamics.CRM.LinkEntity

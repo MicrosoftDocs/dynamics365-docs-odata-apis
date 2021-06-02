@@ -4,7 +4,7 @@ name: "RetrieveApplicationRibbonResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveApplicationRibbonResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5b3b1380-f54c-4a6f-98f0-9b99bdf41d18

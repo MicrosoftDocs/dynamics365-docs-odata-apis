@@ -4,7 +4,7 @@ name: "TimeInfo"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse TimeInfo ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d8f916f9-57d1-40d1-81e1-c626d2b6aa29
@@ -91,8 +91,6 @@ usedby:
   - name: Microsoft.Dynamics.CRM.ExpandCalendarResponse
     used_as: Property
   - name: Microsoft.Dynamics.CRM.QueryScheduleResponse
-    used_as: Property
-  - name: Microsoft.Dynamics.CRM.TimeInfoCollection
     used_as: Property
 # There are no remarks for this complex type.
 href_see_also:

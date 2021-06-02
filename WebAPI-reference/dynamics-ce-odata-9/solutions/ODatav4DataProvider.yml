@@ -4,10 +4,10 @@ name: "OData v4 Data Provider"
 type: solution
 metadata: 
   title: "Microsoft Dataverse OData v4 Data Provider Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 8e9b1996-d9d5-4f4c-83f4-65d4726a287a
+  ms.assetid: 3249266d-ffd0-4749-a3fa-edd6454c1260
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: ODatav4DataProvider
- version: "9.0.0.287"
+ version: "9.0.0.311"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."

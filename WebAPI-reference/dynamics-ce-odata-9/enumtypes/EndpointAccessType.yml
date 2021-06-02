@@ -4,7 +4,7 @@ name: "EndpointAccessType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse EndpointAccessType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fff46bd5-9ff1-4bb5-b27c-cc91b1dcc758

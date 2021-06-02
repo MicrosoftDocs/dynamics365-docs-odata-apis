@@ -4,7 +4,7 @@ name: "ManagedPropertyMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse ManagedPropertyMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 153567bd-06bf-4a83-9516-dc2b48c35a2c

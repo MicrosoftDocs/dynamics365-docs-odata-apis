@@ -4,7 +4,7 @@ name: "SetFeatureStatus"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d4057bd0-1f9c-474a-aecf-023f3880ccfd

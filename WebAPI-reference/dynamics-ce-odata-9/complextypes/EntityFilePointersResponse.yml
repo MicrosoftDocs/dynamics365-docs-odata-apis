@@ -4,7 +4,7 @@ name: "EntityFilePointersResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse EntityFilePointersResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bc683e26-0eb3-41da-84eb-3c9207feb8f0

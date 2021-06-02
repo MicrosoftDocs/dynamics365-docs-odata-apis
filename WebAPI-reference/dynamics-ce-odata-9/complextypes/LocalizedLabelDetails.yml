@@ -4,7 +4,7 @@ name: "LocalizedLabelDetails"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse LocalizedLabelDetails ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: cb54c76b-cd16-4a8f-84b8-c518e6e4387c

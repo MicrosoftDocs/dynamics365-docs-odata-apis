@@ -4,7 +4,7 @@ name: "CancelTrainingResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse CancelTrainingResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 760c85a6-fe7c-48b4-a90d-eaa221e04b97

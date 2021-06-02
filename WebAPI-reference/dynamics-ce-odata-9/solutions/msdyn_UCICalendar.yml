@@ -4,10 +4,10 @@ name: "UCI Calendar Control"
 type: solution
 metadata: 
   title: "Microsoft Dataverse UCI Calendar Control Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: bff70e60-b671-46d5-b09c-4a237c793135
+  ms.assetid: c8146869-9dfc-488f-a055-9a6f1f052f09
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "The UCI Calendar Control provides common UI experience for bookable resource time management"
  unique_name: msdyn_UCICalendar
- version: "1.0.0.846"
+ version: "1.0.0.978"
  customization_prefix: msdyn
 # This solution includes no entities.
 actions:

@@ -4,7 +4,7 @@ name: "AttributeRequiredLevel"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse AttributeRequiredLevel EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 270cc6ff-d3c9-4801-b617-56ad55392979

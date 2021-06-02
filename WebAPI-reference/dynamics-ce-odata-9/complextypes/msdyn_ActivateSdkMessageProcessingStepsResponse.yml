@@ -4,7 +4,7 @@ name: "msdyn_ActivateSdkMessageProcessingStepsResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse msdyn_ActivateSdkMessageProcessingStepsResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 34a9f499-ee78-48c7-9862-3e4279ea9c79

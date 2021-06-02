@@ -4,7 +4,7 @@ name: "EntityRelationsWithDependantEntityMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse EntityRelationsWithDependantEntityMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0ab5ef51-47c9-469f-8d29-60a5682ef0b2

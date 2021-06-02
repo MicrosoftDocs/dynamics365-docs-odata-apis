@@ -4,7 +4,7 @@ name: "SetBusinessSystemUser"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0e06bbd2-adbb-484d-b487-1fb0c8f0da67
@@ -35,12 +35,7 @@ parameters:
     description: "The target security principal (user) to which the instances of entities previously owned by the user are to be assigned.  "
 # This action has no return value.
 hasreturnvalue: false
-entities:
-  description: "Use the SetBusinessSystemUser action with this entity type:"
-  entity_items:
-  - type: Microsoft.Dynamics.CRM.equipment
-    displayName: Facility/Equipment
-    description: "Resource that can be scheduled."
+# This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

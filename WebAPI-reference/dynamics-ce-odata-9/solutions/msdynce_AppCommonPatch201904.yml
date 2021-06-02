@@ -4,10 +4,10 @@ name: "Second Patch for Application Common"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Second Patch for Application Common Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: f694b59f-5d18-4c2d-814f-c447c2e3c290
+  ms.assetid: d52dd7b2-b54e-4476-954f-36c096c7a56b
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdynce_AppCommonPatch201904
- version: "9.0.21031.10003"
+ version: "9.0.21043.10002"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
@@ -25,8 +25,6 @@ entities:
      description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
    - type: Microsoft.Dynamics.CRM.annotation
      description: "Note that is attached to one or more objects, including other notes."
-   - type: Microsoft.Dynamics.CRM.appointment
-     description: "Commitment representing a time interval with start/end times and duration."
    - type: Microsoft.Dynamics.CRM.calendar
      description: "Calendar used by the scheduling system to define when an appointment or activity is to occur."
    - type: Microsoft.Dynamics.CRM.connection
@@ -35,10 +33,6 @@ entities:
      description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
    - type: Microsoft.Dynamics.CRM.documenttemplate
      description: "Used to store Document Templates in database in binary format."
-   - type: Microsoft.Dynamics.CRM.email
-     description: "Activity that is delivered using email protocols."
-   - type: Microsoft.Dynamics.CRM.fax
-     description: "Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document."
    - type: Microsoft.Dynamics.CRM.goal
      description: "Target objective for a user or a team for a specified time period."
    - type: Microsoft.Dynamics.CRM.goalrollupquery
@@ -47,32 +41,20 @@ entities:
      description: "File name of file used for import."
    - type: Microsoft.Dynamics.CRM.importlog
      description: "Failure reason and other detailed information for a record that failed to import."
-   - type: Microsoft.Dynamics.CRM.letter
-     description: "Activity that tracks the delivery of a letter. The activity can contain the electronic copy of the letter."
-   - type: Microsoft.Dynamics.CRM.mailbox
-     description: ""
    - type: Microsoft.Dynamics.CRM.metric
      description: "Type of measurement for a goal, such as money amount or count."
    - type: Microsoft.Dynamics.CRM.personaldocumenttemplate
      description: "Used to store Personal Document Templates in database in binary format."
-   - type: Microsoft.Dynamics.CRM.phonecall
-     description: "Activity to track a telephone call."
    - type: Microsoft.Dynamics.CRM.queue
      description: "A list of records that require action, such as accounts, activities, and cases."
    - type: Microsoft.Dynamics.CRM.queueitem
      description: "A specific item in a queue, such as a case record or an activity record."
-   - type: Microsoft.Dynamics.CRM.recurringappointmentmaster
-     description: "The Master appointment of a recurring appointment series."
    - type: Microsoft.Dynamics.CRM.rollupfield
      description: "Field to be rolled up to calculate the actual and in-progress values against the goal."
    - type: Microsoft.Dynamics.CRM.socialprofile
      description: "This entity is used to store social profile information of its associated account and contacts on different social channels."
    - type: Microsoft.Dynamics.CRM.systemuser
      description: "Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database."
-   - type: Microsoft.Dynamics.CRM.task
-     description: "Generic activity representing work needed to be done."
-   - type: Microsoft.Dynamics.CRM.team
-     description: "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units."
    - type: Microsoft.Dynamics.CRM.territory
      description: "Territory represents sales regions."
    - type: Microsoft.Dynamics.CRM.transactioncurrency

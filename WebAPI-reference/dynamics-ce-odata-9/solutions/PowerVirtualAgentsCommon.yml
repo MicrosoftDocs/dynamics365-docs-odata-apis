@@ -4,10 +4,10 @@ name: "Power Virtual Agents Common"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Power Virtual Agents Common Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 55ad878e-068c-4bdd-8a9d-434088efb9a8
+  ms.assetid: ea9fefc5-d574-41a7-ae2f-e97759c419a0
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,9 +16,13 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use, by the Power Virtual Agent services only."
  unique_name: PowerVirtualAgentsCommon
- version: "1.1.2.296"
+ version: "1.1.2.330"
  customization_prefix: default
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.conversationtranscript
+     description: "Contains the transcripts of conversations between participants such as customers, Virtual Agents or Human agents."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

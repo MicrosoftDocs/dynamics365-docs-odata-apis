@@ -4,7 +4,7 @@ name: "appconfiginstance"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2b72cb4f-805c-4823-aeaa-cab034393ff2
@@ -202,11 +202,7 @@ operations:
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrieveUnpublishedMultiple
     binding_type: "Collection"
-solutions:
-  description: "The following solutions include the appconfiginstance entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

@@ -4,10 +4,10 @@ name: "CatalogFramework"
 type: solution
 metadata: 
   title: "Microsoft Dataverse CatalogFramework Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 0a0ca609-c0ea-40ff-b58b-e41da1f6fb7d
+  ms.assetid: 872fa035-9a29-4b6c-b0a4-b7dad68805f5
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,9 +16,15 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: msft_CatalogFramework
- version: "1.0.0.2"
+ version: "1.0.0.5"
  customization_prefix: default
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.catalog
+     description: "Entity for cataloging records to make it easier for your customers to find them on portals and through search."
+   - type: Microsoft.Dynamics.CRM.catalogassignment
+     description: "Entity for assigning records to a specific catalog "
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

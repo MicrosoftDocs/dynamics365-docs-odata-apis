@@ -4,7 +4,7 @@ name: "AttributeTypeCode"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse AttributeTypeCode EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f37d21e3-e1f0-4e42-8dc9-397f235a8be0

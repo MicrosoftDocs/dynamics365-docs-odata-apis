@@ -4,7 +4,7 @@ name: "QueryWithEntityMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse QueryWithEntityMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d3950b99-3130-43f7-92bd-cae23a953b94

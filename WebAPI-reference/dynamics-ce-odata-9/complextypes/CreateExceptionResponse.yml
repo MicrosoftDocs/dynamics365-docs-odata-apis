@@ -4,7 +4,7 @@ name: "CreateExceptionResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse CreateExceptionResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 867db936-d7c7-42ae-ac0d-79ae28d4fbe4

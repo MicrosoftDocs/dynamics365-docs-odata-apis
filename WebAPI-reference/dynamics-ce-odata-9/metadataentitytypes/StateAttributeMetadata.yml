@@ -4,7 +4,7 @@ name: "StateAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse StateAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fe4f8714-4ccf-43fc-8b3c-7eca01c258c3

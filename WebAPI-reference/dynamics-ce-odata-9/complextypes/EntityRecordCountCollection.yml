@@ -4,7 +4,7 @@ name: "EntityRecordCountCollection"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse EntityRecordCountCollection ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d7cf22a9-8dc2-49cb-9984-b8d536a0efa3

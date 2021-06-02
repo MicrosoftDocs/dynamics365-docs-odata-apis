@@ -4,7 +4,7 @@ name: "SendFax"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 69a12bd1-be03-407b-8263-0de2488cd4eb

@@ -4,7 +4,7 @@ name: "ExportSolutionAsync"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 43f8619f-7210-4dc0-9260-fa6c1d95b6dc

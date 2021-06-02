@@ -4,7 +4,7 @@ name: "RetrieveTotalRecordCountResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveTotalRecordCountResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: abdc0194-bf49-4a87-8fbd-7c26d1290e11

@@ -4,7 +4,7 @@ name: "CanvasAppsDetails"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse CanvasAppsDetails ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e7d7476b-ec8a-4b2e-ac56-39fe252033d0

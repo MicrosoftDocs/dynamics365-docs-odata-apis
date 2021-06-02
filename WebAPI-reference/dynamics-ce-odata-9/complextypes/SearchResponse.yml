@@ -4,7 +4,7 @@ name: "SearchResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse SearchResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1175b464-3055-42e9-a6c6-403d88ba33db

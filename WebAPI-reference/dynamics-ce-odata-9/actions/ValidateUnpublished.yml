@@ -4,7 +4,7 @@ name: "ValidateUnpublished"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b164bb7a-05ce-4ccf-923b-d4689e4897ec
@@ -39,9 +39,6 @@ entities:
   - type: Microsoft.Dynamics.CRM.savedquery
     displayName: View
     description: "Saved query against the database."
-  - type: Microsoft.Dynamics.CRM.serviceappointment
-    displayName: Service Activity
-    description: "Activity offered by the organization to satisfy its customer's needs. Each service activity includes date, time, duration, and required resources."
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

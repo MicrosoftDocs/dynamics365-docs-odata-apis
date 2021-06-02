@@ -4,7 +4,7 @@ name: "ComplexEntityMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ComplexEntityMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 271618ff-8839-4989-a0d3-431084be5b3f

@@ -4,7 +4,7 @@ name: "RemoveActiveCustomizationsResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RemoveActiveCustomizationsResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a26eb42e-5c92-4cfe-8615-8f7e91abf6a3

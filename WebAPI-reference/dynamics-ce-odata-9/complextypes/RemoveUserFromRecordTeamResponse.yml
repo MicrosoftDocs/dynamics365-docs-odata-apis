@@ -4,7 +4,7 @@ name: "RemoveUserFromRecordTeamResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RemoveUserFromRecordTeamResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3bc5586c-2003-44a8-a35f-b25bcc352409

@@ -4,7 +4,7 @@ name: "ExecuteCosmosSqlQuery"
 type: function
 metadata: 
   title: "Microsoft Dataverse ExecuteCosmosSqlQuery Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 21aa3d32-4bd7-45ba-9078-9068609b62ce

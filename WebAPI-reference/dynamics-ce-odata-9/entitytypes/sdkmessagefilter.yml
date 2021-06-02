@@ -4,7 +4,7 @@ name: "sdkmessagefilter"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: aa91a5d2-9cf9-40e3-9a7b-16e6ed15c5c8
@@ -229,8 +229,6 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.ApiMessagesExtension
     description: "This solution contains CDS API message extensions."
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

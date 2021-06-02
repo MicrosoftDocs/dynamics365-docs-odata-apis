@@ -4,7 +4,7 @@ name: "userquery"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2c1f6da8-bf99-4a94-a5ef-74143d34f0b7
@@ -232,11 +232,7 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RevokeAccess
     binding_type: "Not Bound"
-solutions:
-  description: "The following solutions include the userquery entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

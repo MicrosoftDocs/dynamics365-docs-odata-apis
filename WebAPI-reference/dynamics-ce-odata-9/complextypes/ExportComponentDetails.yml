@@ -4,7 +4,7 @@ name: "ExportComponentDetails"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ExportComponentDetails ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0c728d1f-5aa7-4dd1-9ed3-beab8d643997

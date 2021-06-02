@@ -4,7 +4,7 @@ name: "RetrieveFormattedImportJobResults"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveFormattedImportJobResults Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2ba00e51-ae66-476f-ad7b-33a024dfd699

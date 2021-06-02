@@ -4,10 +4,10 @@ name: "Advanced Analytics Infrastructure"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Advanced Analytics Infrastructure Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 04e306b3-0034-4721-b758-1969ce6bf43b
+  ms.assetid: eddb61b9-4974-4367-afc5-309da333b27b
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

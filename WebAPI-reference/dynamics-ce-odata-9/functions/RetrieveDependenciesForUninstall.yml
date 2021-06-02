@@ -4,7 +4,7 @@ name: "RetrieveDependenciesForUninstall"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveDependenciesForUninstall Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8e3cb5a3-bf69-425a-be73-d309a238328c

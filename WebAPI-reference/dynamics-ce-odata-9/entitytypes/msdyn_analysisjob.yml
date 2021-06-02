@@ -4,7 +4,7 @@ name: "msdyn_analysisjob"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ea0b6477-da39-4d02-bfb3-cd81dc1ee2fd
@@ -142,10 +142,22 @@ properties:
       description: ""
       iscomputed: false
       isreadonly: false
+    - name: msdyn_suggestioncount
+      type: Edm.Int32
+      display_name: "Suggestion Count"
+      description: ""
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_tenantid
       type: Edm.String
       display_name: "Tenant Id"
       description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_triggertype
+      type: Edm.String
+      display_name: "Health rule set Trigger Type."
+      description: "Health rule set Trigger Type."
       iscomputed: false
       isreadonly: false
     - name: msdyn_warningcount

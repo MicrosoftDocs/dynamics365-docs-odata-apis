@@ -4,7 +4,7 @@ name: "RetrieveEntityRibbonResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveEntityRibbonResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 48ee7abb-9192-4521-a144-8660383f94d3

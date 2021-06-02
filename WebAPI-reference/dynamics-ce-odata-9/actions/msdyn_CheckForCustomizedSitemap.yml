@@ -4,7 +4,7 @@ name: "msdyn_CheckForCustomizedSitemap"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4ef0b4dc-9655-4371-843b-42c55da5c516

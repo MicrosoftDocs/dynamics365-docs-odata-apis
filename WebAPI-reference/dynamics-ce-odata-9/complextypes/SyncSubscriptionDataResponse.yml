@@ -4,7 +4,7 @@ name: "SyncSubscriptionDataResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse SyncSubscriptionDataResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b1f9a790-6060-40e9-b66f-41920db194c8

@@ -4,7 +4,7 @@ name: "ProposalParty"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ProposalParty ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c9741e17-d888-484a-b918-50ff3b0fa2be

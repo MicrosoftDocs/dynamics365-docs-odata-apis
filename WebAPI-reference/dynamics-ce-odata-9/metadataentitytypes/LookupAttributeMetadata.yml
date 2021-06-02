@@ -4,7 +4,7 @@ name: "LookupAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse LookupAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6887b8e5-41f9-41e3-b676-8b676f12ab40

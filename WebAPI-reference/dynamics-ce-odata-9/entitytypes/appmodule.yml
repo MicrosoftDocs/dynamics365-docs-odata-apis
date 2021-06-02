@@ -4,7 +4,7 @@ name: "appmodule"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f95d3037-475c-4641-8a4a-6a5307cffa12
@@ -318,6 +318,9 @@ collection_valued_navigation_properties:
   - name: appmodule_appmodulecomponent
     type: Microsoft.Dynamics.CRM.appmodulecomponent
     partner: appmoduleid
+  - name: appmodule_appnotification_app
+    type: Microsoft.Dynamics.CRM.appnotification
+    partner: AppModuleId
   - name: appmoduleroles_association
     type: Microsoft.Dynamics.CRM.role
     partner: appmoduleroles_association
@@ -345,8 +348,6 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.LicenseEnforcement
     description: "License Enforcement solution"
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

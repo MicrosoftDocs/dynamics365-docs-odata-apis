@@ -4,7 +4,7 @@ name: "msdyn_CheckIfSDKMessageProcessingStepsAreActiveResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse msdyn_CheckIfSDKMessageProcessingStepsAreActiveResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f1653eb3-8334-4307-ada3-0e1fa661e45c

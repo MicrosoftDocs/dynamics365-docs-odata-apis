@@ -4,7 +4,7 @@ name: "RecentItem"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RecentItem ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5427d766-59a5-4a98-8aa4-84aad3fbe446

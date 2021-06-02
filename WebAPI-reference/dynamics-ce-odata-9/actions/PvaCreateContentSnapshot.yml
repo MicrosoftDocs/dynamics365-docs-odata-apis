@@ -4,7 +4,7 @@ name: "PvaCreateContentSnapshot"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8f4a1aa8-9463-484b-8e7c-c5e9f0f4616b

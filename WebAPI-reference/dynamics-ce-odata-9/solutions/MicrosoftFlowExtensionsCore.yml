@@ -4,10 +4,10 @@ name: "Power Automate Extensions core package"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Power Automate Extensions core package Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 32bcf6c9-5788-4bef-9585-328ee6132d55
+  ms.assetid: bf924943-ca76-4c93-9b78-23a73c629c28
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,11 +16,15 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: MicrosoftFlowExtensionsCore
- version: "1.2.3.6"
+ version: "1.2.4.3"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
+   - type: Microsoft.Dynamics.CRM.flowmachine
+     description: ""
+   - type: Microsoft.Dynamics.CRM.flowmachinegroup
+     description: ""
    - type: Microsoft.Dynamics.CRM.flowsession
      description: "Entity to store the information that is generated when a modern flow or UI flow runs."
    - type: Microsoft.Dynamics.CRM.processstage

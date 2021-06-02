@@ -4,7 +4,7 @@ name: "RetrieveUserSetOfPrivilegesByIdsResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveUserSetOfPrivilegesByIdsResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4bc6497c-a3a4-4eec-9af1-656d7c525826

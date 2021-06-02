@@ -4,7 +4,7 @@ name: "DeleteOpenInstances"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e8405993-4e34-4a7f-9007-b00db726ac23

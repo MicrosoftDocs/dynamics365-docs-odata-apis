@@ -4,7 +4,7 @@ name: "ComplexMoneyAttributeMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ComplexMoneyAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e2119bac-032d-4c20-8e09-e861e9937f5f

@@ -4,7 +4,7 @@ name: "SolutionOperationType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse SolutionOperationType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 454767fa-543b-4310-a107-80a82c350a33

@@ -4,7 +4,7 @@ name: "ExportTranslationResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ExportTranslationResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 322688ef-ea24-4d76-a70c-6b41421c55c9

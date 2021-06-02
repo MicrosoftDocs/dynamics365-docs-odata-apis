@@ -4,7 +4,7 @@ name: "MultiSelectPicklistAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse MultiSelectPicklistAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 73a01b9d-dabe-4a8c-80d9-819396c9ed75

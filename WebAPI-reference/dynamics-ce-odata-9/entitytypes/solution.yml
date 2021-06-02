@@ -4,7 +4,7 @@ name: "solution"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4dd9f73e-8d40-4f80-ade4-a65fabf7f7b8
@@ -144,6 +144,12 @@ properties:
       type: Edm.String
       display_name: "Suffix"
       description: "The template suffix of this solution"
+      iscomputed: false
+      isreadonly: false
+    - name: thumbprint
+      type: Edm.String
+      display_name: "Thumbprint"
+      description: "thumbprint of the solution signature"
       iscomputed: false
       isreadonly: false
     - name: uniquename

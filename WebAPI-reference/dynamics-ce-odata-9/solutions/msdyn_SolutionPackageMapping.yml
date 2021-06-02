@@ -4,10 +4,10 @@ name: "msdyn_SolutionPackageMapping"
 type: solution
 metadata: 
   title: "Microsoft Dataverse msdyn_SolutionPackageMapping Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 394254dd-3c26-4556-8fba-911b8ad5ed58
+  ms.assetid: 9e8ce68c-4e3f-4afd-b66d-81b7231286b8
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

@@ -4,7 +4,7 @@ name: "RetrieveTeamPrivilegesResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveTeamPrivilegesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a4fc0b72-3bc6-43d8-9383-c8c30c71e814

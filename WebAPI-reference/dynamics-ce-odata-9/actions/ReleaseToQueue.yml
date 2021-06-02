@@ -4,7 +4,7 @@ name: "ReleaseToQueue"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 107486f8-e245-49d1-b71e-c0fbca452f22

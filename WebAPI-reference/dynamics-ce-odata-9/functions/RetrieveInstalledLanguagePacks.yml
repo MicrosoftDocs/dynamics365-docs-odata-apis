@@ -4,7 +4,7 @@ name: "RetrieveInstalledLanguagePacks"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveInstalledLanguagePacks Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7332a1c5-9a8b-46ee-92e3-491b9a6c8373

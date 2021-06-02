@@ -4,10 +4,10 @@ name: "Power Apps Checker"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Power Apps Checker Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: c7358a33-bfd4-40ee-9289-161b3f0b0320
+  ms.assetid: 2911e760-f433-4aa7-b7a9-404f0112b8c2
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Power Apps Checker promotes higher-quality model-driven apps by helping app makers follow best practices when they customize and extend the Power Apps platform. Power Apps Checker performs a static analysis of your Power Apps solutions to identify performance and stability risks, and provides detailed recommendations to remove these risks from your solutions."
  unique_name: msdyn_PowerAppsChecker
- version: "1.2.0.34"
+ version: "1.2.0.74"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -62,13 +62,23 @@ actions:
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_CheckIfSDKMessageProcessingStepsAreActive
      description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_CreateNewAnalysisJob
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_CreateNewAnalysisJobForRuleSet
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ModelAppDiagnosis
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_ModelAppRepair
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_RegisterSolutionHealthRule
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_ResolveSolutionHealthRuleFailure
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_RunSolutionCheckerRules
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_SiteMapDiagnosis
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_SiteMapRepair
      description: ""
 # There are no remarks for this solution.
 href_see_also:

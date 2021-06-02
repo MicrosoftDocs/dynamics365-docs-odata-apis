@@ -3,15 +3,15 @@ uid: Microsoft.Dynamics.CRM.connectionreference
 name: "connectionreference"
 type: entitytype
 metadata: 
-  title: "Microsoft Dataverse and Dynamics 365 Customer Engagement connectionreference EntityType Reference | MicrosoftDocs"
-  ms.date: "05/03/2020"
-  ms.service: "crm-online"
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "06/02/2021"
+  ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: df5a33db-d488-40d0-8642-bfeebe92acce
-  author: "KumarVivek"
+  ms.assetid: 4d6add5e-bed8-4125-96b0-45678c7e89df
+  author: "kumarvivek"
   ms.author: "kvivek"
-  manager: "Annbe"
-  meta-description: "Reference information about the connectionreference entitytype."
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse connectionreference entitytype."
 # This entity doesn't have a description
 header:
   entity_set_path: "[organization URI]/api/data/v9.0/connectionreferences"
@@ -88,7 +88,7 @@ properties:
     - name: description
       type: Edm.String
       display_name: "Description"
-      description: ""
+      description: "Description of Connection Reference"
       iscomputed: false
       isreadonly: false
     - name: importsequencenumber
@@ -289,10 +289,10 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.PowerPlatformConnectionReferences
     description: "Power Platform Connection References Solution."
-# This entity has no remarks.
+# There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
-  href: "https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex
 - Microsoft.Dynamics.CRM.ActionIndex

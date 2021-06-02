@@ -4,10 +4,10 @@ name: "EnableUCIByDefault"
 type: solution
 metadata: 
   title: "Microsoft Dataverse EnableUCIByDefault Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 6b2acc3f-1243-44ae-9e68-183269101f3f
+  ms.assetid: beecc072-e8f8-44b3-a2b7-23f962344cef
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for enablement of entities within the Unified Client Interface."
  unique_name: msdynce_EnableUCIByDefault
- version: "9.0.21031.210330005"
+ version: "9.0.21043.210413002"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."

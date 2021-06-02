@@ -4,10 +4,10 @@ name: "Power Platform Connection References"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Power Platform Connection References Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: b5c2f1fb-385f-49f4-9b8c-d1a7b9f696eb
+  ms.assetid: 11c12b83-5e78-4d93-902e-e74afdc8d3ed
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,9 +16,13 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Power Platform Connection References Solution."
  unique_name: PowerPlatformConnectionReferences
- version: "1.2.3.0"
+ version: "1.2.5.0"
  customization_prefix: default
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.connectionreference
+     description: ""
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

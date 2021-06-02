@@ -1,0 +1,43 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.ImportDecision
+name: "ImportDecision"
+type: enumtype
+metadata: 
+  title: "Microsoft Dataverse ImportDecision EnumType Reference | MicrosoftDocs"
+  ms.date: "06/02/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 659eb499-de13-45a6-bff4-b724737a7cad
+  author: "kumarVivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API ImportDecision ComplexType."
+namespace: Microsoft.Dynamics.CRM
+description: "Not Found" 
+members:
+  description: "Members define the discrete options for the enumeration type."
+  member_items:
+  - description: ""
+    name: "Import"
+    value: 0
+  - description: ""
+    name: "Skip"
+    value: 1
+usedby:
+  description: "The following use the ImportDecision EnumType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.SolutionComponentOption
+    used_as: Property
+# This enum type has no remarks.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

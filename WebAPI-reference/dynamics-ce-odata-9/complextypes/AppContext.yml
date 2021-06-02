@@ -4,7 +4,7 @@ name: "AppContext"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AppContext ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3701f3d3-b2c1-4fb0-a273-623b2d4e5423

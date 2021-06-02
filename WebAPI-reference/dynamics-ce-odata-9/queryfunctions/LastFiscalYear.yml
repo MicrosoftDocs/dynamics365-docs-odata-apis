@@ -4,7 +4,7 @@ name: "LastFiscalYear"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse LastFiscalYear Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 77c24f91-ea20-4326-b338-bc503889d9f4

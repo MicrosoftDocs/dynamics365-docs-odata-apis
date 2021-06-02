@@ -4,7 +4,7 @@ name: "DependentAttributeMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DependentAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3cbb0fca-c25c-4762-aec2-60a058f1a93f

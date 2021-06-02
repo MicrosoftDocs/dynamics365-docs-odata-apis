@@ -4,7 +4,7 @@ name: "sharepointdocumentlocation"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e36b40e6-57b5-4e1b-9d6c-885579320dc6
@@ -211,40 +211,6 @@ lookup_properties:
     - regardingobjectid_knowledgearticle
     - regardingobjectid_account
     - regardingobjectid_kbarticle
-    - regardingobjectid_msdyn_resourceterritory
-    - regardingobjectid_msdyn_timegroup
-    - regardingobjectid_msdyn_timegroupdetail
-    - regardingobjectid_msdyn_expense
-    - regardingobjectid_msdyn_project
-    - regardingobjectid_msdyn_agreement
-    - regardingobjectid_msdyn_agreementbookingdate
-    - regardingobjectid_msdyn_agreementbookingsetup
-    - regardingobjectid_msdyn_agreementinvoicedate
-    - regardingobjectid_msdyn_agreementinvoicesetup
-    - regardingobjectid_msdyn_bookingtimestamp
-    - regardingobjectid_msdyn_incidenttypeproduct
-    - regardingobjectid_msdyn_inventoryadjustment
-    - regardingobjectid_msdyn_inventoryadjustmentproduct
-    - regardingobjectid_msdyn_inventorytransfer
-    - regardingobjectid_msdyn_purchaseorder
-    - regardingobjectid_msdyn_purchaseorderproduct
-    - regardingobjectid_msdyn_purchaseorderreceipt
-    - regardingobjectid_msdyn_rma
-    - regardingobjectid_msdyn_rmareceipt
-    - regardingobjectid_msdyn_rtv
-    - regardingobjectid_msdyn_warehouse
-    - regardingobjectid_msdyn_workorder
-    - regardingobjectid_msdyn_workorderincident
-    - regardingobjectid_msdyn_workorderproduct
-    - regardingobjectid_msdyn_workorderservice
-    - regardingobjectid_msdyn_workorderservicetask
-    - regardingobjectid_msdyn_playbookactivity
-    - regardingobjectid_product
-    - regardingobjectid_lead
-    - regardingobjectid_opportunity
-    - regardingobjectid_quote
-    - regardingobjectid_salesliterature
-    - regardingobjectid_contact
     - regardingobjectid_msdyn_knowledgearticletemplate
     description: "Unique identifier of the object with which the SharePoint document location record is associated."
   - name: _transactioncurrencyid_value
@@ -287,117 +253,15 @@ single_valued_navigation_properties:
   - name: regardingobjectid_account
     type: Microsoft.Dynamics.CRM.account
     partner: Account_SharepointDocumentLocation
-  - name: regardingobjectid_contact
-    type: Microsoft.Dynamics.CRM.contact
-    partner: contact_SharePointDocumentLocations
   - name: regardingobjectid_kbarticle
     type: Microsoft.Dynamics.CRM.kbarticle
     partner: KbArticle_SharepointDocumentLocation
   - name: regardingobjectid_knowledgearticle
     type: Microsoft.Dynamics.CRM.knowledgearticle
     partner: knowledgearticle_SharePointDocumentLocations
-  - name: regardingobjectid_lead
-    type: Microsoft.Dynamics.CRM.lead
-    partner: Lead_SharepointDocumentLocation
-  - name: regardingobjectid_msdyn_agreement
-    type: Microsoft.Dynamics.CRM.msdyn_agreement
-    partner: msdyn_agreement_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_agreementbookingdate
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
-    partner: msdyn_agreementbookingdate_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_agreementbookingsetup
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
-    partner: msdyn_agreementbookingsetup_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_agreementinvoicedate
-    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
-    partner: msdyn_agreementinvoicedate_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_agreementinvoicesetup
-    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
-    partner: msdyn_agreementinvoicesetup_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_bookingtimestamp
-    type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
-    partner: msdyn_bookingtimestamp_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_expense
-    type: Microsoft.Dynamics.CRM.msdyn_expense
-    partner: msdyn_expense_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_incidenttypeproduct
-    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
-    partner: msdyn_incidenttypeproduct_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_inventoryadjustment
-    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
-    partner: msdyn_inventoryadjustment_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_inventoryadjustmentproduct
-    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
-    partner: msdyn_inventoryadjustmentproduct_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_inventorytransfer
-    type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
-    partner: msdyn_inventorytransfer_SharePointDocumentLocations
   - name: regardingobjectid_msdyn_knowledgearticletemplate
     type: Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate
     partner: msdyn_knowledgearticletemplate_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_playbookactivity
-    type: Microsoft.Dynamics.CRM.msdyn_playbookactivity
-    partner: msdyn_playbookactivity_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_project
-    type: Microsoft.Dynamics.CRM.msdyn_project
-    partner: msdyn_project_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_purchaseorder
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
-    partner: msdyn_purchaseorder_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_purchaseorderproduct
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
-    partner: msdyn_purchaseorderproduct_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_purchaseorderreceipt
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
-    partner: msdyn_purchaseorderreceipt_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_resourceterritory
-    type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
-    partner: msdyn_resourceterritory_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_rma
-    type: Microsoft.Dynamics.CRM.msdyn_rma
-    partner: msdyn_rma_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_rmareceipt
-    type: Microsoft.Dynamics.CRM.msdyn_rmareceipt
-    partner: msdyn_rmareceipt_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_rtv
-    type: Microsoft.Dynamics.CRM.msdyn_rtv
-    partner: msdyn_rtv_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_timegroup
-    type: Microsoft.Dynamics.CRM.msdyn_timegroup
-    partner: msdyn_timegroup_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_timegroupdetail
-    type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
-    partner: msdyn_timegroupdetail_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_warehouse
-    type: Microsoft.Dynamics.CRM.msdyn_warehouse
-    partner: msdyn_warehouse_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_workorder
-    type: Microsoft.Dynamics.CRM.msdyn_workorder
-    partner: msdyn_workorder_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_workorderincident
-    type: Microsoft.Dynamics.CRM.msdyn_workorderincident
-    partner: msdyn_workorderincident_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_workorderproduct
-    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
-    partner: msdyn_workorderproduct_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_workorderservice
-    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
-    partner: msdyn_workorderservice_SharePointDocumentLocations
-  - name: regardingobjectid_msdyn_workorderservicetask
-    type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
-    partner: msdyn_workorderservicetask_SharePointDocumentLocations
-  - name: regardingobjectid_opportunity
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: Opportunity_SharepointDocumentLocation
-  - name: regardingobjectid_product
-    type: Microsoft.Dynamics.CRM.product
-    partner: Product_SharepointDocumentLocation
-  - name: regardingobjectid_quote
-    type: Microsoft.Dynamics.CRM.quote
-    partner: Quote_SharepointDocumentLocation
-  - name: regardingobjectid_salesliterature
-    type: Microsoft.Dynamics.CRM.salesliterature
-    partner: SalesLiterature_SharepointDocumentLocation
   - name: transactioncurrencyid
     type: Microsoft.Dynamics.CRM.transactioncurrency
     partner: TransactionCurrency_SharePointDocumentLocation
@@ -444,12 +308,6 @@ operations:
 solutions:
   description: "The following solutions include the sharepointdocumentlocation entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
-    description: "Dynamics 365 workload for lead management."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingSales
-    description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_Sales
-    description: "Dynamics 365 workload for sales."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

@@ -4,7 +4,7 @@ name: "RetrieveEnvironmentVariableValue"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveEnvironmentVariableValue Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 15aebb3f-3dfb-44a4-be89-e4dfd31935b1

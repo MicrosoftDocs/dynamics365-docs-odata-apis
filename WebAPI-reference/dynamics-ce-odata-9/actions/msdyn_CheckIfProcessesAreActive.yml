@@ -4,7 +4,7 @@ name: "msdyn_CheckIfProcessesAreActive"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ea653cc1-2b2f-4630-9093-0b73f7f6ea6f

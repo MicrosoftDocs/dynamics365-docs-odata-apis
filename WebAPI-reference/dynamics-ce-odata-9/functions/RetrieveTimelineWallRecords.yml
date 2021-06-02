@@ -4,7 +4,7 @@ name: "RetrieveTimelineWallRecords"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveTimelineWallRecords Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 731c001a-7e22-4edc-9734-8ef3fce57b96

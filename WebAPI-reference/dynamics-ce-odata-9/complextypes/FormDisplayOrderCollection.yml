@@ -4,7 +4,7 @@ name: "FormDisplayOrderCollection"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse FormDisplayOrderCollection ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 00134918-dbfc-4fa4-8436-be640320607b

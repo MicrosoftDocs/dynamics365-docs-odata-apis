@@ -4,7 +4,7 @@ name: "SubscriptionEntityMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse SubscriptionEntityMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b6ef155c-1965-4ecf-9e21-6fbb43453608

@@ -4,7 +4,7 @@ name: "FileSasUrlResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse FileSasUrlResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 663a4ff4-89d0-4286-be50-0a2b786e1151

@@ -4,7 +4,7 @@ name: "InitializeAttachmentBlocksUploadResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse InitializeAttachmentBlocksUploadResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7314bcb1-3427-4217-a0cd-e9d6fd32bbcd

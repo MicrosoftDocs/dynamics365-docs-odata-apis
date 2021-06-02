@@ -4,7 +4,7 @@ name: "slaitem"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3dcb4125-028d-44a4-874f-62eeef593d62
@@ -280,12 +280,6 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
-  - name: msdyn_migrationtracker_LegacySLAItem_slaitem
-    type: Microsoft.Dynamics.CRM.msdyn_migrationtracker
-    partner: msdyn_LegacySLAItemId
-  - name: msdyn_migrationtracker_ModernSLAItem_slaitem
-    type: Microsoft.Dynamics.CRM.msdyn_migrationtracker
-    partner: msdyn_ModernSLAItemId
   - name: msdyn_slaitem_slakpiinstance
     type: Microsoft.Dynamics.CRM.slakpiinstance
     partner: msdyn_slaitemid

@@ -4,7 +4,7 @@ name: "post"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4317bfe0-8935-4139-9cac-3db88b67ac38
@@ -33,6 +33,12 @@ properties:
       description: "Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
       iscomputed: false
       isreadonly: true
+    - name: largetext
+      type: Edm.String
+      display_name: "Text"
+      description: "Shows the text of a post."
+      iscomputed: false
+      isreadonly: false
     - name: modifiedon
       type: Edm.DateTimeOffset
       display_name: "Modified On"
@@ -150,6 +156,9 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: post_activity_file_attachment
+    type: Microsoft.Dynamics.CRM.activityfileattachment
+    partner: parentid_post
   - name: post_AsyncOperations
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: regardingobjectid_post
@@ -175,8 +184,6 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_ActivitiesPatch
     description: "Patch for Dynamics 365 workload for activities."
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

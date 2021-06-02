@@ -4,7 +4,7 @@ name: "msdyn_DeleteCalendar"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c56b6c2e-6d58-4d3f-9836-c8c9f44b582f

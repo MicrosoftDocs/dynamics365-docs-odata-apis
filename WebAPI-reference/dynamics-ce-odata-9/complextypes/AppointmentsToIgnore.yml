@@ -4,7 +4,7 @@ name: "AppointmentsToIgnore"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AppointmentsToIgnore ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7e1c2725-17a0-44bf-a849-6c6a7140ddf9

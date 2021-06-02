@@ -4,7 +4,7 @@ name: "LastXMonths"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse LastXMonths Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a230dbf1-85db-4f0b-80d4-af9feeac8af1

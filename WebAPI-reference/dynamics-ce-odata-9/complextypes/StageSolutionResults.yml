@@ -4,7 +4,7 @@ name: "StageSolutionResults"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse StageSolutionResults ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 67ddf860-3822-4fd1-84ff-579d280da845

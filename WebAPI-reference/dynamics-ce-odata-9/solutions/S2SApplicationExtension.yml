@@ -4,10 +4,10 @@ name: "S2SApplicationExtension"
 type: solution
 metadata: 
   title: "Microsoft Dataverse S2SApplicationExtension Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: c1825cf2-6594-4a80-a01e-c64ca1efd122
+  ms.assetid: 40f26d81-b09a-4bb1-9dc8-1876ddc6a4a2
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

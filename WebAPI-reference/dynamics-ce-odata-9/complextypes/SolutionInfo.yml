@@ -4,7 +4,7 @@ name: "SolutionInfo"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse SolutionInfo ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8cd37e72-31c6-4755-a036-0dd86d7ae2fa

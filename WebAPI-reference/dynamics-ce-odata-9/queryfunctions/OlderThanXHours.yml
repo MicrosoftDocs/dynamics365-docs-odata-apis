@@ -4,7 +4,7 @@ name: "OlderThanXHours"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse OlderThanXHours Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 04157444-68ce-43e7-b50a-c4f3197017c1

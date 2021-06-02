@@ -4,7 +4,7 @@ name: "AttributeRequiredLevelManagedProperty"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AttributeRequiredLevelManagedProperty ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6ad3a123-511e-4c4e-bad4-8a5cc0007f12

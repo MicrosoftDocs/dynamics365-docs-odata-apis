@@ -4,10 +4,10 @@ name: "MessageProcessorExtension"
 type: solution
 metadata: 
   title: "Microsoft Dataverse MessageProcessorExtension Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: fffc8c9c-93ca-48c3-a67c-8e68039771c8
+  ms.assetid: e4c3e11a-3333-4375-859d-44ccf7169a50
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

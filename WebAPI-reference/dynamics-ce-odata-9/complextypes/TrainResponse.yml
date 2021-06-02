@@ -4,7 +4,7 @@ name: "TrainResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse TrainResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 52f9c6f8-47e9-40fb-bb23-a0fb56387d87

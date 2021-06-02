@@ -4,7 +4,7 @@ name: "RetrieveExchangeAppointments"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveExchangeAppointments Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 747fc686-5f8e-4e69-a706-97d697637a4f

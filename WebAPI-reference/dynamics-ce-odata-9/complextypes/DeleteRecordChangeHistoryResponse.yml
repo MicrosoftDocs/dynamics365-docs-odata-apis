@@ -4,7 +4,7 @@ name: "DeleteRecordChangeHistoryResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DeleteRecordChangeHistoryResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 509baec0-7778-45d2-bd97-877e4d2eb21f

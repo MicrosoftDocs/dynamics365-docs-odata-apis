@@ -4,7 +4,7 @@ name: "msdyn_solutionhealthrule"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b0d3c928-94a3-460a-b890-1aff92fdb6b0
@@ -46,6 +46,12 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: msdyn_componenttype
+      type: Edm.String
+      display_name: "Component Type"
+      description: "Type of the Component being diagnosed like appmodule, sitemap, systemform etc."
+      iscomputed: false
+      isreadonly: false
     - name: msdyn_description
       type: Edm.String
       display_name: "Description"
@@ -70,6 +76,21 @@ properties:
       description: "This message will be visible to end use when he/she tried to resolve rule failure."
       iscomputed: false
       isreadonly: false
+    - name: msdyn_resolutiontype
+      type: Edm.Int32
+      display_name: "Resolution Type"
+      description: "Type of Resolution action."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 192350003
+          label: "None"
+        - value: 192350000
+          label: "Auto Heal"
+        - value: 192350001
+          label: "Customer Action Required"
+        - value: 192350002
+          label: "Documenation"
     - name: msdyn_solutionhealthruleid
       type: Edm.Guid
       display_name: "Solution Health Rule"

@@ -4,7 +4,7 @@ name: "GetValidReferencingEntities"
 type: function
 metadata: 
   title: "Microsoft Dataverse GetValidReferencingEntities Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 04a66b2a-740a-4bfb-b930-5ffef5f9c7ba

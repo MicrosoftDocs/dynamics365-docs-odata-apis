@@ -4,7 +4,7 @@ name: "StageSolutionStatus"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse StageSolutionStatus EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3d434036-902e-4121-8528-7bb551b6033b

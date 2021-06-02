@@ -4,7 +4,7 @@ name: "calendarrule"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 35884440-4397-47e6-a8f7-d85746b7209b
@@ -227,10 +227,6 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who last modified the calendarrule."
-  - name: _serviceid_value
-    single_valued_navigation_property:
-    - serviceid
-    description: "Unique identifier of the service with which the calendar rule is associated."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
   property_items:
@@ -252,19 +248,10 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_calendarrule_modifiedonbehalfby
-  - name: serviceid
-    type: Microsoft.Dynamics.CRM.service
-    partner: service_calendar_rules
 # This entity has no collection-valued navigation properties
 # This entity has no derived entities.
 # This entity has no operations
-solutions:
-  description: "The following solutions include the calendarrule entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

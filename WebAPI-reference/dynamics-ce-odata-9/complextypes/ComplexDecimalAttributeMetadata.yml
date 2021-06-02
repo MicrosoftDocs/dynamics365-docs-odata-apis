@@ -4,7 +4,7 @@ name: "ComplexDecimalAttributeMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ComplexDecimalAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 342d8270-bd83-48c4-89b8-6e5da85f5958

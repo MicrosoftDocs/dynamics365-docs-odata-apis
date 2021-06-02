@@ -4,7 +4,7 @@ name: "InitializeAnnotationBlocksDownloadResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse InitializeAnnotationBlocksDownloadResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 44703f70-2998-458b-8445-082b5178995f

@@ -4,10 +4,10 @@ name: "AISolution"
 type: solution
 metadata: 
   title: "Microsoft Dataverse AISolution Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 887d7c5a-8aef-436d-bae0-b5e4fddbf622
+  ms.assetid: 3363575e-7815-46f0-9966-252e1f331ab1
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: msdyn_AISolution
- version: "202102.4.2301.7"
+ version: "202104.2.605.3"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."

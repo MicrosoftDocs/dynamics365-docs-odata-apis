@@ -4,7 +4,7 @@ name: "EntityKeyQueryExpression"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse EntityKeyQueryExpression ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 864d5963-06f7-4ed6-9c9a-2f4739fa797a

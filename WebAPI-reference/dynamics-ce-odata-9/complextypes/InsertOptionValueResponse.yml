@@ -4,7 +4,7 @@ name: "InsertOptionValueResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse InsertOptionValueResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e212352b-1579-4c51-b31f-d9b0f345f2a6

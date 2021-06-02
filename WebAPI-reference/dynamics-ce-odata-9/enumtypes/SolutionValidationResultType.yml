@@ -4,7 +4,7 @@ name: "SolutionValidationResultType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse SolutionValidationResultType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1439bacb-076d-403a-8db7-1876d0820976

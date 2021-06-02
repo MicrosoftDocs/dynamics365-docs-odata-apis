@@ -4,7 +4,7 @@ name: "RetrieveMissingDependencies"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveMissingDependencies Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d161c5d0-3d2d-429d-9d54-cee0fd64d9ca

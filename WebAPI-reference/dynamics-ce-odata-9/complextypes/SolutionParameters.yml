@@ -4,7 +4,7 @@ name: "SolutionParameters"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse SolutionParameters ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8ba3a992-e7ba-4f4d-98e0-ae28390da9df

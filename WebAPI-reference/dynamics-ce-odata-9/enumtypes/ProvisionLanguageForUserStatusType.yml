@@ -4,7 +4,7 @@ name: "ProvisionLanguageForUserStatusType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse ProvisionLanguageForUserStatusType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 65684952-0a26-48c6-bfd6-b3f4a2b7b0f3

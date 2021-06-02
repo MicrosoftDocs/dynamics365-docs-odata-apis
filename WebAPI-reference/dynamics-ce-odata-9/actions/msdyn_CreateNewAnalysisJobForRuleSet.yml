@@ -4,7 +4,7 @@ name: "msdyn_CreateNewAnalysisJobForRuleSet"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e66cb089-7552-4689-926a-5fa80cf9754b
@@ -24,6 +24,11 @@ parameters:
     type: Microsoft.Dynamics.CRM.msdyn_solutionhealthruleset
     nullable: false
     unicode: true
+    description: ""
+  - name: TriggerType
+    type: Edm.String
+    nullable: true
+    unicode: false
     description: ""
 return_type:
   description: "The msdyn_CreateNewAnalysisJobForRuleSet action returns the following value."

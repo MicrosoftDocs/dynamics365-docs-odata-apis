@@ -4,7 +4,7 @@ name: "RibbonLocationFilters"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse RibbonLocationFilters EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 17251cf3-056a-4c5d-b0e9-9a442b33ec6c

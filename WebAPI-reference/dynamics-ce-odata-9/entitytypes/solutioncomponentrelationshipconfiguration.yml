@@ -4,7 +4,7 @@ name: "solutioncomponentrelationshipconfiguration"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e014a666-391b-4b5c-8f49-47632c37893c

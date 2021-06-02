@@ -4,7 +4,7 @@ name: "msdyn_CreateActionFlow"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6aa58a27-0a83-4d9a-a405-a81bce41e4eb

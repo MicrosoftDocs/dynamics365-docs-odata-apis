@@ -4,7 +4,7 @@ name: "CreatePolymorphicLookupAttribute"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1b5ec3f5-6200-4fb3-8c1a-bae52f343d37
@@ -24,17 +24,17 @@ parameters:
     type: Microsoft.Dynamics.CRM.ComplexLookupAttributeMetadata
     nullable: true
     unicode: true
-    description: "The metadata for the lookup field used to store the ID of the related record."
+    description: ""
   - name: OneToManyRelationships
     type: Microsoft.Dynamics.CRM.ComplexOneToManyRelationshipMetadata
     nullable: false
     unicode: true
-    description: "The metadata array forthe one-to-many relationships to the Account and contact."
+    description: ""
   - name: SolutionUniqueName
     type: Edm.String
     nullable: true
     unicode: false
-    description: "The name of tthe unmanaged solution to which you want to add this  lookup attribute to."
+    description: ""
 return_type:
   description: "The CreatePolymorphicLookupAttribute action returns the following value."
   iscollection: false

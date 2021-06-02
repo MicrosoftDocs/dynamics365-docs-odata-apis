@@ -4,7 +4,7 @@ name: "newprocess"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9fafb0c8-8821-48fe-b569-ab91f0569e36
@@ -210,8 +210,6 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the newprocess entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.msdynce_ProductManagement
-    description: "Dynamics 365 workload for product management."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

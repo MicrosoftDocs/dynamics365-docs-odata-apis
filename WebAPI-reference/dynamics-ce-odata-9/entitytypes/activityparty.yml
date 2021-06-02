@@ -4,7 +4,7 @@ name: "activityparty"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c505dbea-388a-4925-a15b-b7b740089109
@@ -190,21 +190,7 @@ lookup_properties:
     - partyid_knowledgearticle
     - partyid_account
     - partyid_contact
-    - partyid_contract
-    - partyid_entitlement
-    - partyid_equipment
-    - partyid_incident
-    - partyid_campaign
-    - partyid_lead
-    - partyid_invoice
-    - partyid_opportunity
-    - partyid_quote
-    - partyid_salesorder
     description: "Unique identifier of the party associated with the activity."
-  - name: _resourcespecid_value
-    single_valued_navigation_property:
-    - resourcespecid
-    description: "Unique identifier of the resource specification for the activity party."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
   property_items:
@@ -214,66 +200,21 @@ single_valued_navigation_properties:
   - name: activityid_appointment
     type: Microsoft.Dynamics.CRM.appointment
     partner: appointment_activity_parties
-  - name: activityid_campaignactivity
-    type: Microsoft.Dynamics.CRM.campaignactivity
-    partner: campaignactivity_activity_parties
-  - name: activityid_campaignresponse
-    type: Microsoft.Dynamics.CRM.campaignresponse
-    partner: campaignresponse_activity_parties
   - name: activityid_email
     type: Microsoft.Dynamics.CRM.email
     partner: email_activity_parties
   - name: activityid_fax
     type: Microsoft.Dynamics.CRM.fax
     partner: fax_activity_parties
-  - name: activityid_incidentresolution
-    type: Microsoft.Dynamics.CRM.incidentresolution
-    partner: incidentresolution_activity_parties
   - name: activityid_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: letter_activity_parties
-  - name: activityid_li_inmail_activityparty
-    type: Microsoft.Dynamics.CRM.li_inmail
-    partner: li_inmail_activity_parties
-  - name: activityid_li_message_activityparty
-    type: Microsoft.Dynamics.CRM.li_message
-    partner: li_message_activity_parties
-  - name: activityid_li_pointdrivepresentationviewed_activityparty
-    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
-    partner: li_pointdrivepresentationviewed_activity_parties
-  - name: activityid_msdyn_approval_activityparty
-    type: Microsoft.Dynamics.CRM.msdyn_approval
-    partner: msdyn_approval_activity_parties
-  - name: activityid_msdyn_bookingalert_activityparty
-    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
-    partner: msdyn_bookingalert_activity_parties
-  - name: activityid_msfp_alert_activityparty
-    type: Microsoft.Dynamics.CRM.msfp_alert
-    partner: msfp_alert_activity_parties
-  - name: activityid_msfp_surveyinvite_activityparty
-    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
-    partner: msfp_surveyinvite_activity_parties
-  - name: activityid_msfp_surveyresponse_activityparty
-    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
-    partner: msfp_surveyresponse_activity_parties
-  - name: activityid_opportunityclose
-    type: Microsoft.Dynamics.CRM.opportunityclose
-    partner: opportunityclose_activity_parties
-  - name: activityid_orderclose
-    type: Microsoft.Dynamics.CRM.orderclose
-    partner: orderclose_activity_parties
   - name: activityid_phonecall
     type: Microsoft.Dynamics.CRM.phonecall
     partner: phonecall_activity_parties
-  - name: activityid_quoteclose
-    type: Microsoft.Dynamics.CRM.quoteclose
-    partner: quoteclose_activity_parties
   - name: activityid_recurringappointmentmaster
     type: Microsoft.Dynamics.CRM.recurringappointmentmaster
     partner: recurringappointmentmaster_activity_parties
-  - name: activityid_serviceappointment
-    type: Microsoft.Dynamics.CRM.serviceappointment
-    partner: serviceappointment_activity_parties
   - name: activityid_socialactivity
     type: Microsoft.Dynamics.CRM.socialactivity
     partner: socialactivity_activity_parties
@@ -283,57 +224,18 @@ single_valued_navigation_properties:
   - name: partyid_account
     type: Microsoft.Dynamics.CRM.account
     partner: account_activity_parties
-  - name: partyid_bulkoperation
-    type: Microsoft.Dynamics.CRM.bulkoperation
-    partner: bulkoperation_activity_parties
-  - name: partyid_campaign
-    type: Microsoft.Dynamics.CRM.campaign
-    partner: campaign_activity_parties
-  - name: partyid_campaignactivity
-    type: Microsoft.Dynamics.CRM.campaignactivity
-    partner: campaignactivity_activityparties
   - name: partyid_contact
     type: Microsoft.Dynamics.CRM.contact
     partner: contact_activity_parties
-  - name: partyid_contract
-    type: Microsoft.Dynamics.CRM.contract
-    partner: contract_activity_parties
-  - name: partyid_entitlement
-    type: Microsoft.Dynamics.CRM.entitlement
-    partner: entitlement_ActivityParties
-  - name: partyid_equipment
-    type: Microsoft.Dynamics.CRM.equipment
-    partner: equipment_activity_parties
-  - name: partyid_incident
-    type: Microsoft.Dynamics.CRM.incident
-    partner: incident_activity_parties
-  - name: partyid_invoice
-    type: Microsoft.Dynamics.CRM.invoice
-    partner: invoice_activity_parties
   - name: partyid_knowledgearticle
     type: Microsoft.Dynamics.CRM.knowledgearticle
     partner: knowledgearticle_activity_parties
-  - name: partyid_lead
-    type: Microsoft.Dynamics.CRM.lead
-    partner: lead_activity_parties
-  - name: partyid_opportunity
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: opportunity_activity_parties
   - name: partyid_queue
     type: Microsoft.Dynamics.CRM.queue
     partner: queue_activity_parties
-  - name: partyid_quote
-    type: Microsoft.Dynamics.CRM.quote
-    partner: quote_activity_parties
-  - name: partyid_salesorder
-    type: Microsoft.Dynamics.CRM.salesorder
-    partner: salesorder_activity_parties
   - name: partyid_systemuser
     type: Microsoft.Dynamics.CRM.systemuser
     partner: system_user_activity_parties
-  - name: resourcespecid
-    type: Microsoft.Dynamics.CRM.resourcespec
-    partner: ActivityPartyResourceSpec
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
@@ -342,13 +244,7 @@ collection_valued_navigation_properties:
     partner: regardingobjectid_activityparty_syncerror
 # This entity has no derived entities.
 # This entity has no operations
-solutions:
-  description: "The following solutions include the activityparty entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

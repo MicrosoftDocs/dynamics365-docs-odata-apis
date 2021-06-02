@@ -4,7 +4,7 @@ name: "ValidateFetchXmlExpression"
 type: function
 metadata: 
   title: "Microsoft Dataverse ValidateFetchXmlExpression Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5ae60d9a-2365-4fc2-975c-d77118cd9f8d

@@ -4,7 +4,7 @@ name: "ReassignObjectsSystemUser"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d074eb20-2d38-4da2-b9a6-1251d79ef0cd

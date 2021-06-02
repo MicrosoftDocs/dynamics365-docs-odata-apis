@@ -4,7 +4,7 @@ name: "msdyn_CheckForPendingProcessesResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse msdyn_CheckForPendingProcessesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f6772a96-2c55-459e-ae22-4274c01e1319

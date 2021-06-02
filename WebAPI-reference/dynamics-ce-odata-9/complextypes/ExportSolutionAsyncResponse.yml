@@ -4,7 +4,7 @@ name: "ExportSolutionAsyncResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ExportSolutionAsyncResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 27431c9a-9b96-4bb9-871f-32b061995e8b

@@ -4,7 +4,7 @@ name: "InOrBeforeFiscalPeriodAndYear"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse InOrBeforeFiscalPeriodAndYear Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 75edaeb1-312b-41a8-82d8-a3207211ac31

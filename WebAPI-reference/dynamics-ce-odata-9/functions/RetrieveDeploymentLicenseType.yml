@@ -4,7 +4,7 @@ name: "RetrieveDeploymentLicenseType"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveDeploymentLicenseType Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1944adce-7d01-4a6c-bc44-1d0613310af6

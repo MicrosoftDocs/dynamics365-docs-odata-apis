@@ -4,10 +4,10 @@ name: "Power Connector Solution"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Power Connector Solution Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 52a1be5c-fc28-4b6f-9419-f70a44315c80
+  ms.assetid: ff68d886-b507-4d5f-8c48-8952af1f489c
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -22,8 +22,6 @@ entities:
   description: "The following entities are included in this solution."
   entity_items:
    - type: Microsoft.Dynamics.CRM.connector
-     description: "Connector Entity to support Solutioning Integration"
-   - type: Microsoft.Dynamics.CRM.msdyn_connector
      description: "Connector Entity to support Solutioning Integration"
 # This solution includes no actions.
 # There are no remarks for this solution.

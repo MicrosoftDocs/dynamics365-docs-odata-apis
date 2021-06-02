@@ -4,7 +4,7 @@ name: "msdyn_MigrateSlaProactiveRunResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse msdyn_MigrateSlaProactiveRunResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3b71debc-551c-4ae0-b1ae-0b318260f9a8

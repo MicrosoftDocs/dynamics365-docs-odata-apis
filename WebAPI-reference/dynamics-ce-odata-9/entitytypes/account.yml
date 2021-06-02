@@ -4,7 +4,7 @@ name: "account"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b587728b-db31-4d53-be70-98a1ed5fe7e9
@@ -794,86 +794,6 @@ properties:
       description: "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
       iscomputed: false
       isreadonly: true
-    - name: ms_newsandsocialid
-      type: Edm.String
-      display_name: "News ID"
-      description: ""
-      iscomputed: false
-      isreadonly: false
-    - name: ms_traceid
-      type: Edm.String
-      display_name: "Trace ID"
-      description: ""
-      iscomputed: false
-      isreadonly: false
-    - name: ms_tweetsaboutdate
-      type: Edm.String
-      display_name: "Tweets About Date"
-      description: ""
-      iscomputed: false
-      isreadonly: false
-    - name: ms_tweetsfromdate
-      type: Edm.String
-      display_name: "Tweets From Date"
-      description: ""
-      iscomputed: false
-      isreadonly: false
-    - name: msdyn_externalaccountid
-      type: Edm.String
-      display_name: "External ID"
-      description: "External Account ID from other systems."
-      iscomputed: false
-      isreadonly: false
-    - name: msdyn_taxexempt
-      type: Edm.Boolean
-      display_name: "Tax Exempt"
-      description: "Select whether the account is tax exempt."
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 1
-          label: "Yes"
-        - value: 0
-          label: "No"
-    - name: msdyn_taxexemptnumber
-      type: Edm.String
-      display_name: "Tax Exempt Number"
-      description: "Shows the government tax exempt number."
-      iscomputed: false
-      isreadonly: false
-    - name: msdyn_travelcharge
-      type: Edm.Decimal
-      display_name: "Travel Charge"
-      description: "Enter the travel charge to include on work orders. This value will be multiplied by the travel charge type."
-      iscomputed: false
-      isreadonly: false
-    - name: msdyn_travelcharge_base
-      type: Edm.Decimal
-      display_name: "Travel Charge (Base)"
-      description: "Value of the Travel Charge in base currency."
-      iscomputed: false
-      isreadonly: true
-    - name: msdyn_travelchargetype
-      type: Edm.Int32
-      display_name: "Travel Charge Type"
-      description: "Specify how travel is charged for this account."
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 690970000
-          label: "Hourly"
-        - value: 690970001
-          label: "Mileage"
-        - value: 690970002
-          label: "Fixed"
-        - value: 690970003
-          label: "None"
-    - name: msdyn_workorderinstructions
-      type: Edm.String
-      display_name: "Work Order Instructions"
-      description: "Shows the default instructions to show on new work orders."
-      iscomputed: false
-      isreadonly: false
     - name: name
       type: Edm.String
       display_name: "Account Name"
@@ -890,48 +810,6 @@ properties:
       type: Edm.Int32
       display_name: "On Hold Time (Minutes)"
       description: "Shows how long, in minutes, that the record was on hold."
-      iscomputed: false
-      isreadonly: true
-    - name: opendeals
-      type: Edm.Int32
-      display_name: "Open Deals"
-      description: "Number of open opportunities against an account and its child accounts."
-      iscomputed: true
-      isreadonly: true
-    - name: opendeals_date
-      type: Edm.DateTimeOffset
-      display_name: "Open Deals (Last Updated On)"
-      description: "Last Updated time of rollup field Open Deals."
-      iscomputed: false
-      isreadonly: true
-    - name: opendeals_state
-      type: Edm.Int32
-      display_name: "Open Deals (State)"
-      description: "State of rollup field Open Deals."
-      iscomputed: false
-      isreadonly: true
-    - name: openrevenue
-      type: Edm.Decimal
-      display_name: "Open Revenue"
-      description: "Sum of open revenue against an account and its child accounts."
-      iscomputed: true
-      isreadonly: true
-    - name: openrevenue_base
-      type: Edm.Decimal
-      display_name: "Open Revenue (Base)"
-      description: "Value of the Open Revenue in base currency."
-      iscomputed: true
-      isreadonly: true
-    - name: openrevenue_date
-      type: Edm.DateTimeOffset
-      display_name: "Open Revenue (Last Updated On)"
-      description: "Last Updated time of rollup field Open Revenue."
-      iscomputed: false
-      isreadonly: true
-    - name: openrevenue_state
-      type: Edm.Int32
-      display_name: "Open Revenue (State)"
-      description: "State of rollup field Open Revenue."
       iscomputed: false
       isreadonly: true
     - name: overriddencreatedon
@@ -1117,12 +995,6 @@ properties:
       description: "Type the stock exchange at which the account is listed to track their stock and financial performance of the company."
       iscomputed: false
       isreadonly: false
-    - name: teamsfollowed
-      type: Edm.Int32
-      display_name: "TeamsFollowed"
-      description: "Number of users or conversations followed the record"
-      iscomputed: false
-      isreadonly: false
     - name: telephone1
       type: Edm.String
       display_name: "Main Phone"
@@ -1211,10 +1083,6 @@ lookup_properties:
     single_valued_navigation_property:
     - createdonbehalfby
     description: "Shows who created the record on behalf of another user."
-  - name: _defaultpricelevelid_value
-    single_valued_navigation_property:
-    - defaultpricelevelid
-    description: "Choose the default price list associated with the account to make sure the correct product prices for this customer are applied in sales opportunities, quotes, and orders."
   - name: _masterid_value
     single_valued_navigation_property:
     - masterid
@@ -1229,30 +1097,6 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Shows who created the record on behalf of another user."
-  - name: _msdyn_billingaccount_value
-    single_valued_navigation_property:
-    - msdyn_billingaccount_account
-    description: "Reference to an other account to be used for billing (only to be used if billing account differs)"
-  - name: _msdyn_preferredresource_value
-    single_valued_navigation_property:
-    - msdyn_PreferredResource
-    description: ""
-  - name: _msdyn_salestaxcode_value
-    single_valued_navigation_property:
-    - msdyn_salestaxcode
-    description: "Default Sales Tax Code"
-  - name: _msdyn_serviceterritory_value
-    single_valued_navigation_property:
-    - msdyn_serviceterritory
-    description: "The Service Territory this account belongs to. This is used to optimize scheduling and routing"
-  - name: _msdyn_workhourtemplate_value
-    single_valued_navigation_property:
-    - msdyn_workhourtemplate
-    description: ""
-  - name: _originatingleadid_value
-    single_valued_navigation_property:
-    - originatingleadid
-    description: "Shows the lead that the account was created from if the account was created by converting a lead in Microsoft Dynamics 365. This is used to relate the account to data on the originating lead for use in reporting and analytics."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -1273,14 +1117,6 @@ lookup_properties:
     single_valued_navigation_property:
     - parentaccountid
     description: "Choose the parent account associated with this account to show parent and child businesses in reporting and analytics."
-  - name: _preferredequipmentid_value
-    single_valued_navigation_property:
-    - preferredequipmentid
-    description: "Choose the account's preferred service facility or equipment to make sure services are scheduled correctly for the customer."
-  - name: _preferredserviceid_value
-    single_valued_navigation_property:
-    - preferredserviceid
-    description: "Choose the account's preferred service for reference when you schedule service activities."
   - name: _preferredsystemuserid_value
     single_valued_navigation_property:
     - preferredsystemuserid
@@ -1291,16 +1127,12 @@ lookup_properties:
     description: "Choose the primary contact for the account to provide quick access to contact details."
   - name: _slaid_value
     single_valued_navigation_property:
-    - slaid_sla
+    - sla_account_sla
     description: "Choose the service level agreement (SLA) that you want to apply to the Account record."
   - name: _slainvokedid_value
     single_valued_navigation_property:
     - slainvokedid_account_sla
     description: "Last SLA that was applied to this case. This field is for internal use only."
-  - name: _territoryid_value
-    single_valued_navigation_property:
-    - territoryid
-    description: "Choose the sales region or territory for the account to make sure the account is assigned to the correct representative and for use in segmentation and analysis."
   - name: _transactioncurrencyid_value
     single_valued_navigation_property:
     - transactioncurrencyid
@@ -1314,9 +1146,6 @@ single_valued_navigation_properties:
   - name: createdonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_accountbase_createdonbehalfby
-  - name: defaultpricelevelid
-    type: Microsoft.Dynamics.CRM.pricelevel
-    partner: price_level_accounts
   - name: masterid
     type: Microsoft.Dynamics.CRM.account
     partner: account_master_account
@@ -1326,24 +1155,6 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_accountbase_modifiedonbehalfby
-  - name: msdyn_billingaccount_account
-    type: Microsoft.Dynamics.CRM.account
-    partner: msdyn_account_account_BillingAccount
-  - name: msdyn_PreferredResource
-    type: Microsoft.Dynamics.CRM.bookableresource
-    partner: msdyn_bookableresource_account_PreferredResource
-  - name: msdyn_salestaxcode
-    type: Microsoft.Dynamics.CRM.msdyn_taxcode
-    partner: msdyn_msdyn_taxcode_account_SalesTaxCode
-  - name: msdyn_serviceterritory
-    type: Microsoft.Dynamics.CRM.territory
-    partner: msdyn_territory_account_ServiceTerritory
-  - name: msdyn_workhourtemplate
-    type: Microsoft.Dynamics.CRM.msdyn_workhourtemplate
-    partner: msdyn_msdyn_workhourtemplate_account_workhourtemplate
-  - name: originatingleadid
-    type: Microsoft.Dynamics.CRM.lead
-    partner: account_originating_lead
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_accounts
@@ -1359,19 +1170,13 @@ single_valued_navigation_properties:
   - name: parentaccountid
     type: Microsoft.Dynamics.CRM.account
     partner: account_parent_account
-  - name: preferredequipmentid
-    type: Microsoft.Dynamics.CRM.equipment
-    partner: equipment_accounts
-  - name: preferredserviceid
-    type: Microsoft.Dynamics.CRM.service
-    partner: service_accounts
   - name: preferredsystemuserid
     type: Microsoft.Dynamics.CRM.systemuser
     partner: system_user_accounts
   - name: primarycontactid
     type: Microsoft.Dynamics.CRM.contact
     partner: account_primary_contact
-  - name: slaid_sla
+  - name: sla_account_sla
     type: Microsoft.Dynamics.CRM.sla
     partner: manualsla_account
   - name: slainvokedid_account_sla
@@ -1380,9 +1185,6 @@ single_valued_navigation_properties:
   - name: stageid_processstage
     type: Microsoft.Dynamics.CRM.processstage
     partner: processstage_account
-  - name: territoryid
-    type: Microsoft.Dynamics.CRM.territory
-    partner: territory_accounts
   - name: transactioncurrencyid
     type: Microsoft.Dynamics.CRM.transactioncurrency
     partner: transactioncurrency_account
@@ -1407,21 +1209,9 @@ collection_valued_navigation_properties:
   - name: Account_AsyncOperations
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: regardingobjectid_account
-  - name: account_bookableresource_AccountId
-    type: Microsoft.Dynamics.CRM.bookableresource
-    partner: AccountId
   - name: Account_BulkDeleteFailures
     type: Microsoft.Dynamics.CRM.bulkdeletefailure
     partner: regardingobjectid_account
-  - name: account_BulkOperations
-    type: Microsoft.Dynamics.CRM.bulkoperation
-    partner: regardingobjectid_account_bulkoperation
-  - name: account_CampaignActivities
-    type: Microsoft.Dynamics.CRM.campaignactivity
-    partner: regardingobjectid_account_campaignactivity
-  - name: account_CampaignResponses
-    type: Microsoft.Dynamics.CRM.campaignresponse
-    partner: regardingobjectid_account_campaignresponse
   - name: account_connections1
     type: Microsoft.Dynamics.CRM.connection
     partner: record1id_account
@@ -1446,57 +1236,18 @@ collection_valued_navigation_properties:
   - name: Account_Emails
     type: Microsoft.Dynamics.CRM.email
     partner: regardingobjectid_account_email
-  - name: account_entitlement_Account
-    type: Microsoft.Dynamics.CRM.entitlement
-    partner: accountid
-  - name: account_entitlement_Customer
-    type: Microsoft.Dynamics.CRM.entitlement
-    partner: customerid_account
   - name: Account_Faxes
     type: Microsoft.Dynamics.CRM.fax
     partner: regardingobjectid_account_fax
-  - name: account_IncidentResolutions
-    type: Microsoft.Dynamics.CRM.incidentresolution
-    partner: regardingobjectid_account_incidentresolution
   - name: Account_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_account_letter
-  - name: account_li_inmails
-    type: Microsoft.Dynamics.CRM.li_inmail
-    partner: regardingobjectid_account_li_inmail
-  - name: account_li_messages
-    type: Microsoft.Dynamics.CRM.li_message
-    partner: regardingobjectid_account_li_message
-  - name: account_li_pointdrivepresentationvieweds
-    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
-    partner: regardingobjectid_account_li_pointdrivepresentationviewed
   - name: Account_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_account
   - name: account_master_account
     type: Microsoft.Dynamics.CRM.account
     partner: masterid
-  - name: account_msdyn_approvals
-    type: Microsoft.Dynamics.CRM.msdyn_approval
-    partner: regardingobjectid_account_msdyn_approval
-  - name: account_msdyn_bookingalerts
-    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
-    partner: regardingobjectid_account_msdyn_bookingalert
-  - name: account_msfp_alerts
-    type: Microsoft.Dynamics.CRM.msfp_alert
-    partner: regardingobjectid_account_msfp_alert
-  - name: account_msfp_surveyinvites
-    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
-    partner: regardingobjectid_account_msfp_surveyinvite
-  - name: account_msfp_surveyresponses
-    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
-    partner: regardingobjectid_account_msfp_surveyresponse
-  - name: account_OpportunityCloses
-    type: Microsoft.Dynamics.CRM.opportunityclose
-    partner: regardingobjectid_account_opportunityclose
-  - name: account_OrderCloses
-    type: Microsoft.Dynamics.CRM.orderclose
-    partner: regardingobjectid_account_orderclose
   - name: account_parent_account
     type: Microsoft.Dynamics.CRM.account
     partner: parentaccountid
@@ -1515,15 +1266,9 @@ collection_valued_navigation_properties:
   - name: Account_ProcessSessions
     type: Microsoft.Dynamics.CRM.processsession
     partner: regardingobjectid_account
-  - name: account_QuoteCloses
-    type: Microsoft.Dynamics.CRM.quoteclose
-    partner: regardingobjectid_account_quoteclose
   - name: Account_RecurringAppointmentMasters
     type: Microsoft.Dynamics.CRM.recurringappointmentmaster
     partner: regardingobjectid_account_recurringappointmentmaster
-  - name: Account_ServiceAppointments
-    type: Microsoft.Dynamics.CRM.serviceappointment
-    partner: regardingobjectid_account_serviceappointment
   - name: Account_SharepointDocumentLocation
     type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
     partner: regardingobjectid_account
@@ -1536,195 +1281,9 @@ collection_valued_navigation_properties:
   - name: Account_Tasks
     type: Microsoft.Dynamics.CRM.task
     partner: regardingobjectid_account_task
-  - name: accountleads_association
-    type: Microsoft.Dynamics.CRM.lead
-    partner: accountleads_association
-  - name: BulkOperation_Logs_Accounts
-    type: Microsoft.Dynamics.CRM.bulkoperation
-    partner: BulkOperation_Accounts
-  - name: CampaignActivity_Logs_Accounts
-    type: Microsoft.Dynamics.CRM.campaignactivity
-    partner: CampaignActivity_Accounts
   - name: contact_customer_accounts
     type: Microsoft.Dynamics.CRM.contact
     partner: parentcustomerid_account
-  - name: contract_billingcustomer_accounts
-    type: Microsoft.Dynamics.CRM.contract
-    partner: billingcustomerid_account
-  - name: contract_customer_accounts
-    type: Microsoft.Dynamics.CRM.contract
-    partner: customerid_account
-  - name: contractlineitem_customer_accounts
-    type: Microsoft.Dynamics.CRM.contractdetail
-    partner: customerid_account
-  - name: CreatedAccount_BulkOperationLogs2
-    type: Microsoft.Dynamics.CRM.bulkoperationlog
-    partner: createdobjectid_account
-  - name: incident_customer_accounts
-    type: Microsoft.Dynamics.CRM.incident
-    partner: customerid_account
-  - name: invoice_customer_accounts
-    type: Microsoft.Dynamics.CRM.invoice
-    partner: customerid_account
-  - name: lead_customer_accounts
-    type: Microsoft.Dynamics.CRM.lead
-    partner: customerid_account
-  - name: lead_parent_account
-    type: Microsoft.Dynamics.CRM.lead
-    partner: parentaccountid
-  - name: listaccount_association
-    type: Microsoft.Dynamics.CRM.list
-    partner: listaccount_association
-  - name: ms_account_ms_newsitem
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: ms_AccountId
-  - name: ms_account_ms_satori
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: ms_AccountId
-  - name: msdyn_account_account_BillingAccount
-    type: Microsoft.Dynamics.CRM.account
-    partner: msdyn_billingaccount_account
-  - name: msdyn_account_msdyn_accountpricelist_Account
-    type: Microsoft.Dynamics.CRM.msdyn_accountpricelist
-    partner: msdyn_Account
-  - name: msdyn_account_msdyn_actual_AccountCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_actual
-    partner: msdyn_AccountCustomer
-  - name: msdyn_account_msdyn_actual_AccountVendor
-    type: Microsoft.Dynamics.CRM.msdyn_actual
-    partner: msdyn_AccountVendor
-  - name: msdyn_account_msdyn_actual_ServiceAccount
-    type: Microsoft.Dynamics.CRM.msdyn_actual
-    partner: msdyn_ServiceAccount
-  - name: msdyn_account_msdyn_agreement_BillingAccount
-    type: Microsoft.Dynamics.CRM.msdyn_agreement
-    partner: msdyn_billingaccount
-  - name: msdyn_account_msdyn_agreement_ServiceAccount
-    type: Microsoft.Dynamics.CRM.msdyn_agreement
-    partner: msdyn_serviceaccount
-  - name: msdyn_account_msdyn_customerasset_Account
-    type: Microsoft.Dynamics.CRM.msdyn_customerasset
-    partner: msdyn_account
-  - name: msdyn_account_msdyn_entitlementapplication_serviceaccount
-    type: Microsoft.Dynamics.CRM.msdyn_entitlementapplication
-    partner: msdyn_serviceaccount
-  - name: msdyn_account_msdyn_estimateline_AccountCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_estimateline
-    partner: msdyn_AccountCustomer
-  - name: msdyn_account_msdyn_estimateline_AccountVendor
-    type: Microsoft.Dynamics.CRM.msdyn_estimateline
-    partner: msdyn_AccountVendor
-  - name: msdyn_account_msdyn_fact_AccountCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_fact
-    partner: msdyn_AccountCustomer
-  - name: msdyn_account_msdyn_fact_AccountVendor
-    type: Microsoft.Dynamics.CRM.msdyn_fact
-    partner: msdyn_AccountVendor
-  - name: msdyn_account_msdyn_invoicelinetransaction_AccountCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
-    partner: msdyn_AccountCustomer
-  - name: msdyn_account_msdyn_invoicelinetransaction_AccountVendor
-    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
-    partner: msdyn_AccountVendor
-  - name: msdyn_account_msdyn_iotdevice_Account
-    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
-    partner: msdyn_Account
-  - name: msdyn_account_msdyn_journalline_AccountCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_journalline
-    partner: msdyn_AccountCustomer
-  - name: msdyn_account_msdyn_journalline_AccountVendor
-    type: Microsoft.Dynamics.CRM.msdyn_journalline
-    partner: msdyn_AccountVendor
-  - name: msdyn_account_msdyn_opportunitylinetransaction_AccountCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
-    partner: msdyn_AccountCustomer
-  - name: msdyn_account_msdyn_opportunitylinetransaction_AccountVendor
-    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
-    partner: msdyn_AccountVendor
-  - name: msdyn_account_msdyn_orderlinetransaction_AccountCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
-    partner: msdyn_AccountCustomer
-  - name: msdyn_account_msdyn_orderlinetransaction_AccountVendor
-    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
-    partner: msdyn_AccountVendor
-  - name: msdyn_account_msdyn_payment_Account
-    type: Microsoft.Dynamics.CRM.msdyn_payment
-    partner: msdyn_account
-  - name: msdyn_account_msdyn_project_Customer
-    type: Microsoft.Dynamics.CRM.msdyn_project
-    partner: msdyn_customer
-  - name: msdyn_account_msdyn_purchaseorder_Vendor
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
-    partner: msdyn_vendor
-  - name: msdyn_account_msdyn_quotelinetransaction_AccountCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
-    partner: msdyn_AccountCustomer
-  - name: msdyn_account_msdyn_quotelinetransaction_AccountVendor
-    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
-    partner: msdyn_AccountVendor
-  - name: msdyn_account_msdyn_requirementresourcepreference_Account
-    type: Microsoft.Dynamics.CRM.msdyn_requirementresourcepreference
-    partner: msdyn_Account
-  - name: msdyn_account_msdyn_rma_BillingAccount
-    type: Microsoft.Dynamics.CRM.msdyn_rma
-    partner: msdyn_billingaccount
-  - name: msdyn_account_msdyn_rma_ServiceAccount
-    type: Microsoft.Dynamics.CRM.msdyn_rma
-    partner: msdyn_serviceaccount
-  - name: msdyn_account_msdyn_rmaproduct_Changeownership
-    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
-    partner: msdyn_changeownership
-  - name: msdyn_account_msdyn_rmaproduct_ReturntoVendor
-    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
-    partner: msdyn_returntovendor
-  - name: msdyn_account_msdyn_rtv_Vendor
-    type: Microsoft.Dynamics.CRM.msdyn_rtv
-    partner: msdyn_vendor
-  - name: msdyn_account_msdyn_workorder_BillingAccount
-    type: Microsoft.Dynamics.CRM.msdyn_workorder
-    partner: msdyn_billingaccount
-  - name: msdyn_account_msdyn_workorder_ServiceAccount
-    type: Microsoft.Dynamics.CRM.msdyn_workorder
-    partner: msdyn_serviceaccount
-  - name: msdyn_account_msdyn_workorderresourcerestriction_Account
-    type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
-    partner: msdyn_Account
-  - name: msdyn_account_opportunityproduct_ServiceAccount
-    type: Microsoft.Dynamics.CRM.opportunityproduct
-    partner: msdyn_serviceaccount
-  - name: msdyn_account_product_DefaultVendor
-    type: Microsoft.Dynamics.CRM.product
-    partner: msdyn_defaultvendor
-  - name: msdyn_account_quote_Account
-    type: Microsoft.Dynamics.CRM.quote
-    partner: msdyn_account
-  - name: msdyn_account_quotedetail_ServiceAccount
-    type: Microsoft.Dynamics.CRM.quotedetail
-    partner: msdyn_ServiceAccount
-  - name: msdyn_account_salesorder_Account
-    type: Microsoft.Dynamics.CRM.salesorder
-    partner: msdyn_account
-  - name: msdyn_geofence_account
-    type: Microsoft.Dynamics.CRM.msdyn_geofence
-    partner: msdyn_account
-  - name: msdyn_msdyn_functionallocation_account
-    type: Microsoft.Dynamics.CRM.msdyn_functionallocation
-    partner: msdyn_msdyn_functionallocation_account
-  - name: msdyn_playbookinstance_account
-    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
-    partner: regarding_account
-  - name: opportunity_customer_accounts
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: customerid_account
-  - name: opportunity_parent_account
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: parentaccountid
-  - name: order_customer_accounts
-    type: Microsoft.Dynamics.CRM.salesorder
-    partner: customerid_account
-  - name: quote_customer_accounts
-    type: Microsoft.Dynamics.CRM.quote
-    partner: customerid_account
   - name: slakpiinstance_account
     type: Microsoft.Dynamics.CRM.slakpiinstance
     partner: regarding_account
@@ -1737,9 +1296,6 @@ collection_valued_navigation_properties:
   - name: Socialprofile_customer_accounts
     type: Microsoft.Dynamics.CRM.socialprofile
     partner: customerid_account
-  - name: SourceAccount_BulkOperationLogs
-    type: Microsoft.Dynamics.CRM.bulkoperationlog
-    partner: regardingobjectid_account
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the account entity type."
@@ -1761,76 +1317,12 @@ operations:
 solutions:
   description: "The following solutions include the account entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.AppforOutlook
-    description: ""
-  - type: Microsoft.Dynamics.CRM.AppforOutlookPatch
-    description: "Microsoft Dynamics 365 App for Outlook is an Office add-in that you can quickly add to your users’ mailbox so they can track communication and review Dynamics 365 applications’ information in Outlook."
-  - type: Microsoft.Dynamics.CRM.CompanyNewsTimeline
-    description: "You can now view news related to an Account, Lead, Contact or Opportunity in the CRM app on your mobile device. The Company news timeline solution for mobile enables sales and service users to view the latest and most important news in the mobile client from Bing news. The news articles are organized by time (Today, This Week, Last Week) and contain the headline, date/time, and source of the news article.  Important events are detected and categorized (including Management Changes, Earnings Releases, New Offerings, Cost Cutting, Growth, Legal Issues, Acquisitions and Partnerships)."
-  - type: Microsoft.Dynamics.CRM.FieldService
-    description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-  - type: Microsoft.Dynamics.CRM.FieldServiceCommon
-    description: "This solution contains components that are prerequisites for both the Field Service solution, as well as for Supply Chain solutions for Finance and Operations integration."
-  - type: Microsoft.Dynamics.CRM.LinkedInSalesNavigatorControlsForUnifiedClient
-    description: "Target, understand and engage customers on LinkedIn Sales Navigator from within Dynamics 365"
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsCRMBasicOperations
-    description: ""
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
-    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_24
-    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
-    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
-    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-  - type: Microsoft.Dynamics.CRM.msdyn_AssetCommon
-    description: "This solution contains the Customer Asset entity and the attributes commonly used across Asset related scenarios within Dynamics 365. It is introduced as a precursor for any solution with work related to the Asset entity."
-  - type: Microsoft.Dynamics.CRM.msdyn_ConnectedCustomerService
-    description: "Use Connected Customer Service to monitor connected devices to make sure your customer’s equipment is functioning properly. If a piece of equipment fails, you’ll receive a notification so that you can troubleshoot the problem remotely."
-  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
-    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-  - type: Microsoft.Dynamics.CRM.msdyn_LinkedInExtensions
-    description: "LinkedIn Extension for Dynamics365"
-  - type: Microsoft.Dynamics.CRM.msdyn_ProjectService_Patch_1
-    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
     description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
-    description: "Dynamics 365 workload for lead management."
-  - type: Microsoft.Dynamics.CRM.msdynce_Marketing
-    description: "Dynamics 365 workload for marketing and enterprise."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingPatch
-    description: "Patch for Dynamics 365 workload for marketing and enterprise."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingPatch201905
-    description: "Patch from 05/2019 for Dynamics 365 workload for marketing and enterprise."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingSales
-    description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingSalesPatch
-    description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_ProductManagement
-    description: "Dynamics 365 workload for product management."
-  - type: Microsoft.Dynamics.CRM.msdynce_Sales
-    description: "Dynamics 365 workload for sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch
-    description: "Patch for Dynamics 365 workload for sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch201904
-    description: "Dynamics 365 workload for Sales Patch Version 2."
-  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
-    description: "Dynamics 365 workload for third patch of Sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
-    description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.ProjectService
-    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-  - type: Microsoft.Dynamics.CRM.Relationshipassistant
-    description: "Relationship assistant Feature Description."
-  - type: Microsoft.Dynamics.CRM.SICommon
-    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

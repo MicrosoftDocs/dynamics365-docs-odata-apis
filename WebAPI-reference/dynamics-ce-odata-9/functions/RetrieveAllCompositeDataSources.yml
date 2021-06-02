@@ -4,7 +4,7 @@ name: "RetrieveAllCompositeDataSources"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveAllCompositeDataSources Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0ffa8e8c-16fe-4b90-a134-1ef0e9feba47

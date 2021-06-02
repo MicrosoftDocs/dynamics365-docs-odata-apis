@@ -4,7 +4,7 @@ name: "entity"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fffb9498-b9a2-4e18-bb26-bc03c4b65028
@@ -159,12 +159,18 @@ properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: CatalogAssignments
+    type: Microsoft.Dynamics.CRM.catalogassignment
+    partner: EntityId
   - name: entity_entityanalyticsconfig
     type: Microsoft.Dynamics.CRM.entityanalyticsconfig
     partner: parententityid
   - name: entity_solutioncomponentconfiguration
     type: Microsoft.Dynamics.CRM.solutioncomponentconfiguration
     partner: EntityId
+  - name: virtualentitymetadata_extensionofrecordid
+    type: Microsoft.Dynamics.CRM.virtualentitymetadata
+    partner: extensionofrecordid
 # This entity has no derived entities.
 # This entity has no operations
 solutions:

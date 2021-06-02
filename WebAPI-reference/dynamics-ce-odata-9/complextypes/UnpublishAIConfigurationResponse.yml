@@ -4,7 +4,7 @@ name: "UnpublishAIConfigurationResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse UnpublishAIConfigurationResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9212b7f2-678d-48ef-b8eb-a433f3a83fe5

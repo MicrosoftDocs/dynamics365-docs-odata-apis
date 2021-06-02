@@ -4,7 +4,7 @@ name: "LastXHours"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse LastXHours Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7da5fff9-c616-459d-9d1c-18563c6ea9db

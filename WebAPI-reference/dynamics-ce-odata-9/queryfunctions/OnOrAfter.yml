@@ -4,7 +4,7 @@ name: "OnOrAfter"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse OnOrAfter Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9f356a75-a47b-4e40-9334-7323bc1a68c8

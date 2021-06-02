@@ -4,7 +4,7 @@ name: "template"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b9687de4-dec1-42a4-8a5a-ff5c756528d5
@@ -373,22 +373,12 @@ operations:
 solutions:
   description: "The following solutions include the template entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.AppforOutlook
-    description: ""
   - type: Microsoft.Dynamics.CRM.msdynce_Activities
     description: "Dynamics 365 workload for activities."
   - type: Microsoft.Dynamics.CRM.msdynce_ActivitiesPatch
     description: "Patch for Dynamics 365 workload for activities."
   - type: Microsoft.Dynamics.CRM.msdynce_EnableUCIByDefault
     description: "Dynamics 365 workload for enablement of entities within the Unified Client Interface."
-  - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
-    description: "Dynamics 365 workload for lead management."
-  - type: Microsoft.Dynamics.CRM.msdynce_Marketing
-    description: "Dynamics 365 workload for marketing and enterprise."
-  - type: Microsoft.Dynamics.CRM.msdynce_Sales
-    description: "Dynamics 365 workload for sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

@@ -4,7 +4,7 @@ name: "DownloadReportDefinitionResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DownloadReportDefinitionResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8b31e68b-7060-4580-9757-2bb1916fd5d7

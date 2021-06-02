@@ -4,7 +4,7 @@ name: "mailmergetemplate"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2c29bb56-789a-4d7f-89b6-323dd3681c2f
@@ -340,8 +340,6 @@ operations:
 solutions:
   description: "The following solutions include the mailmergetemplate entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.msdynce_Sales
-    description: "Dynamics 365 workload for sales."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

@@ -4,7 +4,7 @@ name: "AnalyzeSentimentResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AnalyzeSentimentResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 433bbc8e-4bd4-45b9-a066-27c5dd34d6dc

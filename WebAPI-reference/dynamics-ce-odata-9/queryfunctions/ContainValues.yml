@@ -4,7 +4,7 @@ name: "ContainValues"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse ContainValues Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9faa92c0-5ca5-41bf-8976-f4a3842b2087

@@ -4,7 +4,7 @@ name: "MissingComponent"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse MissingComponent ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 113a431c-0b04-47cd-8b40-104cb50ef4a4

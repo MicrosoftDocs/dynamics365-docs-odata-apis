@@ -4,7 +4,7 @@ name: "RetrieveTeamPrivileges"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveTeamPrivileges Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e60f9450-8e02-48f5-91a3-f84565bbfb6d

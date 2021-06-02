@@ -4,7 +4,7 @@ name: "PvaCreateContentSnapshotResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse PvaCreateContentSnapshotResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: edadd939-fe7f-4882-8d5b-bb34bf6444cb

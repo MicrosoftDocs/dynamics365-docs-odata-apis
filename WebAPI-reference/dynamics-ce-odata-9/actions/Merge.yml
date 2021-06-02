@@ -4,7 +4,7 @@ name: "Merge"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6acc5dd1-0570-4550-82be-db15d6992068
@@ -51,12 +51,6 @@ entities:
   - type: Microsoft.Dynamics.CRM.contact
     displayName: Contact
     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
-  - type: Microsoft.Dynamics.CRM.incident
-    displayName: Case
-    description: "Service request case associated with a contract."
-  - type: Microsoft.Dynamics.CRM.lead
-    displayName: Lead
-    description: "Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified. Otherwise, they are deleted or archived."
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

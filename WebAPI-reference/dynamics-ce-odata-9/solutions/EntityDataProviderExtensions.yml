@@ -4,10 +4,10 @@ name: "EntityDataProviderExtensions"
 type: solution
 metadata: 
   title: "Microsoft Dataverse EntityDataProviderExtensions Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 2958b128-ed15-4136-9135-66e3ed7a4674
+  ms.assetid: 331eb96b-207a-4667-9690-eb8cbdb3bf9e
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

@@ -4,7 +4,7 @@ name: "TargetFieldType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse TargetFieldType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c48caf9e-5677-4bef-a8cb-e02084f5e780

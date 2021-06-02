@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.FunctionIndex
 name: Web API Function Reference
 title: "Microsoft DataverseWeb API Function Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ab719434-7c3c-4bc3-8fee-bb14335d3f9d
@@ -14,8 +14,6 @@ description: "A function is an operation which does not have observable side eff
 in_this_section:
 - type: Microsoft.Dynamics.CRM.CalculateRollupField
   description: "Calculates the value of a rollup attribute. "
-- type: Microsoft.Dynamics.CRM.CalculateTotalTimeIncident
-  description: "Calculates the total time, in minutes, that you used while you worked on an incident (case).  "
 - type: Microsoft.Dynamics.CRM.CheckIncomingEmail
   description: "Check whether the incoming email message is relevant to the Microsoft Dynamics 365 system. "
 - type: Microsoft.Dynamics.CRM.CheckPromoteEmail
@@ -30,22 +28,16 @@ in_this_section:
   description: "Exports localizable fields values to a compressed file. "
 - type: Microsoft.Dynamics.CRM.FetchXmlToQueryExpression
   description: "Converts a query in FetchXML to a QueryExpression. "
-- type: Microsoft.Dynamics.CRM.FindParentResourceGroup
-  description: "Finds a parent resource group (scheduling group) for the specified resource groups (scheduling groups)."
 - type: Microsoft.Dynamics.CRM.FormatAddress
   description: "Builds the full address according to country/regional format specific requirements."
 - type: Microsoft.Dynamics.CRM.GetAllTimeZonesWithDisplayName
   description: "Retrieves all the time zone definitions for the specified locale and to return only the display name attribute.  "
-- type: Microsoft.Dynamics.CRM.GetDefaultPriceLevel
-  description: "Retrieves the default price level (price list) for the current user based on the user’s territory relationship with the price level. "
 - type: Microsoft.Dynamics.CRM.GetDistinctValuesImportFile
   description: "Retrieves distinct values from the parse table for a column in the source file that contains list values.  "
 - type: Microsoft.Dynamics.CRM.GetFileSasUrl
   description: ""
 - type: Microsoft.Dynamics.CRM.GetHeaderColumnsImportFile
   description: "Retrieves the source-file column headings; or retrieve the system-generated column headings if the source file does not contain column headings. "
-- type: Microsoft.Dynamics.CRM.GetQuantityDecimal
-  description: "Gets the quantity decimal value of a product for the specified entity in the target. "
 - type: Microsoft.Dynamics.CRM.GetReportHistoryLimit
   description: "Retrieves the history limit for a report.  "
 - type: Microsoft.Dynamics.CRM.GetTimeZoneCodeByLocalizedName
@@ -68,14 +60,18 @@ in_this_section:
   description: "Validates the state transition."
 - type: Microsoft.Dynamics.CRM.LocalTimeFromUtcTime
   description: ""
-- type: Microsoft.Dynamics.CRM.QueryMultipleSchedules
-  description: "Searches multiple resources for available time block that matches the specified parameters."
 - type: Microsoft.Dynamics.CRM.QuerySchedule
   description: "Searches the specified resource for an available time block that matches the specified parameters.  "
 - type: Microsoft.Dynamics.CRM.RemoveActiveCustomizations
   description: ""
+- type: Microsoft.Dynamics.CRM.RetrieveAadUserPrivileges
+  description: ""
+- type: Microsoft.Dynamics.CRM.RetrieveAadUserRoles
+  description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveAbsoluteAndSiteCollectionUrl
   description: "Retrieves the absolute URL and the site collection URL for a SharePoint location record in Microsoft Dynamics 365. "
+- type: Microsoft.Dynamics.CRM.RetrieveAccessOrigin
+  description: ""
 - type: Microsoft.Dynamics.CRM.RetrieveActivePath
   description: "Retrieves a collection of stages currently in the active path for a business process flow instance."
 - type: Microsoft.Dynamics.CRM.RetrieveAllChildUsersSystemUser
@@ -100,14 +96,6 @@ in_this_section:
   description: "Retrieves the list of language packs that are installed and enabled on the server.  "
 - type: Microsoft.Dynamics.CRM.RetrieveBusinessHierarchyBusinessUnit
   description: "Retrieves all business units from the business unit hierarchy.  "
-- type: Microsoft.Dynamics.CRM.RetrieveByGroupResource
-  description: "Retrieves all resources that are related to the specified resource group  "
-- type: Microsoft.Dynamics.CRM.RetrieveByResourceResourceGroup
-  description: "Retrieves the resource groups (scheduling groups) that contain the specified resource.  "
-- type: Microsoft.Dynamics.CRM.RetrieveByResourcesService
-  description: "Retrieve the collection of services that are related to the specified set of resources."
-- type: Microsoft.Dynamics.CRM.RetrieveByTopIncidentProductKbArticle
-  description: "Retrieves the top-ten articles about a specified product from the knowledge base of articles for the organization "
 - type: Microsoft.Dynamics.CRM.RetrieveByTopIncidentSubjectKbArticle
   description: "Retrieves the top-ten articles about a specified subject from the knowledge base of articles for your organization.  "
 - type: Microsoft.Dynamics.CRM.RetrieveCascadeAssignAsyncJobId
@@ -158,8 +146,6 @@ in_this_section:
   description: "Retrieves localized labels for a limited set of entity attributes."
 - type: Microsoft.Dynamics.CRM.RetrieveMailboxTrackingFolders
   description: "Retrieves folder-level tracking rules for a mailbox.  "
-- type: Microsoft.Dynamics.CRM.RetrieveMembersBulkOperation
-  description: "Retrieves the members of a bulk operation. "
 - type: Microsoft.Dynamics.CRM.RetrieveMetadataChanges
   description: " Retrieves a collection of metadata records that satisfy the specified criteria."
 - type: Microsoft.Dynamics.CRM.RetrieveMissingComponents
@@ -170,8 +156,6 @@ in_this_section:
   description: "Retrieves information about an organization such as the instance type and solutions available in the organization.  "
 - type: Microsoft.Dynamics.CRM.RetrieveOrganizationResources
   description: "Retrieves the resources that are used by an organization.  "
-- type: Microsoft.Dynamics.CRM.RetrieveParentGroupsResourceGroup
-  description: "Retrieves the collection of the parent resource groups of the specified resource group (scheduling group).  "
 - type: Microsoft.Dynamics.CRM.RetrieveParsedDataImportFile
   description: "Retrieves the data from the parse table."
 - type: Microsoft.Dynamics.CRM.RetrievePersonalWall
@@ -188,8 +172,6 @@ in_this_section:
   description: "Retrieves the set of privileges defined in the system. "
 - type: Microsoft.Dynamics.CRM.RetrieveProcessInstances
   description: "Retrieves all the business process flow instances for an entity record across all business process flow definitions."
-- type: Microsoft.Dynamics.CRM.RetrieveProductProperties
-  description: "Retrieve all the property instances (dynamic property instances) for a product added to an opportunity, quote, order, or invoice. "
 - type: Microsoft.Dynamics.CRM.RetrieveProvisionedLanguagePackVersion
   description: "Retrieves the version of a provisioned language pack.  "
 - type: Microsoft.Dynamics.CRM.RetrieveProvisionedLanguages
@@ -202,10 +184,11 @@ in_this_section:
   description: "Retrieves a collection of solution components that are required for a solution component.  "
 - type: Microsoft.Dynamics.CRM.RetrieveRolePrivilegesRole
   description: "Retrieves the privileges that are assigned to the specified role.  "
+- type: Microsoft.Dynamics.CRM.RetrieveSetting
+  description: "
+      This API can be used to retrieve a particular setting along with its final computed value."
 - type: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
   description: "Retrieves all security principals (users or teams) that have access to, and access rights for, the specified record.  "
-- type: Microsoft.Dynamics.CRM.RetrieveSubGroupsResourceGroup
-  description: "Retrieves the collection of child resource groups from the specified resource group.  "
 - type: Microsoft.Dynamics.CRM.RetrieveTeamPrivileges
   description: "Retrieves the privileges for a team. "
 - type: Microsoft.Dynamics.CRM.RetrieveTimelineWallRecords
@@ -246,8 +229,6 @@ in_this_section:
   description: "Searches for knowledge base articles that contain the specified keywords."
 - type: Microsoft.Dynamics.CRM.SearchByTitleKbArticle
   description: "Searches for knowledge base articles that contain the specified title. "
-- type: Microsoft.Dynamics.CRM.UtcTimeFromLocalTime
-  description: ""
 - type: Microsoft.Dynamics.CRM.ValidateApp
   description: ""
 - type: Microsoft.Dynamics.CRM.ValidateFetchXmlExpression

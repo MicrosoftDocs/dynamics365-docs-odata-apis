@@ -4,7 +4,7 @@ name: "serviceplan"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5f884974-5e18-42a3-8957-6cda93c4882a
@@ -104,6 +104,12 @@ properties:
       description: "Date and time when the record was modified."
       iscomputed: false
       isreadonly: true
+    - name: moreinfourl
+      type: Edm.String
+      display_name: "More Info Url"
+      description: "More Info Url of service plan"
+      iscomputed: false
+      isreadonly: false
     - name: name
       type: Edm.String
       display_name: "Name"

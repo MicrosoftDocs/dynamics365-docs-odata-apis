@@ -4,7 +4,7 @@ name: "CascadeConfiguration"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse CascadeConfiguration ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 970becb8-0f4d-4b7a-922e-cf73d4166b0b

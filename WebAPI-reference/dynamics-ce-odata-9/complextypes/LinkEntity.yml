@@ -4,7 +4,7 @@ name: "LinkEntity"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse LinkEntity ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 53055fcf-8742-4aaf-8584-e15693771012

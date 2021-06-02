@@ -4,7 +4,7 @@ name: "DownloadReportDefinition"
 type: function
 metadata: 
   title: "Microsoft Dataverse DownloadReportDefinition Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8fd8045e-13cf-466c-8730-5a55d02e0815

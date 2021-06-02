@@ -4,7 +4,7 @@ name: "NextXFiscalPeriods"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse NextXFiscalPeriods Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 392d50e2-5fa0-4b92-8292-e602e64eb951

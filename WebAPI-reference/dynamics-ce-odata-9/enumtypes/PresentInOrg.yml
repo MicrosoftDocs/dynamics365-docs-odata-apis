@@ -1,0 +1,46 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.PresentInOrg
+name: "PresentInOrg"
+type: enumtype
+metadata: 
+  title: "Microsoft Dataverse PresentInOrg EnumType Reference | MicrosoftDocs"
+  ms.date: "06/02/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: a6e79f9f-931d-4f4c-b191-7eae1a860ae6
+  author: "kumarVivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API PresentInOrg ComplexType."
+namespace: Microsoft.Dynamics.CRM
+description: "Not Found" 
+members:
+  description: "Members define the discrete options for the enumeration type."
+  member_items:
+  - description: ""
+    name: "False"
+    value: 0
+  - description: ""
+    name: "True"
+    value: 1
+  - description: ""
+    name: "Unknown"
+    value: 2
+usedby:
+  description: "The following use the PresentInOrg EnumType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.SolutionComponentDetails
+    used_as: Property
+# This enum type has no remarks.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

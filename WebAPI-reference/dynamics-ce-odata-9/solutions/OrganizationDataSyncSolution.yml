@@ -4,10 +4,10 @@ name: "OrganizationDataSyncSolution"
 type: solution
 metadata: 
   title: "Microsoft Dataverse OrganizationDataSyncSolution Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 6c28fe7a-7e8c-451d-b892-423f61ade467
+  ms.assetid: 5f581367-0580-4d0e-b786-f20160f129f4
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

@@ -4,10 +4,10 @@ name: "License Enforcement"
 type: solution
 metadata: 
   title: "Microsoft Dataverse License Enforcement Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 89a6078b-59a4-4f65-aa92-0c64df1f7545
+  ms.assetid: 75fd4694-dfec-45b4-92d3-6d255c6e487a
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "License Enforcement solution"
  unique_name: LicenseEnforcement
- version: "2.2.0.0"
+ version: "2.3.0.0"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."

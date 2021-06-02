@@ -4,7 +4,7 @@ name: "Collection_Int32_String"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse Collection_Int32_String ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8d18bf0c-06b5-4cb4-baa9-b021dd4e3340

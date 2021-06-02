@@ -4,7 +4,7 @@ name: "OneToManyRelationshipMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse OneToManyRelationshipMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2211e593-a0b6-471d-94d4-36da512903b6
@@ -61,6 +61,9 @@ properties:
     type: Edm.Boolean
     inherited_from: Microsoft.Dynamics.CRM.RelationshipMetadataBase
     description: "Whether the entity relationship is part of a managed solution."
+  - name: IsRelationshipAttributeDenormalized
+    type: Edm.Boolean
+    description: ""
   - name: IsValidForAdvancedFind
     type: Edm.Boolean
     inherited_from: Microsoft.Dynamics.CRM.RelationshipMetadataBase

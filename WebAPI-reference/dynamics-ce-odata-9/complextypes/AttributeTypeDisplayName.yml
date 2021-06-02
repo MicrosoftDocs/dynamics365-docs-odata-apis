@@ -4,7 +4,7 @@ name: "AttributeTypeDisplayName"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AttributeTypeDisplayName ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 54bad161-48df-4dda-877a-fd8937b9fc5c

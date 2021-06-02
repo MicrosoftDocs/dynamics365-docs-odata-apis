@@ -4,10 +4,10 @@ name: "DataEngine Schema Changes"
 type: solution
 metadata: 
   title: "Microsoft Dataverse DataEngine Schema Changes Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: bf489be1-bbb3-4c76-863e-d5d5ae348a8f
+  ms.assetid: 1e556963-56cc-4544-b190-a4c23c5698e2
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
