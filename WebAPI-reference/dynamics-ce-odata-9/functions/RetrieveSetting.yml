@@ -31,7 +31,7 @@ parameters:
     type: Edm.String
     nullable: false
     unicode: false
-    description: ""
+    description: "Setting definition unique name (Required)"
     iscollection: false
 return_type:
   description: "The RetrieveSetting function returns the following value."
