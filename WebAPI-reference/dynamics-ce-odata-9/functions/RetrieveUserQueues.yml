@@ -4,7 +4,7 @@ name: "RetrieveUserQueues"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveUserQueues Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4c0ea614-d596-4582-aa8c-7b8fd657ece4

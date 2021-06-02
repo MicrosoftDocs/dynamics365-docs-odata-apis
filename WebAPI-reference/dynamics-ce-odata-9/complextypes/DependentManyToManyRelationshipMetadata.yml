@@ -4,7 +4,7 @@ name: "DependentManyToManyRelationshipMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DependentManyToManyRelationshipMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0108d26c-cef5-4574-a991-a8dfb9984fca

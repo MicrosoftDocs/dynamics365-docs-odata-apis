@@ -4,7 +4,7 @@ name: "workflow"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7c5681b1-7ae7-428e-bbec-6a733a45bb34
@@ -432,7 +432,7 @@ properties:
     - name: uiflowtype
       type: Edm.Int32
       display_name: "Desktop Flow Type"
-      description: "Type of the Desktop Flow process."
+      description: "Type of the UI Flow process."
       iscomputed: false
       isreadonly: false
       options:
@@ -442,6 +442,8 @@ properties:
           label: "Selenium IDE"
         - value: 2
           label: "Power Automate Desktop"
+        - value: 101
+          label: "Recording"
     - name: uniquename
       type: Edm.String
       display_name: "Unique Name"
@@ -566,33 +568,15 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: botcomponent_workflow
+    type: Microsoft.Dynamics.CRM.botcomponent
+    partner: botcomponent_workflow
+  - name: CatalogAssignments
+    type: Microsoft.Dynamics.CRM.catalogassignment
+    partner: WorkflowId
   - name: lk_asyncoperation_workflowactivationid
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: workflowactivationid
-  - name: lk_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799_processid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
-    partner: processid
-  - name: lk_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b_processid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
-    partner: processid
-  - name: lk_msdyn_bpf_665e73aa18c247d886bfc50499c73b82_processid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
-    partner: processid
-  - name: lk_msdyn_bpf_989e9b1857e24af18787d5143b67523b_processid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
-    partner: processid
-  - name: lk_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3_processid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
-    partner: processid
-  - name: lk_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39_processid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
-    partner: processid
-  - name: lk_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d_processid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
-    partner: processid
-  - name: lk_msdyn_iottocaseprocess_processid
-    type: Microsoft.Dynamics.CRM.msdyn_iottocaseprocess
-    partner: processid
   - name: lk_processsession_processid
     type: Microsoft.Dynamics.CRM.processsession
     partner: processid
@@ -602,12 +586,9 @@ collection_valued_navigation_properties:
   - name: msdyn_scheduleinferenceworkflow_msdyn_toaimodel
     type: Microsoft.Dynamics.CRM.msdyn_aimodel
     partner: msdyn_scheduleinferenceworkflowid
-  - name: msdyn_workflow_msdyn_macrosession_macroname
-    type: Microsoft.Dynamics.CRM.msdyn_macrosession
-    partner: msdyn_macroname
-  - name: msdyn_workflow_msdyn_prod_agentscriptstep_macroactionid
-    type: Microsoft.Dynamics.CRM.msdyn_productivityagentscriptstep
-    partner: msdyn_macroactionid
+  - name: msdyn_workflow_msdyn_pmrecording
+    type: Microsoft.Dynamics.CRM.msdyn_pmrecording
+    partner: msdyn_sourceworkflow
   - name: msdyn_workflow_msdyn_solutionhealthrule_resolutionaction
     type: Microsoft.Dynamics.CRM.msdyn_solutionhealthrule
     partner: msdyn_resolutionaction
@@ -638,21 +619,12 @@ collection_valued_navigation_properties:
   - name: workflow_expiredprocess
     type: Microsoft.Dynamics.CRM.expiredprocess
     partner: processid
-  - name: workflow_leadtoopportunitysalesprocess
-    type: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
-    partner: processid
   - name: workflow_newprocess
     type: Microsoft.Dynamics.CRM.newprocess
-    partner: processid
-  - name: workflow_opportunitysalesprocess
-    type: Microsoft.Dynamics.CRM.opportunitysalesprocess
     partner: processid
   - name: workflow_parent_workflow
     type: Microsoft.Dynamics.CRM.workflow
     partner: parentworkflowid
-  - name: workflow_phonetocaseprocess
-    type: Microsoft.Dynamics.CRM.phonetocaseprocess
-    partner: processid
   - name: Workflow_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_workflow_syncerror
@@ -674,6 +646,8 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.InitializeModernFlowFromAsyncWorkflow
     binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.install
+    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
@@ -689,18 +663,14 @@ solutions:
     description: "MessageProcessorExtension Solution"
   - type: Microsoft.Dynamics.CRM.MicrosoftFlowExtensionsCore
     description: ""
-  - type: Microsoft.Dynamics.CRM.msdyn_Agentscripts
-    description: "Agent scripts to be used in productivity tool"
-  - type: Microsoft.Dynamics.CRM.msdyn_Macros
-    description: "Macros to be used in productivity tool."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
     description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.Relationshipassistant
-    description: "Relationship assistant Feature Description."
+  - type: Microsoft.Dynamics.CRM.ProcessMining
+    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

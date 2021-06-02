@@ -4,7 +4,7 @@ name: "mailbox"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 55719fd5-c785-46af-8a59-ab9730f1ef2c
@@ -77,18 +77,6 @@ properties:
       description: "Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
       iscomputed: false
       isreadonly: true
-    - name: credentialinfo
-      type: Edm.String
-      display_name: ""
-      description: ""
-      iscomputed: false
-      isreadonly: false
-    - name: dataencryptionkey
-      type: Edm.String
-      display_name: ""
-      description: ""
-      iscomputed: false
-      isreadonly: false
     - name: emailaddress
       type: Edm.String
       display_name: "Email Address"
@@ -267,17 +255,6 @@ properties:
           label: "Yes"
         - value: 0
           label: "No"
-    - name: isdataencryptionkeyset
-      type: Edm.Boolean
-      display_name: ""
-      description: ""
-      iscomputed: false
-      isreadonly: true
-      options:
-        - value: 1
-          label: "Yes"
-        - value: 0
-          label: "No"
     - name: isemailaddressapprovedbyo365admin
       type: Edm.Boolean
       display_name: "Email Address O365 Admin Approval Status"
@@ -427,6 +404,12 @@ properties:
       description: "Last Sync Start Time"
       iscomputed: false
       isreadonly: true
+    - name: lasttaggedmessageid
+      type: Edm.String
+      display_name: "Last Tagged MessageId"
+      description: "Identifies the last MessageId that has been processed for tagging in the remote system."
+      iscomputed: false
+      isreadonly: false
     - name: mailboxid
       type: Edm.Guid
       display_name: "Mailbox"
@@ -676,6 +659,12 @@ properties:
           label: "Active"
         - value: 2
           label: "Inactive"
+    - name: tagemailsafter
+      type: Edm.DateTimeOffset
+      display_name: "Tag Emails After"
+      description: "Identifies the timestamp after for which emails should be tagged in the remote system."
+      iscomputed: false
+      isreadonly: false
     - name: testemailconfigurationretrycount
       type: Edm.Int32
       display_name: "Test Email Configuration Retry Count"
@@ -834,36 +823,18 @@ collection_valued_navigation_properties:
   - name: activitypointer_sendermailboxid_mailbox
     type: Microsoft.Dynamics.CRM.activitypointer
     partner: sendermailboxid
-  - name: bulkoperation_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.bulkoperation
-    partner: sendermailboxid_bulkoperation
-  - name: campaignactivity_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.campaignactivity
-    partner: sendermailboxid_campaignactivity
-  - name: campaignresponse_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.campaignresponse
-    partner: sendermailboxid_campaignresponse
   - name: email_sendermailboxid_mailbox
     type: Microsoft.Dynamics.CRM.email
     partner: sendermailboxid_email
-  - name: incidentresolution_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.incidentresolution
-    partner: sendermailboxid_incidentresolution
-  - name: li_inmail_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.li_inmail
-    partner: sendermailboxid_li_inmail
-  - name: li_message_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.li_message
-    partner: sendermailboxid_li_message
-  - name: li_pointdrivepresentationviewed_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
-    partner: sendermailboxid_li_pointdrivepresentationviewed
   - name: Mailbox_Annotation
     type: Microsoft.Dynamics.CRM.annotation
     partner: objectid_mailbox
   - name: mailbox_asyncoperations
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: regardingobjectid_mailbox
+  - name: mailbox_email_ReceivingMailboxId
+    type: Microsoft.Dynamics.CRM.email
+    partner: ReceivingMailboxId_Email
   - name: mailbox_FileAttachments
     type: Microsoft.Dynamics.CRM.fileattachment
     partner: objectid_mailbox
@@ -876,36 +847,9 @@ collection_valued_navigation_properties:
   - name: Mailbox_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_mailbox_syncerror
-  - name: msdyn_approval_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.msdyn_approval
-    partner: sendermailboxid_msdyn_approval
-  - name: msdyn_bookingalert_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
-    partner: sendermailboxid_msdyn_bookingalert
-  - name: msfp_alert_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.msfp_alert
-    partner: sendermailboxid_msfp_alert
-  - name: msfp_surveyinvite_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
-    partner: sendermailboxid_msfp_surveyinvite
-  - name: msfp_surveyresponse_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
-    partner: sendermailboxid_msfp_surveyresponse
-  - name: opportunityclose_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.opportunityclose
-    partner: sendermailboxid_opportunityclose
-  - name: orderclose_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.orderclose
-    partner: sendermailboxid_orderclose
   - name: queue_defaultmailbox_mailbox
     type: Microsoft.Dynamics.CRM.queue
     partner: defaultmailbox
-  - name: quoteclose_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.quoteclose
-    partner: sendermailboxid_quoteclose
-  - name: serviceappointment_mailbox_sendermailboxid
-    type: Microsoft.Dynamics.CRM.serviceappointment
-    partner: sendermailboxid_serviceappointment
   - name: systemuser_defaultmailbox_mailbox
     type: Microsoft.Dynamics.CRM.systemuser
     partner: defaultmailbox
@@ -932,8 +876,6 @@ solutions:
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch
-    description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msft_ServerSideSync_Extensions
     description: ""

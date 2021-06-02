@@ -4,7 +4,7 @@ name: "InitializeFileBlocksDownloadResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse InitializeFileBlocksDownloadResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ea67c92e-33f2-43a7-b125-e42f8a8607d9

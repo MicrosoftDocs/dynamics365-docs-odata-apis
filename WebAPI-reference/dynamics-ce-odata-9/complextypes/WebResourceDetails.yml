@@ -4,7 +4,7 @@ name: "WebResourceDetails"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse WebResourceDetails ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4f6f5b3b-f041-4dc6-90fb-963752a102a2

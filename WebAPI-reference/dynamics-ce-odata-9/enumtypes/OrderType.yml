@@ -4,7 +4,7 @@ name: "OrderType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse OrderType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bcd6f6ff-1101-4ffb-9373-6bf39b461c8f

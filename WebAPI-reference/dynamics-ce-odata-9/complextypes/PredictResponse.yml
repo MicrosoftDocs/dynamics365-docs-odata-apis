@@ -4,7 +4,7 @@ name: "PredictResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse PredictResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 06ae36a4-bb5b-45d6-9044-01fb6c335ee2

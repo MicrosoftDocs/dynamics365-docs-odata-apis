@@ -4,7 +4,7 @@ name: "RetrievePrincipalSyncAttributeMappingsResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrievePrincipalSyncAttributeMappingsResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8e65419b-945a-452e-8c49-7594ff2c2951

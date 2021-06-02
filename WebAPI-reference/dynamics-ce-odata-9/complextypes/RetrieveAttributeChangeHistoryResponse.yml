@@ -4,7 +4,7 @@ name: "RetrieveAttributeChangeHistoryResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveAttributeChangeHistoryResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c1f7f90e-dff4-409a-8ba3-cf0c32e63b9e

@@ -4,7 +4,7 @@ name: "InFiscalPeriodAndYear"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse InFiscalPeriodAndYear Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3d943fea-c89e-4cb9-993a-e0f7516c6aa5

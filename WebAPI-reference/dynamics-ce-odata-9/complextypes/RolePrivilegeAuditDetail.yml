@@ -4,7 +4,7 @@ name: "RolePrivilegeAuditDetail"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RolePrivilegeAuditDetail ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fe30efee-5411-4966-ab8a-7261bd70a588

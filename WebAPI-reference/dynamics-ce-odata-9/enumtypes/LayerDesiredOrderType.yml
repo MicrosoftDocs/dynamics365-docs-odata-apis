@@ -4,7 +4,7 @@ name: "LayerDesiredOrderType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse LayerDesiredOrderType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5aeb719e-310a-4a3d-ab5a-9b97de0137e9

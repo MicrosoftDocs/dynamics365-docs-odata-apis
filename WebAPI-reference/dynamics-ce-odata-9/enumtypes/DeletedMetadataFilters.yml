@@ -4,7 +4,7 @@ name: "DeletedMetadataFilters"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse DeletedMetadataFilters EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 634252f3-b7b5-41be-b4cb-01e4d0b08d35

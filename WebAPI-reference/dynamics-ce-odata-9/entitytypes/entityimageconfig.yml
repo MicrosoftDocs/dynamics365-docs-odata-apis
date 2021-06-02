@@ -4,7 +4,7 @@ name: "entityimageconfig"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 75223965-5004-4e36-92ee-c76edc528e85
@@ -74,14 +74,14 @@ properties:
       isreadonly: true
     - name: parententitylogicalname
       type: Edm.String
-      display_name: "ParentEntityLogicalName"
-      description: "Parent entity logical name"
+      display_name: "Parent Entity Logical Name"
+      description: "Parent Entity Logical Name"
       iscomputed: false
       isreadonly: false
     - name: primaryimageattribute
       type: Edm.String
-      display_name: "PrimaryImageAttribute"
-      description: "Logical name of the primary image attribute"
+      display_name: "Primary Image Attribute"
+      description: "Logical Name of the Primary Image Attribute"
       iscomputed: false
       isreadonly: false
     - name: solutionid

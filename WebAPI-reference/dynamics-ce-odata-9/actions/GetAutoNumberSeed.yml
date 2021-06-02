@@ -4,7 +4,7 @@ name: "GetAutoNumberSeed"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e7a81772-843f-43bb-9e4f-172dee0af729

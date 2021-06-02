@@ -4,7 +4,7 @@ name: "RetrievePrincipalAccessInfo"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrievePrincipalAccessInfo Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3fb79248-d055-4d4a-ab0a-c506f72ac870

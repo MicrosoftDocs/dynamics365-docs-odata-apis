@@ -4,7 +4,7 @@ name: "processstage"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f222d45f-85fd-455d-9173-144cd43143d8
@@ -297,47 +297,11 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
-  - name: lk_msdyn_bpf_2c5fe86acc8b414b8322ae571000c799_activestageid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_2c5fe86acc8b414b8322ae571000c799
-    partner: activestageid
-  - name: lk_msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b_activestageid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b
-    partner: activestageid
-  - name: lk_msdyn_bpf_665e73aa18c247d886bfc50499c73b82_activestageid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_665e73aa18c247d886bfc50499c73b82
-    partner: activestageid
-  - name: lk_msdyn_bpf_989e9b1857e24af18787d5143b67523b_activestageid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_989e9b1857e24af18787d5143b67523b
-    partner: activestageid
-  - name: lk_msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3_activestageid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_baa0a411a239410cb8bded8b5fdd88e3
-    partner: activestageid
-  - name: lk_msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39_activestageid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_d3d97bac8c294105840e99e37a9d1c39
-    partner: activestageid
-  - name: lk_msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d_activestageid
-    type: Microsoft.Dynamics.CRM.msdyn_bpf_d8f9dc7f099f44db9d641dd81fbd470d
-    partner: activestageid
-  - name: lk_msdyn_iottocaseprocess_activestageid
-    type: Microsoft.Dynamics.CRM.msdyn_iottocaseprocess
-    partner: activestageid
   - name: processstage_account
     type: Microsoft.Dynamics.CRM.account
     partner: stageid_processstage
   - name: processstage_appointments
     type: Microsoft.Dynamics.CRM.appointment
-    partner: stageid_processstage
-  - name: processstage_campaignactivities
-    type: Microsoft.Dynamics.CRM.campaignactivity
-    partner: stageid_processstage
-  - name: processstage_campaignresponses
-    type: Microsoft.Dynamics.CRM.campaignresponse
-    partner: stageid_processstage
-  - name: processstage_campaigns
-    type: Microsoft.Dynamics.CRM.campaign
-    partner: stageid_processstage
-  - name: processstage_competitors
-    type: Microsoft.Dynamics.CRM.competitor
     partner: stageid_processstage
   - name: processstage_contact
     type: Microsoft.Dynamics.CRM.contact
@@ -351,107 +315,23 @@ collection_valued_navigation_properties:
   - name: processstage_faxes
     type: Microsoft.Dynamics.CRM.fax
     partner: stageid_processstage
-  - name: processstage_incident
-    type: Microsoft.Dynamics.CRM.incident
-    partner: stageid_processstage
-  - name: processstage_invoices
-    type: Microsoft.Dynamics.CRM.invoice
-    partner: stageid_processstage
   - name: processstage_knowledgearticle
     type: Microsoft.Dynamics.CRM.knowledgearticle
     partner: stageid_processstage
-  - name: processstage_lead
-    type: Microsoft.Dynamics.CRM.lead
-    partner: stageid_processstage
-  - name: processstage_leadtoopportunitysalesprocess
-    type: Microsoft.Dynamics.CRM.leadtoopportunitysalesprocess
-    partner: activestageid
   - name: processstage_letters
     type: Microsoft.Dynamics.CRM.letter
     partner: stageid_processstage
-  - name: processstage_lists
-    type: Microsoft.Dynamics.CRM.list
-    partner: stageid_processstage
-  - name: processstage_msdyn_agreement
-    type: Microsoft.Dynamics.CRM.msdyn_agreement
-    partner: stageid
-  - name: processstage_msdyn_agreementbookingsetup
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
-    partner: stageid
-  - name: processstage_msdyn_agreementinvoicesetup
-    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
-    partner: stageid
-  - name: processstage_msdyn_expense
-    type: Microsoft.Dynamics.CRM.msdyn_expense
-    partner: stageid
-  - name: processstage_msdyn_iotalert
-    type: Microsoft.Dynamics.CRM.msdyn_iotalert
-    partner: stageid
-  - name: processstage_msdyn_journal
-    type: Microsoft.Dynamics.CRM.msdyn_journal
-    partner: stageid
-  - name: processstage_msdyn_project
-    type: Microsoft.Dynamics.CRM.msdyn_project
-    partner: stageid
-  - name: processstage_msdyn_purchaseorder
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
-    partner: stageid
-  - name: processstage_msdyn_purchaseorderbill
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
-    partner: stageid
-  - name: processstage_msdyn_purchaseorderreceipt
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
-    partner: stageid
-  - name: processstage_msdyn_quotebookingsetup
-    type: Microsoft.Dynamics.CRM.msdyn_quotebookingsetup
-    partner: stageid
-  - name: processstage_msdyn_timeentry
-    type: Microsoft.Dynamics.CRM.msdyn_timeentry
-    partner: stageid
-  - name: processstage_msdyn_timegroup
-    type: Microsoft.Dynamics.CRM.msdyn_timegroup
-    partner: stageid
-  - name: processstage_msdyn_timegroupdetail
-    type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
-    partner: stageid
-  - name: processstage_msdyn_workorder
-    type: Microsoft.Dynamics.CRM.msdyn_workorder
-    partner: stageid
   - name: processstage_newprocess
     type: Microsoft.Dynamics.CRM.newprocess
-    partner: activestageid
-  - name: processstage_opportunity
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: stageid_processstage
-  - name: processstage_opportunitysalesprocess
-    type: Microsoft.Dynamics.CRM.opportunitysalesprocess
     partner: activestageid
   - name: processstage_phonecalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: stageid_processstage
-  - name: processstage_phonetocaseprocess
-    type: Microsoft.Dynamics.CRM.phonetocaseprocess
-    partner: activestageid
   - name: processstage_processstageparameter
     type: Microsoft.Dynamics.CRM.processstageparameter
     partner: ProcessStageId
-  - name: processstage_productpricelevels
-    type: Microsoft.Dynamics.CRM.productpricelevel
-    partner: stageid_processstage
-  - name: processstage_products
-    type: Microsoft.Dynamics.CRM.product
-    partner: stageid_processstage
-  - name: processstage_quotes
-    type: Microsoft.Dynamics.CRM.quote
-    partner: stageid_processstage
   - name: processstage_recurringappointmentmasters
     type: Microsoft.Dynamics.CRM.recurringappointmentmaster
-    partner: stageid_processstage
-  - name: processstage_salesliteratures
-    type: Microsoft.Dynamics.CRM.salesliterature
-    partner: stageid_processstage
-  - name: processstage_salesorders
-    type: Microsoft.Dynamics.CRM.salesorder
     partner: stageid_processstage
   - name: ProcessStage_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
@@ -479,8 +359,6 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.MicrosoftFlowExtensionsCore
     description: ""
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

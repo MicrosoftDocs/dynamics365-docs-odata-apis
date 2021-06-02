@@ -4,7 +4,7 @@ name: "BooleanManagedProperty"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse BooleanManagedProperty ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 20243394-dd7b-4529-bf44-cc01e0247032
@@ -40,7 +40,295 @@ properties:
 usedby:
   description: "The following use the BooleanManagedProperty ComplexType."
   usedby_items:
-  - name: Microsoft.Dynamics.CRM.apisettings
+  - name: Microsoft.Dynamics.CRM.activityfileattachment
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.applicationuserprofile
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.applicationuserrole
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.applicationuser
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.bot_botcomponent
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.bot_environmentvariabledefinition
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.botcomponent_botcomponent
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.botcomponent_environmentvariabledefinition
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.botcomponent_workflow
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.botcomponent
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.bot
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.canvasapp
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.catalogassignment
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.catalog
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.connectionreference
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.connectionrole
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.connector
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.customapirequestparameter
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.customapiresponseproperty
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.customapi
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.datalakefolderpermission
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.datalakefolder
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.datalakeworkspacepermission
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.datalakeworkspace
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.entitydataprovider
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.environmentvariabledefinition
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.environmentvariablevalue
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.flowmachinegroup
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.kbarticletemplate
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.keyvaultreference
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.mailmergetemplate
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.managedidentity
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_aiconfiguration
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_aimodel
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_aitemplate
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_dataflow
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_helppage
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_knowledgesearchfilter
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_pminferredtask
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_pmrecording
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.msdyn_slakpi
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.pluginassembly
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.pluginassembly
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.processtrigger
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.relationshipattribute
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.reportcategory
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.report
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.roleprivileges
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.role
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.role
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.runtimedependency
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.savedquery
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.savedquery
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.savedqueryvisualization
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.savedqueryvisualization
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.sdkmessageprocessingstepimage
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.sdkmessageprocessingstep
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.sdkmessageprocessingstep
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.serviceendpoint
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.serviceplanappmodules
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.serviceplan
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.solutioncomponentattributeconfiguration
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.solutioncomponentconfiguration
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.solutioncomponentrelationshipconfiguration
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.systemform
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.systemform
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.template
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.virtualentitymetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.webresource
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.webresource
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.webresource
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.workflow
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.workflow
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.AttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.AttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.AttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.AttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.AttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.AttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.AttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.DateTimeAttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.EntityKeyMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.OptionSetMetadataBase
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RelationshipMetadataBase
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexAttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexManyToManyRelationshipMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexOneToManyRelationshipMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexBooleanOptionSetMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexDateTimeAttributeMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexEntityKeyMetadata
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.ComplexOptionSetMetadata
     used_as: Property
 # There are no remarks for this complex type.
 href_see_also:

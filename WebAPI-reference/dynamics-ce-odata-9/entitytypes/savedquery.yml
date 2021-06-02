@@ -4,7 +4,7 @@ name: "savedquery"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b5c876b7-c253-4903-825e-8b60a4230123
@@ -326,8 +326,6 @@ operations:
   operation_items:
   - name: Microsoft.Dynamics.CRM.InstantiateFilters
     binding_type: "Not Bound"
-  - name: Microsoft.Dynamics.CRM.msdyn_IsProjectTemplatesView
-    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrieveUnpublished
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrieveUnpublishedMultiple

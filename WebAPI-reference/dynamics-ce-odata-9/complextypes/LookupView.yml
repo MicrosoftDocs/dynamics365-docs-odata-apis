@@ -4,7 +4,7 @@ name: "LookupView"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse LookupView ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: df728b32-d6ca-4041-96af-ee13f2de577a

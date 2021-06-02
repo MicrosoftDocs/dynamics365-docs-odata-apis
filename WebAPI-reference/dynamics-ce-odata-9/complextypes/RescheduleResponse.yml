@@ -4,7 +4,7 @@ name: "RescheduleResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RescheduleResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d6adc4f9-757a-4e80-affb-0718930248c8

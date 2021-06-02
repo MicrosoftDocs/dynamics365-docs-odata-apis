@@ -4,7 +4,7 @@ name: "StageAndUpgradeResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse StageAndUpgradeResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6bf17f2d-7b35-416d-91aa-1f1363f1cfa9

@@ -4,7 +4,7 @@ name: "DateTimeBehavior"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DateTimeBehavior ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: af73fc64-a31e-4d2a-ab8c-ffe522cea106

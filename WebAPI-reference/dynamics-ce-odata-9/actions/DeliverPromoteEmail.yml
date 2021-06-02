@@ -4,7 +4,7 @@ name: "DeliverPromoteEmail"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e317f518-03de-4119-bc9c-e4b5ec0a6194
@@ -74,7 +74,7 @@ parameters:
     unicode: false
     description: "The message body for the email."
   - name: Attachments
-    type: Microsoft.Dynamics.CRM.activitymimeattachment
+    type: Microsoft.Dynamics.CRM.attachment
     nullable: false
     unicode: true
     description: "Collection of activity mime attachment (email attachment) records to attach to the email message.  "

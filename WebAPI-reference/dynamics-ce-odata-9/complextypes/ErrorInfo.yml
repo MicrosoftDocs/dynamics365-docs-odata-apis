@@ -4,7 +4,7 @@ name: "ErrorInfo"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ErrorInfo ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f5018b55-3229-4998-8846-e3ace1d99ca8

@@ -4,7 +4,7 @@ name: "ManyToManyRelationshipMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse ManyToManyRelationshipMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b30b1bce-8103-4cee-b6fc-e0ce19b02a5f

@@ -4,7 +4,7 @@ name: "MailboxTrackingFolderMapping"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse MailboxTrackingFolderMapping ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a50b0bfe-63f5-4397-98b5-9ad425df3b97

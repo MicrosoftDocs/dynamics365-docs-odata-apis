@@ -4,7 +4,7 @@ name: "msdyn_ActivateProcesses"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: cdb1a50f-97ed-4b7a-be0d-f0802de1e6c7

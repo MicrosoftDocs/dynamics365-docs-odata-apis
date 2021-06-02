@@ -4,7 +4,7 @@ name: "msdyn_knowledgeinteractioninsight"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5cf04d8a-203d-49dc-97c7-1a611736db1d

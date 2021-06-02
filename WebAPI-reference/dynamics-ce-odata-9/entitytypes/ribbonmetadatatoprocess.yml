@@ -4,7 +4,7 @@ name: "ribbonmetadatatoprocess"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2f89c829-a318-43dc-8b4e-37476fd80159
@@ -96,11 +96,7 @@ properties:
 # This entity has no collection-valued navigation properties
 # This entity has no derived entities.
 # This entity has no operations
-solutions:
-  description: "The following solutions include the ribbonmetadatatoprocess entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

@@ -4,7 +4,7 @@ name: "SecurityTypes"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse SecurityTypes EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b2dd5983-c06d-4a28-9335-26c0f7c25596

@@ -4,7 +4,7 @@ name: "UniqueIdentifierAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse UniqueIdentifierAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d8458227-5cae-42bc-a4cd-d41ca10cfded

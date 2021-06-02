@@ -1,0 +1,52 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.SolutionComponentOption
+name: "SolutionComponentOption"
+type: complextype
+metadata: 
+  title: "Microsoft Dataverse SolutionComponentOption ComplexType Reference | MicrosoftDocs"
+  ms.date: "06/02/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 37a86a32-bf0b-41a5-bac0-fe74ff030d94
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API SolutionComponentOption ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "" 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: ImportDecision
+    type: Microsoft.Dynamics.CRM.ImportDecision
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
+navigation_properties:
+  description: "The navigation properties of a complex type contain references to an entity type or a collection of entity types."
+  property_items:
+  - name: Component
+    type: mscrm.crmbaseentity
+    nullable: false
+    description: ""
+    iscollection: false
+usedby:
+  description: "The following use the SolutionComponentOption ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.SolutionParameters
+    used_as: Property
+# This complex type has no remarks.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

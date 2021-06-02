@@ -4,7 +4,7 @@ name: "RolePrivilege"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RolePrivilege ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d9487317-ed6d-4569-8d65-6732db95a86c
@@ -50,6 +50,28 @@ usedby:
     used_as: Parameter
   - name: Microsoft.Dynamics.CRM.ReplacePrivilegesRole
     used_as: Parameter
+  - name: Microsoft.Dynamics.CRM.RetrieveAadUserPrivilegesResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RetrieveRolePrivilegesRoleResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RetrieveTeamPrivilegesResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeIdResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RetrieveUserPrivilegeByPrivilegeNameResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RetrieveUserPrivilegesResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RetrieveUserSetOfPrivilegesByIdsResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RetrieveUserSetOfPrivilegesByNamesResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RetrieveUsersPrivilegesThroughTeamsResponse
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RolePrivilegeAuditDetail
+    used_as: Property
+  - name: Microsoft.Dynamics.CRM.RolePrivilegeAuditDetail
+    used_as: Property
 # There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

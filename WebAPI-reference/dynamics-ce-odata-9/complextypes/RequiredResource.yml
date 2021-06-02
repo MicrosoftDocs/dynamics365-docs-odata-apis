@@ -4,7 +4,7 @@ name: "RequiredResource"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RequiredResource ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: dfb32b63-b79e-4a01-b4cb-082be36bbad8

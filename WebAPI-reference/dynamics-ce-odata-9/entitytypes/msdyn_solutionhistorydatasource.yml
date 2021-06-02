@@ -4,7 +4,7 @@ name: "msdyn_solutionhistorydatasource"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 215c9d8d-31b5-468e-a09c-327f6584dc7d
@@ -42,12 +42,7 @@ properties:
       isreadonly: false
 # This entity has no lookup properties
 # This entity has no single-valued navigation properties
-collection_valued_navigation_properties:
-  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
-  property_items:
-  - name: msdyn_solutionhistorydatasource_Annotations
-    type: Microsoft.Dynamics.CRM.annotation
-    partner: objectid_msdyn_solutionhistorydatasource
+# This entity has no collection-valued navigation properties
 # This entity has no derived entities.
 # This entity has no operations
 solutions:

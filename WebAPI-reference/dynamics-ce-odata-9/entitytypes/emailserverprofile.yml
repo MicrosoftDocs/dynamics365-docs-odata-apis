@@ -4,7 +4,7 @@ name: "emailserverprofile"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bc588c67-2962-4d40-9f04-ef3beb2e6b41
@@ -28,24 +28,18 @@ namespace: Microsoft.Dynamics.CRM
 properties:
   description: "Properties represent fields of data stored in the entity.Some properties are read-only."
   property_items:
+    - name: aadresourceid
+      type: Edm.String
+      display_name: "AAD ResourceId"
+      description: "AAD ResourceId used for OAuth athentication scheme"
+      iscomputed: false
+      isreadonly: false
     - name: createdon
       type: Edm.DateTimeOffset
       display_name: "Created On"
       description: "Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
       iscomputed: false
       isreadonly: true
-    - name: credentialinfo
-      type: Edm.String
-      display_name: "Information about server credentials"
-      description: ""
-      iscomputed: false
-      isreadonly: false
-    - name: dataencryptionkey
-      type: Edm.String
-      display_name: "encryption key used for CredentialInfo"
-      description: ""
-      iscomputed: false
-      isreadonly: false
     - name: defaultserverlocation
       type: Edm.String
       display_name: "Default Email Server Location"
@@ -161,6 +155,10 @@ properties:
           label: "Without Credentials (Anonymous)"
         - value: 5
           label: "Gmail OAuth"
+        - value: 6
+          label: "Exchange Hybrid Modern Auth (HMA)"
+        - value: 7
+          label: "Azure Active Directory OAuth"
     - name: incomingpassword
       type: Edm.String
       display_name: "Incoming Email Password"
@@ -202,17 +200,6 @@ properties:
       description: "Select whether to use the Secure Sockets Layer (SSL) protocol for incoming email."
       iscomputed: false
       isreadonly: false
-      options:
-        - value: 1
-          label: "Yes"
-        - value: 0
-          label: "No"
-    - name: isdataencryptionkeyset
-      type: Edm.Boolean
-      display_name: ""
-      description: ""
-      iscomputed: false
-      isreadonly: true
       options:
         - value: 1
           label: "Yes"
@@ -410,6 +397,10 @@ properties:
           label: "Without Credentials (Anonymous)"
         - value: 5
           label: "Gmail OAuth"
+        - value: 6
+          label: "Exchange Hybrid Modern Auth (HMA)"
+        - value: 7
+          label: "Azure Active Directory OAuth"
     - name: outgoingpassword
       type: Edm.String
       display_name: "Outgoing Email Password"
@@ -599,6 +590,14 @@ lookup_properties:
     description: "Shows who created the record on behalf of another user."
   - name: _incomingpartnerapplication_value
     description: "Indicates the incoming partner application."
+  - name: _keyvaultreferenceid_value
+    single_valued_navigation_property:
+    - keyvaultreferenceid
+    description: "The Azure Key Vault reference id"
+  - name: _managedidentityid_value
+    single_valued_navigation_property:
+    - managedidentityid
+    description: "The managed identity id"
   - name: _modifiedby_value
     single_valued_navigation_property:
     - modifiedby
@@ -636,6 +635,12 @@ single_valued_navigation_properties:
   - name: createdonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_emailserverprofile_createdonbehalfby
+  - name: keyvaultreferenceid
+    type: Microsoft.Dynamics.CRM.keyvaultreference
+    partner: keyvaultreference_emailserverprofile_keyvaultreferenceid
+  - name: managedidentityid
+    type: Microsoft.Dynamics.CRM.managedidentity
+    partner: managedidentity_emailserverprofile_managedidentityid
   - name: modifiedby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_emailserverprofile_modifiedby
@@ -701,6 +706,10 @@ operations:
 solutions:
   description: "The following solutions include the emailserverprofile entity type."
   solution_items:
+  - type: Microsoft.Dynamics.CRM.msft_PowerAppsWebClientExtensions
+    description: ""
+  - type: Microsoft.Dynamics.CRM.msft_ServerSideSync_Extensions
+    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

@@ -4,7 +4,7 @@ name: "CloneAsSolutionResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse CloneAsSolutionResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f99b8bcc-b022-4360-b4b3-248e9eb1e180

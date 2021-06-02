@@ -4,7 +4,7 @@ name: "ManagedPropertyOperation"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse ManagedPropertyOperation EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 756b0e55-880e-404e-9f5c-fe55e865d43e

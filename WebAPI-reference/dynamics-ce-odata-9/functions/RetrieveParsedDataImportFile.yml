@@ -4,7 +4,7 @@ name: "RetrieveParsedDataImportFile"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveParsedDataImportFile Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 51bd73d3-592d-4409-84f3-7fb844ca9c2f

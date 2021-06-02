@@ -4,7 +4,7 @@ name: "knowledgearticle"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 438dc89a-b8c2-4e28-b4fc-a130d70eff22
@@ -297,17 +297,6 @@ properties:
           label: "Completed"
         - value: 0
           label: "Mark as Complete"
-    - name: setproductassociations
-      type: Edm.Boolean
-      display_name: "Set Product Associations"
-      description: "Set Product Associations"
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 1
-          label: "Completed"
-        - value: 0
-          label: "Mark As Complete"
     - name: stageid
       type: Edm.Guid
       display_name: "Stage Id"
@@ -528,9 +517,6 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
-  - name: incident_knowledgearticles
-    type: Microsoft.Dynamics.CRM.knowledgearticleincident
-    partner: knowledgearticleid
   - name: knowledgearticle_activity_parties
     type: Microsoft.Dynamics.CRM.activityparty
     partner: partyid_knowledgearticle
@@ -549,15 +535,6 @@ collection_valued_navigation_properties:
   - name: knowledgearticle_BulkDeleteFailures
     type: Microsoft.Dynamics.CRM.bulkdeletefailure
     partner: regardingobjectid_knowledgearticle
-  - name: knowledgearticle_BulkOperations
-    type: Microsoft.Dynamics.CRM.bulkoperation
-    partner: regardingobjectid_knowledgearticle_bulkoperation
-  - name: knowledgearticle_CampaignActivities
-    type: Microsoft.Dynamics.CRM.campaignactivity
-    partner: regardingobjectid_knowledgearticle_campaignactivity
-  - name: knowledgearticle_CampaignResponses
-    type: Microsoft.Dynamics.CRM.campaignresponse
-    partner: regardingobjectid_knowledgearticle_campaignresponse
   - name: knowledgearticle_category
     type: Microsoft.Dynamics.CRM.category
     partner: knowledgearticle_category
@@ -585,45 +562,12 @@ collection_valued_navigation_properties:
   - name: KnowledgeArticle_Feedback
     type: Microsoft.Dynamics.CRM.feedback
     partner: KnowledgeArticleId
-  - name: knowledgearticle_IncidentResolutions
-    type: Microsoft.Dynamics.CRM.incidentresolution
-    partner: regardingobjectid_knowledgearticle_incidentresolution
   - name: KnowledgeArticle_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_knowledgearticle_letter
-  - name: knowledgearticle_li_inmails
-    type: Microsoft.Dynamics.CRM.li_inmail
-    partner: regardingobjectid_knowledgearticle_li_inmail
-  - name: knowledgearticle_li_messages
-    type: Microsoft.Dynamics.CRM.li_message
-    partner: regardingobjectid_knowledgearticle_li_message
-  - name: knowledgearticle_li_pointdrivepresentationvieweds
-    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
-    partner: regardingobjectid_knowledgearticle_li_pointdrivepresentationviewed
-  - name: knowledgearticle_msdyn_approvals
-    type: Microsoft.Dynamics.CRM.msdyn_approval
-    partner: regardingobjectid_knowledgearticle_msdyn_approval
-  - name: knowledgearticle_msdyn_bookingalerts
-    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
-    partner: regardingobjectid_knowledgearticle_msdyn_bookingalert
-  - name: knowledgearticle_msfp_alerts
-    type: Microsoft.Dynamics.CRM.msfp_alert
-    partner: regardingobjectid_knowledgearticle_msfp_alert
-  - name: knowledgearticle_msfp_surveyinvites
-    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
-    partner: regardingobjectid_knowledgearticle_msfp_surveyinvite
-  - name: knowledgearticle_msfp_surveyresponses
-    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
-    partner: regardingobjectid_knowledgearticle_msfp_surveyresponse
   - name: knowledgearticle_newprocess
     type: Microsoft.Dynamics.CRM.newprocess
     partner: knowledgearticleid
-  - name: knowledgearticle_OpportunityCloses
-    type: Microsoft.Dynamics.CRM.opportunityclose
-    partner: regardingobjectid_knowledgearticle_opportunityclose
-  - name: knowledgearticle_OrderCloses
-    type: Microsoft.Dynamics.CRM.orderclose
-    partner: regardingobjectid_knowledgearticle_orderclose
   - name: knowledgearticle_parentarticle_contentid
     type: Microsoft.Dynamics.CRM.knowledgearticle
     partner: ParentArticleContentId
@@ -648,18 +592,12 @@ collection_valued_navigation_properties:
   - name: knowledgearticle_QueueItems
     type: Microsoft.Dynamics.CRM.queueitem
     partner: objectid_knowledgearticle
-  - name: knowledgearticle_QuoteCloses
-    type: Microsoft.Dynamics.CRM.quoteclose
-    partner: regardingobjectid_knowledgearticle_quoteclose
   - name: KnowledgeArticle_RecurringAppointmentMasters
     type: Microsoft.Dynamics.CRM.recurringappointmentmaster
     partner: regardingobjectid_knowledgearticle_recurringappointmentmaster
   - name: knowledgearticle_rootarticle_id
     type: Microsoft.Dynamics.CRM.knowledgearticle
     partner: RootArticleId
-  - name: KnowledgeArticle_ServiceAppointments
-    type: Microsoft.Dynamics.CRM.serviceappointment
-    partner: regardingobjectid_knowledgearticle_serviceappointment
   - name: knowledgearticle_SharePointDocumentLocations
     type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
     partner: regardingobjectid_knowledgearticle
@@ -684,15 +622,9 @@ collection_valued_navigation_properties:
   - name: msdyn_knowledgearticle_feedback_context
     type: Microsoft.Dynamics.CRM.feedback
     partner: msdyn_ContextObjectId_knowledgearticle
-  - name: msdyn_knowledgearticle_msdyn_kbenrichment_kbid
-    type: Microsoft.Dynamics.CRM.msdyn_kbenrichment
-    partner: msdyn_kbid
-  - name: msdyn_knowledgearticle_msdyn_knowledgearticlesuggestion_suggestedentity
-    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticlesuggestion
-    partner: msdyn_suggestedentity
-  - name: msdyn_knowledgearticle_msdyn_suggestioninteraction_msdyn_suggestedentity
-    type: Microsoft.Dynamics.CRM.msdyn_suggestioninteraction
-    partner: msdyn_suggestedentity_knowledgearticle
+  - name: msdyn_knowledgearticleimage_parentknowledgearticleid
+    type: Microsoft.Dynamics.CRM.msdyn_knowledgearticleimage
+    partner: msdyn_parentknowledgearticleid
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the knowledgearticle entity type."
@@ -716,20 +648,12 @@ operations:
 solutions:
   description: "The following solutions include the knowledgearticle entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.AppforOutlook
-    description: ""
   - type: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagement
     description: "Dynamics 365 workload for knowledge management."
   - type: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementFeatures
     description: "Dynamics 365 features and migrated controls for knowledge management."
   - type: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementPatch
     description: "Dynamics 365 workload for knowledge management."
-  - type: Microsoft.Dynamics.CRM.msdynce_ProductManagement
-    description: "Dynamics 365 workload for product management."
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
-    description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

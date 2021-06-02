@@ -4,7 +4,7 @@ name: "DetectLanguageResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DetectLanguageResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 23dc9d8f-e70d-4a95-a19a-58591f525358

@@ -4,7 +4,7 @@ name: "CanBeReferencedResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse CanBeReferencedResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0214d54e-9536-48e5-9c50-7da707ded84d

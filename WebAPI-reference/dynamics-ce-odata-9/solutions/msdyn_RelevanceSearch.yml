@@ -4,10 +4,10 @@ name: "msdyn_RelevanceSearch"
 type: solution
 metadata: 
   title: "Microsoft Dataverse msdyn_RelevanceSearch Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: bf6eaf7c-042a-47ca-aa9d-60e75f70d25a
+  ms.assetid: afe8bc44-3fdf-401b-9daf-fcee67bff3ad
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

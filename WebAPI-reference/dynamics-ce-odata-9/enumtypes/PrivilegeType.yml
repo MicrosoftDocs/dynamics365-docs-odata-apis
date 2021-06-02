@@ -4,7 +4,7 @@ name: "PrivilegeType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse PrivilegeType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d6d6c832-f5cc-4d4c-90d8-af036b5acf38

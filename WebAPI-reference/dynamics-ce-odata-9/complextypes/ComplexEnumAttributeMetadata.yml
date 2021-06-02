@@ -4,7 +4,7 @@ name: "ComplexEnumAttributeMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ComplexEnumAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 47ecc2bf-a1d4-43dd-88ef-c5b1f197693e

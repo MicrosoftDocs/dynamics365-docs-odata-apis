@@ -4,7 +4,7 @@ name: "CancelTraining"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e292a519-38c6-4671-95e7-88c19871032d

@@ -4,7 +4,7 @@ name: "OrganizationType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse OrganizationType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 99e42930-5c24-4776-a2d7-fd2f911d700e

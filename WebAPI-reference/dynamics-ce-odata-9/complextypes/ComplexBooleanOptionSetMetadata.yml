@@ -4,7 +4,7 @@ name: "ComplexBooleanOptionSetMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ComplexBooleanOptionSetMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a850716c-57d6-440e-be6d-945636499e3f

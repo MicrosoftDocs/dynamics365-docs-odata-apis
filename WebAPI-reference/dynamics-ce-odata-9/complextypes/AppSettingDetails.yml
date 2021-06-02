@@ -4,7 +4,7 @@ name: "AppSettingDetails"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AppSettingDetails ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 58bf4339-74e7-4096-b22f-9701e6c7639c

@@ -4,10 +4,10 @@ name: "msft_ActivitiesInfra_Extensions"
 type: solution
 metadata: 
   title: "Microsoft Dataverse msft_ActivitiesInfra_Extensions Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: d2da3f49-5c9e-4ac5-93c2-e3674ab82137
+  ms.assetid: 35e9c6e7-e759-4117-ad21-1d55f0b7b051
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: msft_ActivitiesInfra_Extensions
- version: "1.0.0.2"
+ version: "1.0.0.5"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."

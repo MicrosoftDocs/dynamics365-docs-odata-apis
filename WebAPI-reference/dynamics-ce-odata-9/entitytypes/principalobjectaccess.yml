@@ -4,7 +4,7 @@ name: "principalobjectaccess"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bafc662e-f085-449d-a5b2-f824391cd278
@@ -100,8 +100,6 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdyn_RelevanceSearch
     description: "msdyn_RelevanceSearch solution"
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

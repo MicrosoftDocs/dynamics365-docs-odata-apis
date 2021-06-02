@@ -4,7 +4,7 @@ name: "msdyn_CheckIfProcessesOwnedByDisabledUsersResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse msdyn_CheckIfProcessesOwnedByDisabledUsersResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3ac58525-c678-4e63-ad53-eac4d4f7b74a

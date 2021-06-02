@@ -4,7 +4,7 @@ name: "RetrieveCascadeDeleteAsyncJobId"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveCascadeDeleteAsyncJobId Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0909484a-7798-4494-82d2-30b492038021

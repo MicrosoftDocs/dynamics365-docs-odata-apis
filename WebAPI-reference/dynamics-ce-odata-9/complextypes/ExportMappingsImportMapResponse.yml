@@ -4,7 +4,7 @@ name: "ExportMappingsImportMapResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ExportMappingsImportMapResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4089f8d9-0de1-41ff-b7e0-263b027c01a4

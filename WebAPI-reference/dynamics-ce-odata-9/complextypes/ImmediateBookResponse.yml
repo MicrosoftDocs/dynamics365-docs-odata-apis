@@ -4,7 +4,7 @@ name: "ImmediateBookResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ImmediateBookResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1f73e8e5-7784-468b-9b87-5193b4dd70eb

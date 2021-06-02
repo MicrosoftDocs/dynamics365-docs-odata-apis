@@ -1,0 +1,47 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.msft_RuntimeIntegration
+name: "RuntimeIntegration"
+type: solution
+metadata: 
+  title: "Microsoft Dataverse RuntimeIntegration Solution Reference | MicrosoftDocs"
+  ms.date: "06/02/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 972d9a02-56ce-408d-b540-84a219e02e62
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse RuntimeIntegration Solution."
+namespace: Microsoft.Dynamics.CRM
+header:
+ description: "CDS Runtime Integration Extensions Solution"
+ unique_name: msft_RuntimeIntegration
+ version: "1.0.0.5"
+ customization_prefix: default
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.callbackregistration
+     description: "Callback Registration that stores configuration."
+   - type: Microsoft.Dynamics.CRM.plugintype
+     description: "Type that inherits from the IPlugin interface and is contained within a plug-in assembly."
+   - type: Microsoft.Dynamics.CRM.sdkmessageprocessingstep
+     description: "Stage in the execution pipeline that a plug-in is to execute."
+   - type: Microsoft.Dynamics.CRM.serviceendpoint
+     description: "Service endpoint that can be contacted."
+   - type: Microsoft.Dynamics.CRM.virtualentitymetadata
+     description: "Holds  metadata values for virtual entities"
+# This solution includes no actions.
+# There are no remarks for this solution.
+href_see_also:
+- text: "Use the Microsoft Dataverse Service Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

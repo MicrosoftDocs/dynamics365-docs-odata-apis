@@ -4,7 +4,7 @@ name: "InputArgument"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse InputArgument ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6a55818d-1182-433a-a175-8fe79611168b

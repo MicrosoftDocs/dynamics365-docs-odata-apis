@@ -4,7 +4,7 @@ name: "RetrieveUserSetOfPrivilegesByIds"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveUserSetOfPrivilegesByIds Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 805053e9-b6f0-4836-8c48-26a7833241e5

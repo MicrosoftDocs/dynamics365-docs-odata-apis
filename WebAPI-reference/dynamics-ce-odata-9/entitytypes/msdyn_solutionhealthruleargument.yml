@@ -4,7 +4,7 @@ name: "msdyn_solutionhealthruleargument"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a9ee0105-9913-4fae-8450-98d59e2da4c7

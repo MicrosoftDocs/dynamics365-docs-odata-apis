@@ -4,10 +4,10 @@ name: "AI Solution default templates"
 type: solution
 metadata: 
   title: "Microsoft Dataverse AI Solution default templates Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 75fcce75-8748-4f13-8dc9-f5a343f93166
+  ms.assetid: a604fe7b-ca76-44da-a16d-ae22cf29aef0
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "AI Solution default templates"
  unique_name: msdyn_AISolutionDefaultTemplates
- version: "202102.4.2301.7"
+ version: "202104.2.605.3"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."

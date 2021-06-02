@@ -4,7 +4,7 @@ name: "msdyn_knowledgearticleimage"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 88de53e6-6d54-4c89-b82e-2ec47499cc71
@@ -136,6 +136,8 @@ lookup_properties:
     - modifiedonbehalfby
     description: "Unique identifier of the delegate user who modified the record."
   - name: _msdyn_parentknowledgearticleid_value
+    single_valued_navigation_property:
+    - msdyn_parentknowledgearticleid
     description: "Parent Knowledge Article ID"
   - name: _ownerid_value
     single_valued_navigation_property:
@@ -168,6 +170,9 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_msdyn_knowledgearticleimage_modifiedonbehalfby
+  - name: msdyn_parentknowledgearticleid
+    type: Microsoft.Dynamics.CRM.knowledgearticle
+    partner: msdyn_knowledgearticleimage_parentknowledgearticleid
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_msdyn_knowledgearticleimage

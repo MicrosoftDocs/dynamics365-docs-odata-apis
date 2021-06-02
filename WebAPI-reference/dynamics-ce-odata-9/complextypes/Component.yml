@@ -4,7 +4,7 @@ name: "Component"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse Component ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 90f658a7-d8d0-404a-8a3f-f4d0c4c6c9ee

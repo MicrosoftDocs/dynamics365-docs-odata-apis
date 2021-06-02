@@ -4,7 +4,7 @@ name: "RetrieveDependenciesForDelete"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveDependenciesForDelete Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d78ff8c2-a922-49e6-b412-9608db732135

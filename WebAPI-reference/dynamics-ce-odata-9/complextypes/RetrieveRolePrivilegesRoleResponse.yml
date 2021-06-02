@@ -4,7 +4,7 @@ name: "RetrieveRolePrivilegesRoleResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveRolePrivilegesRoleResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 24de3b79-1069-447f-8043-54dc45a15c81

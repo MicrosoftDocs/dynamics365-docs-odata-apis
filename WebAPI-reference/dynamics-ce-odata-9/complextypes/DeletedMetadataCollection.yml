@@ -4,7 +4,7 @@ name: "DeletedMetadataCollection"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DeletedMetadataCollection ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ce5961b9-e455-46a9-8376-a47c561ffd75

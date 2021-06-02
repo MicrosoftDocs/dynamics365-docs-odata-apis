@@ -4,7 +4,7 @@ name: "Object"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse Object ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a6ceee19-6f9a-4ef1-a1d4-c36e92618689

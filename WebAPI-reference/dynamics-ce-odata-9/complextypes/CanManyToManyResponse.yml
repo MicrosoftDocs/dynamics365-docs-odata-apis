@@ -4,7 +4,7 @@ name: "CanManyToManyResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse CanManyToManyResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0dc34c19-ce0e-4f07-8761-1d711b308687

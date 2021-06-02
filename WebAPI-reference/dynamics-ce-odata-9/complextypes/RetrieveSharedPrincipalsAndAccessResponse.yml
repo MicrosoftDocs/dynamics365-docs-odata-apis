@@ -4,7 +4,7 @@ name: "RetrieveSharedPrincipalsAndAccessResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveSharedPrincipalsAndAccessResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 27deb383-68d5-4218-8ce9-05d18c910b56

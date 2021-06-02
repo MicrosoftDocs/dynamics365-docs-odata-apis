@@ -4,7 +4,7 @@ name: "calendar"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: eaae22ed-6651-48a5-b5d9-b7be3d53b8da
@@ -163,9 +163,6 @@ collection_valued_navigation_properties:
   - name: Calendar_AsyncOperations
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: regardingobjectid_calendar
-  - name: calendar_bookableresources
-    type: Microsoft.Dynamics.CRM.bookableresource
-    partner: calendarid
   - name: Calendar_BulkDeleteFailures
     type: Microsoft.Dynamics.CRM.bulkdeletefailure
     partner: regardingobjectid_calendar
@@ -175,15 +172,9 @@ collection_valued_navigation_properties:
   - name: calendar_customercalendar_holidaycalendar
     type: Microsoft.Dynamics.CRM.calendar
     partner: holidayschedulecalendarid
-  - name: calendar_equipment
-    type: Microsoft.Dynamics.CRM.equipment
-    partner: calendarid
   - name: calendar_organization
     type: Microsoft.Dynamics.CRM.organization
     partner: businessclosurecalendarid_calendar
-  - name: calendar_services
-    type: Microsoft.Dynamics.CRM.service
-    partner: calendarid_calendar
   - name: calendar_slaitem
     type: Microsoft.Dynamics.CRM.slaitem
     partner: businesshoursid
@@ -209,8 +200,6 @@ solutions:
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
     description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

@@ -4,7 +4,7 @@ name: "RetrieveAllEntities"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveAllEntities Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ea614554-5b1c-4807-9323-a5c15535dfb7

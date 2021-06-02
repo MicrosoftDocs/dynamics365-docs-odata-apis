@@ -4,7 +4,7 @@ name: "NotEqualBusinessId"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse NotEqualBusinessId Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ed58279a-cd51-4d69-ba70-4dd93d13364c

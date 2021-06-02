@@ -4,7 +4,7 @@ name: "SettingDetail"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse SettingDetail ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: db0465bd-9ab6-4ced-bc08-06aac529530e
@@ -37,7 +37,11 @@ properties:
     description: ""
     iscollection: false
 # This complex type doesn't have any navigation properties.
-
+usedby:
+  description: "The following use the SettingDetail ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.RetrieveSettingResponse
+    used_as: Property
 # There are no remarks for this complex type.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

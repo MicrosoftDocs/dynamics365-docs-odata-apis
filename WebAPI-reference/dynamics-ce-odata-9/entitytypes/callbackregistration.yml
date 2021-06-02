@@ -4,7 +4,7 @@ name: "callbackregistration"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: be73a724-9337-450b-a821-bbf66c6d05a6
@@ -110,6 +110,12 @@ properties:
           label: "Record Owner"
         - value: 3
           label: "Process Owner"
+    - name: runtimeintegrationproperties
+      type: Edm.String
+      display_name: "Runtime Integration Properties"
+      description: "For internal use only. Holds miscellaneous properties related to runtime integration."
+      iscomputed: false
+      isreadonly: false
     - name: scope
       type: Edm.Int32
       display_name: "Specifies the scope type"
@@ -210,8 +216,8 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.ApiMessagesExtension
     description: "This solution contains CDS API message extensions."
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+  - type: Microsoft.Dynamics.CRM.msft_RuntimeIntegration
+    description: "CDS Runtime Integration Extensions Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

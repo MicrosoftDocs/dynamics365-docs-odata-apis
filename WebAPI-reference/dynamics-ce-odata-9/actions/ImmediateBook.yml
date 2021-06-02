@@ -4,7 +4,7 @@ name: "ImmediateBook"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 507c63bf-0141-4649-bf87-af012d860e69
@@ -24,6 +24,11 @@ parameters:
     type: Microsoft.Dynamics.CRM.crmbaseentity
     nullable: false
     unicode: true
+    description: ""
+  - name: AttachmentIds
+    type: Edm.String
+    nullable: false
+    unicode: false
     description: ""
   - name: EWSUrl
     type: Edm.String

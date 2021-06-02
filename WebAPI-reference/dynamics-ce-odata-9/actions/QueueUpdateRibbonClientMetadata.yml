@@ -4,7 +4,7 @@ name: "QueueUpdateRibbonClientMetadata"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b9f1dcc0-5bea-4c8f-8281-a4b4e474cc02

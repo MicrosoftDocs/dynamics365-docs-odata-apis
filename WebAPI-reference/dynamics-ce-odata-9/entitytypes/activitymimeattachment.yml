@@ -4,7 +4,7 @@ name: "activitymimeattachment"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 909d47b2-5d0e-43b9-b71b-4aaf34c56283
@@ -214,8 +214,6 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the activitymimeattachment entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.EmailEngagementPatch_managed
-    description: "Stay on top of your email with alerts and reminders, prioritizing prospects, or customers that are most engaged."
   - type: Microsoft.Dynamics.CRM.msdyn_RelevanceSearch
     description: "msdyn_RelevanceSearch solution"
   - type: Microsoft.Dynamics.CRM.msdynce_Activities

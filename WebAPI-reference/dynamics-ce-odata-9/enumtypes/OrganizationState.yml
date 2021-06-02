@@ -4,7 +4,7 @@ name: "OrganizationState"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse OrganizationState EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a868c7f0-af3d-4cac-9244-27e8ca3178e3

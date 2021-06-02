@@ -4,7 +4,7 @@ name: "ComplexImageAttributeMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ComplexImageAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8c9b872b-80c9-41eb-8c21-fc8536786baa

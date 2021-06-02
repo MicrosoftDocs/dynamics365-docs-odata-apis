@@ -4,7 +4,7 @@ name: "EntityFilters"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse EntityFilters EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: cf7366b1-cb56-4ac9-865d-454fd79bfc22

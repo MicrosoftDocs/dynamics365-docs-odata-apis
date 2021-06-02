@@ -4,10 +4,10 @@ name: "Territory Hierarchy Management"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Territory Hierarchy Management Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: f9855a69-6569-442b-9410-cde5a224ee5d
+  ms.assetid: 49e149fb-79f8-41ad-93de-8ceb3816765d
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use only."
  unique_name: msdyn_TerritoryHierarchyManagement
- version: "9.0.2004.3013"
+ version: "9.0.21035.10001"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."

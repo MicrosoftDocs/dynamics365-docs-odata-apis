@@ -4,7 +4,7 @@ name: "msdyn_aiodtrainingboundingbox"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 30eb575c-2463-4d94-94b5-6f0b6c87f705

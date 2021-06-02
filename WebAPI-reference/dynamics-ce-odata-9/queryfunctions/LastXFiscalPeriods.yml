@@ -4,7 +4,7 @@ name: "LastXFiscalPeriods"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse LastXFiscalPeriods Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3e82a50c-3960-433a-8004-4c9cceed68ef

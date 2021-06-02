@@ -4,7 +4,7 @@ name: "ClientMetadataResults"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ClientMetadataResults ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: de3953b1-5189-4df6-8c5a-169488320ceb

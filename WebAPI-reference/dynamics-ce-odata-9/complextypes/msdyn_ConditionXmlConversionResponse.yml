@@ -4,7 +4,7 @@ name: "msdyn_ConditionXmlConversionResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse msdyn_ConditionXmlConversionResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 38a75a84-0a60-408c-9a2a-b08dbc736aba

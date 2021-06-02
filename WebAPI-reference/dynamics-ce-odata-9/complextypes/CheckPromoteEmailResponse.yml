@@ -4,7 +4,7 @@ name: "CheckPromoteEmailResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse CheckPromoteEmailResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 022d84d1-8302-4e80-8fa0-94e1f4fd3c2a

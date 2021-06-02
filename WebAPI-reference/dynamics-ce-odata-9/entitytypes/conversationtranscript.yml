@@ -1,0 +1,268 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.conversationtranscript
+name: "conversationtranscript"
+type: entitytype
+metadata: 
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "06/02/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 0b2ab715-7486-4428-b36d-61df53230374
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse conversationtranscript entitytype."
+description: "Contains the transcripts of conversations between participants such as customers, Virtual Agents or Human agents."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/conversationtranscripts"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: ConversationTranscript
+  primary_key: conversationtranscriptid
+  primary_name_attribute: name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: content
+      type: Edm.String
+      display_name: "Content"
+      description: "Content of the conversation"
+      iscomputed: false
+      isreadonly: false
+    - name: conversationstarttime
+      type: Edm.DateTimeOffset
+      display_name: "ConversationStartTime"
+      description: "The actual start time of the conversation (not the time it was written to the data store)"
+      iscomputed: false
+      isreadonly: false
+    - name: conversationtranscriptid
+      type: Edm.Guid
+      display_name: "conversationtranscript"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: metadata
+      type: Edm.String
+      display_name: "Metadata"
+      description: "Any metadata about the conversation being captured such as the schema version, state, agents, participants, etc if applicable."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: name
+      type: Edm.String
+      display_name: "Name"
+      description: "The name of the custom entity."
+      iscomputed: false
+      isreadonly: false
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: schematype
+      type: Edm.String
+      display_name: "SchemaType"
+      description: "This defines the type of schema used for the conversation based on format used by the application writing this conversation (PVA, Omni-Channel, OBI, etc)"
+      iscomputed: false
+      isreadonly: false
+    - name: schemaversion
+      type: Edm.String
+      display_name: "ContentSchemaVersion"
+      description: "The version of the conversation transcript content schema that is used."
+      iscomputed: false
+      isreadonly: false
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the conversationtranscript"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the conversationtranscript"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _bot_conversationtranscriptid_value
+    single_valued_navigation_property:
+    - bot_conversationtranscriptId
+    description: "Conversation Transcripts related to customer interactions with a Bot"
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: bot_conversationtranscriptId
+    type: Microsoft.Dynamics.CRM.bot
+    partner: bot_conversationtranscript
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_conversationtranscript_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_conversationtranscript_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_conversationtranscript_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_conversationtranscript_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_conversationtranscript
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_conversationtranscript
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_conversationtranscript
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_conversationtranscript
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: conversationtranscript_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_conversationtranscript
+  - name: conversationtranscript_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_conversationtranscript
+  - name: conversationtranscript_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_conversationtranscript
+  - name: conversationtranscript_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_conversationtranscript
+  - name: conversationtranscript_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_conversationtranscript
+  - name: conversationtranscript_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_conversationtranscript
+  - name: conversationtranscript_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_conversationtranscript
+  - name: conversationtranscript_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_conversationtranscript
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the conversationtranscript entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the conversationtranscript entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.PowerVirtualAgents
+    description: "For internal use, by the Power Virtual Agents services only."
+  - type: Microsoft.Dynamics.CRM.PowerVirtualAgentsCommon
+    description: "For internal use, by the Power Virtual Agent services only."
+# This entity has no remarks.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

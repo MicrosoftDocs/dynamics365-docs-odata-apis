@@ -4,7 +4,7 @@ name: "ValidatorIssue"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ValidatorIssue ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 59a85eec-ff88-4cfe-b17d-4c2d20a270ef

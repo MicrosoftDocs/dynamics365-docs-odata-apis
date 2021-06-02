@@ -4,7 +4,7 @@ name: "GetTimeZoneCodeByLocalizedNameResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse GetTimeZoneCodeByLocalizedNameResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b1680243-820d-4bb5-9c68-2a511eda7e03

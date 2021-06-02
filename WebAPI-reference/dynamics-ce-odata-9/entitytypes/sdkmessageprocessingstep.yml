@@ -4,7 +4,7 @@ name: "sdkmessageprocessingstep"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8b4d5a48-8d82-4c43-a83c-220452bb1ae0
@@ -163,6 +163,12 @@ properties:
       type: Edm.Int32
       display_name: "Execution Order"
       description: "Processing order within the stage."
+      iscomputed: false
+      isreadonly: false
+    - name: runtimeintegrationproperties
+      type: Edm.String
+      display_name: "Runtime Integration Properties"
+      description: "For internal use only. Holds miscellaneous properties related to runtime integration."
       iscomputed: false
       isreadonly: false
     - name: sdkmessageprocessingstepid
@@ -354,8 +360,8 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the sdkmessageprocessingstep entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+  - type: Microsoft.Dynamics.CRM.msft_RuntimeIntegration
+    description: "CDS Runtime Integration Extensions Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

@@ -4,7 +4,7 @@ name: "RetrieveByTopIncidentSubjectKbArticle"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveByTopIncidentSubjectKbArticle Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: eaf8cc8d-0861-4301-ae7b-b3019af47edb

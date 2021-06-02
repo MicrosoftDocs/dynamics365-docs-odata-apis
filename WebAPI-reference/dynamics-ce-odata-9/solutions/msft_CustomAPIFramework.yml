@@ -4,10 +4,10 @@ name: "Custom API Framework"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Custom API Framework Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 6fea2ec2-8aac-409b-8218-dab13120e9f1
+  ms.assetid: 5c22c5c5-b820-414b-a9e8-6510e996b4e1
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,9 +16,17 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: msft_CustomAPIFramework
- version: "1.0.0.6"
+ version: "1.0.0.12"
  customization_prefix: default
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.customapi
+     description: "Entity that defines a custom API"
+   - type: Microsoft.Dynamics.CRM.customapirequestparameter
+     description: "Entity that defines a request parameter for a custom API"
+   - type: Microsoft.Dynamics.CRM.customapiresponseproperty
+     description: "Entity that defines a response property for a custom API "
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

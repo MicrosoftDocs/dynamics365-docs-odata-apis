@@ -4,7 +4,7 @@ name: "SdkMessageProcessingStepRegistration"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse SdkMessageProcessingStepRegistration ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e99c772c-c7d9-4ddd-97b0-c250e2f9d6aa

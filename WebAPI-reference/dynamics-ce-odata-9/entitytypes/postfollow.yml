@@ -4,7 +4,7 @@ name: "postfollow"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 91b2760f-6981-4b78-b5f6-f326eca2b4b0
@@ -98,10 +98,6 @@ lookup_properties:
     - regardingobjectid_queue
     - regardingobjectid_processsession
     - regardingobjectid_knowledgearticle
-    - regardingobjectid_competitor
-    - regardingobjectid_incident
-    - regardingobjectid_lead
-    - regardingobjectid_opportunity
     description: "Choose the parent record for the followed post to identify the customer, opportunity, case, or other record type that the post most closely relates to."
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
@@ -130,24 +126,12 @@ single_valued_navigation_properties:
   - name: regardingobjectid_appointment
     type: Microsoft.Dynamics.CRM.appointment
     partner: appointment_PostFollows
-  - name: regardingobjectid_competitor
-    type: Microsoft.Dynamics.CRM.competitor
-    partner: competitor_PostFollows
   - name: regardingobjectid_contact
     type: Microsoft.Dynamics.CRM.contact
     partner: contact_PostFollows
-  - name: regardingobjectid_incident
-    type: Microsoft.Dynamics.CRM.incident
-    partner: incident_PostFollows
   - name: regardingobjectid_knowledgearticle
     type: Microsoft.Dynamics.CRM.knowledgearticle
     partner: knowledgearticle_PostFollows
-  - name: regardingobjectid_lead
-    type: Microsoft.Dynamics.CRM.lead
-    partner: lead_PostFollows
-  - name: regardingobjectid_opportunity
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: opportunity_PostFollows
   - name: regardingobjectid_phonecall
     type: Microsoft.Dynamics.CRM.phonecall
     partner: phonecall_PostFollows
@@ -177,19 +161,7 @@ collection_valued_navigation_properties:
     partner: regardingobjectid_postfollow_syncerror
 # This entity has no derived entities.
 # This entity has no operations
-solutions:
-  description: "The following solutions include the postfollow entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
-    description: "Dynamics 365 workload for lead management."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingSales
-    description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_Sales
-    description: "Dynamics 365 workload for sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

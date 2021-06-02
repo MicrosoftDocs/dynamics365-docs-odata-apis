@@ -4,7 +4,7 @@ name: "IsValidStateTransitionResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse IsValidStateTransitionResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 36219c14-7166-44a4-b85a-e94bf6c3d343

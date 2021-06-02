@@ -4,7 +4,7 @@ name: "DoesNotContainValues"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse DoesNotContainValues Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b7aac425-958e-43e1-9d5b-529c18f34dbd

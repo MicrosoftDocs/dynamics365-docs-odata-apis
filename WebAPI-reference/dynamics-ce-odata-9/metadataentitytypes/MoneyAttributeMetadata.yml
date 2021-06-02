@@ -4,7 +4,7 @@ name: "MoneyAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse MoneyAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c296daf0-57fc-4680-ac1e-a831a87abf9d

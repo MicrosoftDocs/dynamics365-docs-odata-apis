@@ -4,7 +4,7 @@ name: "organizationdatasyncsubscription"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1dbd6fde-aeb6-4e95-8c2e-22e53dca55cc

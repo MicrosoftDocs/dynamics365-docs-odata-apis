@@ -4,7 +4,7 @@ name: "RetrieveAuditDetailsResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveAuditDetailsResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 66abc959-832a-49c0-aa6b-4b3fd45ff7fc

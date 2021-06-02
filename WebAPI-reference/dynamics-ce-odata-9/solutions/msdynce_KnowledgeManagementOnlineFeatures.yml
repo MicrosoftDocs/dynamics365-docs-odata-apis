@@ -4,10 +4,10 @@ name: "Knowledge Management Online Features"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Knowledge Management Online Features Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 447b2880-a215-455e-853d-ffb4d998660b
+  ms.assetid: 8316d4c3-9383-4db4-a9f1-bdb7ca2fcfcb
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 knowledge management Online Features"
  unique_name: msdynce_KnowledgeManagementOnlineFeatures
- version: "9.0.1.3655"
+ version: "9.0.1.5904"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."

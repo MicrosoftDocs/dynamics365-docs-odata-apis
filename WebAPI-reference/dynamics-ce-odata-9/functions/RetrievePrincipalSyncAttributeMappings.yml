@@ -4,7 +4,7 @@ name: "RetrievePrincipalSyncAttributeMappings"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrievePrincipalSyncAttributeMappings Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 26414b8f-58fc-4c67-ab36-29c6b7dcb56a

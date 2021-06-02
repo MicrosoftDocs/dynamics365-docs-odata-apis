@@ -4,7 +4,7 @@ name: "connectionrole"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 55399f96-e93e-4ad7-983b-d237620b36c4
@@ -241,8 +241,6 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the connectionrole entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.IoTConnector
-    description: "Enables IoT scenarios in Dynamics 365."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

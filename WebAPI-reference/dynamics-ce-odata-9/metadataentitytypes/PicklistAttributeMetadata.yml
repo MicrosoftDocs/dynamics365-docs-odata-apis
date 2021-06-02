@@ -4,7 +4,7 @@ name: "PicklistAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse PicklistAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5b79035a-15be-4c7f-a555-e3e3b1b3f8c0

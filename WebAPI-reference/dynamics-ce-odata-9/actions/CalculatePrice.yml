@@ -4,7 +4,7 @@ name: "CalculatePrice"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: dce4b9bf-9787-4ea2-a477-e546fe06e4b7
@@ -32,33 +32,7 @@ parameters:
     description: "For internal use only."
 # This action has no return value.
 hasreturnvalue: false
-entities:
-  description: "Use the CalculatePrice action with the following entity types:"
-  entity_items:
-  - type: Microsoft.Dynamics.CRM.invoice
-    displayName: Invoice
-    description: "Order that has been billed."
-  - type: Microsoft.Dynamics.CRM.invoicedetail
-    displayName: Invoice Line
-    description: "Line item in an invoice containing detailed billing information for a product."
-  - type: Microsoft.Dynamics.CRM.opportunity
-    displayName: Opportunity
-    description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
-  - type: Microsoft.Dynamics.CRM.opportunityproduct
-    displayName: Opportunity Line
-    description: "Association between an opportunity and a product."
-  - type: Microsoft.Dynamics.CRM.quote
-    displayName: Quote
-    description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
-  - type: Microsoft.Dynamics.CRM.quotedetail
-    displayName: Quote Line
-    description: "Product line item in a quote. The details include such information as product ID, description, quantity, and cost."
-  - type: Microsoft.Dynamics.CRM.salesorder
-    displayName: Order
-    description: "Quote that has been accepted."
-  - type: Microsoft.Dynamics.CRM.salesorderdetail
-    displayName: Order Line
-    description: "Line item in a sales order."
+# This action has no identified unbound entities.
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

@@ -4,10 +4,10 @@ name: "Service Level Agreement (SLA)"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Service Level Agreement (SLA) Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 0bd9c721-143d-4eb0-a053-fe3c84b7ff0b
+  ms.assetid: 488f5dc5-76ad-4cbc-a650-ee1af3bd14e3
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for service level agreements."
  unique_name: msdynce_ServiceLevelAgreement
- version: "9.0.21024.1005"
+ version: "9.0.21043.1007"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."

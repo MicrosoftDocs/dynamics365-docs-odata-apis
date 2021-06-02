@@ -4,7 +4,7 @@ name: "AttributeMapping"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AttributeMapping ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7e1397e7-f461-4cad-b68a-204754cedf4c

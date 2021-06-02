@@ -4,7 +4,7 @@ name: "RetrieveOrganizationInfo"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveOrganizationInfo Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9f493240-db5b-4873-935a-faf4fdc5a745

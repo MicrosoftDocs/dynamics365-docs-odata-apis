@@ -4,7 +4,7 @@ name: "RelationshipType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse RelationshipType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ba7b559a-8642-4ced-8709-0cf1ae3b72f0

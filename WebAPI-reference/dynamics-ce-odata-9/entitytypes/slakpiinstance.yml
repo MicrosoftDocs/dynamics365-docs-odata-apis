@@ -4,7 +4,7 @@ name: "slakpiinstance"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e44bf0cb-d6f9-4f6d-b75b-027c955c87a2
@@ -248,12 +248,6 @@ lookup_properties:
     - regarding_account
     - regarding_contact
     - regarding_activitypointer
-    - regarding
-    - regarding_lead
-    - regarding_invoice
-    - regarding_opportunity
-    - regarding_quote
-    - regarding_salesorder
     description: "Unique identifier of the record that this service level agreement (SLA) key performance indicator (KPI) instance is associated with."
   - name: _transactioncurrencyid_value
     single_valued_navigation_property:
@@ -283,9 +277,6 @@ single_valued_navigation_properties:
   - name: owningbusinessunit
     type: Microsoft.Dynamics.CRM.businessunit
     partner: business_unit_slakpiinstance
-  - name: regarding
-    type: Microsoft.Dynamics.CRM.incident
-    partner: slakpiinstance_incident
   - name: regarding_account
     type: Microsoft.Dynamics.CRM.account
     partner: slakpiinstance_account
@@ -304,30 +295,12 @@ single_valued_navigation_properties:
   - name: regarding_fax
     type: Microsoft.Dynamics.CRM.fax
     partner: slakpiinstance_fax
-  - name: regarding_invoice
-    type: Microsoft.Dynamics.CRM.invoice
-    partner: slakpiinstance_invoice
-  - name: regarding_lead
-    type: Microsoft.Dynamics.CRM.lead
-    partner: slakpiinstance_lead
   - name: regarding_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: slakpiinstance_letter
-  - name: regarding_opportunity
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: slakpiinstance_opportunity
   - name: regarding_phonecall
     type: Microsoft.Dynamics.CRM.phonecall
     partner: slakpiinstance_phonecall
-  - name: regarding_quote
-    type: Microsoft.Dynamics.CRM.quote
-    partner: slakpiinstance_quote
-  - name: regarding_salesorder
-    type: Microsoft.Dynamics.CRM.salesorder
-    partner: slakpiinstance_salesorder
-  - name: regarding_serviceappointment
-    type: Microsoft.Dynamics.CRM.serviceappointment
-    partner: slakpiinstance_serviceappointment
   - name: regarding_socialactivity
     type: Microsoft.Dynamics.CRM.socialactivity
     partner: slakpiinstance_socialactivity
@@ -340,18 +313,6 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
-  - name: msdyn_slakpiinstance_msdyn_workorder_arrival_timekpi
-    type: Microsoft.Dynamics.CRM.msdyn_workorder
-    partner: msdyn_workorderarrivaltimekpiid
-  - name: msdyn_slakpiinstance_msdyn_workorder_resolutionkpiid
-    type: Microsoft.Dynamics.CRM.msdyn_workorder
-    partner: msdyn_workorderresolutionkpiid
-  - name: slakpiinstance_incident_firstresponsebykpi
-    type: Microsoft.Dynamics.CRM.incident
-    partner: firstresponsebykpiid
-  - name: slakpiinstance_incident_resolvebykpi
-    type: Microsoft.Dynamics.CRM.incident
-    partner: resolvebykpiid
   - name: SLAKPIInstance_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_slakpiinstance_syncerror
@@ -372,16 +333,10 @@ operations:
 solutions:
   description: "The following solutions include the slakpiinstance entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.FieldService
-    description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreement
     description: "Dynamics 365 workload for service level agreements."
   - type: Microsoft.Dynamics.CRM.msdynce_ServiceLevelAgreementExtension
     description: "Extension solution for Dynamics 365 workload for service level agreements."
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

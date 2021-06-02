@@ -4,7 +4,7 @@ name: "serviceendpoint"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 302cc977-c26b-4001-be1e-759f1af5ab6c
@@ -49,6 +49,8 @@ properties:
           label: "Http Query String"
         - value: 7
           label: "Connection String"
+        - value: 8
+          label: "Access Key"
     - name: authvalue
       type: Edm.String
       display_name: "Authentication Value"
@@ -104,6 +106,8 @@ properties:
           label: "Event Hub"
         - value: 8
           label: "Webhook"
+        - value: 9
+          label: "Event Grid"
     - name: createdon
       type: Edm.DateTimeOffset
       display_name: "Created On"
@@ -226,6 +230,12 @@ properties:
       description: "Path to the service endpoint."
       iscomputed: false
       isreadonly: false
+    - name: runtimeintegrationproperties
+      type: Edm.String
+      display_name: "Runtime Integration Properties"
+      description: "For internal use only. Holds miscellaneous properties related to runtime integration."
+      iscomputed: false
+      isreadonly: false
     - name: saskey
       type: Edm.String
       display_name: "Shared Access Key"
@@ -244,6 +254,17 @@ properties:
       description: "Shared Access Token"
       iscomputed: false
       isreadonly: false
+    - name: schematype
+      type: Edm.Int32
+      display_name: "Specifies schema type for event grid events"
+      description: "Specifies schema type for event grid events"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Event Grid"
+        - value: 2
+          label: "Cloud Events"
     - name: serviceendpointid
       type: Edm.Guid
       display_name: ""
@@ -334,6 +355,9 @@ single_valued_navigation_properties:
   - name: createdonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_serviceendpointbase_createdonbehalfby
+  - name: keyvaultreferenceid
+    type: Microsoft.Dynamics.CRM.keyvaultreference
+    partner: keyvaultreference_ServiceEndpoint
   - name: modifiedby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: modifiedby_serviceendpoint
@@ -358,8 +382,10 @@ operations:
 solutions:
   description: "The following solutions include the serviceendpoint entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+  - type: Microsoft.Dynamics.CRM.msft_RuntimeIntegration
+    description: "CDS Runtime Integration Extensions Solution"
+  - type: Microsoft.Dynamics.CRM.msft_ServiceEndpointInfrastructure
+    description: "CDS Service Endpoint Infrastructure Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

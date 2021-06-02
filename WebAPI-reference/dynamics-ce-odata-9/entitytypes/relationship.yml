@@ -4,7 +4,7 @@ name: "relationship"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 149a4ee8-bcf6-4318-8ed1-ffeced668243
@@ -46,6 +46,12 @@ properties:
       description: "Referenced Entity's Alternate Key"
       iscomputed: false
       isreadonly: false
+    - name: isrelationshipattributedenormalized
+      type: Edm.Boolean
+      display_name: "IsRelationshipAttributeDenormalized"
+      description: "Is the relationship attribute denormalized."
+      iscomputed: false
+      isreadonly: true
     - name: name
       type: Edm.String
       display_name: "Relationship Name"
@@ -91,8 +97,6 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.MetadataExtension
     description: ""
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

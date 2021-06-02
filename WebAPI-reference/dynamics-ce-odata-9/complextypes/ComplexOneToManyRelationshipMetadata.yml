@@ -4,7 +4,7 @@ name: "ComplexOneToManyRelationshipMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ComplexOneToManyRelationshipMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 67182399-9e94-473f-af0a-7037a35bebbc
@@ -72,6 +72,12 @@ properties:
     unicode: true
     description: ""
     iscollection: true
+  - name: IsRelationshipAttributeDenormalized
+    type: Edm.Boolean
+    nullable: true
+    unicode: true
+    description: ""
+    iscollection: false
   - name: ReferencedEntityNavigationPropertyName
     type: Edm.String
     nullable: true

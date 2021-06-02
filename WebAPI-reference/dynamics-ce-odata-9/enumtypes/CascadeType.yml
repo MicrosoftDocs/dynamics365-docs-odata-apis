@@ -4,7 +4,7 @@ name: "CascadeType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse CascadeType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 642d8106-e117-44c7-ac88-d8103e2122a3

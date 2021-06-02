@@ -4,7 +4,7 @@ name: "RetrieveMissingComponents"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveMissingComponents Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4c4ab72f-3b1a-466b-85ec-56fd764362c4

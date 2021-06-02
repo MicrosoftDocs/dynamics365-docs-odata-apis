@@ -4,7 +4,7 @@ name: "OptionMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse OptionMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b9af4ea3-6e65-4100-8a99-4a3edf92158f

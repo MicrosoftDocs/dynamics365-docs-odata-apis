@@ -4,7 +4,7 @@ name: "kbarticle"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c84bf378-717f-4d69-a19b-1c95aeaeb3c5
@@ -251,9 +251,6 @@ collection_valued_navigation_properties:
   - name: KbArticle_DuplicateMatchingRecord
     type: Microsoft.Dynamics.CRM.duplicaterecord
     partner: duplicaterecordid_kbarticle
-  - name: kbarticle_incidents
-    type: Microsoft.Dynamics.CRM.incident
-    partner: kbarticleid
   - name: kbarticle_principalobjectattributeaccess
     type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
     partner: objectid_kbarticle
@@ -270,8 +267,6 @@ collection_valued_navigation_properties:
 operations:
   description: "The following operations can be used with the kbarticle entity type."
   operation_items:
-  - name: Microsoft.Dynamics.CRM.RetrieveByTopIncidentProductKbArticle
-    binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveByTopIncidentSubjectKbArticle
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.SearchByBodyKbArticle
@@ -280,11 +275,7 @@ operations:
     binding_type: "Collection"
   - name: Microsoft.Dynamics.CRM.SearchByTitleKbArticle
     binding_type: "Collection"
-solutions:
-  description: "The following solutions include the kbarticle entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

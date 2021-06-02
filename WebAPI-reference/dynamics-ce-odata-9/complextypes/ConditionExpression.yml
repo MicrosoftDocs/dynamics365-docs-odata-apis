@@ -4,7 +4,7 @@ name: "ConditionExpression"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ConditionExpression ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 186ea866-25b3-4605-8874-6f4a5e4d1b46

@@ -4,7 +4,7 @@ name: "RetrievePrincipalAttributePrivilegesResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrievePrincipalAttributePrivilegesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b15a6426-348f-4029-97cb-f1840487f44c

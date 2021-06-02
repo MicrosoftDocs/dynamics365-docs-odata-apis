@@ -4,7 +4,7 @@ name: "msdyn_aitemplate"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 820909d4-207d-4590-8073-56563a77c984

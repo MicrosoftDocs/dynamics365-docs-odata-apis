@@ -4,7 +4,7 @@ name: "DeleteAndPromoteResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DeleteAndPromoteResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b532b76d-15f5-4706-8c9e-5aa32f0a6ca6

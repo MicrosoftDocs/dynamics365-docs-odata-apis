@@ -4,10 +4,10 @@ name: "AppNotifications"
 type: solution
 metadata: 
   title: "Microsoft Dataverse AppNotifications Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 86a093e6-9665-427d-91f7-d21646b66d15
+  ms.assetid: 28e0cc22-870c-43f1-afeb-5b737b11a937
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,9 +16,13 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Contains the definitions of App Notification"
  unique_name: AppNotifications
- version: "9.1.0.1"
+ version: "9.1.0.7"
  customization_prefix: default
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.appnotification
+     description: "Notification to be provided to a user."
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

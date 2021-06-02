@@ -4,7 +4,7 @@ name: "UpdateStateValue"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4359ccba-f373-41f5-a859-8d278c0b34c8

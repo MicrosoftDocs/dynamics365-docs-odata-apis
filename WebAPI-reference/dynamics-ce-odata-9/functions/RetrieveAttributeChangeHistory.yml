@@ -4,7 +4,7 @@ name: "RetrieveAttributeChangeHistory"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveAttributeChangeHistory Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ed993cfb-47fb-4430-86c5-cba3610e5f42

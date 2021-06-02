@@ -4,7 +4,7 @@ name: "msdyn_RetrieveSearchProviders"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: eaf5d7e1-123d-468e-823f-97f03d43a0c8

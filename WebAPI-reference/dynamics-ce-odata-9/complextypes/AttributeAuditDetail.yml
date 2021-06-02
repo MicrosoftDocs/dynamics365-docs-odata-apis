@@ -4,7 +4,7 @@ name: "AttributeAuditDetail"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AttributeAuditDetail ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 90a24d0b-b987-4f7d-aab5-68ba218203e5

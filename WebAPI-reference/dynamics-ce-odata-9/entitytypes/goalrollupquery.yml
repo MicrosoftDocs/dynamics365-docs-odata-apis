@@ -4,7 +4,7 @@ name: "goalrollupquery"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 42684f6f-a130-4985-a00b-9b7875ce196c
@@ -218,9 +218,6 @@ collection_valued_navigation_properties:
   - name: GoalRollupQuery_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_goalrollupquery_syncerror
-  - name: msdyn_goalrollupquery_msdyn_forecastdefinition_rollupquery
-    type: Microsoft.Dynamics.CRM.msdyn_forecastdefinition
-    partner: msdyn_rollupquery
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the goalrollupquery entity type."

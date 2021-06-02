@@ -4,7 +4,7 @@ name: "GetValidManyToMany"
 type: function
 metadata: 
   title: "Microsoft Dataverse GetValidManyToMany Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ffd50861-b84b-4c8a-a707-08e66f570a1f

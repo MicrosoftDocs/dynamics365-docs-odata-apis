@@ -4,7 +4,7 @@ name: "RetrieveAuditDetails"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveAuditDetails Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f9703b0e-2933-4d12-a96b-e67b845094aa

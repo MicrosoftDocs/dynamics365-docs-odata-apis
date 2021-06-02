@@ -4,10 +4,10 @@ name: "Image Configuration"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Image Configuration Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: abbbe141-0b52-4f43-b064-bacea079c0f6
+  ms.assetid: 1ec3a459-7c3a-49b9-946d-b55076728ee0
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

@@ -4,7 +4,7 @@ name: "RetrieveAuditPartitionListResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveAuditPartitionListResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d78c506a-b793-4c7b-a69e-a63a5f1da957

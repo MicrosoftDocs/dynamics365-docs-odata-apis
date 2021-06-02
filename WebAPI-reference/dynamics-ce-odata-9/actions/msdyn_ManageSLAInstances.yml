@@ -4,7 +4,7 @@ name: "msdyn_ManageSLAInstances"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d5c94918-2978-4cde-bdf2-5c29fee88a5b

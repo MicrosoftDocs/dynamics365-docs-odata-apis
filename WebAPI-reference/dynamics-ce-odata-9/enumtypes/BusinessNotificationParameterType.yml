@@ -4,7 +4,7 @@ name: "BusinessNotificationParameterType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse BusinessNotificationParameterType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: db922903-c15e-4720-8bf4-41f10c31012a

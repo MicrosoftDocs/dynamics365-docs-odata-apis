@@ -4,7 +4,7 @@ name: "DeleteAuditDataResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DeleteAuditDataResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6c833dfb-ee8e-4ac0-a03e-74b1dc02d1ca
