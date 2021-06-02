@@ -58,8 +58,7 @@ properties:
     - name: owninguser
       type: Edm.Guid
       display_name: "Owning User"
-      description: "Unique identifier of the user who owns the bulk deletion failure record.
-"
+      description: "Unique identifier of the user who owns the bulk deletion failure record."
       iscomputed: false
       isreadonly: true
 lookup_properties:
