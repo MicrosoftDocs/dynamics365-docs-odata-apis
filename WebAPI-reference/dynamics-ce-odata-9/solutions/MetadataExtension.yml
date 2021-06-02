@@ -4,10 +4,10 @@ name: "Metadata Extension"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Metadata Extension Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 46615594-00f1-4588-acca-c891ed670dcb
+  ms.assetid: 14b881e2-af6a-4ee6-8d91-d2ae475610ab
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: MetadataExtension
- version: "1.0.0.22"
+ version: "1.0.0.30"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."

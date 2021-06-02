@@ -4,7 +4,7 @@ name: "GetTimeZoneCodeByLocalizedName"
 type: function
 metadata: 
   title: "Microsoft Dataverse GetTimeZoneCodeByLocalizedName Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 62925e6c-86ee-49af-8391-e1bf54e98a82

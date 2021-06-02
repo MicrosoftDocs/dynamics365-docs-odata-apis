@@ -3,7 +3,7 @@ uid: Microsoft.Dynamics.CRM.EnumTypeIndex
 name: Web API EnumType Reference
 title: "Microsoft DataverseWeb API EnumType Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ed96bb52-43bc-4b4c-a7e2-f47969238bf5
@@ -48,6 +48,8 @@ in_this_section:
   description: "Not Found"
 - type: Microsoft.Dynamics.CRM.ImeMode
   description: "Describes the input method editor mode "
+- type: Microsoft.Dynamics.CRM.ImportDecision
+  description: "Not Found"
 - type: Microsoft.Dynamics.CRM.IntegerFormat
   description: "Describes the formatting of an integer attribute. "
 - type: Microsoft.Dynamics.CRM.JoinOperator
@@ -76,12 +78,12 @@ in_this_section:
   description: "Not Found"
 - type: Microsoft.Dynamics.CRM.OwnershipTypes
   description: "Specifies the type of ownership for an entity. "
+- type: Microsoft.Dynamics.CRM.PresentInOrg
+  description: "Not Found"
 - type: Microsoft.Dynamics.CRM.PrivilegeDepth
   description: "Contains the possible values for the depth of a privilege within a role. "
 - type: Microsoft.Dynamics.CRM.PrivilegeType
   description: "Describes the type of operation for the privilege "
-- type: Microsoft.Dynamics.CRM.PropagationOwnershipOptions
-  description: "Contains the possible values for propagation ownership options. "
 - type: Microsoft.Dynamics.CRM.ProvisionLanguageForUserStatusType
   description: "Not Found"
 - type: Microsoft.Dynamics.CRM.RecentlyViewedRecordType

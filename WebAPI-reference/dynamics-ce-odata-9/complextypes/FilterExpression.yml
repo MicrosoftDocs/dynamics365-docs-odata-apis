@@ -4,7 +4,7 @@ name: "FilterExpression"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse FilterExpression ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: df44b2e1-d78b-446a-be13-c5da5a1ba051

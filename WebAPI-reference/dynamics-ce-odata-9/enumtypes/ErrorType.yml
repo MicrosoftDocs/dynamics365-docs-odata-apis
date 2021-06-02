@@ -4,7 +4,7 @@ name: "ErrorType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse ErrorType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 882fb7e8-bd61-4238-883b-4a686a519879

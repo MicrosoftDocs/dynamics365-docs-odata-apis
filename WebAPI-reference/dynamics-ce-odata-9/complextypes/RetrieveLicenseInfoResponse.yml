@@ -4,7 +4,7 @@ name: "RetrieveLicenseInfoResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveLicenseInfoResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c112bc8f-75a1-483d-9135-81bdb5fc1a12

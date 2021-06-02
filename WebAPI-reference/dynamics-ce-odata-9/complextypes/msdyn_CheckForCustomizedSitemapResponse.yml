@@ -4,7 +4,7 @@ name: "msdyn_CheckForCustomizedSitemapResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse msdyn_CheckForCustomizedSitemapResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4800bf4d-80da-4200-947f-00989e2e9e58
@@ -46,6 +46,12 @@ properties:
     type: Edm.Int32
     nullable: true
     unicode: true
+    description: ""
+    iscollection: false
+  - name: Helplink
+    type: Edm.String
+    nullable: true
+    unicode: false
     description: ""
     iscollection: false
 # This complex type doesn't have any navigation properties.

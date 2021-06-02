@@ -4,10 +4,10 @@ name: "MobileOfflineSyncInterval"
 type: solution
 metadata: 
   title: "Microsoft Dataverse MobileOfflineSyncInterval Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 34c40f52-bae1-4b2f-a993-fa588bcaccb1
+  ms.assetid: 8f850d16-5543-4832-b4d0-b11887ff12b6
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

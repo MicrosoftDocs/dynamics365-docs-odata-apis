@@ -4,7 +4,7 @@ name: "RetrieveDeprovisionedLanguages"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveDeprovisionedLanguages Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6871a3fa-e1cc-44a2-a284-05c5249fdb14

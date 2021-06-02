@@ -4,7 +4,7 @@ name: "IsPaiEnabledResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse IsPaiEnabledResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4ae23ae5-d5be-48a1-84eb-8159b163a161

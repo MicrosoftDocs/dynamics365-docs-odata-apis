@@ -4,7 +4,7 @@ name: "msdyn_CheckForCustomizedOptionSetResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse msdyn_CheckForCustomizedOptionSetResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 44ac0e0c-1039-4fcf-bea2-781bd3910165

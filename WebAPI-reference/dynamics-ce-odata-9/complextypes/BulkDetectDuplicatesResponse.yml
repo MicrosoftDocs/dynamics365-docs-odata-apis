@@ -4,7 +4,7 @@ name: "BulkDetectDuplicatesResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse BulkDetectDuplicatesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e6e40fb7-eb71-4cd2-8937-ca68ca85da0c

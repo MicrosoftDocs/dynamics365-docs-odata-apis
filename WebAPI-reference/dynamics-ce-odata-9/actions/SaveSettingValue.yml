@@ -1,0 +1,58 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.SaveSettingValue
+name: "SaveSettingValue"
+type: action
+metadata: 
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "06/02/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: d172ea95-f9e2-4519-b564-2bf44e62e1a4
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse SaveSettingValue Action."
+namespace: Microsoft.Dynamics.CRM
+description: "Creates or updates app/organization level override. "
+owningsolution: Microsoft.Dynamics.CRM.System
+# This action has no bound entities.
+isbound: false
+parameters:
+  description: "Parameters allow for data to be passed to the action."
+  parameter_items:
+  - name: AppUniqueName
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: "Model-driven app unique name (Optional). "
+  - name: SettingName
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "Setting definition unique name (Required)."
+  - name: Value
+    type: Edm.String
+    nullable: false
+    unicode: false
+    description: "Overridden value that needs to be set (Required)."
+  - name: SolutionUniqueName
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: "Solution unique name for scenarios where you need to do an upsert operation in the context of a given solution (Optional). "
+# This action has no return value.
+hasreturnvalue: false
+# This action has no identified unbound entities.
+# This action has no remarks.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

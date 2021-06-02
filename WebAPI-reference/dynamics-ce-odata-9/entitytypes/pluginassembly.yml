@@ -4,7 +4,7 @@ name: "pluginassembly"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6f44af15-6283-4a5c-98d0-2951ea931f97
@@ -288,6 +288,9 @@ single_valued_navigation_properties:
   - name: createdonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_pluginassembly_createdonbehalfby
+  - name: managedidentityid
+    type: Microsoft.Dynamics.CRM.managedidentity
+    partner: managedidentity_PluginAssembly
   - name: modifiedby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: modifiedby_pluginassembly
@@ -305,11 +308,7 @@ collection_valued_navigation_properties:
     partner: pluginassemblyid
 # This entity has no derived entities.
 # This entity has no operations
-solutions:
-  description: "The following solutions include the pluginassembly entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

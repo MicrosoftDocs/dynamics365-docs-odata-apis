@@ -4,7 +4,7 @@ name: "contact"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 27308cb4-1fb8-4f13-bfc9-d7f22ab25ae4
@@ -598,18 +598,6 @@ properties:
       description: "Type a second business phone number for this contact."
       iscomputed: false
       isreadonly: false
-    - name: businesscard
-      type: Edm.String
-      display_name: "Business Card"
-      description: "Stores Image of the Business Card"
-      iscomputed: false
-      isreadonly: false
-    - name: businesscardattributes
-      type: Edm.String
-      display_name: "BusinessCardAttributes"
-      description: "Stores Business Card Control Properties."
-      iscomputed: false
-      isreadonly: false
     - name: callback
       type: Edm.String
       display_name: "Callback Number"
@@ -1023,30 +1011,6 @@ properties:
       description: "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
       iscomputed: false
       isreadonly: true
-    - name: msdyn_gdproptout
-      type: Edm.Boolean
-      display_name: "GDPR Optout"
-      description: "Describes whether contact is opted out or not"
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 1
-          label: "Yes"
-        - value: 0
-          label: "No"
-    - name: msdyn_orgchangestatus
-      type: Edm.Int32
-      display_name: "Not at Company Flag"
-      description: "Whether or not the contact belongs to the associated account"
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 0
-          label: "No Feedback"
-        - value: 1
-          label: "Not at Company"
-        - value: 2
-          label: "Ignore"
     - name: nickname
       type: Edm.String
       display_name: "Nickname"
@@ -1221,12 +1185,6 @@ properties:
       description: "Type the suffix used in the contact's name, such as Jr. or Sr. to make sure the contact is addressed correctly in sales calls, email, and marketing campaigns."
       iscomputed: false
       isreadonly: false
-    - name: teamsfollowed
-      type: Edm.Int32
-      display_name: "TeamsFollowed"
-      description: "Number of users or conversations followed the record"
-      iscomputed: false
-      isreadonly: false
     - name: telephone1
       type: Edm.String
       display_name: "Business Phone"
@@ -1329,10 +1287,6 @@ lookup_properties:
     single_valued_navigation_property:
     - createdonbehalfby
     description: "Shows who created the record on behalf of another user."
-  - name: _defaultpricelevelid_value
-    single_valued_navigation_property:
-    - defaultpricelevelid
-    description: "Choose the default price list associated with the contact to make sure the correct product prices for this customer are applied in sales opportunities, quotes, and orders."
   - name: _masterid_value
     single_valued_navigation_property:
     - masterid
@@ -1347,10 +1301,6 @@ lookup_properties:
     single_valued_navigation_property:
     - modifiedonbehalfby
     description: "Shows who last updated the record on behalf of another user."
-  - name: _originatingleadid_value
-    single_valued_navigation_property:
-    - originatingleadid
-    description: "Shows the lead that the contact was created if the contact was created by converting a lead in Microsoft Dynamics 365. This is used to relate the contact to the data on the originating lead for use in reporting and analytics."
   - name: _ownerid_value
     single_valued_navigation_property:
     - ownerid
@@ -1374,21 +1324,13 @@ lookup_properties:
     - parentcustomerid_account
     - parentcustomerid_contact
     description: "Select the parent account or parent contact for the contact to provide a quick link to additional details, such as financial information, activities, and opportunities."
-  - name: _preferredequipmentid_value
-    single_valued_navigation_property:
-    - preferredequipmentid
-    description: "Choose the contact's preferred service facility or equipment to make sure services are scheduled correctly for the customer."
-  - name: _preferredserviceid_value
-    single_valued_navigation_property:
-    - preferredserviceid
-    description: "Choose the contact's preferred service to make sure services are scheduled correctly for the customer."
   - name: _preferredsystemuserid_value
     single_valued_navigation_property:
     - preferredsystemuserid
     description: "Choose the regular or preferred customer service representative for reference when scheduling service activities for the contact."
   - name: _slaid_value
     single_valued_navigation_property:
-    - slaid_sla
+    - sla_contact_sla
     description: "Choose the service level agreement (SLA) that you want to apply to the Contact record."
   - name: _slainvokedid_value
     single_valued_navigation_property:
@@ -1407,9 +1349,6 @@ single_valued_navigation_properties:
   - name: createdonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_contact_createdonbehalfby
-  - name: defaultpricelevelid
-    type: Microsoft.Dynamics.CRM.pricelevel
-    partner: price_level_contacts
   - name: masterid
     type: Microsoft.Dynamics.CRM.contact
     partner: contact_master_contact
@@ -1419,9 +1358,6 @@ single_valued_navigation_properties:
   - name: modifiedonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_contact_modifiedonbehalfby
-  - name: originatingleadid
-    type: Microsoft.Dynamics.CRM.lead
-    partner: contact_originating_lead
   - name: ownerid
     type: Microsoft.Dynamics.CRM.principal
     partner: owner_contacts
@@ -1440,16 +1376,10 @@ single_valued_navigation_properties:
   - name: parentcustomerid_contact
     type: Microsoft.Dynamics.CRM.contact
     partner: contact_customer_contacts
-  - name: preferredequipmentid
-    type: Microsoft.Dynamics.CRM.equipment
-    partner: equipment_contacts
-  - name: preferredserviceid
-    type: Microsoft.Dynamics.CRM.service
-    partner: service_contacts
   - name: preferredsystemuserid
     type: Microsoft.Dynamics.CRM.systemuser
     partner: system_user_contacts
-  - name: slaid_sla
+  - name: sla_contact_sla
     type: Microsoft.Dynamics.CRM.sla
     partner: manualsla_contact
   - name: slainvokedid_contact_sla
@@ -1467,12 +1397,6 @@ collection_valued_navigation_properties:
   - name: account_primary_contact
     type: Microsoft.Dynamics.CRM.account
     partner: primarycontactid
-  - name: BulkOperation_Logs_Contacts
-    type: Microsoft.Dynamics.CRM.bulkoperation
-    partner: BulkOperation_Contacts
-  - name: CampaignActivity_Logs_Contacts
-    type: Microsoft.Dynamics.CRM.campaignactivity
-    partner: CampaignActivity_Contacts
   - name: contact_actioncard
     type: Microsoft.Dynamics.CRM.actioncard
     partner: regardingobjectid_contact_actioncard
@@ -1488,27 +1412,12 @@ collection_valued_navigation_properties:
   - name: Contact_Appointments
     type: Microsoft.Dynamics.CRM.appointment
     partner: regardingobjectid_contact_appointment
-  - name: contact_as_primary_contact
-    type: Microsoft.Dynamics.CRM.incident
-    partner: primarycontactid
-  - name: contact_as_responsible_contact
-    type: Microsoft.Dynamics.CRM.incident
-    partner: responsiblecontactid
   - name: Contact_AsyncOperations
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: regardingobjectid_contact
-  - name: contact_bookableresource_ContactId
-    type: Microsoft.Dynamics.CRM.bookableresource
-    partner: ContactId
   - name: Contact_BulkDeleteFailures
     type: Microsoft.Dynamics.CRM.bulkdeletefailure
     partner: regardingobjectid_contact
-  - name: contact_BulkOperations
-    type: Microsoft.Dynamics.CRM.bulkoperation
-    partner: regardingobjectid_contact_bulkoperation
-  - name: contact_CampaignResponses
-    type: Microsoft.Dynamics.CRM.campaignresponse
-    partner: regardingobjectid_contact_campaignresponse
   - name: contact_connections1
     type: Microsoft.Dynamics.CRM.connection
     partner: record1id_contact
@@ -1533,12 +1442,6 @@ collection_valued_navigation_properties:
   - name: Contact_Emails
     type: Microsoft.Dynamics.CRM.email
     partner: regardingobjectid_contact_email
-  - name: contact_entitlement_ContactId
-    type: Microsoft.Dynamics.CRM.entitlement
-    partner: contactid
-  - name: contact_entitlement_Customer
-    type: Microsoft.Dynamics.CRM.entitlement
-    partner: customerid_contact
   - name: Contact_Faxes
     type: Microsoft.Dynamics.CRM.fax
     partner: regardingobjectid_contact_fax
@@ -1548,36 +1451,12 @@ collection_valued_navigation_properties:
   - name: Contact_Letters
     type: Microsoft.Dynamics.CRM.letter
     partner: regardingobjectid_contact_letter
-  - name: contact_li_inmails
-    type: Microsoft.Dynamics.CRM.li_inmail
-    partner: regardingobjectid_contact_li_inmail
-  - name: contact_li_messages
-    type: Microsoft.Dynamics.CRM.li_message
-    partner: regardingobjectid_contact_li_message
-  - name: contact_li_pointdrivepresentationvieweds
-    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
-    partner: regardingobjectid_contact_li_pointdrivepresentationviewed
   - name: Contact_MailboxTrackingFolder
     type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
     partner: regardingobjectid_contact
   - name: contact_master_contact
     type: Microsoft.Dynamics.CRM.contact
     partner: masterid
-  - name: contact_msdyn_approvals
-    type: Microsoft.Dynamics.CRM.msdyn_approval
-    partner: regardingobjectid_contact_msdyn_approval
-  - name: contact_msdyn_bookingalerts
-    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
-    partner: regardingobjectid_contact_msdyn_bookingalert
-  - name: contact_msfp_alerts
-    type: Microsoft.Dynamics.CRM.msfp_alert
-    partner: regardingobjectid_contact_msfp_alert
-  - name: contact_msfp_surveyinvites
-    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
-    partner: regardingobjectid_contact_msfp_surveyinvite
-  - name: contact_msfp_surveyresponses
-    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
-    partner: regardingobjectid_contact_msfp_surveyresponse
   - name: Contact_Phonecalls
     type: Microsoft.Dynamics.CRM.phonecall
     partner: regardingobjectid_contact_phonecall
@@ -1596,12 +1475,6 @@ collection_valued_navigation_properties:
   - name: Contact_RecurringAppointmentMasters
     type: Microsoft.Dynamics.CRM.recurringappointmentmaster
     partner: regardingobjectid_contact_recurringappointmentmaster
-  - name: Contact_ServiceAppointments
-    type: Microsoft.Dynamics.CRM.serviceappointment
-    partner: regardingobjectid_contact_serviceappointment
-  - name: contact_SharePointDocumentLocations
-    type: Microsoft.Dynamics.CRM.sharepointdocumentlocation
-    partner: regardingobjectid_contact
   - name: Contact_SocialActivities
     type: Microsoft.Dynamics.CRM.socialactivity
     partner: regardingobjectid_contact_socialactivity
@@ -1611,135 +1484,12 @@ collection_valued_navigation_properties:
   - name: Contact_Tasks
     type: Microsoft.Dynamics.CRM.task
     partner: regardingobjectid_contact_task
-  - name: contactinvoices_association
-    type: Microsoft.Dynamics.CRM.invoice
-    partner: contactinvoices_association
-  - name: contactleads_association
-    type: Microsoft.Dynamics.CRM.lead
-    partner: contactleads_association
-  - name: contactorders_association
-    type: Microsoft.Dynamics.CRM.salesorder
-    partner: contactorders_association
-  - name: contactquotes_association
-    type: Microsoft.Dynamics.CRM.quote
-    partner: contactquotes_association
-  - name: contract_billingcustomer_contacts
-    type: Microsoft.Dynamics.CRM.contract
-    partner: billingcustomerid_contact
-  - name: contract_customer_contacts
-    type: Microsoft.Dynamics.CRM.contract
-    partner: customerid_contact
-  - name: contractlineitem_customer_contacts
-    type: Microsoft.Dynamics.CRM.contractdetail
-    partner: customerid_contact
-  - name: CreatedContact_BulkOperationLogs
-    type: Microsoft.Dynamics.CRM.bulkoperationlog
-    partner: createdobjectid_contact
-  - name: entitlementcontacts_association
-    type: Microsoft.Dynamics.CRM.entitlement
-    partner: entitlementcontacts_association
-  - name: incident_customer_contacts
-    type: Microsoft.Dynamics.CRM.incident
-    partner: customerid_contact
-  - name: invoice_customer_contacts
-    type: Microsoft.Dynamics.CRM.invoice
-    partner: customerid_contact
-  - name: lead_customer_contacts
-    type: Microsoft.Dynamics.CRM.lead
-    partner: customerid_contact
-  - name: lead_parent_contact
-    type: Microsoft.Dynamics.CRM.lead
-    partner: parentcontactid
-  - name: listcontact_association
-    type: Microsoft.Dynamics.CRM.list
-    partner: listcontact_association
   - name: lk_contact_feedback_createdby
     type: Microsoft.Dynamics.CRM.feedback
     partner: CreatedByContact
   - name: lk_contact_feedback_createdonbehalfby
     type: Microsoft.Dynamics.CRM.feedback
     partner: CreatedOnBehalfByContact
-  - name: ms_contact_ms_newsitem
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: ms_ContactId
-  - name: msdyn_contact_msdyn_actual_ContactCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_actual
-    partner: msdyn_ContactCustomer
-  - name: msdyn_contact_msdyn_actual_ContactVendor
-    type: Microsoft.Dynamics.CRM.msdyn_actual
-    partner: msdyn_ContactVendor
-  - name: msdyn_contact_msdyn_contactpricelist_Contact
-    type: Microsoft.Dynamics.CRM.msdyn_contactpricelist
-    partner: msdyn_Contact
-  - name: msdyn_contact_msdyn_estimateline_ContactCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_estimateline
-    partner: msdyn_ContactCustomer
-  - name: msdyn_contact_msdyn_estimateline_ContactVendor
-    type: Microsoft.Dynamics.CRM.msdyn_estimateline
-    partner: msdyn_ContactVendor
-  - name: msdyn_contact_msdyn_fact_ContactCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_fact
-    partner: msdyn_ContactCustomer
-  - name: msdyn_contact_msdyn_fact_ContactVendor
-    type: Microsoft.Dynamics.CRM.msdyn_fact
-    partner: msdyn_ContactVendor
-  - name: msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
-    partner: msdyn_ContactCustomer
-  - name: msdyn_contact_msdyn_invoicelinetransaction_ContactVendor
-    type: Microsoft.Dynamics.CRM.msdyn_invoicelinetransaction
-    partner: msdyn_ContactVendor
-  - name: msdyn_contact_msdyn_journalline_ContactCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_journalline
-    partner: msdyn_ContactCustomer
-  - name: msdyn_contact_msdyn_journalline_ContactVendor
-    type: Microsoft.Dynamics.CRM.msdyn_journalline
-    partner: msdyn_ContactVendor
-  - name: msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
-    partner: msdyn_ContactCustomer
-  - name: msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor
-    type: Microsoft.Dynamics.CRM.msdyn_opportunitylinetransaction
-    partner: msdyn_ContactVendor
-  - name: msdyn_contact_msdyn_orderlinetransaction_ContactCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
-    partner: msdyn_ContactCustomer
-  - name: msdyn_contact_msdyn_orderlinetransaction_ContactVendor
-    type: Microsoft.Dynamics.CRM.msdyn_orderlinetransaction
-    partner: msdyn_ContactVendor
-  - name: msdyn_contact_msdyn_quotelinetransaction_ContactCustomer
-    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
-    partner: msdyn_ContactCustomer
-  - name: msdyn_contact_msdyn_quotelinetransaction_ContactVendor
-    type: Microsoft.Dynamics.CRM.msdyn_quotelinetransaction
-    partner: msdyn_ContactVendor
-  - name: msdyn_contact_msdyn_rma_RequestedByContact
-    type: Microsoft.Dynamics.CRM.msdyn_rma
-    partner: msdyn_requestedbycontact
-  - name: msdyn_contact_msdyn_rtv_VendorContact
-    type: Microsoft.Dynamics.CRM.msdyn_rtv
-    partner: msdyn_vendorcontact
-  - name: msdyn_contact_msdyn_workorder_ReportedByContact
-    type: Microsoft.Dynamics.CRM.msdyn_workorder
-    partner: msdyn_reportedbycontact
-  - name: msdyn_playbookinstance_contact
-    type: Microsoft.Dynamics.CRM.msdyn_playbookinstance
-    partner: regarding_contact
-  - name: opportunity_customer_contacts
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: customerid_contact
-  - name: opportunity_parent_contact
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: parentcontactid
-  - name: order_customer_contacts
-    type: Microsoft.Dynamics.CRM.salesorder
-    partner: customerid_contact
-  - name: quote_customer_contacts
-    type: Microsoft.Dynamics.CRM.quote
-    partner: customerid_contact
-  - name: servicecontractcontacts_association
-    type: Microsoft.Dynamics.CRM.contract
-    partner: servicecontractcontacts_association
   - name: slakpiinstance_contact
     type: Microsoft.Dynamics.CRM.slakpiinstance
     partner: regarding_contact
@@ -1752,9 +1502,6 @@ collection_valued_navigation_properties:
   - name: Socialprofile_customer_contacts
     type: Microsoft.Dynamics.CRM.socialprofile
     partner: customerid_contact
-  - name: SourceContact_BulkOperationLogs
-    type: Microsoft.Dynamics.CRM.bulkoperationlog
-    partner: regardingobjectid_contact
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the contact entity type."
@@ -1765,8 +1512,6 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.ModifyAccess
     binding_type: "Not Bound"
-  - name: Microsoft.Dynamics.CRM.msdyn_GDPROptoutContact
-    binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
@@ -1778,70 +1523,10 @@ operations:
 solutions:
   description: "The following solutions include the contact entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.AppforOutlook
-    description: ""
-  - type: Microsoft.Dynamics.CRM.AppforOutlookPatch
-    description: "Microsoft Dynamics 365 App for Outlook is an Office add-in that you can quickly add to your users’ mailbox so they can track communication and review Dynamics 365 applications’ information in Outlook."
-  - type: Microsoft.Dynamics.CRM.CompanyNewsTimeline
-    description: "You can now view news related to an Account, Lead, Contact or Opportunity in the CRM app on your mobile device. The Company news timeline solution for mobile enables sales and service users to view the latest and most important news in the mobile client from Bing news. The news articles are organized by time (Today, This Week, Last Week) and contain the headline, date/time, and source of the news article.  Important events are detected and categorized (including Management Changes, Earnings Releases, New Offerings, Cost Cutting, Growth, Legal Issues, Acquisitions and Partnerships)."
-  - type: Microsoft.Dynamics.CRM.FieldService
-    description: "Microsoft Dynamics 365 for Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-  - type: Microsoft.Dynamics.CRM.Icebreakers
-    description: "Icebreakers Solution"
-  - type: Microsoft.Dynamics.CRM.LinkedInSalesNavigatorControlsForUnifiedClient
-    description: "Target, understand and engage customers on LinkedIn Sales Navigator from within Dynamics 365"
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling
-    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_24
-    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling_Patch_25
-    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-  - type: Microsoft.Dynamics.CRM.MicrosoftDynamicsScheduling3_CumulativePatch
-    description: "The Universal Resource Scheduling solution provides the infrastructure to express resource requirements for any entity in the system and help staff those requirements with resources based on the availability and applicability of the resource for the requirement."
-  - type: Microsoft.Dynamics.CRM.msdyn_FieldService_patch_update
-    description: "Microsoft Dynamics 365 Field Service allows organizations of any size to deliver intelligent, world class field service, managing all aspects of the end-to-end field service management cycle. Features include scheduling, mobile, asset management, inventory control, customer notifications, and resource utilization controls that help maximize efficiency and minimize costs."
-  - type: Microsoft.Dynamics.CRM.msdyn_LinkedInExtensions
-    description: "LinkedIn Extension for Dynamics365"
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
     description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
-    description: "Dynamics 365 workload for lead management."
-  - type: Microsoft.Dynamics.CRM.msdynce_Marketing
-    description: "Dynamics 365 workload for marketing and enterprise."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingPatch
-    description: "Patch for Dynamics 365 workload for marketing and enterprise."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingPatch201905
-    description: "Patch from 05/2019 for Dynamics 365 workload for marketing and enterprise."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingSales
-    description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingSalesPatch
-    description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_ProductManagement
-    description: "Dynamics 365 workload for product management."
-  - type: Microsoft.Dynamics.CRM.msdynce_Sales
-    description: "Dynamics 365 workload for sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch
-    description: "Patch for Dynamics 365 workload for sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch201904
-    description: "Dynamics 365 workload for Sales Patch Version 2."
-  - type: Microsoft.Dynamics.CRM.msdynce_SalesPatch202001
-    description: "Dynamics 365 workload for third patch of Sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch
-    description: "Patch for Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
-    description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.msdynce_Talkingpoints
-    description: "Intelligently extracts talking points with your contact, from your exchange mailbox"
-  - type: Microsoft.Dynamics.CRM.ProjectService
-    description: "Microsoft Dynamics 365 for Project Service Automation is an end-to-end solution that helps sales and delivery teams engage customers and deliver billable projects on time and within budget. Project Service gives you the tools you need to: Estimate, quote, and contract work; Plan and assign resources; Enable team collaboration; Capture time, expense, and progress data for real-time insights and accurate invoicing."
-  - type: Microsoft.Dynamics.CRM.Relationshipassistant
-    description: "Relationship assistant Feature Description."
-  - type: Microsoft.Dynamics.CRM.SICommon
-    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

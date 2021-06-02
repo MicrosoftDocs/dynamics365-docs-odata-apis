@@ -4,7 +4,7 @@ name: "ComplexUniqueIdentifierAttributeMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ComplexUniqueIdentifierAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ac1e174a-88cb-4194-b965-aba6e6e8972f

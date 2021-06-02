@@ -4,7 +4,7 @@ name: "RetrieveMailboxTrackingFoldersResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveMailboxTrackingFoldersResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9a74b2ab-75eb-4808-a4af-030e8e4d3138

@@ -4,10 +4,10 @@ name: "Canvas App Entity Extension"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Canvas App Entity Extension Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 5788ad8a-1e1f-490a-ba40-a38aa82ccdb8
+  ms.assetid: 2fe62b2c-9800-428e-9ef8-4a8559a65a66
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Canvas App Entity Extensions"
  unique_name: CanvasAppEntityExtensionSolution
- version: "9.1.21031.210304002"
+ version: "9.1.21044.210420001"
  customization_prefix: default
 # This solution includes no entities.
 # This solution includes no actions.

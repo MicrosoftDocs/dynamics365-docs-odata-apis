@@ -4,7 +4,7 @@ name: "RetrieveOrganizationResourcesResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveOrganizationResourcesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e2a1ba32-ea58-4384-89b4-3f52e063c4ef

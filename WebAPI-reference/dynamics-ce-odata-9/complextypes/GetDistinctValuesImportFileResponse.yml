@@ -4,7 +4,7 @@ name: "GetDistinctValuesImportFileResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse GetDistinctValuesImportFileResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 11dfbbc6-4e70-4c72-b546-883831747046

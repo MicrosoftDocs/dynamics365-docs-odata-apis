@@ -4,7 +4,7 @@ name: "CreateCustomerRelationships"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 66a433f7-8df2-48a6-8eb6-4ed2dcac568a

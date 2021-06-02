@@ -4,10 +4,10 @@ name: "Knowledge Management Features"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Knowledge Management Features Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 0a2b06ad-deb1-4138-9916-dfb3bb2c9e52
+  ms.assetid: 3b9765d2-80b0-4c70-b93e-3b208c16def0
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 features and migrated controls for knowledge management."
  unique_name: msdynce_KnowledgeManagementFeatures
- version: "9.0.1.3655"
+ version: "9.0.1.5904"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."
@@ -25,14 +25,28 @@ entities:
      description: "Activity that is delivered using email protocols."
    - type: Microsoft.Dynamics.CRM.knowledgearticle
      description: "Organizational knowledge for internal and external use."
+   - type: Microsoft.Dynamics.CRM.msdyn_kalanguagesetting
+     description: "Allows you to select default language for knowledge authoring."
+   - type: Microsoft.Dynamics.CRM.msdyn_kmpersonalizationsetting
+     description: "Allows users to personalize their knowledge search filters and knowledge authoring language."
    - type: Microsoft.Dynamics.CRM.msdyn_knowledgearticletemplate
      description: "Organizational Knowledge Article Template for Internal and external creation of Knowledge Articles."
+   - type: Microsoft.Dynamics.CRM.msdyn_knowledgepersonalfilter
+     description: "Allows you to configure and manage personal filter settings."
+   - type: Microsoft.Dynamics.CRM.msdyn_knowledgesearchfilter
+     description: "Allows you to configure and manage filter settings."
 actions:
   description: "The following actions are included in this solution."
   action_items:
    - type: Microsoft.Dynamics.CRM.msdyn_GetKAObjectFromTemplate
      description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveKnowledgeSearchFilters
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrieveKnowledgeSearchModifiers
+     description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_RetrieveKnowledgeSuggestions
+     description: ""
+   - type: Microsoft.Dynamics.CRM.msdyn_RetrievePersonalizationFilters
      description: ""
    - type: Microsoft.Dynamics.CRM.msdyn_RetrieveSearchProviders
      description: ""

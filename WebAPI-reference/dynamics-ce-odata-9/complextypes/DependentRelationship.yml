@@ -4,7 +4,7 @@ name: "DependentRelationship"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DependentRelationship ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 848a0d6d-2b2c-499a-9e36-8f77b49cb114

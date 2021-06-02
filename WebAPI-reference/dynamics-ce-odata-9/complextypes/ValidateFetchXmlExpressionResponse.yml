@@ -4,7 +4,7 @@ name: "ValidateFetchXmlExpressionResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ValidateFetchXmlExpressionResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 819c519d-c563-41ab-bff5-fda8e570caa5

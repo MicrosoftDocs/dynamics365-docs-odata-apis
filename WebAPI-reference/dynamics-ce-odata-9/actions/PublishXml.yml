@@ -4,7 +4,7 @@ name: "PublishXml"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1f87e1f6-160c-48e9-aab3-4269c5b95d3c

@@ -4,10 +4,10 @@ name: "File Store Service Extension"
 type: solution
 metadata: 
   title: "Microsoft Dataverse File Store Service Extension Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: f55c1614-566a-4360-bfde-0d18ab7a5447
+  ms.assetid: d8557423-de4e-4d0a-894f-21e7e6039592
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

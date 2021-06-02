@@ -4,10 +4,10 @@ name: "ExportSolutionUpload"
 type: solution
 metadata: 
   title: "Microsoft Dataverse ExportSolutionUpload Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: a8415aba-1c06-4458-9969-1c60d9678df7
+  ms.assetid: 488c9099-4c16-4815-abec-507490d89336
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

@@ -4,7 +4,7 @@ name: "QueryByAttribute"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse QueryByAttribute ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2d0a3b10-4ce6-48bd-8614-6f6b838682c0

@@ -4,7 +4,7 @@ name: "RecentlyViewedRecordType"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse RecentlyViewedRecordType EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 60ec3077-9cc0-4b9d-93d0-d8f97fa3416c

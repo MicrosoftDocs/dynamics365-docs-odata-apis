@@ -4,7 +4,7 @@ name: "connection"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ce19ba67-4927-4093-b95a-1c251eec54f6
@@ -130,246 +130,48 @@ properties:
       iscomputed: false
       isreadonly: true
       options:
-        - value: 10166
-          label: "RTV"
-        - value: 10188
-          label: "IoT Device Category"
-        - value: 10068
-          label: "Process Notes"
-        - value: 10277
-          label: "Smart Links Content Viewed"
-        - value: 10124
-          label: "Customer Asset"
-        - value: 10141
-          label: "Payment"
-        - value: 10152
-          label: "Purchase Order SubStatus"
-        - value: 10256
-          label: "Customer Voice survey response"
-        - value: 10108
-          label: "Agreement Booking Date"
-        - value: 10167
-          label: "RTV Product"
-        - value: 10187
-          label: "IoT Device"
-        - value: 10148
-          label: "Purchase Order Bill"
-        - value: 10151
-          label: "Purchase Order Receipt Product"
-        - value: 10112
-          label: "Agreement Booking Service Task"
-        - value: 10028
-          label: "Time Group Detail"
-        - value: 10168
-          label: "RTV Substatus"
-        - value: 10107
-          label: "Agreement"
-        - value: 10176
-          label: "Work Order"
-        - value: 10032
-          label: "Project Service Approval"
-        - value: 10109
-          label: "Agreement Booking Incident"
-        - value: 10010
-          label: "Booking Rule"
-        - value: 10143
-          label: "Payment Method"
-        - value: 10156
-          label: "Quote Booking Service Task"
-        - value: 10171
-          label: "Tax Code"
-        - value: 10162
-          label: "RMA Product"
-        - value: 10173
-          label: "Time Off Request"
-        - value: 10190
-          label: "IoT Device Registration History"
-        - value: 10170
-          label: "Ship Via"
-        - value: 10163
-          label: "RMA Receipt"
-        - value: 10179
-          label: "Work Order Incident"
-        - value: 4400
-          label: "Campaign"
-        - value: 4300
-          label: "Marketing List"
-        - value: 8
-          label: "User"
-        - value: 4402
-          label: "Campaign Activity"
-        - value: 9701
-          label: "Entitlement Channel"
-        - value: 112
-          label: "Case"
-        - value: 9700
-          label: "Entitlement"
-        - value: 2013
-          label: "Territory"
-        - value: 1088
-          label: "Order"
-        - value: 123
-          label: "Competitor"
-        - value: 10392
-          label: "Customer Voice alert"
-        - value: 1084
-          label: "Quote"
-        - value: 4
-          label: "Lead"
-        - value: 1090
-          label: "Invoice"
-        - value: 3
-          label: "Opportunity"
-        - value: 10142
-          label: "Payment Detail"
-        - value: 10186
-          label: "IoT Alert"
-        - value: 10026
-          label: "System User Scheduler Setting"
-        - value: 10180
-          label: "Work Order Product"
-        - value: 10130
-          label: "Incident Type Product"
-        - value: 10189
-          label: "IoT Device Command"
-        - value: 10111
-          label: "Agreement Booking Service"
-        - value: 1024
-          label: "Product"
-        - value: 4005
-          label: "Scheduling Group"
-        - value: 4007
-          label: "Resource Group"
-        - value: 4000
-          label: "Facility/Equipment"
-        - value: 1010
-          label: "Contract"
-        - value: 1022
-          label: "Price List"
-        - value: 9703
-          label: "Entitlement Template Channel"
-        - value: 4214
-          label: "Service Activity"
-        - value: 10129
-          label: "Incident Type Characteristic"
-        - value: 10150
-          label: "Purchase Order Receipt"
-        - value: 10195
-          label: "News"
-        - value: 4710
-          label: "Process Session"
-        - value: 4210
-          label: "Phone Call"
-        - value: 9
-          label: "Team"
-        - value: 9400
-          label: "Channel Access Profile Rule"
-        - value: 10115
-          label: "Agreement Invoice Product"
-        - value: 10069
-          label: "Project"
-        - value: 10136
-          label: "Inventory Transfer"
-        - value: 10023
-          label: "Resource Territory"
-        - value: 10276
-          label: "Message"
-        - value: 10134
-          label: "Inventory Adjustment Product"
-        - value: 10008
-          label: "Booking Alert Status"
-        - value: 10182
-          label: "Work Order Service"
-        - value: 1
-          label: "Account"
-        - value: 4216
-          label: "Social Activity"
-        - value: 9930
-          label: "Knowledge Base Record"
-        - value: 9600
-          label: "Goal"
-        - value: 9953
-          label: "Knowledge Article"
-        - value: 4207
-          label: "Letter"
-        - value: 4200
-          label: "Activity"
-        - value: 50
-          label: "Position"
-        - value: 4251
-          label: "Recurring Appointment"
         - value: 4212
           label: "Task"
         - value: 99
           label: "Social Profile"
-        - value: 4204
-          label: "Fax"
-        - value: 4201
-          label: "Appointment"
-        - value: 4202
-          label: "Email"
+        - value: 4251
+          label: "Recurring Appointment"
         - value: 2
           label: "Contact"
-        - value: 10177
-          label: "Work Order Characteristic (Deprecated)"
-        - value: 10116
-          label: "Agreement Invoice Setup"
-        - value: 10255
-          label: "Customer Voice survey invite"
-        - value: 10145
-          label: "Postal Code"
-        - value: 10161
-          label: "RMA"
-        - value: 10275
-          label: "inMail"
-        - value: 10133
-          label: "Inventory Adjustment"
-        - value: 10181
-          label: "Resource Restriction (Deprecated)"
-        - value: 10147
-          label: "Purchase Order"
-        - value: 10146
-          label: "Product Inventory"
-        - value: 10165
-          label: "RMA SubStatus"
-        - value: 10077
-          label: "Project Team Member"
-        - value: 10155
-          label: "Quote Booking Service"
-        - value: 10113
-          label: "Agreement Booking Setup"
-        - value: 10007
-          label: "Booking Alert"
-        - value: 10153
-          label: "Quote Booking Incident"
-        - value: 10196
-          label: "Wrong Company?"
-        - value: 10131
-          label: "Incident Type Service"
-        - value: 10110
-          label: "Agreement Booking Product"
-        - value: 10149
-          label: "Purchase Order Product"
-        - value: 10144
-          label: "Payment Term"
-        - value: 10164
-          label: "RMA Receipt Product"
-        - value: 10001
-          label: "Profile Album"
-        - value: 10175
-          label: "Warehouse"
-        - value: 10183
-          label: "Work Order Service Task"
-        - value: 10119
-          label: "Booking Timestamp"
-        - value: 10114
-          label: "Agreement Invoice Date"
-        - value: 10154
-          label: "Quote Booking Product"
-        - value: 10135
-          label: "Inventory Journal"
-        - value: 10027
-          label: "Fulfillment Preference"
+        - value: 4204
+          label: "Fax"
+        - value: 4710
+          label: "Process Session"
+        - value: 2013
+          label: "Territory"
+        - value: 9400
+          label: "Channel Access Profile Rule"
+        - value: 4210
+          label: "Phone Call"
+        - value: 9
+          label: "Team"
+        - value: 4202
+          label: "Email"
+        - value: 9600
+          label: "Goal"
+        - value: 8
+          label: "User"
+        - value: 4200
+          label: "Activity"
+        - value: 9953
+          label: "Knowledge Article"
+        - value: 4207
+          label: "Letter"
+        - value: 50
+          label: "Position"
+        - value: 4201
+          label: "Appointment"
+        - value: 9930
+          label: "Knowledge Base Record"
+        - value: 1
+          label: "Account"
+        - value: 4216
+          label: "Social Activity"
     - name: record2objecttypecode
       type: Edm.Int32
       display_name: "Type (To)"
@@ -377,246 +179,48 @@ properties:
       iscomputed: false
       isreadonly: true
       options:
-        - value: 10171
-          label: "Tax Code"
-        - value: 10144
-          label: "Payment Term"
-        - value: 10001
-          label: "Profile Album"
-        - value: 10170
-          label: "Ship Via"
-        - value: 10010
-          label: "Booking Rule"
-        - value: 10113
-          label: "Agreement Booking Setup"
-        - value: 10143
-          label: "Payment Method"
-        - value: 10152
-          label: "Purchase Order SubStatus"
-        - value: 10147
-          label: "Purchase Order"
-        - value: 10168
-          label: "RTV Substatus"
-        - value: 10165
-          label: "RMA SubStatus"
-        - value: 10130
-          label: "Incident Type Product"
-        - value: 10166
-          label: "RTV"
-        - value: 10008
-          label: "Booking Alert Status"
-        - value: 10114
-          label: "Agreement Invoice Date"
-        - value: 10256
-          label: "Customer Voice survey response"
-        - value: 10131
-          label: "Incident Type Service"
-        - value: 10179
-          label: "Work Order Incident"
-        - value: 10186
-          label: "IoT Alert"
-        - value: 10182
-          label: "Work Order Service"
-        - value: 10142
-          label: "Payment Detail"
-        - value: 10077
-          label: "Project Team Member"
-        - value: 10026
-          label: "System User Scheduler Setting"
-        - value: 10150
-          label: "Purchase Order Receipt"
-        - value: 10023
-          label: "Resource Territory"
-        - value: 10153
-          label: "Quote Booking Incident"
-        - value: 10108
-          label: "Agreement Booking Date"
-        - value: 10189
-          label: "IoT Device Command"
-        - value: 10145
-          label: "Postal Code"
-        - value: 10027
-          label: "Fulfillment Preference"
-        - value: 4300
-          label: "Marketing List"
-        - value: 4402
-          label: "Campaign Activity"
-        - value: 8
-          label: "User"
-        - value: 4400
-          label: "Campaign"
-        - value: 9700
-          label: "Entitlement"
-        - value: 4000
-          label: "Facility/Equipment"
-        - value: 9703
-          label: "Entitlement Template Channel"
-        - value: 4
-          label: "Lead"
-        - value: 123
-          label: "Competitor"
-        - value: 2013
-          label: "Territory"
-        - value: 10392
-          label: "Customer Voice alert"
-        - value: 1088
-          label: "Order"
-        - value: 1090
-          label: "Invoice"
-        - value: 3
-          label: "Opportunity"
-        - value: 1084
-          label: "Quote"
-        - value: 10276
-          label: "Message"
-        - value: 10162
-          label: "RMA Product"
-        - value: 10148
-          label: "Purchase Order Bill"
-        - value: 10133
-          label: "Inventory Adjustment"
-        - value: 10069
-          label: "Project"
-        - value: 10129
-          label: "Incident Type Characteristic"
-        - value: 10176
-          label: "Work Order"
-        - value: 1022
-          label: "Price List"
-        - value: 4214
-          label: "Service Activity"
-        - value: 9701
-          label: "Entitlement Channel"
-        - value: 4005
-          label: "Scheduling Group"
-        - value: 1010
-          label: "Contract"
-        - value: 1024
-          label: "Product"
-        - value: 112
-          label: "Case"
-        - value: 4007
-          label: "Resource Group"
-        - value: 10134
-          label: "Inventory Adjustment Product"
-        - value: 10173
-          label: "Time Off Request"
-        - value: 10107
-          label: "Agreement"
-        - value: 4216
-          label: "Social Activity"
+        - value: 9
+          label: "Team"
         - value: 4207
           label: "Letter"
-        - value: 4202
-          label: "Email"
+        - value: 2
+          label: "Contact"
+        - value: 4251
+          label: "Recurring Appointment"
+        - value: 4210
+          label: "Phone Call"
+        - value: 4216
+          label: "Social Activity"
+        - value: 2013
+          label: "Territory"
         - value: 9953
           label: "Knowledge Article"
-        - value: 10167
-          label: "RTV Product"
-        - value: 10155
-          label: "Quote Booking Service"
-        - value: 10175
-          label: "Warehouse"
-        - value: 10188
-          label: "IoT Device Category"
-        - value: 10187
-          label: "IoT Device"
-        - value: 10196
-          label: "Wrong Company?"
-        - value: 10028
-          label: "Time Group Detail"
-        - value: 10275
-          label: "inMail"
-        - value: 1
-          label: "Account"
-        - value: 9930
-          label: "Knowledge Base Record"
-        - value: 4212
-          label: "Task"
+        - value: 4202
+          label: "Email"
+        - value: 8
+          label: "User"
+        - value: 4204
+          label: "Fax"
         - value: 4201
           label: "Appointment"
+        - value: 1
+          label: "Account"
+        - value: 4200
+          label: "Activity"
         - value: 99
           label: "Social Profile"
         - value: 9600
           label: "Goal"
-        - value: 4200
-          label: "Activity"
-        - value: 4710
-          label: "Process Session"
-        - value: 4210
-          label: "Phone Call"
-        - value: 2
-          label: "Contact"
-        - value: 9
-          label: "Team"
-        - value: 4251
-          label: "Recurring Appointment"
         - value: 9400
           label: "Channel Access Profile Rule"
         - value: 50
           label: "Position"
-        - value: 4204
-          label: "Fax"
-        - value: 10109
-          label: "Agreement Booking Incident"
-        - value: 10190
-          label: "IoT Device Registration History"
-        - value: 10146
-          label: "Product Inventory"
-        - value: 10116
-          label: "Agreement Invoice Setup"
-        - value: 10180
-          label: "Work Order Product"
-        - value: 10255
-          label: "Customer Voice survey invite"
-        - value: 10032
-          label: "Project Service Approval"
-        - value: 10156
-          label: "Quote Booking Service Task"
-        - value: 10277
-          label: "Smart Links Content Viewed"
-        - value: 10177
-          label: "Work Order Characteristic (Deprecated)"
-        - value: 10136
-          label: "Inventory Transfer"
-        - value: 10007
-          label: "Booking Alert"
-        - value: 10164
-          label: "RMA Receipt Product"
-        - value: 10141
-          label: "Payment"
-        - value: 10115
-          label: "Agreement Invoice Product"
-        - value: 10119
-          label: "Booking Timestamp"
-        - value: 10149
-          label: "Purchase Order Product"
-        - value: 10183
-          label: "Work Order Service Task"
-        - value: 10181
-          label: "Resource Restriction (Deprecated)"
-        - value: 10068
-          label: "Process Notes"
-        - value: 10112
-          label: "Agreement Booking Service Task"
-        - value: 10135
-          label: "Inventory Journal"
-        - value: 10151
-          label: "Purchase Order Receipt Product"
-        - value: 10195
-          label: "News"
-        - value: 10111
-          label: "Agreement Booking Service"
-        - value: 10163
-          label: "RMA Receipt"
-        - value: 10154
-          label: "Quote Booking Product"
-        - value: 10161
-          label: "RMA"
-        - value: 10124
-          label: "Customer Asset"
-        - value: 10110
-          label: "Agreement Booking Product"
+        - value: 4710
+          label: "Process Session"
+        - value: 9930
+          label: "Knowledge Base Record"
+        - value: 4212
+          label: "Task"
     - name: statecode
       type: Edm.Int32
       display_name: "Status"
@@ -689,97 +293,8 @@ lookup_properties:
     - record1id_goal
     - record1id_account
     - record1id_activitypointer
-    - record1id_msdyn_postalbum
-    - record1id_msdyn_bookingalertstatus
-    - record1id_msdyn_bookingrule
-    - record1id_msdyn_resourceterritory
-    - record1id_msdyn_systemuserschedulersetting
-    - record1id_msdyn_timegroup
-    - record1id_msdyn_timegroupdetail
-    - record1id_msdyn_processnotes
-    - record1id_msdyn_project
-    - record1id_msdyn_projectteam
-    - record1id_msdyn_agreement
-    - record1id_msdyn_agreementbookingdate
-    - record1id_msdyn_agreementbookingincident
-    - record1id_msdyn_agreementbookingproduct
-    - record1id_msdyn_agreementbookingservice
-    - record1id_msdyn_agreementbookingservicetask
-    - record1id_msdyn_agreementbookingsetup
-    - record1id_msdyn_agreementinvoicedate
-    - record1id_msdyn_agreementinvoiceproduct
-    - record1id_msdyn_agreementinvoicesetup
-    - record1id_msdyn_bookingtimestamp
-    - record1id_msdyn_customerasset
-    - record1id_msdyn_incidenttypecharacteristic
-    - record1id_msdyn_incidenttypeproduct
-    - record1id_msdyn_incidenttypeservice
-    - record1id_msdyn_inventoryadjustment
-    - record1id_msdyn_inventoryadjustmentproduct
-    - record1id_msdyn_inventoryjournal
-    - record1id_msdyn_inventorytransfer
-    - record1id_msdyn_payment
-    - record1id_msdyn_paymentdetail
-    - record1id_msdyn_paymentmethod
-    - record1id_msdyn_paymentterm
-    - record1id_msdyn_postalcode
-    - record1id_msdyn_productinventory
-    - record1id_msdyn_purchaseorder
-    - record1id_msdyn_purchaseorderbill
-    - record1id_msdyn_purchaseorderproduct
-    - record1id_msdyn_purchaseorderreceipt
-    - record1id_msdyn_purchaseorderreceiptproduct
-    - record1id_msdyn_purchaseordersubstatus
-    - record1id_msdyn_quotebookingincident
-    - record1id_msdyn_quotebookingproduct
-    - record1id_msdyn_quotebookingservice
-    - record1id_msdyn_quotebookingservicetask
-    - record1id_msdyn_rma
-    - record1id_msdyn_rmaproduct
-    - record1id_msdyn_rmareceipt
-    - record1id_msdyn_rmareceiptproduct
-    - record1id_msdyn_rmasubstatus
-    - record1id_msdyn_rtv
-    - record1id_msdyn_rtvproduct
-    - record1id_msdyn_rtvsubstatus
-    - record1id_msdyn_shipvia
-    - record1id_msdyn_taxcode
-    - record1id_msdyn_timeoffrequest
-    - record1id_msdyn_warehouse
-    - record1id_msdyn_workorder
-    - record1id_msdyn_workordercharacteristic
-    - record1id_msdyn_workorderincident
-    - record1id_msdyn_workorderproduct
-    - record1id_msdyn_workorderresourcerestriction
-    - record1id_msdyn_workorderservice
-    - record1id_msdyn_workorderservicetask
-    - record1id_msdyn_iotalert
-    - record1id_msdyn_iotdevice
-    - record1id_msdyn_iotdevicecategory
-    - record1id_msdyn_iotdevicecommand
-    - record1id_msdyn_iotdeviceregistrationhistory
-    - record1id_ms_newsitem
-    - record1id_ms_satori
-    - record1id_pricelevel
-    - record1id_product
-    - record1id_constraintbasedgroup
-    - record1id_contract
-    - record1id_entitlement
-    - record1id_entitlementchannel
-    - record1id_entitlementtemplatechannel
-    - record1id_equipment
-    - record1id_incident
-    - record1id_resourcegroup
-    - record1id_campaign
-    - record1id_list
     - record1id_territory
-    - record1id_lead
-    - record1id_invoice
-    - record1id_opportunity
-    - record1id_quote
-    - record1id_salesorder
-    - record1id_competitor
-    description: "Unique identifier of the source record."
+    description: "Choose the primary account, contact, or other record involved in the connection."
   - name: _record1roleid_value
     single_valued_navigation_property:
     - record1roleid
@@ -797,97 +312,8 @@ lookup_properties:
     - record2id_processsession
     - record2id_activitypointer
     - record2id_contact
-    - record2id_msdyn_postalbum
-    - record2id_msdyn_bookingalertstatus
-    - record2id_msdyn_bookingrule
-    - record2id_msdyn_resourceterritory
-    - record2id_msdyn_systemuserschedulersetting
-    - record2id_msdyn_timegroup
-    - record2id_msdyn_timegroupdetail
-    - record2id_msdyn_processnotes
-    - record2id_msdyn_project
-    - record2id_msdyn_projectteam
-    - record2id_msdyn_agreement
-    - record2id_msdyn_agreementbookingdate
-    - record2id_msdyn_agreementbookingincident
-    - record2id_msdyn_agreementbookingproduct
-    - record2id_msdyn_agreementbookingservice
-    - record2id_msdyn_agreementbookingservicetask
-    - record2id_msdyn_agreementbookingsetup
-    - record2id_msdyn_agreementinvoicedate
-    - record2id_msdyn_agreementinvoiceproduct
-    - record2id_msdyn_agreementinvoicesetup
-    - record2id_msdyn_bookingtimestamp
-    - record2id_msdyn_customerasset
-    - record2id_msdyn_incidenttypecharacteristic
-    - record2id_msdyn_incidenttypeproduct
-    - record2id_msdyn_incidenttypeservice
-    - record2id_msdyn_inventoryadjustment
-    - record2id_msdyn_inventoryadjustmentproduct
-    - record2id_msdyn_inventoryjournal
-    - record2id_msdyn_inventorytransfer
-    - record2id_msdyn_payment
-    - record2id_msdyn_paymentdetail
-    - record2id_msdyn_paymentmethod
-    - record2id_msdyn_paymentterm
-    - record2id_msdyn_postalcode
-    - record2id_msdyn_productinventory
-    - record2id_msdyn_purchaseorder
-    - record2id_msdyn_purchaseorderbill
-    - record2id_msdyn_purchaseorderproduct
-    - record2id_msdyn_purchaseorderreceipt
-    - record2id_msdyn_purchaseorderreceiptproduct
-    - record2id_msdyn_purchaseordersubstatus
-    - record2id_msdyn_quotebookingincident
-    - record2id_msdyn_quotebookingproduct
-    - record2id_msdyn_quotebookingservice
-    - record2id_msdyn_quotebookingservicetask
-    - record2id_msdyn_rma
-    - record2id_msdyn_rmaproduct
-    - record2id_msdyn_rmareceipt
-    - record2id_msdyn_rmareceiptproduct
-    - record2id_msdyn_rmasubstatus
-    - record2id_msdyn_rtv
-    - record2id_msdyn_rtvproduct
-    - record2id_msdyn_rtvsubstatus
-    - record2id_msdyn_shipvia
-    - record2id_msdyn_taxcode
-    - record2id_msdyn_timeoffrequest
-    - record2id_msdyn_warehouse
-    - record2id_msdyn_workorder
-    - record2id_msdyn_workordercharacteristic
-    - record2id_msdyn_workorderincident
-    - record2id_msdyn_workorderproduct
-    - record2id_msdyn_workorderresourcerestriction
-    - record2id_msdyn_workorderservice
-    - record2id_msdyn_workorderservicetask
-    - record2id_msdyn_iotalert
-    - record2id_msdyn_iotdevice
-    - record2id_msdyn_iotdevicecategory
-    - record2id_msdyn_iotdevicecommand
-    - record2id_msdyn_iotdeviceregistrationhistory
-    - record2id_ms_newsitem
-    - record2id_ms_satori
-    - record2id_pricelevel
-    - record2id_product
-    - record2id_constraintbasedgroup
-    - record2id_contract
-    - record2id_entitlement
-    - record2id_entitlementchannel
-    - record2id_entitlementtemplatechannel
-    - record2id_equipment
-    - record2id_incident
-    - record2id_resourcegroup
-    - record2id_campaign
-    - record2id_list
     - record2id_territory
-    - record2id_lead
-    - record2id_invoice
-    - record2id_opportunity
-    - record2id_quote
-    - record2id_salesorder
-    - record2id_competitor
-    description: "Unique identifier of the target record."
+    description: "Select the secondary account, contact, or other record involved in the connection."
   - name: _record2roleid_value
     single_valued_navigation_property:
     - record2roleid
@@ -930,336 +356,39 @@ single_valued_navigation_properties:
   - name: record1id_appointment
     type: Microsoft.Dynamics.CRM.appointment
     partner: appointment_connections1
-  - name: record1id_campaign
-    type: Microsoft.Dynamics.CRM.campaign
-    partner: campaign_connections1
-  - name: record1id_campaignactivity
-    type: Microsoft.Dynamics.CRM.campaignactivity
-    partner: campaignactivity_connections1
-  - name: record1id_competitor
-    type: Microsoft.Dynamics.CRM.competitor
-    partner: competitor_connections1
-  - name: record1id_constraintbasedgroup
-    type: Microsoft.Dynamics.CRM.constraintbasedgroup
-    partner: constraintbasedgroup_connections1
   - name: record1id_contact
     type: Microsoft.Dynamics.CRM.contact
     partner: contact_connections1
-  - name: record1id_contract
-    type: Microsoft.Dynamics.CRM.contract
-    partner: contract_connections1
   - name: record1id_email
     type: Microsoft.Dynamics.CRM.email
     partner: email_connections1
-  - name: record1id_entitlement
-    type: Microsoft.Dynamics.CRM.entitlement
-    partner: entitlement_connections1
-  - name: record1id_entitlementchannel
-    type: Microsoft.Dynamics.CRM.entitlementchannel
-    partner: entitlementchannel_connections1
-  - name: record1id_entitlementtemplatechannel
-    type: Microsoft.Dynamics.CRM.entitlementtemplatechannel
-    partner: entitlementtemplatechannel_connections1
-  - name: record1id_equipment
-    type: Microsoft.Dynamics.CRM.equipment
-    partner: equipment_connections1
   - name: record1id_fax
     type: Microsoft.Dynamics.CRM.fax
     partner: fax_connections1
   - name: record1id_goal
     type: Microsoft.Dynamics.CRM.goal
     partner: goal_connections1
-  - name: record1id_incident
-    type: Microsoft.Dynamics.CRM.incident
-    partner: incident_connections1
-  - name: record1id_invoice
-    type: Microsoft.Dynamics.CRM.invoice
-    partner: invoice_connections1
   - name: record1id_knowledgearticle
     type: Microsoft.Dynamics.CRM.knowledgearticle
     partner: knowledgearticle_connections1
   - name: record1id_knowledgebaserecord
     type: Microsoft.Dynamics.CRM.knowledgebaserecord
     partner: KnowledgeBaseRecord_connections1
-  - name: record1id_lead
-    type: Microsoft.Dynamics.CRM.lead
-    partner: lead_connections1
   - name: record1id_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: letter_connections1
-  - name: record1id_li_inmail
-    type: Microsoft.Dynamics.CRM.li_inmail
-    partner: li_inmail_connections1
-  - name: record1id_li_message
-    type: Microsoft.Dynamics.CRM.li_message
-    partner: li_message_connections1
-  - name: record1id_li_pointdrivepresentationviewed
-    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
-    partner: li_pointdrivepresentationviewed_connections1
-  - name: record1id_list
-    type: Microsoft.Dynamics.CRM.list
-    partner: list_connections1
-  - name: record1id_ms_newsitem
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: ms_newsitem_connections1
-  - name: record1id_ms_satori
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: ms_satori_connections1
-  - name: record1id_msdyn_agreement
-    type: Microsoft.Dynamics.CRM.msdyn_agreement
-    partner: msdyn_agreement_connections1
-  - name: record1id_msdyn_agreementbookingdate
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
-    partner: msdyn_agreementbookingdate_connections1
-  - name: record1id_msdyn_agreementbookingincident
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
-    partner: msdyn_agreementbookingincident_connections1
-  - name: record1id_msdyn_agreementbookingproduct
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
-    partner: msdyn_agreementbookingproduct_connections1
-  - name: record1id_msdyn_agreementbookingservice
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
-    partner: msdyn_agreementbookingservice_connections1
-  - name: record1id_msdyn_agreementbookingservicetask
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask
-    partner: msdyn_agreementbookingservicetask_connections1
-  - name: record1id_msdyn_agreementbookingsetup
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
-    partner: msdyn_agreementbookingsetup_connections1
-  - name: record1id_msdyn_agreementinvoicedate
-    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
-    partner: msdyn_agreementinvoicedate_connections1
-  - name: record1id_msdyn_agreementinvoiceproduct
-    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
-    partner: msdyn_agreementinvoiceproduct_connections1
-  - name: record1id_msdyn_agreementinvoicesetup
-    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
-    partner: msdyn_agreementinvoicesetup_connections1
-  - name: record1id_msdyn_approval
-    type: Microsoft.Dynamics.CRM.msdyn_approval
-    partner: msdyn_approval_connections1
-  - name: record1id_msdyn_bookingalert
-    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
-    partner: msdyn_bookingalert_connections1
-  - name: record1id_msdyn_bookingalertstatus
-    type: Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
-    partner: msdyn_bookingalertstatus_connections1
-  - name: record1id_msdyn_bookingrule
-    type: Microsoft.Dynamics.CRM.msdyn_bookingrule
-    partner: msdyn_bookingrule_connections1
-  - name: record1id_msdyn_bookingtimestamp
-    type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
-    partner: msdyn_bookingtimestamp_connections1
-  - name: record1id_msdyn_customerasset
-    type: Microsoft.Dynamics.CRM.msdyn_customerasset
-    partner: msdyn_customerasset_connections1
-  - name: record1id_msdyn_incidenttypecharacteristic
-    type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
-    partner: msdyn_incidenttypecharacteristic_connections1
-  - name: record1id_msdyn_incidenttypeproduct
-    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
-    partner: msdyn_incidenttypeproduct_connections1
-  - name: record1id_msdyn_incidenttypeservice
-    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
-    partner: msdyn_incidenttypeservice_connections1
-  - name: record1id_msdyn_inventoryadjustment
-    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
-    partner: msdyn_inventoryadjustment_connections1
-  - name: record1id_msdyn_inventoryadjustmentproduct
-    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
-    partner: msdyn_inventoryadjustmentproduct_connections1
-  - name: record1id_msdyn_inventoryjournal
-    type: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
-    partner: msdyn_inventoryjournal_connections1
-  - name: record1id_msdyn_inventorytransfer
-    type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
-    partner: msdyn_inventorytransfer_connections1
-  - name: record1id_msdyn_iotalert
-    type: Microsoft.Dynamics.CRM.msdyn_iotalert
-    partner: msdyn_iotalert_connections1
-  - name: record1id_msdyn_iotdevice
-    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
-    partner: msdyn_iotdevice_connections1
-  - name: record1id_msdyn_iotdevicecategory
-    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
-    partner: msdyn_iotdevicecategory_connections1
-  - name: record1id_msdyn_iotdevicecommand
-    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
-    partner: msdyn_iotdevicecommand_connections1
-  - name: record1id_msdyn_iotdeviceregistrationhistory
-    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
-    partner: msdyn_iotdeviceregistrationhistory_connections1
-  - name: record1id_msdyn_payment
-    type: Microsoft.Dynamics.CRM.msdyn_payment
-    partner: msdyn_payment_connections1
-  - name: record1id_msdyn_paymentdetail
-    type: Microsoft.Dynamics.CRM.msdyn_paymentdetail
-    partner: msdyn_paymentdetail_connections1
-  - name: record1id_msdyn_paymentmethod
-    type: Microsoft.Dynamics.CRM.msdyn_paymentmethod
-    partner: msdyn_paymentmethod_connections1
-  - name: record1id_msdyn_paymentterm
-    type: Microsoft.Dynamics.CRM.msdyn_paymentterm
-    partner: msdyn_paymentterm_connections1
-  - name: record1id_msdyn_postalbum
-    type: Microsoft.Dynamics.CRM.msdyn_postalbum
-    partner: msdyn_postalbum_connections1
-  - name: record1id_msdyn_postalcode
-    type: Microsoft.Dynamics.CRM.msdyn_postalcode
-    partner: msdyn_postalcode_connections1
-  - name: record1id_msdyn_processnotes
-    type: Microsoft.Dynamics.CRM.msdyn_processnotes
-    partner: msdyn_processnotes_connections1
-  - name: record1id_msdyn_productinventory
-    type: Microsoft.Dynamics.CRM.msdyn_productinventory
-    partner: msdyn_productinventory_connections1
-  - name: record1id_msdyn_project
-    type: Microsoft.Dynamics.CRM.msdyn_project
-    partner: msdyn_project_connections1
-  - name: record1id_msdyn_projectteam
-    type: Microsoft.Dynamics.CRM.msdyn_projectteam
-    partner: msdyn_projectteam_connections1
-  - name: record1id_msdyn_purchaseorder
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
-    partner: msdyn_purchaseorder_connections1
-  - name: record1id_msdyn_purchaseorderbill
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
-    partner: msdyn_purchaseorderbill_connections1
-  - name: record1id_msdyn_purchaseorderproduct
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
-    partner: msdyn_purchaseorderproduct_connections1
-  - name: record1id_msdyn_purchaseorderreceipt
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
-    partner: msdyn_purchaseorderreceipt_connections1
-  - name: record1id_msdyn_purchaseorderreceiptproduct
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
-    partner: msdyn_purchaseorderreceiptproduct_connections1
-  - name: record1id_msdyn_purchaseordersubstatus
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus
-    partner: msdyn_purchaseordersubstatus_connections1
-  - name: record1id_msdyn_quotebookingincident
-    type: Microsoft.Dynamics.CRM.msdyn_quotebookingincident
-    partner: msdyn_quotebookingincident_connections1
-  - name: record1id_msdyn_quotebookingproduct
-    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
-    partner: msdyn_quotebookingproduct_connections1
-  - name: record1id_msdyn_quotebookingservice
-    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
-    partner: msdyn_quotebookingservice_connections1
-  - name: record1id_msdyn_quotebookingservicetask
-    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask
-    partner: msdyn_quotebookingservicetask_connections1
-  - name: record1id_msdyn_resourceterritory
-    type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
-    partner: msdyn_resourceterritory_connections1
-  - name: record1id_msdyn_rma
-    type: Microsoft.Dynamics.CRM.msdyn_rma
-    partner: msdyn_rma_connections1
-  - name: record1id_msdyn_rmaproduct
-    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
-    partner: msdyn_rmaproduct_connections1
-  - name: record1id_msdyn_rmareceipt
-    type: Microsoft.Dynamics.CRM.msdyn_rmareceipt
-    partner: msdyn_rmareceipt_connections1
-  - name: record1id_msdyn_rmareceiptproduct
-    type: Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct
-    partner: msdyn_rmareceiptproduct_connections1
-  - name: record1id_msdyn_rmasubstatus
-    type: Microsoft.Dynamics.CRM.msdyn_rmasubstatus
-    partner: msdyn_rmasubstatus_connections1
-  - name: record1id_msdyn_rtv
-    type: Microsoft.Dynamics.CRM.msdyn_rtv
-    partner: msdyn_rtv_connections1
-  - name: record1id_msdyn_rtvproduct
-    type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
-    partner: msdyn_rtvproduct_connections1
-  - name: record1id_msdyn_rtvsubstatus
-    type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
-    partner: msdyn_rtvsubstatus_connections1
-  - name: record1id_msdyn_shipvia
-    type: Microsoft.Dynamics.CRM.msdyn_shipvia
-    partner: msdyn_shipvia_connections1
-  - name: record1id_msdyn_systemuserschedulersetting
-    type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
-    partner: msdyn_systemuserschedulersetting_connections1
-  - name: record1id_msdyn_taxcode
-    type: Microsoft.Dynamics.CRM.msdyn_taxcode
-    partner: msdyn_taxcode_connections1
-  - name: record1id_msdyn_timegroup
-    type: Microsoft.Dynamics.CRM.msdyn_timegroup
-    partner: msdyn_timegroup_connections1
-  - name: record1id_msdyn_timegroupdetail
-    type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
-    partner: msdyn_timegroupdetail_connections1
-  - name: record1id_msdyn_timeoffrequest
-    type: Microsoft.Dynamics.CRM.msdyn_timeoffrequest
-    partner: msdyn_timeoffrequest_connections1
-  - name: record1id_msdyn_warehouse
-    type: Microsoft.Dynamics.CRM.msdyn_warehouse
-    partner: msdyn_warehouse_connections1
-  - name: record1id_msdyn_workorder
-    type: Microsoft.Dynamics.CRM.msdyn_workorder
-    partner: msdyn_workorder_connections1
-  - name: record1id_msdyn_workordercharacteristic
-    type: Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
-    partner: msdyn_workordercharacteristic_connections1
-  - name: record1id_msdyn_workorderincident
-    type: Microsoft.Dynamics.CRM.msdyn_workorderincident
-    partner: msdyn_workorderincident_connections1
-  - name: record1id_msdyn_workorderproduct
-    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
-    partner: msdyn_workorderproduct_connections1
-  - name: record1id_msdyn_workorderresourcerestriction
-    type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
-    partner: msdyn_workorderresourcerestriction_connections1
-  - name: record1id_msdyn_workorderservice
-    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
-    partner: msdyn_workorderservice_connections1
-  - name: record1id_msdyn_workorderservicetask
-    type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
-    partner: msdyn_workorderservicetask_connections1
-  - name: record1id_msfp_alert
-    type: Microsoft.Dynamics.CRM.msfp_alert
-    partner: msfp_alert_connections1
-  - name: record1id_msfp_surveyinvite
-    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
-    partner: msfp_surveyinvite_connections1
-  - name: record1id_msfp_surveyresponse
-    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
-    partner: msfp_surveyresponse_connections1
-  - name: record1id_opportunity
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: opportunity_connections1
   - name: record1id_phonecall
     type: Microsoft.Dynamics.CRM.phonecall
     partner: phonecall_connections1
   - name: record1id_position
     type: Microsoft.Dynamics.CRM.position
     partner: position_connection1
-  - name: record1id_pricelevel
-    type: Microsoft.Dynamics.CRM.pricelevel
-    partner: pricelevel_connections1
   - name: record1id_processsession
     type: Microsoft.Dynamics.CRM.processsession
     partner: processsession_connections1
-  - name: record1id_product
-    type: Microsoft.Dynamics.CRM.product
-    partner: product_connections1
-  - name: record1id_quote
-    type: Microsoft.Dynamics.CRM.quote
-    partner: quote_connections1
   - name: record1id_recurringappointmentmaster
     type: Microsoft.Dynamics.CRM.recurringappointmentmaster
     partner: recurringappointmentmaster_connections1
-  - name: record1id_resourcegroup
-    type: Microsoft.Dynamics.CRM.resourcegroup
-    partner: resourcegroup_connections1
-  - name: record1id_salesorder
-    type: Microsoft.Dynamics.CRM.salesorder
-    partner: salesorder_connections1
-  - name: record1id_serviceappointment
-    type: Microsoft.Dynamics.CRM.serviceappointment
-    partner: serviceappointment_connections1
   - name: record1id_socialactivity
     type: Microsoft.Dynamics.CRM.socialactivity
     partner: socialactivity_connections1
@@ -1290,336 +419,39 @@ single_valued_navigation_properties:
   - name: record2id_appointment
     type: Microsoft.Dynamics.CRM.appointment
     partner: appointment_connections2
-  - name: record2id_campaign
-    type: Microsoft.Dynamics.CRM.campaign
-    partner: campaign_connections2
-  - name: record2id_campaignactivity
-    type: Microsoft.Dynamics.CRM.campaignactivity
-    partner: campaignactivity_connections2
-  - name: record2id_competitor
-    type: Microsoft.Dynamics.CRM.competitor
-    partner: competitor_connections2
-  - name: record2id_constraintbasedgroup
-    type: Microsoft.Dynamics.CRM.constraintbasedgroup
-    partner: constraintbasedgroup_connections2
   - name: record2id_contact
     type: Microsoft.Dynamics.CRM.contact
     partner: contact_connections2
-  - name: record2id_contract
-    type: Microsoft.Dynamics.CRM.contract
-    partner: contract_connections2
   - name: record2id_email
     type: Microsoft.Dynamics.CRM.email
     partner: email_connections2
-  - name: record2id_entitlement
-    type: Microsoft.Dynamics.CRM.entitlement
-    partner: entitlement_connections2
-  - name: record2id_entitlementchannel
-    type: Microsoft.Dynamics.CRM.entitlementchannel
-    partner: entitlementchannel_connections2
-  - name: record2id_entitlementtemplatechannel
-    type: Microsoft.Dynamics.CRM.entitlementtemplatechannel
-    partner: entitlementtemplatechannel_connections2
-  - name: record2id_equipment
-    type: Microsoft.Dynamics.CRM.equipment
-    partner: equipment_connections2
   - name: record2id_fax
     type: Microsoft.Dynamics.CRM.fax
     partner: fax_connections2
   - name: record2id_goal
     type: Microsoft.Dynamics.CRM.goal
     partner: goal_connections2
-  - name: record2id_incident
-    type: Microsoft.Dynamics.CRM.incident
-    partner: incident_connections2
-  - name: record2id_invoice
-    type: Microsoft.Dynamics.CRM.invoice
-    partner: invoice_connections2
   - name: record2id_knowledgearticle
     type: Microsoft.Dynamics.CRM.knowledgearticle
     partner: knowledgearticle_connections2
   - name: record2id_knowledgebaserecord
     type: Microsoft.Dynamics.CRM.knowledgebaserecord
     partner: KnowledgeBaseRecord_connections2
-  - name: record2id_lead
-    type: Microsoft.Dynamics.CRM.lead
-    partner: lead_connections2
   - name: record2id_letter
     type: Microsoft.Dynamics.CRM.letter
     partner: letter_connections2
-  - name: record2id_li_inmail
-    type: Microsoft.Dynamics.CRM.li_inmail
-    partner: li_inmail_connections2
-  - name: record2id_li_message
-    type: Microsoft.Dynamics.CRM.li_message
-    partner: li_message_connections2
-  - name: record2id_li_pointdrivepresentationviewed
-    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
-    partner: li_pointdrivepresentationviewed_connections2
-  - name: record2id_list
-    type: Microsoft.Dynamics.CRM.list
-    partner: list_connections2
-  - name: record2id_ms_newsitem
-    type: Microsoft.Dynamics.CRM.ms_newsitem
-    partner: ms_newsitem_connections2
-  - name: record2id_ms_satori
-    type: Microsoft.Dynamics.CRM.ms_satori
-    partner: ms_satori_connections2
-  - name: record2id_msdyn_agreement
-    type: Microsoft.Dynamics.CRM.msdyn_agreement
-    partner: msdyn_agreement_connections2
-  - name: record2id_msdyn_agreementbookingdate
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingdate
-    partner: msdyn_agreementbookingdate_connections2
-  - name: record2id_msdyn_agreementbookingincident
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingincident
-    partner: msdyn_agreementbookingincident_connections2
-  - name: record2id_msdyn_agreementbookingproduct
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingproduct
-    partner: msdyn_agreementbookingproduct_connections2
-  - name: record2id_msdyn_agreementbookingservice
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservice
-    partner: msdyn_agreementbookingservice_connections2
-  - name: record2id_msdyn_agreementbookingservicetask
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingservicetask
-    partner: msdyn_agreementbookingservicetask_connections2
-  - name: record2id_msdyn_agreementbookingsetup
-    type: Microsoft.Dynamics.CRM.msdyn_agreementbookingsetup
-    partner: msdyn_agreementbookingsetup_connections2
-  - name: record2id_msdyn_agreementinvoicedate
-    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicedate
-    partner: msdyn_agreementinvoicedate_connections2
-  - name: record2id_msdyn_agreementinvoiceproduct
-    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoiceproduct
-    partner: msdyn_agreementinvoiceproduct_connections2
-  - name: record2id_msdyn_agreementinvoicesetup
-    type: Microsoft.Dynamics.CRM.msdyn_agreementinvoicesetup
-    partner: msdyn_agreementinvoicesetup_connections2
-  - name: record2id_msdyn_approval
-    type: Microsoft.Dynamics.CRM.msdyn_approval
-    partner: msdyn_approval_connections2
-  - name: record2id_msdyn_bookingalert
-    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
-    partner: msdyn_bookingalert_connections2
-  - name: record2id_msdyn_bookingalertstatus
-    type: Microsoft.Dynamics.CRM.msdyn_bookingalertstatus
-    partner: msdyn_bookingalertstatus_connections2
-  - name: record2id_msdyn_bookingrule
-    type: Microsoft.Dynamics.CRM.msdyn_bookingrule
-    partner: msdyn_bookingrule_connections2
-  - name: record2id_msdyn_bookingtimestamp
-    type: Microsoft.Dynamics.CRM.msdyn_bookingtimestamp
-    partner: msdyn_bookingtimestamp_connections2
-  - name: record2id_msdyn_customerasset
-    type: Microsoft.Dynamics.CRM.msdyn_customerasset
-    partner: msdyn_customerasset_connections2
-  - name: record2id_msdyn_incidenttypecharacteristic
-    type: Microsoft.Dynamics.CRM.msdyn_incidenttypecharacteristic
-    partner: msdyn_incidenttypecharacteristic_connections2
-  - name: record2id_msdyn_incidenttypeproduct
-    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeproduct
-    partner: msdyn_incidenttypeproduct_connections2
-  - name: record2id_msdyn_incidenttypeservice
-    type: Microsoft.Dynamics.CRM.msdyn_incidenttypeservice
-    partner: msdyn_incidenttypeservice_connections2
-  - name: record2id_msdyn_inventoryadjustment
-    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustment
-    partner: msdyn_inventoryadjustment_connections2
-  - name: record2id_msdyn_inventoryadjustmentproduct
-    type: Microsoft.Dynamics.CRM.msdyn_inventoryadjustmentproduct
-    partner: msdyn_inventoryadjustmentproduct_connections2
-  - name: record2id_msdyn_inventoryjournal
-    type: Microsoft.Dynamics.CRM.msdyn_inventoryjournal
-    partner: msdyn_inventoryjournal_connections2
-  - name: record2id_msdyn_inventorytransfer
-    type: Microsoft.Dynamics.CRM.msdyn_inventorytransfer
-    partner: msdyn_inventorytransfer_connections2
-  - name: record2id_msdyn_iotalert
-    type: Microsoft.Dynamics.CRM.msdyn_iotalert
-    partner: msdyn_iotalert_connections2
-  - name: record2id_msdyn_iotdevice
-    type: Microsoft.Dynamics.CRM.msdyn_iotdevice
-    partner: msdyn_iotdevice_connections2
-  - name: record2id_msdyn_iotdevicecategory
-    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecategory
-    partner: msdyn_iotdevicecategory_connections2
-  - name: record2id_msdyn_iotdevicecommand
-    type: Microsoft.Dynamics.CRM.msdyn_iotdevicecommand
-    partner: msdyn_iotdevicecommand_connections2
-  - name: record2id_msdyn_iotdeviceregistrationhistory
-    type: Microsoft.Dynamics.CRM.msdyn_iotdeviceregistrationhistory
-    partner: msdyn_iotdeviceregistrationhistory_connections2
-  - name: record2id_msdyn_payment
-    type: Microsoft.Dynamics.CRM.msdyn_payment
-    partner: msdyn_payment_connections2
-  - name: record2id_msdyn_paymentdetail
-    type: Microsoft.Dynamics.CRM.msdyn_paymentdetail
-    partner: msdyn_paymentdetail_connections2
-  - name: record2id_msdyn_paymentmethod
-    type: Microsoft.Dynamics.CRM.msdyn_paymentmethod
-    partner: msdyn_paymentmethod_connections2
-  - name: record2id_msdyn_paymentterm
-    type: Microsoft.Dynamics.CRM.msdyn_paymentterm
-    partner: msdyn_paymentterm_connections2
-  - name: record2id_msdyn_postalbum
-    type: Microsoft.Dynamics.CRM.msdyn_postalbum
-    partner: msdyn_postalbum_connections2
-  - name: record2id_msdyn_postalcode
-    type: Microsoft.Dynamics.CRM.msdyn_postalcode
-    partner: msdyn_postalcode_connections2
-  - name: record2id_msdyn_processnotes
-    type: Microsoft.Dynamics.CRM.msdyn_processnotes
-    partner: msdyn_processnotes_connections2
-  - name: record2id_msdyn_productinventory
-    type: Microsoft.Dynamics.CRM.msdyn_productinventory
-    partner: msdyn_productinventory_connections2
-  - name: record2id_msdyn_project
-    type: Microsoft.Dynamics.CRM.msdyn_project
-    partner: msdyn_project_connections2
-  - name: record2id_msdyn_projectteam
-    type: Microsoft.Dynamics.CRM.msdyn_projectteam
-    partner: msdyn_projectteam_connections2
-  - name: record2id_msdyn_purchaseorder
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorder
-    partner: msdyn_purchaseorder_connections2
-  - name: record2id_msdyn_purchaseorderbill
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderbill
-    partner: msdyn_purchaseorderbill_connections2
-  - name: record2id_msdyn_purchaseorderproduct
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderproduct
-    partner: msdyn_purchaseorderproduct_connections2
-  - name: record2id_msdyn_purchaseorderreceipt
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceipt
-    partner: msdyn_purchaseorderreceipt_connections2
-  - name: record2id_msdyn_purchaseorderreceiptproduct
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseorderreceiptproduct
-    partner: msdyn_purchaseorderreceiptproduct_connections2
-  - name: record2id_msdyn_purchaseordersubstatus
-    type: Microsoft.Dynamics.CRM.msdyn_purchaseordersubstatus
-    partner: msdyn_purchaseordersubstatus_connections2
-  - name: record2id_msdyn_quotebookingincident
-    type: Microsoft.Dynamics.CRM.msdyn_quotebookingincident
-    partner: msdyn_quotebookingincident_connections2
-  - name: record2id_msdyn_quotebookingproduct
-    type: Microsoft.Dynamics.CRM.msdyn_quotebookingproduct
-    partner: msdyn_quotebookingproduct_connections2
-  - name: record2id_msdyn_quotebookingservice
-    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservice
-    partner: msdyn_quotebookingservice_connections2
-  - name: record2id_msdyn_quotebookingservicetask
-    type: Microsoft.Dynamics.CRM.msdyn_quotebookingservicetask
-    partner: msdyn_quotebookingservicetask_connections2
-  - name: record2id_msdyn_resourceterritory
-    type: Microsoft.Dynamics.CRM.msdyn_resourceterritory
-    partner: msdyn_resourceterritory_connections2
-  - name: record2id_msdyn_rma
-    type: Microsoft.Dynamics.CRM.msdyn_rma
-    partner: msdyn_rma_connections2
-  - name: record2id_msdyn_rmaproduct
-    type: Microsoft.Dynamics.CRM.msdyn_rmaproduct
-    partner: msdyn_rmaproduct_connections2
-  - name: record2id_msdyn_rmareceipt
-    type: Microsoft.Dynamics.CRM.msdyn_rmareceipt
-    partner: msdyn_rmareceipt_connections2
-  - name: record2id_msdyn_rmareceiptproduct
-    type: Microsoft.Dynamics.CRM.msdyn_rmareceiptproduct
-    partner: msdyn_rmareceiptproduct_connections2
-  - name: record2id_msdyn_rmasubstatus
-    type: Microsoft.Dynamics.CRM.msdyn_rmasubstatus
-    partner: msdyn_rmasubstatus_connections2
-  - name: record2id_msdyn_rtv
-    type: Microsoft.Dynamics.CRM.msdyn_rtv
-    partner: msdyn_rtv_connections2
-  - name: record2id_msdyn_rtvproduct
-    type: Microsoft.Dynamics.CRM.msdyn_rtvproduct
-    partner: msdyn_rtvproduct_connections2
-  - name: record2id_msdyn_rtvsubstatus
-    type: Microsoft.Dynamics.CRM.msdyn_rtvsubstatus
-    partner: msdyn_rtvsubstatus_connections2
-  - name: record2id_msdyn_shipvia
-    type: Microsoft.Dynamics.CRM.msdyn_shipvia
-    partner: msdyn_shipvia_connections2
-  - name: record2id_msdyn_systemuserschedulersetting
-    type: Microsoft.Dynamics.CRM.msdyn_systemuserschedulersetting
-    partner: msdyn_systemuserschedulersetting_connections2
-  - name: record2id_msdyn_taxcode
-    type: Microsoft.Dynamics.CRM.msdyn_taxcode
-    partner: msdyn_taxcode_connections2
-  - name: record2id_msdyn_timegroup
-    type: Microsoft.Dynamics.CRM.msdyn_timegroup
-    partner: msdyn_timegroup_connections2
-  - name: record2id_msdyn_timegroupdetail
-    type: Microsoft.Dynamics.CRM.msdyn_timegroupdetail
-    partner: msdyn_timegroupdetail_connections2
-  - name: record2id_msdyn_timeoffrequest
-    type: Microsoft.Dynamics.CRM.msdyn_timeoffrequest
-    partner: msdyn_timeoffrequest_connections2
-  - name: record2id_msdyn_warehouse
-    type: Microsoft.Dynamics.CRM.msdyn_warehouse
-    partner: msdyn_warehouse_connections2
-  - name: record2id_msdyn_workorder
-    type: Microsoft.Dynamics.CRM.msdyn_workorder
-    partner: msdyn_workorder_connections2
-  - name: record2id_msdyn_workordercharacteristic
-    type: Microsoft.Dynamics.CRM.msdyn_workordercharacteristic
-    partner: msdyn_workordercharacteristic_connections2
-  - name: record2id_msdyn_workorderincident
-    type: Microsoft.Dynamics.CRM.msdyn_workorderincident
-    partner: msdyn_workorderincident_connections2
-  - name: record2id_msdyn_workorderproduct
-    type: Microsoft.Dynamics.CRM.msdyn_workorderproduct
-    partner: msdyn_workorderproduct_connections2
-  - name: record2id_msdyn_workorderresourcerestriction
-    type: Microsoft.Dynamics.CRM.msdyn_workorderresourcerestriction
-    partner: msdyn_workorderresourcerestriction_connections2
-  - name: record2id_msdyn_workorderservice
-    type: Microsoft.Dynamics.CRM.msdyn_workorderservice
-    partner: msdyn_workorderservice_connections2
-  - name: record2id_msdyn_workorderservicetask
-    type: Microsoft.Dynamics.CRM.msdyn_workorderservicetask
-    partner: msdyn_workorderservicetask_connections2
-  - name: record2id_msfp_alert
-    type: Microsoft.Dynamics.CRM.msfp_alert
-    partner: msfp_alert_connections2
-  - name: record2id_msfp_surveyinvite
-    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
-    partner: msfp_surveyinvite_connections2
-  - name: record2id_msfp_surveyresponse
-    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
-    partner: msfp_surveyresponse_connections2
-  - name: record2id_opportunity
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: opportunity_connections2
   - name: record2id_phonecall
     type: Microsoft.Dynamics.CRM.phonecall
     partner: phonecall_connections2
   - name: record2id_position
     type: Microsoft.Dynamics.CRM.position
     partner: position_connection2
-  - name: record2id_pricelevel
-    type: Microsoft.Dynamics.CRM.pricelevel
-    partner: pricelevel_connections2
   - name: record2id_processsession
     type: Microsoft.Dynamics.CRM.processsession
     partner: processsession_connections2
-  - name: record2id_product
-    type: Microsoft.Dynamics.CRM.product
-    partner: product_connections2
-  - name: record2id_quote
-    type: Microsoft.Dynamics.CRM.quote
-    partner: quote_connections2
   - name: record2id_recurringappointmentmaster
     type: Microsoft.Dynamics.CRM.recurringappointmentmaster
     partner: recurringappointmentmaster_connections2
-  - name: record2id_resourcegroup
-    type: Microsoft.Dynamics.CRM.resourcegroup
-    partner: resourcegroup_connections2
-  - name: record2id_salesorder
-    type: Microsoft.Dynamics.CRM.salesorder
-    partner: salesorder_connections2
-  - name: record2id_serviceappointment
-    type: Microsoft.Dynamics.CRM.serviceappointment
-    partner: serviceappointment_connections2
   - name: record2id_socialactivity
     type: Microsoft.Dynamics.CRM.socialactivity
     partner: socialactivity_connections2
@@ -1682,12 +514,6 @@ operations:
 solutions:
   description: "The following solutions include the connection entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.AppforOutlook
-    description: ""
-  - type: Microsoft.Dynamics.CRM.AutoDataCapture
-    description: "Auto Data Capture Feature Description."
-  - type: Microsoft.Dynamics.CRM.IoTConnector
-    description: "Enables IoT scenarios in Dynamics 365."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommon
     description: "For internal use only."
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch
@@ -1698,22 +524,6 @@ solutions:
     description: "Dynamics 365 workload for knowledge management."
   - type: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementPatch
     description: "Dynamics 365 workload for knowledge management."
-  - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
-    description: "Dynamics 365 workload for lead management."
-  - type: Microsoft.Dynamics.CRM.msdynce_Marketing
-    description: "Dynamics 365 workload for marketing and enterprise."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingSales
-    description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_ProductManagement
-    description: "Dynamics 365 workload for product management."
-  - type: Microsoft.Dynamics.CRM.msdynce_Sales
-    description: "Dynamics 365 workload for sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch
-    description: "Patch for Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.msdynce_ServicePatch201911
-    description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

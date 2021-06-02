@@ -4,7 +4,7 @@ name: "PrincipalAccess"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse PrincipalAccess ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9f83724f-396d-4d41-80a7-2057ab0b4ebf

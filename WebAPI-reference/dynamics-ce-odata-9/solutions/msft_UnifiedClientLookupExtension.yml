@@ -4,10 +4,10 @@ name: "UnifiedClientLookupExtension"
 type: solution
 metadata: 
   title: "Microsoft Dataverse UnifiedClientLookupExtension Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: c85e48d4-38a7-4a3a-a54c-d28b345583cf
+  ms.assetid: c9c47839-aa06-4282-8930-796584b2798c
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Solution having customizations used for lookup control extension"
  unique_name: msft_UnifiedClientLookupExtension
- version: "1.0.0.0"
+ version: "1.0.0.2"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."

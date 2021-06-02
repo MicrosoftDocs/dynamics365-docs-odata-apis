@@ -4,7 +4,7 @@ name: "TimeCode"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse TimeCode EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 86914701-ab09-436c-8430-3d6ffdeaa81a
@@ -32,8 +32,6 @@ members:
 usedby:
   description: "The following use the TimeCode EnumType."
   usedby_items:
-  - name: Microsoft.Dynamics.CRM.QueryMultipleSchedules
-    used_as: Parameter
   - name: Microsoft.Dynamics.CRM.QuerySchedule
     used_as: Parameter
   - name: Microsoft.Dynamics.CRM.TimeInfo

@@ -4,7 +4,7 @@ name: "msdyn_SaveCalendarResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse msdyn_SaveCalendarResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b8c3fd3b-acbe-4ef5-b7ff-d5148a161984

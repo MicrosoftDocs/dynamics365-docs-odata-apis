@@ -4,7 +4,7 @@ name: "RelationshipMetadataBase"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse RelationshipMetadataBase Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e88dd69e-8f74-4346-85b5-ed8c26511de3

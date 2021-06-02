@@ -4,10 +4,10 @@ name: "Microsoft Dynamics 365 Solution History APIs"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Microsoft Dynamics 365 Solution History APIs Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 9a1f1ed7-05af-425d-a34b-7f3bee9c7461
+  ms.assetid: 4b1de221-bede-4a56-9bc0-97a913c4d2b4
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

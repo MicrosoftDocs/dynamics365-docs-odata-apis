@@ -4,7 +4,7 @@ name: "PublishDuplicateRule"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 65c5dcbd-625e-4f1f-ac7c-0e6fbe7ab9a5

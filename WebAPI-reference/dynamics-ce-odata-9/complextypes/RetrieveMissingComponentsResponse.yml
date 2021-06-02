@@ -4,7 +4,7 @@ name: "RetrieveMissingComponentsResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveMissingComponentsResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3bd4d425-df8d-4d12-9a14-b5c526749b4b

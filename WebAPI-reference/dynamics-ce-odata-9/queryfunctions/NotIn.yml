@@ -4,7 +4,7 @@ name: "NotIn"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse NotIn Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e9a1a0d5-a975-45b3-8129-d6d739070553

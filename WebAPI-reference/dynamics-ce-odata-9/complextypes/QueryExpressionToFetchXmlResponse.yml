@@ -4,7 +4,7 @@ name: "QueryExpressionToFetchXmlResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse QueryExpressionToFetchXmlResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 179f45b9-df7a-44bb-b757-22aed2d0b312

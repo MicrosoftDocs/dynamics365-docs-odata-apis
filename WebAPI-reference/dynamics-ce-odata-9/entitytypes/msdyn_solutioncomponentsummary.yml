@@ -4,7 +4,7 @@ name: "msdyn_solutioncomponentsummary"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e6916495-7fef-408b-9da0-3b6f75f32b9c
@@ -364,6 +364,12 @@ properties:
       description: ""
       iscomputed: false
       isreadonly: false
+    - name: organizationid
+      type: Edm.Guid
+      display_name: "Organization Id"
+      description: "Unique identifier for the organization"
+      iscomputed: false
+      isreadonly: true
 # This entity has no lookup properties
 # This entity has no single-valued navigation properties
 # This entity has no collection-valued navigation properties

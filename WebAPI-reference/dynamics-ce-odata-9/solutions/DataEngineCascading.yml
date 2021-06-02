@@ -4,10 +4,10 @@ name: "DataEngine Cascading"
 type: solution
 metadata: 
   title: "Microsoft Dataverse DataEngine Cascading Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 7d7aeb79-ee6e-4e31-a7a1-6d8d01f60fdf
+  ms.assetid: fa9b1025-9fde-4e7b-a06b-48ef17471e9a
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,13 +16,9 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "DataEngine Cascading Solution"
  unique_name: DataEngineCascading
- version: "2.13"
+ version: "2.15"
  customization_prefix: default
-entities:
-  description: "The following entities are included in this solution."
-  entity_items:
-   - type: Microsoft.Dynamics.CRM.revokeinheritedaccessrecordstracker
-     description: ""
+# This solution includes no entities.
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

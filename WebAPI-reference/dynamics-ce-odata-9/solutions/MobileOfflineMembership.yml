@@ -4,10 +4,10 @@ name: "MobileOfflineMembership"
 type: solution
 metadata: 
   title: "Microsoft Dataverse MobileOfflineMembership Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: d3dc94fe-17af-4c32-9efb-505591cfa544
+  ms.assetid: e057f7b1-2d25-4c22-8daa-c18acb008c4a
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

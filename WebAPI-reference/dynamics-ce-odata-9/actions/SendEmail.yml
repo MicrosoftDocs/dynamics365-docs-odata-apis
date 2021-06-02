@@ -4,7 +4,7 @@ name: "SendEmail"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: eb5e5e5e-2a17-4c71-a1b5-bd1dfb7e478a

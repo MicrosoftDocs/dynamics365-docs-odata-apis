@@ -4,7 +4,7 @@ name: "goal"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: aba9bc0d-bb47-4fc7-965b-e206141537a4
@@ -853,9 +853,6 @@ collection_valued_navigation_properties:
   - name: Goal_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_goal_syncerror
-  - name: msdyn_goal_msdyn_forecastinstance
-    type: Microsoft.Dynamics.CRM.msdyn_forecastinstance
-    partner: msdyn_matchinggoalid
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the goal entity type."

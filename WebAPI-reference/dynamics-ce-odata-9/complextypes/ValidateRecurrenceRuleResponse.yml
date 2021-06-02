@@ -4,7 +4,7 @@ name: "ValidateRecurrenceRuleResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ValidateRecurrenceRuleResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: da8481aa-2df1-47e8-b40e-31da785aff96

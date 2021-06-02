@@ -4,7 +4,7 @@ name: "ParameterCollection"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ParameterCollection ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 84c79cbf-416a-4f23-a32e-44de47611d12

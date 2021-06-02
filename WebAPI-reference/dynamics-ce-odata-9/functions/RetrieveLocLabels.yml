@@ -4,7 +4,7 @@ name: "RetrieveLocLabels"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveLocLabels Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: e5d6d06d-f872-4551-98cd-519393af4fe5

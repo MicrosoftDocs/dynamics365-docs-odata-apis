@@ -4,7 +4,7 @@ name: "importdata"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fffb4b6c-fa3c-419f-b396-a885cc2814b4
@@ -183,11 +183,7 @@ collection_valued_navigation_properties:
     partner: importdataid
 # This entity has no derived entities.
 # This entity has no operations
-solutions:
-  description: "The following solutions include the importdata entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

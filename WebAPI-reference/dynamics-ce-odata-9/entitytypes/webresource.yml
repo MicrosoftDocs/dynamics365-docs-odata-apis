@@ -4,7 +4,7 @@ name: "webresource"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 0f732d46-1be8-42e4-abb0-24ed633958ac
@@ -277,6 +277,12 @@ lookup_properties:
 single_valued_navigation_properties:
   description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
   property_items:
+  - name: ContentFileRef
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: FileAttachment_WebResource_ContentFileRef
+  - name: ContentJsonFileRef
+    type: Microsoft.Dynamics.CRM.fileattachment
+    partner: FileAttachment_WebResource_ContentJsonFileRef
   - name: createdby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: webresource_createdby
@@ -323,8 +329,6 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msft_UnifiedClientWebResourceFileType
     description: "Unified Client WebResource File Type"
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

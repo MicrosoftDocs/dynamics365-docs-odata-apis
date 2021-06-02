@@ -4,7 +4,7 @@ name: "OptionSetMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse OptionSetMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 07ce7eab-daed-4041-a948-a7a3a10faf06

@@ -4,7 +4,7 @@ name: "RetrieveProvisionedLanguagePackVersion"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveProvisionedLanguagePackVersion Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1e7f12e4-4ffa-4565-9496-2ffc177808a5

@@ -4,7 +4,7 @@ name: "GetDistinctValuesImportFile"
 type: function
 metadata: 
   title: "Microsoft Dataverse GetDistinctValuesImportFile Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5f60e8ad-b47a-49fc-87a4-ba001c881078

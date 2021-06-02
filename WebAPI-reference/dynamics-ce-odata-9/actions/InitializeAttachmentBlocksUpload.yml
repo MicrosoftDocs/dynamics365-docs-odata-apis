@@ -4,7 +4,7 @@ name: "InitializeAttachmentBlocksUpload"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 832bdcb1-e586-456f-b478-d35d3f829213

@@ -4,10 +4,10 @@ name: "UnifiedClientCommandingExtension"
 type: solution
 metadata: 
   title: "Microsoft Dataverse UnifiedClientCommandingExtension Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: df90b842-dcae-42a6-90aa-e94edf5e645f
+  ms.assetid: 07d8a2db-9eed-4730-9d53-4a64b667dfd4
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

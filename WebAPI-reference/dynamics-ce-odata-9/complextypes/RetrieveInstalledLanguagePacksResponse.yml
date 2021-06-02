@@ -4,7 +4,7 @@ name: "RetrieveInstalledLanguagePacksResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveInstalledLanguagePacksResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b95bfbb8-be47-4f54-9dce-f487132595d4

@@ -4,7 +4,7 @@ name: "interactionforemail"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7f139a3d-9066-42f0-8d7c-8201824ae676
@@ -255,54 +255,6 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
-  - name: interactionforemail_BulkOperations
-    type: Microsoft.Dynamics.CRM.bulkoperation
-    partner: regardingobjectid_new_interactionforemail_bulkoperation
-  - name: interactionforemail_CampaignActivities
-    type: Microsoft.Dynamics.CRM.campaignactivity
-    partner: regardingobjectid_new_interactionforemail_campaignactivity
-  - name: interactionforemail_CampaignResponses
-    type: Microsoft.Dynamics.CRM.campaignresponse
-    partner: regardingobjectid_new_interactionforemail_campaignresponse
-  - name: interactionforemail_IncidentResolutions
-    type: Microsoft.Dynamics.CRM.incidentresolution
-    partner: regardingobjectid_new_interactionforemail_incidentresolution
-  - name: interactionforemail_li_inmails
-    type: Microsoft.Dynamics.CRM.li_inmail
-    partner: regardingobjectid_new_interactionforemail_li_inmail
-  - name: interactionforemail_li_messages
-    type: Microsoft.Dynamics.CRM.li_message
-    partner: regardingobjectid_new_interactionforemail_li_message
-  - name: interactionforemail_li_pointdrivepresentationvieweds
-    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
-    partner: regardingobjectid_new_interactionforemail_li_pointdrivepresentationviewed
-  - name: interactionforemail_msdyn_approvals
-    type: Microsoft.Dynamics.CRM.msdyn_approval
-    partner: regardingobjectid_new_interactionforemail_msdyn_approval
-  - name: interactionforemail_msdyn_bookingalerts
-    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
-    partner: regardingobjectid_new_interactionforemail_msdyn_bookingalert
-  - name: interactionforemail_msfp_alerts
-    type: Microsoft.Dynamics.CRM.msfp_alert
-    partner: regardingobjectid_new_interactionforemail_msfp_alert
-  - name: interactionforemail_msfp_surveyinvites
-    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
-    partner: regardingobjectid_new_interactionforemail_msfp_surveyinvite
-  - name: interactionforemail_msfp_surveyresponses
-    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
-    partner: regardingobjectid_new_interactionforemail_msfp_surveyresponse
-  - name: interactionforemail_OpportunityCloses
-    type: Microsoft.Dynamics.CRM.opportunityclose
-    partner: regardingobjectid_new_interactionforemail_opportunityclose
-  - name: interactionforemail_OrderCloses
-    type: Microsoft.Dynamics.CRM.orderclose
-    partner: regardingobjectid_new_interactionforemail_orderclose
-  - name: interactionforemail_QuoteCloses
-    type: Microsoft.Dynamics.CRM.quoteclose
-    partner: regardingobjectid_new_interactionforemail_quoteclose
-  - name: interactionforemail_ServiceAppointments
-    type: Microsoft.Dynamics.CRM.serviceappointment
-    partner: regardingobjectid_new_interactionforemail_serviceappointment
   - name: new_interactionforemail_ActivityPointers
     type: Microsoft.Dynamics.CRM.activitypointer
     partner: regardingobjectid_new_interactionforemail
@@ -311,11 +263,7 @@ collection_valued_navigation_properties:
     partner: regardingobjectid_new_interactionforemail
 # This entity has no derived entities.
 # This entity has no operations
-solutions:
-  description: "The following solutions include the interactionforemail entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

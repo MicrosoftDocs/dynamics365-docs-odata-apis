@@ -4,7 +4,7 @@ name: "RetrieveDataEncryptionKey"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveDataEncryptionKey Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f8d2f3b3-d864-431d-8f50-923be95cec85

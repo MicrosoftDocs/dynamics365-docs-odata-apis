@@ -4,10 +4,10 @@ name: "Async Service Infrastructure"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Async Service Infrastructure Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: bb757069-948a-4738-b668-327fda523272
+  ms.assetid: 48eef762-29b5-441a-944b-8ee654929259
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Async Service Infrastructure"
  unique_name: msft_AsyncServiceInfrastructure
- version: "1.0.0.6"
+ version: "1.0.0.9"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."

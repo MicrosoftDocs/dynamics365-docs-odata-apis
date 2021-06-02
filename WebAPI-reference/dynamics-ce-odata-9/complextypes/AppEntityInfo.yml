@@ -4,7 +4,7 @@ name: "AppEntityInfo"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AppEntityInfo ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6f56c286-1caf-470a-89e7-9d821443b221

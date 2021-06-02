@@ -1,0 +1,57 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.RegisterFlowMachineResponse
+name: "RegisterFlowMachineResponse"
+type: complextype
+metadata: 
+  title: "Microsoft Dataverse RegisterFlowMachineResponse ComplexType Reference | MicrosoftDocs"
+  ms.date: "06/02/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 76b1a72a-c97a-42ae-9393-81863a297df7
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse Web API RegisterFlowMachineResponse ComplexType."
+namespace: Microsoft.Dynamics.CRM
+# This complex type doesn't inherit from another complextype.
+description: "" 
+properties:
+  description: "The properties of a complex type contain the structured data of the type."
+  property_items:
+  - name: groupId
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
+  - name: machineId
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
+  - name: relayListenKeys
+    type: Edm.String
+    nullable: true
+    unicode: false
+    description: ""
+    iscollection: false
+# This complex type doesn't have any navigation properties.
+usedby:
+  description: "The following use the RegisterFlowMachineResponse ComplexType."
+  usedby_items:
+  - name: Microsoft.Dynamics.CRM.RegisterFlowMachine
+    used_as: ReturnType
+# This complex type has no remarks.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -4,7 +4,7 @@ name: "UserLicenseInfo"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse UserLicenseInfo ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 89ceb8f3-b208-4181-93c7-ede326bf3d76

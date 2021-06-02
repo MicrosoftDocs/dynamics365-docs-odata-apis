@@ -4,7 +4,7 @@ name: "msdyn_RegisterSolutionHealthRule"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3c2370e5-d36f-40b5-8f02-25ce6644e184

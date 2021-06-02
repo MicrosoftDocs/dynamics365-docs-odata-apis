@@ -4,7 +4,7 @@ name: "queue"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b1ed7e9e-4a92-4ad4-b85e-ca8f4a522cc8
@@ -326,6 +326,9 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: email_acceptingentity_queue
+    type: Microsoft.Dynamics.CRM.email
+    partner: acceptingentityid
   - name: mailbox_regarding_queue
     type: Microsoft.Dynamics.CRM.mailbox
     partner: regardingobjectid_queue

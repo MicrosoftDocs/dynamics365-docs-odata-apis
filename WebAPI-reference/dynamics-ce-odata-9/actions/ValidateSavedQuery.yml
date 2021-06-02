@@ -4,7 +4,7 @@ name: "ValidateSavedQuery"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c7c1082c-f7c0-4c0f-b13b-02f699833b19
@@ -44,9 +44,6 @@ entities:
   - type: Microsoft.Dynamics.CRM.mobileofflineprofile
     displayName: Mobile Offline Profile
     description: "Information to administer and manage the data available to mobile devices in offline mode."
-  - type: Microsoft.Dynamics.CRM.serviceappointment
-    displayName: Service Activity
-    description: "Activity offered by the organization to satisfy its customer's needs. Each service activity includes date, time, duration, and required resources."
 # There are no remarks for this action.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

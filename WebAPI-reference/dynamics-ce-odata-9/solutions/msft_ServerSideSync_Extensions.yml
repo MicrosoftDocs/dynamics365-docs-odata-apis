@@ -4,10 +4,10 @@ name: "msft_ServerSideSync_Extensions"
 type: solution
 metadata: 
   title: "Microsoft Dataverse msft_ServerSideSync_Extensions Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 5791575b-8881-41e9-86cf-6338eb9484e0
+  ms.assetid: 7be139b3-7749-474a-ac27-50a68e195a3e
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,11 +16,13 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: msft_ServerSideSync_Extensions
- version: "1.0.0.3"
+ version: "1.0.0.7"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
+   - type: Microsoft.Dynamics.CRM.emailserverprofile
+     description: "Holds the Email Server Profiles of an organization"
    - type: Microsoft.Dynamics.CRM.mailbox
      description: ""
    - type: Microsoft.Dynamics.CRM.mailboxtrackingfolder

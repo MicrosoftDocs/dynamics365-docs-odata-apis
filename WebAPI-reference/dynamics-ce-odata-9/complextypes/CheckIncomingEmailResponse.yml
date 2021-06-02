@@ -4,7 +4,7 @@ name: "CheckIncomingEmailResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse CheckIncomingEmailResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c94b04d7-3303-4c0e-b58a-13dab57e8244

@@ -4,7 +4,7 @@ name: "RetrievePrincipalAccessInfoResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrievePrincipalAccessInfoResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d8955a0c-c893-47ce-8e2e-3007311a8747

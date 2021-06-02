@@ -4,7 +4,7 @@ name: "DownloadBlockResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DownloadBlockResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f59bdb35-a395-4eba-b848-fd70c53e550e

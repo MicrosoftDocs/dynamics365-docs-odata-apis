@@ -4,7 +4,7 @@ name: "InitializeAnnotationBlocksDownload"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d786e567-8999-46c0-bc9d-7a1461f977f9

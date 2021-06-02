@@ -4,7 +4,7 @@ name: "ServicePlan"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ServicePlan ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bdfd7971-88b3-4bdd-9c06-f8e85066bc72

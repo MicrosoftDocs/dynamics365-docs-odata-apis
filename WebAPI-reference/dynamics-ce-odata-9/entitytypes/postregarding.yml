@@ -4,7 +4,7 @@ name: "postregarding"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f8cedfe0-64e7-44a5-b1ff-f1b5840c277b
@@ -60,10 +60,6 @@ lookup_properties:
     - regardingobjectid_knowledgearticle
     - regardingobjectid_queue
     - regardingobjectid_processsession
-    - regardingobjectid_competitor
-    - regardingobjectid_incident
-    - regardingobjectid_lead
-    - regardingobjectid_opportunity
     description: "Choose the record that the post relates to."
   - name: _regardingobjectownerid_value
     description: "Unique identifier of the user or team who owns the regarding object."
@@ -80,24 +76,12 @@ single_valued_navigation_properties:
   - name: regardingobjectid_appointment
     type: Microsoft.Dynamics.CRM.appointment
     partner: appointment_PostRegardings
-  - name: regardingobjectid_competitor
-    type: Microsoft.Dynamics.CRM.competitor
-    partner: competitor_PostRegardings
   - name: regardingobjectid_contact
     type: Microsoft.Dynamics.CRM.contact
     partner: contact_PostRegardings
-  - name: regardingobjectid_incident
-    type: Microsoft.Dynamics.CRM.incident
-    partner: incident_PostRegardings
   - name: regardingobjectid_knowledgearticle
     type: Microsoft.Dynamics.CRM.knowledgearticle
     partner: knowledgearticle_PostRegardings
-  - name: regardingobjectid_lead
-    type: Microsoft.Dynamics.CRM.lead
-    partner: lead_PostRegardings
-  - name: regardingobjectid_opportunity
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: opportunity_PostRegardings
   - name: regardingobjectid_phonecall
     type: Microsoft.Dynamics.CRM.phonecall
     partner: phonecall_PostRegardings
@@ -130,19 +114,7 @@ collection_valued_navigation_properties:
     partner: postregardingid
 # This entity has no derived entities.
 # This entity has no operations
-solutions:
-  description: "The following solutions include the postregarding entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.msdynce_LeadManagement
-    description: "Dynamics 365 workload for lead management."
-  - type: Microsoft.Dynamics.CRM.msdynce_MarketingSales
-    description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_Sales
-    description: "Dynamics 365 workload for sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

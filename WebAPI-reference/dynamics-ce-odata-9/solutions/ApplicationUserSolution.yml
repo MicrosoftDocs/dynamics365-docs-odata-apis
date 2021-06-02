@@ -4,10 +4,10 @@ name: "ApplicationUserSolution"
 type: solution
 metadata: 
   title: "Microsoft Dataverse ApplicationUserSolution Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: c38872a4-e9c6-480e-b8ec-eb9ed90bf91f
+  ms.assetid: 31ed80ab-8352-4195-9ab2-918d02770101
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -18,7 +18,11 @@ header:
  unique_name: ApplicationUserSolution
  version: "1.0.1.0"
  customization_prefix: default
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.applicationuser
+     description: "Application User that has non-interactive access to the CDS system"
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

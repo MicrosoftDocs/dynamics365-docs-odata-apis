@@ -4,7 +4,7 @@ name: "msdyn_kmfederatedsearchconfig"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 346d1ab3-3ef9-41b3-adcf-2162cebb2929
@@ -46,17 +46,6 @@ properties:
       description: "Sequence number of the import that created this record."
       iscomputed: false
       isreadonly: false
-    - name: isdefault
-      type: Edm.Boolean
-      display_name: "Is Default"
-      description: ""
-      iscomputed: false
-      isreadonly: false
-      options:
-        - value: 1
-          label: "Yes"
-        - value: 0
-          label: "No"
     - name: modifiedon
       type: Edm.DateTimeOffset
       display_name: "Modified On"
@@ -105,7 +94,7 @@ properties:
         - value: 100000001
           label: "Sharepoint"
         - value: 100000002
-          label: "Microsoft Search Connector"
+          label: "Microsoft Graph Connector"
     - name: sharepointurl
       type: Edm.String
       display_name: "Sharepoint URL"

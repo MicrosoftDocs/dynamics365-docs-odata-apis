@@ -4,7 +4,7 @@ name: "msdyn_analysiscomponent"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 2b3475ee-176d-4e93-9edb-0916d5530f5e
@@ -59,6 +59,8 @@ properties:
       iscomputed: false
       isreadonly: false
       options:
+        - value: 192350002
+          label: "Object Health"
         - value: 192350001
           label: "Component Health"
         - value: 192350000
@@ -157,6 +159,12 @@ properties:
     - name: msdyn_sevmediumcount
       type: Edm.Int32
       display_name: "Medium Severity Count"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_suggestioncount
+      type: Edm.Int32
+      display_name: "Suggestion Count"
       description: ""
       iscomputed: false
       isreadonly: false

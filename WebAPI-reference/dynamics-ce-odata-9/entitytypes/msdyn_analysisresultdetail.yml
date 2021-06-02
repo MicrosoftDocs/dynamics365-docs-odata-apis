@@ -4,7 +4,7 @@ name: "msdyn_analysisresultdetail"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 827393a7-778d-4066-bb40-0449fdb3ce1c

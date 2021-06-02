@@ -4,7 +4,7 @@ name: "connector"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 29321ccd-7c8b-42de-85d6-ab9cdf312ec3
@@ -308,6 +308,9 @@ collection_valued_navigation_properties:
   - name: connector_BulkDeleteFailures
     type: Microsoft.Dynamics.CRM.bulkdeletefailure
     partner: regardingobjectid_connector
+  - name: connector_connectionreference
+    type: Microsoft.Dynamics.CRM.connectionreference
+    partner: CustomConnectorId
   - name: connector_DuplicateBaseRecord
     type: Microsoft.Dynamics.CRM.duplicaterecord
     partner: baserecordid_connector

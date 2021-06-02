@@ -4,10 +4,10 @@ name: "Customer Care Intelligence Bots"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Customer Care Intelligence Bots Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 73cd6264-a42e-41c6-8bfc-1ee3f83c3666
+  ms.assetid: ed75df0c-6804-41ab-91ff-1ed25f455293
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Customer Care Intelligence"
  unique_name: msdynce_CustomerCareIntelligenceBots
- version: "1.1.2.219"
+ version: "1.1.0"
  customization_prefix: msdynce
 entities:
   description: "The following entities are included in this solution."

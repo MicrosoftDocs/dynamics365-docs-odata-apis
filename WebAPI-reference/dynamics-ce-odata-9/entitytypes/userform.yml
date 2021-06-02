@@ -4,7 +4,7 @@ name: "userform"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 819e14c8-26a7-4ec1-a213-741adb02a808
@@ -189,11 +189,7 @@ operations:
     binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RevokeAccess
     binding_type: "Not Bound"
-solutions:
-  description: "The following solutions include the userform entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

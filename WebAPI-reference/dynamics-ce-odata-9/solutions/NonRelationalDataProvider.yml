@@ -4,10 +4,10 @@ name: "NonRelational DataProvider"
 type: solution
 metadata: 
   title: "Microsoft Dataverse NonRelational DataProvider Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 6c71c54f-0ac5-4b60-9de5-d6a312cd321b
+  ms.assetid: 228fa36a-ec70-4602-a19a-99b40551dfab
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: NonRelationalDataProvider
- version: "9.0.0.287"
+ version: "9.0.0.311"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."

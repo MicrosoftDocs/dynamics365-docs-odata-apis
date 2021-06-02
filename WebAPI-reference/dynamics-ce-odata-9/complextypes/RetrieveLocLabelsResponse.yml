@@ -4,7 +4,7 @@ name: "RetrieveLocLabelsResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveLocLabelsResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: eac49068-9bc2-4e91-b517-fe80f1da9f81

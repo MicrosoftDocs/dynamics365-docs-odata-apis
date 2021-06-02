@@ -4,7 +4,7 @@ name: "ImportRecordsImport"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 511c4c3b-6c72-4a15-a72d-1485a8e209e7

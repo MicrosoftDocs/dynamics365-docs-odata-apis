@@ -4,10 +4,10 @@ name: "Power Virtual Agents"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Power Virtual Agents Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 20b2a8d8-1b91-46b8-9542-bc4d6e7c93fc
+  ms.assetid: 7a7f680a-0450-4c2f-aa0e-5967c817f4e8
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,11 +16,17 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "For internal use, by the Power Virtual Agents services only."
  unique_name: PowerVirtualAgents
- version: "1.1.2.296"
+ version: "1.1.2.330"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
+   - type: Microsoft.Dynamics.CRM.bot
+     description: "Represents a Power Virtual Agents Chatbot. https://powerva.microsoft.com/"
+   - type: Microsoft.Dynamics.CRM.botcomponent
+     description: "Holds key authoring components of a Chatbot such a topics, entities, variables, etc."
+   - type: Microsoft.Dynamics.CRM.conversationtranscript
+     description: "Contains the transcripts of conversations between participants such as customers, Virtual Agents or Human agents."
    - type: Microsoft.Dynamics.CRM.solutioncomponentattributeconfiguration
      description: ""
    - type: Microsoft.Dynamics.CRM.solutioncomponentconfiguration

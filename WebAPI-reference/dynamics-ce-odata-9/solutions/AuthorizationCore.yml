@@ -4,10 +4,10 @@ name: "AuthorizationCore"
 type: solution
 metadata: 
   title: "Microsoft Dataverse AuthorizationCore Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: a972e008-2ab5-4046-ad05-c3fd35b25dd0
+  ms.assetid: fc6109f0-d6c0-4a9b-9daf-b46aa256c293
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,11 +16,13 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Authorization Core solution"
  unique_name: AuthorizationCore
- version: "1.35.0.0"
+ version: "1.42.0.0"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
+   - type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+     description: "Defines CRM security principals (users and teams) access rights to secured field for an entity instance."
    - type: Microsoft.Dynamics.CRM.role
      description: "Grouping of security privileges. Users are assigned roles that authorize their access to the Microsoft CRM system."
    - type: Microsoft.Dynamics.CRM.systemuser

@@ -4,7 +4,7 @@ name: "ConditionOperator"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse ConditionOperator EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 44bb0e44-b2a1-45cd-94cb-470ea5fa594a

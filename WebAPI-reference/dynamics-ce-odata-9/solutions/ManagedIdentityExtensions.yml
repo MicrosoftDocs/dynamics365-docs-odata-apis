@@ -4,10 +4,10 @@ name: "ManagedIdentityExtensions"
 type: solution
 metadata: 
   title: "Microsoft Dataverse ManagedIdentityExtensions Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 579db17a-fd39-48ff-90a6-cddb8156c6b5
+  ms.assetid: 24d06297-ad9a-43cb-bf70-796fc89549a4
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,9 +16,15 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: ManagedIdentityExtensions
- version: "1.0.1.1"
+ version: "1.0.2.0"
  customization_prefix: default
-# This solution includes no entities.
+entities:
+  description: "The following entities are included in this solution."
+  entity_items:
+   - type: Microsoft.Dynamics.CRM.keyvaultreference
+     description: "KeyVaultReference entity"
+   - type: Microsoft.Dynamics.CRM.managedidentity
+     description: "ManagedIdentity entity"
 # This solution includes no actions.
 # There are no remarks for this solution.
 href_see_also:

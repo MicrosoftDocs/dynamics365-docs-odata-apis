@@ -1,49 +1,39 @@
 ### YamlMime:OData
-uid: Microsoft.Dynamics.CRM.RetrieveAccessOrigin
-name: "RetrieveAccessOrigin"
+uid: Microsoft.Dynamics.CRM.msdyn_RetrieveKnowledgeSearchFilters
+name: "msdyn_RetrieveKnowledgeSearchFilters"
 type: action
 metadata: 
-  title: "Common Data Service Action Reference | MicrosoftDocs"
-  ms.date: "02/10/2021"
+  title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 61a8a7eb-bc22-4307-8628-35025e14c27d
+  ms.assetid: ff777805-878f-45e7-80af-9de129e96705
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
-  meta-description: "Reference information about the Common Data Service RetrieveAccessOrigin Action."
+  meta-description: "Reference information about the Microsoft Dataverse msdyn_RetrieveKnowledgeSearchFilters Action."
 namespace: Microsoft.Dynamics.CRM
 # This Action has no description.
-owningsolution: Microsoft.Dynamics.CRM.System
+owningsolution: Microsoft.Dynamics.CRM.msdynce_KnowledgeManagementFeatures
 # This action has no bound entities.
 isbound: false
 parameters:
   description: "Parameters allow for data to be passed to the action."
   parameter_items:
-  - name: ObjectId
-    type: Edm.Guid
-    nullable: false
-    unicode: true
-    description: ""
-  - name: LogicalName
+  - name: SearchFiltersMetadata
     type: Edm.String
-    nullable: false
+    nullable: true
     unicode: false
     description: ""
-  - name: PrincipalId
-    type: Edm.Guid
-    nullable: false
-    unicode: true
-    description: ""
 return_type:
-  description: "The RetrieveAccessOrigin action returns the following value."
+  description: "The msdyn_RetrieveKnowledgeSearchFilters action returns the following value."
   iscollection: false
   nullable: false
-  type: Microsoft.Dynamics.CRM.RetrieveAccessOriginResponse
+  type: Microsoft.Dynamics.CRM.msdyn_RetrieveKnowledgeSearchFiltersResponse
 # This action has no identified unbound entities.
-# There are no remarks for this action.
+# This action has no remarks.
 href_see_also:
-- text: "Use the Common Data Service Web API"
+- text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
 xref_see_also:
 - Microsoft.Dynamics.CRM.EntityTypeIndex

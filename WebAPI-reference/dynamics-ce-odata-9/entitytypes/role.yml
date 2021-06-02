@@ -4,7 +4,7 @@ name: "role"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a65242dd-45c8-4059-810a-ef978894b897
@@ -214,12 +214,12 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: applicationuserrole
+    type: Microsoft.Dynamics.CRM.applicationuser
+    partner: applicationuserrole
   - name: appmoduleroles_association
     type: Microsoft.Dynamics.CRM.appmodule
     partner: appmoduleroles_association
-  - name: msdyn_role_msdyn_actioncardrolesetting
-    type: Microsoft.Dynamics.CRM.msdyn_actioncardrolesetting
-    partner: msdyn_Roleid
   - name: Role_AsyncOperations
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: regardingobjectid_role
@@ -254,6 +254,8 @@ operations:
     binding_type: "Entity"
   - name: Microsoft.Dynamics.CRM.ReplacePrivilegesRole
     binding_type: "Entity"
+  - name: Microsoft.Dynamics.CRM.RetrieveAadUserRoles
+    binding_type: "Not Bound"
   - name: Microsoft.Dynamics.CRM.RetrieveRolePrivilegesRole
     binding_type: "Not Bound"
 solutions:

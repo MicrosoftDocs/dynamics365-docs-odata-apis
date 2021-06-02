@@ -4,7 +4,7 @@ name: "CreatePolymorphicLookupAttributeResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse CreatePolymorphicLookupAttributeResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: bdb634f2-1a0b-450c-93b9-eac531860594
@@ -22,13 +22,13 @@ properties:
     type: Edm.Guid
     nullable: false
     unicode: true
-    description: "An array od relationship IDs created for the attribute to Account and contact."
+    description: ""
     iscollection: true
   - name: AttributeId
     type: Edm.Guid
     nullable: true
     unicode: true
-    description: "The MetadataId of the LookupAttributeMetadata that is created."
+    description: ""
     iscollection: false
 # This complex type doesn't have any navigation properties.
 usedby:

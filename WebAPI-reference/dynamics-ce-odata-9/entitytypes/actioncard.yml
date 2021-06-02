@@ -4,7 +4,7 @@ name: "actioncard"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 83b4cfe3-5b08-456a-80a8-20ccea1833be
@@ -82,24 +82,6 @@ properties:
       description: "Date and time when action card was last modified."
       iscomputed: false
       isreadonly: true
-    - name: msdyn_actioncardregardingid
-      type: Edm.String
-      display_name: "actioncardregardingid"
-      description: ""
-      iscomputed: false
-      isreadonly: false
-    - name: msdyn_regardingobjectid
-      type: Edm.String
-      display_name: "regardingobjectid"
-      description: ""
-      iscomputed: false
-      isreadonly: false
-    - name: msdyn_regardingobjectlogicalname
-      type: Edm.String
-      display_name: "regardingobjectlogicalname"
-      description: ""
-      iscomputed: false
-      isreadonly: false
     - name: overriddencreatedon
       type: Edm.DateTimeOffset
       display_name: "Record Created On"
@@ -224,9 +206,6 @@ lookup_properties:
     single_valued_navigation_property:
     - regardingobjectid_contact_actioncard
     - regardingobjectid_account_actioncard
-    - regardingobjectid_incident_actioncard
-    - regardingobjectid_lead_actioncard
-    - regardingobjectid_opportunity_actioncard
     description: "Choose the record that the card relates to."
   - name: _transactioncurrencyid_value
     single_valued_navigation_property:
@@ -268,51 +247,15 @@ single_valued_navigation_properties:
   - name: regardingobjectid_fax_actioncard
     type: Microsoft.Dynamics.CRM.fax
     partner: fax_actioncard
-  - name: regardingobjectid_incident_actioncard
-    type: Microsoft.Dynamics.CRM.incident
-    partner: incident_actioncard
-  - name: regardingobjectid_lead_actioncard
-    type: Microsoft.Dynamics.CRM.lead
-    partner: Lead_actioncard
   - name: regardingobjectid_letter_actioncard
     type: Microsoft.Dynamics.CRM.letter
     partner: letter_actioncard
-  - name: regardingobjectid_li_inmail
-    type: Microsoft.Dynamics.CRM.li_inmail
-    partner: li_inmail_ActionCards
-  - name: regardingobjectid_li_message
-    type: Microsoft.Dynamics.CRM.li_message
-    partner: li_message_ActionCards
-  - name: regardingobjectid_li_pointdrivepresentationviewed
-    type: Microsoft.Dynamics.CRM.li_pointdrivepresentationviewed
-    partner: li_pointdrivepresentationviewed_ActionCards
-  - name: regardingobjectid_msdyn_approval
-    type: Microsoft.Dynamics.CRM.msdyn_approval
-    partner: msdyn_approval_ActionCards
-  - name: regardingobjectid_msdyn_bookingalert
-    type: Microsoft.Dynamics.CRM.msdyn_bookingalert
-    partner: msdyn_bookingalert_ActionCards
-  - name: regardingobjectid_msfp_alert
-    type: Microsoft.Dynamics.CRM.msfp_alert
-    partner: msfp_alert_ActionCards
-  - name: regardingobjectid_msfp_surveyinvite
-    type: Microsoft.Dynamics.CRM.msfp_surveyinvite
-    partner: msfp_surveyinvite_ActionCards
-  - name: regardingobjectid_msfp_surveyresponse
-    type: Microsoft.Dynamics.CRM.msfp_surveyresponse
-    partner: msfp_surveyresponse_ActionCards
-  - name: regardingobjectid_opportunity_actioncard
-    type: Microsoft.Dynamics.CRM.opportunity
-    partner: opportunity_actioncard
   - name: regardingobjectid_phonecall_actioncard
     type: Microsoft.Dynamics.CRM.phonecall
     partner: phonecall_actioncard
   - name: regardingobjectid_recurringappointmentmaster_actioncard
     type: Microsoft.Dynamics.CRM.recurringappointmentmaster
     partner: recurringappointmentmaster_actioncard
-  - name: regardingobjectid_serviceappointment_actioncard
-    type: Microsoft.Dynamics.CRM.serviceappointment
-    partner: serviceappointment_actioncard
   - name: regardingobjectid_task_actioncard
     type: Microsoft.Dynamics.CRM.task
     partner: task_actioncard
@@ -330,20 +273,6 @@ collection_valued_navigation_properties:
 solutions:
   description: "The following solutions include the actioncard entity type."
   solution_items:
-  - type: Microsoft.Dynamics.CRM.AutoDataCapture
-    description: "Auto Data Capture Feature Description."
-  - type: Microsoft.Dynamics.CRM.LinkedInSalesNavigatorControlsForUnifiedClient
-    description: "Target, understand and engage customers on LinkedIn Sales Navigator from within Dynamics 365"
-  - type: Microsoft.Dynamics.CRM.msdyn_LinkedInExtensions
-    description: "LinkedIn Extension for Dynamics365"
-  - type: Microsoft.Dynamics.CRM.msdynce_Sales
-    description: "Dynamics 365 workload for sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
-  - type: Microsoft.Dynamics.CRM.Relationshipassistant
-    description: "Relationship assistant Feature Description."
-  - type: Microsoft.Dynamics.CRM.SalesInsightsMetadataConfig
-    description: ""
   - type: Microsoft.Dynamics.CRM.System
     description: "Internal CRM System Solution"
 # There are no remarks for this entity.

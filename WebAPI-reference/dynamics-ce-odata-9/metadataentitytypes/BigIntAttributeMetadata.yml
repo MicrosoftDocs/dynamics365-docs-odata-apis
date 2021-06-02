@@ -4,7 +4,7 @@ name: "BigIntAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse BigIntAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ce80faa2-5372-43c3-8cd1-f408d152a5bc

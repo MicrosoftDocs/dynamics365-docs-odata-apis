@@ -4,10 +4,10 @@ name: "Rich Text Editor"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Rich Text Editor Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: cbe05af8-86a1-49b1-a89a-debb69aacbba
+  ms.assetid: 908032f9-d2e4-4bc9-9a01-db56dd24f39c
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Contains entities to support the Rich Text Editor control"
  unique_name: msdyn_RichTextEditor
- version: "1.0.0.642"
+ version: "1.0.0.770"
  customization_prefix: msdyn
 entities:
   description: "The following entities are included in this solution."

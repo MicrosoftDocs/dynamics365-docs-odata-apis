@@ -4,7 +4,7 @@ name: "ValidateRecurrenceRule"
 type: function
 metadata: 
   title: "Microsoft Dataverse ValidateRecurrenceRule Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c89b1f28-8d95-46d9-9df8-6eb4331018f0

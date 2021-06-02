@@ -4,7 +4,7 @@ name: "TriggerServiceEndpointCheck"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: eb92b321-933a-4aaa-8b13-d19cae17f4b4

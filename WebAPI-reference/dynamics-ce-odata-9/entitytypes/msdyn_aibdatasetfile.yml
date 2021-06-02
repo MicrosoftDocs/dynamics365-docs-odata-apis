@@ -4,7 +4,7 @@ name: "msdyn_aibdatasetfile"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9f5f07f9-ffc4-4499-bf01-4080512d70b6

@@ -4,7 +4,7 @@ name: "RetrieveAllChildUsersSystemUser"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveAllChildUsersSystemUser Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6e7418e8-07bd-4284-a98a-668182958746

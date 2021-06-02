@@ -4,7 +4,7 @@ name: "GetReportHistoryLimit"
 type: function
 metadata: 
   title: "Microsoft Dataverse GetReportHistoryLimit Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7386d596-c10a-4bc5-935a-986433b0e23d

@@ -4,7 +4,7 @@ name: "RetrieveUnpublishedMultiple"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveUnpublishedMultiple Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 4ea21be4-fe0e-4fcf-afe9-0d428ee36210

@@ -4,7 +4,7 @@ name: "msdyn_solutioncomponentdatasource"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: adb0ef14-59d5-4cc9-a3f0-993cf2f36200
@@ -40,14 +40,15 @@ properties:
       description: "Unique identifier for entity instances"
       iscomputed: false
       isreadonly: false
+    - name: organizationid
+      type: Edm.Guid
+      display_name: "Organization Id"
+      description: "Unique identifier for the organization"
+      iscomputed: false
+      isreadonly: true
 # This entity has no lookup properties
 # This entity has no single-valued navigation properties
-collection_valued_navigation_properties:
-  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
-  property_items:
-  - name: msdyn_solutioncomponentdatasource_Annotations
-    type: Microsoft.Dynamics.CRM.annotation
-    partner: objectid_msdyn_solutioncomponentdatasource
+# This entity has no collection-valued navigation properties
 # This entity has no derived entities.
 # This entity has no operations
 solutions:

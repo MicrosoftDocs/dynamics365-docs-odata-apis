@@ -4,7 +4,7 @@ name: "GetReportHistoryLimitResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse GetReportHistoryLimitResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 1593d30c-2b7b-443a-9d2b-4b3ce987ce19

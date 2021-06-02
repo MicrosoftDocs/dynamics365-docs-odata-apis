@@ -4,7 +4,7 @@ name: "GetHeaderColumnsImportFileResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse GetHeaderColumnsImportFileResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f9b66241-58fd-43f4-aad9-69837c6a9744

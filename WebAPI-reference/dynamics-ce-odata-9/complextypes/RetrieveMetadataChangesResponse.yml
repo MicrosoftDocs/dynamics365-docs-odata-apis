@@ -4,7 +4,7 @@ name: "RetrieveMetadataChangesResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveMetadataChangesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c2460161-48b1-42a4-9d02-8f7f7bb2c002

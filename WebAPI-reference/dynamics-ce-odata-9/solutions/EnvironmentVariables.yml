@@ -4,10 +4,10 @@ name: "Environment Variables"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Environment Variables Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 3c96dbfb-fff2-41af-be09-0fd5d81f7dd1
+  ms.assetid: 76103149-ae1d-4e2b-98c0-15c35f503ece
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: EnvironmentVariables
- version: "1.0.2.63"
+ version: "1.0.2.77"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."

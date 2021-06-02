@@ -1,0 +1,297 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.appnotification
+name: "appnotification"
+type: entitytype
+metadata: 
+  title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
+  ms.date: "06/02/2021"
+  ms.service: "powerapps"
+  ms.topic: "reference"
+  ms.assetid: 28426305-106a-43ca-90f2-7d1b4d32873f
+  author: "kumarvivek"
+  ms.author: "kvivek"
+  manager: "annbe"
+  meta-description: "Reference information about the Microsoft Dataverse appnotification entitytype."
+description: "Notification to be provided to a user."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/appnotifications"
+  base_type: Microsoft.Dynamics.CRM.crmbaseentity
+  display_name: Notification
+  primary_key: appnotificationid
+  primary_name_attribute: title
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: appnotificationid
+      type: Edm.Guid
+      display_name: "Notification"
+      description: "Unique identifier for entity instances"
+      iscomputed: false
+      isreadonly: false
+    - name: body
+      type: Edm.String
+      display_name: "Body"
+      description: "Body of the notification"
+      iscomputed: false
+      isreadonly: false
+    - name: createdon
+      type: Edm.DateTimeOffset
+      display_name: "Created On"
+      description: "Date and time when the record was created."
+      iscomputed: false
+      isreadonly: true
+    - name: data
+      type: Edm.String
+      display_name: "Data"
+      description: "Custom data for the notification that can be used by the notification card"
+      iscomputed: false
+      isreadonly: false
+    - name: expireson
+      type: Edm.Date
+      display_name: "Expires on"
+      description: "Date and time when the notification will be deleted"
+      iscomputed: false
+      isreadonly: false
+    - name: icontype
+      type: Edm.Int32
+      display_name: "IconType"
+      description: ""
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 100000000
+          label: "Info"
+        - value: 100000001
+          label: "Success"
+        - value: 100000002
+          label: "Failure"
+        - value: 100000003
+          label: "Warning"
+        - value: 100000004
+          label: "Mention"
+        - value: 100000005
+          label: "Custom"
+    - name: importsequencenumber
+      type: Edm.Int32
+      display_name: "Import Sequence Number"
+      description: "Sequence number of the import that created this record."
+      iscomputed: false
+      isreadonly: false
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Date and time when the record was modified."
+      iscomputed: false
+      isreadonly: true
+    - name: overriddencreatedon
+      type: Edm.DateTimeOffset
+      display_name: "Record Created On"
+      description: "Date and time that the record was migrated."
+      iscomputed: false
+      isreadonly: false
+    - name: priority
+      type: Edm.Int32
+      display_name: "Priority"
+      description: "Priority of the notification"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 200000000
+          label: "Normal"
+        - value: 200000001
+          label: "High"
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Status of the notification"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Reason for the status of the Notification"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Unread"
+        - value: 2
+          label: "Read"
+        - value: 3
+          label: "Inactive"
+    - name: timezoneruleversionnumber
+      type: Edm.Int32
+      display_name: "Time Zone Rule Version Number"
+      description: "For internal use only."
+      iscomputed: false
+      isreadonly: false
+    - name: title
+      type: Edm.String
+      display_name: "Title"
+      description: "Title for the notification"
+      iscomputed: false
+      isreadonly: false
+    - name: toasttype
+      type: Edm.Int32
+      display_name: "Toast Type"
+      description: "Type of toast behavior for the notification"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 200000000
+          label: "Timed"
+        - value: 200000001
+          label: "Hidden"
+    - name: utcconversiontimezonecode
+      type: Edm.Int32
+      display_name: "UTC Conversion Time Zone Code"
+      description: "Time zone code that was in use when the record was created."
+      iscomputed: false
+      isreadonly: false
+    - name: versionnumber
+      type: Edm.Int64
+      display_name: "Version Number"
+      description: "Version Number"
+      iscomputed: false
+      isreadonly: true
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _appmoduleid_value
+    single_valued_navigation_property:
+    - AppModuleId
+    description: "Model-driven app in which the notification needs to be shown. If not specified, the notification will show in all apps."
+  - name: _createdby_value
+    single_valued_navigation_property:
+    - createdby
+    description: "Unique identifier of the user who created the record."
+  - name: _createdonbehalfby_value
+    single_valued_navigation_property:
+    - createdonbehalfby
+    description: "Unique identifier of the delegate user who created the record."
+  - name: _modifiedby_value
+    single_valued_navigation_property:
+    - modifiedby
+    description: "Unique identifier of the user who modified the record."
+  - name: _modifiedonbehalfby_value
+    single_valued_navigation_property:
+    - modifiedonbehalfby
+    description: "Unique identifier of the delegate user who modified the record."
+  - name: _ownerid_value
+    single_valued_navigation_property:
+    - ownerid
+    description: "Owner Id"
+  - name: _owningbusinessunit_value
+    single_valued_navigation_property:
+    - owningbusinessunit
+    description: "Unique identifier for the business unit that owns the record"
+  - name: _owningteam_value
+    single_valued_navigation_property:
+    - owningteam
+    description: "Unique identifier for the team that owns the record."
+  - name: _owninguser_value
+    single_valued_navigation_property:
+    - owninguser
+    description: "Unique identifier for the user that owns the record."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: AppModuleId
+    type: Microsoft.Dynamics.CRM.appmodule
+    partner: appmodule_appnotification_app
+  - name: createdby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_appnotification_createdby
+  - name: createdonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_appnotification_createdonbehalfby
+  - name: modifiedby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_appnotification_modifiedby
+  - name: modifiedonbehalfby
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: lk_appnotification_modifiedonbehalfby
+  - name: ownerid
+    type: Microsoft.Dynamics.CRM.principal
+    partner: owner_appnotification
+  - name: owningbusinessunit
+    type: Microsoft.Dynamics.CRM.businessunit
+    partner: business_unit_appnotification
+  - name: owningteam
+    type: Microsoft.Dynamics.CRM.team
+    partner: team_appnotification
+  - name: owninguser
+    type: Microsoft.Dynamics.CRM.systemuser
+    partner: user_appnotification
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: appnotification_AsyncOperations
+    type: Microsoft.Dynamics.CRM.asyncoperation
+    partner: regardingobjectid_appnotification
+  - name: appnotification_BulkDeleteFailures
+    type: Microsoft.Dynamics.CRM.bulkdeletefailure
+    partner: regardingobjectid_appnotification
+  - name: appnotification_DuplicateBaseRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: baserecordid_appnotification
+  - name: appnotification_DuplicateMatchingRecord
+    type: Microsoft.Dynamics.CRM.duplicaterecord
+    partner: duplicaterecordid_appnotification
+  - name: appnotification_MailboxTrackingFolders
+    type: Microsoft.Dynamics.CRM.mailboxtrackingfolder
+    partner: regardingobjectid_appnotification
+  - name: appnotification_PrincipalObjectAttributeAccesses
+    type: Microsoft.Dynamics.CRM.principalobjectattributeaccess
+    partner: objectid_appnotification
+  - name: appnotification_ProcessSession
+    type: Microsoft.Dynamics.CRM.processsession
+    partner: regardingobjectid_appnotification
+  - name: appnotification_SyncErrors
+    type: Microsoft.Dynamics.CRM.syncerror
+    partner: regardingobjectid_appnotification
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the appnotification entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.GrantAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.IsValidStateTransition
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.ModifyAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrievePrincipalAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess
+    binding_type: "Not Bound"
+  - name: Microsoft.Dynamics.CRM.RevokeAccess
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the appnotification entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.AppNotifications
+    description: "Contains the definitions of App Notification"
+# This entity has no remarks.
+href_see_also:
+- text: "Use the Microsoft Dataverse Web API"
+  href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.QueryFunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
+- Microsoft.Dynamics.CRM.MetadataEntityTypeIndex
+- Microsoft.Dynamics.CRM.SolutionIndex

@@ -4,7 +4,7 @@ name: "ExtractKeyPhrasesResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ExtractKeyPhrasesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: cfc26dce-c253-4751-bfeb-6c472ba5a77c

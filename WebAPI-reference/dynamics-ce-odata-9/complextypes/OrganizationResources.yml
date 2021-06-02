@@ -4,7 +4,7 @@ name: "OrganizationResources"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse OrganizationResources ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 53fdd153-3d24-41fe-af99-b75f69f6eedd

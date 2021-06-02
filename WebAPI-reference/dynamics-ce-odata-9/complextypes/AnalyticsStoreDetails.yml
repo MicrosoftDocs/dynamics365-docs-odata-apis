@@ -4,7 +4,7 @@ name: "AnalyticsStoreDetails"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AnalyticsStoreDetails ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c041e0df-5b58-4122-8320-7f2bbe807ea7

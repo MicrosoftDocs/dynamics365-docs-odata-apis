@@ -4,7 +4,7 @@ name: "Rollup"
 type: function
 metadata: 
   title: "Microsoft Dataverse Rollup Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 73e29e35-9f12-4e0a-ab1b-cd318311e024
@@ -58,24 +58,6 @@ entities:
   - type: Microsoft.Dynamics.CRM.contact
     displayName: "Contact"
     description: "Person with whom a business unit has a relationship, such as customer, supplier, and colleague."
-  - type: Microsoft.Dynamics.CRM.contract
-    displayName: "Contract"
-    description: "Agreement to provide customer service during a specified amount of time or number of cases."
-  - type: Microsoft.Dynamics.CRM.incident
-    displayName: "Case"
-    description: "Service request case associated with a contract."
-  - type: Microsoft.Dynamics.CRM.invoice
-    displayName: "Invoice"
-    description: "Order that has been billed."
-  - type: Microsoft.Dynamics.CRM.opportunity
-    displayName: "Opportunity"
-    description: "Potential revenue-generating event, or sale to an account, which needs to be tracked through a sales process to completion."
-  - type: Microsoft.Dynamics.CRM.quote
-    displayName: "Quote"
-    description: "Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer."
-  - type: Microsoft.Dynamics.CRM.salesorder
-    displayName: "Order"
-    description: "Quote that has been accepted."
 # There are no remarks for this function.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

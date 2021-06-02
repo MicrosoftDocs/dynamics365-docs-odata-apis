@@ -4,7 +4,7 @@ name: "UnscheduleTraining"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 6b3aa39a-1599-48c4-af71-3bc1d0856aa3

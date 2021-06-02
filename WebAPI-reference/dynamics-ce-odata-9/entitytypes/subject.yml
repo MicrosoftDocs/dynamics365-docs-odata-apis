@@ -4,7 +4,7 @@ name: "subject"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 08c2e1fb-1c6a-4515-b9c7-77a55de8d57d
@@ -146,9 +146,6 @@ collection_valued_navigation_properties:
   - name: Subject_BulkDeleteFailures
     type: Microsoft.Dynamics.CRM.bulkdeletefailure
     partner: regardingobjectid_subject
-  - name: subject_incidents
-    type: Microsoft.Dynamics.CRM.incident
-    partner: subjectid
   - name: subject_kb_articles
     type: Microsoft.Dynamics.CRM.kbarticle
     partner: subjectid
@@ -161,12 +158,6 @@ collection_valued_navigation_properties:
   - name: Subject_ProcessSessions
     type: Microsoft.Dynamics.CRM.processsession
     partner: regardingobjectid_subject
-  - name: subject_products
-    type: Microsoft.Dynamics.CRM.product
-    partner: subjectid
-  - name: subject_sales_literature
-    type: Microsoft.Dynamics.CRM.salesliterature
-    partner: subjectid
   - name: Subject_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_subject_syncerror
@@ -176,11 +167,7 @@ operations:
   operation_items:
   - name: Microsoft.Dynamics.CRM.RetrieveByTopIncidentSubjectKbArticle
     binding_type: "Entity"
-solutions:
-  description: "The following solutions include the subject entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

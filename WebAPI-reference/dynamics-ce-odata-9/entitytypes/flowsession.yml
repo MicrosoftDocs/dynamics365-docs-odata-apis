@@ -4,7 +4,7 @@ name: "flowsession"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7b8d6147-73a7-419e-830e-4fe236605027
@@ -213,6 +213,14 @@ lookup_properties:
     single_valued_navigation_property:
     - createdonbehalfby
     description: "Unique identifier of the delegate user who created the record."
+  - name: _machinegroupid_value
+    single_valued_navigation_property:
+    - MachineGroupId
+    description: ""
+  - name: _machineid_value
+    single_valued_navigation_property:
+    - MachineId
+    description: ""
   - name: _modifiedby_value
     single_valued_navigation_property:
     - modifiedby
@@ -250,6 +258,12 @@ single_valued_navigation_properties:
   - name: createdonbehalfby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_flowsession_createdonbehalfby
+  - name: MachineGroupId
+    type: Microsoft.Dynamics.CRM.flowmachinegroup
+    partner: flowmachinegroup_flowsession_MachineGroupId
+  - name: MachineId
+    type: Microsoft.Dynamics.CRM.flowmachine
+    partner: flowmachine_flowsession_MachineId
   - name: modifiedby
     type: Microsoft.Dynamics.CRM.systemuser
     partner: lk_flowsession_modifiedby
@@ -295,12 +309,6 @@ collection_valued_navigation_properties:
   - name: flowsession_workflowbinary_FlowSessionId
     type: Microsoft.Dynamics.CRM.workflowbinary
     partner: FlowSessionId
-  - name: lk_workflowlog_flowsession_childworkflow
-    type: Microsoft.Dynamics.CRM.workflowlog
-    partner: childworkflowinstanceid_flowsession
-  - name: lk_workflowlog_flowsessions
-    type: Microsoft.Dynamics.CRM.workflowlog
-    partner: flowsessionid_flowsession
 # This entity has no derived entities.
 operations:
   description: "The following operations can be used with the flowsession entity type."

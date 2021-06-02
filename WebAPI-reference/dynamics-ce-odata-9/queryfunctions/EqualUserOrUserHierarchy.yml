@@ -4,7 +4,7 @@ name: "EqualUserOrUserHierarchy"
 type: queryfunction
 metadata: 
   title: "Microsoft Dataverse EqualUserOrUserHierarchy Query Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 303ba667-3b8c-4c2c-81b2-d715ee522907

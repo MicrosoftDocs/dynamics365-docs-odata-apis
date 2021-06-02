@@ -4,7 +4,7 @@ name: "SolutionValidationResult"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse SolutionValidationResult ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 16b8cec2-444c-4265-bc18-8c04bc40a802

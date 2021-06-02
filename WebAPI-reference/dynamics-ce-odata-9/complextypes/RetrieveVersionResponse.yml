@@ -4,7 +4,7 @@ name: "RetrieveVersionResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveVersionResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: dd4bc73a-b177-493a-ba6c-2937a7747aac

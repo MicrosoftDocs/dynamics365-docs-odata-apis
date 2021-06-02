@@ -4,7 +4,7 @@ name: "FileAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse FileAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ebd76725-5179-4cc0-b453-8b6c2fb6ad30

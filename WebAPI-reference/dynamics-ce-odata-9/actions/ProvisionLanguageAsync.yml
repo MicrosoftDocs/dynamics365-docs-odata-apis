@@ -4,7 +4,7 @@ name: "ProvisionLanguageAsync"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a8f5ac20-14eb-4369-b7c4-1f93e696e1be

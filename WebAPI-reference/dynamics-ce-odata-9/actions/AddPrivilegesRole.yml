@@ -4,7 +4,7 @@ name: "AddPrivilegesRole"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a8cedc85-0db8-4d45-947b-130c5329c12f

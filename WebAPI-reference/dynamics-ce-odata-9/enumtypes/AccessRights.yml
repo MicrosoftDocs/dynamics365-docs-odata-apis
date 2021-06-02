@@ -4,7 +4,7 @@ name: "AccessRights"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse AccessRights EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: fa89ce9c-fd73-4504-b938-afac5fc39546

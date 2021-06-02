@@ -4,7 +4,7 @@ name: "LookupFormat"
 type: enumtype
 metadata: 
   title: "Microsoft Dataverse LookupFormat EnumType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b819357c-2050-42fa-bca4-247ccc8b3a2c

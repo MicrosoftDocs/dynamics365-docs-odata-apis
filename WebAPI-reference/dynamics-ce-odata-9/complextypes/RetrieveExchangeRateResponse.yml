@@ -4,7 +4,7 @@ name: "RetrieveExchangeRateResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveExchangeRateResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: ae4a8de6-8382-4cb1-a3da-56e255a75b03

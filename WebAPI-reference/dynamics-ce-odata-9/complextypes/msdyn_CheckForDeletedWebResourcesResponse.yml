@@ -4,7 +4,7 @@ name: "msdyn_CheckForDeletedWebResourcesResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse msdyn_CheckForDeletedWebResourcesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f9041eb3-8e34-44a8-a2ce-b62812ff9545

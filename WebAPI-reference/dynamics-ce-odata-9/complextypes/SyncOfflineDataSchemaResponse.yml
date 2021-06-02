@@ -4,7 +4,7 @@ name: "SyncOfflineDataSchemaResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse SyncOfflineDataSchemaResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 55fd6bc2-984a-43ab-a3b0-00d68b310c27

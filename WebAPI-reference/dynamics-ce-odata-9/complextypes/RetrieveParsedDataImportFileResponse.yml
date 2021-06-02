@@ -4,7 +4,7 @@ name: "RetrieveParsedDataImportFileResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse RetrieveParsedDataImportFileResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 69b0cf66-328a-4e23-ba81-cdb3ed13402a

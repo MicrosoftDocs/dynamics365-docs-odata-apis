@@ -4,7 +4,7 @@ name: "sdkmessage"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5cf179ce-706b-4a59-8f1d-4c629174e452
@@ -267,6 +267,9 @@ single_valued_navigation_properties:
 collection_valued_navigation_properties:
   description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
   property_items:
+  - name: CustomAPIId
+    type: Microsoft.Dynamics.CRM.customapi
+    partner: SdkMessageId
   - name: sdkmessageid_sdkmessagefilter
     type: Microsoft.Dynamics.CRM.sdkmessagefilter
     partner: sdkmessageid
@@ -280,8 +283,6 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.ApiMessagesExtension
     description: "This solution contains CDS API message extensions."
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

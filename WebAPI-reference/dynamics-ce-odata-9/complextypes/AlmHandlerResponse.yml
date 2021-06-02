@@ -4,7 +4,7 @@ name: "AlmHandlerResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AlmHandlerResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 61c5c98d-4096-4771-abaf-434fd3784a6e

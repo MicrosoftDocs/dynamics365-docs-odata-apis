@@ -4,10 +4,10 @@ name: "API messages extension solution"
 type: solution
 metadata: 
   title: "Microsoft Dataverse API messages extension solution Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 0a8f3bfa-72c4-42ae-a02f-c704adce4e4b
+  ms.assetid: 207505a3-d938-4565-9fa7-d422d71041da
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"

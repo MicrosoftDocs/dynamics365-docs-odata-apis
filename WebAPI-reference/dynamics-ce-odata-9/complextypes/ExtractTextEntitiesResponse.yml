@@ -4,7 +4,7 @@ name: "ExtractTextEntitiesResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ExtractTextEntitiesResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d5d17a30-41b3-45fb-b5e0-1ef5c5839d48

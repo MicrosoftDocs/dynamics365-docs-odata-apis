@@ -4,10 +4,10 @@ name: "Knowledge Management Patch"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Knowledge Management Patch Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: ffa6272f-37f4-406d-a221-6c9f77ea9772
+  ms.assetid: 2756196b-09cb-4d74-88dd-2f6258b91cac
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Dynamics 365 workload for knowledge management."
  unique_name: msdynce_KnowledgeManagementPatch
- version: "9.0.1.3655"
+ version: "9.0.1.5904"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."

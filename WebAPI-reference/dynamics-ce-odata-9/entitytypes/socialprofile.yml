@@ -4,7 +4,7 @@ name: "socialprofile"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 28159a25-5aae-4273-b467-991b8520e6ff
@@ -229,9 +229,6 @@ collection_valued_navigation_properties:
   - name: SocialProfile_AsyncOperations
     type: Microsoft.Dynamics.CRM.asyncoperation
     partner: regardingobjectid_socialprofile
-  - name: socialprofile_cases
-    type: Microsoft.Dynamics.CRM.incident
-    partner: socialprofileid
   - name: socialprofile_connections1
     type: Microsoft.Dynamics.CRM.connection
     partner: record1id_socialprofile
@@ -277,12 +274,6 @@ solutions:
   solution_items:
   - type: Microsoft.Dynamics.CRM.msdynce_AppCommonPatch201904
     description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_Sales
-    description: "Dynamics 365 workload for sales."
-  - type: Microsoft.Dynamics.CRM.msdynce_SalesService
-    description: "For internal use only."
-  - type: Microsoft.Dynamics.CRM.msdynce_Service
-    description: "Dynamics 365 workload for service."
   - type: Microsoft.Dynamics.CRM.msdynce_SocialProfile
     description: "Dynamics 365 workload for social profiles."
   - type: Microsoft.Dynamics.CRM.System

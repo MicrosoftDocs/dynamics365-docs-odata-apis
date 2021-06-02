@@ -4,7 +4,7 @@ name: "RetrieveDependentComponents"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveDependentComponents Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 144e5060-c71e-4cf9-a09f-9473048c8354

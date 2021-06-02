@@ -4,7 +4,7 @@ name: "metric"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 74efe86c-f5b3-430f-ba36-c303faa238e4
@@ -204,9 +204,6 @@ collection_valued_navigation_properties:
   - name: Metric_SyncErrors
     type: Microsoft.Dynamics.CRM.syncerror
     partner: regardingobjectid_metric_syncerror
-  - name: msdyn_metric_msdyn_forecastdefinition_metricid
-    type: Microsoft.Dynamics.CRM.msdyn_forecastdefinition
-    partner: msdyn_metricid
 # This entity has no derived entities.
 # This entity has no operations
 solutions:

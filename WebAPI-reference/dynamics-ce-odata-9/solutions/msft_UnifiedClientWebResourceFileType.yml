@@ -4,10 +4,10 @@ name: "UnifiedClientWebResourceFileType"
 type: solution
 metadata: 
   title: "Microsoft Dataverse UnifiedClientWebResourceFileType Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 9c281abb-9338-499c-bdc1-4544ca863944
+  ms.assetid: cfac8c3a-de35-4ddc-973d-67a6a26f8c1f
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Unified Client WebResource File Type"
  unique_name: msft_UnifiedClientWebResourceFileType
- version: "1.0.0.0"
+ version: "1.0.0.1"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."

@@ -4,7 +4,7 @@ name: "LocalTimeFromUtcTimeResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse LocalTimeFromUtcTimeResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b1941f77-f16d-44ba-83c1-da14b16aa47b

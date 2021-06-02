@@ -4,7 +4,7 @@ name: "msdyn_dataflow"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: b9020362-c0b6-4da0-b66b-4af575f4c4d9

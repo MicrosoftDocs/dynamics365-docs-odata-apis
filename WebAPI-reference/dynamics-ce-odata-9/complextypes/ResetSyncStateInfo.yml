@@ -4,7 +4,7 @@ name: "ResetSyncStateInfo"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ResetSyncStateInfo ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 3daf5d9e-1cd5-499a-87fa-2491d4e29d68

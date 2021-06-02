@@ -4,7 +4,7 @@ name: "msdyn_federatedarticleincident"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: c9fed972-1b97-427b-b08f-88891924fabe
@@ -134,8 +134,6 @@ lookup_properties:
     - msdyn_federatedarticleid
     description: ""
   - name: _msdyn_incidentid_value
-    single_valued_navigation_property:
-    - msdyn_incidentid
     description: ""
   - name: _organizationid_value
     single_valued_navigation_property:
@@ -159,9 +157,6 @@ single_valued_navigation_properties:
   - name: msdyn_federatedarticleid
     type: Microsoft.Dynamics.CRM.msdyn_federatedarticle
     partner: msdyn_federatedarticle_msdyn_federatedarticleincident_federatedarticleId
-  - name: msdyn_incidentid
-    type: Microsoft.Dynamics.CRM.incident
-    partner: msdyn_incident_msdyn_federatedarticleincident_IncidentId
   - name: organizationid
     type: Microsoft.Dynamics.CRM.organization
     partner: organization_msdyn_federatedarticleincident

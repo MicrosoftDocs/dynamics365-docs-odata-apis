@@ -4,7 +4,7 @@ name: "DependentOptionSetMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse DependentOptionSetMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 42813877-5ff0-442e-8b7d-83f4e41038c6

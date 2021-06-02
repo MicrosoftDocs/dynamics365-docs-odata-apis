@@ -4,7 +4,7 @@ name: "CreateAsyncJobToRevokeInheritedAccess"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 47958287-d4d3-4752-aa89-13c5514946bc

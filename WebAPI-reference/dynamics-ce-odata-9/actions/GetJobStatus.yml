@@ -4,7 +4,7 @@ name: "GetJobStatus"
 type: action
 metadata: 
   title: "Microsoft Dataverse Action Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: a0d5ce6a-fedf-48e6-8202-54320e2923c5

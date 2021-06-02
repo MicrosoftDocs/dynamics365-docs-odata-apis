@@ -4,7 +4,7 @@ name: "RetrieveTotalRecordCount"
 type: function
 metadata: 
   title: "Microsoft Dataverse RetrieveTotalRecordCount Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 7d1ffabc-78a2-4e25-a4a4-b8925c601df1

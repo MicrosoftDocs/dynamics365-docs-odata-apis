@@ -4,7 +4,7 @@ name: "lookupmapping"
 type: entitytype
 metadata: 
   title: "Microsoft Dataverse EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: d30ed115-c945-4267-a4f2-59603802da24
@@ -200,11 +200,7 @@ single_valued_navigation_properties:
 # This entity has no collection-valued navigation properties
 # This entity has no derived entities.
 # This entity has no operations
-solutions:
-  description: "The following solutions include the lookupmapping entity type."
-  solution_items:
-  - type: Microsoft.Dynamics.CRM.System
-    description: "Internal CRM System Solution"
+# This entity is not included in any solutions.
 # There are no remarks for this entity.
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"

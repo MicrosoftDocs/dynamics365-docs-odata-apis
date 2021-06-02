@@ -4,10 +4,10 @@ name: "Service management controls extension"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Service management controls extension Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 332674f0-36c0-414d-9385-0fa44f6e37d3
+  ms.assetid: 5fb29898-b48d-4603-bb06-7bd4afe86bf4
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,7 +16,7 @@ namespace: Microsoft.Dynamics.CRM
 header:
  description: "Service management controls extension"
  unique_name: msdynce_ServiceManagementControlsExtension
- version: "9.1.21031.1008"
+ version: "9.1.20094.3022"
  customization_prefix: msdyn
 # This solution includes no entities.
 actions:

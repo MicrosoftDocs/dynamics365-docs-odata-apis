@@ -1,9 +1,9 @@
 ### YamlMime:ODataIndex
 uid: Microsoft.Dynamics.CRM.ActionIndex
 name: Web API Action Reference
-title: "Microsoft Dataverse Web API Action Reference | MicrosoftDocs"
+title: "Microsoft DataverseWeb API Action Reference | MicrosoftDocs"
 metadata:   
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 9d8c9441-fa96-49da-bacb-a9d7f2d6dfd8
@@ -12,41 +12,7 @@ metadata:
   manager: "annbe"
 description: "Actions represent operations which may have observable side effects, such as creating or updating records. An Action may require parameters and may return a value. Actions may be bound to entity types."
 in_this_section:
-- type: Microsoft.Dynamics.CRM._AddMembersBatch
-  description: ""
-- type: Microsoft.Dynamics.CRM._CloneRoutingRuleSet
-  description: ""
-- type: Microsoft.Dynamics.CRM._EvaluateRuleAndRoute
-  description: ""
-- type: Microsoft.Dynamics.CRM._EvaluateSearchRequest
-  description: ""
-- type: Microsoft.Dynamics.CRM._GetServiceTreeData
-  description: ""
-- type: Microsoft.Dynamics.CRM._MoveRoutingRuleItemAt
-  description: ""
-- type: Microsoft.Dynamics.CRM._ResourcesAddUpdateAction
-  description: ""
-- type: Microsoft.Dynamics.CRM._ResourcesRemoveUpdateAction
-  description: ""
-- type: Microsoft.Dynamics.CRM._RetrieveActivitiesByResources
-  description: ""
-- type: Microsoft.Dynamics.CRM._RoutingRuleSetValidation
-  description: ""
-- type: Microsoft.Dynamics.CRM._SaveServiceTreeData
-  description: ""
-- type: Microsoft.Dynamics.CRM._ServiceCalendarAction
-  description: ""
 - type: Microsoft.Dynamics.CRM.AddAppComponents
-  description: ""
-- type: Microsoft.Dynamics.CRM.AddItemCampaign
-  description: "Adds an item to a campaign."
-- type: Microsoft.Dynamics.CRM.AddItemCampaignActivity
-  description: "Adds an item to a campaign activity. "
-- type: Microsoft.Dynamics.CRM.AddListMembersList
-  description: "Adds members to a list. "
-- type: Microsoft.Dynamics.CRM.AddMemberList
-  description: "Adds a member to a list (marketing list).  "
-- type: Microsoft.Dynamics.CRM.AddMembersBatchList
   description: ""
 - type: Microsoft.Dynamics.CRM.AddMembersTeam
   description: "Adds members to a team. "
@@ -64,16 +30,18 @@ in_this_section:
   description: "Adds a user to the auto created access team for the specified record. "
 - type: Microsoft.Dynamics.CRM.AlmHandler
   description: ""
+- type: Microsoft.Dynamics.CRM.Analyze
+  description: ""
 - type: Microsoft.Dynamics.CRM.AnalyzeSentiment
   description: ""
 - type: Microsoft.Dynamics.CRM.ApplyRecordCreationAndUpdateRule
   description: "Applies record creation and update rules to activities in 365 created as a result of the integration with external applications.  "
-- type: Microsoft.Dynamics.CRM.ApplyRoutingRule
-  description: "Applies the active routing rule to an incident.  "
 - type: Microsoft.Dynamics.CRM.AutoMapEntity
   description: "Generates a new set of attribute mappings based on the metadata. "
 - type: Microsoft.Dynamics.CRM.BackgroundSendEmail
   description: "Send email messages asynchronously."
+- type: Microsoft.Dynamics.CRM.BatchGetFlowMachineStatus
+  description: ""
 - type: Microsoft.Dynamics.CRM.BatchPrediction
   description: ""
 - type: Microsoft.Dynamics.CRM.Book
@@ -82,40 +50,24 @@ in_this_section:
   description: "Submits a bulk delete job that deletes selected records in bulk. This job runs asynchronously in the background without blocking other activities."
 - type: Microsoft.Dynamics.CRM.BulkDetectDuplicates
   description: "Submits an asynchronous system job that detects and logs multiple duplicate records."
-- type: Microsoft.Dynamics.CRM.CalculateActualValueOpportunity
-  description: "Calculates the value of an opportunity that is in the \"Won\" state. "
 - type: Microsoft.Dynamics.CRM.CalculatePrice
   description: "Calculates price in an opportunity, quote, order, and invoice."
 - type: Microsoft.Dynamics.CRM.CanBeReferenced
   description: "Checks whether the specified entity can be the primary entity (one) in a one-to-many relationship. "
 - type: Microsoft.Dynamics.CRM.CanBeReferencing
-  description: "Checks whether an entity can be the referencing entity in a one-to-many relationship. "
-- type: Microsoft.Dynamics.CRM.CancelContract
-  description: "Cancels a contract.  "
-- type: Microsoft.Dynamics.CRM.CancelSalesOrder
-  description: "Cancels a sales order. "
+  description: "Checkes whether an entity can be the referencing entity in a one-to-many relationship. "
 - type: Microsoft.Dynamics.CRM.CancelTraining
   description: ""
 - type: Microsoft.Dynamics.CRM.CanManyToMany
   description: "Checks whether an entity can participate in a many-to-many relationship.  "
 - type: Microsoft.Dynamics.CRM.CategorizeText
   description: ""
-- type: Microsoft.Dynamics.CRM.cds_cascadeAsyncSuccessAPI
-  description: ""
 - type: Microsoft.Dynamics.CRM.CloneAsPatch
   description: "Creates a solution patch from a managed or unmanaged solution."
 - type: Microsoft.Dynamics.CRM.CloneAsSolution
   description: "Creates a new copy of an unmanged solution that contains the original solution plus all of its patches."
-- type: Microsoft.Dynamics.CRM.CloneContract
-  description: "Copies an existing contract and its line items. "
 - type: Microsoft.Dynamics.CRM.CloneMobileOfflineProfile
   description: "For internal use only. "
-- type: Microsoft.Dynamics.CRM.CloneProduct
-  description: "Copies an existing product family, product, or bundle under the same parent record. "
-- type: Microsoft.Dynamics.CRM.CloseIncident
-  description: "Closes an incident (case)."
-- type: Microsoft.Dynamics.CRM.CloseQuote
-  description: "Closes a quote.  "
 - type: Microsoft.Dynamics.CRM.CommitAnnotationBlocksUpload
   description: ""
 - type: Microsoft.Dynamics.CRM.CommitAttachmentBlocksUpload
@@ -126,22 +78,8 @@ in_this_section:
   description: "Updates a duplicate rule (duplicate detection rule) and its related duplicate rule conditions. "
 - type: Microsoft.Dynamics.CRM.ConvertOwnerTeamToAccessTeam
   description: "Converts a team of type owner to a team of type access.  "
-- type: Microsoft.Dynamics.CRM.ConvertQuoteToSalesOrder
-  description: "Converts a quote to a sales order.  "
-- type: Microsoft.Dynamics.CRM.ConvertSalesOrderToInvoice
-  description: "Converts a sales order to an invoice.  "
-- type: Microsoft.Dynamics.CRM.CopyCampaign
-  description: "Copies a campaign. "
-- type: Microsoft.Dynamics.CRM.CopyCampaignResponse
-  description: "Creates a copy of a campaign response"
-- type: Microsoft.Dynamics.CRM.CopyDynamicListToStatic
-  description: "Creates a static list from the specified dynamic list and add the members that satisfy the dynamic list query criteria to the static list. "
-- type: Microsoft.Dynamics.CRM.CopyMembersList
-  description: "Copies the members from the source list to the target list without creating duplicates.  "
 - type: Microsoft.Dynamics.CRM.CopySystemForm
   description: "Creates a new entity form that is based on an existing entity form.  "
-- type: Microsoft.Dynamics.CRM.CreateActivitiesList
-  description: "Creates a quick campaign to distribute an activity to members of a list (marketing list). "
 - type: Microsoft.Dynamics.CRM.CreateAsyncJobToRevokeInheritedAccess
   description: ""
 - type: Microsoft.Dynamics.CRM.CreateCustomerRelationships
@@ -168,8 +106,6 @@ in_this_section:
   description: "Deletes instances of a recurring appointment master that have an “Open” state.  "
 - type: Microsoft.Dynamics.CRM.DeleteOptionValue
   description: "Deletes an option value in a global or local option set.  "
-- type: Microsoft.Dynamics.CRM.DeleteOQOILineWithSkipPricingCalculation
-  description: ""
 - type: Microsoft.Dynamics.CRM.DeleteRecordChangeHistory
   description: "Deletes all audit change history records for a particular record.  "
 - type: Microsoft.Dynamics.CRM.DeliverImmediatePromoteEmail
@@ -182,8 +118,6 @@ in_this_section:
   description: "Deprovisions a language. "
 - type: Microsoft.Dynamics.CRM.DetectLanguage
   description: ""
-- type: Microsoft.Dynamics.CRM.DistributeCampaignActivity
-  description: "Creates a bulk operation that distributes a campaign activity. "
 - type: Microsoft.Dynamics.CRM.DownloadBlock
   description: ""
 - type: Microsoft.Dynamics.CRM.DownloadSolutionExportData
@@ -202,30 +136,18 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.ExtractTextEntities
   description: ""
-- type: Microsoft.Dynamics.CRM.FulfillSalesOrder
-  description: "Fulfills a sales order."
 - type: Microsoft.Dynamics.CRM.FullTextSearchKnowledgeArticle
   description: "Performs a full-text search on knowledge articles in Dynamics 365 using the specified search text."
-- type: Microsoft.Dynamics.CRM.GenerateInvoiceFromOpportunity
-  description: "Generates an invoice from an opportunity. "
-- type: Microsoft.Dynamics.CRM.GenerateQuoteFromOpportunity
-  description: "Generates a quote from an opportunity. "
-- type: Microsoft.Dynamics.CRM.GenerateSalesOrderFromOpportunity
-  description: "Generates a sales order (order) from an opportunity.  "
 - type: Microsoft.Dynamics.CRM.GenerateSocialProfile
   description: "Returns an existing social profile record if one exists, otherwise generates a new one and returns it.  "
 - type: Microsoft.Dynamics.CRM.GetAutoNumberSeed
   description: ""
-- type: Microsoft.Dynamics.CRM.GetInvoiceProductsFromOpportunity
-  description: "Retrieves the products from an opportunity and copy them to the invoice.  "
 - type: Microsoft.Dynamics.CRM.GetJobStatus
   description: ""
 - type: Microsoft.Dynamics.CRM.GetNextAutoNumberValue
   description: ""
-- type: Microsoft.Dynamics.CRM.GetQuoteProductsFromOpportunity
-  description: "Retrieves the products from an opportunity and copy them to the quote. "
-- type: Microsoft.Dynamics.CRM.GetSalesOrderProductsFromOpportunity
-  description: "Retrieves the products from an opportunity and copy them to the sales order. "
+- type: Microsoft.Dynamics.CRM.GetPublicKey
+  description: ""
 - type: Microsoft.Dynamics.CRM.GetTrackingTokenEmail
   description: "Returns a tracking token that can then be passed as a parameter to the SendEmailRequest message. "
 - type: Microsoft.Dynamics.CRM.GrantAccess
@@ -243,11 +165,13 @@ in_this_section:
 - type: Microsoft.Dynamics.CRM.ImportSolution
   description: "Imports a solution.  "
 - type: Microsoft.Dynamics.CRM.ImportSolutionAsync
-  description: "Imports a solution using an asynchronous jon.  "
+  description: "Imports a solution using an asynchronous join.  "
 - type: Microsoft.Dynamics.CRM.ImportSolutions
   description: ""
 - type: Microsoft.Dynamics.CRM.ImportTranslation
   description: "Imports translations from a compressed file.  "
+- type: Microsoft.Dynamics.CRM.Ingest
+  description: ""
 - type: Microsoft.Dynamics.CRM.InitializeAnnotationBlocksDownload
   description: ""
 - type: Microsoft.Dynamics.CRM.InitializeAnnotationBlocksUpload
@@ -266,6 +190,8 @@ in_this_section:
   description: "Inserts a new option value for a global or local option set.  "
 - type: Microsoft.Dynamics.CRM.InsertStatusValue
   description: "Inserts a new option into a StatusAttributeMetadata attribute. "
+- type: Microsoft.Dynamics.CRM.install
+  description: ""
 - type: Microsoft.Dynamics.CRM.InstallSampleData
   description: "Installs the sample data.  "
 - type: Microsoft.Dynamics.CRM.InstantiateFilters
@@ -274,91 +200,17 @@ in_this_section:
   description: "Creates an email message from a template (email template).  "
 - type: Microsoft.Dynamics.CRM.IsPaiEnabled
   description: ""
-- type: Microsoft.Dynamics.CRM.LockInvoicePricing
-  description: "Locks the total price of products and services that are specified in the invoice. "
-- type: Microsoft.Dynamics.CRM.LockSalesOrderPricing
-  description: "Locks the total price of products and services that are specified in the sales order (order).  "
-- type: Microsoft.Dynamics.CRM.LoseOpportunity
-  description: "Sets the state of an opportunity to Lost. "
+- type: Microsoft.Dynamics.CRM.IsPmEnabled
+  description: ""
+- type: Microsoft.Dynamics.CRM.LeaveGroup
+  description: ""
 - type: Microsoft.Dynamics.CRM.Merge
   description: "Merges the information from two entity records of the same type. "
 - type: Microsoft.Dynamics.CRM.ModifyAccess
   description: "Replaces the access rights on the target record for the specified security principal (user or team). "
-- type: Microsoft.Dynamics.CRM.msdyn_AcceptProposedBooking
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_AcceptTeamRecommendation
-  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_ActivateProcesses
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_ActivateSdkMessageProcessingSteps
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_AddInvoiceLineDetails
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_AddSuggestedCards
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_AnalyticsSaveDataInConfigStore
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_AnalyzeServiceHealth
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_AnalyzeServiceHealthAsync
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_applyworktemplate
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_applyworktemplateforresources
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ApprovalStatusApprove
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ApprovalStatusReject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_AssignGenericResource
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_AssignResourcesForTask
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_AutoGenerateProjectTeam
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_batchentityCUD
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_BookingResource
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_BookingResourceRequirement
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_BookRequirementGroup
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_BulkCreatePredecessorsForTask
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_BulkDeletePredecessorsForTask
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_BulkPriceAssignments
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_BusinessClosureDelete
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_BusinessClosureRetrieve
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_BusinessClosureSave
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CalculateAndUpdateBookingTravel
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CancelApproval
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CancelBookings
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CascadeBookingChanges
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_cesinvoke
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ChangeRequestStatus
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CheckAlertFields
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckAnyUserIsIntegrationUser
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckCompatibilityBetweenFSAndPSASolution
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckFetchXmlAndLayoutXmlOfSavedQueries
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckFieldServiceDBVersion
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckForActiveLayersOnProcesses
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_CheckForCustomizedOptionSet
   description: ""
@@ -366,753 +218,69 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_CheckForCustomizedWebResources
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckForDeletedBSMRecords
-  description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_CheckForDeletedProcess
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_CheckForDeletedSDKMessageProcessingSteps
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_CheckForDeletedWebResources
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckForFailingDeleteUniqueNumberWorkflow
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckForFailingWorkflowRelatedToAgreement
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckForFieldServiceSettingRecord
-  description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_CheckForPendingProcesses
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckForRemovedFormLibraries
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckForRequiredPrivilegesAgreementBookingSetupOwners
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckForRequiredPrivilegesAgreementInvoiceSetupOwners
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckForSolutionVersion
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckForWorkOrderTypes
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckGeolocationEnabled
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckIfAutoNumberingIsOpted
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckIfExecutionContextIsPassed
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_CheckIfProcessesAreActive
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_CheckIfProcessesOwnedByDisabledUsers
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckIfSalesFormsFromUnmanagedLayer
-  description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_CheckIfSDKMessageProcessingStepsAreActive
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckIfWorkOrderGeneratedFromABS
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckIoTDeviceCategoryOfDevice
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckIoTSettingsAndAlertParentingConfig
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckMultiplePrimaryIncidentForWorkOrder
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckOrgSettingIsSOPIntegrationEnabled
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckOrgSettingOOBPriceCalculationEnabled
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckReqRibbonCommandDef
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckReqWebResourceOnSystemForm
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckServiceEndPoint
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CheckVolumeOfAlerts
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_cloneentity
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CloneMultiple
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CloseAllOpportunityQuotes
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CloseQuoteAsLost
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CloseQuoteAsWon
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CompleteResourceRequest
-  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_ConditionXmlConversion
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CopyProject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CopyRelatedProjectEntitiesFromTemplate
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CopyWbsToProject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CorrectInvoice
-  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_CreateActionFlow
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateApmEventHandler
+- type: Microsoft.Dynamics.CRM.msdyn_CreateNewAnalysisJob
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateBSMRecord
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateContractLineDetailsFromEstimate
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CreateContractSpecificPriceList
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CreateEstimateLines
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CreateExtensionRequirement
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_createinvoicefrominvoiceschedule
-  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_CreateNewAnalysisJobForRuleSet
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateQuoteFromOpportunity
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateQuoteLineDetailsFromEstimate
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CreateQuoteSpecificPriceList
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_createrequestfromrequirement
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateRequirementGroupBookings
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateRequirementModel
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateResourceOptimizationRequest
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateSharepointDocumentLocation
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_CreateSimilarOpportunitiyPredictionModel
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateSuggestedActivity
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateSuggestedContact
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateTaskBasedEstimatesForProject
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_CreateTemplateFromProject
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_DataValidationApi
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_DeleteCalendar
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_DeleteEstimateLines
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_DeleteEstimatesForProjectTask
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_DeleteFlow
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_DismissEmailInfraActionCard
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_DismissSuggestedActivity
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_DismissSuggestedContact
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_EditAndSaveSuggestedContact
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_EnableLinkedInDataValidation
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_EnableSharePoint
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ExecuteARC
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ExecutePrimaryCreatePostActions
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ExecuteSIRequest
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ExpandResourceAssignment
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ExpenseApproveAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesApprove
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesPendingApproval
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesRecall
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesReject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ExpenseEntriesSubmit
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ExpenseRejectAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ExpenseSubmitAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ExportActual
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_Feedback
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FetchLISNProfileAssociations
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FetchProjectCalendarWorkHours
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceAgreementBookingIncidentCopyAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceAgreementBookingIncidentStatusAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceAgreementSystemStatusAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceBookableResourceBookingAssociateAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceProvisionIncidentTypeRecommendationMLModelInternal
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceQuoteBookingIncidentCopyAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceSystemAction
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceSystemJobWOShareUnshareAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceUpdateCustomerAssetonWorkOrderIncidentItemsAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceWorkOrderIncidentCopyAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceWorkOrderIncidentStatusAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FieldServiceWorkOrderSystemStatusAction
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FindEntityForPolymorphicLookup
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ForecastApi
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ForecastGenerateHierarchy
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ForecastInstanceActions
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ForecastRecalculate
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ForecastRecalculateAll
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ForecastRecalculateAsync
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_FpsAction
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_FulfillResourceDemand
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GDPROptoutContact
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GDPROptoutLead
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GDPROptoutUser
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GenerateContractLineInvoiceSchedule
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GenerateContractLineScheduleOfValues
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GenerateGeofenceEvent
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GenerateQuoteLineInvoiceSchedule
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GenerateQuoteLineScheduleOfValues
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GenerateRequirementsFromTeamMembers
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GeocodeAddress
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GeolocationLocationTrackingData
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GeolocationLocationTrackingEnabled
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetACIMarsConnectorStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetAdditionalPropertiesMetadata
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetAnalyticsReportDetail
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetAnalyticsReportToken
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_getAppConfig
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_getAppConfigByContext
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetAutoCaptureUri
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetAvailabilitySummaryFromDemand
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetBookableResources
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetBookingDetailsByRequirementIds
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetBookingDetailsByResource
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetCaseAggregation
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetCaseSuggestions
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetCategoryDefaults
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetCategoryPrice
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetCecCompatibilityForOmniChannel
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetChildResources
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetCollectionData
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetContractBillingRadialGaugeData
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetContractDetailedTransactions
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetContractEffortRadialGaugeData
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetContractLineChargeability
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetContractLines
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetDataForContractPerformance
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetDataForRadialGauge
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetDocumentManagementSettings
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetDocumentStorePath
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetEstimatesforProject
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetGenericResourceDetails
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetHierarchyData
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetIoTAlertAggregation
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetIoTCommandMetadata
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetIoTVisualizationSummary
-  description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_GetKAObjectFromTemplate
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetKnowledgeSuggestions
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetLegalAcceptanceStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetMultipleResourceBookingDetails
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetMyChangedSkills
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetNotesAnalysis
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetOfficeGroupForEntity
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetOrCreateBookableResources
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetOrganizationalUnitsWithinRadius
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetOrganizationProvisioningStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetPrice
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProcessNotes
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProductLine
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProductLines
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProjectCoparticipation
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProjectCurrencies
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProjectDetails
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProjectMapForContractLine
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProjectMapForQuoteLine
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProjects
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProjectsForContract
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProjectsForQuote
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProjectTaskCategories
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetProposedResources
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetQuoteLineChargeability
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetRecordUsers
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetRelatedIoTDevicesByEntity
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetRequirementChartData
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetRequirementDemand
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetRequirementDemandDisplay
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetRequirementDependencySet
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetRequirementModels
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetResourceAvailability
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetResourceAvailabilitySummary
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetResourceBookingByProject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetResourceBookingDetails
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetResourceBookingFormParameters
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetResourceDemandTimeLine
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetResourceGroupMemberships
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetResourcePopupDetails
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetResources
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetResourceUtilizationGrid
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetResourceWorkHoursForTimeFrame
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetRICommonFCBStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetRIProvisioningStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetRITenantEndpoint
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetServiceBaseUrl
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetSIFeatureConfiguration
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetSILicenseStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetSIPackageStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetSummaryBookings
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetTalkingPoints
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetTimelineData
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetTimeLineRecords
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetTransactionTypeForCategoryPrice
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetTransactionUnitPrices
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetUserConsentStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_GetUserTimeZoneName
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_GetWorkOrderAggregation
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IndentWBSTask
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_initializedefaultclonequery
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_InstallSalesInsightsSolution
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_InvoicePaid
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_InvoiceRecalculate
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_InvokeServiceStoredProc
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_InvokeStoredProc
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTCheckIfRecordExistsInEntity
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTGetDeviceEvents
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTGetEditablePropertiesMetadata
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTGetIoTAlertCustomAttributes
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTGetModelStatusInternal
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTGetTagsMetadata
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTHubGetAggregatedDeviceReadings
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTHubPullDeviceData
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTHubQueryDeviceReadings
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTHubRegisterDevice
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTNewPrimaryAlert
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTPullDeviceDataActionHandler
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTRegisterActionHandler
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IoTSendTestAlert
-  description: "[Reserved for future use.]"
-- type: Microsoft.Dynamics.CRM.msdyn_IoTSetConfiguration
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IsLinkedInDataValidationEnabled
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IsMSTeamsUserSyncFeatureEnabled
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_IsProjectTemplatesView
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_IsSharePointEnabled
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_JoinProjectTeam
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_JsonGetBoolean
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_JsonGetNumber
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_JsonGetString
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_LoadFactTableEstimate
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_LogFindWorkEvent
-  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_ManageSLAInstances
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_MarkActualReadyToInvoiceOrNot
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_MarketingListMetadataUpdate
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_MarketingMetadataUpdate
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_MarketingMetadataUpdatePostImport
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_MarkIntegrationJobAsFailedAsync
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_MarkProductContractLineReadyToInvoiceOrNot
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_MigrateArc
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_MigrateArcProactiveRun
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_MigrateSla
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_MigrateSlaProactiveRun
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_MoveDownWBSTask
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_MoveProject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_MoveUpWBSTask
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_MSProject_ExportToProject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_MSProject_GetFindResourcesURL
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_MSProject_LinkToProject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_MSProject_PublishToExistingProject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_MSProject_ReadFromExistingProject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_MSProject_ReadProjectTeamMembers
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_MSProject_UnlinkFromProject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_NewInvoiceContract
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_OutdentWBSTask
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ParentIoTAlerts
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_PerformNotesAnalysisAction
+- type: Microsoft.Dynamics.CRM.msdyn_ModelAppDiagnosis
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_PostInvoice
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_PostJournal
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_PostOperationRevokeUsrConsent
+- type: Microsoft.Dynamics.CRM.msdyn_ModelAppRepair
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_PostOrganizationProvisioningStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_PostRetrieveRealTimeSuggestedActivities
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_PriceModifier
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ProjectServiceCreateInvoiceAsynchronous
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ProjectServiceCreateInvoices
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ProjectServiceDeclineJournalPreview
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ProjectServiceEntriesCorrect
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ProjectServicePostJournalPreview
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ProjectTeamMemberSignUpProcess
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ProjectTeamMemberSignupprocessaccept
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ProjectTeamUpdateMembershipStatus
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ProvisionIoTSuggestionsMLModel
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ProvisionIoTSuggestionsMLModelInternal
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ProvisionSharePointDocumentLibraries
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_psacopyentities
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_psapretransformentity
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_PullDataForIoTDevice
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_QueryExchange
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ReadEstimateLines
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_recallrequestforrequirement
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_RecommendWork
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_RefreshProjectActuals
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RegisterCustomEntity
-  description: "Registers any custom entity that may or may not already have connected IoT devices. This action invokes the IoT – Register Device action."
-- type: Microsoft.Dynamics.CRM.msdyn_RegisterIoTDevice
-  description: "Publishes the registration requests for an IoT device."
 - type: Microsoft.Dynamics.CRM.msdyn_RegisterSolutionHealthRule
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RejectProposedBooking
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_RemoveRequirementModel
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RequirementGroupOverview
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ResGetResourceDetail
-  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_ResolveSolutionHealthRuleFailure
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ResolveTimezone
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ResourceAssignmentDetailUpdate
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ResourceReservationCancel
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ResourceUtilization
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ResourceUtilizationChart
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_RestartAgreementRelatedWorkflow
+- type: Microsoft.Dynamics.CRM.msdyn_RetrieveKnowledgeSearchFilters
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RestartUniqueNumberWorkflow
+- type: Microsoft.Dynamics.CRM.msdyn_RetrieveKnowledgeSearchModifiers
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RetrieveActivities
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RetrieveDistanceMatrix
-  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_RetrieveKnowledgeSuggestions
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RetrieveKPIvaluesfromDCI
+- type: Microsoft.Dynamics.CRM.msdyn_RetrievePersonalizationFilters
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RetrieveKpiValuesFromRI
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RetrieveRequirementGroupCandidates
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RetrieveResourceAvailability
-  description: "For internal use only."
 - type: Microsoft.Dynamics.CRM.msdyn_RetrieveSearchProviders
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RetrieveSuggestionPayloads
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_RetrieveTypeValuesFromDCI
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_RunSolutionCheckerRules
   description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_SaveCalendar
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ScheduleRequirementGroup
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_SearchResourceAvailability
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_SearchResourceAvailabilityForRequirementGroup
-  description: ""
 - type: Microsoft.Dynamics.CRM.msdyn_SendEmailFromTemplate
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_SetDefaultRole
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_SetFeatureStatus
+- type: Microsoft.Dynamics.CRM.msdyn_SiteMapDiagnosis
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_SetLegalAcceptanceStatus
+- type: Microsoft.Dynamics.CRM.msdyn_SiteMapRepair
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_SetSharePointDocumentStatus
+- type: Microsoft.Dynamics.CRM.OnExternalCreated
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_SetTalkingPointLikedStatus
+- type: Microsoft.Dynamics.CRM.OnExternalDeleted
   description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_SetTeamsDocumentStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_SIGetFCBStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_SnoozeEmailInfraActionCard
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_StartODOSProvisioning
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_StartRIProvisioning
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_TimeEntriesApprove
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_TimeEntriesCopy
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_TimeEntriesCopyPaste
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_TimeEntriesImport
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_TimeEntriesPaste
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_TimeEntriesPendingApproval
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_TimeEntriesRecall
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_TimeEntriesReject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_TimeEntriesSubmit
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_TrackExchangeActivity
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_transformentity
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateAllEstimatesForProject
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateAssignmentEffortContour
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateAutoCaptureSettings
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateBookingsStatus
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateChangedSkills
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateEstimateLines
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_Updatefeatureconfig
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateOrderLineResourceCategory
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateOrderLineTransactionCategory
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateProjectContractLineDetailPrices
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_updateprojecttask
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateQuoteLineDetailPrices
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateQuoteLineResourceCategory
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateQuoteLineTransactionCategory
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_updateremainingresourcerequirement
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateRequirementDemand
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateRequirementModel
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateRITenantInfo
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpdateUserConsentBasedonSecurityRoles
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_UpgradeTelemetry
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ValidateApprovalCancellation
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ValidateFixedPriceLineTotals
-  description: "For internal use only."
-- type: Microsoft.Dynamics.CRM.msdyn_ValidateTSIKey
-  description: ""
-- type: Microsoft.Dynamics.CRM.msdyn_ValidateTSISecretExpiry
-  description: ""
-- type: Microsoft.Dynamics.CRM.none_RemoveMarketingListMembersByIds
+- type: Microsoft.Dynamics.CRM.OnExternalUpdated
   description: ""
 - type: Microsoft.Dynamics.CRM.OrderOption
   description: "Sets the order for an option set.  "
@@ -1120,16 +288,14 @@ in_this_section:
   description: "Submits an asynchronous job that parses all import files that are associated with the specified import (data import). "
 - type: Microsoft.Dynamics.CRM.PickFromQueue
   description: "Assigns a queue item to a user and optionally remove the queue item from the queue. "
+- type: Microsoft.Dynamics.CRM.PowerAutomateProxy
+  description: ""
 - type: Microsoft.Dynamics.CRM.Predict
   description: ""
 - type: Microsoft.Dynamics.CRM.PredictByReference
   description: ""
 - type: Microsoft.Dynamics.CRM.PredictionSchema
   description: ""
-- type: Microsoft.Dynamics.CRM.ProcessInboundEmail
-  description: "Processes the email responses from a marketing campaign. "
-- type: Microsoft.Dynamics.CRM.PropagateByExpression
-  description: "Creates a quick campaign to distribute an activity to accounts, contacts, or leads that are selected by a query. "
 - type: Microsoft.Dynamics.CRM.ProvisionLanguage
   description: "Provisions a new language.  "
 - type: Microsoft.Dynamics.CRM.ProvisionLanguageAsync
@@ -1140,8 +306,6 @@ in_this_section:
   description: "Publishes all changes to solution components. "
 - type: Microsoft.Dynamics.CRM.PublishDuplicateRule
   description: "Submits an asynchronous job to publish a duplicate rule. "
-- type: Microsoft.Dynamics.CRM.PublishProductHierarchy
-  description: "Publishes a product family record and all its child records.  "
 - type: Microsoft.Dynamics.CRM.PublishTheme
   description: "Publishes a theme and set it as the current theme.  "
 - type: Microsoft.Dynamics.CRM.PublishXml
@@ -1162,10 +326,8 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.PvaPublish
   description: ""
-- type: Microsoft.Dynamics.CRM.QualifyLead
-  description: "Qualifies a lead and create account, contact, and opportunity records that are linked to the originating lead record. "
-- type: Microsoft.Dynamics.CRM.QualifyMemberList
-  description: "Qualifies the specified list and either override the list members or remove them according to the specified option. "
+- type: Microsoft.Dynamics.CRM.PvaStartConversation
+  description: ""
 - type: Microsoft.Dynamics.CRM.QueryExpressionToFetchXml
   description: "Converts a QueryExpression query to its equivalent FetchXML query"
 - type: Microsoft.Dynamics.CRM.QueueUpdateRibbonClientMetadata
@@ -1180,9 +342,9 @@ in_this_section:
   description: "Reassigns all records that are owned by a specified user to another security principal (user or team). "
 - type: Microsoft.Dynamics.CRM.Recalculate
   description: "Recalculate system-computed values for rollup fields in the goal hierarchy. "
-- type: Microsoft.Dynamics.CRM.RecalculatePrice
-  description: ""
 - type: Microsoft.Dynamics.CRM.RecognizeText
+  description: ""
+- type: Microsoft.Dynamics.CRM.RegisterFlowMachine
   description: ""
 - type: Microsoft.Dynamics.CRM.ReleaseToQueue
   description: "Assigns a queue item back to the queue owner so others can pick it.  "
@@ -1190,14 +352,6 @@ in_this_section:
   description: ""
 - type: Microsoft.Dynamics.CRM.RemoveFromQueue
   description: "Removes a queue item from a queue.  "
-- type: Microsoft.Dynamics.CRM.RemoveItemCampaign
-  description: "Removes an item from a campaign.  "
-- type: Microsoft.Dynamics.CRM.RemoveItemCampaignActivity
-  description: "Removes an item from a campaign activity. "
-- type: Microsoft.Dynamics.CRM.RemoveListMembersList
-  description: ""
-- type: Microsoft.Dynamics.CRM.RemoveMemberList
-  description: "Removes a member from a list (marketing list).  "
 - type: Microsoft.Dynamics.CRM.RemoveMembersTeam
   description: "Removes members from a team."
 - type: Microsoft.Dynamics.CRM.RemoveParent
@@ -1208,24 +362,18 @@ in_this_section:
   description: "Removes a component from an unmanaged solution. "
 - type: Microsoft.Dynamics.CRM.RemoveUserFromRecordTeam
   description: "Removes a user from the auto created access team for the specified record. "
-- type: Microsoft.Dynamics.CRM.RenewContract
-  description: "Renews a contract and create the contract details for a new contract.  "
-- type: Microsoft.Dynamics.CRM.RenewEntitlement
-  description: "Renews an entitlement. "
 - type: Microsoft.Dynamics.CRM.ReplacePrivilegesRole
   description: "Replaces the privilege set of an existing role.  "
 - type: Microsoft.Dynamics.CRM.Reschedule
   description: "Reschedules an appointment, recurring appointment, or service appointment (service activity). "
 - type: Microsoft.Dynamics.CRM.ResetUserFilters
   description: "Resets the offline data filters for the calling user to the default filters for the organization.  "
-- type: Microsoft.Dynamics.CRM.RevertProduct
-  description: "Reverts changes done to properties of a product family, product, or bundle record, and set it back to its last published (active) state. "
-- type: Microsoft.Dynamics.CRM.ReviseQuote
-  description: "Sets the state of a quote to Draft. "
 - type: Microsoft.Dynamics.CRM.RevokeAccess
   description: "Replaces the access rights on the target record for the specified security principal (user or team).  "
 - type: Microsoft.Dynamics.CRM.RouteTo
   description: "Routes a queue item to a queue, a user, or a team.  "
+- type: Microsoft.Dynamics.CRM.SaveSettingValue
+  description: "Creates or updates app/organization level override. "
 - type: Microsoft.Dynamics.CRM.SchedulePrediction
   description: ""
 - type: Microsoft.Dynamics.CRM.ScheduleRetrain
@@ -1258,6 +406,8 @@ in_this_section:
   description: "Sets the process that associates with a given target entity. The user can set to another business process or specify null to clear out the current process."
 - type: Microsoft.Dynamics.CRM.SetReportRelated
   description: "Links an instance of a report entity to related entities.  "
+- type: Microsoft.Dynamics.CRM.Share
+  description: ""
 - type: Microsoft.Dynamics.CRM.StageAndUpgrade
   description: ""
 - type: Microsoft.Dynamics.CRM.StageSolution
@@ -1272,10 +422,6 @@ in_this_section:
   description: "Validates the configuration of a Microsoft Azure Service Bus solution’s service endpoint. "
 - type: Microsoft.Dynamics.CRM.UninstallSampleData
   description: "Uninstalls the sample data."
-- type: Microsoft.Dynamics.CRM.UnlockInvoicePricing
-  description: "Unlocks pricing for an invoice.  "
-- type: Microsoft.Dynamics.CRM.UnlockSalesOrderPricing
-  description: "Unlocks pricing for a sales order (order).  "
 - type: Microsoft.Dynamics.CRM.UnpublishAIConfiguration
   description: ""
 - type: Microsoft.Dynamics.CRM.UnpublishDuplicateRule
@@ -1288,8 +434,6 @@ in_this_section:
   description: "internal"
 - type: Microsoft.Dynamics.CRM.UpdateOptionValue
   description: "Updates an option value in a global or local option set. "
-- type: Microsoft.Dynamics.CRM.UpdateProductProperties
-  description: "Updates values of the property instances (dynamic property instances) for a product added to an opportunity, quote, order, or invoice. "
 - type: Microsoft.Dynamics.CRM.UpdateRibbonClientMetadata
   description: ""
 - type: Microsoft.Dynamics.CRM.UpdateSolutionComponent
@@ -1310,10 +454,6 @@ in_this_section:
   description: "Validates a saved query."
 - type: Microsoft.Dynamics.CRM.ValidateUnpublished
   description: ""
-- type: Microsoft.Dynamics.CRM.WinOpportunity
-  description: "Sets the state of an opportunity to Won.  "
-- type: Microsoft.Dynamics.CRM.WinQuote
-  description: "Sets the state of a quote to Won.  "
 href_see_also:
 - text: "Use the Microsoft Dynamics 365 Customer Engagement Web API"
   href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"

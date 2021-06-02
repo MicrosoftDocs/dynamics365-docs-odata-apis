@@ -4,10 +4,10 @@ name: "Data lake workspaces"
 type: solution
 metadata: 
   title: "Microsoft Dataverse Data lake workspaces Solution Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
-  ms.assetid: 15a31510-1e63-428f-a1de-c431562bcc78
+  ms.assetid: 3ca7744b-6482-4c81-953b-dc778a473750
   author: "kumarvivek"
   ms.author: "kvivek"
   manager: "annbe"
@@ -16,11 +16,19 @@ namespace: Microsoft.Dynamics.CRM
 header:
 # This solution has no description.
  unique_name: datalakeworkspaces
- version: "1.0.0.21"
+ version: "1.0.0.22"
  customization_prefix: default
 entities:
   description: "The following entities are included in this solution."
   entity_items:
+   - type: Microsoft.Dynamics.CRM.datalakefolder
+     description: "A folder is a place to store data in Azure Data Lake."
+   - type: Microsoft.Dynamics.CRM.datalakefolderpermission
+     description: ""
+   - type: Microsoft.Dynamics.CRM.datalakeworkspace
+     description: "A workspace is a place to store data in Azure Data Lake."
+   - type: Microsoft.Dynamics.CRM.datalakeworkspacepermission
+     description: ""
    - type: Microsoft.Dynamics.CRM.solutioncomponentattributeconfiguration
      description: ""
    - type: Microsoft.Dynamics.CRM.solutioncomponentconfiguration

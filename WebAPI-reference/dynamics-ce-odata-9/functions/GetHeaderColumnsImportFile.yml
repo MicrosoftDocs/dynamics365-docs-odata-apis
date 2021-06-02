@@ -4,7 +4,7 @@ name: "GetHeaderColumnsImportFile"
 type: function
 metadata: 
   title: "Microsoft Dataverse GetHeaderColumnsImportFile Function Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 286353a0-b264-429c-98f5-1d7bb4f67acd

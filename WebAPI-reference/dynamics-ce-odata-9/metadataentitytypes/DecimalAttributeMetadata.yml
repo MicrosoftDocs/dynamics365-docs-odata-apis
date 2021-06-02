@@ -4,7 +4,7 @@ name: "DecimalAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse DecimalAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: f2742dcb-393e-405f-8495-c8f07ec705d5

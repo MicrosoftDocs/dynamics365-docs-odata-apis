@@ -4,7 +4,7 @@ name: "BooleanAttributeMetadata"
 type: metadataentitytype
 metadata: 
   title: "Microsoft Dataverse BooleanAttributeMetadata Metadata EntityType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 8ab3c921-f5e0-45e0-aabc-481819281d02

@@ -4,7 +4,7 @@ name: "CategorizeTextResponse"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse CategorizeTextResponse ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 003f4225-4e91-4d3e-a5cd-61d1bcf814eb

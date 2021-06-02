@@ -4,7 +4,7 @@ name: "ComplexDoubleAttributeMetadata"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse ComplexDoubleAttributeMetadata ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 41a27291-26c4-4a58-8619-bf923998a751

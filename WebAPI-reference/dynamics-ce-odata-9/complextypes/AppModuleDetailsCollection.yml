@@ -4,7 +4,7 @@ name: "AppModuleDetailsCollection"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse AppModuleDetailsCollection ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: 5fa9e708-dd2d-42da-a61b-fe647a1ed80e

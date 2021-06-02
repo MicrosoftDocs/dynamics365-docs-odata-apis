@@ -4,7 +4,7 @@ name: "LayerDesiredOrder"
 type: complextype
 metadata: 
   title: "Microsoft Dataverse LayerDesiredOrder ComplexType Reference | MicrosoftDocs"
-  ms.date: "04/12/2021"
+  ms.date: "06/02/2021"
   ms.service: "powerapps"
   ms.topic: "reference"
   ms.assetid: cc422fcb-2482-44ac-92de-209d1707c48a
