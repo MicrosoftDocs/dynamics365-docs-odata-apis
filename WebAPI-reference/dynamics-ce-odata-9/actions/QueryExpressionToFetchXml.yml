@@ -31,7 +31,9 @@ return_type:
   nullable: false
   type: Microsoft.Dynamics.CRM.QueryExpressionToFetchXmlResponse
 # This action has no identified unbound entities.
-# There are no remarks for this action.
+
+remarks: "Type action accepts a Microsoft.Dynamics.CRM.QueryBase however only Microsoft.Dynamics.CRM.QueryExpression can be converted to Fetch. Specify the @odata.type property on the Microsoft.Dynamics.CRM.QueryBase object. The value should be Microsoft.Dynamics.CRM.QueryExpression"
+  
 href_see_also:
 - text: "Use the Microsoft Dataverse Web API"
   href: "https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview"
