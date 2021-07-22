@@ -1,15 +1,15 @@
-- name: Dynamics 365
-  tocHref: /dynamics365/
-  topicHref: /dynamics365/
+- name: Power Apps
+  tocHref: /powerapps/
+  topicHref: /powerapps/
   items:
-  - name: Customer Engagement
-    tocHref: /dynamics365/customer-engagement/
-    topicHref: /dynamics365/customer-engagement/
+  - name: Dataverse
+    tocHref: /powerapps/maker/data-platform/
+    topicHref: /powerapps/maker/data-platform/
     items:
-    - name: Developer Documentation
-      tocHref: /dynamics365/customer-engagement/web-api/
-      topicHref: /dynamics365/customer-engagement/developer/
+    - name: Developer
+      tocHref: /powerapps/developer/data-platform/
+      topicHref: /powerapps/developer/data-platform/
       items:
       - name: Web API
-        tocHref: /dynamics365/customer-engagement/web-api/
-        topicHref: /dynamics365/customer-engagement/developer/webapi/
+        tocHref: /powerapps/developer/data-platform/webapi/overview/
+        topicHref: /powerapps/developer/data-platform/webapi/overview/
