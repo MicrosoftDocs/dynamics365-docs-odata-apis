@@ -1,6 +1,6 @@
-- name: Power Apps
-  tocHref: /powerapps/
-  topicHref: /powerapps/
+- name: Dynamics 365
+  tocHref: /dynamics365/
+  topicHref: /dynamics365/
   items:
   - name: Dataverse
     tocHref: /powerapps/maker/data-platform/
