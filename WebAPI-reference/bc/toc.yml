@@ -1,15 +1,15 @@
 - name: Dynamics 365
-  tocHref: /dynamics365/
+  href: /dynamics365/
   topicHref: /dynamics365/
   items:
   - name: Dataverse
-    tocHref: /powerapps/maker/data-platform/
+    href: /powerapps/maker/data-platform/
     topicHref: /powerapps/maker/data-platform/
     items:
     - name: Developer
-      tocHref: /powerapps/developer/data-platform/
+      href: /powerapps/developer/data-platform/
       topicHref: /powerapps/developer/data-platform/
       items:
       - name: Web API
-        tocHref: /powerapps/developer/data-platform/webapi/overview/
+        href: /powerapps/developer/data-platform/webapi/overview/
         topicHref: /powerapps/developer/data-platform/webapi/overview/
